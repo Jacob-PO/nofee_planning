@@ -1025,96 +1025,6 @@
         <div class="doc-subtitle">판매점 상품 대량 업로드 및 고객 화면 개선 기획안</div>
     </div>
 
-    <!-- 변경 이력 -->
-    <div class="section">
-        <div class="section-header">
-            <div class="section-number">📝</div>
-            <h2>변경 이력 (Change Log)</h2>
-        </div>
-
-        <div class="feature-card">
-            <div class="feature-title">v2.1 (2025-10-11 15:45 KST)</div>
-            <div class="feature-desc">
-                <p style="margin-top: 12px;"><strong>🐛 버그 수정:</strong></p>
-                <ul>
-                    <li><strong>loadMoreNews() 함수 로직 개선</strong>
-                        <ul>
-                            <li><strong>문제:</strong> 불필요한 전역 변수 <code>visibleNewsCount</code> 사용으로 인해 3개 이상 뉴스가 표시되지 않는 버그</li>
-                            <li><strong>원인:</strong> <code>classList.remove('hidden-news')</code> 실행 후 다음 호출 시 이미 표시된 요소를 찾을 수 없음</li>
-                            <li><strong>해결:</strong> 전역 변수 제거, 매번 <code>.hidden-news</code> 클래스를 조회하여 앞에서부터 3개씩 표시하도록 로직 단순화</li>
-                            <li><strong>영향:</strong> 더보기 버튼이 정상적으로 6개 뉴스를 3개씩 2번에 걸쳐 표시</li>
-                        </ul>
-                    </li>
-                </ul>
-                <p style="margin-top: 12px;"><strong>📍 수정된 코드 위치:</strong></p>
-                <ul>
-                    <li>JavaScript 함수: <code>loadMoreNews()</code> (라인 3061-3075)</li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="feature-card">
-            <div class="feature-title">v2.0 (2025-10-11 13:26 KST)</div>
-            <div class="feature-desc">
-                <p style="margin-top: 12px;"><strong>🎉 주요 기능 추가:</strong></p>
-                <ul>
-                    <li><strong>홈 탭 기능 추가</strong>: 인증 정보 + 우리매장 소식 섹션</li>
-                    <li><strong>더보기 버튼</strong>: 뉴스 3개씩 추가 로딩</li>
-                    <li><strong>탭 전환 기능</strong>: 홈/시세표/후기 탭 전환</li>
-                    <li><strong>음수 가격 지원</strong>: -12 입력 → "12만원 페이백" 표시</li>
-                </ul>
-                <p style="margin-top: 12px;"><strong>🐛 버그 수정:</strong></p>
-                <ul>
-                    <li><strong>두 번째 카드 버튼 활성화 안됨</strong>: Hidden input 추가 + selectPrice 함수 null 체크</li>
-                </ul>
-                <p style="margin-top: 12px;"><strong>🔧 추가된 JavaScript 함수:</strong></p>
-                <ul>
-                    <li><code>switchTab(tabName)</code>: 탭 전환</li>
-                    <li><code>loadMoreNews()</code>: 더보기 기능</li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="feature-card">
-            <div class="feature-title">v1.2 (2025-10-11 오전)</div>
-            <div class="feature-desc">
-                <p style="margin-top: 12px;"><strong>🔧 일관성 개선:</strong></p>
-                <ul>
-                    <li>소수점 입력 제거 (step="1"로 변경)</li>
-                    <li>Toss 관련 멘트 삭제</li>
-                    <li>사용자 친화적 언어로 전환</li>
-                    <li>가격 표시 형식 오류 수정</li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="feature-card">
-            <div class="feature-title">v1.1 (2025-10-11 오전)</div>
-            <div class="feature-desc">
-                <p style="margin-top: 12px;"><strong>💰 입력 방식 개선:</strong></p>
-                <ul>
-                    <li>어드민 가격 입력을 "만원 단위"로 변경</li>
-                    <li>기존: 550000 입력 → 변경: 55 입력</li>
-                    <li>사유: 입력 편의성 개선 및 오류 감소</li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="feature-card">
-            <div class="feature-title">v1.0 (2025-10-11 초기)</div>
-            <div class="feature-desc">
-                <p style="margin-top: 12px;"><strong>🚀 초기 기능 구현:</strong></p>
-                <ul>
-                    <li>표 형식 시세표 입력</li>
-                    <li>이미지 다운로드 기능</li>
-                    <li>노출 관리 (공개/비공개)</li>
-                    <li>모바일 고객 화면 (카드형 레이아웃)</li>
-                    <li>실시간 가격 변동 기능</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-
     <!-- 문서 개요 -->
     <div class="info-box">
         <div class="info-item">
@@ -3164,5 +3074,96 @@ WHERE product_group_code = '선택한상품그룹';</pre>
             }
         }
     </script>
+
+    <!-- 변경 이력 -->
+    <div class="section">
+        <div class="section-header">
+            <div class="section-number">📝</div>
+            <h2>변경 이력 (Change Log)</h2>
+        </div>
+
+        <div class="feature-card">
+            <div class="feature-title">v2.1 (2025-10-11 15:45 KST)</div>
+            <div class="feature-desc">
+                <p style="margin-top: 12px;"><strong>🐛 버그 수정:</strong></p>
+                <ul>
+                    <li><strong>loadMoreNews() 함수 로직 개선</strong>
+                        <ul>
+                            <li><strong>문제:</strong> 불필요한 전역 변수 <code>visibleNewsCount</code> 사용으로 인해 3개 이상 뉴스가 표시되지 않는 버그</li>
+                            <li><strong>원인:</strong> <code>classList.remove('hidden-news')</code> 실행 후 다음 호출 시 이미 표시된 요소를 찾을 수 없음</li>
+                            <li><strong>해결:</strong> 전역 변수 제거, 매번 <code>.hidden-news</code> 클래스를 조회하여 앞에서부터 3개씩 표시하도록 로직 단순화</li>
+                            <li><strong>영향:</strong> 더보기 버튼이 정상적으로 6개 뉴스를 3개씩 2번에 걸쳐 표시</li>
+                        </ul>
+                    </li>
+                </ul>
+                <p style="margin-top: 12px;"><strong>📍 수정된 코드 위치:</strong></p>
+                <ul>
+                    <li>JavaScript 함수: <code>loadMoreNews()</code> (라인 3061-3075)</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="feature-card">
+            <div class="feature-title">v2.0 (2025-10-11 13:26 KST)</div>
+            <div class="feature-desc">
+                <p style="margin-top: 12px;"><strong>🎉 주요 기능 추가:</strong></p>
+                <ul>
+                    <li><strong>홈 탭 기능 추가</strong>: 인증 정보 + 우리매장 소식 섹션</li>
+                    <li><strong>더보기 버튼</strong>: 뉴스 3개씩 추가 로딩</li>
+                    <li><strong>탭 전환 기능</strong>: 홈/시세표/후기 탭 전환</li>
+                    <li><strong>음수 가격 지원</strong>: -12 입력 → "12만원 페이백" 표시</li>
+                </ul>
+                <p style="margin-top: 12px;"><strong>🐛 버그 수정:</strong></p>
+                <ul>
+                    <li><strong>두 번째 카드 버튼 활성화 안됨</strong>: Hidden input 추가 + selectPrice 함수 null 체크</li>
+                </ul>
+                <p style="margin-top: 12px;"><strong>🔧 추가된 JavaScript 함수:</strong></p>
+                <ul>
+                    <li><code>switchTab(tabName)</code>: 탭 전환</li>
+                    <li><code>loadMoreNews()</code>: 더보기 기능</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="feature-card">
+            <div class="feature-title">v1.2 (2025-10-11 오전)</div>
+            <div class="feature-desc">
+                <p style="margin-top: 12px;"><strong>🔧 일관성 개선:</strong></p>
+                <ul>
+                    <li>소수점 입력 제거 (step="1"로 변경)</li>
+                    <li>Toss 관련 멘트 삭제</li>
+                    <li>사용자 친화적 언어로 전환</li>
+                    <li>가격 표시 형식 오류 수정</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="feature-card">
+            <div class="feature-title">v1.1 (2025-10-11 오전)</div>
+            <div class="feature-desc">
+                <p style="margin-top: 12px;"><strong>💰 입력 방식 개선:</strong></p>
+                <ul>
+                    <li>어드민 가격 입력을 "만원 단위"로 변경</li>
+                    <li>기존: 550000 입력 → 변경: 55 입력</li>
+                    <li>사유: 입력 편의성 개선 및 오류 감소</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="feature-card">
+            <div class="feature-title">v1.0 (2025-10-11 초기)</div>
+            <div class="feature-desc">
+                <p style="margin-top: 12px;"><strong>🚀 초기 기능 구현:</strong></p>
+                <ul>
+                    <li>표 형식 시세표 입력</li>
+                    <li>이미지 다운로드 기능</li>
+                    <li>노출 관리 (공개/비공개)</li>
+                    <li>모바일 고객 화면 (카드형 레이아웃)</li>
+                    <li>실시간 가격 변동 기능</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
 </body>
 </html>
