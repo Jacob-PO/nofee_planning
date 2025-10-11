@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>노피 기획안 저장소</title>
+    <title>노피 기획안</title>
     <link href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/variable/woff2/SUIT-Variable.css" rel="stylesheet">
     <style>
         * {
@@ -13,7 +13,7 @@
         }
 
         body {
-            font-family: 'SUIT Variable', -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Pretendard', 'Malgun Gothic', sans-serif;
+            font-family: 'SUIT Variable', -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', sans-serif;
             background: #f9fafb;
             min-height: 100vh;
             -webkit-font-smoothing: antialiased;
@@ -22,441 +22,139 @@
         /* 헤더 */
         .header {
             background: white;
-            border-bottom: 1px solid #e5e8eb;
-            padding: 24px 0;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-            backdrop-filter: blur(10px);
-            background: rgba(255, 255, 255, 0.95);
+            padding: 32px 0;
         }
 
         .header-inner {
-            max-width: 1200px;
+            max-width: 768px;
             margin: 0 auto;
-            padding: 0 40px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
-
-        .logo-section {
-            display: flex;
-            align-items: center;
-            gap: 16px;
+            padding: 0 24px;
         }
 
         .logo {
-            height: 32px;
-        }
-
-        .brand-info {
-            display: flex;
-            flex-direction: column;
-            gap: 4px;
+            height: 28px;
+            margin-bottom: 12px;
         }
 
         .brand-title {
-            font-size: 18px;
-            font-weight: 700;
+            font-size: 28px;
+            font-weight: 800;
             color: #191f28;
-            letter-spacing: -0.5px;
-        }
-
-        .brand-sub {
-            font-size: 13px;
-            color: #8b95a1;
-            font-weight: 500;
-        }
-
-        .header-actions {
-            display: flex;
-            gap: 12px;
-        }
-
-        .header-btn {
-            padding: 8px 16px;
-            border-radius: 8px;
-            font-size: 14px;
-            font-weight: 600;
-            cursor: pointer;
-            transition: all 0.2s;
-            border: none;
-            text-decoration: none;
-            display: inline-flex;
-            align-items: center;
-            gap: 6px;
-        }
-
-        .btn-secondary {
-            background: #f2f4f6;
-            color: #4e5968;
-        }
-
-        .btn-secondary:hover {
-            background: #e5e8eb;
-        }
-
-        .btn-primary {
-            background: #3182f6;
-            color: white;
-        }
-
-        .btn-primary:hover {
-            background: #1c64d8;
+            letter-spacing: -1.2px;
         }
 
         /* 메인 컨텐츠 */
         .main {
-            max-width: 1200px;
+            max-width: 768px;
             margin: 0 auto;
-            padding: 40px 40px 80px;
-        }
-
-        /* 페이지 헤더 */
-        .page-header {
-            margin-bottom: 32px;
-        }
-
-        .page-title {
-            font-size: 32px;
-            font-weight: 800;
-            color: #191f28;
-            letter-spacing: -1px;
-            margin-bottom: 8px;
-        }
-
-        .page-description {
-            font-size: 16px;
-            color: #8b95a1;
-            font-weight: 500;
-        }
-
-        /* 통계 카드 */
-        .stats-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 16px;
-            margin-bottom: 40px;
-        }
-
-        .stat-card {
-            background: white;
-            border: 1px solid #e5e8eb;
-            border-radius: 12px;
-            padding: 20px;
-            transition: all 0.2s;
-        }
-
-        .stat-card:hover {
-            border-color: #3182f6;
-            box-shadow: 0 4px 12px rgba(49, 130, 246, 0.08);
-        }
-
-        .stat-label {
-            font-size: 13px;
-            color: #8b95a1;
-            font-weight: 600;
-            margin-bottom: 8px;
-        }
-
-        .stat-value {
-            font-size: 28px;
-            font-weight: 800;
-            color: #191f28;
-            letter-spacing: -1px;
-        }
-
-        .stat-unit {
-            font-size: 16px;
-            color: #4e5968;
-            font-weight: 600;
-            margin-left: 4px;
-        }
-
-        /* 필터 및 정렬 */
-        .controls {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            margin-bottom: 24px;
-        }
-
-        .filter-group {
-            display: flex;
-            gap: 8px;
-        }
-
-        .filter-btn {
-            padding: 8px 16px;
-            background: white;
-            border: 1px solid #e5e8eb;
-            border-radius: 8px;
-            font-size: 14px;
-            font-weight: 600;
-            color: #4e5968;
-            cursor: pointer;
-            transition: all 0.2s;
-        }
-
-        .filter-btn:hover {
-            background: #f9fafb;
-        }
-
-        .filter-btn.active {
-            background: #3182f6;
-            color: white;
-            border-color: #3182f6;
-        }
-
-        .sort-select {
-            padding: 8px 12px;
-            background: white;
-            border: 1px solid #e5e8eb;
-            border-radius: 8px;
-            font-size: 14px;
-            font-weight: 600;
-            color: #4e5968;
-            cursor: pointer;
-            font-family: inherit;
+            padding: 40px 24px 100px;
         }
 
         /* 기획안 리스트 */
         .planning-list {
             display: flex;
             flex-direction: column;
-            gap: 12px;
+            gap: 20px;
         }
 
         .planning-item {
             background: white;
-            border: 1px solid #e5e8eb;
-            border-radius: 12px;
-            padding: 24px;
-            transition: all 0.2s;
+            border-radius: 16px;
+            padding: 32px;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
             cursor: pointer;
             text-decoration: none;
             color: inherit;
             display: block;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
         }
 
-        .planning-item:hover {
-            border-color: #3182f6;
-            box-shadow: 0 4px 16px rgba(49, 130, 246, 0.08);
-            transform: translateY(-2px);
-        }
-
-        .item-header {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            margin-bottom: 16px;
-        }
-
-        .item-header-left {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-        }
-
-        .item-number {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            width: 32px;
-            height: 32px;
-            background: #f2f4f6;
-            color: #4e5968;
-            border-radius: 8px;
-            font-weight: 800;
-            font-size: 14px;
+        .planning-item:active {
+            transform: scale(0.98);
         }
 
         .item-badges {
             display: flex;
             gap: 6px;
+            margin-bottom: 16px;
         }
 
         .badge {
-            padding: 4px 10px;
-            border-radius: 6px;
-            font-size: 12px;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 11px;
             font-weight: 700;
-            letter-spacing: -0.2px;
+            letter-spacing: -0.3px;
         }
 
         .badge-new {
-            background: #e7f5ff;
-            color: #3182f6;
-        }
-
-        .badge-version {
             background: #f2f4f6;
-            color: #8b95a1;
+            color: #4e5968;
         }
 
-        .badge-status {
-            background: #e5f4ed;
-            color: #00c73c;
+        .item-title {
+            font-size: 24px;
+            font-weight: 800;
+            color: #191f28;
+            margin-bottom: 12px;
+            letter-spacing: -1px;
+            line-height: 1.35;
+        }
+
+        .item-description {
+            font-size: 16px;
+            color: #4e5968;
+            line-height: 1.6;
+            font-weight: 500;
+            letter-spacing: -0.3px;
         }
 
         .item-meta {
             display: flex;
             align-items: center;
-            gap: 16px;
-        }
-
-        .meta-text {
-            font-size: 13px;
-            color: #8b95a1;
-            font-weight: 500;
-            display: flex;
-            align-items: center;
-            gap: 4px;
-        }
-
-        .item-content {
-            margin-bottom: 16px;
-        }
-
-        .item-title {
-            font-size: 20px;
-            font-weight: 800;
-            color: #191f28;
-            margin-bottom: 8px;
-            letter-spacing: -0.8px;
-        }
-
-        .item-description {
-            font-size: 15px;
-            color: #4e5968;
-            line-height: 1.6;
-            font-weight: 500;
-        }
-
-        .item-footer {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding-top: 16px;
+            gap: 12px;
+            margin-top: 20px;
+            padding-top: 20px;
             border-top: 1px solid #f2f4f6;
         }
 
-        .item-tags {
-            display: flex;
-            gap: 6px;
-            flex-wrap: wrap;
-        }
-
-        .tag {
-            padding: 4px 10px;
-            background: #f9fafb;
-            color: #6b7684;
-            border-radius: 6px;
-            font-size: 12px;
+        .meta-text {
+            font-size: 14px;
+            color: #8b95a1;
             font-weight: 600;
         }
 
-        .item-action {
-            display: flex;
-            align-items: center;
-            gap: 6px;
-            color: #3182f6;
-            font-size: 14px;
-            font-weight: 700;
-        }
-
-        .arrow-icon {
-            transition: transform 0.2s;
-        }
-
-        .planning-item:hover .arrow-icon {
-            transform: translateX(4px);
-        }
-
-        /* 빈 상태 */
-        .empty-state {
-            background: white;
-            border: 1px solid #e5e8eb;
-            border-radius: 12px;
-            padding: 80px 40px;
-            text-align: center;
-        }
-
-        .empty-icon {
-            font-size: 48px;
-            margin-bottom: 16px;
-        }
-
-        .empty-title {
-            font-size: 18px;
-            font-weight: 700;
-            color: #191f28;
-            margin-bottom: 8px;
-        }
-
-        .empty-description {
-            font-size: 15px;
-            color: #8b95a1;
-        }
-
-        /* 푸터 */
-        .footer {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 40px 40px;
-            text-align: center;
-            border-top: 1px solid #e5e8eb;
-        }
-
-        .footer-text {
-            font-size: 14px;
-            color: #8b95a1;
-            font-weight: 500;
+        .meta-dot {
+            width: 2px;
+            height: 2px;
+            background: #d1d5db;
+            border-radius: 50%;
         }
 
         /* 반응형 */
         @media (max-width: 768px) {
-            .header-inner {
-                padding: 0 20px;
-                flex-direction: column;
-                gap: 16px;
-                align-items: flex-start;
+            .header {
+                padding: 24px 0;
             }
 
-            .main {
-                padding: 24px 20px 60px;
-            }
-
-            .page-title {
+            .brand-title {
                 font-size: 24px;
             }
 
-            .stats-grid {
-                grid-template-columns: 1fr;
+            .main {
+                padding: 32px 20px 80px;
             }
 
-            .controls {
-                flex-direction: column;
-                align-items: stretch;
-                gap: 12px;
+            .planning-item {
+                padding: 28px 24px;
             }
 
-            .filter-group {
-                overflow-x: auto;
-                padding-bottom: 4px;
+            .item-title {
+                font-size: 22px;
             }
 
-            .item-header {
-                flex-direction: column;
-                align-items: flex-start;
-                gap: 12px;
-            }
-
-            .item-footer {
-                flex-direction: column;
-                align-items: flex-start;
-                gap: 12px;
+            .item-description {
+                font-size: 15px;
             }
         }
 
@@ -464,7 +162,7 @@
         @keyframes fadeIn {
             from {
                 opacity: 0;
-                transform: translateY(10px);
+                transform: translateY(8px);
             }
             to {
                 opacity: 1;
@@ -473,7 +171,7 @@
         }
 
         .planning-item {
-            animation: fadeIn 0.4s ease;
+            animation: fadeIn 0.5s ease;
         }
     </style>
 </head>
@@ -481,245 +179,57 @@
     <!-- 헤더 -->
     <header class="header">
         <div class="header-inner">
-            <div class="logo-section">
-                <img src="https://admin.nofee.team/image/company/logo.svg" alt="노피" class="logo">
-                <div class="brand-info">
-                    <div class="brand-title">기획안 저장소</div>
-                    <div class="brand-sub">숨은 수수료 없이 투명하게</div>
-                </div>
-            </div>
-            <div class="header-actions">
-                <button class="header-btn btn-secondary">
-                    <span>🔍</span>
-                    <span>검색</span>
-                </button>
-                <button class="header-btn btn-primary">
-                    <span>+</span>
-                    <span>새 기획안</span>
-                </button>
-            </div>
+            <img src="https://admin.nofee.team/image/company/logo.svg" alt="노피" class="logo">
+            <h1 class="brand-title">기획안</h1>
         </div>
     </header>
 
     <!-- 메인 컨텐츠 -->
     <main class="main">
-        <!-- 페이지 헤더 -->
-        <div class="page-header">
-            <h1 class="page-title">프로덕트 기획안</h1>
-            <p class="page-description">노피 서비스의 모든 기획안을 체계적으로 관리합니다</p>
-        </div>
-
-        <!-- 통계 -->
-        <div class="stats-grid">
-            <div class="stat-card">
-                <div class="stat-label">전체 기획안</div>
-                <div>
-                    <span class="stat-value">2</span>
-                    <span class="stat-unit">개</span>
-                </div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-label">진행 중</div>
-                <div>
-                    <span class="stat-value">2</span>
-                    <span class="stat-unit">개</span>
-                </div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-label">완료</div>
-                <div>
-                    <span class="stat-value">0</span>
-                    <span class="stat-unit">개</span>
-                </div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-label">이번 달 추가</div>
-                <div>
-                    <span class="stat-value">2</span>
-                    <span class="stat-unit">개</span>
-                </div>
-            </div>
-        </div>
-
-        <!-- 필터 및 정렬 -->
-        <div class="controls">
-            <div class="filter-group">
-                <button class="filter-btn active">전체</button>
-                <button class="filter-btn">어드민</button>
-                <button class="filter-btn">모바일</button>
-                <button class="filter-btn">백엔드</button>
-            </div>
-            <select class="sort-select">
-                <option>최신순</option>
-                <option>오래된순</option>
-                <option>제목순</option>
-            </select>
-        </div>
-
         <!-- 기획안 리스트 -->
         <div class="planning-list">
-            <!-- 기획안 아이템 1 -->
-            <a href="https://jacob-po.github.io/nofee_planning/store_price_tabel.html" class="planning-item" target="_blank">
-                <div class="item-header">
-                    <div class="item-header-left">
-                        <div class="item-number">1</div>
-                        <div class="item-badges">
-                            <span class="badge badge-new">NEW</span>
-                            <span class="badge badge-version">v2.0</span>
-                            <span class="badge badge-status">진행중</span>
-                        </div>
-                    </div>
-                    <div class="item-meta">
-                        <span class="meta-text">
-                            <span>📅</span>
-                            <span>2025.10.11</span>
-                        </span>
-                        <span class="meta-text">
-                            <span>👤</span>
-                            <span>제이콥</span>
-                        </span>
-                    </div>
+            <!-- 기획안 1 -->
+            <a href="https://jacob-po.github.io/nofee_planning/store_price_table.html" class="planning-item" target="_blank">
+                <div class="item-badges">
+                    <span class="badge badge-new">v2.0</span>
                 </div>
-                <div class="item-content">
-                    <h2 class="item-title">시세표 콘텐츠 유형 추가</h2>
-                    <p class="item-description">
-                        판매점이 여러 상품을 표 형식으로 대량 업로드하고 관리할 수 있는 시세표 기능.
-                        고객은 매장의 전체 상품 라인업을 한눈에 비교할 수 있으며, 통신사별 가격을 실시간으로 확인할 수 있습니다.
-                    </p>
-                </div>
-                <div class="item-footer">
-                    <div class="item-tags">
-                        <span class="tag">어드민</span>
-                        <span class="tag">모바일</span>
-                        <span class="tag">UX개선</span>
-                        <span class="tag">데이터베이스</span>
-                    </div>
-                    <div class="item-action">
-                        <span>자세히 보기</span>
-                        <span class="arrow-icon">→</span>
-                    </div>
+                <h2 class="item-title">시세표 콘텐츠 유형 추가</h2>
+                <p class="item-description">
+                    판매점이 여러 상품을 표 형식으로 대량 업로드하고 관리할 수 있는 시세표 기능. 고객은 매장의 전체 상품 라인업을 한눈에 비교하고 통신사별 가격을 실시간으로 확인할 수 있습니다.
+                </p>
+                <div class="item-meta">
+                    <span class="meta-text">2025.10.11</span>
+                    <div class="meta-dot"></div>
+                    <span class="meta-text">제이콥</span>
                 </div>
             </a>
 
-            <!-- 기획안 아이템 2 -->
-            <a href="https://jacob-po.github.io/nofee_planning/alimtalk-algorithm.html" class="planning-item" target="_blank">
-                <div class="item-header">
-                    <div class="item-header-left">
-                        <div class="item-number">2</div>
-                        <div class="item-badges">
-                            <span class="badge badge-new">NEW</span>
-                            <span class="badge badge-version">v1.0</span>
-                            <span class="badge badge-status">진행중</span>
-                        </div>
-                    </div>
-                    <div class="item-meta">
-                        <span class="meta-text">
-                            <span>📅</span>
-                            <span>2025.10.10</span>
-                        </span>
-                        <span class="meta-text">
-                            <span>👤</span>
-                            <span>제이콥</span>
-                        </span>
-                    </div>
+            <!-- 기획안 2 -->
+            <a href="https://jacob-po.github.io/nofee_planning/nofee-alimtalk-algorithm.html" class="planning-item" target="_blank">
+                <div class="item-badges">
+                    <span class="badge badge-new">v1.0</span>
                 </div>
-                <div class="item-content">
-                    <h2 class="item-title">견적신청 10분 룰</h2>
-                    <p class="item-description">
-                        견적을 신청한 고객이 10분 안에 개통정보를 입력하지 않으면 자동으로 취소되는 시스템.
-                        5분 경과 시 알림톡을 발송하여 고객에게 리마인드하고, 진성 고객만 필터링하여 판매점 업무 효율을 향상시킵니다.
-                    </p>
-                </div>
-                <div class="item-footer">
-                    <div class="item-tags">
-                        <span class="tag">알림톡</span>
-                        <span class="tag">자동화</span>
-                        <span class="tag">백엔드</span>
-                        <span class="tag">프로세스개선</span>
-                    </div>
-                    <div class="item-action">
-                        <span>자세히 보기</span>
-                        <span class="arrow-icon">→</span>
-                    </div>
+                <h2 class="item-title">견적신청 10분 룰</h2>
+                <p class="item-description">
+                    견적을 신청한 고객이 10분 안에 개통정보를 입력하지 않으면 자동으로 취소되는 시스템. 5분 경과 시 알림톡을 발송하여 고객에게 리마인드하고, 진성 고객만 필터링하여 판매점 업무 효율을 향상시킵니다.
+                </p>
+                <div class="item-meta">
+                    <span class="meta-text">2025.10.10</span>
+                    <div class="meta-dot"></div>
+                    <span class="meta-text">제이콥</span>
                 </div>
             </a>
-
-            <!-- 추가 기획안은 아래 형식으로 계속 추가 -->
-            <!--
-            <a href="링크주소" class="planning-item" target="_blank">
-                <div class="item-header">
-                    <div class="item-header-left">
-                        <div class="item-number">2</div>
-                        <div class="item-badges">
-                            <span class="badge badge-version">v1.0</span>
-                            <span class="badge badge-status">진행중</span>
-                        </div>
-                    </div>
-                    <div class="item-meta">
-                        <span class="meta-text">
-                            <span>📅</span>
-                            <span>날짜</span>
-                        </span>
-                        <span class="meta-text">
-                            <span>👤</span>
-                            <span>작성자</span>
-                        </span>
-                    </div>
-                </div>
-                <div class="item-content">
-                    <h2 class="item-title">기획안 제목</h2>
-                    <p class="item-description">
-                        기획안 설명...
-                    </p>
-                </div>
-                <div class="item-footer">
-                    <div class="item-tags">
-                        <span class="tag">태그1</span>
-                        <span class="tag">태그2</span>
-                    </div>
-                    <div class="item-action">
-                        <span>자세히 보기</span>
-                        <span class="arrow-icon">→</span>
-                    </div>
-                </div>
-            </a>
-            -->
         </div>
     </main>
 
-    <!-- 푸터 -->
-    <footer class="footer">
-        <p class="footer-text">© 2025 노피. 더 나은 서비스를 위한 체계적인 기획 관리</p>
-    </footer>
-
     <script>
-        // 필터 버튼 클릭 이벤트
-        document.querySelectorAll('.filter-btn').forEach(btn => {
-            btn.addEventListener('click', function() {
-                document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
-                this.classList.add('active');
-            });
-        });
-
         // 애니메이션 지연 효과
         document.addEventListener('DOMContentLoaded', function() {
             const items = document.querySelectorAll('.planning-item');
             items.forEach((item, index) => {
-                item.style.animationDelay = `${index * 0.05}s`;
+                item.style.animationDelay = `${index * 0.1}s`;
             });
         });
-
-        // 통계 업데이트 함수
-        function updateStats() {
-            const items = document.querySelectorAll('.planning-item');
-            const totalCount = items.length;
-            const inProgressCount = document.querySelectorAll('.badge-status').length;
-
-            // 실제 개수로 업데이트 가능
-            console.log(`전체: ${totalCount}, 진행중: ${inProgressCount}`);
-        }
-
-        updateStats();
     </script>
 </body>
 </html>
