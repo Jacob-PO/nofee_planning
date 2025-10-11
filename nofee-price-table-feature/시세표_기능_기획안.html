@@ -1,0 +1,1198 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>시세표 콘텐츠 유형 추가 - 노피 어드민 시스템</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        @media print {
+            @page {
+                size: A4;
+                margin: 0;
+            }
+            body {
+                padding: 15mm;
+            }
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Pretendard', 'Malgun Gothic', sans-serif;
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 40px;
+            background: #ffffff;
+            color: #191f28;
+            line-height: 1.6;
+            font-size: 14px;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .document-header {
+            border-bottom: 2px solid #3182f6;
+            padding-bottom: 24px;
+            margin-bottom: 32px;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 16px;
+        }
+
+        .logo {
+            height: 32px;
+        }
+
+        .doc-meta {
+            text-align: right;
+            font-size: 11px;
+            color: #8b95a1;
+        }
+
+        .doc-meta-item {
+            margin-bottom: 4px;
+        }
+
+        .doc-title {
+            font-size: 28px;
+            font-weight: 700;
+            color: #191f28;
+            margin-bottom: 12px;
+            letter-spacing: -0.5px;
+        }
+
+        .doc-subtitle {
+            font-size: 16px;
+            color: #4e5968;
+            font-weight: 400;
+        }
+
+        .info-box {
+            background: #f9fafb;
+            border: 1px solid #e5e8eb;
+            border-radius: 12px;
+            padding: 20px;
+            margin: 24px 0;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 24px;
+        }
+
+        .info-item {
+        }
+
+        .info-label {
+            font-size: 12px;
+            color: #8b95a1;
+            margin-bottom: 8px;
+        }
+
+        .info-value {
+            font-size: 16px;
+            color: #191f28;
+            font-weight: 600;
+        }
+
+        .section {
+            margin-bottom: 32px;
+        }
+
+        .section-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 16px;
+            padding-bottom: 12px;
+            border-bottom: 1px solid #e5e8eb;
+        }
+
+        .section-number {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 32px;
+            height: 32px;
+            background: #3182f6;
+            color: white;
+            border-radius: 8px;
+            font-weight: 700;
+            font-size: 16px;
+            margin-right: 12px;
+        }
+
+        h2 {
+            font-size: 20px;
+            font-weight: 700;
+            color: #191f28;
+            letter-spacing: -0.3px;
+            margin: 0;
+        }
+
+        h3 {
+            font-size: 16px;
+            font-weight: 700;
+            color: #191f28;
+            margin: 16px 0 12px 0;
+        }
+
+        p {
+            color: #4e5968;
+            line-height: 1.7;
+            margin-bottom: 12px;
+            font-size: 14px;
+        }
+
+        ul {
+            margin: 12px 0;
+            padding-left: 20px;
+        }
+
+        li {
+            color: #4e5968;
+            margin: 8px 0;
+            line-height: 1.7;
+            font-size: 14px;
+        }
+
+        li strong {
+            color: #191f28;
+        }
+
+        .key-box {
+            background: #f9fafb;
+            border: 1px solid #e5e8eb;
+            border-left: 4px solid #3182f6;
+            border-radius: 8px;
+            padding: 16px;
+            margin: 16px 0;
+        }
+
+        .key-box strong {
+            display: block;
+            margin-bottom: 8px;
+            color: #191f28;
+            font-size: 14px;
+        }
+
+        .key-box p {
+            margin: 0;
+            color: #4e5968;
+            font-size: 13px;
+        }
+
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 16px 0;
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+        }
+
+        .comparison-table th {
+            background: #f9fafb;
+            padding: 12px;
+            text-align: left;
+            font-size: 13px;
+            font-weight: 600;
+            color: #191f28;
+            border-bottom: 2px solid #e5e8eb;
+        }
+
+        .comparison-table td {
+            padding: 12px;
+            border-bottom: 1px solid #f2f4f6;
+            font-size: 13px;
+            color: #4e5968;
+        }
+
+        .comparison-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .feature-card {
+            background: white;
+            border: 2px solid #e5e8eb;
+            border-radius: 12px;
+            padding: 20px;
+            margin: 16px 0;
+        }
+
+        .feature-card.highlight {
+            border-color: #3182f6;
+            background: #f8fbff;
+        }
+
+        .feature-title {
+            font-size: 16px;
+            font-weight: 700;
+            color: #191f28;
+            margin-bottom: 12px;
+        }
+
+        .feature-desc {
+            font-size: 14px;
+            color: #4e5968;
+            line-height: 1.7;
+        }
+
+        .tag {
+            display: inline-block;
+            padding: 4px 10px;
+            border-radius: 6px;
+            font-size: 11px;
+            font-weight: 600;
+            margin-right: 6px;
+            margin-bottom: 6px;
+        }
+
+        .tag.new {
+            background: #e7f5ff;
+            color: #3182f6;
+        }
+
+        .tag.existing {
+            background: #f2f4f6;
+            color: #4e5968;
+        }
+
+        /* 프로토타입 스타일 */
+        .prototype-container {
+            background: #ffffff;
+            border: 2px solid #3182f6;
+            border-radius: 12px;
+            padding: 24px;
+            margin: 20px 0;
+            box-shadow: 0 4px 12px rgba(49, 130, 246, 0.15);
+        }
+
+        .prototype-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            padding-bottom: 12px;
+            border-bottom: 1px solid #e5e8eb;
+        }
+
+        .prototype-badge {
+            background: #3182f6;
+            color: white;
+            padding: 6px 12px;
+            border-radius: 6px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-right: 12px;
+        }
+
+        .prototype-title {
+            font-size: 15px;
+            font-weight: 600;
+            color: #191f28;
+        }
+
+        .editable-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 12px 0;
+            background: white;
+            border: 1px solid #e5e8eb;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .editable-table th {
+            background: #f9fafb;
+            padding: 10px;
+            text-align: left;
+            font-size: 12px;
+            font-weight: 600;
+            color: #191f28;
+            border-bottom: 2px solid #e5e8eb;
+        }
+
+        .editable-table td {
+            padding: 8px 10px;
+            border-bottom: 1px solid #f2f4f6;
+        }
+
+        .editable-table td input,
+        .editable-table td select {
+            width: 100%;
+            border: 1px solid #e5e8eb;
+            border-radius: 4px;
+            padding: 6px 8px;
+            font-size: 12px;
+            font-family: inherit;
+        }
+
+        .editable-table td input:focus,
+        .editable-table td select:focus {
+            outline: none;
+            border-color: #3182f6;
+        }
+
+        .btn {
+            padding: 8px 16px;
+            border: none;
+            border-radius: 6px;
+            font-size: 13px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .btn-primary {
+            background: #3182f6;
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: #1c64d8;
+        }
+
+        .btn-secondary {
+            background: #f2f4f6;
+            color: #4e5968;
+        }
+
+        .btn-secondary:hover {
+            background: #e5e8eb;
+        }
+
+        .btn-success {
+            background: #0bc77b;
+            color: white;
+        }
+
+        .btn-danger {
+            background: #f04452;
+            color: white;
+            padding: 4px 8px;
+            font-size: 11px;
+        }
+
+        .btn-small {
+            padding: 6px 12px;
+            font-size: 12px;
+        }
+
+        .btn-container {
+            display: flex;
+            gap: 8px;
+            margin-top: 12px;
+        }
+
+        .management-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+            margin: 12px 0;
+        }
+
+        .management-card {
+            background: #f9fafb;
+            border: 1px solid #e5e8eb;
+            border-radius: 8px;
+            padding: 16px;
+        }
+
+        .management-card h4 {
+            font-size: 13px;
+            font-weight: 600;
+            color: #191f28;
+            margin-bottom: 12px;
+        }
+
+        .schedule-input {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .schedule-input label {
+            font-size: 11px;
+            color: #8b95a1;
+            font-weight: 600;
+        }
+
+        .schedule-input input {
+            border: 1px solid #e5e8eb;
+            border-radius: 4px;
+            padding: 6px 8px;
+            font-size: 12px;
+        }
+
+        .version-list {
+            max-height: 200px;
+            overflow-y: auto;
+        }
+
+        .version-item {
+            background: white;
+            border: 1px solid #e5e8eb;
+            border-radius: 6px;
+            padding: 10px;
+            margin-bottom: 8px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .version-item.active {
+            border-color: #3182f6;
+            background: #f8fbff;
+        }
+
+        .version-info {
+            flex: 1;
+        }
+
+        .version-number {
+            font-size: 12px;
+            font-weight: 600;
+            color: #191f28;
+        }
+
+        .version-date {
+            font-size: 10px;
+            color: #8b95a1;
+        }
+
+        .version-badge {
+            display: inline-block;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-size: 10px;
+            font-weight: 600;
+            background: #0bc77b;
+            color: white;
+        }
+
+        .store-preview {
+            background: #f9fafb;
+            border: 1px solid #e5e8eb;
+            border-radius: 8px;
+            padding: 16px;
+            margin: 12px 0;
+        }
+
+        .store-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 12px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid #e5e8eb;
+        }
+
+        .store-name {
+            font-size: 14px;
+            font-weight: 700;
+            color: #191f28;
+        }
+
+        .price-table-display {
+            background: white;
+            border: 1px solid #e5e8eb;
+            border-radius: 8px;
+            padding: 12px;
+        }
+
+        .price-table-title {
+            font-size: 13px;
+            font-weight: 600;
+            color: #191f28;
+            margin-bottom: 8px;
+        }
+
+        .alert {
+            padding: 10px 12px;
+            border-radius: 6px;
+            font-size: 12px;
+            margin: 12px 0;
+        }
+
+        .alert-success {
+            background: #f0fdf4;
+            color: #0bc77b;
+            border: 1px solid #0bc77b;
+        }
+
+        .alert-info {
+            background: #f8fbff;
+            color: #3182f6;
+            border: 1px solid #3182f6;
+        }
+    </style>
+</head>
+<body>
+    <!-- 헤더 -->
+    <div class="document-header">
+        <div class="logo-container">
+            <img src="https://admin.nofee.team/image/company/logo.svg" alt="NOFEE" class="logo">
+            <div class="doc-meta">
+                <div class="doc-meta-item">작성일: 2025년 10월 11일</div>
+                <div class="doc-meta-item">버전: 0.1 (초안)</div>
+            </div>
+        </div>
+        <h1 class="doc-title">시세표 콘텐츠 유형 추가</h1>
+        <div class="doc-subtitle">판매점 상품 대량 업로드 및 고객 화면 개선 기획안</div>
+    </div>
+
+    <!-- 문서 개요 -->
+    <div class="info-box">
+        <div class="info-item">
+            <div class="info-label">목적</div>
+            <div class="info-value">판매점 상품 업로드 효율화</div>
+        </div>
+        <div class="info-item">
+            <div class="info-label">적용 범위</div>
+            <div class="info-value">노피 어드민 & 동네성지</div>
+        </div>
+        <div class="info-item">
+            <div class="info-label">주요 기능</div>
+            <div class="info-value">시세표 대량 관리</div>
+        </div>
+    </div>
+
+    <!-- 배경 및 목적 -->
+    <div class="section">
+        <div class="section-header">
+            <div class="section-number">1</div>
+            <h2>배경 및 목적</h2>
+        </div>
+
+        <h3>현재 상황</h3>
+        <p>
+            현재 노피 어드민에서는 두 가지 콘텐츠 유형만 지원하고 있습니다:
+        </p>
+        <ul>
+            <li><strong>이벤트 피드:</strong> 하나의 상품을 지정하여 이벤트 가격을 작성, 상품을 한 개씩 업로드</li>
+            <li><strong>일반 피드:</strong> 일반 글과 일반 이미지를 업로드</li>
+        </ul>
+
+        <h3>문제점</h3>
+        <ul>
+            <li>판매점이 여러 상품을 등록하려면 반복적으로 하나씩 업로드해야 함</li>
+            <li>대량의 상품 정보를 효율적으로 관리하기 어려움</li>
+            <li>가격 변동 시 일일이 수정해야 하는 번거로움</li>
+            <li>고객이 매장의 전체 상품 라인업을 한눈에 보기 어려움</li>
+        </ul>
+
+        <h3>해결 방안</h3>
+        <p>
+            <strong>시세표 콘텐츠 유형</strong>을 추가하여 판매점이 엑셀 형식으로 대량의 상품을 쉽게 업로드하고 관리할 수 있도록 합니다.
+            시세표는 동네성지의 각 스토어 메인에 고정 노출되어 고객이 매장의 모든 상품을 한눈에 확인할 수 있습니다.
+        </p>
+    </div>
+
+    <!-- 기존 vs 신규 비교 -->
+    <div class="section">
+        <div class="section-header">
+            <div class="section-number">2</div>
+            <h2>콘텐츠 유형 비교</h2>
+        </div>
+
+        <table class="comparison-table">
+            <thead>
+                <tr>
+                    <th>콘텐츠 유형</th>
+                    <th>업로드 방식</th>
+                    <th>상품 수</th>
+                    <th>노출 위치</th>
+                    <th>주요 용도</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><span class="tag existing">기존</span> 이벤트 피드</td>
+                    <td>개별 상품 입력</td>
+                    <td>1개</td>
+                    <td>피드 타임라인</td>
+                    <td>특가 이벤트 홍보</td>
+                </tr>
+                <tr>
+                    <td><span class="tag existing">기존</span> 일반 피드</td>
+                    <td>텍스트/이미지</td>
+                    <td>-</td>
+                    <td>피드 타임라인</td>
+                    <td>공지사항, 홍보</td>
+                </tr>
+                <tr>
+                    <td><span class="tag new">신규</span> 시세표</td>
+                    <td>엑셀 형식 대량 입력</td>
+                    <td>다수</td>
+                    <td>스토어 메인 고정</td>
+                    <td>전체 상품 라인업 관리</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- 주요 기능 -->
+    <div class="section">
+        <div class="section-header">
+            <div class="section-number">3</div>
+            <h2>주요 기능</h2>
+        </div>
+
+        <div class="feature-card highlight">
+            <div class="feature-title">1. 시세표 입력 기능 (엑셀 형식)</div>
+            <div class="feature-desc">
+                <ul>
+                    <li>엑셀처럼 표 형식으로 여러 상품을 한 번에 입력</li>
+                    <li>상품명, 용량, 통신사, 가입유형, 가격 등을 행 단위로 입력</li>
+                    <li><strong>행 추가/삭제</strong> 버튼으로 상품 행 추가/제거</li>
+                    <li><strong>열 추가/삭제</strong> 기능으로 커스텀 필드 확장 가능</li>
+                    <li>임시저장 기능으로 작업 중간에 저장 가능</li>
+                    <li>직관적인 인라인 편집 (클릭하여 바로 수정)</li>
+                </ul>
+            </div>
+
+            <!-- 프로토타입 1: 시세표 입력 -->
+            <div class="prototype-container">
+                <div class="prototype-header">
+                    <span class="prototype-badge">프로토타입</span>
+                    <span class="prototype-title">시세표 입력 체험하기</span>
+                </div>
+
+                <table class="editable-table" id="priceTable1">
+                    <thead>
+                        <tr>
+                            <th rowspan="3" style="vertical-align: middle;">상품명</th>
+                            <th rowspan="3" style="vertical-align: middle;">용량</th>
+                            <th rowspan="3" style="vertical-align: middle;">월요금</th>
+                            <th colspan="4" style="text-align: center; border-bottom: 1px solid #e5e8eb;">SKT</th>
+                            <th colspan="4" style="text-align: center; border-bottom: 1px solid #e5e8eb;">KT</th>
+                            <th colspan="4" style="text-align: center; border-bottom: 1px solid #e5e8eb;">LG U+</th>
+                            <th rowspan="3" style="vertical-align: middle;">삭제</th>
+                        </tr>
+                        <tr>
+                            <th colspan="2" style="text-align: center; border-bottom: 1px solid #e5e8eb;">공시지원</th>
+                            <th colspan="2" style="text-align: center; border-bottom: 1px solid #e5e8eb;">선택약정</th>
+                            <th colspan="2" style="text-align: center; border-bottom: 1px solid #e5e8eb;">공시지원</th>
+                            <th colspan="2" style="text-align: center; border-bottom: 1px solid #e5e8eb;">선택약정</th>
+                            <th colspan="2" style="text-align: center; border-bottom: 1px solid #e5e8eb;">공시지원</th>
+                            <th colspan="2" style="text-align: center; border-bottom: 1px solid #e5e8eb;">선택약정</th>
+                        </tr>
+                        <tr>
+                            <!-- SKT 공시지원 -->
+                            <th style="font-size: 10px;">번이</th>
+                            <th style="font-size: 10px;">기변</th>
+                            <!-- SKT 선택약정 -->
+                            <th style="font-size: 10px;">번이</th>
+                            <th style="font-size: 10px;">기변</th>
+                            <!-- KT 공시지원 -->
+                            <th style="font-size: 10px;">번이</th>
+                            <th style="font-size: 10px;">기변</th>
+                            <!-- KT 선택약정 -->
+                            <th style="font-size: 10px;">번이</th>
+                            <th style="font-size: 10px;">기변</th>
+                            <!-- LG U+ 공시지원 -->
+                            <th style="font-size: 10px;">번이</th>
+                            <th style="font-size: 10px;">기변</th>
+                            <!-- LG U+ 선택약정 -->
+                            <th style="font-size: 10px;">번이</th>
+                            <th style="font-size: 10px;">기변</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tableBody1">
+                        <tr>
+                            <td>
+                                <select>
+                                    <option disabled>상품 선택</option>
+                                    <option selected>갤럭시 S25</option>
+                                    <option>갤럭시 S25 Ultra</option>
+                                    <option>갤럭시 Z플립7</option>
+                                    <option>갤럭시 Z폴드7</option>
+                                    <option>아이폰 17</option>
+                                    <option>아이폰 17 Pro</option>
+                                    <option>아이폰 17 Pro Max</option>
+                                </select>
+                            </td>
+                            <td style="width: 80px;">
+                                <select>
+                                    <option>128GB</option>
+                                    <option selected>256GB</option>
+                                    <option>512GB</option>
+                                </select>
+                            </td>
+                            <td style="width: 100px;">
+                                <select>
+                                    <option>19,000원</option>
+                                    <option>29,000원</option>
+                                    <option>39,000원</option>
+                                    <option>49,000원</option>
+                                    <option>59,000원</option>
+                                    <option>69,000원</option>
+                                    <option>79,000원</option>
+                                    <option selected>89,000원</option>
+                                    <option>99,000원</option>
+                                    <option>109,000원</option>
+                                    <option>119,000원</option>
+                                </select>
+                            </td>
+                            <!-- SKT 공시지원 -->
+                            <td><input type="text" value="55" placeholder="0"></td>
+                            <td><input type="text" value="60" placeholder="0"></td>
+                            <!-- SKT 선택약정 -->
+                            <td><input type="text" value="45" placeholder="0"></td>
+                            <td><input type="text" value="50" placeholder="0"></td>
+                            <!-- KT 공시지원 -->
+                            <td><input type="text" value="56" placeholder="0"></td>
+                            <td><input type="text" value="61" placeholder="0"></td>
+                            <!-- KT 선택약정 -->
+                            <td><input type="text" value="46" placeholder="0"></td>
+                            <td><input type="text" value="51" placeholder="0"></td>
+                            <!-- LG U+ 공시지원 -->
+                            <td><input type="text" value="55.5" placeholder="0"></td>
+                            <td><input type="text" value="60.5" placeholder="0"></td>
+                            <!-- LG U+ 선택약정 -->
+                            <td><input type="text" value="45.5" placeholder="0"></td>
+                            <td><input type="text" value="50.5" placeholder="0"></td>
+                            <td><button class="btn btn-danger" onclick="deleteRow(this)">삭제</button></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <select>
+                                    <option disabled>상품 선택</option>
+                                    <option>갤럭시 S25</option>
+                                    <option>갤럭시 S25 Ultra</option>
+                                    <option>갤럭시 Z플립7</option>
+                                    <option>갤럭시 Z폴드7</option>
+                                    <option>아이폰 17</option>
+                                    <option selected>아이폰 17 Pro</option>
+                                    <option>아이폰 17 Pro Max</option>
+                                </select>
+                            </td>
+                            <td style="width: 80px;">
+                                <select>
+                                    <option selected>256GB</option>
+                                    <option>512GB</option>
+                                    <option>1TB</option>
+                                </select>
+                            </td>
+                            <td style="width: 100px;">
+                                <select>
+                                    <option>19,000원</option>
+                                    <option>29,000원</option>
+                                    <option>39,000원</option>
+                                    <option>49,000원</option>
+                                    <option>59,000원</option>
+                                    <option>69,000원</option>
+                                    <option>79,000원</option>
+                                    <option>89,000원</option>
+                                    <option>99,000원</option>
+                                    <option selected>109,000원</option>
+                                    <option>119,000원</option>
+                                </select>
+                            </td>
+                            <!-- SKT 공시지원 -->
+                            <td><input type="text" value="69" placeholder="0"></td>
+                            <td><input type="text" value="74" placeholder="0"></td>
+                            <!-- SKT 선택약정 -->
+                            <td><input type="text" value="59" placeholder="0"></td>
+                            <td><input type="text" value="64" placeholder="0"></td>
+                            <!-- KT 공시지원 -->
+                            <td><input type="text" value="70" placeholder="0"></td>
+                            <td><input type="text" value="75" placeholder="0"></td>
+                            <!-- KT 선택약정 -->
+                            <td><input type="text" value="60" placeholder="0"></td>
+                            <td><input type="text" value="65" placeholder="0"></td>
+                            <!-- LG U+ 공시지원 -->
+                            <td><input type="text" value="69.5" placeholder="0"></td>
+                            <td><input type="text" value="74.5" placeholder="0"></td>
+                            <!-- LG U+ 선택약정 -->
+                            <td><input type="text" value="59.5" placeholder="0"></td>
+                            <td><input type="text" value="64.5" placeholder="0"></td>
+                            <td><button class="btn btn-danger" onclick="deleteRow(this)">삭제</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="btn-container">
+                    <button class="btn btn-primary btn-small" onclick="addRow()">+ 행 추가</button>
+                    <button class="btn btn-secondary btn-small" onclick="saveDraft()">임시저장</button>
+                    <button class="btn btn-success btn-small" onclick="publishTable()">시세표 발행</button>
+                </div>
+
+                <div id="saveAlert1" class="alert alert-success" style="display: none;">
+                    ✓ 임시저장되었습니다.
+                </div>
+            </div>
+        </div>
+
+        <div class="feature-card highlight">
+            <div class="feature-title">2. 시세표 관리 기능</div>
+            <div class="feature-desc">
+                <ul>
+                    <li><strong>상품 생성:</strong> 새로운 상품 추가</li>
+                    <li><strong>상품 삭제:</strong> 판매 중단된 상품 제거</li>
+                    <li><strong>상품 수정:</strong> 가격, 재고 등 정보 업데이트</li>
+                    <li><strong>일정 등록:</strong> 시세표 공개/종료 일정 설정</li>
+                    <li><strong>노출 관리:</strong> 시세표 공개/비공개 전환</li>
+                </ul>
+            </div>
+
+            <!-- 프로토타입 2: 관리 기능 -->
+            <div class="prototype-container">
+                <div class="prototype-header">
+                    <span class="prototype-badge">프로토타입</span>
+                    <span class="prototype-title">시세표 관리 체험하기</span>
+                </div>
+
+                <div class="management-grid">
+                    <div class="management-card">
+                        <h4>📅 일정 설정</h4>
+                        <div class="schedule-input">
+                            <label>공개 시작일시</label>
+                            <input type="datetime-local" value="2025-10-15T09:00">
+                            <label>공개 종료일시</label>
+                            <input type="datetime-local" value="2025-10-31T23:59">
+                        </div>
+                    </div>
+
+                    <div class="management-card">
+                        <h4>🎯 노출 관리</h4>
+                        <div style="margin-top: 12px;">
+                            <label style="display: flex; align-items: center; gap: 8px; margin-bottom: 12px;">
+                                <input type="radio" name="visibility" value="public" checked>
+                                <span style="font-size: 12px; color: #191f28;">공개 (스토어에 노출)</span>
+                            </label>
+                            <label style="display: flex; align-items: center; gap: 8px;">
+                                <input type="radio" name="visibility" value="private">
+                                <span style="font-size: 12px; color: #191f28;">비공개 (스토어에 숨김)</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="btn-container">
+                    <button class="btn btn-primary btn-small" onclick="saveSettings()">설정 저장</button>
+                </div>
+
+                <div id="saveAlert2" class="alert alert-success" style="display: none;">
+                    ✓ 설정이 저장되었습니다.
+                </div>
+            </div>
+        </div>
+
+        <div class="feature-card highlight">
+            <div class="feature-title">3. 버전 관리 시스템</div>
+            <div class="feature-desc">
+                <ul>
+                    <li>시세표 수정 시 자동으로 새 버전 생성</li>
+                    <li>고객이 구매한 상품의 시세표 버전 추적</li>
+                    <li>이전 버전 조회 및 복원 가능</li>
+                    <li>버전별 변경 이력 확인</li>
+                </ul>
+            </div>
+
+            <!-- 프로토타입 3: 버전 관리 -->
+            <div class="prototype-container">
+                <div class="prototype-header">
+                    <span class="prototype-badge">프로토타입</span>
+                    <span class="prototype-title">버전 관리 체험하기</span>
+                </div>
+
+                <div class="version-list">
+                    <div class="version-item active">
+                        <div class="version-info">
+                            <div class="version-number">v1.3 <span class="version-badge">현재</span></div>
+                            <div class="version-date">2025-10-11 14:30 · 3개 상품 수정</div>
+                        </div>
+                        <button class="btn btn-secondary btn-small">보기</button>
+                    </div>
+                    <div class="version-item">
+                        <div class="version-info">
+                            <div class="version-number">v1.2</div>
+                            <div class="version-date">2025-10-10 09:15 · 2개 상품 추가</div>
+                        </div>
+                        <div style="display: flex; gap: 6px;">
+                            <button class="btn btn-secondary btn-small" onclick="viewVersion('1.2')">보기</button>
+                            <button class="btn btn-primary btn-small" onclick="restoreVersion('1.2')">복원</button>
+                        </div>
+                    </div>
+                    <div class="version-item">
+                        <div class="version-info">
+                            <div class="version-number">v1.1</div>
+                            <div class="version-date">2025-10-08 16:45 · 가격 업데이트</div>
+                        </div>
+                        <div style="display: flex; gap: 6px;">
+                            <button class="btn btn-secondary btn-small" onclick="viewVersion('1.1')">보기</button>
+                            <button class="btn btn-primary btn-small" onclick="restoreVersion('1.1')">복원</button>
+                        </div>
+                    </div>
+                    <div class="version-item">
+                        <div class="version-info">
+                            <div class="version-number">v1.0</div>
+                            <div class="version-date">2025-10-05 10:00 · 최초 생성</div>
+                        </div>
+                        <div style="display: flex; gap: 6px;">
+                            <button class="btn btn-secondary btn-small" onclick="viewVersion('1.0')">보기</button>
+                            <button class="btn btn-primary btn-small" onclick="restoreVersion('1.0')">복원</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="saveAlert3" class="alert alert-info" style="display: none;">
+                    ℹ 이전 버전으로 복원하면 새로운 버전이 생성됩니다.
+                </div>
+            </div>
+        </div>
+
+        <div class="feature-card">
+            <div class="feature-title">4. 동네성지 스토어 노출</div>
+            <div class="feature-desc">
+                <ul>
+                    <li>각 매장의 스토어 메인에 시세표 고정 노출</li>
+                    <li>고객이 매장 방문 시 전체 상품을 한눈에 확인</li>
+                    <li>시세표에서 바로 상품 상세로 이동 가능</li>
+                </ul>
+            </div>
+
+            <!-- 프로토타입 4: 스토어 노출 -->
+            <div class="prototype-container">
+                <div class="prototype-header">
+                    <span class="prototype-badge">프로토타입</span>
+                    <span class="prototype-title">고객 화면 미리보기 (동네성지 스토어)</span>
+                </div>
+
+                <div class="store-preview">
+                    <div class="store-header">
+                        <div class="store-name">📱 폰마켓 강남점</div>
+                    </div>
+
+                    <div class="price-table-display">
+                        <div class="price-table-title">🏷️ 10월 시세표 (v1.3)</div>
+
+                        <table class="comparison-table" style="margin-top: 12px; font-size: 11px;">
+                            <thead>
+                                <tr>
+                                    <th rowspan="3" style="vertical-align: middle;">상품명</th>
+                                    <th rowspan="3" style="vertical-align: middle;">용량</th>
+                                    <th rowspan="3" style="vertical-align: middle;">월요금</th>
+                                    <th colspan="4" style="text-align: center; border-bottom: 1px solid #e5e8eb;">SKT</th>
+                                    <th colspan="4" style="text-align: center; border-bottom: 1px solid #e5e8eb;">KT</th>
+                                    <th colspan="4" style="text-align: center; border-bottom: 1px solid #e5e8eb;">LG U+</th>
+                                </tr>
+                                <tr>
+                                    <th colspan="2" style="text-align: center; border-bottom: 1px solid #e5e8eb;">공시지원</th>
+                                    <th colspan="2" style="text-align: center; border-bottom: 1px solid #e5e8eb;">선택약정</th>
+                                    <th colspan="2" style="text-align: center; border-bottom: 1px solid #e5e8eb;">공시지원</th>
+                                    <th colspan="2" style="text-align: center; border-bottom: 1px solid #e5e8eb;">선택약정</th>
+                                    <th colspan="2" style="text-align: center; border-bottom: 1px solid #e5e8eb;">공시지원</th>
+                                    <th colspan="2" style="text-align: center; border-bottom: 1px solid #e5e8eb;">선택약정</th>
+                                </tr>
+                                <tr>
+                                    <!-- SKT 공시지원 -->
+                                    <th style="font-size: 9px;">번이</th>
+                                    <th style="font-size: 9px;">기변</th>
+                                    <!-- SKT 선택약정 -->
+                                    <th style="font-size: 9px;">번이</th>
+                                    <th style="font-size: 9px;">기변</th>
+                                    <!-- KT 공시지원 -->
+                                    <th style="font-size: 9px;">번이</th>
+                                    <th style="font-size: 9px;">기변</th>
+                                    <!-- KT 선택약정 -->
+                                    <th style="font-size: 9px;">번이</th>
+                                    <th style="font-size: 9px;">기변</th>
+                                    <!-- LG U+ 공시지원 -->
+                                    <th style="font-size: 9px;">번이</th>
+                                    <th style="font-size: 9px;">기변</th>
+                                    <!-- LG U+ 선택약정 -->
+                                    <th style="font-size: 9px;">번이</th>
+                                    <th style="font-size: 9px;">기변</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr style="cursor: pointer;" onclick="alert('상품 상세 페이지로 이동합니다!')">
+                                    <td style="font-weight: 600;">갤럭시 S25</td>
+                                    <td>256GB</td>
+                                    <td style="font-size: 10px;">8.9만원</td>
+                                    <!-- SKT -->
+                                    <td style="color: #f04452; font-weight: 600;">55</td><td>60</td>
+                                    <td style="color: #3182f6; font-weight: 600;">45</td><td>50</td>
+                                    <!-- KT -->
+                                    <td>56</td><td>61</td>
+                                    <td>46</td><td>51</td>
+                                    <!-- LG U+ -->
+                                    <td>55.5</td><td>60.5</td>
+                                    <td>45.5</td><td>50.5</td>
+                                </tr>
+                                <tr style="cursor: pointer;" onclick="alert('상품 상세 페이지로 이동합니다!')">
+                                    <td style="font-weight: 600;">아이폰 17 Pro</td>
+                                    <td>256GB</td>
+                                    <td style="font-size: 10px;">10.9만원</td>
+                                    <!-- SKT -->
+                                    <td>69</td><td>74</td>
+                                    <td style="color: #3182f6; font-weight: 600;">59</td><td>64</td>
+                                    <!-- KT -->
+                                    <td style="color: #f04452; font-weight: 600;">70</td><td>75</td>
+                                    <td>60</td><td>65</td>
+                                    <!-- LG U+ -->
+                                    <td>69.5</td><td>74.5</td>
+                                    <td>59.5</td><td>64.5</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <div class="alert alert-info" style="margin-top: 12px;">
+                            💡 상품을 클릭하면 상세 페이지로 이동합니다. 가격 단위: 만원
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 기대 효과 -->
+    <div class="section">
+        <div class="section-header">
+            <div class="section-number">4</div>
+            <h2>기대 효과</h2>
+        </div>
+
+        <ul>
+            <li><strong>판매점 업무 효율화:</strong> 한 번에 여러 상품을 등록하여 작업 시간 대폭 단축</li>
+            <li><strong>고객 편의성 향상:</strong> 매장의 모든 상품을 한 페이지에서 비교 가능</li>
+            <li><strong>데이터 일관성:</strong> 통일된 형식으로 상품 정보 관리</li>
+            <li><strong>구매 추적:</strong> 고객이 어떤 버전의 시세표에서 구매했는지 정확히 파악</li>
+            <li><strong>가격 투명성:</strong> 실시간 시세표로 NO FEE 가치 실현</li>
+        </ul>
+    </div>
+
+    <!-- 다음 단계 -->
+    <div class="section">
+        <div class="section-header">
+            <div class="section-number">5</div>
+            <h2>다음 단계</h2>
+        </div>
+
+        <div class="key-box" style="border-left-color: #ffb300;">
+            <strong>논의 필요 사항</strong>
+            <p>
+                - 시세표 입력 UI/UX 상세 설계<br>
+                - 버전 관리 정책 (자동 생성 기준, 보관 기간 등)<br>
+                - 스토어 메인 노출 위치 및 디자인<br>
+                - CSV 업로드 템플릿 형식<br>
+                - 상품 자동 등록 로직
+            </p>
+        </div>
+    </div>
+
+    <script>
+        // 프로토타입 1: 행 추가 기능
+        function addRow() {
+            const tbody = document.getElementById('tableBody1');
+            const newRow = document.createElement('tr');
+            newRow.innerHTML = `
+                <td>
+                    <select>
+                        <option selected disabled>상품 선택</option>
+                        <option>갤럭시 S25</option>
+                        <option>갤럭시 S25 Ultra</option>
+                        <option>갤럭시 Z플립7</option>
+                        <option>갤럭시 Z폴드7</option>
+                        <option>아이폰 17</option>
+                        <option>아이폰 17 Pro</option>
+                        <option>아이폰 17 Pro Max</option>
+                    </select>
+                </td>
+                <td style="width: 80px;">
+                    <select>
+                        <option>128GB</option>
+                        <option selected>256GB</option>
+                        <option>512GB</option>
+                        <option>1TB</option>
+                    </select>
+                </td>
+                <td style="width: 100px;">
+                    <select>
+                        <option>19,000원</option>
+                        <option>29,000원</option>
+                        <option>39,000원</option>
+                        <option>49,000원</option>
+                        <option>59,000원</option>
+                        <option>69,000원</option>
+                        <option>79,000원</option>
+                        <option selected>89,000원</option>
+                        <option>99,000원</option>
+                        <option>109,000원</option>
+                        <option>119,000원</option>
+                    </select>
+                </td>
+                <!-- SKT 공시지원 -->
+                <td><input type="text" placeholder="0"></td>
+                <td><input type="text" placeholder="0"></td>
+                <!-- SKT 선택약정 -->
+                <td><input type="text" placeholder="0"></td>
+                <td><input type="text" placeholder="0"></td>
+                <!-- KT 공시지원 -->
+                <td><input type="text" placeholder="0"></td>
+                <td><input type="text" placeholder="0"></td>
+                <!-- KT 선택약정 -->
+                <td><input type="text" placeholder="0"></td>
+                <td><input type="text" placeholder="0"></td>
+                <!-- LG U+ 공시지원 -->
+                <td><input type="text" placeholder="0"></td>
+                <td><input type="text" placeholder="0"></td>
+                <!-- LG U+ 선택약정 -->
+                <td><input type="text" placeholder="0"></td>
+                <td><input type="text" placeholder="0"></td>
+                <td><button class="btn btn-danger" onclick="deleteRow(this)">삭제</button></td>
+            `;
+            tbody.appendChild(newRow);
+        }
+
+        // 행 삭제 기능
+        function deleteRow(btn) {
+            const row = btn.closest('tr');
+            row.remove();
+        }
+
+        // 임시저장 기능
+        function saveDraft() {
+            const alert = document.getElementById('saveAlert1');
+            alert.style.display = 'block';
+            setTimeout(() => {
+                alert.style.display = 'none';
+            }, 3000);
+        }
+
+        // 시세표 발행 기능
+        function publishTable() {
+            if (confirm('시세표를 발행하시겠습니까?\n발행 후 동네성지 스토어에 노출됩니다.')) {
+                alert('✓ 시세표가 발행되었습니다! (v1.4)');
+            }
+        }
+
+        // 프로토타입 2: 설정 저장 기능
+        function saveSettings() {
+            const alert = document.getElementById('saveAlert2');
+            alert.style.display = 'block';
+            setTimeout(() => {
+                alert.style.display = 'none';
+            }, 3000);
+        }
+
+        // 프로토타입 3: 버전 보기 기능
+        function viewVersion(version) {
+            alert(`v${version} 시세표를 조회합니다.`);
+        }
+
+        // 버전 복원 기능
+        function restoreVersion(version) {
+            if (confirm(`v${version}으로 복원하시겠습니까?\n새로운 버전이 생성됩니다.`)) {
+                alert(`✓ v${version}이 복원되었습니다! 새 버전 v1.4가 생성되었습니다.`);
+            }
+        }
+    </script>
+</body>
+</html>

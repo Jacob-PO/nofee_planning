@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>견적신청 10분 룰 - 노피 알림톡 시스템</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        @media print {
+            @page {
+                size: A4;
+                margin: 0;
+            }
+            body {
+                padding: 15mm;
+            }
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Pretendard', 'Malgun Gothic', sans-serif;
+            max-width: 210mm;
+            margin: 0 auto;
+            padding: 15mm;
+            background: #ffffff;
+            color: #191f28;
+            line-height: 1.6;
+            font-size: 14px;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .document-header {
+            border-bottom: 2px solid #3182f6;
+            padding-bottom: 24px;
+            margin-bottom: 32px;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 16px;
+        }
+
+        .logo {
+            height: 32px;
+        }
+
+        .doc-meta {
+            text-align: right;
+            font-size: 11px;
+            color: #8b95a1;
+        }
+
+        .doc-meta-item {
+            margin-bottom: 4px;
+        }
+
+        .doc-title {
+            font-size: 28px;
+            font-weight: 700;
+            color: #191f28;
+            margin-bottom: 12px;
+            letter-spacing: -0.5px;
+        }
+
+        .doc-subtitle {
+            font-size: 16px;
+            color: #4e5968;
+            font-weight: 400;
+        }
+
+        .info-box {
+            background: #f9fafb;
+            border: 1px solid #e5e8eb;
+            border-radius: 12px;
+            padding: 20px;
+            margin: 24px 0;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 24px;
+        }
+
+        .info-item {
+        }
+
+        .info-label {
+            font-size: 12px;
+            color: #8b95a1;
+            margin-bottom: 8px;
+        }
+
+        .info-value {
+            font-size: 16px;
+            color: #191f28;
+            font-weight: 600;
+        }
+
+        .section {
+            margin-bottom: 32px;
+        }
+
+        .section-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 16px;
+            padding-bottom: 12px;
+            border-bottom: 1px solid #e5e8eb;
+        }
+
+        .section-number {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 32px;
+            height: 32px;
+            background: #3182f6;
+            color: white;
+            border-radius: 8px;
+            font-weight: 700;
+            font-size: 16px;
+            margin-right: 12px;
+        }
+
+        h2 {
+            font-size: 20px;
+            font-weight: 700;
+            color: #191f28;
+            letter-spacing: -0.3px;
+            margin: 0;
+        }
+
+        p {
+            color: #4e5968;
+            line-height: 1.7;
+            margin-bottom: 12px;
+            font-size: 14px;
+        }
+
+        .flow-container {
+            margin: 16px 0;
+            padding: 20px;
+            background: #f9fafb;
+            border-radius: 12px;
+            border: 1px solid #e5e8eb;
+        }
+
+        .flow-step {
+            background: white;
+            border: 2px solid #e5e8eb;
+            border-radius: 12px;
+            padding: 18px;
+            margin: 12px 0;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+        }
+
+        .flow-step.start {
+            background: linear-gradient(135deg, #3182f6 0%, #1c64d8 100%);
+            color: white;
+            border: none;
+        }
+
+        .flow-step.start .flow-title,
+        .flow-step.start .flow-desc {
+            color: white;
+        }
+
+        .flow-step.process {
+            border: 2px solid #3182f6;
+        }
+
+        .flow-step.decision {
+            background: #fffbeb;
+            border: 2px solid #ffb300;
+        }
+
+        .flow-step.success {
+            background: #f0fdf4;
+            border: 2px solid #0bc77b;
+        }
+
+        .flow-step.fail {
+            background: #fef2f2;
+            border: 2px solid #f04452;
+        }
+
+        .flow-time {
+            display: inline-block;
+            background: #191f28;
+            color: white;
+            padding: 4px 12px;
+            border-radius: 6px;
+            font-size: 11px;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        .flow-step.start .flow-time {
+            background: rgba(255, 255, 255, 0.25);
+        }
+
+        .flow-title {
+            font-size: 16px;
+            font-weight: 700;
+            color: #191f28;
+            margin-bottom: 8px;
+        }
+
+        .flow-desc {
+            font-size: 13px;
+            color: #4e5968;
+            line-height: 1.6;
+        }
+
+        .flow-arrow {
+            text-align: center;
+            font-size: 20px;
+            color: #3182f6;
+            margin: 8px 0;
+        }
+
+        .flow-branches {
+            display: flex;
+            gap: 16px;
+            margin: 16px 0;
+        }
+
+        .flow-branch {
+            flex: 1;
+        }
+
+        .branch-label {
+            text-align: center;
+            font-size: 14px;
+            font-weight: 700;
+            margin: 12px 0;
+            padding: 8px;
+            border-radius: 8px;
+        }
+
+        .branch-label.yes {
+            color: #0bc77b;
+            background: #f0fdf4;
+        }
+
+        .branch-label.no {
+            color: #f04452;
+            background: #fef2f2;
+        }
+
+        .message-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+            margin: 16px 0;
+        }
+
+        .message-card {
+            background: white;
+            border: 1px solid #e5e8eb;
+            border-radius: 12px;
+            padding: 16px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+        }
+
+        .message-header {
+            font-size: 12px;
+            color: #3182f6;
+            font-weight: 600;
+            margin-bottom: 12px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid #f2f4f6;
+        }
+
+        .message-body {
+            background: #f9fafb;
+            border-radius: 8px;
+            padding: 14px;
+            font-size: 12px;
+            line-height: 1.6;
+            color: #191f28;
+            white-space: pre-line;
+        }
+
+        ul {
+            margin: 12px 0;
+            padding-left: 20px;
+        }
+
+        li {
+            color: #4e5968;
+            margin: 8px 0;
+            line-height: 1.7;
+            font-size: 14px;
+        }
+
+        li strong {
+            color: #191f28;
+        }
+
+        .key-box {
+            background: #f9fafb;
+            border: 1px solid #e5e8eb;
+            border-left: 4px solid #3182f6;
+            border-radius: 8px;
+            padding: 16px;
+            margin: 16px 0;
+        }
+
+        .key-box strong {
+            display: block;
+            margin-bottom: 8px;
+            color: #191f28;
+            font-size: 14px;
+        }
+
+        .key-box p {
+            margin: 0;
+            color: #4e5968;
+            font-size: 13px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 헤더 -->
+    <div class="document-header">
+        <div class="logo-container">
+            <img src="https://admin.nofee.team/image/company/logo.svg" alt="NOFEE" class="logo">
+            <div class="doc-meta">
+                <div class="doc-meta-item">작성일: 2025년 10월 10일</div>
+                <div class="doc-meta-item">버전: 1.0</div>
+            </div>
+        </div>
+        <h1 class="doc-title">견적신청 10분 룰</h1>
+        <div class="doc-subtitle">알림톡 자동화 시스템 기획안</div>
+    </div>
+
+    <!-- 문서 개요 -->
+    <div class="info-box">
+        <div class="info-item">
+            <div class="info-label">목적</div>
+            <div class="info-value">진성 고객 필터링 및 전환율 향상</div>
+        </div>
+        <div class="info-item">
+            <div class="info-label">적용 범위</div>
+            <div class="info-value">전체 견적신청 프로세스</div>
+        </div>
+        <div class="info-item">
+            <div class="info-label">예상 효과</div>
+            <div class="info-value">고객 전환율 70% 이상</div>
+        </div>
+    </div>
+
+    <!-- 핵심 아이디어 -->
+    <div class="section">
+        <div class="section-header">
+            <div class="section-number">1</div>
+            <h2>핵심 아이디어</h2>
+        </div>
+        <p>
+            견적을 신청한 고객이 <strong>10분 안에 개통정보를 입력하지 않으면 자동으로 취소</strong>됩니다.
+            이를 통해 진짜 가입 의사가 있는 고객만을 효과적으로 필터링할 수 있습니다.
+        </p>
+    </div>
+
+    <!-- 전체 플로우 -->
+    <div class="section">
+        <div class="section-header">
+            <div class="section-number">2</div>
+            <h2>전체 프로세스 흐름도</h2>
+        </div>
+
+        <div class="flow-container">
+            <div class="flow-step start">
+                <div class="flow-time">시작</div>
+                <div class="flow-title">고객 견적신청</div>
+                <div class="flow-desc">고객이 견적신청 버튼을 클릭하면 10분 타이머가 시작됩니다</div>
+            </div>
+
+            <div class="flow-arrow">↓</div>
+
+            <div class="flow-step process">
+                <div class="flow-time">5분 경과</div>
+                <div class="flow-title">알림톡 자동 발송</div>
+                <div class="flow-desc">5분 안에 개통정보를 입력하지 않으면 견적이 자동 취소되며, 24시간 동안 같은 조건으로 재신청할 수 없습니다</div>
+            </div>
+
+            <div class="flow-arrow">↓</div>
+
+            <div class="flow-step decision">
+                <div class="flow-time">10분 경과</div>
+                <div class="flow-title">개통정보 입력 여부 확인</div>
+                <div class="flow-desc">시스템이 개통정보 입력 완료 여부를 확인합니다</div>
+            </div>
+
+            <div class="flow-branches">
+                <div class="flow-branch">
+                    <div class="branch-label no">미입력</div>
+                    <div class="flow-arrow">↓</div>
+                    <div class="flow-step fail">
+                        <div class="flow-title">견적 자동 취소</div>
+                        <div class="flow-desc">
+                            • 견적신청 취소 처리<br>
+                            • 고객에게 취소 알림톡 발송<br>
+                            • 24시간 재신청 차단 적용<br>
+                            • 판매점에 알림 미발송
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flow-branch">
+                    <div class="branch-label yes">입력 완료</div>
+                    <div class="flow-arrow">↓</div>
+                    <div class="flow-step success">
+                        <div class="flow-title">견적 정상 처리</div>
+                        <div class="flow-desc">
+                            • 판매점에 고객 정보 전달<br>
+                            • 판매점에 알림톡 발송<br>
+                            • 상담사 연락 프로세스 시작
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="key-box" style="border-left-color: #ffb300;">
+            <strong>핵심 원칙</strong>
+            <p>판매점에는 10분 안에 개통정보를 완전히 입력한 고객의 정보만 전달됩니다. 이를 통해 판매점은 진성 고객에게만 집중할 수 있습니다.</p>
+        </div>
+    </div>
+
+    <!-- 알림톡 메시지 -->
+    <div class="section">
+        <div class="section-header">
+            <div class="section-number">3</div>
+            <h2>알림톡 메시지 템플릿</h2>
+        </div>
+
+        <div class="message-grid">
+            <div class="message-card">
+                <div class="message-header">5분 경과 시 발송 (고객)</div>
+                <div class="message-body">안녕하세요, 홍길동님!
+
+노피 견적신청이 접수되었습니다.
+
+견적 처리를 위해 개통정보를 입력해주세요.
+남은 시간: 5분
+
+5분 이내 미입력 시 견적이 자동 취소되며,
+24시간 동안 같은 조건으로 재신청할 수 없습니다.
+
+[개통정보 입력하기]</div>
+            </div>
+
+            <div class="message-card">
+                <div class="message-header">10분 미입력 시 발송 (고객)</div>
+                <div class="message-body">안녕하세요, 홍길동님.
+
+견적신청이 자동 취소되었습니다.
+
+취소 사유: 10분 이내 개통정보 미입력
+재신청 가능: 2025.10.11 14:30
+
+동일한 조건으로 24시간 이내 재신청이 제한됩니다.
+
+[다른 상품 보기]</div>
+            </div>
+
+            <div class="message-card">
+                <div class="message-header">입력 완료 시 발송 (판매점)</div>
+                <div class="message-body">[노피] 신규 견적이 접수되었습니다.
+
+고객명: 홍길동
+연락처: 010-1234-5678
+상품: 5G 프리미어 에센셜
+통신사: SKT
+
+개통정보 입력 완료
+지금 바로 상담 진행해주세요!
+
+[견적 상세보기]</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 기대 효과 -->
+    <div class="section">
+        <div class="section-header">
+            <div class="section-number">4</div>
+            <h2>기대 효과</h2>
+        </div>
+
+        <ul>
+            <li><strong>고객 전환율 향상:</strong> 5분 알림톡을 통한 적시 리마인드로 전환율을 높입니다.</li>
+            <li><strong>진성 고객 필터링:</strong> 10분 안에 개통정보를 입력한 고객은 실제 가입 의사가 있는 고객입니다.</li>
+            <li><strong>판매점 업무 효율화:</strong> 개통정보가 준비된 고객에게만 연락하여 업무 효율을 높입니다.</li>
+            <li><strong>시스템 최적화:</strong> 미완료 견적이 자동으로 정리되어 데이터베이스가 깨끗하게 유지됩니다.</li>
+        </ul>
+    </div>
+</body>
+</html>
