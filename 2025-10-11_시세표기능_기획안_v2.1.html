@@ -3280,52 +3280,68 @@
                 return false;
             }
 
-            // 입력 테이블의 모든 행을 순회
-            const inputRows = inputTableBody.querySelectorAll('tr');
-            inputRows.forEach((inputRow, rowIndex) => {
-                const imageRow = imageTableBody.querySelectorAll('tr')[rowIndex];
-                if (!imageRow) return;
+            // tbody 내용을 완전히 비우고 재생성
+            imageTableBody.innerHTML = '';
 
-                // 상품명 (0번 셀)
-                const nameInput = inputRow.cells[0].querySelector('input');
-                if (nameInput) {
-                    imageRow.cells[0].textContent = nameInput.value;
-                }
+            // 입력 테이블의 모든 행을 순회하며 이미지 샘플 테이블 생성
+            const inputRows = inputTableBody.querySelectorAll('tr[data-row-index]');
+            inputRows.forEach((inputRow) => {
+                const newRow = document.createElement('tr');
 
-                // 용량 (1번 셀)
-                const capacityInput = inputRow.cells[1].querySelector('input');
-                if (capacityInput) {
-                    imageRow.cells[1].textContent = capacityInput.value;
-                }
+                // 상품명
+                const nameInput = inputRow.querySelector('input[data-col="name"]');
+                const nameCell = document.createElement('td');
+                nameCell.style.cssText = 'padding: 18px 14px; text-align: left; font-weight: 800; color: #191f28; font-size: 16px; border-right: 1px solid #f1f3f5; border-bottom: 1px solid #e9ecef; white-space: nowrap; letter-spacing: -0.5px; background: white;';
+                nameCell.textContent = nameInput ? nameInput.value : '';
+                newRow.appendChild(nameCell);
 
-                // 월요금 (2번 셀)
-                const planInput = inputRow.cells[2].querySelector('input');
-                if (planInput) {
-                    imageRow.cells[2].textContent = planInput.value;
-                }
+                // 용량
+                const capacityInput = inputRow.querySelector('input[data-col="capacity"]');
+                const capacityCell = document.createElement('td');
+                capacityCell.style.cssText = 'padding: 18px 12px; text-align: center; color: #495057; font-weight: 700; font-size: 14px; border-right: 1px solid #adb5bd; border-bottom: 1px solid #e9ecef; letter-spacing: -0.3px; background: white;';
+                capacityCell.textContent = capacityInput ? capacityInput.value : '';
+                newRow.appendChild(capacityCell);
 
-                // 가격 셀들 (3번~14번 셀, 총 12개)
+                // 월요금
+                const planInput = inputRow.querySelector('input[data-col="plan"]');
+                const planCell = document.createElement('td');
+                planCell.style.cssText = 'padding: 18px 12px; text-align: center; color: #495057; font-weight: 700; font-size: 14px; border-right: 1px solid #adb5bd; border-bottom: 1px solid #e9ecef; letter-spacing: -0.3px; background: white;';
+                planCell.textContent = planInput ? planInput.value : '';
+                newRow.appendChild(planCell);
+
+                // 가격 셀들 (SKT, KT, LG U+)
+                const backgrounds = [
+                    '#fff9f5', '#fff9f5', '#fff9f5', '#fff9f5',  // SKT
+                    '#fffbf5', '#fffbf5', '#fffbf5', '#fffbf5',  // KT
+                    '#fff8fb', '#fff8fb', '#fff8fb', '#fff8fb'   // LG U+
+                ];
+                const borders = [
+                    '1px solid #e9ecef', '1px solid #e9ecef', '1px solid #e9ecef', '1px solid #adb5bd',  // SKT
+                    '1px solid #e9ecef', '1px solid #e9ecef', '1px solid #e9ecef', '1px solid #adb5bd',  // KT
+                    '1px solid #e9ecef', '1px solid #e9ecef', '1px solid #e9ecef', '1px solid #e9ecef'   // LG U+
+                ];
+
                 for (let colIndex = 3; colIndex <= 14; colIndex++) {
-                    const priceInput = inputRow.cells[colIndex]?.querySelector('input');
-                    const imageCell = imageRow.cells[colIndex];
+                    const priceInput = inputRow.querySelector(`input[data-col="${colIndex}"]`);
+                    const priceCell = document.createElement('td');
+                    const value = priceInput ? priceInput.value : '';
 
-                    if (priceInput && imageCell) {
-                        const value = priceInput.value;
+                    const bgIndex = colIndex - 3;
+                    const borderRight = borders[bgIndex];
+                    const background = backgrounds[bgIndex];
 
-                        // 빈 값이나 "-"는 그레이 스타일로
-                        if (!value || value === '-' || value.trim() === '') {
-                            imageCell.textContent = '-';
-                            imageCell.style.color = '#adb5bd';
-                            imageCell.style.fontWeight = '500';
-                            imageCell.style.fontSize = '16px';
-                        } else {
-                            imageCell.textContent = value;
-                            imageCell.style.color = '#191f28';
-                            imageCell.style.fontWeight = '900';
-                            imageCell.style.fontSize = '18px';
-                        }
+                    // 빈 값이나 "-"는 그레이 스타일로
+                    if (!value || value === '-' || value.trim() === '') {
+                        priceCell.style.cssText = `padding: 18px 12px; text-align: center; color: #adb5bd; font-weight: 500; font-size: 16px; border-right: ${borderRight}; border-bottom: 1px solid #e9ecef; background: ${background};`;
+                        priceCell.textContent = '-';
+                    } else {
+                        priceCell.style.cssText = `padding: 18px 12px; text-align: center; color: #191f28; font-weight: 900; font-size: 18px; border-right: ${borderRight}; border-bottom: 1px solid #e9ecef; letter-spacing: -0.8px; background: ${background};`;
+                        priceCell.textContent = value;
                     }
+                    newRow.appendChild(priceCell);
                 }
+
+                imageTableBody.appendChild(newRow);
             });
 
             return true;
@@ -3518,6 +3534,9 @@
 
         // 페이지 로드 시 초기화
         document.addEventListener('DOMContentLoaded', function() {
+            // 이미지 샘플 자동 동기화
+            syncAllDataToImageSample();
+            // 모바일 테이블 초기화
             initializeMobileTable();
         });
 
