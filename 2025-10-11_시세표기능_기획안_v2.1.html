@@ -1179,8 +1179,8 @@
         <div class="logo-container">
             <img src="https://admin.nofee.team/image/company/logo.svg" alt="NOFEE" class="logo">
             <div class="doc-meta">
-                <div class="doc-meta-item">업데이트: 2025년 10월 11일 15:45 (KST)</div>
-                <div class="doc-meta-item">버전: v2.1</div>
+                <div class="doc-meta-item">업데이트: 2025년 10월 13일 18:30 (KST)</div>
+                <div class="doc-meta-item">버전: v2.2</div>
             </div>
         </div>
         <h1 class="doc-title">시세표 콘텐츠 유형 추가</h1>
@@ -1910,50 +1910,87 @@
         <div class="feature-card highlight">
             <div class="feature-title">2. 모바일 고객 화면</div>
             <div class="feature-desc">
-                <ul>
-                    <li><strong>탭 구조 개편:</strong> 홈, 시세표, 후기 3개 탭으로 구성</li>
-                    <li><strong>홈 탭:</strong> 기존 소식 탭의 기능을 흡수하여 "우리매장 소식" 섹션으로 통합</li>
-                    <li><strong>시세표 탭:</strong> 전용 시세표 화면으로 분리하여 집중도 향상</li>
-                    <li>모바일 최적화된 카드형 레이아웃</li>
-                    <li><strong>용량 선택 드롭다운:</strong> 동일 기기의 여러 용량 옵션 선택 가능 (단일 옵션인 경우 드롭다운 미표시)</li>
-                    <li><strong>요금제 선택 드롭다운:</strong> 월요금 옵션 선택 가능 (단일 옵션인 경우 드롭다운 미표시)</li>
-                    <li><strong>실시간 가격 변동:</strong> 용량/요금제 선택 시 통신사별 가격 자동 업데이트</li>
-                    <li>통신사별 가격 한눈에 비교 가능</li>
-                    <li><strong>인터랙티브 가격 선택:</strong> 클릭 한 번으로 원하는 옵션 선택</li>
-                    <li><strong>선택 정보 명확 표시:</strong> 통신사, 가입유형, 가격이 실시간으로 표시</li>
-                    <li><strong>직관적인 피드백:</strong> 선택한 항목은 파란색으로 하이라이트되고 체크마크 표시</li>
-                    <li>상품 이미지로 시각적 인지성 향상</li>
-                    <li><strong>소수점 없는 정수 가격:</strong> 55만, 60만 등 명확한 정수로만 표시</li>
-                    <li>간편한 구매 신청 플로우</li>
-                </ul>
 
-                <div class="key-box" style="margin-top: 16px; background: #fff9f0; border-left: 4px solid #ff9500;">
-                    <strong>🎯 선택 옵션 표시 정책</strong>
-                    <ul style="margin-top: 8px;">
-                        <li><strong>용량 드롭다운:</strong> 동일 상품명에 2개 이상의 용량 옵션이 있을 경우에만 표시</li>
-                        <li><strong>요금제 드롭다운:</strong> 동일 상품명+용량에 2개 이상의 요금제 옵션이 있을 경우에만 표시</li>
-                        <li><strong>단일 옵션:</strong> 옵션이 1개만 있는 경우 드롭다운 없이 고정 텍스트로 표시</li>
-                        <li><strong>예시:</strong> "갤럭시 S25 256GB"만 있는 경우 → 용량 선택 없이 "256GB"만 표시</li>
+                <!-- 탭 구조 -->
+                <div style="margin-bottom: 32px;">
+                    <h4 style="color: #191f28; font-size: 16px; font-weight: 700; margin-bottom: 16px; border-left: 3px solid #3182f6; padding-left: 12px;">탭 구조</h4>
+                    <ul style="color: #4e5968; line-height: 1.7;">
+                        <li><strong>홈 탭</strong> — 시세표 전용 화면으로 고객이 가장 먼저 보는 메인 콘텐츠</li>
+                        <li><strong>소식 탭</strong> — 인증정보 + 우리매장 소식 섹션 통합</li>
+                        <li><strong>후기 탭</strong> — 고객 리뷰 및 평점 확인</li>
+                        <li>탭 너비 균등 분할로 터치 영역 극대화</li>
                     </ul>
                 </div>
 
-                <div class="key-box" style="margin-top: 16px; background: #fff5f5; border-left: 4px solid #ef4444;">
-                    <strong>⚠️ 가격 데이터 및 공란 처리</strong>
-                    <ul style="margin-top: 8px;">
-                        <li><strong>DB 기준:</strong> 모든 가격은 판매점이 어드민에서 입력한 시세표 DB 데이터를 기준으로 표시</li>
-                        <li><strong>공란 처리:</strong> 특정 통신사/가입유형에 가격을 입력하지 않은 경우 "-" 표시</li>
-                        <li><strong>클릭 불가:</strong> 가격이 "-"인 항목은 선택 불가 (disabled 처리)</li>
-                        <li><strong>옵션 변경 시:</strong> 용량/요금제 변경 시에도 DB에 저장된 가격만 표시되며, 미입력 항목은 "-" 유지</li>
-                        <li><strong>예시:</strong> "SKT 공통·번이 = 55만, KT 공통·번이 = 미입력" → SKT는 55만 표시, KT는 "-" 표시</li>
+                <!-- 상품 선택 -->
+                <div style="margin-bottom: 32px;">
+                    <h4 style="color: #191f28; font-size: 16px; font-weight: 700; margin-bottom: 16px; border-left: 3px solid #3182f6; padding-left: 12px;">상품 선택</h4>
+                    <ul style="color: #4e5968; line-height: 1.7;">
+                        <li><strong>제조사 탭</strong> — 삼성 / 애플 / 기타 탭으로 빠른 브랜드 전환</li>
+                        <li><strong>커스텀 드롭다운</strong> — 상품 이미지 썸네일 포함한 프리미엄 드롭다운</li>
+                        <li>중첩 스크롤 없이 드롭다운 펼치기로 모든 상품 확인</li>
+                        <li>화살표 애니메이션 제거로 심플한 인터랙션</li>
                     </ul>
                 </div>
 
-                <div class="key-box" style="margin-top: 16px;">
-                    <strong>홈 탭 - 우리매장 소식 섹션</strong>
-                    <ul style="margin-top: 8px;">
-                        <li>최신순 3개 콘텐츠 노출</li>
-                        <li>"더보기" 버튼으로 전체 소식 확인 가능</li>
-                        <li>이벤트, 프로모션, 매장 공지사항 등 게시</li>
+                <!-- 옵션 선택 -->
+                <div style="margin-bottom: 32px;">
+                    <h4 style="color: #191f28; font-size: 16px; font-weight: 700; margin-bottom: 16px; border-left: 3px solid #3182f6; padding-left: 12px;">옵션 선택</h4>
+                    <ul style="color: #4e5968; line-height: 1.7;">
+                        <li><strong>용량</strong> — 동일 기기의 여러 용량 옵션 선택 (128GB, 256GB, 512GB 등)</li>
+                        <li><strong>요금제</strong> — 월요금 옵션 선택 (5.5만, 7만, 8.9만 등)</li>
+                        <li>옵션 변경 시 통신사별 가격 실시간 업데이트</li>
+                    </ul>
+                </div>
+
+                <!-- 가격 선택 -->
+                <div style="margin-bottom: 32px;">
+                    <h4 style="color: #191f28; font-size: 16px; font-weight: 700; margin-bottom: 16px; border-left: 3px solid #3182f6; padding-left: 12px;">가격 선택</h4>
+                    <ul style="color: #4e5968; line-height: 1.7;">
+                        <li><strong>최저가 자동 선택</strong> — 페이지 로드 시 전체 가격 중 최저가 자동 선택</li>
+                        <li><strong>통신사별 비교</strong> — SKT / KT / LG U+ 가격을 3열 그리드로 한눈에 비교</li>
+                        <li><strong>선택 피드백</strong> — 선택한 항목은 파란색 배경 + 왼쪽 파란 바로 강조</li>
+                        <li><strong>선택 정보 표시</strong> — 통신사, 가입유형, 가격이 실시간으로 하단에 표시</li>
+                        <li>공란 처리 — 미입력 가격은 "-" 표시 및 선택 불가</li>
+                    </ul>
+                </div>
+
+                <!-- 가격 표시 정책 -->
+                <div class="key-box" style="margin-top: 32px; padding: 20px; background: #f8f9fa; border-radius: 8px; border: 1px solid #e5e8eb;">
+                    <h4 style="color: #191f28; font-size: 16px; font-weight: 700; margin-bottom: 16px;">가격 표시 정책</h4>
+
+                    <table class="comparison-table" style="margin-top: 16px;">
+                        <thead>
+                            <tr>
+                                <th style="width: 30%;">상황</th>
+                                <th style="width: 40%;">고객 화면 표시</th>
+                                <th style="width: 30%;">동작</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>일반 가격</strong></td>
+                                <td><strong>55만</strong> (정수만 표시)</td>
+                                <td>클릭 가능</td>
+                            </tr>
+                            <tr>
+                                <td><strong>페이백</strong></td>
+                                <td><strong>-12만</strong> (음수)</td>
+                                <td>클릭 가능</td>
+                            </tr>
+                            <tr>
+                                <td><strong>가격 미입력</strong></td>
+                                <td><strong>-</strong> (회색)</td>
+                                <td>클릭 불가</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <ul style="margin-top: 16px; color: #4e5968; line-height: 1.7;">
+                        <li><strong>DB 기준</strong> — 어드민에서 입력한 시세표 DB 데이터를 기준으로 표시</li>
+                        <li><strong>자동 최저가 선택</strong> — 유효한 가격 중 가장 저렴한 옵션 자동 선택</li>
+                        <li><strong>옵션 변경 시</strong> — 용량/요금제 변경 시에도 최저가 자동 재계산 및 선택</li>
+                        <li><strong>페이백 우선</strong> — 음수 가격(페이백)이 있을 경우 최저가로 우선 선택</li>
                     </ul>
                 </div>
             </div>
@@ -3787,6 +3824,35 @@
         <div class="section-header">
             <div class="section-number">📝</div>
             <h2>변경 이력 (Change Log)</h2>
+        </div>
+
+        <div class="feature-card">
+            <div class="feature-title">v2.2 (2025-10-13 18:30)</div>
+            <div class="feature-desc">
+                <strong>모바일 고객화면 UX 대폭 개선 및 디자인 시스템 통합</strong><br><br>
+                <strong>상품 선택 UI 개선:</strong><br>
+                • 제조사 탭에 "기타" 버튼 추가 (화웨이, 샤오미 등 지원)<br>
+                • 커스텀 드롭다운으로 변경 (이미지 썸네일 포함)<br>
+                • 중첩 스크롤 문제 해결 (드롭다운 높이 제한 제거)<br>
+                • 화살표 회전 애니메이션 제거 (심플한 디자인)<br><br>
+                <strong>최저가 자동 선택 기능:</strong><br>
+                • 페이지 로드 시 전체 가격 중 최저가 자동 선택<br>
+                • 선택 정보 자동 표시 + 구매하기 버튼 자동 활성화<br>
+                • 음수 가격(페이백) 올바르게 처리<br><br>
+                <strong>탭 구조 개편:</strong><br>
+                • 시세표 → 홈, 홈 → 소식으로 명칭 변경<br>
+                • 탭 순서: 홈 / 소식 / 후기<br>
+                • 탭 너비 균등 분할 (터치 영역 극대화)<br>
+                • 헤더와 탭 사이 구분선 제거<br><br>
+                <strong>디자인 시스템 통합:</strong><br>
+                • 전체 시세표 기능에 Toss 스타일 일관 적용<br>
+                • 버튼, 카드, 태그, Alert 박스 프리미엄 디자인<br>
+                • 가격 카드 배경색 제거 (화이트 통일)<br>
+                • 체크 아이콘 제거 (왼쪽 파란 바만 유지)<br><br>
+                <strong>문서 개선:</strong><br>
+                • 모바일 고객화면 기능 소개 섹션 재구성<br>
+                • 섹션별 제목 및 테이블 형식으로 가독성 향상
+            </div>
         </div>
 
         <div class="feature-card">
