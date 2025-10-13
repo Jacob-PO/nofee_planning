@@ -1219,13 +1219,7 @@
                     <table class="editable-table" id="priceTable1">
                         <thead>
                             <tr>
-                                <th rowspan="3" style="vertical-align: middle; min-width: 90px;">
-                                    상품명
-                                    <div style="display: inline-block; margin-left: 8px;">
-                                        <button onclick="sortTable('asc')" style="font-size: 11px; padding: 2px 6px; margin: 0 2px; background: #e9ecef; border: 1px solid #ced4da; border-radius: 3px; cursor: pointer;">▲</button>
-                                        <button onclick="sortTable('desc')" style="font-size: 11px; padding: 2px 6px; margin: 0 2px; background: #e9ecef; border: 1px solid #ced4da; border-radius: 3px; cursor: pointer;">▼</button>
-                                    </div>
-                                </th>
+                                <th rowspan="3" style="vertical-align: middle;">상품명</th>
                                 <th rowspan="3" style="vertical-align: middle;">용량</th>
                                 <th rowspan="3" style="vertical-align: middle;">월요금</th>
                                 <th colspan="4" style="text-align: center; border-bottom: 1px solid #e5e8eb;">SKT</th>
@@ -1263,184 +1257,61 @@
                             </tr>
                         </thead>
                         <tbody id="tableBody1">
-                            <tr data-row-index="0">
-                                <td><input type="text" value="갤럭시 S25" class="product-name" data-col="name" oninput="updateImageCell(0, 'name', this.value)"></td>
-                                <td style="width: 80px;"><input type="text" value="256GB" data-col="capacity" oninput="updateImageCell(0, 'capacity', this.value)"></td>
-                                <td style="width: 100px;"><input type="text" value="8.9" data-col="plan" oninput="updateImageCell(0, 'plan', this.value)"></td>
-                                <td style="width: 70px;"><input type="number" step="1" value="55" placeholder="0" class="price-input" data-col="3" oninput="updateImageCell(0, 3, this.value)"></td>
-                                <td style="width: 70px;"><input type="number" step="1" value="60" placeholder="0" class="price-input" data-col="4" oninput="updateImageCell(0, 4, this.value)"></td>
-                                <td style="width: 70px;"><input type="number" step="1" value="45" placeholder="0" class="price-input" data-col="5" oninput="updateImageCell(0, 5, this.value)"></td>
-                                <td style="width: 70px;"><input type="number" step="1" value="50" placeholder="0" class="price-input" data-col="6" oninput="updateImageCell(0, 6, this.value)"></td>
-                                <td style="width: 70px;"><input type="number" step="1" value="56" placeholder="0" class="price-input" data-col="7" oninput="updateImageCell(0, 7, this.value)"></td>
-                                <td style="width: 70px;"><input type="number" step="1" value="61" placeholder="0" class="price-input" data-col="8" oninput="updateImageCell(0, 8, this.value)"></td>
-                                <td style="width: 70px;"><input type="number" step="1" value="46" placeholder="0" class="price-input" data-col="9" oninput="updateImageCell(0, 9, this.value)"></td>
-                                <td style="width: 70px;"><input type="number" step="1" value="51" placeholder="0" class="price-input" data-col="10" oninput="updateImageCell(0, 10, this.value)"></td>
-                                <td style="width: 70px;"><input type="number" step="1" value="55" placeholder="0" class="price-input" data-col="11" oninput="updateImageCell(0, 11, this.value)"></td>
-                                <td style="width: 70px;"><input type="number" step="1" value="60" placeholder="0" class="price-input" data-col="12" oninput="updateImageCell(0, 12, this.value)"></td>
-                                <td style="width: 70px;"><input type="number" step="1" value="45" placeholder="0" class="price-input" data-col="13" oninput="updateImageCell(0, 13, this.value)"></td>
-                                <td style="width: 70px;"><input type="number" step="1" value="50" placeholder="0" class="price-input" data-col="14" oninput="updateImageCell(0, 14, this.value)"></td>
-                                <td><button class="btn btn-danger" onclick="deleteRow(this)">삭제</button></td>
-                            </tr>
-                            <tr data-row-index="1">
-                                <td><input type="text" value="아이폰 17 프로" class="product-name" data-col="name" oninput="updateImageCell(1, 'name', this.value)"></td>
-                                <td style="width: 80px;"><input type="text" value="256GB" data-col="capacity" oninput="updateImageCell(1, 'capacity', this.value)"></td>
-                                <td style="width: 100px;"><input type="text" value="10.9" data-col="plan" oninput="updateImageCell(1, 'plan', this.value)"></td>
-                                <td style="width: 70px;"><input type="number" step="1" value="69" placeholder="0" class="price-input" data-col="3" oninput="updateImageCell(1, 3, this.value)"></td>
-                                <td style="width: 70px;"><input type="number" step="1" value="74" placeholder="0" class="price-input" data-col="4" oninput="updateImageCell(1, 4, this.value)"></td>
-                                <td style="width: 70px;"><input type="number" step="1" value="59" placeholder="0" class="price-input" data-col="5" oninput="updateImageCell(1, 5, this.value)"></td>
-                                <td style="width: 70px;"><input type="number" step="1" value="64" placeholder="0" class="price-input" data-col="6" oninput="updateImageCell(1, 6, this.value)"></td>
-                                <td style="width: 70px;"><input type="number" step="1" value="70" placeholder="0" class="price-input" data-col="7" oninput="updateImageCell(1, 7, this.value)"></td>
-                                <td style="width: 70px;"><input type="number" step="1" value="75" placeholder="0" class="price-input" data-col="8" oninput="updateImageCell(1, 8, this.value)"></td>
-                                <td style="width: 70px;"><input type="number" step="1" value="60" placeholder="0" class="price-input" data-col="9" oninput="updateImageCell(1, 9, this.value)"></td>
-                                <td style="width: 70px;"><input type="number" step="1" value="65" placeholder="0" class="price-input" data-col="10" oninput="updateImageCell(1, 10, this.value)"></td>
-                                <td style="width: 70px;"><input type="number" step="1" value="69" placeholder="0" class="price-input" data-col="11" oninput="updateImageCell(1, 11, this.value)"></td>
-                                <td style="width: 70px;"><input type="number" step="1" value="74" placeholder="0" class="price-input" data-col="12" oninput="updateImageCell(1, 12, this.value)"></td>
-                                <td style="width: 70px;"><input type="number" step="1" value="59" placeholder="0" class="price-input" data-col="13" oninput="updateImageCell(1, 13, this.value)"></td>
-                                <td style="width: 70px;"><input type="number" step="1" value="64" placeholder="0" class="price-input" data-col="14" oninput="updateImageCell(1, 14, this.value)"></td>
-                                <td><button class="btn btn-danger" onclick="deleteRow(this)">삭제</button></td>
-                            </tr>
-                            <tr data-row-index="2">
-                                <td><input type="text" value="갤럭시 Z 플립7" class="product-name" data-col="name" oninput="updateImageCell(2, 'name', this.value)"></td>
-                                <td style="width: 80px;"><input type="text" value="512GB" data-col="capacity" oninput="updateImageCell(2, 'capacity', this.value)"></td>
-                                <td style="width: 100px;"><input type="text" value="11.9" data-col="plan" oninput="updateImageCell(2, 'plan', this.value)"></td>
-                                <td style="width: 70px;"><input type="text" value="-" placeholder="0" class="price-input" data-col="3" oninput="updateImageCell(2, 3, this.value)"></td>
-                                <td style="width: 70px;"><input type="number" step="1" value="84" placeholder="0" class="price-input" data-col="4" oninput="updateImageCell(2, 4, this.value)"></td>
-                                <td style="width: 70px;"><input type="number" step="1" value="69" placeholder="0" class="price-input" data-col="5" oninput="updateImageCell(2, 5, this.value)"></td>
-                                <td style="width: 70px;"><input type="text" value="-" placeholder="0" class="price-input" data-col="6" oninput="updateImageCell(2, 6, this.value)"></td>
-                                <td style="width: 70px;"><input type="number" step="1" value="80" placeholder="0" class="price-input" data-col="7" oninput="updateImageCell(2, 7, this.value)"></td>
-                                <td style="width: 70px;"><input type="number" step="1" value="85" placeholder="0" class="price-input" data-col="8" oninput="updateImageCell(2, 8, this.value)"></td>
-                                <td style="width: 70px;"><input type="number" step="1" value="68" placeholder="0" class="price-input" data-col="9" oninput="updateImageCell(2, 9, this.value)"></td>
-                                <td style="width: 70px;"><input type="text" value="-" placeholder="0" class="price-input" data-col="10" oninput="updateImageCell(2, 10, this.value)"></td>
-                                <td style="width: 70px;"><input type="number" step="1" value="79" placeholder="0" class="price-input" data-col="11" oninput="updateImageCell(2, 11, this.value)"></td>
-                                <td style="width: 70px;"><input type="number" step="1" value="84" placeholder="0" class="price-input" data-col="12" oninput="updateImageCell(2, 12, this.value)"></td>
-                                <td style="width: 70px;"><input type="text" value="-" placeholder="0" class="price-input" data-col="13" oninput="updateImageCell(2, 13, this.value)"></td>
-                                <td style="width: 70px;"><input type="number" step="1" value="74" placeholder="0" class="price-input" data-col="14" oninput="updateImageCell(2, 14, this.value)"></td>
-                                <td><button class="btn btn-danger" onclick="deleteRow(this)">삭제</button></td>
-                            </tr>
-                            <tr data-row-index="3">
-                                <td><input type="text" value="아이폰 17" class="product-name" data-col="name" oninput="updateImageCell(3, 'name', this.value)"></td>
-                                <td style="width: 80px;"><input type="text" value="128GB" data-col="capacity" oninput="updateImageCell(3, 'capacity', this.value)"></td>
-                                <td style="width: 100px;"><input type="text" value="8.9" data-col="plan" oninput="updateImageCell(3, 'plan', this.value)"></td>
-                                <td style="width: 70px;"><input type="number" step="1" value="52" placeholder="0" class="price-input" data-col="3" oninput="updateImageCell(3, 3, this.value)"></td>
-                                <td style="width: 70px;"><input type="number" step="1" value="57" placeholder="0" class="price-input" data-col="4" oninput="updateImageCell(3, 4, this.value)"></td>
-                                <td style="width: 70px;"><input type="number" step="1" value="42" placeholder="0" class="price-input" data-col="5" oninput="updateImageCell(3, 5, this.value)"></td>
-                                <td style="width: 70px;"><input type="number" step="1" value="47" placeholder="0" class="price-input" data-col="6" oninput="updateImageCell(3, 6, this.value)"></td>
-                                <td style="width: 70px;"><input type="number" step="1" value="53" placeholder="0" class="price-input" data-col="7" oninput="updateImageCell(3, 7, this.value)"></td>
-                                <td style="width: 70px;"><input type="number" step="1" value="58" placeholder="0" class="price-input" data-col="8" oninput="updateImageCell(3, 8, this.value)"></td>
-                                <td style="width: 70px;"><input type="number" step="1" value="43" placeholder="0" class="price-input" data-col="9" oninput="updateImageCell(3, 9, this.value)"></td>
-                                <td style="width: 70px;"><input type="number" step="1" value="48" placeholder="0" class="price-input" data-col="10" oninput="updateImageCell(3, 10, this.value)"></td>
-                                <td style="width: 70px;"><input type="number" step="1" value="52" placeholder="0" class="price-input" data-col="11" oninput="updateImageCell(3, 11, this.value)"></td>
-                                <td style="width: 70px;"><input type="number" step="1" value="57" placeholder="0" class="price-input" data-col="12" oninput="updateImageCell(3, 12, this.value)"></td>
-                                <td style="width: 70px;"><input type="number" step="1" value="42" placeholder="0" class="price-input" data-col="13" oninput="updateImageCell(3, 13, this.value)"></td>
-                                <td style="width: 70px;"><input type="number" step="1" value="47" placeholder="0" class="price-input" data-col="14" oninput="updateImageCell(3, 14, this.value)"></td>
-                                <td><button class="btn btn-danger" onclick="deleteRow(this)">삭제</button></td>
-                            </tr>
-                            <tr data-row-index="4">
-                                <td><input type="text" value="갤럭시 S25 울트라" class="product-name" data-col="name" oninput="updateImageCell(4, 'name', this.value)"></td>
-                                <td style="width: 80px;"><input type="text" value="512GB" data-col="capacity" oninput="updateImageCell(4, 'capacity', this.value)"></td>
-                                <td style="width: 100px;"><input type="text" value="11.9" data-col="plan" oninput="updateImageCell(4, 'plan', this.value)"></td>
-                                <td style="width: 70px;"><input type="number" step="1" value="75" placeholder="0" class="price-input" data-col="3" oninput="updateImageCell(4, 3, this.value)"></td>
-                                <td style="width: 70px;"><input type="number" step="1" value="80" placeholder="0" class="price-input" data-col="4" oninput="updateImageCell(4, 4, this.value)"></td>
-                                <td style="width: 70px;"><input type="number" step="1" value="65" placeholder="0" class="price-input" data-col="5" oninput="updateImageCell(4, 5, this.value)"></td>
-                                <td style="width: 70px;"><input type="number" step="1" value="70" placeholder="0" class="price-input" data-col="6" oninput="updateImageCell(4, 6, this.value)"></td>
-                                <td style="width: 70px;"><input type="number" step="1" value="76" placeholder="0" class="price-input" data-col="7" oninput="updateImageCell(4, 7, this.value)"></td>
-                                <td style="width: 70px;"><input type="number" step="1" value="81" placeholder="0" class="price-input" data-col="8" oninput="updateImageCell(4, 8, this.value)"></td>
-                                <td style="width: 70px;"><input type="number" step="1" value="66" placeholder="0" class="price-input" data-col="9" oninput="updateImageCell(4, 9, this.value)"></td>
-                                <td style="width: 70px;"><input type="number" step="1" value="71" placeholder="0" class="price-input" data-col="10" oninput="updateImageCell(4, 10, this.value)"></td>
-                                <td style="width: 70px;"><input type="number" step="1" value="75" placeholder="0" class="price-input" data-col="11" oninput="updateImageCell(4, 11, this.value)"></td>
-                                <td style="width: 70px;"><input type="number" step="1" value="80" placeholder="0" class="price-input" data-col="12" oninput="updateImageCell(4, 12, this.value)"></td>
-                                <td style="width: 70px;"><input type="number" step="1" value="65" placeholder="0" class="price-input" data-col="13" oninput="updateImageCell(4, 13, this.value)"></td>
-                                <td style="width: 70px;"><input type="number" step="1" value="70" placeholder="0" class="price-input" data-col="14" oninput="updateImageCell(4, 14, this.value)"></td>
-                                <td><button class="btn btn-danger" onclick="deleteRow(this)">삭제</button></td>
-                            </tr>
-                            <tr data-row-index="5">
-                                <td><input type="text" value="갤럭시 Z 폴드7" class="product-name" data-col="name" oninput="updateImageCell(5, 'name', this.value)"></td>
-                                <td style="width: 80px;"><input type="text" value="256GB" data-col="capacity" oninput="updateImageCell(5, 'capacity', this.value)"></td>
-                                <td style="width: 100px;"><input type="text" value="13.9" data-col="plan" oninput="updateImageCell(5, 'plan', this.value)"></td>
-                                <td style="width: 70px;"><input type="number" step="1" value="95" placeholder="0" class="price-input" data-col="3" oninput="updateImageCell(5, 3, this.value)"></td>
-                                <td style="width: 70px;"><input type="number" step="1" value="100" placeholder="0" class="price-input" data-col="4" oninput="updateImageCell(5, 4, this.value)"></td>
-                                <td style="width: 70px;"><input type="number" step="1" value="85" placeholder="0" class="price-input" data-col="5" oninput="updateImageCell(5, 5, this.value)"></td>
-                                <td style="width: 70px;"><input type="number" step="1" value="90" placeholder="0" class="price-input" data-col="6" oninput="updateImageCell(5, 6, this.value)"></td>
-                                <td style="width: 70px;"><input type="number" step="1" value="96" placeholder="0" class="price-input" data-col="7" oninput="updateImageCell(5, 7, this.value)"></td>
-                                <td style="width: 70px;"><input type="number" step="1" value="101" placeholder="0" class="price-input" data-col="8" oninput="updateImageCell(5, 8, this.value)"></td>
-                                <td style="width: 70px;"><input type="number" step="1" value="86" placeholder="0" class="price-input" data-col="9" oninput="updateImageCell(5, 9, this.value)"></td>
-                                <td style="width: 70px;"><input type="number" step="1" value="91" placeholder="0" class="price-input" data-col="10" oninput="updateImageCell(5, 10, this.value)"></td>
-                                <td style="width: 70px;"><input type="number" step="1" value="95" placeholder="0" class="price-input" data-col="11" oninput="updateImageCell(5, 11, this.value)"></td>
-                                <td style="width: 70px;"><input type="number" step="1" value="100" placeholder="0" class="price-input" data-col="12" oninput="updateImageCell(5, 12, this.value)"></td>
-                                <td style="width: 70px;"><input type="number" step="1" value="85" placeholder="0" class="price-input" data-col="13" oninput="updateImageCell(5, 13, this.value)"></td>
-                                <td style="width: 70px;"><input type="number" step="1" value="90" placeholder="0" class="price-input" data-col="14" oninput="updateImageCell(5, 14, this.value)"></td>
-                                <td><button class="btn btn-danger" onclick="deleteRow(this)">삭제</button></td>
-                            </tr>
-                            <tr data-row-index="6">
-                                <td><input type="text" value="아이폰 17 프로 맥스" class="product-name" data-col="name" oninput="updateImageCell(6, 'name', this.value)"></td>
-                                <td style="width: 80px;"><input type="text" value="512GB" data-col="capacity" oninput="updateImageCell(6, 'capacity', this.value)"></td>
-                                <td style="width: 100px;"><input type="text" value="12.9" data-col="plan" oninput="updateImageCell(6, 'plan', this.value)"></td>
-                                <td style="width: 70px;"><input type="number" step="1" value="82" placeholder="0" class="price-input" data-col="3" oninput="updateImageCell(6, 3, this.value)"></td>
-                                <td style="width: 70px;"><input type="number" step="1" value="87" placeholder="0" class="price-input" data-col="4" oninput="updateImageCell(6, 4, this.value)"></td>
-                                <td style="width: 70px;"><input type="number" step="1" value="72" placeholder="0" class="price-input" data-col="5" oninput="updateImageCell(6, 5, this.value)"></td>
-                                <td style="width: 70px;"><input type="number" step="1" value="77" placeholder="0" class="price-input" data-col="6" oninput="updateImageCell(6, 6, this.value)"></td>
-                                <td style="width: 70px;"><input type="number" step="1" value="83" placeholder="0" class="price-input" data-col="7" oninput="updateImageCell(6, 7, this.value)"></td>
-                                <td style="width: 70px;"><input type="number" step="1" value="88" placeholder="0" class="price-input" data-col="8" oninput="updateImageCell(6, 8, this.value)"></td>
-                                <td style="width: 70px;"><input type="number" step="1" value="73" placeholder="0" class="price-input" data-col="9" oninput="updateImageCell(6, 9, this.value)"></td>
-                                <td style="width: 70px;"><input type="number" step="1" value="78" placeholder="0" class="price-input" data-col="10" oninput="updateImageCell(6, 10, this.value)"></td>
-                                <td style="width: 70px;"><input type="number" step="1" value="82" placeholder="0" class="price-input" data-col="11" oninput="updateImageCell(6, 11, this.value)"></td>
-                                <td style="width: 70px;"><input type="number" step="1" value="87" placeholder="0" class="price-input" data-col="12" oninput="updateImageCell(6, 12, this.value)"></td>
-                                <td style="width: 70px;"><input type="number" step="1" value="72" placeholder="0" class="price-input" data-col="13" oninput="updateImageCell(6, 13, this.value)"></td>
-                                <td style="width: 70px;"><input type="number" step="1" value="77" placeholder="0" class="price-input" data-col="14" oninput="updateImageCell(6, 14, this.value)"></td>
-                                <td><button class="btn btn-danger" onclick="deleteRow(this)">삭제</button></td>
-                            </tr>
-                            <tr data-row-index="7">
-                                <td><input type="text" value="갤럭시 A55" class="product-name" data-col="name" oninput="updateImageCell(7, 'name', this.value)"></td>
-                                <td style="width: 80px;"><input type="text" value="128GB" data-col="capacity" oninput="updateImageCell(7, 'capacity', this.value)"></td>
-                                <td style="width: 100px;"><input type="text" value="6.9" data-col="plan" oninput="updateImageCell(7, 'plan', this.value)"></td>
-                                <td style="width: 70px;"><input type="number" step="1" value="32" placeholder="0" class="price-input" data-col="3" oninput="updateImageCell(7, 3, this.value)"></td>
-                                <td style="width: 70px;"><input type="text" value="-" placeholder="0" class="price-input" data-col="4" oninput="updateImageCell(7, 4, this.value)"></td>
-                                <td style="width: 70px;"><input type="text" value="-" placeholder="0" class="price-input" data-col="5" oninput="updateImageCell(7, 5, this.value)"></td>
-                                <td style="width: 70px;"><input type="number" step="1" value="27" placeholder="0" class="price-input" data-col="6" oninput="updateImageCell(7, 6, this.value)"></td>
-                                <td style="width: 70px;"><input type="number" step="1" value="33" placeholder="0" class="price-input" data-col="7" oninput="updateImageCell(7, 7, this.value)"></td>
-                                <td style="width: 70px;"><input type="number" step="1" value="38" placeholder="0" class="price-input" data-col="8" oninput="updateImageCell(7, 8, this.value)"></td>
-                                <td style="width: 70px;"><input type="number" step="1" value="23" placeholder="0" class="price-input" data-col="9" oninput="updateImageCell(7, 9, this.value)"></td>
-                                <td style="width: 70px;"><input type="text" value="-" placeholder="0" class="price-input" data-col="10" oninput="updateImageCell(7, 10, this.value)"></td>
-                                <td style="width: 70px;"><input type="number" step="1" value="32" placeholder="0" class="price-input" data-col="11" oninput="updateImageCell(7, 11, this.value)"></td>
-                                <td style="width: 70px;"><input type="text" value="-" placeholder="0" class="price-input" data-col="12" oninput="updateImageCell(7, 12, this.value)"></td>
-                                <td style="width: 70px;"><input type="text" value="-" placeholder="0" class="price-input" data-col="13" oninput="updateImageCell(7, 13, this.value)"></td>
-                                <td style="width: 70px;"><input type="number" step="1" value="27" placeholder="0" class="price-input" data-col="14" oninput="updateImageCell(7, 14, this.value)"></td>
-                                <td><button class="btn btn-danger" onclick="deleteRow(this)">삭제</button></td>
-                            </tr>
-                            <tr data-row-index="8">
-                                <td><input type="text" value="아이폰 16e" class="product-name" data-col="name" oninput="updateImageCell(8, 'name', this.value)"></td>
-                                <td style="width: 80px;"><input type="text" value="128GB" data-col="capacity" oninput="updateImageCell(8, 'capacity', this.value)"></td>
-                                <td style="width: 100px;"><input type="text" value="5.9" data-col="plan" oninput="updateImageCell(8, 'plan', this.value)"></td>
-                                <td style="width: 70px;"><input type="number" step="1" value="28" placeholder="0" class="price-input" data-col="3" oninput="updateImageCell(8, 3, this.value)"></td>
-                                <td style="width: 70px;"><input type="number" step="1" value="33" placeholder="0" class="price-input" data-col="4" oninput="updateImageCell(8, 4, this.value)"></td>
-                                <td style="width: 70px;"><input type="number" step="1" value="18" placeholder="0" class="price-input" data-col="5" oninput="updateImageCell(8, 5, this.value)"></td>
-                                <td style="width: 70px;"><input type="number" step="1" value="23" placeholder="0" class="price-input" data-col="6" oninput="updateImageCell(8, 6, this.value)"></td>
-                                <td style="width: 70px;"><input type="number" step="1" value="29" placeholder="0" class="price-input" data-col="7" oninput="updateImageCell(8, 7, this.value)"></td>
-                                <td style="width: 70px;"><input type="number" step="1" value="34" placeholder="0" class="price-input" data-col="8" oninput="updateImageCell(8, 8, this.value)"></td>
-                                <td style="width: 70px;"><input type="number" step="1" value="19" placeholder="0" class="price-input" data-col="9" oninput="updateImageCell(8, 9, this.value)"></td>
-                                <td style="width: 70px;"><input type="number" step="1" value="24" placeholder="0" class="price-input" data-col="10" oninput="updateImageCell(8, 10, this.value)"></td>
-                                <td style="width: 70px;"><input type="number" step="1" value="28" placeholder="0" class="price-input" data-col="11" oninput="updateImageCell(8, 11, this.value)"></td>
-                                <td style="width: 70px;"><input type="number" step="1" value="33" placeholder="0" class="price-input" data-col="12" oninput="updateImageCell(8, 12, this.value)"></td>
-                                <td style="width: 70px;"><input type="number" step="1" value="18" placeholder="0" class="price-input" data-col="13" oninput="updateImageCell(8, 13, this.value)"></td>
-                                <td style="width: 70px;"><input type="number" step="1" value="23" placeholder="0" class="price-input" data-col="14" oninput="updateImageCell(8, 14, this.value)"></td>
+                            <tr>
+                                <td>
+                                    <select>
+                                        <option disabled>상품 선택</option>
+                                        <option selected>갤럭시 S25</option>
+                                        <option>갤럭시 S25 Ultra</option>
+                                        <option>아이폰 17 Pro</option>
+                                    </select>
+                                </td>
+                                <td style="width: 80px;">
+                                    <select>
+                                        <option selected>256GB</option>
+                                        <option>512GB</option>
+                                    </select>
+                                </td>
+                                <td style="width: 100px;">
+                                    <select>
+                                        <option>69,000원</option>
+                                        <option>79,000원</option>
+                                        <option selected>89,000원</option>
+                                    </select>
+                                </td>
+                                <!-- SKT 공통지원 -->
+                                <td><input type="number" step="1" value="55" placeholder="0"></td>
+                                <td><input type="number" step="1" value="60" placeholder="0"></td>
+                                <!-- SKT 선택약정 -->
+                                <td><input type="number" step="1" value="45" placeholder="0"></td>
+                                <td><input type="number" step="1" value="50" placeholder="0"></td>
+                                <!-- KT 공통지원 -->
+                                <td><input type="number" step="1" value="56" placeholder="0"></td>
+                                <td><input type="number" step="1" value="61" placeholder="0"></td>
+                                <!-- KT 선택약정 -->
+                                <td><input type="number" step="1" value="46" placeholder="0"></td>
+                                <td><input type="number" step="1" value="51" placeholder="0"></td>
+                                <!-- LG U+ 공통지원 -->
+                                <td><input type="number" step="1" value="55" placeholder="0"></td>
+                                <td><input type="number" step="1" value="60" placeholder="0"></td>
+                                <!-- LG U+ 선택약정 -->
+                                <td><input type="number" step="1" value="45" placeholder="0"></td>
+                                <td><input type="number" step="1" value="50" placeholder="0"></td>
                                 <td><button class="btn btn-danger" onclick="deleteRow(this)">삭제</button></td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
 
-                <!-- 메모 입력 -->
-                <div style="margin-top: 16px;">
-                    <label style="display: block; font-weight: 600; margin-bottom: 8px; color: #333;">참고사항 (이미지 하단에 표시됨)</label>
-                    <textarea id="memoInput" placeholder="개통 관련 추가 정보를 입력하세요" style="width: 100%; min-height: 80px; padding: 10px; border: 1px solid #ddd; border-radius: 4px; font-size: 14px; font-family: 'SUIT Variable', sans-serif; resize: vertical;" oninput="updateImageMemo()">• 모든 가격은 24개월 약정 기준입니다.
-• 선택약정 시 추가 할인이 적용될 수 있습니다.
-• 자세한 상담은 매장 방문 또는 전화 문의 바랍니다.</textarea>
-                </div>
-
                 <div class="btn-container">
                     <button class="btn btn-primary btn-small" onclick="addRow()">+ 행 추가</button>
+                    <button class="btn btn-secondary btn-small" onclick="saveDraft()">임시저장</button>
                     <button class="btn btn-success btn-small" onclick="publishTable()">시세표 발행</button>
                     <button class="btn btn-primary btn-small" onclick="downloadImage()">이미지로 다운로드</button>
+                </div>
+
+                <div id="saveAlert1" class="alert alert-success" style="display: none;">
+                    임시저장되었습니다.
                 </div>
             </div>
 
@@ -1709,14 +1580,6 @@
                         <div style="background: linear-gradient(145deg, #4d94ff 0%, #3d7eeb 50%, #2d68d6 100%); padding: 24px; position: relative; overflow: hidden;">
                             <!-- 미묘한 배경 장식 -->
                             <div style="position: absolute; top: -100px; left: -100px; width: 300px; height: 300px; background: radial-gradient(circle, rgba(255,255,255,0.03) 0%, transparent 70%); filter: blur(40px);"></div>
-
-                            <!-- 참고사항 -->
-                            <div id="imageMemo" style="position: relative; z-index: 1; color: white; font-size: 13px; line-height: 1.6; letter-spacing: -0.3px; font-weight: 500;">
-                                <div style="font-weight: 700; margin-bottom: 8px; font-size: 14px;">📌 참고사항</div>
-                                <div id="imageMemoText" style="opacity: 0.9; white-space: pre-line;">• 모든 가격은 24개월 약정 기준입니다.
-• 선택약정 시 추가 할인이 적용될 수 있습니다.
-• 자세한 상담은 매장 방문 또는 전화 문의 바랍니다.</div>
-                            </div>
                         </div>
 
                     </div>
@@ -2597,71 +2460,345 @@
     <div class="section">
         <div class="section-header">
             <div class="section-number">8</div>
-            <h2>가격 정책</h2>
+            <h2>데이터베이스 구조 및 연동</h2>
+        </div>
+
+        <div class="feature-card">
+            <div class="feature-title">시세표 데이터 구조</div>
+            <div class="feature-desc">
+                <p><strong>중요:</strong> 기존 <code>tb_pricetable_phone</code> 테이블 구조를 활용하되, 판매점 시세표 전용 필드를 추가합니다.</p>
+
+                <h4 style="margin-top: 20px; margin-bottom: 12px;">핵심 설계 원칙</h4>
+                <ul>
+                    <li><strong>행 기반 데이터 구조:</strong> 1개 상품당 12개의 DB 행으로 저장됩니다
+                        <ul style="margin-top: 4px; margin-left: 20px; font-size: 13px; color: #6b7684;">
+                            <li>통신사 3개 (SKT, KT, LG U+)</li>
+                            <li>× 가입유형 2개 (번호이동, 기기변경)</li>
+                            <li>× 지원금 유형 2개 (공시지원금, 선택약정)</li>
+                            <li>= 총 12개 행 (3 × 2 × 2 = 12)</li>
+                        </ul>
+                    </li>
+                    <li><strong>상품 정보 자동 연동:</strong> 상품 마스터 DB(<code>tb_product_phone</code>)에서 상품명, 용량, 출고가를 자동으로 불러옵니다</li>
+                    <li><strong>가격 표시 방식:</strong> 고객에게 보이는 가격은 "할부원금" 필드의 값입니다</li>
+                    <li><strong>판매점별 가격 책정:</strong> 각 판매점은 할부원금(단가)만 입력하여 자신만의 시세표를 만듭니다</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="feature-card">
+            <div class="feature-title">기존 DB 활용 및 신규 필드</div>
+            <div class="feature-desc">
+                <h4 style="margin-top: 12px; margin-bottom: 12px;">기존 tb_pricetable_phone 테이블 활용</h4>
+                <table class="comparison-table" style="margin-top: 12px;">
+                    <thead>
+                        <tr>
+                            <th>필드명</th>
+                            <th>타입</th>
+                            <th>설명</th>
+                            <th>판매점 수정</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><code>product_code</code></td>
+                            <td>VARCHAR(100)</td>
+                            <td>상품 코드 (tb_product_phone 연동)</td>
+                            <td>❌ 선택만</td>
+                        </tr>
+                        <tr>
+                            <td><code>storage_code</code></td>
+                            <td>VARCHAR(10)</td>
+                            <td>용량 코드</td>
+                            <td>❌ 선택만</td>
+                        </tr>
+                        <tr>
+                            <td><code>carrier</code></td>
+                            <td>VARCHAR(10)</td>
+                            <td>통신사 (SK/KT/LG)</td>
+                            <td>❌ 자동</td>
+                        </tr>
+                        <tr>
+                            <td><code>support_type</code></td>
+                            <td>VARCHAR(20)</td>
+                            <td>지원금 유형 (공시/선약)</td>
+                            <td>❌ 자동</td>
+                        </tr>
+                        <tr>
+                            <td><code>subscription_type</code></td>
+                            <td>VARCHAR(20)</td>
+                            <td>가입 유형 (번호이동/기기변경)</td>
+                            <td>❌ 자동</td>
+                        </tr>
+                        <tr style="background: #f0f6ff;">
+                            <td><code>installment_principal</code></td>
+                            <td>INT</td>
+                            <td><strong>할부원금 (단가)</strong><br>
+                                <span style="font-size: 12px; color: #6b7684; font-weight: 400;">
+                                원(₩) 단위로 저장 (예: 550000, 600000)<br>
+                                어드민에서 55 입력 → DB에 550000 저장
+                                </span>
+                            </td>
+                            <td>✅ 수정 가능</td>
+                        </tr>
+                        <tr>
+                            <td><code>monthly_fee</code></td>
+                            <td>INT</td>
+                            <td>월요금<br>
+                                <span style="font-size: 12px; color: #6b7684; font-weight: 400;">
+                                원(₩) 단위로 저장 (예: 109000 → "10.9만" 표시)
+                                </span>
+                            </td>
+                            <td>❌ 자동</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h4 style="margin-top: 24px; margin-bottom: 12px;">신규 추가 필드 (판매점 시세표 전용)</h4>
+                <table class="comparison-table" style="margin-top: 12px;">
+                    <thead>
+                        <tr>
+                            <th>필드명</th>
+                            <th>타입</th>
+                            <th>설명</th>
+                            <th>기본값</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><code>store_id</code></td>
+                            <td>BIGINT</td>
+                            <td>판매점 ID (tb_store 외래키)</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td><code>is_visible</code></td>
+                            <td>BOOLEAN</td>
+                            <td>노출/비노출 (true/false)</td>
+                            <td>false</td>
+                        </tr>
+                        <tr>
+                            <td><code>table_version</code></td>
+                            <td>VARCHAR(20)</td>
+                            <td>시세표 버전 (v2.0, v2.1...)</td>
+                            <td>v2.0</td>
+                        </tr>
+                        <tr>
+                            <td><code>source_type</code></td>
+                            <td>VARCHAR(20)</td>
+                            <td>시세표 유형 (NOFEE/STORE)</td>
+                            <td>STORE</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="feature-card">
+            <div class="feature-title">상품 정보 연동 (tb_product_phone)</div>
+            <div class="feature-desc">
+                <p>판매점이 시세표를 작성할 때, 기존 상품 마스터 DB에서 정보를 불러옵니다.</p>
+
+                <h4 style="margin-top: 16px; margin-bottom: 12px;">연동 프로세스</h4>
+                <div style="background: #f9fafb; padding: 16px; border-radius: 8px; margin-top: 12px;">
+                    <ol style="margin-left: 20px;">
+                        <li><strong>상품 선택:</strong> <code>tb_product_phone</code>에서 상품 목록 조회
+                            <pre style="background: white; padding: 8px; margin-top: 8px; border-radius: 4px; font-size: 11px;">SELECT product_code, product_name, retail_price
+FROM tb_product_phone
+WHERE deleted_yn = 'N'
+ORDER BY ord;</pre>
+                        </li>
+                        <li><strong>용량 선택:</strong> 선택한 상품의 용량 옵션 조회
+                            <pre style="background: white; padding: 8px; margin-top: 8px; border-radius: 4px; font-size: 11px;">SELECT storage_code, capacity
+FROM tb_product_phone
+WHERE product_group_code = '선택한상품그룹';</pre>
+                        </li>
+                        <li><strong>자동 채우기:</strong> 출고가(retail_price)는 자동으로 표시</li>
+                        <li><strong>판매점 입력:</strong> 할부원금(단가)만 직접 입력 (만원 단위 정수, 예: 55, 60)</li>
+                    </ol>
+                </div>
+
+                <div class="alert alert-info" style="margin-top: 16px;">
+                    <strong>중요:</strong> 판매점은 상품을 선택하고 <strong>할부원금(단가)만 만원 단위 정수로 입력</strong>합니다 (예: 55만원 → "55", -12만원 페이백 → "-12"). 나머지 정보는 자동으로 채워집니다. 음수 입력 시 페이백(고객이 돈을 받고 구매)을 의미합니다.
+                </div>
+
+                <div class="alert alert-warning" style="margin-top: 12px;">
+                    <strong>단가 미입력 시 처리:</strong> 할부원금(단가)을 입력하지 않은 상품은 <strong>시세표에 포함되지 않습니다</strong>. 즉, 해당 상품의 12개 행이 DB에 저장되지 않으며, 고객 화면에도 표시되지 않습니다. 이는 현재 판매하지 않는 상품을 자동으로 제외하는 방식입니다.
+                </div>
+            </div>
         </div>
 
         <div class="feature-card">
             <div class="feature-title">가격 입력 및 표시 규칙</div>
             <div class="feature-desc">
-                <table class="comparison-table" style="margin-top: 16px;">
-                    <thead>
-                        <tr>
-                            <th style="width: 25%;">가격 유형</th>
-                            <th style="width: 25%;">어드민 입력</th>
-                            <th style="width: 25%;">DB 저장</th>
-                            <th style="width: 25%;">고객 화면</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td><strong>일반 가격</strong></td>
-                            <td><code>55</code></td>
-                            <td>550,000원</td>
-                            <td><strong>55만</strong></td>
-                        </tr>
-                        <tr>
-                            <td><strong>일반 가격</strong></td>
-                            <td><code>100</code></td>
-                            <td>1,000,000원</td>
-                            <td><strong>100만</strong></td>
-                        </tr>
-                        <tr>
-                            <td><strong>페이백</strong></td>
-                            <td><code>-12</code></td>
-                            <td>-120,000원</td>
-                            <td><strong>-12만</strong></td>
-                        </tr>
-                        <tr>
-                            <td><strong>페이백</strong></td>
-                            <td><code>-20</code></td>
-                            <td>-200,000원</td>
-                            <td><strong>-20만</strong></td>
-                        </tr>
-                    </tbody>
-                </table>
+                <h4 style="margin-top: 12px; margin-bottom: 12px;">📝 어드민 입력 방식</h4>
+                <div style="background: #f0f9ff; padding: 16px; border-radius: 8px; margin-bottom: 16px;">
+                    <ul>
+                        <li><strong>입력 단위:</strong> 만원(만₩) 단위 정수로 입력 가능 (양수 또는 음수)</li>
+                        <li><strong>양수 입력 예시 (일반 가격):</strong>
+                            <ul style="margin-top: 8px; margin-left: 20px;">
+                                <li>55만원 → <code>55</code> 입력 ✅</li>
+                                <li>60만원 → <code>60</code> 입력 ✅</li>
+                                <li>100만원 → <code>100</code> 입력 ✅</li>
+                            </ul>
+                        </li>
+                        <li><strong>음수 입력 예시 (페이백):</strong>
+                            <ul style="margin-top: 8px; margin-left: 20px;">
+                                <li>12만원 페이백 → <code>-12</code> 입력 ✅</li>
+                                <li>5만원 페이백 → <code>-5</code> 입력 ✅</li>
+                                <li>20만원 페이백 → <code>-20</code> 입력 ✅</li>
+                            </ul>
+                        </li>
+                        <li><strong>DB 저장:</strong> 입력한 값에 10,000을 곱하여 원 단위로 저장합니다
+                            <ul style="margin-top: 8px; margin-left: 20px;">
+                                <li><code>55</code> 입력 → <code>550,000원</code> DB 저장</li>
+                                <li><code>-12</code> 입력 → <code>-120,000원</code> DB 저장</li>
+                            </ul>
+                        </li>
+                    </ul>
 
-                <div class="key-box" style="margin-top: 16px;">
-                    <strong>💡 가격 입력 및 표시 규칙</strong>
-                    <ul style="margin-top: 8px;">
-                        <li><strong>어드민 입력:</strong> 만원 단위 정수로 입력 (55, 100, -12)</li>
-                        <li><strong>DB 저장:</strong> 입력값 × 10,000 = 원 단위로 자동 변환</li>
-                        <li><strong>고객 표시:</strong> 만원 단위로 표시 (55만, -12만)</li>
-                        <li><strong>입력 제한:</strong> 정수만 가능, 소수점 불가 (55.5 ❌)</li>
+                    <div class="alert alert-warning" style="margin-top: 12px; background: #fef3c7; border-left: 4px solid #f59e0b;">
+                        <strong>⚠️ 입력 제한 정책:</strong>
+                        <ul style="margin-top: 8px;">
+                            <li><strong>정수만 입력 가능:</strong> 소수점 값(예: 60.5, 55.5)은 입력할 수 없습니다</li>
+                            <li><strong>양수/음수 허용:</strong> 양수는 일반 가격, 음수는 페이백을 의미합니다</li>
+                            <li><strong>잘못된 예시:</strong> <code>60.5</code> ❌, <code>55.5</code> ❌, <code>48.3</code> ❌</li>
+                        </ul>
+                    </div>
+
+                    <div class="alert alert-success" style="margin-top: 12px; background: #fff5f5; border-left: 4px solid #ef4444;">
+                        <strong>💰 음수 가격(페이백)이란?</strong>
+                        <p style="margin-top: 8px; line-height: 1.6;">
+                            음수 가격은 고객이 상품을 구매하면서 <strong>일정 금액을 돌려받는 프로모션</strong>입니다.
+                            예를 들어 -12만원은 고객이 휴대폰을 구매하면서 12만원을 현금 또는 포인트로 받는 것을 의미합니다.
+                            이는 매장의 특별 프로모션이나 통신사 리베이트를 반영한 가격입니다.
+                        </p>
+                    </div>
+                </div>
+
+                <h4 style="margin-top: 16px; margin-bottom: 12px;">👁️ 고객 화면 표시 방식</h4>
+                <div style="background: #f0fdf4; padding: 16px; border-radius: 8px;">
+                    <p style="margin-bottom: 12px;"><strong>양수 가격 표시:</strong></p>
+                    <ul>
+                        <li><code>55</code> (어드민 입력) → <code>550,000원</code> (DB 저장) → <strong>"55만"</strong> (고객 화면)</li>
+                        <li><code>60</code> (어드민 입력) → <code>600,000원</code> (DB 저장) → <strong>"60만"</strong> (고객 화면)</li>
+                        <li><code>100</code> (어드민 입력) → <code>1,000,000원</code> (DB 저장) → <strong>"100만"</strong> (고객 화면)</li>
+                    </ul>
+
+                    <p style="margin-top: 16px; margin-bottom: 12px;"><strong>음수 가격 표시 (페이백):</strong></p>
+                    <ul>
+                        <li><code>-12</code> (어드민 입력) → <code>-120,000원</code> (DB 저장) → <strong>"12만원 페이백"</strong> (고객 화면)</li>
+                        <li><code>-5</code> (어드민 입력) → <code>-50,000원</code> (DB 저장) → <strong>"5만원 페이백"</strong> (고객 화면)</li>
+                        <li><code>-20</code> (어드민 입력) → <code>-200,000원</code> (DB 저장) → <strong>"20만원 페이백"</strong> (고객 화면)</li>
                     </ul>
                 </div>
 
-                <div class="key-box" style="margin-top: 16px;">
-                    <strong>💰 페이백이란?</strong>
-                    <p style="margin-top: 8px;">
-                        음수 가격은 고객이 휴대폰을 구매하면서 일정 금액을 현금/포인트로 돌려받는 프로모션입니다.
-                        매장의 특별 프로모션이나 통신사 리베이트를 반영한 가격입니다.
+                <div class="alert alert-success" style="margin-top: 16px; background: #f0fdf4; border-left: 4px solid #22c55e;">
+                    <strong>✅ 데이터 흐름:</strong>
+                    <ul style="margin-top: 8px;">
+                        <li><strong>어드민 입력:</strong> 만원 단위 정수로 간편하게 입력 (55, 60, -12 등)</li>
+                        <li><strong>DB 저장:</strong> 입력값 × 10,000 = 원 단위로 자동 변환하여 저장 (550,000원, 600,000원, -120,000원)</li>
+                        <li><strong>고객 표시:</strong>
+                            <ul style="margin-top: 4px; margin-left: 20px; font-size: 13px;">
+                                <li>양수: DB 값 ÷ 10,000 = 만원 단위 (55만, 60만)</li>
+                                <li>음수: |DB 값| ÷ 10,000 = 페이백 표시 (12만원 페이백, 5만원 페이백)</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="key-box" style="margin-top: 16px; background: #fef3c7; border-left: 4px solid #f59e0b;">
+                    <strong>💡 왜 이렇게 설계했나요?</strong>
+                    <p style="margin-top: 8px; line-height: 1.6;">
+                        판매점이 <strong>만원 단위 정수로 입력</strong>하면 훨씬 간편합니다. "550000"을 입력하는 대신 "55"만 입력하면 되니까요.
+                        <strong>음수 입력도 지원</strong>하여 페이백/리베이트 프로모션을 쉽게 반영할 수 있습니다.
+                        하지만 DB에는 <strong>정확한 원 단위로 저장</strong>하여 데이터 무결성을 유지합니다.
+                        고객에게는 양수는 가격으로, 음수는 "페이백"으로 <strong>읽기 쉽게 표시</strong>하여 직관적인 경험을 제공합니다.
                     </p>
                 </div>
             </div>
         </div>
 
+        <div class="feature-card">
+            <div class="feature-title">데이터 흐름 다이어그램</div>
+            <div class="feature-desc">
+                <div style="background: #f9fafb; padding: 24px; border-radius: 12px; margin-top: 16px;">
+                    <h4 style="margin-bottom: 16px;">1. 시세표 생성 플로우</h4>
+                    <div style="display: flex; align-items: center; gap: 12px; flex-wrap: wrap;">
+                        <div style="background: white; border: 2px solid #3182f6; border-radius: 8px; padding: 12px 16px; min-width: 140px; text-align: center;">
+                            <div style="font-weight: 700; color: #3182f6;">1. 상품 선택</div>
+                            <div style="font-size: 11px; color: #8b95a1; margin-top: 4px;">tb_product_phone</div>
+                        </div>
+                        <div style="font-size: 20px; color: #8b95a1;">→</div>
+                        <div style="background: white; border: 2px solid #3182f6; border-radius: 8px; padding: 12px 16px; min-width: 140px; text-align: center;">
+                            <div style="font-weight: 700; color: #3182f6;">2. 정보 자동 채우기</div>
+                            <div style="font-size: 11px; color: #8b95a1; margin-top: 4px;">상품명, 용량, 출고가</div>
+                        </div>
+                        <div style="font-size: 20px; color: #8b95a1;">→</div>
+                        <div style="background: white; border: 2px solid #ff9500; border-radius: 8px; padding: 12px 16px; min-width: 140px; text-align: center;">
+                            <div style="font-weight: 700; color: #ff9500;">3. 단가 입력</div>
+                            <div style="font-size: 11px; color: #8b95a1; margin-top: 4px;">할부원금만 수정</div>
+                        </div>
+                        <div style="font-size: 20px; color: #8b95a1;">→</div>
+                        <div style="background: white; border: 2px solid #3182f6; border-radius: 8px; padding: 12px 16px; min-width: 140px; text-align: center;">
+                            <div style="font-weight: 700; color: #3182f6;">4. 12개 행 생성</div>
+                            <div style="font-size: 11px; color: #8b95a1; margin-top: 4px;">통신사×지원금×가입</div>
+                        </div>
+                        <div style="font-size: 20px; color: #8b95a1;">→</div>
+                        <div style="background: white; border: 2px solid #00c73c; border-radius: 8px; padding: 12px 16px; min-width: 140px; text-align: center;">
+                            <div style="font-weight: 700; color: #00c73c;">5. DB 저장</div>
+                            <div style="font-size: 11px; color: #8b95a1; margin-top: 4px;">tb_pricetable_phone</div>
+                        </div>
+                    </div>
+
+                    <h4 style="margin-top: 24px; margin-bottom: 16px;">2. 고객 화면 조회 플로우</h4>
+                    <div style="display: flex; align-items: center; gap: 12px; flex-wrap: wrap;">
+                        <div style="background: white; border: 2px solid #00c73c; border-radius: 8px; padding: 12px 16px; min-width: 140px; text-align: center;">
+                            <div style="font-weight: 700; color: #00c73c;">1. 시세표 조회</div>
+                            <div style="font-size: 11px; color: #8b95a1; margin-top: 4px;">store_id + visible</div>
+                        </div>
+                        <div style="font-size: 20px; color: #8b95a1;">→</div>
+                        <div style="background: white; border: 2px solid #00c73c; border-radius: 8px; padding: 12px 16px; min-width: 140px; text-align: center;">
+                            <div style="font-weight: 700; color: #00c73c;">2. 12개 행 그룹핑</div>
+                            <div style="font-size: 11px; color: #8b95a1; margin-top: 4px;">상품별로 모으기</div>
+                        </div>
+                        <div style="font-size: 20px; color: #8b95a1;">→</div>
+                        <div style="background: white; border: 2px solid #00c73c; border-radius: 8px; padding: 12px 16px; min-width: 140px; text-align: center;">
+                            <div style="font-weight: 700; color: #00c73c;">3. 가격 변환</div>
+                            <div style="font-size: 11px; color: #8b95a1; margin-top: 4px;">480000 → "48만"</div>
+                        </div>
+                        <div style="font-size: 20px; color: #8b95a1;">→</div>
+                        <div style="background: white; border: 2px solid #00c73c; border-radius: 8px; padding: 12px 16px; min-width: 140px; text-align: center;">
+                            <div style="font-weight: 700; color: #00c73c;">4. 화면 렌더링</div>
+                            <div style="font-size: 11px; color: #8b95a1; margin-top: 4px;">1행 = 1상품</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="alert alert-success">
+            <strong>DB 구조 정리:</strong> 기존 <code>tb_pricetable_phone</code> 테이블을 활용하되, <code>store_id</code>, <code>is_visible</code>, <code>source_type</code> 필드를 추가합니다. 판매점은 상품을 선택하고 할부원금만 입력하며, 12개 행이 자동으로 생성됩니다.
+        </div>
     </div>
 
+    <!-- 다음 단계 -->
+    <div class="section">
+        <div class="section-header">
+            <div class="section-number">9</div>
+            <h2>다음 단계</h2>
+        </div>
+
+        <div class="key-box" style="border-left-color: #ffb300;">
+            <strong>논의 필요 사항</strong>
+            <p>
+                - 모바일 UI/UX 상세 설계 (상품 카드 디자인, 색상 시스템)<br>
+                - 최저가 자동 계산 및 하이라이트 로직<br>
+                - 구매 신청 플로우 설계<br>
+                - 시세표 자동 생성 로직<br>
+                - 백엔드 API 설계
+            </p>
+        </div>
+    </div>
 
     <script>
         // 프로토타입 1: 행 추가 기능
@@ -2719,77 +2856,13 @@
             row.remove();
         }
 
-        // 테이블 정렬 기능
-        function sortTable(order) {
-            const tbody = document.getElementById('tableBody1');
-            const rows = Array.from(tbody.getElementsByTagName('tr'));
-
-            rows.sort((a, b) => {
-                const nameA = a.cells[0].querySelector('input').value;
-                const nameB = b.cells[0].querySelector('input').value;
-
-                if (order === 'asc') {
-                    return nameA.localeCompare(nameB, 'ko');
-                } else {
-                    return nameB.localeCompare(nameA, 'ko');
-                }
-            });
-
-            // 정렬된 행을 다시 추가하고 data-row-index 업데이트
-            rows.forEach((row, index) => {
-                row.setAttribute('data-row-index', index);
-                tbody.appendChild(row);
-            });
-        }
-
-        // 메모 업데이트 함수
-        function updateImageMemo() {
-            const memoInput = document.getElementById('memoInput');
-            const imageMemo = document.getElementById('imageMemo');
-            const imageMemoText = document.getElementById('imageMemoText');
-
-            if (memoInput.value.trim()) {
-                imageMemoText.textContent = memoInput.value;
-                imageMemo.style.display = 'block';
-            } else {
-                imageMemo.style.display = 'none';
-            }
-        }
-
-        // 개별 셀 업데이트 함수
-        function updateImageCell(rowIndex, colIndex, value) {
-            const imageTableBody = document.querySelector('.prototype-container:nth-of-type(2) table tbody');
-            const imageRow = imageTableBody.querySelectorAll('tr')[rowIndex];
-
-            if (!imageRow) return;
-
-            if (colIndex === 'name') {
-                // 상품명 업데이트
-                imageRow.cells[0].textContent = value;
-            } else if (colIndex === 'capacity') {
-                // 용량 업데이트
-                imageRow.cells[1].textContent = value;
-            } else if (colIndex === 'plan') {
-                // 월요금 업데이트
-                imageRow.cells[2].textContent = value;
-            } else {
-                // 가격 셀 업데이트 (colIndex는 3부터 시작)
-                const targetCell = imageRow.cells[colIndex];
-                if (targetCell) {
-                    // 빈 값이나 "-"는 그레이 스타일로
-                    if (!value || value === '-' || value.trim() === '') {
-                        targetCell.textContent = '-';
-                        targetCell.style.color = '#adb5bd';
-                        targetCell.style.fontWeight = '500';
-                        targetCell.style.fontSize = '16px';
-                    } else {
-                        targetCell.textContent = value;
-                        targetCell.style.color = '#191f28';
-                        targetCell.style.fontWeight = '900';
-                        targetCell.style.fontSize = '18px';
-                    }
-                }
-            }
+        // 임시저장 기능
+        function saveDraft() {
+            const alert = document.getElementById('saveAlert1');
+            alert.style.display = 'block';
+            setTimeout(() => {
+                alert.style.display = 'none';
+            }, 3000);
         }
 
         // 시세표 발행 기능
@@ -3010,33 +3083,85 @@
         </div>
 
         <div class="feature-card">
-            <div class="feature-title">v2.1 (2025-10-11 15:45)</div>
-            <div class="feature-desc">loadMoreNews() 함수 버그 수정 - 전역 변수 제거, .hidden-news 클래스 조회 방식으로 로직 단순화<br>
-            더보기 버튼 정상 동작 (6개 뉴스를 3개씩 2번에 걸쳐 표시)</div>
+            <div class="feature-title">v2.1 (2025-10-11 15:45 KST)</div>
+            <div class="feature-desc">
+                <p style="margin-top: 12px;"><strong>🐛 버그 수정:</strong></p>
+                <ul>
+                    <li><strong>loadMoreNews() 함수 로직 개선</strong>
+                        <ul>
+                            <li><strong>문제:</strong> 불필요한 전역 변수 <code>visibleNewsCount</code> 사용으로 인해 3개 이상 뉴스가 표시되지 않는 버그</li>
+                            <li><strong>원인:</strong> <code>classList.remove('hidden-news')</code> 실행 후 다음 호출 시 이미 표시된 요소를 찾을 수 없음</li>
+                            <li><strong>해결:</strong> 전역 변수 제거, 매번 <code>.hidden-news</code> 클래스를 조회하여 앞에서부터 3개씩 표시하도록 로직 단순화</li>
+                            <li><strong>영향:</strong> 더보기 버튼이 정상적으로 6개 뉴스를 3개씩 2번에 걸쳐 표시</li>
+                        </ul>
+                    </li>
+                </ul>
+                <p style="margin-top: 12px;"><strong>📍 수정된 코드 위치:</strong></p>
+                <ul>
+                    <li>JavaScript 함수: <code>loadMoreNews()</code> (라인 3061-3075)</li>
+                </ul>
+            </div>
         </div>
 
         <div class="feature-card">
-            <div class="feature-title">v2.0 (2025-10-11 13:26)</div>
-            <div class="feature-desc">홈 탭 추가 (인증 정보 + 우리매장 소식), 음수 가격 지원 (-12 입력 → "12만원 페이백" 표시), 탭 전환 기능<br>
-            두 번째 카드 버튼 활성화 버그 수정, switchTab()/loadMoreNews() 함수 추가</div>
+            <div class="feature-title">v2.0 (2025-10-11 13:26 KST)</div>
+            <div class="feature-desc">
+                <p style="margin-top: 12px;"><strong>🎉 주요 기능 추가:</strong></p>
+                <ul>
+                    <li><strong>홈 탭 기능 추가</strong>: 인증 정보 + 우리매장 소식 섹션</li>
+                    <li><strong>더보기 버튼</strong>: 뉴스 3개씩 추가 로딩</li>
+                    <li><strong>탭 전환 기능</strong>: 홈/시세표/후기 탭 전환</li>
+                    <li><strong>음수 가격 지원</strong>: -12 입력 → "12만원 페이백" 표시</li>
+                </ul>
+                <p style="margin-top: 12px;"><strong>🐛 버그 수정:</strong></p>
+                <ul>
+                    <li><strong>두 번째 카드 버튼 활성화 안됨</strong>: Hidden input 추가 + selectPrice 함수 null 체크</li>
+                </ul>
+                <p style="margin-top: 12px;"><strong>🔧 추가된 JavaScript 함수:</strong></p>
+                <ul>
+                    <li><code>switchTab(tabName)</code>: 탭 전환</li>
+                    <li><code>loadMoreNews()</code>: 더보기 기능</li>
+                </ul>
+            </div>
         </div>
 
         <div class="feature-card">
             <div class="feature-title">v1.2 (2025-10-11 오전)</div>
-            <div class="feature-desc">소수점 입력 제거 (step="1"), Toss 관련 멘트 삭제, 사용자 친화적 언어로 전환<br>
-            가격 표시 형식 오류 수정</div>
+            <div class="feature-desc">
+                <p style="margin-top: 12px;"><strong>🔧 일관성 개선:</strong></p>
+                <ul>
+                    <li>소수점 입력 제거 (step="1"로 변경)</li>
+                    <li>Toss 관련 멘트 삭제</li>
+                    <li>사용자 친화적 언어로 전환</li>
+                    <li>가격 표시 형식 오류 수정</li>
+                </ul>
+            </div>
         </div>
 
         <div class="feature-card">
             <div class="feature-title">v1.1 (2025-10-11 오전)</div>
-            <div class="feature-desc">어드민 가격 입력을 "만원 단위"로 변경 (기존: 550000 입력 → 변경: 55 입력)<br>
-            입력 편의성 개선 및 오류 감소</div>
+            <div class="feature-desc">
+                <p style="margin-top: 12px;"><strong>💰 입력 방식 개선:</strong></p>
+                <ul>
+                    <li>어드민 가격 입력을 "만원 단위"로 변경</li>
+                    <li>기존: 550000 입력 → 변경: 55 입력</li>
+                    <li>사유: 입력 편의성 개선 및 오류 감소</li>
+                </ul>
+            </div>
         </div>
 
         <div class="feature-card">
             <div class="feature-title">v1.0 (2025-10-11 초기)</div>
-            <div class="feature-desc">초기 기능 구현: 표 형식 시세표 입력, 이미지 다운로드, 노출 관리 (공개/비공개)<br>
-            모바일 고객 화면 (카드형 레이아웃), 실시간 가격 변동 기능</div>
+            <div class="feature-desc">
+                <p style="margin-top: 12px;"><strong>🚀 초기 기능 구현:</strong></p>
+                <ul>
+                    <li>표 형식 시세표 입력</li>
+                    <li>이미지 다운로드 기능</li>
+                    <li>노출 관리 (공개/비공개)</li>
+                    <li>모바일 고객 화면 (카드형 레이아웃)</li>
+                    <li>실시간 가격 변동 기능</li>
+                </ul>
+            </div>
         </div>
     </div>
 
