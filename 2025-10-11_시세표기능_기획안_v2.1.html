@@ -1364,6 +1364,26 @@
                         <li><strong>페이백</strong> — 음수 가격은 고객이 휴대폰 구매 시 돌려받는 금액이에요</li>
                     </ul>
                 </div>
+
+                <!-- 중복 입력 방지 정책 -->
+                <div class="key-box" style="margin-top: 16px; padding: 20px; background: #fff5f5; border-radius: 8px; border: 2px solid #ef4444;">
+                    <h4 style="color: #191f28; font-size: 16px; font-weight: 700; margin-bottom: 16px;">⚠️ 중복 입력 방지 정책</h4>
+
+                    <ul style="color: #4e5968; line-height: 1.7;">
+                        <li><strong>중복 조건</strong> — 상품명 + 용량 + 요금제가 동일한 상품은 중복으로 판단</li>
+                        <li><strong>중복 입력 시</strong> — "동일한 조건의 상품이 이미 존재합니다" 알럿 표시</li>
+                        <li><strong>업로드 차단</strong> — 중복된 상품은 DB에 저장되지 않음</li>
+                        <li><strong>예시</strong> — "갤럭시 S25 + 256GB + 8.9만"이 이미 있는 경우, 같은 조건으로 재입력 불가</li>
+                        <li><strong>수정 방법</strong> — 기존 상품을 삭제하거나 수정하여 사용</li>
+                    </ul>
+
+                    <div style="margin-top: 16px; padding: 16px; background: white; border-radius: 6px; border-left: 3px solid #ef4444;">
+                        <strong style="color: #191f28;">💡 왜 이 정책이 필요한가요?</strong>
+                        <p style="margin-top: 8px; color: #4e5968; line-height: 1.7;">
+                            동일한 상품이 여러 개 존재하면 고객이 혼란스러울 수 있고, 어떤 가격이 정확한지 판단하기 어렵습니다. 또한 시스템에서 최저가 자동 선택 시 중복 데이터로 인한 오류가 발생할 수 있습니다. 이 정책으로 데이터 무결성을 보장하고 고객에게 명확한 정보를 제공합니다.
+                        </p>
+                    </div>
+                </div>
             </div>
 
             <!-- 프로토타입 1: 시세표 입력 -->
