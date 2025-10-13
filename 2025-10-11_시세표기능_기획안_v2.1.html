@@ -1216,43 +1216,75 @@
             <h2>배경 및 목적</h2>
         </div>
 
-        <h3>현재 상황</h3>
-        <p>
-            현재 노피 어드민에서는 두 가지 콘텐츠 유형만 지원하고 있습니다:
-        </p>
-        <ul>
-            <li><strong>이벤트 피드:</strong> 하나의 상품을 지정하여 이벤트 가격을 작성, 상품을 한 개씩 업로드</li>
-            <li><strong>일반 피드:</strong> 일반 글과 일반 이미지를 업로드</li>
-        </ul>
+        <div class="feature-card">
+            <div class="feature-title">현재 상황</div>
+            <div class="feature-desc">
+                <p>기존에는 <strong>이벤트 피드</strong>와 <strong>일반 피드</strong> 두 가지 콘텐츠 유형으로 운영했으나,
+                이벤트 피드는 deprecated 되었고 현재는 <strong>일반 피드</strong>만 사용 중입니다.</p>
 
-        <h3>문제점</h3>
-        <ul>
-            <li>판매점이 여러 상품을 등록하려면 반복적으로 하나씩 업로드해야 함</li>
-            <li>대량의 상품 정보를 효율적으로 관리하기 어려움</li>
-            <li>가격 변동 시 일일이 수정해야 하는 번거로움</li>
-            <li>고객이 매장의 전체 상품 라인업을 한눈에 보기 어려움</li>
-        </ul>
+                <div style="margin-top: 16px; padding: 16px; background: #f8f9fa; border-radius: 8px; border-left: 3px solid #8b95a1;">
+                    <div style="color: #4e5968; font-size: 14px;">
+                        <strong>일반 피드의 한계:</strong><br>
+                        • 상품을 한 개씩만 업로드 가능<br>
+                        • 대량의 가격 정보를 표 형식으로 관리 불가<br>
+                        • 고객이 여러 상품을 비교하기 어려움
+                    </div>
+                </div>
+            </div>
+        </div>
 
-        <h3>해결 방안</h3>
-        <p>
-            <strong>시세표 콘텐츠 유형</strong>을 추가하여 판매점이 표 형식으로 대량의 상품을 쉽게 업로드하고 관리할 수 있도록 합니다.
-            시세표는 동네성지의 각 스토어 메인에 고정 노출되어 고객이 매장의 모든 상품을 한눈에 확인할 수 있습니다.
-        </p>
+        <div class="feature-card">
+            <div class="feature-title">해결 방안</div>
+            <div class="feature-desc">
+                <p>
+                    <strong>시세표 콘텐츠 유형</strong>을 추가하여 판매점이 표 형식으로 대량의 상품을 쉽게 업로드하고 관리할 수 있도록 합니다.
+                </p>
+                <ul style="margin-top: 12px;">
+                    <li><strong>어드민:</strong> 엑셀처럼 직관적인 표 입력 + 이미지 자동 생성 + SNS 공유</li>
+                    <li><strong>고객:</strong> 제조사별/용량별/요금제별 4단계 필터링 + 최저가 자동 선택</li>
+                    <li><strong>노출:</strong> 스토어 홈 탭에 고정 노출 (매장의 대표 콘텐츠)</li>
+                </ul>
+            </div>
+        </div>
 
-        <div class="key-box" style="margin-top: 24px; padding: 20px; background: linear-gradient(135deg, #f0f6ff 0%, #e6f0ff 100%); border-radius: 12px; border: 2px solid #3182f6;">
-            <h3 style="color: #191f28; font-size: 17px; font-weight: 800; margin-bottom: 16px; display: flex; align-items: center; gap: 8px;">
-                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M10 2L12.5 7L18 7.75L14 11.5L15 17L10 14.25L5 17L6 11.5L2 7.75L7.5 7L10 2Z" fill="#3182f6" stroke="#3182f6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-                기대 효과
-            </h3>
-            <ul style="color: #4e5968; line-height: 1.8; margin: 0; padding-left: 20px;">
-                <li><strong>판매점 업무 효율화</strong> — 한 번에 여러 상품 등록으로 작업 시간 대폭 단축</li>
-                <li><strong>고객 편의성 향상</strong> — 제조사별/용량별/요금제별 필터링으로 원하는 상품 즉시 비교</li>
-                <li><strong>데이터 일관성</strong> — 통일된 표 형식으로 상품 정보 체계적 관리</li>
-                <li><strong>가격 투명성</strong> — 최저가 자동 선택으로 고객에게 최적의 가격 제시</li>
-                <li><strong>전환율 향상</strong> — 4단계 필터링과 간편한 구매 플로우로 전환율 증가</li>
-            </ul>
+        <div class="feature-card" style="background: linear-gradient(135deg, #f8f9fc 0%, #f3f4f8 100%); border: 2px solid #e5e8eb;">
+            <div class="feature-title" style="color: #3182f6;">기대 효과</div>
+            <div class="feature-desc">
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px; margin-top: 12px;">
+                    <div style="padding: 16px; background: white; border-radius: 8px; border: 1px solid #e5e8eb;">
+                        <div style="font-weight: 700; color: #191f28; margin-bottom: 8px; display: flex; align-items: center; gap: 8px;">
+                            <span style="font-size: 20px;">⚡</span> 업무 효율화
+                        </div>
+                        <div style="font-size: 14px; color: #6b7684; line-height: 1.6;">
+                            한 번에 여러 상품 등록으로 작업 시간 대폭 단축
+                        </div>
+                    </div>
+                    <div style="padding: 16px; background: white; border-radius: 8px; border: 1px solid #e5e8eb;">
+                        <div style="font-weight: 700; color: #191f28; margin-bottom: 8px; display: flex; align-items: center; gap: 8px;">
+                            <span style="font-size: 20px;">🎯</span> 고객 편의성
+                        </div>
+                        <div style="font-size: 14px; color: #6b7684; line-height: 1.6;">
+                            4단계 필터링으로 원하는 상품 즉시 비교
+                        </div>
+                    </div>
+                    <div style="padding: 16px; background: white; border-radius: 8px; border: 1px solid #e5e8eb;">
+                        <div style="font-weight: 700; color: #191f28; margin-bottom: 8px; display: flex; align-items: center; gap: 8px;">
+                            <span style="font-size: 20px;">💎</span> 가격 투명성
+                        </div>
+                        <div style="font-size: 14px; color: #6b7684; line-height: 1.6;">
+                            최저가 자동 선택으로 최적의 가격 제시
+                        </div>
+                    </div>
+                    <div style="padding: 16px; background: white; border-radius: 8px; border: 1px solid #e5e8eb;">
+                        <div style="font-weight: 700; color: #191f28; margin-bottom: 8px; display: flex; align-items: center; gap: 8px;">
+                            <span style="font-size: 20px;">📈</span> 전환율 향상
+                        </div>
+                        <div style="font-size: 14px; color: #6b7684; line-height: 1.6;">
+                            간편한 구매 플로우로 전환율 증가
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -1271,32 +1303,40 @@
                     <th>상품 수</th>
                     <th>노출 위치</th>
                     <th>주요 용도</th>
+                    <th>상태</th>
                 </tr>
             </thead>
             <tbody>
-                <tr>
+                <tr style="background: #fafafa; opacity: 0.6;">
                     <td><strong>이벤트 피드</strong></td>
                     <td>개별 상품 업로드</td>
                     <td>1개</td>
                     <td>피드 탭</td>
                     <td>특가 상품 홍보</td>
+                    <td><span style="background: #e9ecef; color: #6c757d; padding: 4px 12px; border-radius: 12px; font-size: 12px; font-weight: 600;">deprecated</span></td>
                 </tr>
                 <tr>
                     <td><strong>일반 피드</strong></td>
                     <td>이미지/텍스트 업로드</td>
                     <td>해당없음</td>
-                    <td>피드 탭</td>
+                    <td>소식 탭</td>
                     <td>일반 공지/소식</td>
+                    <td><span style="background: #00c73c; color: white; padding: 4px 12px; border-radius: 12px; font-size: 12px; font-weight: 600;">사용 중</span></td>
                 </tr>
                 <tr style="background: #f0f6ff;">
-                    <td><strong>시세표 (NEW)</strong></td>
+                    <td><strong>시세표</strong></td>
                     <td>표 형식 일괄 입력</td>
                     <td>다수 (제한없음)</td>
-                    <td>시세표 탭 (고정)</td>
+                    <td>홈 탭 (고정)</td>
                     <td>전체 상품 가격 안내</td>
+                    <td><span style="background: #3182f6; color: white; padding: 4px 12px; border-radius: 12px; font-size: 12px; font-weight: 600;">NEW</span></td>
                 </tr>
             </tbody>
         </table>
+
+        <div class="alert alert-info" style="margin-top: 16px;">
+            <strong>변경 사항:</strong> 이벤트 피드는 더 이상 사용하지 않으며, 일반 피드와 시세표 기능으로 통합 운영됩니다. 시세표는 가격 정보를, 일반 피드는 매장 소식을 담당합니다.
+        </div>
     </div>
 
     <!-- 주요 기능 -->
@@ -2497,6 +2537,28 @@
                                             box-shadow: 0 0 0 3px rgba(49,130,246,0.1);
                                         }
                                     </style>
+
+                                    <!-- 마지막 업데이트 시간 -->
+                                    <div style="margin-bottom: 20px; padding: 12px 16px; background: linear-gradient(135deg, #f8f9fc 0%, #f3f4f8 100%); border-radius: 12px; border: 1px solid #e5e8eb; display: flex; align-items: center; justify-content: space-between;">
+                                        <div style="display: flex; align-items: center; gap: 8px;">
+                                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M8 14.5C11.5899 14.5 14.5 11.5899 14.5 8C14.5 4.41015 11.5899 1.5 8 1.5C4.41015 1.5 1.5 4.41015 1.5 8C1.5 11.5899 4.41015 14.5 8 14.5Z" stroke="#6b7684" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M8 4V8L10.5 10.5" stroke="#6b7684" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                            <span style="font-size: 13px; font-weight: 600; color: #4e5968;">마지막 업데이트</span>
+                                        </div>
+                                        <span id="lastUpdateTime" style="font-size: 13px; font-weight: 700; color: #191f28; letter-spacing: -0.3px;">
+                                            <script>
+                                                const now = new Date();
+                                                const year = now.getFullYear();
+                                                const month = String(now.getMonth() + 1).padStart(2, '0');
+                                                const date = String(now.getDate()).padStart(2, '0');
+                                                const hours = String(now.getHours()).padStart(2, '0');
+                                                const minutes = String(now.getMinutes()).padStart(2, '0');
+                                                document.write(`${year}.${month}.${date} ${hours}:${minutes}`);
+                                            </script>
+                                        </span>
+                                    </div>
 
                                     <!-- 상품 선택 영역 -->
                                     <div style="margin-bottom: 20px;">
