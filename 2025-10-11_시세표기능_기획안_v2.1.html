@@ -3418,7 +3418,7 @@
             }
 
             allProducts = [];
-            const rows = tbody.querySelectorAll('tr');
+            const rows = tbody.querySelectorAll('tr[data-row-index]');
 
             rows.forEach((row, index) => {
                 const nameInput = row.querySelector('input[data-col="name"]');
@@ -3426,13 +3426,14 @@
                 const planInput = row.querySelector('input[data-col="plan"]');
 
                 if (nameInput && capacityInput && planInput) {
-                    const priceInputs = row.querySelectorAll('input[data-col]');
+                    const priceInputs = row.querySelectorAll('input.price-input[data-col]');
                     const prices = {};
 
                     priceInputs.forEach(input => {
                         const col = input.getAttribute('data-col');
-                        if (!isNaN(col)) {
-                            prices[col] = input.value;
+                        const colNum = parseInt(col);
+                        if (!isNaN(colNum)) {
+                            prices[colNum] = input.value;
                         }
                     });
 
@@ -3454,6 +3455,8 @@
                     });
                 }
             });
+
+            console.log('로드된 상품 수:', allProducts.length, allProducts);
 
             if (allProducts.length > 0) {
                 const samsungProducts = allProducts.filter(p => p.manufacturer === 'samsung');
