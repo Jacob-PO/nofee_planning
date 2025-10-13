@@ -1305,6 +1305,7 @@
                         <li><strong>행 추가/삭제</strong> — 상품을 자유롭게 추가하거나 삭제해요</li>
                         <li><strong>상품명 정렬</strong> — 오름차순 또는 내림차순으로 정렬해요</li>
                         <li><strong>참고사항</strong> — 개통 관련 추가 정보를 메모로 남길 수 있어요</li>
+                        <li><strong>중복 방지</strong> — 상품명 + 용량 + 요금제가 동일한 상품은 입력 시 알럿이 표시되고 저장되지 않아요</li>
                     </ul>
                 </div>
 
@@ -1363,26 +1364,6 @@
                         <li><strong>입력 제한</strong> — 정수만 가능, 소수점 불가</li>
                         <li><strong>페이백</strong> — 음수 가격은 고객이 휴대폰 구매 시 돌려받는 금액이에요</li>
                     </ul>
-                </div>
-
-                <!-- 중복 입력 방지 정책 -->
-                <div class="key-box" style="margin-top: 16px; padding: 20px; background: #fff5f5; border-radius: 8px; border: 2px solid #ef4444;">
-                    <h4 style="color: #191f28; font-size: 16px; font-weight: 700; margin-bottom: 16px;">⚠️ 중복 입력 방지 정책</h4>
-
-                    <ul style="color: #4e5968; line-height: 1.7;">
-                        <li><strong>중복 조건</strong> — 상품명 + 용량 + 요금제가 동일한 상품은 중복으로 판단</li>
-                        <li><strong>중복 입력 시</strong> — "동일한 조건의 상품이 이미 존재합니다" 알럿 표시</li>
-                        <li><strong>업로드 차단</strong> — 중복된 상품은 DB에 저장되지 않음</li>
-                        <li><strong>예시</strong> — "갤럭시 S25 + 256GB + 8.9만"이 이미 있는 경우, 같은 조건으로 재입력 불가</li>
-                        <li><strong>수정 방법</strong> — 기존 상품을 삭제하거나 수정하여 사용</li>
-                    </ul>
-
-                    <div style="margin-top: 16px; padding: 16px; background: white; border-radius: 6px; border-left: 3px solid #ef4444;">
-                        <strong style="color: #191f28;">💡 왜 이 정책이 필요한가요?</strong>
-                        <p style="margin-top: 8px; color: #4e5968; line-height: 1.7;">
-                            동일한 상품이 여러 개 존재하면 고객이 혼란스러울 수 있고, 어떤 가격이 정확한지 판단하기 어렵습니다. 또한 시스템에서 최저가 자동 선택 시 중복 데이터로 인한 오류가 발생할 수 있습니다. 이 정책으로 데이터 무결성을 보장하고 고객에게 명확한 정보를 제공합니다.
-                        </p>
-                    </div>
                 </div>
             </div>
 
@@ -2894,6 +2875,32 @@
     </div>
 
     <script>
+        // 중복 상품 확인 함수
+        function checkDuplicateProduct(productName, capacity, plan) {
+            const tbody = document.getElementById('tableBody1');
+            const rows = tbody.querySelectorAll('tr');
+
+            for (let row of rows) {
+                const nameInput = row.querySelector('input[data-col="name"]');
+                const capacityInput = row.querySelector('input[data-col="capacity"]');
+                const planInput = row.querySelector('input[data-col="plan"]');
+
+                if (nameInput && capacityInput && planInput) {
+                    const existingName = nameInput.value.trim();
+                    const existingCapacity = capacityInput.value.trim();
+                    const existingPlan = planInput.value.trim();
+
+                    // 상품명 + 용량 + 요금제가 모두 동일한 경우 중복으로 판단
+                    if (existingName === productName.trim() &&
+                        existingCapacity === capacity.trim() &&
+                        existingPlan === plan.trim()) {
+                        return true;
+                    }
+                }
+            }
+            return false;
+        }
+
         // 프로토타입 1: 행 추가 기능
         function addRow() {
             const tbody = document.getElementById('tableBody1');
@@ -3066,6 +3073,52 @@
             if (!imageRow) {
                 console.error(`행 인덱스 ${rowIndex}를 찾을 수 없습니다.`);
                 return;
+            }
+
+            // 중복 체크 (name, capacity, plan 변경 시)
+            if (colIndex === 'name' || colIndex === 'capacity' || colIndex === 'plan') {
+                const tbody = document.getElementById('tableBody1');
+                const currentRow = tbody.querySelectorAll('tr')[rowIndex];
+
+                if (currentRow) {
+                    const nameInput = currentRow.querySelector('input[data-col="name"]');
+                    const capacityInput = currentRow.querySelector('input[data-col="capacity"]');
+                    const planInput = currentRow.querySelector('input[data-col="plan"]');
+
+                    if (nameInput && capacityInput && planInput) {
+                        let checkName = nameInput.value;
+                        let checkCapacity = capacityInput.value;
+                        let checkPlan = planInput.value;
+
+                        // 현재 변경되는 값 반영
+                        if (colIndex === 'name') checkName = value;
+                        if (colIndex === 'capacity') checkCapacity = value;
+                        if (colIndex === 'plan') checkPlan = value;
+
+                        // 모든 값이 입력된 경우에만 중복 체크
+                        if (checkName.trim() && checkCapacity.trim() && checkPlan.trim()) {
+                            // 현재 행을 제외한 다른 행들과 중복 체크
+                            const allRows = tbody.querySelectorAll('tr');
+                            for (let i = 0; i < allRows.length; i++) {
+                                if (i === rowIndex) continue; // 현재 행 제외
+
+                                const row = allRows[i];
+                                const existingName = row.querySelector('input[data-col="name"]');
+                                const existingCapacity = row.querySelector('input[data-col="capacity"]');
+                                const existingPlan = row.querySelector('input[data-col="plan"]');
+
+                                if (existingName && existingCapacity && existingPlan) {
+                                    if (existingName.value.trim() === checkName.trim() &&
+                                        existingCapacity.value.trim() === checkCapacity.trim() &&
+                                        existingPlan.value.trim() === checkPlan.trim()) {
+                                        alert('⚠️ 동일한 조건의 상품이 이미 존재합니다\n\n상품명: ' + checkName + '\n용량: ' + checkCapacity + '\n요금제: ' + checkPlan);
+                                        return; // 업데이트 중단
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
             }
 
             if (colIndex === 'name') {
@@ -3439,22 +3492,13 @@
 
         // 이미지 URL 가져오기 함수
         function getProductImageUrl(productName) {
-            if (productName.includes('갤럭시 S25 울트라')) {
-                return 'https://image.nofee.team/product-group/phone/SM-S-938/thumb/20250627152509_6a55acc72fc42cdf56ef5f088e65c6a1.png';
-            } else if (productName.includes('갤럭시 S25')) {
+            // 아이폰 제품은 모두 통일된 이미지 사용
+            if (productName.includes('아이폰')) {
+                return 'https://image.nofee.team/product-group/phone/AP-B-17/thumb/20250918085221_4c21b2c479fa70139689cd6567f875de.jpg';
+            }
+            // 갤럭시 제품은 모두 통일된 이미지 사용
+            else if (productName.includes('갤럭시')) {
                 return 'https://image.nofee.team/product-group/phone/SM-S-25/thumb/20250627152510_69d7ac613e112f7ed9799137df572843.png';
-            } else if (productName.includes('아이폰 17 프로 맥스')) {
-                return 'https://image.nofee.team/product-group/phone/아이폰-17-Pro-Max/thumb/20250627152443_f8a47b08bbf43d2ac60a43b0fbd53c36.png';
-            } else if (productName.includes('아이폰 17 프로')) {
-                return 'https://image.nofee.team/product-group/phone/아이폰-17-Pro/thumb/20250627152442_d10b0b0bd69f0c5fcfba47bc96f87207.png';
-            } else if (productName.includes('갤럭시 Z 플립')) {
-                return 'https://image.nofee.team/product-group/phone/SM-F-761/thumb/20250627151646_8ee86f9afe36ddb6819e9de4a93d5f01.png';
-            } else if (productName.includes('아이폰 17')) {
-                return 'https://image.nofee.team/product-group/phone/아이폰-17/thumb/20250627152447_f4b8cef7a2c7ea5ba86147e5f28e9c5a.png';
-            } else if (productName.includes('갤럭시 Z 폴드')) {
-                return 'https://image.nofee.team/product-group/phone/SM-F-966/thumb/20250627151650_19ad0fa2f5e8c49e065099b8c8b5ccc1.png';
-            } else if (productName.includes('갤럭시 A55')) {
-                return 'https://image.nofee.team/product-group/phone/SM-A-556/thumb/20250627152505_8e2e1b5eeef7edc0e5b3f9f9e6cf5f7c.png';
             }
             return 'https://via.placeholder.com/48';
         }
@@ -3503,6 +3547,22 @@
             });
 
             dropdown.innerHTML = '';
+
+            // 상품이 없을 경우 Empty State 표시
+            if (uniqueProducts.length === 0) {
+                dropdown.innerHTML = `
+                    <div style="padding: 48px 24px; text-align: center;">
+                        <div style="margin-bottom: 16px; font-size: 48px; opacity: 0.3;">📦</div>
+                        <div style="font-size: 16px; font-weight: 700; color: #191f28; margin-bottom: 8px;">
+                            등록된 상품이 없습니다
+                        </div>
+                        <div style="font-size: 14px; color: #8b95a1; line-height: 1.6;">
+                            ${currentManufacturer === 'samsung' ? '삼성' : currentManufacturer === 'apple' ? '애플' : '기타'} 제품을 먼저 등록해주세요
+                        </div>
+                    </div>
+                `;
+                return;
+            }
 
             uniqueProducts.forEach(product => {
                 const option = document.createElement('div');
