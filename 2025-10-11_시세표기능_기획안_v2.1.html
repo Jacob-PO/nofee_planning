@@ -562,7 +562,6 @@
         .mobile-header {
             background: white;
             padding: 18px 20px;
-            border-bottom: 1.5px solid #f2f4f6;
             position: sticky;
             top: 0;
             z-index: 10;
@@ -599,20 +598,52 @@
             color: #8b95a1;
         }
 
+        .mobile-header-buttons {
+            display: flex;
+            gap: 8px;
+            margin-top: 12px;
+        }
+
+        .mobile-header-btn {
+            flex: 1;
+            padding: 10px;
+            border: 1.5px solid #e5e8eb;
+            border-radius: 8px;
+            background: white;
+            font-size: 13px;
+            font-weight: 600;
+            color: #4e5968;
+            cursor: pointer;
+            transition: all 0.2s;
+            text-align: center;
+            letter-spacing: -0.3px;
+        }
+
+        .mobile-header-btn:hover {
+            border-color: #3182f6;
+            color: #3182f6;
+            background: #f8fafb;
+        }
+
+        .mobile-header-btn:active {
+            transform: scale(0.98);
+        }
+
         .mobile-tabs {
             display: flex;
-            gap: 20px;
-            padding: 0 20px;
+            padding: 0;
             border-bottom: 1px solid #e9ecef;
         }
 
         .mobile-tab {
+            flex: 1;
             padding: 12px 0;
             font-size: 15px;
             font-weight: 600;
             color: #8b95a1;
             border-bottom: 2px solid transparent;
             cursor: pointer;
+            text-align: center;
         }
 
         .mobile-tab.active {
@@ -1950,15 +1981,15 @@
 
                     <!-- 탭 -->
                     <div class="mobile-tabs">
-                        <div class="mobile-tab" onclick="switchTab('home')">홈</div>
-                        <div class="mobile-tab active" onclick="switchTab('pricetable')">시세표</div>
+                        <div class="mobile-tab active" onclick="switchTab('pricetable')">홈</div>
+                        <div class="mobile-tab" onclick="switchTab('news')">소식</div>
                         <div class="mobile-tab" onclick="switchTab('review')">후기</div>
                     </div>
 
                     <!-- 콘텐츠 -->
                     <div class="mobile-content">
-                        <!-- 홈 탭 콘텐츠 -->
-                        <div class="tab-content" id="home-tab">
+                        <!-- 소식 탭 콘텐츠 -->
+                        <div class="tab-content" id="news-tab">
                             <!-- 인증 정보 섹션 -->
                             <div class="home-section">
                                 <h2 class="home-section-title">인증 정보</h2>
@@ -3718,8 +3749,13 @@
             contents.forEach(content => content.classList.remove('active'));
 
             // 선택된 탭 활성화
+            const tabNameMap = {
+                'pricetable': '홈',
+                'news': '소식',
+                'review': '후기'
+            };
             const selectedTab = Array.from(tabs).find(tab =>
-                tab.textContent.trim() === (tabName === 'home' ? '홈' : tabName === 'pricetable' ? '시세표' : '후기')
+                tab.textContent.trim() === tabNameMap[tabName]
             );
             if (selectedTab) selectedTab.classList.add('active');
 
