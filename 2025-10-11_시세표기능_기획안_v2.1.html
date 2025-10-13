@@ -2138,6 +2138,11 @@
                                             transition: all 0.2s;
                                             border-radius: 10px;
                                         }
+                                        .manufacturer-tab.small {
+                                            flex: 0.6;
+                                            font-size: 13px;
+                                            padding: 10px 8px;
+                                        }
                                         .manufacturer-tab:hover {
                                             background: #e9ecef;
                                         }
@@ -2295,11 +2300,13 @@
 
                                     <!-- 상품 선택 영역 -->
                                     <div style="margin-bottom: 20px;">
+                                        <div style="font-size: 13px; font-weight: 700; color: #191f28; margin-bottom: 12px; letter-spacing: -0.5px;">상품 선택</div>
                                         <div style="background: white; border-radius: 16px; padding: 20px; box-shadow: 0 4px 16px rgba(0,0,0,0.08); border: 2px solid #f5f6f8;">
                                             <!-- 제조사 탭 -->
                                             <div style="display: flex; gap: 8px; margin-bottom: 16px;">
                                                 <button class="manufacturer-tab active" id="tab-samsung" onclick="selectManufacturerTab('samsung')">삼성</button>
                                                 <button class="manufacturer-tab" id="tab-apple" onclick="selectManufacturerTab('apple')">애플</button>
+                                                <button class="manufacturer-tab small" id="tab-other" onclick="selectManufacturerTab('other')">기타</button>
                                             </div>
 
                                             <!-- 커스텀 드롭다운 -->
