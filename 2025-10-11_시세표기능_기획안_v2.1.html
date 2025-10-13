@@ -715,24 +715,31 @@
 
         .option-select {
             flex: 1;
-            padding: 8px 12px;
-            border: 1px solid #e5e8eb;
-            border-radius: 8px;
+            padding: 14px;
+            border: 2px solid #e5e8eb;
+            border-radius: 12px;
             background: white;
-            font-size: 13px;
+            font-size: 14px;
             font-weight: 600;
             color: #191f28;
             cursor: pointer;
             appearance: none;
-            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23191f28' d='M6 8L2 4h8z'/%3E%3C/svg%3E");
+            background-image: url("data:image/svg+xml,%3Csvg width='12' height='8' viewBox='0 0 12 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1.5L6 6.5L11 1.5' stroke='%234e5968' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
             background-repeat: no-repeat;
-            background-position: right 10px center;
-            padding-right: 32px;
+            background-position: right 14px center;
+            padding-right: 40px;
+            transition: all 0.2s;
+        }
+
+        .option-select:hover {
+            border-color: #3182f6;
+            background: #fafbfc;
         }
 
         .option-select:focus {
             outline: none;
             border-color: #3182f6;
+            box-shadow: 0 0 0 3px rgba(49,130,246,0.1);
         }
 
         .product-image {
@@ -2452,9 +2459,9 @@
 
                                         .option-select {
                                             width: 100%;
-                                            padding: 13px 14px;
-                                            border: 1.5px solid #e5e8eb;
-                                            border-radius: 10px;
+                                            padding: 14px;
+                                            border: 2px solid #e5e8eb;
+                                            border-radius: 12px;
                                             font-size: 14px;
                                             font-weight: 600;
                                             color: #191f28;
@@ -2513,11 +2520,11 @@
 
                                     <!-- 옵션 선택 영역 -->
                                     <div style="margin-bottom: 8px;">
-                                        <div style="background: white; border-radius: 12px; padding: 16px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); border: 1px solid #f5f6f8;">
+                                        <div style="background: white; border-radius: 16px; padding: 20px; box-shadow: 0 4px 16px rgba(0,0,0,0.08); border: 2px solid #f5f6f8;">
                                             <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 14px;">
                                                 <!-- 용량 -->
                                                 <div>
-                                                    <div style="font-size: 11px; font-weight: 600; color: #8b95a1; margin-bottom: 6px; letter-spacing: -0.2px; text-transform: uppercase;">용량</div>
+                                                    <div style="font-size: 11px; font-weight: 600; color: #8b95a1; margin-bottom: 8px; letter-spacing: -0.2px; text-transform: uppercase;">용량</div>
                                                     <select id="capacitySelector" onchange="changeCapacity(this.value)" class="option-select">
                                                         <option value="256GB">256GB</option>
                                                     </select>
@@ -2525,7 +2532,7 @@
 
                                                 <!-- 요금제 -->
                                                 <div>
-                                                    <div style="font-size: 11px; font-weight: 600; color: #8b95a1; margin-bottom: 6px; letter-spacing: -0.2px; text-transform: uppercase;">요금제</div>
+                                                    <div style="font-size: 11px; font-weight: 600; color: #8b95a1; margin-bottom: 8px; letter-spacing: -0.2px; text-transform: uppercase;">요금제</div>
                                                     <select id="planSelector" onchange="changePlan(this.value)" class="option-select">
                                                         <option value="8.9">월 8.9만</option>
                                                     </select>
