@@ -220,97 +220,137 @@
 
         .feature-card {
             background: white;
-            border: 2px solid #e5e8eb;
-            border-radius: 12px;
-            padding: 20px;
+            border: none;
+            border-radius: 14px;
+            padding: 24px;
             margin: 16px 0;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+            transition: all 0.2s;
+        }
+
+        .feature-card:hover {
+            box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+            transform: translateY(-2px);
         }
 
         .feature-card.highlight {
             border: none;
             background: transparent;
+            box-shadow: none;
+        }
+
+        .feature-card.highlight:hover {
+            transform: none;
         }
 
         .feature-card.price-table-input {
             border: none;
             background: transparent;
+            box-shadow: none;
+        }
+
+        .feature-card.price-table-input:hover {
+            transform: none;
         }
 
         .feature-card.exposure-management {
             border: none;
             background: transparent;
+            box-shadow: none;
+        }
+
+        .feature-card.exposure-management:hover {
+            transform: none;
         }
 
         .feature-title {
-            font-size: 16px;
-            font-weight: 700;
+            font-size: 17px;
+            font-weight: 800;
             color: #191f28;
-            margin-bottom: 12px;
+            margin-bottom: 14px;
+            letter-spacing: -0.5px;
         }
 
         .feature-desc {
             font-size: 14px;
             color: #4e5968;
             line-height: 1.7;
+            letter-spacing: -0.2px;
         }
 
         .tag {
             display: inline-block;
-            padding: 4px 10px;
-            border-radius: 6px;
-            font-size: 11px;
-            font-weight: 600;
+            padding: 5px 12px;
+            border-radius: 8px;
+            font-size: 12px;
+            font-weight: 700;
             margin-right: 6px;
             margin-bottom: 6px;
+            letter-spacing: -0.2px;
         }
 
         .tag.new {
-            background: #e7f5ff;
+            background: linear-gradient(135deg, #e7f5ff 0%, #d4ebff 100%);
             color: #3182f6;
         }
 
         .tag.existing {
-            background: #f2f4f6;
+            background: linear-gradient(135deg, #f5f6f8 0%, #eceef1 100%);
             color: #4e5968;
         }
 
         .tag.backlog {
-            background: #fff3e0;
+            background: linear-gradient(135deg, #fff8e6 0%, #ffedd4 100%);
             color: #f57c00;
         }
 
         /* 프로토타입 스타일 */
         .prototype-container {
             background: #ffffff;
-            border: 2px solid #3182f6;
-            border-radius: 12px;
-            padding: 24px;
+            border: none;
+            border-radius: 16px;
+            padding: 28px;
             margin: 20px 0;
-            box-shadow: 0 4px 12px rgba(49, 130, 246, 0.15);
+            box-shadow: 0 4px 20px rgba(49, 130, 246, 0.12);
+            position: relative;
+        }
+
+        .prototype-container::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #3182f6 0%, #60a5fa 100%);
+            border-radius: 16px 16px 0 0;
         }
 
         .prototype-header {
             display: flex;
             align-items: center;
-            margin-bottom: 20px;
-            padding-bottom: 12px;
-            border-bottom: 1px solid #e5e8eb;
+            margin-bottom: 24px;
+            padding-bottom: 16px;
+            border-bottom: 2px solid #f5f6f8;
         }
 
         .prototype-badge {
-            background: #3182f6;
+            background: linear-gradient(135deg, #3182f6 0%, #2272e5 100%);
             color: white;
-            padding: 6px 12px;
-            border-radius: 6px;
-            font-size: 12px;
-            font-weight: 600;
+            padding: 7px 14px;
+            border-radius: 8px;
+            font-size: 13px;
+            font-weight: 700;
             margin-right: 12px;
+            letter-spacing: -0.3px;
+            box-shadow: 0 2px 6px rgba(49, 130, 246, 0.3);
         }
 
         .prototype-title {
-            font-size: 15px;
-            font-weight: 600;
+            font-size: 16px;
+            font-weight: 800;
             color: #191f28;
+            letter-spacing: -0.4px;
         }
 
         .editable-table {
@@ -355,48 +395,70 @@
         }
 
         .btn {
-            padding: 8px 16px;
+            padding: 10px 18px;
             border: none;
-            border-radius: 6px;
-            font-size: 13px;
-            font-weight: 600;
+            border-radius: 8px;
+            font-size: 14px;
+            font-weight: 700;
             cursor: pointer;
-            transition: all 0.2s;
+            transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+            letter-spacing: -0.3px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+        }
+
+        .btn:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+        }
+
+        .btn:active {
+            transform: translateY(0);
         }
 
         .btn-primary {
-            background: #3182f6;
+            background: linear-gradient(135deg, #3182f6 0%, #2272e5 100%);
             color: white;
         }
 
         .btn-primary:hover {
-            background: #1c64d8;
+            background: linear-gradient(135deg, #2272e5 0%, #1b5fd1 100%);
         }
 
         .btn-secondary {
-            background: #f2f4f6;
+            background: white;
             color: #4e5968;
+            border: 1.5px solid #e5e8eb;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.04);
         }
 
         .btn-secondary:hover {
-            background: #e5e8eb;
+            background: #fafbfc;
+            border-color: #d4d8dd;
         }
 
         .btn-success {
-            background: #0bc77b;
+            background: linear-gradient(135deg, #0bc77b 0%, #09b56e 100%);
             color: white;
+        }
+
+        .btn-success:hover {
+            background: linear-gradient(135deg, #09b56e 0%, #08a362 100%);
         }
 
         .btn-danger {
-            background: #f04452;
+            background: linear-gradient(135deg, #f04452 0%, #e53545 100%);
             color: white;
-            padding: 4px 8px;
-            font-size: 11px;
+            padding: 6px 10px;
+            font-size: 12px;
+        }
+
+        .btn-danger:hover {
+            background: linear-gradient(135deg, #e53545 0%, #d92838 100%);
         }
 
         .btn-small {
-            padding: 6px 12px;
-            font-size: 12px;
+            padding: 8px 14px;
+            font-size: 13px;
         }
 
         .btn-container {
@@ -413,55 +475,77 @@
         }
 
         .management-card {
-            background: #f9fafb;
-            border: 1px solid #e5e8eb;
-            border-radius: 8px;
-            padding: 16px;
+            background: white;
+            border: none;
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+            transition: all 0.2s;
+        }
+
+        .management-card:hover {
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            transform: translateY(-1px);
         }
 
         .management-card h4 {
-            font-size: 13px;
-            font-weight: 600;
+            font-size: 14px;
+            font-weight: 700;
             color: #191f28;
-            margin-bottom: 12px;
+            margin-bottom: 14px;
+            letter-spacing: -0.3px;
         }
 
         .schedule-input {
             display: flex;
             flex-direction: column;
-            gap: 8px;
+            gap: 10px;
         }
 
         .schedule-input label {
-            font-size: 11px;
-            color: #8b95a1;
+            font-size: 12px;
+            color: #6b7684;
             font-weight: 600;
+            letter-spacing: -0.2px;
         }
 
         .schedule-input input {
-            border: 1px solid #e5e8eb;
-            border-radius: 4px;
-            padding: 6px 8px;
-            font-size: 12px;
+            border: 1.5px solid #e5e8eb;
+            border-radius: 8px;
+            padding: 10px 12px;
+            font-size: 13px;
+            transition: all 0.2s;
+            font-weight: 500;
+        }
+
+        .schedule-input input:focus {
+            border-color: #3182f6;
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(49,130,246,0.1);
         }
 
         .alert {
-            padding: 10px 12px;
-            border-radius: 6px;
-            font-size: 12px;
-            margin: 12px 0;
+            padding: 16px 18px;
+            border-radius: 12px;
+            font-size: 13px;
+            margin: 16px 0;
+            font-weight: 500;
+            letter-spacing: -0.2px;
+            line-height: 1.6;
         }
 
         .alert-success {
-            background: #f0fdf4;
-            color: #0bc77b;
-            border: 1px solid #0bc77b;
+            background: linear-gradient(135deg, #f0fdf4 0%, #e6f9ed 100%);
+            color: #0a8754;
+            border: 2px solid #0bc77b;
+            box-shadow: 0 2px 8px rgba(11, 199, 123, 0.15);
         }
 
         .alert-info {
-            background: #f8fbff;
-            color: #3182f6;
-            border: 1px solid #3182f6;
+            background: linear-gradient(135deg, #f0f7ff 0%, #e8f3ff 100%);
+            color: #1b5fd1;
+            border: 2px solid #3182f6;
+            box-shadow: 0 2px 8px rgba(49, 130, 246, 0.15);
         }
 
         /* 모바일 프로토타입 스타일 */
@@ -469,16 +553,16 @@
             max-width: 375px;
             margin: 20px auto;
             background: white;
-            border: 1px solid #e5e8eb;
-            border-radius: 20px;
+            border: none;
+            border-radius: 24px;
             overflow: hidden;
-            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 12px 48px rgba(0, 0, 0, 0.15);
         }
 
         .mobile-header {
             background: white;
-            padding: 16px 20px;
-            border-bottom: 1px solid #e9ecef;
+            padding: 18px 20px;
+            border-bottom: 1.5px solid #f2f4f6;
             position: sticky;
             top: 0;
             z-index: 10;
@@ -632,81 +716,98 @@
         .price-grid {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
-            gap: 8px;
-            margin-top: 12px;
+            gap: 10px;
+            padding: 16px;
+            background: white;
         }
 
         .carrier-section {
-            background: #f9fafb;
-            border-radius: 8px;
-            padding: 8px;
+            background: white;
+            border-radius: 14px;
+            padding: 0;
+            border: none;
+            overflow: hidden;
+            min-width: 0;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+            transition: all 0.2s;
+        }
+
+        .carrier-section:hover {
+            box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+            transform: translateY(-1px);
         }
 
         .carrier-name {
-            font-size: 11px;
-            font-weight: 600;
+            font-size: 14px;
+            font-weight: 800;
             color: #191f28;
             text-align: center;
-            margin-bottom: 8px;
+            padding: 14px 0;
+            background: linear-gradient(180deg, #f8f9fc 0%, #f3f4f8 100%);
+            margin: 0;
+            letter-spacing: -0.6px;
+            border-bottom: none;
         }
 
         .price-item {
             background: white;
-            border-radius: 8px;
-            padding: 10px 8px;
-            margin-bottom: 6px;
+            border-radius: 0;
+            padding: 14px 12px;
+            margin-bottom: 0;
             cursor: pointer;
-            transition: all 0.2s;
-            border: 2px solid transparent;
+            transition: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+            border: none;
+            border-bottom: 1px solid #f5f6f8;
             position: relative;
         }
 
+        .price-item:last-child {
+            border-bottom: none;
+        }
+
         .price-item:hover {
-            background: #f7f8fa;
-            transform: translateY(-1px);
+            background: linear-gradient(90deg, #fafbfc 0%, #ffffff 100%);
+            padding-left: 16px;
+        }
+
+        .price-item:active {
+            transform: scale(0.99);
         }
 
         .price-item.selected {
-            background: #f0f6ff;
-            border: 2px solid #3182f6;
-            box-shadow: 0 2px 8px rgba(49, 130, 246, 0.15);
+            background: linear-gradient(90deg, #e8f3ff 0%, #f0f7ff 100%);
+            border-left: 4px solid #3182f6;
+            padding-left: 8px;
         }
 
-        .price-item.selected::after {
-            content: '✓';
-            position: absolute;
-            top: 4px;
-            right: 6px;
-            color: #3182f6;
-            font-size: 11px;
-            font-weight: 900;
-        }
-
-        .price-item:last-child {
-            margin-bottom: 0;
+        .price-item.selected:hover {
+            background: linear-gradient(90deg, #e8f3ff 0%, #f0f7ff 100%);
+            padding-left: 8px;
         }
 
         .price-label {
-            font-size: 10px;
-            color: #6b7684;
-            margin-bottom: 4px;
+            font-size: 12px;
+            color: #8b95a1;
+            margin-bottom: 5px;
             font-weight: 600;
-            letter-spacing: -0.2px;
+            letter-spacing: -0.3px;
         }
 
         .price-item.selected .price-label {
-            color: #3182f6;
+            color: #4e5968;
+            font-weight: 700;
         }
 
         .price-value {
-            font-size: 15px;
+            font-size: 17px;
             font-weight: 800;
             color: #191f28;
-            letter-spacing: -0.5px;
+            letter-spacing: -0.6px;
         }
 
         .price-item.selected .price-value {
             color: #3182f6;
+            font-weight: 900;
         }
 
         .price-value.best {
@@ -714,12 +815,12 @@
         }
 
         .selected-info {
-            background: #f7f8fa;
-            border-radius: 12px;
-            padding: 16px;
-            margin-top: 16px;
-            margin-bottom: 12px;
+            background: white;
+            border-radius: 0;
+            padding: 24px 20px;
+            margin: 0;
             display: none;
+            border-top: 8px solid #f0f7ff;
         }
 
         .selected-info.show {
@@ -728,22 +829,30 @@
 
         .selected-info-title {
             font-size: 12px;
-            color: #6b7684;
-            margin-bottom: 8px;
-            font-weight: 600;
+            color: #8b95a1;
+            margin-bottom: 16px;
+            font-weight: 700;
+            letter-spacing: -0.3px;
+            text-transform: uppercase;
         }
 
         .selected-detail {
-            display: flex;
-            justify-content: space-between;
+            display: grid;
+            grid-template-columns: 80px 1fr;
             align-items: center;
-            padding: 8px 0;
+            padding: 11px 0;
+            border-bottom: 1px solid #f5f6f8;
+        }
+
+        .selected-detail:last-of-type {
+            border-bottom: none;
         }
 
         .selected-detail-label {
-            font-size: 13px;
-            color: #4e5968;
+            font-size: 14px;
+            color: #8b95a1;
             font-weight: 600;
+            letter-spacing: -0.4px;
         }
 
         .selected-detail-value {
@@ -751,58 +860,80 @@
             color: #191f28;
             font-weight: 700;
             letter-spacing: -0.5px;
+            text-align: right;
         }
 
         .selected-price {
-            margin-top: 12px;
-            padding-top: 12px;
+            margin-top: 20px;
+            padding-top: 20px;
             border-top: 2px solid #e5e8eb;
-            display: flex;
-            justify-content: space-between;
+            display: grid;
+            grid-template-columns: 80px 1fr;
             align-items: center;
         }
 
         .selected-price-label {
-            font-size: 14px;
-            color: #6b7684;
-            font-weight: 600;
+            font-size: 15px;
+            color: #191f28;
+            font-weight: 700;
+            letter-spacing: -0.5px;
         }
 
         .selected-price-value {
-            font-size: 22px;
+            font-size: 28px;
             color: #3182f6;
-            font-weight: 800;
-            letter-spacing: -0.8px;
+            font-weight: 900;
+            letter-spacing: -1.2px;
+            text-align: right;
         }
 
         .cta-button {
             width: 100%;
-            background: #191f28;
+            background: linear-gradient(135deg, #3182f6 0%, #2272e5 100%);
             color: white;
             border: none;
-            border-radius: 12px;
-            padding: 18px;
-            font-size: 16px;
+            border-radius: 0;
+            padding: 20px;
+            font-size: 17px;
             font-weight: 800;
             cursor: pointer;
-            transition: all 0.2s;
-            letter-spacing: -0.5px;
+            transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+            letter-spacing: -0.6px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cta-button::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+            transition: left 0.5s;
+        }
+
+        .cta-button:hover:not(:disabled)::before {
+            left: 100%;
+        }
+
+        .cta-button:hover:not(:disabled) {
+            background: linear-gradient(135deg, #2272e5 0%, #1b5fd1 100%);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(49, 130, 246, 0.4);
         }
 
         .cta-button:disabled {
-            background: #e5e8eb;
-            color: #c1c7cd;
-            cursor: not-allowed;
-        }
-
-        .cta-button:not(:disabled):hover {
-            background: #000000;
-            transform: translateY(-2px);
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            background: linear-gradient(135deg, #3182f6 0%, #2272e5 100%);
+            color: white;
+            opacity: 0.4;
+            cursor: default;
         }
 
         .cta-button:not(:disabled):active {
             transform: translateY(0);
+            box-shadow: 0 2px 8px rgba(49, 130, 246, 0.3);
         }
 
         /* 홈 탭 스타일 */
@@ -994,20 +1125,20 @@
 
         .price-card {
             background: white;
-            border: 1px solid #e5e8eb;
-            border-radius: 16px;
-            padding: 20px;
-            margin-bottom: 12px;
-            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+            border: none;
+            border-radius: 0;
+            padding: 0;
+            margin-bottom: 0;
+            box-shadow: none;
         }
 
         .carrier-name {
-            font-size: 12px;
+            font-size: 13px;
             font-weight: 700;
             color: #191f28;
             text-align: center;
-            margin-bottom: 10px;
-            letter-spacing: -0.3px;
+            margin-bottom: 12px;
+            letter-spacing: -0.5px;
         }
     </style>
 </head>
@@ -1125,86 +1256,82 @@
         <div class="feature-card price-table-input">
             <div class="feature-title">1. 시세표 입력 및 다운로드 기능</div>
             <div class="feature-desc">
-                <ul>
-                    <li>표 형식으로 여러 상품을 한 번에 입력</li>
-                    <li>상품명, 용량, 월요금, 통신사별 가격을 행 단위로 입력</li>
-                    <li><strong>가격 입력 방식:</strong> 만원(만₩) 단위로 입력 (예: 55만원 → "55" 입력, 60만원 → "60" 입력)</li>
-                    <li><strong>고객 화면 표시:</strong> 입력한 만원 단위 가격이 그대로 표시됨 (예: "55" 입력 → "55만" 표시)</li>
-                    <li><strong>행 추가/삭제:</strong> 버튼으로 상품 행 추가/제거</li>
-                    <li><strong>임시저장:</strong> 작업 중간에 저장 가능 (30초마다 자동저장)</li>
-                    <li>직관적인 인라인 편집 (셀을 클릭하여 바로 수정)</li>
-                    <li><strong>이미지 다운로드:</strong> 완성된 시세표를 노피 디자인 이미지로 저장</li>
-                </ul>
 
-                <div class="key-box" style="margin-top: 16px; background: #f0f9ff; border-left: 4px solid #3182f6;">
-                    <strong>💡 가격 입력 및 표시 규칙</strong>
-                    <ul style="margin-top: 8px;">
-                        <li><strong>어드민 입력:</strong> 만원 단위 정수로 입력 (양수 또는 음수 가능)
-                            <ul style="margin-top: 4px; margin-left: 20px; font-size: 13px; color: #6b7684;">
-                                <li>양수 예시: 55만원 → "55", 60만원 → "60"</li>
-                                <li>음수 예시: 12만원 페이백 → "-12", 5만원 페이백 → "-5"</li>
-                            </ul>
-                        </li>
-                        <li><strong>소수점 입력 불가:</strong> 0.5와 같은 소수점 값은 입력할 수 없습니다 (정수만 허용)</li>
-                        <li><strong>음수 가격 의미:</strong> 음수는 고객이 돈을 받고 상품을 구매하는 "페이백" 또는 "리베이트"를 의미합니다
-                            <ul style="margin-top: 4px; margin-left: 20px; font-size: 13px; color: #6b7684;">
-                                <li>예: -12만원 = 12만원을 돌려받고 상품 구매</li>
-                            </ul>
-                        </li>
-                        <li><strong>DB 저장:</strong> 입력한 값에 10,000을 곱하여 원 단위로 저장 (55 → 550,000원, -12 → -120,000원)</li>
-                        <li><strong>고객 표시:</strong>
-                            <ul style="margin-top: 4px; margin-left: 20px; font-size: 13px; color: #6b7684;">
-                                <li>양수: "55만", "60만" (일반 가격)</li>
-                                <li>음수: "12만원 페이백", "5만원 페이백" (페이백 표시)</li>
-                            </ul>
-                        </li>
-                        <li><strong>공란 처리:</strong> 가격을 입력하지 않으면 고객 화면에서 "-"로 표시되며 선택 불가</li>
+                <!-- 입력 -->
+                <div style="margin-bottom: 32px;">
+                    <h4 style="color: #191f28; font-size: 16px; font-weight: 700; margin-bottom: 16px; border-left: 3px solid #3182f6; padding-left: 12px;">입력</h4>
+                    <ul style="color: #4e5968; line-height: 1.7;">
+                        <li>표 형식으로 여러 상품을 한 번에 입력할 수 있어요</li>
+                        <li>상품명, 용량, 월요금, 통신사별 가격을 행 단위로 입력해요</li>
+                        <li>셀을 클릭하면 바로 수정할 수 있어요</li>
                     </ul>
+                </div>
 
-                    <div style="margin-top: 12px; padding: 12px; background: white; border-radius: 8px; border: 1px solid #e5e8eb;">
-                        <strong style="color: #3182f6; font-size: 12px;">📊 입력 예시 (양수 가격)</strong>
-                        <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 8px; margin-top: 8px; font-size: 12px;">
-                            <div><span style="color: #8b95a1;">어드민 입력</span></div>
-                            <div><span style="color: #8b95a1;">DB 저장</span></div>
-                            <div><span style="color: #8b95a1;">고객 표시</span></div>
+                <!-- 편집 -->
+                <div style="margin-bottom: 32px;">
+                    <h4 style="color: #191f28; font-size: 16px; font-weight: 700; margin-bottom: 16px; border-left: 3px solid #3182f6; padding-left: 12px;">편집</h4>
+                    <ul style="color: #4e5968; line-height: 1.7;">
+                        <li><strong>행 추가/삭제</strong> — 상품을 자유롭게 추가하거나 삭제해요</li>
+                        <li><strong>상품명 정렬</strong> — 오름차순 또는 내림차순으로 정렬해요</li>
+                        <li><strong>참고사항</strong> — 개통 관련 추가 정보를 메모로 남길 수 있어요</li>
+                    </ul>
+                </div>
 
-                            <div style="font-weight: 600; color: #3182f6;">55</div>
-                            <div style="color: #4e5968;">550,000원</div>
-                            <div style="color: #191f28;">55만</div>
+                <!-- 노출 관리 -->
+                <div style="margin-bottom: 32px;">
+                    <h4 style="color: #191f28; font-size: 16px; font-weight: 700; margin-bottom: 16px; border-left: 3px solid #3182f6; padding-left: 12px;">노출 관리</h4>
+                    <ul style="color: #4e5968; line-height: 1.7;">
+                        <li><strong>토글 버튼</strong>으로 고객 화면 노출 여부를 즉시 전환해요</li>
+                        <li>미노출 상태에서 작업하고, 완료되면 노출로 전환해요</li>
+                    </ul>
+                </div>
 
-                            <div style="font-weight: 600; color: #3182f6;">60</div>
-                            <div style="color: #4e5968;">600,000원</div>
-                            <div style="color: #191f28;">60만</div>
+                <!-- 발행 및 공유 -->
+                <div style="margin-bottom: 32px;">
+                    <h4 style="color: #191f28; font-size: 16px; font-weight: 700; margin-bottom: 16px; border-left: 3px solid #3182f6; padding-left: 12px;">발행 및 공유</h4>
+                    <ul style="color: #4e5968; line-height: 1.7;">
+                        <li><strong>시세표 발행</strong> — 입력한 데이터를 확정하고 고객 화면에 반영해요</li>
+                        <li><strong>이미지 다운로드</strong> — 노피 디자인 이미지로 저장해요</li>
+                        <li>다운로드한 이미지를 카카오톡, 인스타그램에 공유할 수 있어요</li>
+                    </ul>
+                </div>
 
-                            <div style="font-weight: 600; color: #3182f6;">48</div>
-                            <div style="color: #4e5968;">480,000원</div>
-                            <div style="color: #191f28;">48만</div>
-                        </div>
-                    </div>
+                <!-- 가격 입력 규칙 -->
+                <div class="key-box" style="margin-top: 32px; padding: 20px; background: #f8f9fa; border-radius: 8px; border: 1px solid #e5e8eb;">
+                    <h4 style="color: #191f28; font-size: 16px; font-weight: 700; margin-bottom: 16px;">가격 입력 규칙</h4>
 
-                    <div style="margin-top: 12px; padding: 12px; background: #fff5f5; border-radius: 8px; border: 1px solid #fecaca;">
-                        <strong style="color: #ef4444; font-size: 12px;">💰 입력 예시 (음수 가격 - 페이백)</strong>
-                        <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 8px; margin-top: 8px; font-size: 12px;">
-                            <div><span style="color: #8b95a1;">어드민 입력</span></div>
-                            <div><span style="color: #8b95a1;">DB 저장</span></div>
-                            <div><span style="color: #8b95a1;">고객 표시</span></div>
+                    <table class="comparison-table" style="margin-top: 16px;">
+                        <thead>
+                            <tr>
+                                <th style="width: 25%;">가격 유형</th>
+                                <th style="width: 25%;">어드민 입력</th>
+                                <th style="width: 25%;">DB 저장</th>
+                                <th style="width: 25%;">고객 화면</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>일반 가격</strong></td>
+                                <td><code>55</code></td>
+                                <td>550,000원</td>
+                                <td><strong>55만</strong></td>
+                            </tr>
+                            <tr>
+                                <td><strong>페이백</strong></td>
+                                <td><code>-12</code></td>
+                                <td>-120,000원</td>
+                                <td><strong>-12만</strong></td>
+                            </tr>
+                        </tbody>
+                    </table>
 
-                            <div style="font-weight: 600; color: #dc2626;">-12</div>
-                            <div style="color: #4e5968;">-120,000원</div>
-                            <div style="color: #dc2626;">12만원 페이백</div>
-
-                            <div style="font-weight: 600; color: #dc2626;">-5</div>
-                            <div style="color: #4e5968;">-50,000원</div>
-                            <div style="color: #dc2626;">5만원 페이백</div>
-
-                            <div style="font-weight: 600; color: #dc2626;">-20</div>
-                            <div style="color: #4e5968;">-200,000원</div>
-                            <div style="color: #dc2626;">20만원 페이백</div>
-                        </div>
-                        <div style="margin-top: 8px; padding: 8px; background: white; border-radius: 4px; font-size: 11px; color: #6b7684;">
-                            <strong>💡 페이백이란?</strong> 고객이 상품을 구매하면서 일정 금액을 돌려받는 프로모션입니다. 예를 들어 -12만원은 고객이 휴대폰을 구매하면서 12만원을 현금 또는 포인트로 받는 것을 의미합니다.
-                        </div>
-                    </div>
+                    <ul style="margin-top: 16px; color: #4e5968; line-height: 1.7;">
+                        <li><strong>입력 방식</strong> — 만원 단위 정수로 입력 (예: 55, 100, -12)</li>
+                        <li><strong>변환 규칙</strong> — 입력값 × 10,000 = DB 저장값</li>
+                        <li><strong>고객 표시</strong> — 만원 단위로 표시 (예: 55만, -12만)</li>
+                        <li><strong>입력 제한</strong> — 정수만 가능, 소수점 불가</li>
+                        <li><strong>페이백</strong> — 음수 가격은 고객이 휴대폰 구매 시 돌려받는 금액이에요</li>
+                    </ul>
                 </div>
             </div>
 
@@ -1437,6 +1564,19 @@
 • 자세한 상담은 매장 방문 또는 전화 문의 바랍니다.</textarea>
                 </div>
 
+                <!-- 노출 관리 토글 -->
+                <div style="margin-top: 16px; padding: 16px; background: #f8f9fa; border-radius: 8px; border: 1px solid #dee2e6;">
+                    <div style="display: flex; align-items: center; justify-content: space-between;">
+                        <div>
+                            <div style="font-weight: 600; font-size: 14px; color: #333; margin-bottom: 4px;">시세표 노출 상태</div>
+                            <div id="exposureStatusText" style="font-size: 13px; color: #6c757d;">현재 고객 화면에 <strong style="color: #28a745;">노출 중</strong>입니다.</div>
+                        </div>
+                        <button id="exposureToggleBtn" class="btn btn-success btn-small" onclick="toggleExposure()" style="min-width: 100px;">
+                            <span id="exposureToggleBtnText">노출 중지</span>
+                        </button>
+                    </div>
+                </div>
+
                 <div class="btn-container">
                     <button class="btn btn-primary btn-small" onclick="addRow()">+ 행 추가</button>
                     <button class="btn btn-success btn-small" onclick="publishTable()">시세표 발행</button>
@@ -1445,7 +1585,7 @@
             </div>
 
             <!-- 이미지 다운로드 미리보기 -->
-            <div class="prototype-container" style="margin-top: 24px;">
+            <div class="prototype-container" id="imageSampleContainer" style="margin-top: 24px;">
                 <div class="prototype-header">
                     <span class="prototype-badge">다운로드 미리보기</span>
                     <span class="prototype-title">시세표 이미지 샘플</span>
@@ -1712,7 +1852,14 @@
 
                             <!-- 참고사항 -->
                             <div id="imageMemo" style="position: relative; z-index: 1; color: white; font-size: 13px; line-height: 1.6; letter-spacing: -0.3px; font-weight: 500;">
-                                <div style="font-weight: 700; margin-bottom: 8px; font-size: 14px;">📌 참고사항</div>
+                                <div style="font-weight: 700; margin-bottom: 8px; font-size: 14px; display: flex; align-items: center; gap: 6px;">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="12" cy="12" r="10" stroke="white" stroke-width="2" fill="rgba(255,255,255,0.15)"/>
+                                        <path d="M12 8V12L14.5 14.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <circle cx="12" cy="6" r="1" fill="white"/>
+                                    </svg>
+                                    참고사항
+                                </div>
                                 <div id="imageMemoText" style="opacity: 0.9; white-space: pre-line;">• 모든 가격은 24개월 약정 기준입니다.
 • 선택약정 시 추가 할인이 적용될 수 있습니다.
 • 자세한 상담은 매장 방문 또는 전화 문의 바랍니다.</div>
@@ -1728,65 +1875,9 @@
             </div>
         </div>
 
-        <div class="feature-card exposure-management">
-            <div class="feature-title">2. 노출 관리 및 자동 임시저장</div>
-            <div class="feature-desc">
-                <ul>
-                    <li><strong>노출/비노출 전환:</strong> 시세표를 고객에게 노출하거나 숨김 처리</li>
-                    <li><strong>자동 임시저장:</strong> 작업 중 30초마다 자동으로 임시저장하여 데이터 손실 방지</li>
-                    <li><strong>수동 저장:</strong> 언제든지 수동으로 임시저장 가능</li>
-                    <li><strong>발행 전 미리보기:</strong> 노출 전 고객 화면 미리보기로 확인</li>
-                </ul>
-            </div>
-
-            <!-- 프로토타입 2: 노출 관리 -->
-            <div class="prototype-container">
-                <div class="prototype-header">
-                    <span class="prototype-badge">어드민 화면</span>
-                    <span class="prototype-title">노출 관리 체험하기</span>
-                </div>
-
-                <div class="management-card" style="max-width: 600px;">
-                    <h4>시세표 노출 설정</h4>
-                    <div style="margin-top: 16px;">
-                        <label style="display: flex; align-items: center; gap: 12px; padding: 16px; background: #f0f6ff; border: 2px solid #3182f6; border-radius: 12px; cursor: pointer; margin-bottom: 12px;">
-                            <input type="radio" name="visibility" value="visible" checked style="width: 20px; height: 20px;">
-                            <div>
-                                <div style="font-size: 14px; font-weight: 700; color: #191f28; margin-bottom: 4px;">✅ 노출 (고객에게 공개)</div>
-                                <div style="font-size: 12px; color: #8b95a1;">시세표 탭에 표시되어 고객이 확인할 수 있습니다</div>
-                            </div>
-                        </label>
-                        <label style="display: flex; align-items: center; gap: 12px; padding: 16px; background: #f9fafb; border: 2px solid #e5e8eb; border-radius: 12px; cursor: pointer;">
-                            <input type="radio" name="visibility" value="hidden" style="width: 20px; height: 20px;">
-                            <div>
-                                <div style="font-size: 14px; font-weight: 700; color: #191f28; margin-bottom: 4px;">❌ 비노출 (숨김)</div>
-                                <div style="font-size: 12px; color: #8b95a1;">고객에게 보이지 않으며, 관리자만 수정 가능합니다</div>
-                            </div>
-                        </label>
-                    </div>
-
-                    <div style="margin-top: 24px; padding: 16px; background: #f0fdf4; border: 1px solid #86efac; border-radius: 12px;">
-                        <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 8px;">
-                            <div style="width: 8px; height: 8px; background: #22c55e; border-radius: 50%;"></div>
-                            <span style="font-size: 12px; font-weight: 600; color: #15803d;">자동 임시저장 활성화</span>
-                        </div>
-                        <div style="font-size: 11px; color: #4ade80;">마지막 저장: 방금 전 (자동)</div>
-                    </div>
-                </div>
-
-                <div class="btn-container" style="margin-top: 20px;">
-                    <button class="btn btn-secondary btn-small" onclick="alert('임시저장되었습니다!')">💾 수동 저장</button>
-                    <button class="btn btn-primary btn-small" onclick="alert('노출 설정이 저장되었습니다!')">설정 저장</button>
-                </div>
-
-                <div id="saveAlert2" class="alert alert-success" style="display: none;">
-                    설정이 저장되었습니다.
-                </div>
-            </div>
-        </div>
 
         <div class="feature-card highlight">
-            <div class="feature-title">3. 모바일 고객 화면</div>
+            <div class="feature-title">2. 모바일 고객 화면</div>
             <div class="feature-desc">
                 <ul>
                     <li><strong>탭 구조 개편:</strong> 홈, 시세표, 후기 3개 탭으로 구성</li>
@@ -2001,34 +2092,264 @@
                         </div>
 
                         <!-- 시세표 탭 콘텐츠 -->
-                        <div class="tab-content active" id="pricetable-tab">
+                        <div class="tab-content active" id="pricetable-tab" style="padding: 0;">
+
+                        <style>
+                        .filter-chip {
+                            padding: 12px 18px;
+                            border: 1.5px solid #e5e8eb;
+                            border-radius: 12px;
+                            background: white;
+                            font-size: 14px;
+                            font-weight: 600;
+                            color: #4e5968;
+                            cursor: pointer;
+                            transition: all 0.15s ease;
+                            letter-spacing: -0.3px;
+                        }
+                        .filter-chip:active {
+                            transform: scale(0.97);
+                        }
+                        .filter-chip.active {
+                            border-color: #3182f6;
+                            background: #3182f6;
+                            color: white;
+                            font-weight: 700;
+                            box-shadow: 0 2px 8px rgba(49, 130, 246, 0.2);
+                        }
+                        </style>
+
                         <div class="price-table-section">
-                            <div class="price-table-header">
-                                <div class="price-table-title">10월 시세표</div>
-                                <div class="price-table-version">v2.0</div>
-                            </div>
-
-                            <!-- 상품 카드 1 -->
+                            <!-- 상품 카드 (필터 통합) -->
                             <div class="price-card" id="card1">
-                                <div class="price-card-header">
-                                    <div class="product-info">
-                                        <div class="product-name">갤럭시 S25</div>
+                                <!-- 필터 영역 (토스 스타일 - 콤팩트) -->
+                                <div style="padding: 16px; background: white;">
+                                    <style>
+                                        .manufacturer-tab {
+                                            flex: 1;
+                                            padding: 12px;
+                                            border: none;
+                                            background: #f5f6f8;
+                                            color: #6b7684;
+                                            font-size: 14px;
+                                            font-weight: 700;
+                                            letter-spacing: -0.3px;
+                                            cursor: pointer;
+                                            transition: all 0.2s;
+                                            border-radius: 10px;
+                                        }
+                                        .manufacturer-tab:hover {
+                                            background: #e9ecef;
+                                        }
+                                        .manufacturer-tab.active {
+                                            background: #3182f6;
+                                            color: white;
+                                            box-shadow: 0 2px 8px rgba(49, 130, 246, 0.3);
+                                        }
 
-                                        <!-- 용량 선택 (2개 이상 옵션 있을 경우 드롭다운) -->
-                                        <div style="display: flex; gap: 8px; margin-top: 8px; align-items: center;">
-                                            <select class="option-select" id="capacity-card1" onchange="updatePrices('card1')">
-                                                <option value="256GB">256GB</option>
-                                                <option value="512GB">512GB</option>
-                                            </select>
+                                        /* 커스텀 드롭다운 */
+                                        .custom-select-wrapper {
+                                            position: relative;
+                                        }
+                                        .custom-select-trigger {
+                                            display: flex;
+                                            align-items: center;
+                                            gap: 12px;
+                                            padding: 14px;
+                                            background: white;
+                                            border: 2px solid #e5e8eb;
+                                            border-radius: 12px;
+                                            cursor: pointer;
+                                            transition: all 0.2s;
+                                        }
+                                        .custom-select-trigger:hover {
+                                            border-color: #3182f6;
+                                            background: #fafbfc;
+                                        }
+                                        .custom-select-trigger.open {
+                                            border-color: #3182f6;
+                                            box-shadow: 0 0 0 3px rgba(49,130,246,0.1);
+                                        }
+                                        .custom-select-image {
+                                            width: 48px;
+                                            height: 48px;
+                                            background: linear-gradient(135deg, #f8f9fc 0%, #f3f4f8 100%);
+                                            border-radius: 10px;
+                                            display: flex;
+                                            align-items: center;
+                                            justify-content: center;
+                                            flex-shrink: 0;
+                                        }
+                                        .custom-select-image img {
+                                            width: 40px;
+                                            height: 40px;
+                                            object-fit: contain;
+                                        }
+                                        .custom-select-text {
+                                            flex: 1;
+                                        }
+                                        .custom-select-label {
+                                            font-size: 11px;
+                                            color: #8b95a1;
+                                            font-weight: 600;
+                                            letter-spacing: -0.2px;
+                                            margin-bottom: 2px;
+                                        }
+                                        .custom-select-value {
+                                            font-size: 15px;
+                                            font-weight: 700;
+                                            color: #191f28;
+                                            letter-spacing: -0.4px;
+                                        }
+                                        .custom-select-arrow {
+                                            width: 20px;
+                                            height: 20px;
+                                        }
+                                        .custom-select-dropdown {
+                                            position: absolute;
+                                            top: calc(100% + 8px);
+                                            left: 0;
+                                            right: 0;
+                                            background: white;
+                                            border: 2px solid #e5e8eb;
+                                            border-radius: 12px;
+                                            box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+                                            z-index: 100;
+                                            display: none;
+                                        }
+                                        .custom-select-dropdown.open {
+                                            display: block;
+                                        }
+                                        .custom-select-option {
+                                            display: flex;
+                                            align-items: center;
+                                            gap: 12px;
+                                            padding: 12px;
+                                            cursor: pointer;
+                                            transition: all 0.15s;
+                                            border-bottom: 1px solid #f5f6f8;
+                                        }
+                                        .custom-select-option:last-child {
+                                            border-bottom: none;
+                                        }
+                                        .custom-select-option:hover {
+                                            background: #fafbfc;
+                                        }
+                                        .custom-select-option.selected {
+                                            background: linear-gradient(90deg, #f0f7ff 0%, #ffffff 100%);
+                                        }
+                                        .custom-select-option.selected .custom-select-option-name {
+                                            color: #3182f6;
+                                            font-weight: 800;
+                                        }
+                                        .custom-select-option-image {
+                                            width: 44px;
+                                            height: 44px;
+                                            background: linear-gradient(135deg, #f8f9fc 0%, #f3f4f8 100%);
+                                            border-radius: 8px;
+                                            display: flex;
+                                            align-items: center;
+                                            justify-content: center;
+                                            flex-shrink: 0;
+                                        }
+                                        .custom-select-option-image img {
+                                            width: 36px;
+                                            height: 36px;
+                                            object-fit: contain;
+                                        }
+                                        .custom-select-option-name {
+                                            font-size: 14px;
+                                            font-weight: 700;
+                                            color: #191f28;
+                                            letter-spacing: -0.4px;
+                                        }
 
-                                            <!-- 요금제 선택 (2개 이상 옵션 있을 경우 드롭다운) -->
-                                            <select class="option-select" id="plan-card1" onchange="updatePrices('card1')">
-                                                <option value="89000">월 8.9만</option>
-                                                <option value="109000">월 10.9만</option>
-                                            </select>
+                                        .option-select {
+                                            width: 100%;
+                                            padding: 13px 14px;
+                                            border: 1.5px solid #e5e8eb;
+                                            border-radius: 10px;
+                                            font-size: 14px;
+                                            font-weight: 600;
+                                            color: #191f28;
+                                            background: white;
+                                            cursor: pointer;
+                                            letter-spacing: -0.4px;
+                                            transition: all 0.2s;
+                                            appearance: none;
+                                            background-image: url("data:image/svg+xml,%3Csvg width='12' height='8' viewBox='0 0 12 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1.5L6 6.5L11 1.5' stroke='%234e5968' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+                                            background-repeat: no-repeat;
+                                            background-position: right 14px center;
+                                            padding-right: 40px;
+                                        }
+                                        .option-select:hover {
+                                            border-color: #3182f6;
+                                            background: #fafbfc;
+                                        }
+                                        .option-select:focus {
+                                            outline: none;
+                                            border-color: #3182f6;
+                                            box-shadow: 0 0 0 3px rgba(49,130,246,0.1);
+                                        }
+                                    </style>
+
+                                    <!-- 상품 선택 영역 -->
+                                    <div style="margin-bottom: 20px;">
+                                        <div style="background: white; border-radius: 16px; padding: 20px; box-shadow: 0 4px 16px rgba(0,0,0,0.08); border: 2px solid #f5f6f8;">
+                                            <!-- 제조사 탭 -->
+                                            <div style="display: flex; gap: 8px; margin-bottom: 16px;">
+                                                <button class="manufacturer-tab active" id="tab-samsung" onclick="selectManufacturerTab('samsung')">삼성</button>
+                                                <button class="manufacturer-tab" id="tab-apple" onclick="selectManufacturerTab('apple')">애플</button>
+                                            </div>
+
+                                            <!-- 커스텀 드롭다운 -->
+                                            <div class="custom-select-wrapper" id="productSelectWrapper">
+                                                <div class="custom-select-trigger" id="productSelectTrigger" onclick="toggleProductDropdown()">
+                                                    <div class="custom-select-image" id="selectedProductImage">
+                                                        <img src="https://image.nofee.team/product-group/phone/SM-S-25/thumb/20250627152510_69d7ac613e112f7ed9799137df572843.png" alt="갤럭시 S25">
+                                                    </div>
+                                                    <div class="custom-select-text">
+                                                        <div class="custom-select-label">기기명</div>
+                                                        <div class="custom-select-value" id="selectedProductName">갤럭시 S25</div>
+                                                    </div>
+                                                    <svg class="custom-select-arrow" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M1 1.5L6 6.5L11 1.5" stroke="#4e5968" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    </svg>
+                                                </div>
+                                                <div class="custom-select-dropdown" id="productSelectDropdown">
+                                                    <!-- 옵션들이 JavaScript로 동적 생성됩니다 -->
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
-                                    <img src="https://image.nofee.team/product-group/phone/SM-S-25/thumb/20250627152510_69d7ac613e112f7ed9799137df572843.png" alt="갤럭시 S25" class="product-image">
+
+                                    <!-- 옵션 선택 영역 -->
+                                    <div style="margin-bottom: 8px;">
+                                        <div style="background: white; border-radius: 12px; padding: 16px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); border: 1px solid #f5f6f8;">
+                                            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 14px;">
+                                                <!-- 용량 -->
+                                                <div>
+                                                    <div style="font-size: 11px; font-weight: 600; color: #8b95a1; margin-bottom: 6px; letter-spacing: -0.2px; text-transform: uppercase;">용량</div>
+                                                    <select id="capacitySelector" onchange="changeCapacity(this.value)" class="option-select">
+                                                        <option value="256GB">256GB</option>
+                                                    </select>
+                                                </div>
+
+                                                <!-- 요금제 -->
+                                                <div>
+                                                    <div style="font-size: 11px; font-weight: 600; color: #8b95a1; margin-bottom: 6px; letter-spacing: -0.2px; text-transform: uppercase;">요금제</div>
+                                                    <select id="planSelector" onchange="changePlan(this.value)" class="option-select">
+                                                        <option value="8.9">월 8.9만</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- 가격 선택 영역 -->
+                                <div style="padding: 20px 16px 14px;">
+                                    <div style="font-size: 13px; font-weight: 700; color: #191f28; margin-bottom: 0; letter-spacing: -0.5px;">가격 선택</div>
                                 </div>
 
                                 <div class="price-grid">
@@ -2129,122 +2450,6 @@
                                 </button>
                             </div>
 
-                            <!-- 상품 카드 2: 단일 옵션 (드롭다운 없음) -->
-                            <div class="price-card" id="card2">
-                                <div class="price-card-header">
-                                    <div class="product-info">
-                                        <div class="product-name">아이폰 17 프로</div>
-
-                                        <!-- 단일 옵션인 경우 드롭다운 없이 고정 텍스트 -->
-                                        <div style="display: flex; gap: 8px; margin-top: 8px; align-items: center;">
-                                            <!-- Hidden inputs for single options -->
-                                            <input type="hidden" id="capacity-card2" value="256GB">
-                                            <input type="hidden" id="plan-card2" value="109000">
-
-                                            <div style="padding: 8px 12px; border: 1px solid #e5e8eb; border-radius: 8px; background: #f7f8fa; font-size: 13px; font-weight: 600; color: #6b7684;">
-                                                256GB
-                                            </div>
-                                            <div style="padding: 8px 12px; border: 1px solid #e5e8eb; border-radius: 8px; background: #f7f8fa; font-size: 13px; font-weight: 600; color: #6b7684;">
-                                                월 10.9만
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <img src="https://image.nofee.team/product-group/phone/AP-B-17/thumb/20250918085221_4c21b2c479fa70139689cd6567f875de.jpg" alt="아이폰 17 프로" class="product-image">
-                                </div>
-
-                                <div class="price-grid">
-                                    <!-- SKT -->
-                                    <div class="carrier-section">
-                                        <div class="carrier-name">SKT</div>
-                                        <div class="price-item" onclick="selectPrice(this, 'card2', 'SKT', '공통지원·번호이동', '69')">
-                                            <div class="price-label">공통·번이</div>
-                                            <div class="price-value">69만</div>
-                                        </div>
-                                        <div class="price-item" onclick="selectPrice(this, 'card2', 'SKT', '공통지원·기기변경', '74')">
-                                            <div class="price-label">공통·기변</div>
-                                            <div class="price-value">74만</div>
-                                        </div>
-                                        <div class="price-item" onclick="selectPrice(this, 'card2', 'SKT', '선택약정·번호이동', '59')">
-                                            <div class="price-label">선택·번이</div>
-                                            <div class="price-value best">59만</div>
-                                        </div>
-                                        <div class="price-item" onclick="selectPrice(this, 'card2', 'SKT', '선택약정·기기변경', '64')">
-                                            <div class="price-label">선택·기변</div>
-                                            <div class="price-value">64만</div>
-                                        </div>
-                                    </div>
-
-                                    <!-- KT -->
-                                    <div class="carrier-section">
-                                        <div class="carrier-name">KT</div>
-                                        <div class="price-item" onclick="selectPrice(this, 'card2', 'KT', '공통지원·번호이동', '70')">
-                                            <div class="price-label">공통·번이</div>
-                                            <div class="price-value">70만</div>
-                                        </div>
-                                        <div class="price-item" onclick="selectPrice(this, 'card2', 'KT', '공통지원·기기변경', '75')">
-                                            <div class="price-label">공통·기변</div>
-                                            <div class="price-value">75만</div>
-                                        </div>
-                                        <div class="price-item" onclick="selectPrice(this, 'card2', 'KT', '선택약정·번호이동', '60')">
-                                            <div class="price-label">선택·번이</div>
-                                            <div class="price-value">60만</div>
-                                        </div>
-                                        <div class="price-item" onclick="selectPrice(this, 'card2', 'KT', '선택약정·기기변경', '65')">
-                                            <div class="price-label">선택·기변</div>
-                                            <div class="price-value">65만</div>
-                                        </div>
-                                    </div>
-
-                                    <!-- LG U+ -->
-                                    <div class="carrier-section">
-                                        <div class="carrier-name">LG U+</div>
-                                        <div class="price-item" onclick="selectPrice(this, 'card2', 'LG U+', '공통지원·번호이동', '69')">
-                                            <div class="price-label">공통·번이</div>
-                                            <div class="price-value">69만</div>
-                                        </div>
-                                        <div class="price-item" onclick="selectPrice(this, 'card2', 'LG U+', '공통지원·기기변경', '74')">
-                                            <div class="price-label">공통·기변</div>
-                                            <div class="price-value">74만</div>
-                                        </div>
-                                        <div class="price-item" onclick="selectPrice(this, 'card2', 'LG U+', '선택약정·번호이동', '59')">
-                                            <div class="price-label">선택·번이</div>
-                                            <div class="price-value">59만</div>
-                                        </div>
-                                        <div class="price-item" onclick="selectPrice(this, 'card2', 'LG U+', '선택약정·기기변경', '64')">
-                                            <div class="price-label">선택·기변</div>
-                                            <div class="price-value">64만</div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="selected-info" id="selectedInfo-card2">
-                                    <div class="selected-info-title">선택하신 옵션</div>
-                                    <div class="selected-detail">
-                                        <div class="selected-detail-label">기기명</div>
-                                        <div class="selected-detail-value" id="selectedProduct-card2">-</div>
-                                    </div>
-                                    <div class="selected-detail">
-                                        <div class="selected-detail-label">용량</div>
-                                        <div class="selected-detail-value" id="selectedCapacity-card2">-</div>
-                                    </div>
-                                    <div class="selected-detail">
-                                        <div class="selected-detail-label">통신사</div>
-                                        <div class="selected-detail-value" id="selectedCarrier-card2">-</div>
-                                    </div>
-                                    <div class="selected-detail">
-                                        <div class="selected-detail-label">가입유형</div>
-                                        <div class="selected-detail-value" id="selectedType-card2">-</div>
-                                    </div>
-                                    <div class="selected-price">
-                                        <div class="selected-price-label">구매 가격</div>
-                                        <div class="selected-price-value" id="selectedPrice-card2">-</div>
-                                    </div>
-                                </div>
-
-                                <button class="cta-button" id="ctaButton-card2" disabled onclick="submitOrder('card2')">
-                                    가격을 선택해주세요
-                                </button>
-                            </div>
                         </div>
                         </div>
 
@@ -2258,12 +2463,12 @@
                 </div>
 
                 <div class="alert alert-success preview-description" style="margin-top: 16px; background: #f0fdf4; border-left: 4px solid #22c55e;">
-                    <strong>✨ 실시간 가격 변동 기능 (DB 기준):</strong><br>
-                    <strong>첫 번째 카드 (갤럭시 S25)</strong>에서 용량 또는 요금제를 변경하면 DB에 저장된 가격 데이터 기준으로 통신사별 가격이 실시간으로 업데이트됩니다:<br>
-                    • <strong>256GB + 월 8.9만 (초기값)</strong>: KT 공통·기변, LG U+ 선택·번이가 미입력(공란) 상태로 "-" 표시되며 클릭 불가<br>
-                    • <strong>512GB로 변경</strong>: KT 공통·번이가 공란으로 변경되어 "-" 표시<br>
-                    • <strong>월 10.9만으로 변경</strong>: KT 선택·기변, LG U+ 선택·번이가 공란으로 변경되어 "-" 표시<br>
-                    <strong>두 번째 카드 (아이폰 17 프로)</strong>는 옵션이 1개씩만 있어 드롭다운이 표시되지 않고 고정 텍스트로 표시됩니다.
+                    <strong>✨ 하나의 시세표로 모든 상품 관리</strong><br>
+                    기기명, 용량, 요금제를 선택하면 해당 조합의 가격이 시세표 입력 데이터와 연동되어 실시간으로 표시됩니다:<br>
+                    • <strong>기기명 선택</strong>: 시세표 입력 체험하기에 등록된 모든 상품 중 선택<br>
+                    • <strong>용량 선택</strong>: 선택한 기기에 입력된 용량만 필터로 표시<br>
+                    • <strong>요금제 선택</strong>: 선택한 기기+용량 조합에 맞는 요금제만 필터로 표시<br>
+                    <strong>필터는 동적으로 생성</strong>되어 불필요한 버튼이 표시되지 않으며, 하나의 카드로 모든 상품을 확인할 수 있습니다.
                 </div>
 
                 <div class="alert alert-info" style="margin-top: 16px;">
@@ -2593,76 +2798,6 @@
         </div>
     </div>
 
-    <!-- 데이터베이스 구조 -->
-    <div class="section">
-        <div class="section-header">
-            <div class="section-number">8</div>
-            <h2>가격 정책</h2>
-        </div>
-
-        <div class="feature-card">
-            <div class="feature-title">가격 입력 및 표시 규칙</div>
-            <div class="feature-desc">
-                <table class="comparison-table" style="margin-top: 16px;">
-                    <thead>
-                        <tr>
-                            <th style="width: 25%;">가격 유형</th>
-                            <th style="width: 25%;">어드민 입력</th>
-                            <th style="width: 25%;">DB 저장</th>
-                            <th style="width: 25%;">고객 화면</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td><strong>일반 가격</strong></td>
-                            <td><code>55</code></td>
-                            <td>550,000원</td>
-                            <td><strong>55만</strong></td>
-                        </tr>
-                        <tr>
-                            <td><strong>일반 가격</strong></td>
-                            <td><code>100</code></td>
-                            <td>1,000,000원</td>
-                            <td><strong>100만</strong></td>
-                        </tr>
-                        <tr>
-                            <td><strong>페이백</strong></td>
-                            <td><code>-12</code></td>
-                            <td>-120,000원</td>
-                            <td><strong>-12만</strong></td>
-                        </tr>
-                        <tr>
-                            <td><strong>페이백</strong></td>
-                            <td><code>-20</code></td>
-                            <td>-200,000원</td>
-                            <td><strong>-20만</strong></td>
-                        </tr>
-                    </tbody>
-                </table>
-
-                <div class="key-box" style="margin-top: 16px;">
-                    <strong>💡 가격 입력 및 표시 규칙</strong>
-                    <ul style="margin-top: 8px;">
-                        <li><strong>어드민 입력:</strong> 만원 단위 정수로 입력 (55, 100, -12)</li>
-                        <li><strong>DB 저장:</strong> 입력값 × 10,000 = 원 단위로 자동 변환</li>
-                        <li><strong>고객 표시:</strong> 만원 단위로 표시 (55만, -12만)</li>
-                        <li><strong>입력 제한:</strong> 정수만 가능, 소수점 불가 (55.5 ❌)</li>
-                    </ul>
-                </div>
-
-                <div class="key-box" style="margin-top: 16px;">
-                    <strong>💰 페이백이란?</strong>
-                    <p style="margin-top: 8px;">
-                        음수 가격은 고객이 휴대폰을 구매하면서 일정 금액을 현금/포인트로 돌려받는 프로모션입니다.
-                        매장의 특별 프로모션이나 통신사 리베이트를 반영한 가격입니다.
-                    </p>
-                </div>
-            </div>
-        </div>
-
-    </div>
-
-
     <script>
         // 프로토타입 1: 행 추가 기능
         function addRow() {
@@ -2716,7 +2851,43 @@
         // 행 삭제 기능
         function deleteRow(btn) {
             const row = btn.closest('tr');
+            const rowIndex = parseInt(row.getAttribute('data-row-index'));
+
+            // 입력 테이블에서 행 삭제
             row.remove();
+
+            // 이미지 샘플에서도 해당 행 삭제
+            const imageSampleContainer = document.getElementById('imageSampleContainer');
+            if (imageSampleContainer) {
+                const imageTableBody = imageSampleContainer.querySelector('table tbody');
+                if (imageTableBody) {
+                    const imageRow = imageTableBody.querySelectorAll('tr')[rowIndex];
+                    if (imageRow) {
+                        imageRow.remove();
+                    }
+                }
+            }
+
+            // 남은 행들의 data-row-index 재정렬
+            const tbody = document.getElementById('tableBody1');
+            const remainingRows = tbody.querySelectorAll('tr');
+            remainingRows.forEach((row, index) => {
+                row.setAttribute('data-row-index', index);
+
+                // 각 input의 oninput 이벤트도 새로운 인덱스로 업데이트
+                const inputs = row.querySelectorAll('input');
+                inputs.forEach(input => {
+                    const col = input.getAttribute('data-col');
+                    if (col === 'name' || col === 'capacity' || col === 'plan') {
+                        input.setAttribute('oninput', `updateImageCell(${index}, '${col}', this.value)`);
+                    } else {
+                        const colNum = parseInt(col);
+                        if (!isNaN(colNum)) {
+                            input.setAttribute('oninput', `updateImageCell(${index}, ${colNum}, this.value)`);
+                        }
+                    }
+                });
+            });
         }
 
         // 테이블 정렬 기능
@@ -2742,6 +2913,32 @@
             });
         }
 
+        // 노출 상태 변수 (초기값: true = 노출 중)
+        let isExposed = true;
+
+        // 노출 관리 토글 함수
+        function toggleExposure() {
+            isExposed = !isExposed;
+
+            const statusText = document.getElementById('exposureStatusText');
+            const toggleBtn = document.getElementById('exposureToggleBtn');
+            const toggleBtnText = document.getElementById('exposureToggleBtnText');
+
+            if (isExposed) {
+                // 노출 중 상태
+                statusText.innerHTML = '현재 고객 화면에 <strong style="color: #28a745;">노출 중</strong>입니다.';
+                toggleBtn.className = 'btn btn-success btn-small';
+                toggleBtn.style.minWidth = '100px';
+                toggleBtnText.textContent = '노출 중지';
+            } else {
+                // 비노출 상태
+                statusText.innerHTML = '현재 고객 화면에 <strong style="color: #dc3545;">비노출</strong> 상태입니다.';
+                toggleBtn.className = 'btn btn-secondary btn-small';
+                toggleBtn.style.minWidth = '100px';
+                toggleBtnText.textContent = '노출 시작';
+            }
+        }
+
         // 메모 업데이트 함수
         function updateImageMemo() {
             const memoInput = document.getElementById('memoInput');
@@ -2758,10 +2955,23 @@
 
         // 개별 셀 업데이트 함수
         function updateImageCell(rowIndex, colIndex, value) {
-            const imageTableBody = document.querySelector('.prototype-container:nth-of-type(2) table tbody');
-            const imageRow = imageTableBody.querySelectorAll('tr')[rowIndex];
+            const imageSampleContainer = document.getElementById('imageSampleContainer');
+            if (!imageSampleContainer) {
+                console.error('이미지 샘플 컨테이너를 찾을 수 없습니다.');
+                return;
+            }
 
-            if (!imageRow) return;
+            const imageTableBody = imageSampleContainer.querySelector('table tbody');
+            if (!imageTableBody) {
+                console.error('이미지 샘플 테이블 tbody를 찾을 수 없습니다.');
+                return;
+            }
+
+            const imageRow = imageTableBody.querySelectorAll('tr')[rowIndex];
+            if (!imageRow) {
+                console.error(`행 인덱스 ${rowIndex}를 찾을 수 없습니다.`);
+                return;
+            }
 
             if (colIndex === 'name') {
                 // 상품명 업데이트
@@ -2788,14 +2998,91 @@
                         targetCell.style.fontWeight = '900';
                         targetCell.style.fontSize = '18px';
                     }
+                } else {
+                    console.error(`셀을 찾을 수 없습니다. rowIndex: ${rowIndex}, colIndex: ${colIndex}`);
                 }
             }
         }
 
+        // 전체 테이블 데이터 동기화 함수
+        function syncAllDataToImageSample() {
+            const inputTableBody = document.getElementById('tableBody1');
+            const imageSampleContainer = document.getElementById('imageSampleContainer');
+
+            if (!inputTableBody || !imageSampleContainer) {
+                console.error('테이블을 찾을 수 없습니다.');
+                return false;
+            }
+
+            const imageTableBody = imageSampleContainer.querySelector('table tbody');
+            if (!imageTableBody) {
+                console.error('이미지 샘플 테이블을 찾을 수 없습니다.');
+                return false;
+            }
+
+            // 입력 테이블의 모든 행을 순회
+            const inputRows = inputTableBody.querySelectorAll('tr');
+            inputRows.forEach((inputRow, rowIndex) => {
+                const imageRow = imageTableBody.querySelectorAll('tr')[rowIndex];
+                if (!imageRow) return;
+
+                // 상품명 (0번 셀)
+                const nameInput = inputRow.cells[0].querySelector('input');
+                if (nameInput) {
+                    imageRow.cells[0].textContent = nameInput.value;
+                }
+
+                // 용량 (1번 셀)
+                const capacityInput = inputRow.cells[1].querySelector('input');
+                if (capacityInput) {
+                    imageRow.cells[1].textContent = capacityInput.value;
+                }
+
+                // 월요금 (2번 셀)
+                const planInput = inputRow.cells[2].querySelector('input');
+                if (planInput) {
+                    imageRow.cells[2].textContent = planInput.value;
+                }
+
+                // 가격 셀들 (3번~14번 셀, 총 12개)
+                for (let colIndex = 3; colIndex <= 14; colIndex++) {
+                    const priceInput = inputRow.cells[colIndex]?.querySelector('input');
+                    const imageCell = imageRow.cells[colIndex];
+
+                    if (priceInput && imageCell) {
+                        const value = priceInput.value;
+
+                        // 빈 값이나 "-"는 그레이 스타일로
+                        if (!value || value === '-' || value.trim() === '') {
+                            imageCell.textContent = '-';
+                            imageCell.style.color = '#adb5bd';
+                            imageCell.style.fontWeight = '500';
+                            imageCell.style.fontSize = '16px';
+                        } else {
+                            imageCell.textContent = value;
+                            imageCell.style.color = '#191f28';
+                            imageCell.style.fontWeight = '900';
+                            imageCell.style.fontSize = '18px';
+                        }
+                    }
+                }
+            });
+
+            return true;
+        }
+
         // 시세표 발행 기능
         function publishTable() {
+            // 먼저 데이터 동기화
+            const syncSuccess = syncAllDataToImageSample();
+
+            if (!syncSuccess) {
+                alert('데이터 동기화에 실패했습니다.');
+                return;
+            }
+
             if (confirm('시세표를 발행하시겠습니까?\n발행 후 동네성지 스토어에 노출됩니다.')) {
-                alert('시세표가 발행되었습니다!');
+                alert('시세표가 발행되었습니다!\n\n입력한 모든 데이터가 시세표 이미지 샘플에 반영되었습니다.');
             }
         }
 
@@ -2911,12 +3198,11 @@
             // 현재 항목 선택
             element.classList.add('selected');
 
-            // 상품 정보 가져오기
-            const productName = document.querySelector(`#${cardId} .product-name`).textContent;
-            const capacity = document.getElementById(`capacity-${cardId}`).value;
-            const planElement = document.getElementById(`plan-${cardId}`);
-            const plan = planElement ? planElement.value : '109000';
-            const planText = plan === '89000' ? '월 8.9만' : '월 10.9만';
+            // 현재 선택된 상품 정보 가져오기
+            const currentProduct = allProducts[currentProductIndex];
+            const productName = currentProduct.name;
+            const capacity = currentCapacity;
+            const planText = '월 ' + currentPlan + '만';
 
             // 선택 정보 업데이트
             document.getElementById(`selectedProduct-${cardId}`).textContent = productName;
@@ -2961,6 +3247,457 @@
                   `가입유형: ${type}\n` +
                   `가격: ${price}\n\n` +
                   `담당자가 곧 연락드리겠습니다.`);
+        }
+
+        // 모바일 시세표 상태 관리
+        let allProducts = [];
+        let currentManufacturer = 'samsung';
+        let currentProductIndex = 0;
+        let currentCapacity = '';
+        let currentPlan = '';
+
+        // 페이지 로드 시 초기화
+        document.addEventListener('DOMContentLoaded', function() {
+            initializeMobileTable();
+        });
+
+        // 시세표 입력 데이터에서 모든 상품 로드
+        function initializeMobileTable() {
+            const tbody = document.getElementById('tableBody1');
+            if (!tbody) {
+                console.error('시세표 입력 데이터를 찾을 수 없습니다.');
+                return;
+            }
+
+            allProducts = [];
+            const rows = tbody.querySelectorAll('tr');
+
+            rows.forEach((row, index) => {
+                const nameInput = row.querySelector('input[data-col="name"]');
+                const capacityInput = row.querySelector('input[data-col="capacity"]');
+                const planInput = row.querySelector('input[data-col="plan"]');
+
+                if (nameInput && capacityInput && planInput) {
+                    const priceInputs = row.querySelectorAll('input[data-col]');
+                    const prices = {};
+
+                    priceInputs.forEach(input => {
+                        const col = input.getAttribute('data-col');
+                        if (!isNaN(col)) {
+                            prices[col] = input.value;
+                        }
+                    });
+
+                    const productName = nameInput.value.trim();
+                    let manufacturer = 'other';
+                    if (productName.includes('갤럭시') || productName.includes('Galaxy')) {
+                        manufacturer = 'samsung';
+                    } else if (productName.includes('아이폰') || productName.includes('iPhone')) {
+                        manufacturer = 'apple';
+                    }
+
+                    allProducts.push({
+                        index: index,
+                        name: productName,
+                        capacity: capacityInput.value.trim(),
+                        plan: planInput.value.trim(),
+                        manufacturer: manufacturer,
+                        prices: prices
+                    });
+                }
+            });
+
+            if (allProducts.length > 0) {
+                const samsungProducts = allProducts.filter(p => p.manufacturer === 'samsung');
+                if (samsungProducts.length > 0) {
+                    currentManufacturer = 'samsung';
+                    currentProductIndex = samsungProducts[0].index;
+                    currentCapacity = samsungProducts[0].capacity;
+                    currentPlan = samsungProducts[0].plan;
+                } else {
+                    currentManufacturer = allProducts[0].manufacturer;
+                    currentProductIndex = 0;
+                    currentCapacity = allProducts[0].capacity;
+                    currentPlan = allProducts[0].plan;
+                }
+
+                renderProductDropdown();
+                updateCapacitySelector();
+                updatePlanSelector();
+                updatePriceCard();
+            }
+        }
+
+        // 제조사 탭 선택
+        function selectManufacturerTab(manufacturer) {
+            currentManufacturer = manufacturer;
+
+            // 탭 활성화 상태 변경
+            document.querySelectorAll('.manufacturer-tab').forEach(tab => {
+                tab.classList.remove('active');
+            });
+            document.getElementById('tab-' + manufacturer).classList.add('active');
+
+            // 드롭다운 렌더링
+            renderProductDropdown();
+        }
+
+        // 이미지 URL 가져오기 함수
+        function getProductImageUrl(productName) {
+            if (productName.includes('갤럭시 S25 울트라')) {
+                return 'https://image.nofee.team/product-group/phone/SM-S-938/thumb/20250627152509_6a55acc72fc42cdf56ef5f088e65c6a1.png';
+            } else if (productName.includes('갤럭시 S25')) {
+                return 'https://image.nofee.team/product-group/phone/SM-S-25/thumb/20250627152510_69d7ac613e112f7ed9799137df572843.png';
+            } else if (productName.includes('아이폰 17 프로 맥스')) {
+                return 'https://image.nofee.team/product-group/phone/아이폰-17-Pro-Max/thumb/20250627152443_f8a47b08bbf43d2ac60a43b0fbd53c36.png';
+            } else if (productName.includes('아이폰 17 프로')) {
+                return 'https://image.nofee.team/product-group/phone/아이폰-17-Pro/thumb/20250627152442_d10b0b0bd69f0c5fcfba47bc96f87207.png';
+            } else if (productName.includes('갤럭시 Z 플립')) {
+                return 'https://image.nofee.team/product-group/phone/SM-F-761/thumb/20250627151646_8ee86f9afe36ddb6819e9de4a93d5f01.png';
+            } else if (productName.includes('아이폰 17')) {
+                return 'https://image.nofee.team/product-group/phone/아이폰-17/thumb/20250627152447_f4b8cef7a2c7ea5ba86147e5f28e9c5a.png';
+            } else if (productName.includes('갤럭시 Z 폴드')) {
+                return 'https://image.nofee.team/product-group/phone/SM-F-966/thumb/20250627151650_19ad0fa2f5e8c49e065099b8c8b5ccc1.png';
+            } else if (productName.includes('갤럭시 A55')) {
+                return 'https://image.nofee.team/product-group/phone/SM-A-556/thumb/20250627152505_8e2e1b5eeef7edc0e5b3f9f9e6cf5f7c.png';
+            }
+            return 'https://via.placeholder.com/48';
+        }
+
+        // 드롭다운 토글
+        function toggleProductDropdown() {
+            const trigger = document.getElementById('productSelectTrigger');
+            const dropdown = document.getElementById('productSelectDropdown');
+
+            const isOpen = dropdown.classList.contains('open');
+
+            if (isOpen) {
+                trigger.classList.remove('open');
+                dropdown.classList.remove('open');
+            } else {
+                trigger.classList.add('open');
+                dropdown.classList.add('open');
+            }
+        }
+
+        // 드롭다운 외부 클릭시 닫기
+        document.addEventListener('click', function(e) {
+            const wrapper = document.getElementById('productSelectWrapper');
+            if (wrapper && !wrapper.contains(e.target)) {
+                const trigger = document.getElementById('productSelectTrigger');
+                const dropdown = document.getElementById('productSelectDropdown');
+                if (trigger) trigger.classList.remove('open');
+                if (dropdown) dropdown.classList.remove('open');
+            }
+        });
+
+        // 드롭다운 렌더링
+        function renderProductDropdown() {
+            const dropdown = document.getElementById('productSelectDropdown');
+            if (!dropdown) return;
+
+            const products = allProducts.filter(p => p.manufacturer === currentManufacturer);
+            const uniqueProducts = [];
+            const seen = new Set();
+
+            products.forEach(p => {
+                if (!seen.has(p.name)) {
+                    seen.add(p.name);
+                    uniqueProducts.push(p);
+                }
+            });
+
+            dropdown.innerHTML = '';
+
+            uniqueProducts.forEach(product => {
+                const option = document.createElement('div');
+                option.className = 'custom-select-option';
+                if (product.index === currentProductIndex) {
+                    option.classList.add('selected');
+                }
+                option.onclick = () => selectProductFromDropdown(product.index);
+
+                const imageUrl = getProductImageUrl(product.name);
+
+                option.innerHTML = `
+                    <div class="custom-select-option-image">
+                        <img src="${imageUrl}" alt="${product.name}">
+                    </div>
+                    <div class="custom-select-option-name">${product.name}</div>
+                `;
+
+                dropdown.appendChild(option);
+            });
+
+            // 첫 번째 상품이 없으면 선택
+            if (uniqueProducts.length > 0) {
+                const currentExists = uniqueProducts.some(p => p.index === currentProductIndex);
+                if (!currentExists) {
+                    selectProductFromDropdown(uniqueProducts[0].index);
+                }
+            }
+        }
+
+        // 드롭다운에서 상품 선택
+        function selectProductFromDropdown(index) {
+            currentProductIndex = parseInt(index);
+
+            const currentProduct = allProducts[currentProductIndex];
+            currentCapacity = currentProduct.capacity;
+            currentPlan = currentProduct.plan;
+
+            // 선택된 상품 정보 업데이트
+            const imageUrl = getProductImageUrl(currentProduct.name);
+            document.getElementById('selectedProductImage').innerHTML = `<img src="${imageUrl}" alt="${currentProduct.name}">`;
+            document.getElementById('selectedProductName').textContent = currentProduct.name;
+
+            // 드롭다운 닫기
+            document.getElementById('productSelectTrigger').classList.remove('open');
+            document.getElementById('productSelectDropdown').classList.remove('open');
+
+            // 드롭다운 옵션 업데이트 (선택 상태)
+            document.querySelectorAll('.custom-select-option').forEach(opt => {
+                opt.classList.remove('selected');
+            });
+            event.target.closest('.custom-select-option').classList.add('selected');
+
+            updateCapacitySelector();
+            updatePlanSelector();
+            updatePriceCard();
+        }
+
+        // (구버전 - 사용 안 함) 제조사 셀렉터 업데이트
+        // function updateManufacturerSelector() { ... }
+
+        // (구버전 - 사용 안 함) 기기명 셀렉터 업데이트
+        // function updateProductSelector() { ... }
+
+        // 용량 셀렉터 업데이트
+        function updateCapacitySelector() {
+            const selector = document.getElementById('capacitySelector');
+            if (!selector) return;
+
+            const currentProduct = allProducts[currentProductIndex];
+            const capacities = [...new Set(
+                allProducts
+                    .filter(p => p.name === currentProduct.name)
+                    .map(p => p.capacity)
+            )];
+
+            selector.innerHTML = '';
+            capacities.forEach((capacity, index) => {
+                const option = document.createElement('option');
+                option.value = capacity;
+                option.textContent = capacity;
+                if (capacity === currentCapacity) {
+                    option.selected = true;
+                }
+                selector.appendChild(option);
+            });
+
+            // 첫 번째 옵션 자동 선택
+            if (capacities.length > 0 && !currentCapacity) {
+                selector.value = capacities[0];
+                currentCapacity = capacities[0];
+            }
+        }
+
+        // 요금제 셀렉터 업데이트
+        function updatePlanSelector() {
+            const selector = document.getElementById('planSelector');
+            if (!selector) return;
+
+            const currentProduct = allProducts[currentProductIndex];
+            const plans = [...new Set(
+                allProducts
+                    .filter(p => p.name === currentProduct.name && p.capacity === currentCapacity)
+                    .map(p => p.plan)
+            )];
+
+            selector.innerHTML = '';
+            plans.forEach((plan, index) => {
+                const option = document.createElement('option');
+                option.value = plan;
+                option.textContent = '월 ' + plan + '만';
+                if (plan === currentPlan) {
+                    option.selected = true;
+                }
+                selector.appendChild(option);
+            });
+
+            // 첫 번째 옵션 자동 선택
+            if (plans.length > 0 && !currentPlan) {
+                selector.value = plans[0];
+                currentPlan = plans[0];
+            }
+        }
+
+        // (구버전 - 사용 안 함) 제조사 변경
+        // function changeManufacturer(manufacturer) { ... }
+
+        // (구버전 - 사용 안 함) 기기명 변경
+        // function changeProduct(index) { ... }
+
+        // 용량 변경
+        function changeCapacity(capacity) {
+            currentCapacity = capacity;
+
+            const currentProduct = allProducts[currentProductIndex];
+            const matching = allProducts.filter(p => p.name === currentProduct.name && p.capacity === capacity);
+            if (matching.length > 0) {
+                currentPlan = matching[0].plan;
+            }
+
+            updatePlanSelector();
+            updatePriceCard();
+        }
+
+        // 요금제 변경
+        function changePlan(plan) {
+            currentPlan = plan;
+            updatePriceCard();
+        }
+
+        // 가격 카드 업데이트
+        function updatePriceCard() {
+            const currentProductName = allProducts[currentProductIndex].name;
+            const currentProduct = allProducts.find(p =>
+                p.name === currentProductName &&
+                p.capacity === currentCapacity &&
+                p.plan === currentPlan
+            );
+
+            if (!currentProduct) {
+                console.error('일치하는 상품을 찾을 수 없습니다.');
+                return;
+            }
+
+            // 상품 이미지 업데이트 (TODO: 실제 이미지 URL 매핑 필요)
+            const productImage = document.getElementById('productImage');
+            if (productImage) {
+                productImage.alt = currentProduct.name;
+            }
+
+            // 가격 데이터 매핑 (시세표 입력 데이터의 컬럼 순서: SKT공통번이, SKT공통기변, SKT선택번이, SKT선택기변, KT공통번이, KT공통기변, KT선택번이, KT선택기변, LGU공통번이, LGU공통기변, LGU선택번이, LGU선택기변)
+            const priceMapping = [
+                { carrier: 'SKT', type: '공통지원·번호이동', col: '3' },
+                { carrier: 'SKT', type: '공통지원·기기변경', col: '4' },
+                { carrier: 'SKT', type: '선택약정·번호이동', col: '5' },
+                { carrier: 'SKT', type: '선택약정·기기변경', col: '6' },
+                { carrier: 'KT', type: '공통지원·번호이동', col: '7' },
+                { carrier: 'KT', type: '공통지원·기기변경', col: '8' },
+                { carrier: 'KT', type: '선택약정·번호이동', col: '9' },
+                { carrier: 'KT', type: '선택약정·기기변경', col: '10' },
+                { carrier: 'LG U+', type: '공통지원·번호이동', col: '11' },
+                { carrier: 'LG U+', type: '공통지원·기기변경', col: '12' },
+                { carrier: 'LG U+', type: '선택약정·번호이동', col: '13' },
+                { carrier: 'LG U+', type: '선택약정·기기변경', col: '14' }
+            ];
+
+            // 모든 가격 아이템 업데이트
+            const priceCard = document.getElementById('card1');
+            if (!priceCard) return;
+
+            const priceItems = priceCard.querySelectorAll('.price-item');
+            let itemIndex = 0;
+
+            priceMapping.forEach((mapping, index) => {
+                const price = currentProduct.prices[mapping.col];
+                const priceItem = priceItems[itemIndex];
+
+                if (priceItem) {
+                    const priceValue = priceItem.querySelector('.price-value');
+
+                    if (!price || price === '' || price === '-') {
+                        // 공란 처리
+                        priceValue.textContent = '-';
+                        priceValue.classList.remove('best');
+                        priceItem.style.opacity = '0.4';
+                        priceItem.style.cursor = 'not-allowed';
+                        priceItem.setAttribute('onclick', '');
+                    } else {
+                        // 정상 가격 표시
+                        const priceNum = parseFloat(price);
+                        if (priceNum < 0) {
+                            priceValue.textContent = '-' + Math.abs(priceNum) + '만';
+                        } else {
+                            priceValue.textContent = price + '만';
+                        }
+                        priceItem.style.opacity = '1';
+                        priceItem.style.cursor = 'pointer';
+                        priceItem.setAttribute('onclick', `selectPrice(this, 'card1', '${mapping.carrier}', '${mapping.type}', '${price}')`);
+
+                        // best 클래스는 제거 (동적으로 최저가 계산 가능)
+                        priceValue.classList.remove('best');
+                    }
+                }
+
+                itemIndex++;
+            });
+
+            // 최저가 찾기 및 자동 선택
+            let lowestPrice = null;
+            let lowestPriceItem = null;
+            let lowestPriceMapping = null;
+
+            priceMapping.forEach((mapping, index) => {
+                const price = currentProduct.prices[mapping.col];
+                if (price && price !== '' && price !== '-') {
+                    const priceNum = parseFloat(price);
+                    if (lowestPrice === null || priceNum < lowestPrice) {
+                        lowestPrice = priceNum;
+                        lowestPriceItem = priceItems[index];
+                        lowestPriceMapping = mapping;
+                    }
+                }
+            });
+
+            // 최저가가 있으면 자동으로 선택
+            if (lowestPriceItem && lowestPriceMapping) {
+                // 기존 선택 모두 제거
+                priceItems.forEach(item => item.classList.remove('selected'));
+
+                // 최저가 선택
+                lowestPriceItem.classList.add('selected');
+
+                // 선택 정보 표시
+                const selectedInfo = document.getElementById('selectedInfo-card1');
+                if (selectedInfo) {
+                    selectedInfo.classList.add('show');
+                }
+
+                // 선택 정보 업데이트
+                document.getElementById('selectedProduct-card1').textContent = currentProduct.name;
+                document.getElementById('selectedCapacity-card1').textContent = currentCapacity;
+                document.getElementById('selectedPlan-card1').textContent = '월 ' + currentPlan + '만';
+                document.getElementById('selectedCarrier-card1').textContent = lowestPriceMapping.carrier;
+                document.getElementById('selectedType-card1').textContent = lowestPriceMapping.type;
+
+                if (lowestPrice < 0) {
+                    document.getElementById('selectedPrice-card1').textContent = Math.abs(lowestPrice) + '만원 페이백';
+                } else {
+                    document.getElementById('selectedPrice-card1').textContent = lowestPrice + '만원';
+                }
+
+                // 버튼 활성화
+                const button = document.getElementById('ctaButton-card1');
+                if (button) {
+                    button.disabled = false;
+                    button.textContent = '구매하기';
+                }
+            } else {
+                // 최저가가 없으면 초기화
+                const selectedInfo = document.getElementById('selectedInfo-card1');
+                if (selectedInfo) {
+                    selectedInfo.classList.remove('show');
+                }
+
+                const button = document.getElementById('ctaButton-card1');
+                if (button) {
+                    button.disabled = true;
+                    button.textContent = '가격을 선택해주세요';
+                }
+            }
         }
 
         // 탭 전환 함수
