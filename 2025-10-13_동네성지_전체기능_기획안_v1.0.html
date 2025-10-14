@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>동네성지 플랫폼 기획안 - 노피</title>
+    <title>동네성지 메인 화면 기획안 - 노피</title>
     <link href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/variable/woff2/SUIT-Variable.css" rel="stylesheet">
     <style>
         * {
@@ -1356,76 +1356,69 @@
                 <div class="doc-meta-item">버전: v1.0</div>
             </div>
         </div>
-        <h1 class="doc-title">동네성지 플랫폼 기획안</h1>
-        <div class="doc-subtitle">지역 기반 휴대폰 판매점 통합 플랫폼</div>
+        <h1 class="doc-title">동네성지 메인 화면 기획안</h1>
+        <div class="doc-subtitle">지역 기반 스토어 탐색 및 시세표 비교 화면</div>
     </div>
 
-    <!-- 1. 동네성지 개요 및 목적 -->
+    <!-- 1. 동네성지 메인 화면 개요 -->
     <div class="section" id="section-1">
         <div class="section-header">
             <div class="section-number">1</div>
-            <h2>동네성지 개요 및 목적</h2>
+            <h2>동네성지 메인 화면 개요</h2>
         </div>
 
         <div class="feature-card" style="background: transparent; box-shadow: none; padding: 0; transition: none; transform: none;">
-            <div class="feature-title">동네성지란?</div>
+            <div class="feature-title">동네성지 메인 화면이란?</div>
             <div class="feature-desc">
                 <p style="font-size: 15px; line-height: 1.8; margin-bottom: 20px;">
-                    <strong>동네성지</strong>는 노피가 제공하는 지역 기반 휴대폰 판매점 통합 플랫폼입니다.
-                    고객이 자신의 동네에서 가장 저렴하고 신뢰할 수 있는 휴대폰 판매점을 쉽게 찾을 수 있도록 돕습니다.
+                    <strong>동네성지 메인 화면</strong>은 사용자가 지역별 스토어를 탐색하고 시세표를 비교할 수 있는 통합 화면입니다.
+                    노피 헤더, 이벤트 배너, 지역 선택 필터, 시세표 비교 기능이 하나의 화면에 통합되어 있습니다.
                 </p>
 
-                <!-- 핵심 가치 -->
+                <!-- 화면 구성 요소 -->
                 <div style="margin-bottom: 32px;">
-                    <h4 style="color: #191f28; font-size: 16px; font-weight: 700; margin-bottom: 16px; border-left: 3px solid #3182f6; padding-left: 12px;">핵심 가치</h4>
+                    <h4 style="color: #191f28; font-size: 16px; font-weight: 700; margin-bottom: 16px; border-left: 3px solid #3182f6; padding-left: 12px;">화면 구성 요소</h4>
                     <ul style="color: #4e5968; line-height: 1.7;">
-                        <li><strong>지역 기반 탐색</strong> — 내 주변 판매점을 지역 필터로 빠르게 찾기</li>
-                        <li><strong>가격 투명성</strong> — 여러 매장의 시세표를 한눈에 비교</li>
-                        <li><strong>실시간 정보</strong> — 판매점이 직접 관리하는 최신 가격 정보</li>
-                        <li><strong>신뢰성</strong> — 인증된 판매점만 등록, 리뷰 시스템으로 검증</li>
-                        <li><strong>편의성</strong> — 간편한 구매 상담 신청 및 매장 연결</li>
+                        <li><strong>노피 헤더</strong> — 좌측 노피 로고, 우측 마이페이지 아이콘</li>
+                        <li><strong>이벤트 배너</strong> — 가로형 이미지 슬라이더 (3초 자동 전환)</li>
+                        <li><strong>지역 선택 필터</strong> — 시/도 선택 + 구/군 선택 (시세표 섹션 내부)</li>
+                        <li><strong>시세표 비교</strong> — 제조사/상품/용량/요금제 4단계 필터링</li>
+                        <li><strong>가격 테이블</strong> — 통신사별 가격 비교 및 최저가 자동 선택</li>
                     </ul>
                 </div>
 
-                <!-- 주요 사용자 -->
+                <!-- 사용자 플로우 -->
                 <div style="margin-bottom: 32px;">
-                    <h4 style="color: #191f28; font-size: 16px; font-weight: 700; margin-bottom: 16px; border-left: 3px solid #3182f6; padding-left: 12px;">주요 사용자</h4>
+                    <h4 style="color: #191f28; font-size: 16px; font-weight: 700; margin-bottom: 16px; border-left: 3px solid #3182f6; padding-left: 12px;">사용자 플로우</h4>
                     <ul style="color: #4e5968; line-height: 1.7;">
-                        <li><strong>일반 고객</strong> — 휴대폰을 저렴하게 구매하고 싶은 사용자</li>
-                        <li><strong>판매점 사장님</strong> — 고객을 유치하고 온라인 마케팅을 원하는 매장 운영자</li>
-                        <li><strong>지역 주민</strong> — 동네에서 신뢰할 수 있는 매장을 찾는 사람들</li>
+                        <li><strong>1단계</strong> — 이벤트 배너로 최신 프로모션 확인</li>
+                        <li><strong>2단계</strong> — 지역 선택으로 내 지역 스토어 필터링</li>
+                        <li><strong>3단계</strong> — 제조사 및 상품 선택</li>
+                        <li><strong>4단계</strong> — 용량 및 요금제 선택</li>
+                        <li><strong>5단계</strong> — 통신사별 가격 비교 및 최저가 확인</li>
+                        <li><strong>6단계</strong> — 구매하기 버튼으로 견적 신청</li>
                     </ul>
                 </div>
 
-                <!-- 플랫폼 목적 -->
-                <div style="margin-bottom: 32px;">
-                    <h4 style="color: #191f28; font-size: 16px; font-weight: 700; margin-bottom: 16px; border-left: 3px solid #3182f6; padding-left: 12px;">플랫폼 목적</h4>
-                    <ul style="color: #4e5968; line-height: 1.7;">
-                        <li><strong>고객 관점</strong> — 지역별 최저가 매장을 빠르게 찾고, 투명한 가격으로 안심 구매</li>
-                        <li><strong>판매점 관점</strong> — 효율적인 상품 관리와 온라인 마케팅으로 고객 유치 증대</li>
-                        <li><strong>시장 관점</strong> — 휴대폰 유통 시장의 가격 투명성 제고 및 지역 경제 활성화</li>
-                    </ul>
-                </div>
-
-                <!-- 주요 기능 -->
+                <!-- 디자인 원칙 -->
                 <div style="margin-top: 32px;">
-                    <h4 style="color: #191f28; font-size: 16px; font-weight: 700; margin-bottom: 16px; border-left: 3px solid #3182f6; padding-left: 12px;">주요 기능</h4>
+                    <h4 style="color: #191f28; font-size: 16px; font-weight: 700; margin-bottom: 16px; border-left: 3px solid #3182f6; padding-left: 12px;">디자인 원칙</h4>
                     <ul style="color: #4e5968; line-height: 1.7;">
-                        <li><strong>메인 화면</strong> — 지역 필터 + 배너 + 스토어 목록 한눈에 보기</li>
-                        <li><strong>스토어 상세</strong> — 매장 정보, 시세표, 이벤트 피드, 소식 통합 관리</li>
-                        <li><strong>시세표 기능</strong> — 제조사/상품/용량/요금제 4단계 필터링으로 빠른 가격 비교</li>
-                        <li><strong>구매 상담</strong> — 원클릭으로 매장에 구매 의사 전달</li>
-                        <li><strong>매장 관리</strong> — 판매점 어드민에서 실시간 상품 및 콘텐츠 관리</li>
+                        <li><strong>Toss 디자인 철학</strong> — 명확함, 간결함, 일관성</li>
+                        <li><strong>모바일 최적화</strong> — 375px 기준 반응형 디자인</li>
+                        <li><strong>브랜드 컬러</strong> — #131FA0 (노피 블루), #3182f6 (세컨더리)</li>
+                        <li><strong>인터랙션</strong> — 부드러운 애니메이션 및 피드백</li>
+                        <li><strong>접근성</strong> — 명확한 라벨, 충분한 터치 영역</li>
                     </ul>
                 </div>
             </div>
         </div>
     </div>
-            <!-- 프로토타입 3: 모바일 고객 화면 -->
+            <!-- 프로토타입: 동네성지 메인 화면 -->
             <div class="prototype-container">
                 <div class="prototype-header">
                     <span class="prototype-badge">고객 화면 (모바일)</span>
-                    <span class="prototype-title">동네성지 스토어 시세표 미리보기</span>
+                    <span class="prototype-title">동네성지 메인 화면 프로토타입</span>
                 </div>
 
                 <div class="mobile-prototype">

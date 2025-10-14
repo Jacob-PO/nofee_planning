@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>동네성지 배너</title>
+    <link href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/variable/woff2/SUIT-Variable.css" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'SUIT Variable', -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', sans-serif;
+            background: #f9fafb;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .banner-container {
+            width: 2462px;
+            height: 1326px;
+            position: relative;
+            background: linear-gradient(180deg, #f8f9fc 0%, #ffffff 100%);
+            overflow: hidden;
+            border-radius: 0;
+            border: 3px solid #e5e8eb;
+        }
+
+        /* 배경 장식 */
+        .banner-container::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background:
+                linear-gradient(135deg, transparent 0%, transparent 45%, rgba(19, 31, 160, 0.02) 50%, transparent 55%, transparent 100%);
+            pointer-events: none;
+        }
+
+        /* 메인 텍스트 영역 */
+        .text-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: left;
+            width: 100%;
+            max-width: 1800px;
+            padding: 0;
+        }
+
+        .number-badge {
+            display: inline-block;
+            background: #131FA0;
+            color: white;
+            padding: 28px 64px;
+            border-radius: 16px;
+            font-size: 72px;
+            font-weight: 900;
+            margin-bottom: 80px;
+            letter-spacing: 2px;
+        }
+
+        .main-text {
+            font-size: 224px;
+            font-weight: 800;
+            color: #191f28;
+            line-height: 1.15;
+            letter-spacing: -6px;
+            margin-bottom: 40px;
+        }
+
+        .highlight-word {
+            color: #131FA0;
+            position: relative;
+            display: inline-block;
+        }
+
+        .highlight-word::after {
+            content: '';
+            position: absolute;
+            bottom: 28px;
+            left: 0;
+            right: 0;
+            height: 32px;
+            background: rgba(19, 31, 160, 0.15);
+            z-index: -1;
+        }
+
+        .sub-text {
+            font-size: 80px;
+            font-weight: 600;
+            color: #6b7684;
+            line-height: 1.4;
+            letter-spacing: -2.5px;
+            margin-top: 50px;
+        }
+
+        /* 장식 요소들 */
+        .accent-block {
+            position: absolute;
+            width: 560px;
+            height: 560px;
+            background: #131FA0;
+            opacity: 0.04;
+            border-radius: 80px;
+            transform: rotate(45deg);
+        }
+
+        .accent-block-1 {
+            top: -280px;
+            right: 200px;
+        }
+
+        .accent-block-2 {
+            bottom: -280px;
+            left: 150px;
+        }
+
+
+        .deco-circle-1,
+        .deco-circle-2,
+        .deco-line-1,
+        .deco-line-2,
+        .deco-dot {
+            display: none;
+        }
+
+        /* 모바일 반응형 */
+        @media (max-width: 1200px) {
+            .banner-container {
+                width: 100%;
+                height: auto;
+                aspect-ratio: 2462 / 1326;
+                border-radius: 0;
+            }
+
+            .text-content {
+                padding: 0;
+            }
+
+            .number-badge {
+                font-size: 2.92vw;
+                padding: 1.14vw 2.6vw;
+                margin-bottom: 3.25vw;
+                border-radius: 0.65vw;
+            }
+
+            .main-text {
+                font-size: 9.75vw;
+                letter-spacing: -0.24vw;
+                margin-bottom: 1.63vw;
+            }
+
+            .highlight-word::after {
+                bottom: 1.14vw;
+                height: 1.3vw;
+            }
+
+            .sub-text {
+                font-size: 3.9vw;
+                letter-spacing: -0.1vw;
+                margin-top: 2.03vw;
+            }
+
+            .accent-block {
+                width: 22.7vw;
+                height: 22.7vw;
+                border-radius: 3.25vw;
+            }
+
+            .accent-block-1 {
+                top: -11.4vw;
+                right: 8.12vw;
+            }
+
+            .accent-block-2 {
+                bottom: -11.4vw;
+                left: 6.09vw;
+            }
+
+
+            .deco-circle-1 {
+                width: 24.4vw;
+                height: 24.4vw;
+                top: -8.1vw;
+                right: -8.1vw;
+            }
+
+            .deco-circle-2 {
+                width: 20.3vw;
+                height: 20.3vw;
+                bottom: -6.1vw;
+                left: -6.1vw;
+            }
+
+            .deco-line-1 {
+                width: 7.3vw;
+                height: 0.16vw;
+                top: 6.1vw;
+                left: 4.9vw;
+            }
+
+            .deco-line-2 {
+                width: 4.9vw;
+                height: 0.16vw;
+                bottom: 7.3vw;
+                right: 6.1vw;
+            }
+
+            .deco-dot {
+                width: 0.97vw;
+                height: 0.97vw;
+            }
+
+            .dot-1 { top: 8.1vw; right: 10.2vw; }
+            .dot-2 { bottom: 8.9vw; left: 11.4vw; }
+            .dot-3 { top: 20.3vw; left: 7.3vw; width: 0.65vw; height: 0.65vw; }
+            .dot-4 { bottom: 18.3vw; right: 8.1vw; width: 0.65vw; height: 0.65vw; }
+        }
+    </style>
+</head>
+<body>
+    <div class="banner-container">
+        <!-- 장식 요소 -->
+        <div class="accent-block accent-block-1"></div>
+        <div class="accent-block accent-block-2"></div>
+
+        <!-- 메인 텍스트 -->
+        <div class="text-content">
+            <div class="number-badge">NEW</div>
+            <div class="main-text">
+                경쟁자보다<br>
+                <span class="highlight-word">먼저</span> 고객을 만나세요
+            </div>
+            <div class="sub-text">AI가 5분 만에 입점부터 고객 유입까지 자동화합니다</div>
+        </div>
+    </div>
+</body>
+</html>
