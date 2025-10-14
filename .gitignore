@@ -1,0 +1,9 @@
+# GitHub Token - 보안상 커밋하지 않음
+config/github-token.json
+
+# 기타 민감한 정보
+*.env
+*.env.local
+.env.*
+credentials.json
+secrets.json
