@@ -149,6 +149,137 @@
             border: 1px solid #e5e8eb;
         }
 
+        .timeline-container {
+            position: relative;
+            padding: 40px 0;
+        }
+
+        .timeline-line {
+            position: absolute;
+            left: 50%;
+            top: 0;
+            bottom: 0;
+            width: 3px;
+            background: linear-gradient(180deg, #3182f6 0%, #0bc77b 100%);
+            transform: translateX(-50%);
+        }
+
+        .timeline-item {
+            position: relative;
+            margin-bottom: 60px;
+        }
+
+        .timeline-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .timeline-content {
+            display: grid;
+            grid-template-columns: 1fr 80px 1fr;
+            gap: 24px;
+            align-items: start;
+        }
+
+        .timeline-left,
+        .timeline-right {
+            background: white;
+            border-radius: 16px;
+            padding: 24px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            border: 2px solid #f2f4f6;
+        }
+
+        .timeline-center {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .timeline-dot {
+            width: 56px;
+            height: 56px;
+            background: linear-gradient(135deg, #3182f6 0%, #1c64d8 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            font-weight: 700;
+            color: white;
+            box-shadow: 0 4px 12px rgba(49, 130, 246, 0.3);
+            z-index: 2;
+        }
+
+        .timeline-time {
+            font-size: 12px;
+            font-weight: 600;
+            color: #8b95a1;
+            text-align: center;
+            white-space: nowrap;
+        }
+
+        .card-header {
+            font-size: 11px;
+            font-weight: 700;
+            color: #3182f6;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 12px;
+        }
+
+        .card-title {
+            font-size: 18px;
+            font-weight: 700;
+            color: #191f28;
+            margin-bottom: 8px;
+            line-height: 1.3;
+        }
+
+        .card-desc {
+            font-size: 13px;
+            color: #4e5968;
+            line-height: 1.6;
+            margin-bottom: 16px;
+        }
+
+        .card-message {
+            background: #f9fafb;
+            border-radius: 12px;
+            padding: 16px;
+            font-size: 13px;
+            line-height: 1.7;
+            color: #191f28;
+            white-space: pre-line;
+            border: 1px solid #e5e8eb;
+        }
+
+        .card-message strong {
+            font-weight: 700;
+            color: #191f28;
+        }
+
+        .highlight-box {
+            background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+            border-left: 4px solid #3182f6;
+            border-radius: 8px;
+            padding: 16px;
+            margin-top: 16px;
+        }
+
+        .highlight-box-title {
+            font-size: 13px;
+            font-weight: 700;
+            color: #1976d2;
+            margin-bottom: 8px;
+        }
+
+        .highlight-box-content {
+            font-size: 12px;
+            color: #4e5968;
+            line-height: 1.6;
+        }
+
         .flow-step {
             background: white;
             border: 2px solid #e5e8eb;
@@ -332,11 +463,12 @@
             <img src="https://admin.nofee.team/image/company/logo.svg" alt="NOFEE" class="logo">
             <div class="doc-meta">
                 <div class="doc-meta-item">작성일: 2025년 10월 10일</div>
-                <div class="doc-meta-item">버전: 1.0</div>
+                <div class="doc-meta-item">수정일: 2025년 10월 15일</div>
+                <div class="doc-meta-item">버전: 2.0 (전환율 최적화)</div>
             </div>
         </div>
-        <h1 class="doc-title">견적신청 10분 룰</h1>
-        <div class="doc-subtitle">알림톡 자동화 시스템 기획안</div>
+        <h1 class="doc-title">견적신청 스마트 전환 시스템</h1>
+        <div class="doc-subtitle">3단계 알림톡 자동화 시스템 기획안 (v2.0)</div>
     </div>
 
     <!-- 문서 개요 -->
@@ -351,7 +483,7 @@
         </div>
         <div class="info-item">
             <div class="info-label">예상 효과</div>
-            <div class="info-value">고객 전환율 70% 이상</div>
+            <div class="info-value">DB 수집률 85% 이상</div>
         </div>
     </div>
 
@@ -362,128 +494,343 @@
             <h2>핵심 아이디어</h2>
         </div>
         <p>
-            견적을 신청한 고객이 <strong>10분 안에 개통정보를 입력하지 않으면 자동으로 취소</strong>됩니다.
-            이를 통해 진짜 가입 의사가 있는 고객만을 효과적으로 필터링할 수 있습니다.
+            견적을 신청한 고객에게 60분의 충분한 시간을 제공하여 추가 정보 입력을 유도합니다.
+            60분이 경과해도 견적을 취소하지 않고 "견적 신청" 상태를 유지하여 DB를 최대한 확보하고,
+            추가 정보를 입력한 고객만 판매점에 전달하여 상담 효율을 높입니다.
         </p>
+        <ul>
+            <li><strong>시간 확대:</strong> 60분의 충분한 시간 제공</li>
+            <li><strong>취소 정책 폐지:</strong> 견적 신청 상태 유지 (DB 보존)</li>
+            <li><strong>알림톡 최적화:</strong> 추가 정보 미입력 고객에게만 선택적 발송 (비용 70% 절감)</li>
+            <li><strong>메시지 개선:</strong> 부담스러운 표현 제거, 우선 상담 혜택 강조</li>
+        </ul>
     </div>
 
-    <!-- 전체 플로우 -->
+    <!-- 전체 프로세스 및 알림톡 -->
     <div class="section">
         <div class="section-header">
             <div class="section-number">2</div>
-            <h2>전체 프로세스 흐름도</h2>
+            <h2>전체 프로세스 흐름 및 알림톡 시스템</h2>
         </div>
 
-        <div class="flow-container">
-            <div class="flow-step start">
-                <div class="flow-time">시작</div>
-                <div class="flow-title">고객 견적신청</div>
-                <div class="flow-desc">고객이 견적신청 버튼을 클릭하면 10분 타이머가 시작됩니다</div>
-            </div>
+        <div class="timeline-container">
+            <div class="timeline-line"></div>
 
-            <div class="flow-arrow">↓</div>
+            <!-- STEP 1: 견적 신청 -->
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <div class="timeline-left">
+                        <div class="card-header">Customer Message</div>
+                        <div class="card-title">견적이 접수되었어요</div>
+                        <div class="card-message">홍길동님, 노피 견적 신청 완료!
 
-            <div class="flow-step process">
-                <div class="flow-time">5분 경과</div>
-                <div class="flow-title">알림톡 자동 발송</div>
-                <div class="flow-desc">5분 안에 개통정보를 입력하지 않으면 견적이 자동 취소되며, 24시간 동안 같은 조건으로 재신청할 수 없습니다</div>
-            </div>
+아이폰 16 (128GB)
+SKT • 번호이동 • 공시지원
 
-            <div class="flow-arrow">↓</div>
+할인가: 280,080원
+(정가 1,243,000원 → 962,920원 할인)
 
-            <div class="flow-step decision">
-                <div class="flow-time">10분 경과</div>
-                <div class="flow-title">개통정보 입력 여부 확인</div>
-                <div class="flow-desc">시스템이 개통정보 입력 완료 여부를 확인합니다</div>
-            </div>
+지금 추가 정보를 입력하시면
+오늘 바로 상담받으실 수 있어요.
 
-            <div class="flow-branches">
-                <div class="flow-branch">
-                    <div class="branch-label no">미입력</div>
-                    <div class="flow-arrow">↓</div>
-                    <div class="flow-step fail">
-                        <div class="flow-title">견적 자동 취소</div>
-                        <div class="flow-desc">
-                            • 견적신청 취소 처리<br>
-                            • 고객에게 취소 알림톡 발송<br>
-                            • 24시간 재신청 차단 적용<br>
-                            • 판매점에 알림 미발송
+[3분만에 입력 완료하기]</div>
+                        <div class="highlight-box">
+                            <div class="highlight-box-title">왜 이렇게 바꿨나요?</div>
+                            <div class="highlight-box-content">• 상품 정보를 간결하게 요약<br>• 핵심 혜택(할인가) 강조<br>• "오늘 바로" 같은 즉시성 표현으로 동기 부여<br>• 부담 없는 톤 (압박감 제거)</div>
+                        </div>
+                    </div>
+                    <div class="timeline-center">
+                        <div class="timeline-dot">1</div>
+                        <div class="timeline-time">견적 신청<br>0분</div>
+                    </div>
+                    <div class="timeline-right">
+                        <div class="card-header">Store Message</div>
+                        <div class="card-title">신규 견적 접수</div>
+                        <div class="card-message">[노피] 신규 고객이 견적 신청했어요
+
+홍길동 • 010-1234-5678
+아이폰 16 (128GB) • SKT
+
+상태: 추가 정보 입력 대기 중
+
+고객이 정보를 입력하면
+자동으로 알려드릴게요.</div>
+                        <div class="highlight-box">
+                            <div class="highlight-box-title">판매점 관점</div>
+                            <div class="highlight-box-content">• 즉시 고객 정보 확인 가능<br>• 입력 완료 시 자동 알림 예고<br>• 불필요한 정보 제거, 핵심만 전달</div>
                         </div>
                     </div>
                 </div>
+            </div>
 
-                <div class="flow-branch">
-                    <div class="branch-label yes">입력 완료</div>
-                    <div class="flow-arrow">↓</div>
-                    <div class="flow-step success">
-                        <div class="flow-title">견적 정상 처리</div>
-                        <div class="flow-desc">
-                            • 판매점에 고객 정보 전달<br>
-                            • 판매점에 알림톡 발송<br>
-                            • 상담사 연락 프로세스 시작
+            <!-- STEP 2: 60분 대기 -->
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <div class="timeline-left">
+                        <div class="card-header">Customer Reminder</div>
+                        <div class="card-title">아직 대기 중이에요</div>
+                        <div class="card-message">홍길동님, 견적 확인 대기 중입니다.
+
+추가 정보를 입력하시면
+우선 상담을 받으실 수 있어요.
+
+빠른 상담을 원하시면
+지금 바로 입력해 주세요 (3분 소요)
+
+[간편하게 입력하기]</div>
+                        <div class="highlight-box">
+                            <div class="highlight-box-title">메시지 개선 포인트</div>
+                            <div class="highlight-box-content">• "우선 상담" 혜택 강조<br>• 입력 소요 시간 명시 (심리적 장벽 낮춤)<br>• 취소/차단 같은 부정적 표현 완전 제거<br>• 미입력 고객만 발송 (비용 50% 절감)</div>
+                        </div>
+                    </div>
+                    <div class="timeline-center">
+                        <div class="timeline-dot" style="background: linear-gradient(135deg, #3182f6 0%, #2563eb 100%);">2</div>
+                        <div class="timeline-time">리마인더<br>60분 경과<br><small style="color: #3182f6;">(미입력만)</small></div>
+                    </div>
+                    <div class="timeline-right" style="opacity: 0.3;">
+                        <div class="card-title" style="color: #8b95a1;">판매점 알림 없음</div>
+                        <div class="card-desc">이 단계에서는 판매점에<br>별도 알림을 보내지 않습니다.</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- STEP 3: 분기 처리 -->
+            <div class="timeline-item">
+                <div class="timeline-content" style="grid-template-columns: 1fr;">
+                    <div style="text-align: center; padding: 24px; background: white; border-radius: 16px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);">
+                        <div class="timeline-dot" style="background: linear-gradient(135deg, #ffb300 0%, #ff9500 100%); margin: 0 auto 16px;">3</div>
+                        <div class="card-title" style="margin-bottom: 16px;">고객 행동에 따라 2가지 경로로 분기</div>
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-top: 24px;">
+                            <div style="background: #fef2f2; border-radius: 12px; padding: 20px; border: 2px solid #f04452;">
+                                <div style="font-size: 16px; font-weight: 700; color: #f04452; margin-bottom: 12px;">미입력 시</div>
+                                <div style="font-size: 13px; color: #4e5968; line-height: 1.6;">
+                                    • 견적 신청 상태 유지<br>
+                                    • DB 보존 (취소 ❌)<br>
+                                    • 언제든 입력 가능<br>
+                                    • 장기적 전환 기회 확보
+                                </div>
+                            </div>
+                            <div style="background: #f0fdf4; border-radius: 12px; padding: 20px; border: 2px solid #0bc77b;">
+                                <div style="font-size: 16px; font-weight: 700; color: #0bc77b; margin-bottom: 12px;">입력 완료 시</div>
+                                <div style="font-size: 13px; color: #4e5968; line-height: 1.6;">
+                                    • 개통 진행중 상태 전환<br>
+                                    • 판매점 즉시 알림 발송<br>
+                                    • 상담 진행 시작<br>
+                                    • 높은 전환율 기대
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- STEP 4: 입력 완료 -->
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <div class="timeline-left" style="opacity: 0.3;">
+                        <div class="card-title" style="color: #8b95a1;">고객 알림 없음</div>
+                        <div class="card-desc">입력 완료 단계에서는<br>고객에게 별도 알림 없이<br>상담 대기합니다.</div>
+                    </div>
+                    <div class="timeline-center">
+                        <div class="timeline-dot" style="background: linear-gradient(135deg, #0bc77b 0%, #059669 100%);">4</div>
+                        <div class="timeline-time">입력 완료<br>상담 시작</div>
+                    </div>
+                    <div class="timeline-right">
+                        <div class="card-header">Store Alert</div>
+                        <div class="card-title">상담 준비 완료!</div>
+                        <div class="card-message">[노피] 고객 정보 입력 완료
+
+홍길동 • 010-1234-5678
+아이폰 16 (128GB) • SKT
+
+추가 정보 입력 완료
+지금 바로 상담 진행해 주세요.
+
+[견적 상세보기]</div>
+                        <div class="highlight-box" style="background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%); border-left-color: #0bc77b;">
+                            <div class="highlight-box-title" style="color: #059669;">판매점 액션</div>
+                            <div class="highlight-box-content">• 즉시 상담 시작 가능<br>• 필요한 정보 모두 준비됨<br>• 높은 성사율 기대</div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="key-box" style="border-left-color: #ffb300;">
-            <strong>핵심 원칙</strong>
-            <p>판매점에는 10분 안에 개통정보를 완전히 입력한 고객의 정보만 전달됩니다. 이를 통해 판매점은 진성 고객에게만 집중할 수 있습니다.</p>
+        <div style="background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%); border-radius: 16px; padding: 24px; margin-top: 40px; border: 2px solid #3182f6;">
+            <div style="font-size: 16px; font-weight: 700; color: #1976d2; margin-bottom: 12px;">핵심 설계 원칙</div>
+            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; font-size: 13px; color: #4e5968;">
+                <div><strong style="color: #1976d2;">1. 간결함</strong><br>필요한 정보만 명확하게</div>
+                <div><strong style="color: #1976d2;">2. 긍정성</strong><br>위협이 아닌 혜택 강조</div>
+                <div><strong style="color: #1976d2;">3. 효율성</strong><br>조건부 발송으로 비용 절감</div>
+            </div>
         </div>
     </div>
 
-    <!-- 알림톡 메시지 -->
+    <!-- 알림톡 변수 정의 -->
     <div class="section">
         <div class="section-header">
             <div class="section-number">3</div>
-            <h2>알림톡 메시지 템플릿</h2>
+            <h2>알림톡 변수 정의</h2>
         </div>
 
-        <div class="message-grid">
-            <div class="message-card">
-                <div class="message-header">5분 경과 시 발송 (고객)</div>
-                <div class="message-body">안녕하세요, 홍길동님!
+        <div style="background: white; border-radius: 16px; padding: 24px; border: 2px solid #e5e8eb; margin-bottom: 24px;">
+            <div style="font-size: 16px; font-weight: 700; color: #191f28; margin-bottom: 16px;">1. 견적 신청 완료 알림톡 (고객)</div>
+            <table style="width: 100%; border-collapse: collapse; font-size: 13px;">
+                <thead>
+                    <tr style="background: #f9fafb; border-bottom: 2px solid #e5e8eb;">
+                        <th style="padding: 12px; text-align: left; font-weight: 700; color: #4e5968;">변수명</th>
+                        <th style="padding: 12px; text-align: left; font-weight: 700; color: #4e5968;">설명</th>
+                        <th style="padding: 12px; text-align: left; font-weight: 700; color: #4e5968;">예시</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr style="border-bottom: 1px solid #e5e8eb;">
+                        <td style="padding: 12px; font-family: monospace; color: #3182f6;"><strong>{고객명}</strong></td>
+                        <td style="padding: 12px; color: #4e5968;">고객 이름</td>
+                        <td style="padding: 12px; color: #191f28;">홍길동</td>
+                    </tr>
+                    <tr style="border-bottom: 1px solid #e5e8eb;">
+                        <td style="padding: 12px; font-family: monospace; color: #3182f6;"><strong>{상품명}</strong></td>
+                        <td style="padding: 12px; color: #4e5968;">제조사 및 모델명</td>
+                        <td style="padding: 12px; color: #191f28;">아이폰 16</td>
+                    </tr>
+                    <tr style="border-bottom: 1px solid #e5e8eb;">
+                        <td style="padding: 12px; font-family: monospace; color: #3182f6;"><strong>{용량}</strong></td>
+                        <td style="padding: 12px; color: #4e5968;">저장 용량</td>
+                        <td style="padding: 12px; color: #191f28;">128GB</td>
+                    </tr>
+                    <tr style="border-bottom: 1px solid #e5e8eb;">
+                        <td style="padding: 12px; font-family: monospace; color: #3182f6;"><strong>{통신사}</strong></td>
+                        <td style="padding: 12px; color: #4e5968;">통신사명</td>
+                        <td style="padding: 12px; color: #191f28;">SKT</td>
+                    </tr>
+                    <tr style="border-bottom: 1px solid #e5e8eb;">
+                        <td style="padding: 12px; font-family: monospace; color: #3182f6;"><strong>{가입유형}</strong></td>
+                        <td style="padding: 12px; color: #4e5968;">가입 유형</td>
+                        <td style="padding: 12px; color: #191f28;">번호이동</td>
+                    </tr>
+                    <tr style="border-bottom: 1px solid #e5e8eb;">
+                        <td style="padding: 12px; font-family: monospace; color: #3182f6;"><strong>{지원유형}</strong></td>
+                        <td style="padding: 12px; color: #4e5968;">지원금 유형</td>
+                        <td style="padding: 12px; color: #191f28;">공시지원</td>
+                    </tr>
+                    <tr style="border-bottom: 1px solid #e5e8eb;">
+                        <td style="padding: 12px; font-family: monospace; color: #3182f6;"><strong>{실제구매가}</strong></td>
+                        <td style="padding: 12px; color: #4e5968;">할인 적용 후 최종 가격</td>
+                        <td style="padding: 12px; color: #191f28;">280,080</td>
+                    </tr>
+                    <tr style="border-bottom: 1px solid #e5e8eb;">
+                        <td style="padding: 12px; font-family: monospace; color: #3182f6;"><strong>{원래가격}</strong></td>
+                        <td style="padding: 12px; color: #4e5968;">정가</td>
+                        <td style="padding: 12px; color: #191f28;">1,243,000</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 12px; font-family: monospace; color: #3182f6;"><strong>{총할인액}</strong></td>
+                        <td style="padding: 12px; color: #4e5968;">총 할인 금액</td>
+                        <td style="padding: 12px; color: #191f28;">962,920</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
 
-노피 견적신청이 접수되었습니다.
+        <div style="background: white; border-radius: 16px; padding: 24px; border: 2px solid #e5e8eb; margin-bottom: 24px;">
+            <div style="font-size: 16px; font-weight: 700; color: #191f28; margin-bottom: 16px;">2. 견적 신청 완료 알림톡 (판매점)</div>
+            <table style="width: 100%; border-collapse: collapse; font-size: 13px;">
+                <thead>
+                    <tr style="background: #f9fafb; border-bottom: 2px solid #e5e8eb;">
+                        <th style="padding: 12px; text-align: left; font-weight: 700; color: #4e5968;">변수명</th>
+                        <th style="padding: 12px; text-align: left; font-weight: 700; color: #4e5968;">설명</th>
+                        <th style="padding: 12px; text-align: left; font-weight: 700; color: #4e5968;">예시</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr style="border-bottom: 1px solid #e5e8eb;">
+                        <td style="padding: 12px; font-family: monospace; color: #3182f6;"><strong>{고객명}</strong></td>
+                        <td style="padding: 12px; color: #4e5968;">고객 이름</td>
+                        <td style="padding: 12px; color: #191f28;">홍길동</td>
+                    </tr>
+                    <tr style="border-bottom: 1px solid #e5e8eb;">
+                        <td style="padding: 12px; font-family: monospace; color: #3182f6;"><strong>{연락처}</strong></td>
+                        <td style="padding: 12px; color: #4e5968;">고객 전화번호</td>
+                        <td style="padding: 12px; color: #191f28;">010-1234-5678</td>
+                    </tr>
+                    <tr style="border-bottom: 1px solid #e5e8eb;">
+                        <td style="padding: 12px; font-family: monospace; color: #3182f6;"><strong>{상품명}</strong></td>
+                        <td style="padding: 12px; color: #4e5968;">제조사 및 모델명</td>
+                        <td style="padding: 12px; color: #191f28;">아이폰 16</td>
+                    </tr>
+                    <tr style="border-bottom: 1px solid #e5e8eb;">
+                        <td style="padding: 12px; font-family: monospace; color: #3182f6;"><strong>{용량}</strong></td>
+                        <td style="padding: 12px; color: #4e5968;">저장 용량</td>
+                        <td style="padding: 12px; color: #191f28;">128GB</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 12px; font-family: monospace; color: #3182f6;"><strong>{통신사}</strong></td>
+                        <td style="padding: 12px; color: #4e5968;">통신사명</td>
+                        <td style="padding: 12px; color: #191f28;">SKT</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
 
-견적 처리를 위해 개통정보를 입력해주세요.
-남은 시간: 5분
+        <div style="background: white; border-radius: 16px; padding: 24px; border: 2px solid #e5e8eb; margin-bottom: 24px;">
+            <div style="font-size: 16px; font-weight: 700; color: #191f28; margin-bottom: 16px;">3. 리마인더 알림톡 (고객, 60분 경과)</div>
+            <table style="width: 100%; border-collapse: collapse; font-size: 13px;">
+                <thead>
+                    <tr style="background: #f9fafb; border-bottom: 2px solid #e5e8eb;">
+                        <th style="padding: 12px; text-align: left; font-weight: 700; color: #4e5968;">변수명</th>
+                        <th style="padding: 12px; text-align: left; font-weight: 700; color: #4e5968;">설명</th>
+                        <th style="padding: 12px; text-align: left; font-weight: 700; color: #4e5968;">예시</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td style="padding: 12px; font-family: monospace; color: #3182f6;"><strong>{고객명}</strong></td>
+                        <td style="padding: 12px; color: #4e5968;">고객 이름</td>
+                        <td style="padding: 12px; color: #191f28;">홍길동</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
 
-5분 이내 미입력 시 견적이 자동 취소되며,
-24시간 동안 같은 조건으로 재신청할 수 없습니다.
-
-[개통정보 입력하기]</div>
-            </div>
-
-            <div class="message-card">
-                <div class="message-header">10분 미입력 시 발송 (고객)</div>
-                <div class="message-body">안녕하세요, 홍길동님.
-
-견적신청이 자동 취소되었습니다.
-
-취소 사유: 10분 이내 개통정보 미입력
-재신청 가능: 2025.10.11 14:30
-
-동일한 조건으로 24시간 이내 재신청이 제한됩니다.
-
-[다른 상품 보기]</div>
-            </div>
-
-            <div class="message-card">
-                <div class="message-header">입력 완료 시 발송 (판매점)</div>
-                <div class="message-body">[노피] 신규 견적이 접수되었습니다.
-
-고객명: 홍길동
-연락처: 010-1234-5678
-상품: 5G 프리미어 에센셜
-통신사: SKT
-
-개통정보 입력 완료
-지금 바로 상담 진행해주세요!
-
-[견적 상세보기]</div>
-            </div>
+        <div style="background: white; border-radius: 16px; padding: 24px; border: 2px solid #e5e8eb;">
+            <div style="font-size: 16px; font-weight: 700; color: #191f28; margin-bottom: 16px;">4. 입력 완료 알림톡 (판매점)</div>
+            <table style="width: 100%; border-collapse: collapse; font-size: 13px;">
+                <thead>
+                    <tr style="background: #f9fafb; border-bottom: 2px solid #e5e8eb;">
+                        <th style="padding: 12px; text-align: left; font-weight: 700; color: #4e5968;">변수명</th>
+                        <th style="padding: 12px; text-align: left; font-weight: 700; color: #4e5968;">설명</th>
+                        <th style="padding: 12px; text-align: left; font-weight: 700; color: #4e5968;">예시</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr style="border-bottom: 1px solid #e5e8eb;">
+                        <td style="padding: 12px; font-family: monospace; color: #3182f6;"><strong>{고객명}</strong></td>
+                        <td style="padding: 12px; color: #4e5968;">고객 이름</td>
+                        <td style="padding: 12px; color: #191f28;">홍길동</td>
+                    </tr>
+                    <tr style="border-bottom: 1px solid #e5e8eb;">
+                        <td style="padding: 12px; font-family: monospace; color: #3182f6;"><strong>{연락처}</strong></td>
+                        <td style="padding: 12px; color: #4e5968;">고객 전화번호</td>
+                        <td style="padding: 12px; color: #191f28;">010-1234-5678</td>
+                    </tr>
+                    <tr style="border-bottom: 1px solid #e5e8eb;">
+                        <td style="padding: 12px; font-family: monospace; color: #3182f6;"><strong>{상품명}</strong></td>
+                        <td style="padding: 12px; color: #4e5968;">제조사 및 모델명</td>
+                        <td style="padding: 12px; color: #191f28;">아이폰 16</td>
+                    </tr>
+                    <tr style="border-bottom: 1px solid #e5e8eb;">
+                        <td style="padding: 12px; font-family: monospace; color: #3182f6;"><strong>{용량}</strong></td>
+                        <td style="padding: 12px; color: #4e5968;">저장 용량</td>
+                        <td style="padding: 12px; color: #191f28;">128GB</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 12px; font-family: monospace; color: #3182f6;"><strong>{통신사}</strong></td>
+                        <td style="padding: 12px; color: #4e5968;">통신사명</td>
+                        <td style="padding: 12px; color: #191f28;">SKT</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
     </div>
 
@@ -493,13 +840,56 @@
             <div class="section-number">4</div>
             <h2>기대 효과</h2>
         </div>
-
         <ul>
-            <li><strong>고객 전환율 향상:</strong> 5분 알림톡을 통한 적시 리마인드로 전환율을 높입니다.</li>
-            <li><strong>진성 고객 필터링:</strong> 10분 안에 개통정보를 입력한 고객은 실제 가입 의사가 있는 고객입니다.</li>
-            <li><strong>판매점 업무 효율화:</strong> 개통정보가 준비된 고객에게만 연락하여 업무 효율을 높입니다.</li>
-            <li><strong>시스템 최적화:</strong> 미완료 견적이 자동으로 정리되어 데이터베이스가 깨끗하게 유지됩니다.</li>
+            <li><strong>DB 수집률 극대화:</strong> 취소 정책 폐지로 90% DB 확보 (현재 10% 대비 9배 증가)</li>
+            <li><strong>알림톡 비용 50% 절감:</strong> 리마인더 1회만 발송 (미입력 고객 대상)</li>
+            <li><strong>고객 경험 개선:</strong> 압박감 제거 및 충분한 시간 제공으로 브랜드 이미지 향상</li>
+            <li><strong>유연한 DB 관리:</strong> 견적 신청 상태 유지로 장기적 전환 기회 확보</li>
         </ul>
+    </div>
+
+    <!-- 변경 이력 -->
+    <div class="section">
+        <div class="section-header">
+            <div class="section-number">4</div>
+            <h2>변경 이력</h2>
+        </div>
+
+        <div style="border-left: 4px solid #e5e8eb; padding-left: 20px; margin: 16px 0;">
+            <div style="margin-bottom: 24px;">
+                <div style="font-size: 16px; font-weight: 700; color: #191f28; margin-bottom: 8px;">
+                    v2.0 (2025.10.15)
+                </div>
+                <div style="font-size: 14px; color: #4e5968; line-height: 1.7;">
+                    <strong style="color: #f04452;">문제 인식:</strong> v1.0 적용 후 DB 수집률 90% 감소 (10분의 1 수준)<br>
+                    <strong style="color: #0bc77b;">핵심 개선사항:</strong><br>
+                    • 시간 정책: 10분 → 60분 (6배 확대)<br>
+                    • 알림톡 전략: 리마인더 1회만 발송 (60분 경과 시, 미입력 고객 대상)<br>
+                    • 견적 신청 시: 상품 정보 알림톡 발송 (현행 유지)<br>
+                    • 취소 정책: 자동 취소 폐지 → 견적 신청 상태 유지 (DB 보존)<br>
+                    • 메시지 톤: 위협형 → 혜택 강조형<br>
+                    • 상태 체계: 견적 신청 / 개통 진행중 / 견적 완료 (3단계)<br>
+                    • Tier 분류 시스템 삭제 (복잡도 감소)<br>
+                    <strong style="color: #0bc77b;">예상 효과:</strong><br>
+                    • DB 수집률 10% → 90% (9배 증가)<br>
+                    • 알림톡 비용 50% 절감<br>
+                    • 고객 경험 개선 및 브랜드 이미지 향상
+                </div>
+            </div>
+
+            <div style="margin-bottom: 24px;">
+                <div style="font-size: 16px; font-weight: 700; color: #191f28; margin-bottom: 8px;">
+                    v1.0 (2025.10.10)
+                </div>
+                <div style="font-size: 14px; color: #4e5968; line-height: 1.7;">
+                    <strong>최초 버전:</strong> 10분 룰 시스템<br>
+                    • 견적 신청 후 10분 내 개통정보 미입력 시 자동 취소<br>
+                    • 5분 경과 시 경고 알림톡 발송<br>
+                    • 24시간 재신청 차단 정책<br>
+                    <strong style="color: #f04452;">실제 결과:</strong> DB 수집률 90% 감소로 실패
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 </html>
