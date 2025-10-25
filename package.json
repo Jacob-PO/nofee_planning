@@ -1,0 +1,29 @@
+{
+  "name": "nofee-planning",
+  "version": "1.0.0",
+  "description": "노피 마일스톤 및 성과 데이터 관리",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "collect-ga": "node scripts/collect-ga-data.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nofee-workspace/nofee-planning.git"
+  },
+  "keywords": [
+    "nofee",
+    "analytics",
+    "planning"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nofee-workspace/nofee-planning/issues"
+  },
+  "homepage": "https://github.com/nofee-workspace/nofee-planning#readme",
+  "dependencies": {
+    "@google-analytics/data": "^5.2.1"
+  }
+}

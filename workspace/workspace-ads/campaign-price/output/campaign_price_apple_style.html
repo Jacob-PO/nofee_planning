@@ -1,0 +1,634 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>휴대폰 최저가</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            width: 1080px;
+            height: 1350px;
+            background: linear-gradient(135deg, #000000 0%, #1a1a1a 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        .container {
+            width: 1080px;
+            height: 1350px;
+            background: #000000;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* 배경 그라디언트 효과 */
+        .bg-gradient {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            opacity: 0.4;
+            background:
+                radial-gradient(circle at 20% 30%, rgba(0, 122, 255, 0.15) 0%, transparent 40%),
+                radial-gradient(circle at 80% 70%, rgba(175, 82, 222, 0.12) 0%, transparent 40%),
+                radial-gradient(circle at 50% 50%, rgba(255, 149, 0, 0.08) 0%, transparent 50%);
+        }
+
+        .content {
+            position: relative;
+            z-index: 1;
+            width: 100%;
+            height: 100%;
+            padding: 50px 40px 40px 40px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* 헤더 */
+        .header {
+            text-align: center;
+            margin-bottom: 35px;
+        }
+
+        .date {
+            font-size: 18px;
+            font-weight: 500;
+            color: rgba(255, 255, 255, 0.5);
+            letter-spacing: 1px;
+            margin-bottom: 12px;
+        }
+
+        .title {
+            font-size: 52px;
+            font-weight: 900;
+            background: linear-gradient(135deg, #ffffff 0%, #e0e0e0 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            letter-spacing: -2px;
+            line-height: 1.1;
+        }
+
+        .subtitle {
+            font-size: 19px;
+            font-weight: 500;
+            color: rgba(255, 255, 255, 0.6);
+            margin-top: 8px;
+            letter-spacing: -0.5px;
+        }
+
+        /* 그리드 */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            flex: 1;
+            margin-bottom: 20px;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 28px;
+            padding: 28px;
+            position: relative;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.1), transparent);
+        }
+
+        .card-header {
+            margin-bottom: 20px;
+        }
+
+        .device-name {
+            font-size: 26px;
+            font-weight: 700;
+            color: #ffffff;
+            letter-spacing: -0.8px;
+            line-height: 1.2;
+            margin-bottom: 6px;
+        }
+
+        .device-category {
+            font-size: 13px;
+            font-weight: 500;
+            color: rgba(255, 255, 255, 0.4);
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+        }
+
+        .price-section {
+            margin-bottom: 18px;
+        }
+
+        .best-price {
+            display: flex;
+            align-items: baseline;
+            gap: 8px;
+            margin-bottom: 10px;
+        }
+
+        .price-amount {
+            font-size: 48px;
+            font-weight: 900;
+            background: linear-gradient(135deg, #0A84FF 0%, #00D4FF 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            letter-spacing: -2px;
+        }
+
+        .price-unit {
+            font-size: 22px;
+            font-weight: 700;
+            color: rgba(255, 255, 255, 0.7);
+            letter-spacing: -0.5px;
+        }
+
+        .price-label {
+            font-size: 12px;
+            font-weight: 600;
+            color: rgba(255, 255, 255, 0.4);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 8px;
+        }
+
+        .tags {
+            display: flex;
+            gap: 6px;
+            flex-wrap: wrap;
+        }
+
+        .tag {
+            display: inline-block;
+            padding: 6px 12px;
+            border-radius: 8px;
+            font-size: 12px;
+            font-weight: 600;
+            letter-spacing: -0.2px;
+            border: 1px solid;
+        }
+
+        .tag.carrier-sk {
+            background: rgba(234, 0, 41, 0.15);
+            border-color: rgba(234, 0, 41, 0.3);
+            color: #FF4458;
+        }
+
+        .tag.carrier-kt {
+            background: rgba(10, 132, 255, 0.15);
+            border-color: rgba(10, 132, 255, 0.3);
+            color: #0A84FF;
+        }
+
+        .tag.carrier-lg {
+            background: rgba(217, 0, 101, 0.15);
+            border-color: rgba(217, 0, 101, 0.3);
+            color: #FF3B7D;
+        }
+
+        .tag.support-gongsi {
+            background: rgba(255, 159, 10, 0.15);
+            border-color: rgba(255, 159, 10, 0.3);
+            color: #FF9F0A;
+        }
+
+        .tag.support-sunyak {
+            background: rgba(191, 90, 242, 0.15);
+            border-color: rgba(191, 90, 242, 0.3);
+            color: #BF5AF2;
+        }
+
+        .tag.join {
+            background: rgba(50, 215, 75, 0.15);
+            border-color: rgba(50, 215, 75, 0.3);
+            color: #32D74B;
+        }
+
+        .divider {
+            height: 1px;
+            background: rgba(255, 255, 255, 0.06);
+            margin: 18px 0;
+        }
+
+        .other-prices {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .other-price-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 14px;
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 12px;
+        }
+
+        .other-price-tags {
+            display: flex;
+            gap: 5px;
+            flex-wrap: wrap;
+            flex: 1;
+        }
+
+        .tag-mini {
+            padding: 4px 8px;
+            border-radius: 6px;
+            font-size: 10px;
+            font-weight: 600;
+            letter-spacing: -0.1px;
+            border: 1px solid;
+        }
+
+        .tag-mini.carrier-sk {
+            background: rgba(234, 0, 41, 0.12);
+            border-color: rgba(234, 0, 41, 0.25);
+            color: #FF4458;
+        }
+
+        .tag-mini.carrier-kt {
+            background: rgba(10, 132, 255, 0.12);
+            border-color: rgba(10, 132, 255, 0.25);
+            color: #0A84FF;
+        }
+
+        .tag-mini.carrier-lg {
+            background: rgba(217, 0, 101, 0.12);
+            border-color: rgba(217, 0, 101, 0.25);
+            color: #FF3B7D;
+        }
+
+        .tag-mini.support-gongsi {
+            background: rgba(255, 159, 10, 0.12);
+            border-color: rgba(255, 159, 10, 0.25);
+            color: #FF9F0A;
+        }
+
+        .tag-mini.support-sunyak {
+            background: rgba(191, 90, 242, 0.12);
+            border-color: rgba(191, 90, 242, 0.25);
+            color: #BF5AF2;
+        }
+
+        .tag-mini.join {
+            background: rgba(50, 215, 75, 0.12);
+            border-color: rgba(50, 215, 75, 0.25);
+            color: #32D74B;
+        }
+
+        .other-price-amount {
+            font-size: 20px;
+            font-weight: 700;
+            color: rgba(255, 255, 255, 0.85);
+            letter-spacing: -0.5px;
+            white-space: nowrap;
+        }
+
+        /* 푸터 */
+        .footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 10px;
+            height: 50px;
+        }
+
+        .footer-brand {
+            font-size: 28px;
+            font-weight: 900;
+            background: linear-gradient(135deg, #ffffff 0%, #a0a0a0 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            letter-spacing: -1px;
+        }
+
+        .footer-cta {
+            font-size: 14px;
+            font-weight: 600;
+            color: rgba(255, 255, 255, 0.5);
+            letter-spacing: -0.3px;
+        }
+
+        .footer-search {
+            font-size: 15px;
+            font-weight: 600;
+            color: #0A84FF;
+            letter-spacing: -0.3px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="bg-gradient"></div>
+
+        <div class="content">
+            <div class="header">
+                <div class="date">10.07 (화)</div>
+                <div class="title">오늘의 최저가</div>
+                <div class="subtitle">프리미엄 요금제 기준 할부원금</div>
+            </div>
+
+            <div class="grid">
+
+                <div class="card">
+                    <div class="card-header">
+                        <div class="device-category">iPhone</div>
+                        <div class="device-name">아이폰 17 프로 맥스</div>
+                    </div>
+
+                    <div class="price-section">
+                        <div class="price-label">BEST PRICE</div>
+                        <div class="best-price">
+                            <div class="price-amount">148</div>
+                            <div class="price-unit">만원</div>
+                        </div>
+                        <div class="tags">
+                            <span class="tag carrier-kt">KT</span>
+                            <span class="tag support-gongsi">공시지원</span>
+                            <span class="tag join">번호이동</span>
+                        </div>
+                    </div>
+
+                    <div class="divider"></div>
+
+                    <div class="other-prices">
+
+                        <div class="other-price-item">
+                            <div class="other-price-tags">
+                                <span class="tag-mini carrier-kt">KT</span>
+                                <span class="tag-mini support-gongsi">공시</span>
+                                <span class="tag-mini join">기기변경</span>
+                            </div>
+                            <div class="other-price-amount">152만원</div>
+                        </div>
+
+                        <div class="other-price-item">
+                            <div class="other-price-tags">
+                                <span class="tag-mini carrier-sk">SK</span>
+                                <span class="tag-mini support-gongsi">공시</span>
+                                <span class="tag-mini join">기기변경</span>
+                            </div>
+                            <div class="other-price-amount">163만원</div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <div class="device-category">iPhone</div>
+                        <div class="device-name">아이폰 17 프로</div>
+                    </div>
+
+                    <div class="price-section">
+                        <div class="price-label">BEST PRICE</div>
+                        <div class="best-price">
+                            <div class="price-amount">100</div>
+                            <div class="price-unit">만원</div>
+                        </div>
+                        <div class="tags">
+                            <span class="tag carrier-kt">KT</span>
+                            <span class="tag support-gongsi">공시지원</span>
+                            <span class="tag join">번호이동</span>
+                        </div>
+                    </div>
+
+                    <div class="divider"></div>
+
+                    <div class="other-prices">
+
+                        <div class="other-price-item">
+                            <div class="other-price-tags">
+                                <span class="tag-mini carrier-kt">KT</span>
+                                <span class="tag-mini support-gongsi">공시</span>
+                                <span class="tag-mini join">기기변경</span>
+                            </div>
+                            <div class="other-price-amount">104만원</div>
+                        </div>
+
+                        <div class="other-price-item">
+                            <div class="other-price-tags">
+                                <span class="tag-mini carrier-sk">SK</span>
+                                <span class="tag-mini support-gongsi">공시</span>
+                                <span class="tag-mini join">기기변경</span>
+                            </div>
+                            <div class="other-price-amount">112만원</div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <div class="device-category">iPhone</div>
+                        <div class="device-name">아이폰 16 프로 맥스</div>
+                    </div>
+
+                    <div class="price-section">
+                        <div class="price-label">BEST PRICE</div>
+                        <div class="best-price">
+                            <div class="price-amount">66</div>
+                            <div class="price-unit">만원</div>
+                        </div>
+                        <div class="tags">
+                            <span class="tag carrier-kt">KT</span>
+                            <span class="tag support-gongsi">공시지원</span>
+                            <span class="tag join">번호이동</span>
+                        </div>
+                    </div>
+
+                    <div class="divider"></div>
+
+                    <div class="other-prices">
+
+                        <div class="other-price-item">
+                            <div class="other-price-tags">
+                                <span class="tag-mini carrier-kt">KT</span>
+                                <span class="tag-mini support-gongsi">공시</span>
+                                <span class="tag-mini join">기기변경</span>
+                            </div>
+                            <div class="other-price-amount">90만원</div>
+                        </div>
+
+                        <div class="other-price-item">
+                            <div class="other-price-tags">
+                                <span class="tag-mini carrier-sk">SK</span>
+                                <span class="tag-mini support-gongsi">공시</span>
+                                <span class="tag-mini join">번호이동</span>
+                            </div>
+                            <div class="other-price-amount">95만원</div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <div class="device-category">Galaxy</div>
+                        <div class="device-name">갤럭시 S25 울트라</div>
+                    </div>
+
+                    <div class="price-section">
+                        <div class="price-label">BEST PRICE</div>
+                        <div class="best-price">
+                            <div class="price-amount">38</div>
+                            <div class="price-unit">만원</div>
+                        </div>
+                        <div class="tags">
+                            <span class="tag carrier-lg">LG U+</span>
+                            <span class="tag support-gongsi">공시지원</span>
+                            <span class="tag join">번호이동</span>
+                        </div>
+                    </div>
+
+                    <div class="divider"></div>
+
+                    <div class="other-prices">
+
+                        <div class="other-price-item">
+                            <div class="other-price-tags">
+                                <span class="tag-mini carrier-sk">SK</span>
+                                <span class="tag-mini support-gongsi">공시</span>
+                                <span class="tag-mini join">번호이동</span>
+                            </div>
+                            <div class="other-price-amount">39만원</div>
+                        </div>
+
+                        <div class="other-price-item">
+                            <div class="other-price-tags">
+                                <span class="tag-mini carrier-kt">KT</span>
+                                <span class="tag-mini support-gongsi">공시</span>
+                                <span class="tag-mini join">번호이동</span>
+                            </div>
+                            <div class="other-price-amount">60만원</div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <div class="device-category">Galaxy</div>
+                        <div class="device-name">갤럭시 S25</div>
+                    </div>
+
+                    <div class="price-section">
+                        <div class="price-label">BEST PRICE</div>
+                        <div class="best-price">
+                            <div class="price-amount">-17</div>
+                            <div class="price-unit">만원</div>
+                        </div>
+                        <div class="tags">
+                            <span class="tag carrier-lg">LG U+</span>
+                            <span class="tag support-gongsi">공시지원</span>
+                            <span class="tag join">번호이동</span>
+                        </div>
+                    </div>
+
+                    <div class="divider"></div>
+
+                    <div class="other-prices">
+
+                        <div class="other-price-item">
+                            <div class="other-price-tags">
+                                <span class="tag-mini carrier-sk">SK</span>
+                                <span class="tag-mini support-gongsi">공시</span>
+                                <span class="tag-mini join">번호이동</span>
+                            </div>
+                            <div class="other-price-amount">-15만원</div>
+                        </div>
+
+                        <div class="other-price-item">
+                            <div class="other-price-tags">
+                                <span class="tag-mini carrier-kt">KT</span>
+                                <span class="tag-mini support-gongsi">공시</span>
+                                <span class="tag-mini join">번호이동</span>
+                            </div>
+                            <div class="other-price-amount">6만원</div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <div class="device-category">Galaxy</div>
+                        <div class="device-name">갤럭시 Z 플립 7</div>
+                    </div>
+
+                    <div class="price-section">
+                        <div class="price-label">BEST PRICE</div>
+                        <div class="best-price">
+                            <div class="price-amount">4</div>
+                            <div class="price-unit">만원</div>
+                        </div>
+                        <div class="tags">
+                            <span class="tag carrier-lg">LG U+</span>
+                            <span class="tag support-gongsi">공시지원</span>
+                            <span class="tag join">번호이동</span>
+                        </div>
+                    </div>
+
+                    <div class="divider"></div>
+
+                    <div class="other-prices">
+
+                        <div class="other-price-item">
+                            <div class="other-price-tags">
+                                <span class="tag-mini carrier-sk">SK</span>
+                                <span class="tag-mini support-gongsi">공시</span>
+                                <span class="tag-mini join">번호이동</span>
+                            </div>
+                            <div class="other-price-amount">12만원</div>
+                        </div>
+
+                        <div class="other-price-item">
+                            <div class="other-price-tags">
+                                <span class="tag-mini carrier-sk">SK</span>
+                                <span class="tag-mini support-gongsi">공시</span>
+                                <span class="tag-mini join">기기변경</span>
+                            </div>
+                            <div class="other-price-amount">28만원</div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="footer">
+                <div class="footer-brand">NOFEE</div>
+                <div class="footer-cta">네이버에서 <span class="footer-search">"노피 휴대폰"</span> 검색</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

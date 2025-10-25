@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>노피 마일스톤 & 투자전략 v4.1 (내부용)</title>
+  <meta name="description" content="노피 내부용 운영 문서 v4.1. 실제 데이터 기반 성과 점검, 교훈, 6개월 실행계획, 책임과 지표.">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Pretendard Variable', 'Pretendard', sans-serif; color: #191f28; background: #f7f8fa; line-height: 1.7; padding: 56px 24px; }
+    .wrap { max-width: 1080px; margin: 0 auto; }
+    .header { background: #fff; border: 1px solid #e5e8eb; border-radius: 16px; padding: 28px 28px 22px; margin-bottom: 16px; }
+    .title { font-size: 30px; font-weight: 800; letter-spacing: -0.6px; margin-bottom: 6px; }
+    .subtitle { font-size: 15px; color: #6b7684; margin-bottom: 6px; }
+    .meta { font-size: 12px; color: #8b95a1; }
+    .section { background: #fff; border: 1px solid #e5e8eb; border-radius: 16px; padding: 22px; margin-top: 16px; }
+    .section h2 { font-size: 22px; font-weight: 800; letter-spacing: -0.4px; margin-bottom: 8px; }
+    .section h3 { font-size: 16px; font-weight: 800; margin: 14px 0 6px; }
+    .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+    .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+    .card { border: 1px solid #e5e8eb; border-radius: 12px; padding: 14px; background: #fafafa; }
+    .label { font-size: 12px; color: #6b7684; font-weight: 700; }
+    .value { font-size: 20px; font-weight: 800; margin-top: 2px; color: #191f28; }
+    .list { list-style: none; margin-top: 6px; }
+    .list li { padding-left: 16px; position: relative; margin: 6px 0; font-size: 14px; color: #333d4b; }
+    .list li::before { content: '—'; position: absolute; left: 0; color: #131FA0; }
+    .note { background: #fff7ed; border: 1px solid #ffd8a8; color: #7c5e2a; border-radius: 10px; padding: 10px 12px; font-size: 13px; margin-top: 8px; }
+    .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace; font-size: 12px; color: #475569; margin-top: 8px; }
+    .foot { font-size: 12px; color: #6b7684; margin-top: 10px; }
+    @media (max-width: 920px) { .grid-2, .grid-3 { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="header">
+      <div class="title">노피 마일스톤 & 투자전략 v4.1 (내부용)</div>
+      <div class="subtitle">우리를 위한 문서: 현재 상태, 배운 내용, 앞으로 6개월의 실행</div>
+      <div class="meta">작성일: 2025-10-24 · 데이터 기준: 2024-11-11 ~ 2025-10-23 · 작성: 김선호 CEO</div>
+    </div>
+
+    <div class="section">
+      <h2>1. 현재 상태 요약 (실데이터)</h2>
+      <div class="grid-3">
+        <div class="card">
+          <div class="label">가입자</div>
+          <div class="value">5,091명</div>
+          <div class="mono">DB 추출 2025-10-23</div>
+        </div>
+        <div class="card">
+          <div class="label">신청 / 구매 / 개통</div>
+          <div class="value">4,485건 / 2,964건 / 55건</div>
+          <div class="mono">신청=견적 4,065 + 이벤트 420</div>
+        </div>
+        <div class="card">
+          <div class="label">핵심 전환</div>
+          <div class="value">가입→신청 88.1% / 신청→구매 66.09% / 개통 1.23%</div>
+          <div class="mono">유효신청 기준 개통 5.77%</div>
+        </div>
+        <div class="card">
+          <div class="label">GA4</div>
+          <div class="value">세션 53,518 / PV 306,003 / 평균 일간 289</div>
+          <div class="mono">리텐션: 7월 13.78% → 10월 27.09%</div>
+        </div>
+        <div class="card">
+          <div class="label">매출·MRR</div>
+          <div class="value">5,800,000원 / 527,273원</div>
+          <div class="mono">11개월 누적 / 평균</div>
+        </div>
+        <div class="card">
+          <div class="label">퍼널·속도</div>
+          <div class="value">평균 개통 17.9일 · 최근7일/직전7일 −54.5%</div>
+          <div class="mono">반려 62.1% · 취소 22.6% (신청 기준)</div>
+        </div>
+      </div>
+      <div class="grid-2" style="margin-top:10px;">
+        <div class="card">
+          <div class="label">상위 제품·통신사·지역</div>
+          <ul class="list">
+            <li>제품 TOP3: 갤럭시 Z 폴드 7 736건, 아이폰 16 프로 410건, 갤럭시 S25 398건</li>
+            <li>통신사 점유: SKT 49.9%, LG U+ 26.6%, KT 23.5%</li>
+            <li>시도 TOP3: 서울 1,657건(37.0%), 경기 1,066건(23.8%), 인천 271건(6.0%)</li>
+          </ul>
+        </div>
+        <div class="card">
+          <div class="label">매장 현황·집중도</div>
+          <ul class="list">
+            <li>등록 52개 / 활성 7개(유료)</li>
+            <li>구매 집중: TOP1 2,010건(67.9%), TOP5 87.8%</li>
+            <li>핵심 이슈: 상위 매장 의존도·퍼널 반려/취소</li>
+          </ul>
+        </div>
+      </div>
+      <div class="foot">출처: nofee-planning/nofee-data/1-raw-data/database/db_full_period_data_20251023.json, nofee-planning/nofee-data/1-raw-data/analytics/ga-data-2025-10-23.json, nofee-planning/Nofee 재무제표 (손익계산서).csv</div>
+    </div>
+
+    <div class="section">
+      <h2>2. 우리가 해온 일과 배운 점</h2>
+      <h3>2.1 10분룰 v1.0 (2025-10-10 배포)</h3>
+      <ul class="list">
+        <li>기간 2025-10-10 ~ 2025-10-23: 총 신청 217건, 자동 반려 148건(68.2%), 개통정보 입력 69건(31.8%)</li>
+        <li>입력 고객 전환 17.97%(23/128) vs 미입력 0.95%(4/421) → 18.9배 차이</li>
+        <li>의도 달성: 저품질 리드 차단·응대시간 절감. 부작용: DB 수집률 저하로 재마케팅 제약</li>
+      </ul>
+      <div class="mono">근거: NOFEE_VC최종반박문서_TIER1_2025-10-24.md</div>
+      <h3>2.2 퍼널·운영 인사이트</h3>
+      <ul class="list">
+        <li>신청 기준 이탈: 반려 62.1%(2,783건), 취소 22.6%(1,014건) → 총 84.7%</li>
+        <li>평균 개통 소요: 17.9일. 주간 신청: 최근 7일 96건, 직전 7일 211건 (−54.5%)</li>
+        <li>수도권 66.8% 집중(서울·경기·인천), 상위 매장 집중도 87.8%</li>
+      </ul>
+      <div class="foot">출처: nofee-planning/nofee-data/1-raw-data/database/db_full_period_data_20251023.json</div>
+    </div>
+
+    <div class="section">
+      <h2>3. 6개월 실행 계획과 목표 (내부 기준)</h2>
+      <div class="grid-2">
+        <div class="card">
+          <h3>3.1 정량 목표 (평가일 2026-04)</h3>
+          <ul class="list">
+            <li>개통완료율: 전체 기준 5% 이상, 유효신청 기준 10% 목표</li>
+            <li>MRR: 1,500,000원 이상</li>
+            <li>활성 유료 매장: 15개</li>
+          </ul>
+          <div class="note">목표는 외부 투자 판단이 아닌 내부 생존·성장 기준으로 수립</div>
+        </div>
+        <div class="card">
+          <h3>3.2 선행지표·운영 기준</h3>
+          <ul class="list">
+            <li>응답 속도: 신청 후 10분 내 1차 접촉(목표), SLA 월간 공개</li>
+            <li>유효신청 비중: 개통정보 입력 비율 주간 추적·개선</li>
+            <li>집중도: TOP5 구매 비중 월간 하향</li>
+          </ul>
+        </div>
+      </div>
+      <div class="grid-2" style="margin-top:10px;">
+        <div class="card">
+          <h3>3.3 제품·퍼널</h3>
+          <ul class="list">
+            <li>10분룰 v2.0 배포(2025-11-01): 10→60분, 자동취소 폐지, 조건부 알림, 입력완료 우선 배정</li>
+            <li>퍼널 AB 실험: 반려사유·취소사유 분류·대응 플로우 개선</li>
+            <li>가격/혜택 정렬: 상위 전환 단말·요금제 집중</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>3.4 매장·수익성</h3>
+          <ul class="list">
+            <li>매장 SLA·인센티브 개편: 응답속도·완료율 기반</li>
+            <li>단위 경제성 공개: 매장별 월간 보고(수익·시간·완료율)</li>
+            <li>온보딩·리텐션: Exit 인터뷰 완료분 재온보딩</li>
+          </ul>
+        </div>
+      </div>
+      <div class="foot">근거: NOFEE_VC최종반박문서_TIER1_2025-10-24.md, NOFEE_VC투자심사보고서_TIER1_2025-10-24.md</div>
+    </div>
+
+    <div class="section">
+      <h2>4. 책임과 운영 리듬</h2>
+      <div class="grid-2">
+        <div class="card">
+          <h3>책임 배분(예시)</h3>
+          <ul class="list">
+            <li>퍼널·제품: CEO(지표·AB) / 프론트·백엔드(배포)</li>
+            <li>매장·파트너: 사업(온보딩·SLA), 운영(응답관리)</li>
+            <li>데이터·리포트: 데이터 담당(주간·월간 패키지)</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>운영 리듬</h3>
+          <ul class="list">
+            <li>주간: KPI 리뷰(유효신청·응답속도·완료율·집중도)</li>
+            <li>월간: 단위경제성·매장 보고서 공개</li>
+            <li>평가: 2026-04 내부 PMF 체크포인트</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>5. 재무·런웨이(요약)</h2>
+      <ul class="list">
+        <li>매출 5,800,000원(11개월), MRR 527,273원</li>
+        <li>월 고정비 최적화 목표: 1,154,033원 → 590,000원</li>
+        <li>현금 4,553,622원 + 보증금 9,000,000원 회수 시 유동성 13,553,622원</li>
+      </ul>
+      <div class="foot">출처: Nofee 재무제표 (손익계산서).csv, 1-raw-data/financial/재무제표/README.md</div>
+    </div>
+
+    <div class="section">
+      <h2>6. 외부 약속</h2>
+      <ul class="list">
+        <li>Observation Agreement 수락: 월간 데이터 패키지 공유, 6개월 후 재평가(2026-04)</li>
+        <li>대상: Tier 1 VC. 단, 목표 설정과 실행은 내부 기준을 우선</li>
+      </ul>
+      <div class="foot">근거: NOFEE_VC최종반박문서_TIER1_2025-10-24.md, NOFEE_VC투자심사보고서_TIER1_2025-10-24.md</div>
+    </div>
+
+    <div class="section">
+      <h2>부록: 데이터 재현성</h2>
+      <ul class="list">
+        <li>DB 파일: nofee-planning/nofee-data/1-raw-data/database/db_full_period_data_20251023.json</li>
+        <li>GA 파일: nofee-planning/nofee-data/1-raw-data/analytics/ga-data-2025-10-23.json</li>
+        <li>리텐션: nofee-planning/nofee-data/2-processed-data/retention-analysis.json</li>
+        <li>재무: nofee-planning/Nofee 재무제표 (손익계산서).csv, 1-raw-data/financial/재무제표/README.md</li>
+        <li>문서: NOFEE_VC최종반박문서_TIER1_2025-10-24.md, NOFEE_VC투자심사보고서_TIER1_2025-10-24.md, NOFEE_완전통합문서_2025-10-23.md</li>
+      </ul>
+      <div class="note">가상 데이터 금지 원칙을 준수했습니다. 상기 파일로 수치를 역추적할 수 있습니다.</div>
+    </div>
+
+  </div>
+</body>
+</html>
+

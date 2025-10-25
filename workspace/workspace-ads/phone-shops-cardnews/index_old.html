@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>서울 휴대폰 판매점 성지 카드뉴스</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Noto Sans KR', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: #f5f5f5;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .card {
+            width: 1000px;
+            height: 1000px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 60px;
+            color: white;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .card::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+            animation: pulse 15s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+        }
+
+        .card-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .card-number {
+            font-size: 24px;
+            font-weight: 300;
+            opacity: 0.8;
+            margin-bottom: 30px;
+        }
+
+        .card-title {
+            font-size: 72px;
+            font-weight: 900;
+            line-height: 1.2;
+            margin-bottom: 30px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+
+        .card-subtitle {
+            font-size: 32px;
+            font-weight: 400;
+            opacity: 0.9;
+            line-height: 1.5;
+        }
+
+        /* Card 2 - Location specific styles */
+        .card.card-2 {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+        }
+
+        .location-info {
+            background: rgba(255,255,255,0.2);
+            backdrop-filter: blur(10px);
+            padding: 40px;
+            border-radius: 20px;
+            margin-top: 30px;
+            width: 100%;
+        }
+
+        .location-title {
+            font-size: 56px;
+            font-weight: 800;
+            margin-bottom: 30px;
+        }
+
+        .location-detail {
+            font-size: 28px;
+            margin: 15px 0;
+            line-height: 1.6;
+        }
+
+        .location-icon {
+            font-size: 80px;
+            margin-bottom: 20px;
+        }
+
+        /* Card 3 */
+        .card.card-3 {
+            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+        }
+
+        /* Card 4 */
+        .card.card-4 {
+            background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
+        }
+
+        /* Card 5 */
+        .card.card-5 {
+            background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
+        }
+
+        /* Card 6 - Ending card */
+        .card.card-6 {
+            background: linear-gradient(135deg, #30cfd0 0%, #330867 100%);
+        }
+
+        .tips-list {
+            background: rgba(255,255,255,0.2);
+            backdrop-filter: blur(10px);
+            padding: 30px 40px;
+            border-radius: 20px;
+            text-align: left;
+            width: 100%;
+            margin-top: 30px;
+        }
+
+        .tip-item {
+            font-size: 26px;
+            margin: 20px 0;
+            padding-left: 40px;
+            position: relative;
+        }
+
+        .tip-item::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+            font-size: 32px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Card 1: 표지 -->
+    <div class="card card-1">
+        <div class="card-content">
+            <div class="card-number">Seoul Secret Spots</div>
+            <div class="card-title">서울 휴대폰<br>판매점 성지</div>
+            <div class="card-subtitle">현지인만 아는<br>비밀스러운 핫플레이스 🔥</div>
+        </div>
+    </div>
+
+    <!-- Card 2: 용산 전자상가 -->
+    <div class="card card-2">
+        <div class="card-content">
+            <div class="card-number">SPOT 01</div>
+            <div class="location-icon">📱</div>
+            <div class="location-title">용산 전자상가</div>
+            <div class="location-info">
+                <div class="location-detail">📍 용산역 1번 출구</div>
+                <div class="location-detail">💰 최저가 경쟁의 성지</div>
+                <div class="location-detail">⏰ 10:00 - 19:00</div>
+                <div class="location-detail">✨ 다양한 매장 비교 가능</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Card 3: 테크노마트 -->
+    <div class="card card-3">
+        <div class="card-content">
+            <div class="card-number">SPOT 02</div>
+            <div class="location-icon">🏢</div>
+            <div class="location-title">테크노마트</div>
+            <div class="location-info">
+                <div class="location-detail">📍 강변역 2번 출구 직결</div>
+                <div class="location-detail">💰 알뜰폰 전문매장 집결</div>
+                <div class="location-detail">⏰ 10:30 - 20:00</div>
+                <div class="location-detail">✨ 악세서리까지 한번에</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Card 4: 세운상가 -->
+    <div class="card card-4">
+        <div class="card-content">
+            <div class="card-number">SPOT 03</div>
+            <div class="location-icon">🏛️</div>
+            <div class="location-title">세운상가</div>
+            <div class="location-info">
+                <div class="location-detail">📍 을지로3가역 4번 출구</div>
+                <div class="location-detail">💰 중고폰 거래의 메카</div>
+                <div class="location-detail">⏰ 10:00 - 19:00</div>
+                <div class="location-detail">✨ 수리/AS 전문가 밀집</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Card 5: 영등포 타임스퀘어 -->
+    <div class="card card-5">
+        <div class="card-content">
+            <div class="card-number">SPOT 04</div>
+            <div class="location-icon">⏰</div>
+            <div class="location-title">영등포 타임스퀘어</div>
+            <div class="location-info">
+                <div class="location-detail">📍 영등포역 5번 출구</div>
+                <div class="location-detail">💰 공식 대리점 집중</div>
+                <div class="location-detail">⏰ 10:30 - 22:00</div>
+                <div class="location-detail">✨ 쇼핑과 함께 편리하게</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Card 6: 마무리 팁 -->
+    <div class="card card-6">
+        <div class="card-content">
+            <div class="card-title">💡 구매 꿀팁</div>
+            <div class="tips-list">
+                <div class="tip-item">여러 매장 비교 필수</div>
+                <div class="tip-item">평일 오전이 한산함</div>
+                <div class="tip-item">현금 할인 가능 여부 확인</div>
+                <div class="tip-item">AS 정책 꼼꼼히 체크</div>
+                <div class="tip-item">통신사 요금제 비교하기</div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // 각 카드를 개별 이미지로 저장할 수 있도록 인덱스 표시
+        console.log('카드뉴스 6장이 준비되었습니다!');
+        console.log('브라우저 개발자도구 또는 스크린샷 도구로 각 카드를 1000x1000으로 캡처하세요.');
+    </script>
+</body>
+</html>

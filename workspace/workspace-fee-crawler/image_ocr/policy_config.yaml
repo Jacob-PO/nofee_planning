@@ -1,0 +1,160 @@
+# 대리점별 단가 계산 정책
+# version: 정책 버전 (변경 이력 관리)
+# rules: 계산 규칙
+# copy_to_선약: 선택약정 복사 여부
+# multiplier: 최종 곱셈 값
+
+KT_더블유:
+  version: "20250708"
+  description: "100k 미만 -3, 100k 이상 +7"
+  rules:
+    - name: "100k 미만"
+      condition: "rate < 100"
+      formula: "value - 3"
+    - name: "100k 이상"  
+      condition: "rate >= 100"
+      formula: "value + 7"
+  multiplier: 10000
+  선택약정:
+    enabled: false
+
+KT_맥스:
+  version: "20250708"
+  description: "배경색에 따라 차등 적용"
+  rules:
+    - name: "노란색 배경"
+      condition: "bg_color == yellow"
+      formula: "value + 30"
+    - name: "파란색 배경"
+      condition: "bg_color == blue"
+      formula: "value + 20"
+    - name: "빨간색 배경"
+      condition: "bg_color == red"
+      formula: "value + 10"
+    - name: "기본"
+      condition: "default"
+      formula: "value"
+  multiplier: 10000
+  선택약정:
+    enabled: false
+
+LG_비케이:
+  version: "20250708"
+  description: "빨간 글자 음수 처리, +39, 30 초과시 추가"
+  rules:
+    - name: "빨간 글자 음수 변환"
+      condition: "text_color == red"
+      formula: "-abs(value)"
+    - name: "기본 계산"
+      formula: "value + 39"
+    - name: "30 초과 추가1"
+      condition: "result > 30"
+      formula: "result + 1"
+    - name: "30 초과 추가2"  
+      condition: "result > 30"
+      formula: "result + 2"
+  special_rules:
+    - type: "product_based"
+      products: ["아이폰15", "아이폰15프로"]
+      condition: "선택약정 and 번호이동"
+      formula: "result - 22"
+    - type: "product_based"
+      products: ["S25", "엣지", "아이폰16"]
+      condition: "선택약정 and 번호이동"
+      formula: "result - 11"
+    - type: "product_based"
+      products: ["갤럭시 버디3", "갤럭시 버디4"]
+      condition: "선택약정 and 번호이동"
+      formula: "result - 25"
+  multiplier: 10000
+  선택약정:
+    enabled: true
+    copy_from: "공시지원"  # 공시지원 값을 복사
+    additional_rules: []  # 추가 규칙 있으면 여기에
+
+LG_엘에스:
+  version: "20250715"
+  description: "모든 값 2배, 아이폰16/S25 선약 번호이동 -28"
+  rules:
+    - name: "기본 계산"
+      formula: "value * 2"
+  special_rules:
+    - type: "product_based"
+      products: ["아이폰16", "아이폰16플러스", "아이폰16프로", "아이폰16프로맥스", "IP16", "IP16PL", "IP16P", "IP16PM"]
+      condition: "선택약정 and 번호이동"
+      formula: "result - 28"
+    - type: "product_based"
+      products: ["S931", "S936", "S937", "S938", "S25"]
+      condition: "선택약정 and 번호이동"
+      formula: "result - 28"
+    - type: "product_based"
+      products: ["폴드", "플립"]
+      condition: "선택약정 and 번호이동 and rate >= 95"
+      formula: "result - 11"
+    - type: "product_based"
+      products: ["A166L"]
+      condition: "선택약정 and 번호이동"
+      formula: "result - 24"
+  multiplier: 10000
+  선택약정:
+    enabled: true
+    copy_from: "공시지원"  # 공시지원 값을 복사
+    additional_rules: []  # 추가 규칙 있으면 여기에
+
+SK_나텔:
+  version: "20250708"
+  description: "단순 곱셈"
+  rules:
+    - name: "기본"
+      formula: "value"
+  multiplier: 1000
+  선택약정:
+    enabled: true
+    copy_from: "공시지원"  # 공시지원 값을 복사
+    additional_rules: []  # 추가 규칙 있으면 여기에
+
+SK_상상:
+  version: "20250708"
+  description: "단순 곱셈"
+  rules:
+    - name: "기본"
+      formula: "value"
+  multiplier: 1000
+  선택약정:
+    enabled: true
+    copy_from: "공시지원"  # 공시지원 값을 복사
+    additional_rules: []  # 추가 규칙 있으면 여기에
+
+SK_윤텔:
+  version: "20250708"
+  description: "단순 곱셈"
+  rules:
+    - name: "기본"
+      formula: "value"
+  multiplier: 10000
+  선택약정:
+    enabled: false
+
+SK_케이:
+  version: "20250708"
+  description: "100k 이상 번호이동/기기변경 +3"
+  rules:
+    - name: "100k 이상 번호이동/기기변경"
+      condition: "rate >= 100 and (번호이동 or 기기변경)"
+      formula: "value + 3"
+    - name: "기본"
+      condition: "default"
+      formula: "value"
+  multiplier: 10000
+  선택약정:
+    enabled: false
+
+SK_대교:
+  version: "20250827"
+  description: "단순 곱셈"
+  rules:
+    - name: "기본"
+      formula: "value"
+  multiplier: 10000
+  선택약정:
+    enabled: false

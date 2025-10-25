@@ -1,0 +1,756 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>휴대폰 최저가 단가표 (지원타입별)</title>
+    <link href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/variable/woff2/SUIT-Variable.css" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', 'Helvetica Neue', sans-serif;
+            width: 1000px;
+            height: 1000px;
+            background: #ffffff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            width: 1000px;
+            height: 1000px;
+            background:
+                radial-gradient(circle at 25% 20%, rgba(0, 122, 255, 0.08) 0%, transparent 50%),
+                radial-gradient(circle at 75% 30%, rgba(175, 82, 222, 0.06) 0%, transparent 50%),
+                radial-gradient(circle at 50% 80%, rgba(255, 149, 0, 0.05) 0%, transparent 50%),
+                #f5f5f7;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .container::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background:
+                radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.5) 0%, transparent 60%);
+            pointer-events: none;
+            filter: blur(80px);
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 16px;
+            position: relative;
+            z-index: 1;
+            padding: 0;
+        }
+
+        .logo-text {
+            font-size: 48px;
+            font-weight: 700;
+            background: linear-gradient(135deg, #1d1d1f 0%, #4a4a4a 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            line-height: 1.1;
+            letter-spacing: -1.5px;
+        }
+
+        .content {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 12px;
+            flex: 1;
+            overflow: hidden;
+            position: relative;
+            z-index: 1;
+        }
+
+        .device-card {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(40px) saturate(180%);
+            -webkit-backdrop-filter: blur(40px) saturate(180%);
+            border-radius: 24px;
+            padding: 16px;
+            border: 0.5px solid rgba(0, 0, 0, 0.04);
+            box-shadow:
+                0 2px 8px rgba(0, 0, 0, 0.04),
+                0 1px 2px rgba(0, 0, 0, 0.06),
+                inset 0 0 0 0.5px rgba(255, 255, 255, 0.9);
+            transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .device-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 40%;
+            background:
+                linear-gradient(180deg, rgba(255, 255, 255, 0.5) 0%, transparent 100%);
+            border-radius: 24px 24px 0 0;
+            pointer-events: none;
+        }
+
+        .device-card:hover {
+            transform: translateY(-4px);
+            box-shadow:
+                0 8px 24px rgba(0, 0, 0, 0.08),
+                0 4px 8px rgba(0, 0, 0, 0.04),
+                inset 0 0 0 0.5px rgba(255, 255, 255, 1);
+        }
+
+        .device-header {
+            display: flex;
+            gap: 12px;
+            margin-bottom: 10px;
+        }
+
+        .device-image {
+            width: 90px;
+            height: 90px;
+            object-fit: contain;
+            background: white;
+            border-radius: 10px;
+            padding: 8px;
+            flex-shrink: 0;
+        }
+
+        .device-info {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            gap: 6px;
+            position: relative;
+        }
+
+        .device-name {
+            font-size: 20px;
+            font-weight: 600;
+            color: #1d1d1f;
+            line-height: 1.2;
+            letter-spacing: -0.5px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .price-main {
+            font-size: 34px;
+            font-weight: 700;
+            color: #007AFF;
+            line-height: 1;
+            letter-spacing: -1px;
+        }
+
+        .price-tags {
+            display: flex;
+            gap: 4px;
+            flex-wrap: wrap;
+        }
+
+        .tag {
+            display: inline-block;
+            padding: 3px 8px;
+            border-radius: 6px;
+            font-size: 10px;
+            font-weight: 600;
+            letter-spacing: -0.2px;
+        }
+
+        .tag.carrier {
+            background: rgba(255, 59, 48, 0.1);
+            color: #FF3B30;
+        }
+
+        .tag.carrier.kt {
+            background: rgba(0, 122, 255, 0.1);
+            color: #007AFF;
+        }
+
+        .tag.carrier.lg {
+            background: rgba(255, 45, 85, 0.1);
+            color: #FF2D55;
+        }
+
+        .tag.support {
+            background: rgba(255, 149, 0, 0.1);
+            color: #FF9500;
+        }
+
+        .tag.support.sunyak {
+            background: rgba(175, 82, 222, 0.1);
+            color: #AF52DE;
+        }
+
+        .tag.join {
+            background: rgba(52, 199, 89, 0.1);
+            color: #34C759;
+        }
+
+        .divider {
+            height: 0.5px;
+            background: rgba(0, 0, 0, 0.06);
+            margin: 10px 0;
+        }
+
+        .additional-prices {
+            background: rgba(0, 0, 0, 0.02);
+            border-radius: 12px;
+            padding: 8px 10px 0 10px;
+            border: 0.5px solid rgba(0, 0, 0, 0.04);
+        }
+
+        .additional-title {
+            font-size: 11px;
+            font-weight: 600;
+            color: #86868b;
+            margin-bottom: 6px;
+            letter-spacing: -0.2px;
+        }
+
+        .price-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 0 8px 0;
+        }
+
+        .price-row:not(:last-child) {
+            border-bottom: 1px solid #E5E8EB;
+            margin-bottom: 8px;
+        }
+
+        .price-row-left {
+            display: flex;
+            gap: 3px;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        .price-row-price {
+            font-size: 16px;
+            font-weight: 600;
+            color: #1d1d1f;
+            letter-spacing: -0.3px;
+        }
+
+        .tag-small {
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-size: 9px;
+            font-weight: 600;
+            letter-spacing: -0.1px;
+        }
+
+        .tag-small.carrier {
+            background: rgba(255, 59, 48, 0.1);
+            color: #FF3B30;
+        }
+
+        .tag-small.carrier.kt {
+            background: rgba(0, 122, 255, 0.1);
+            color: #007AFF;
+        }
+
+        .tag-small.carrier.lg {
+            background: rgba(255, 45, 85, 0.1);
+            color: #FF2D55;
+        }
+
+        .tag-small.support {
+            background: rgba(255, 149, 0, 0.1);
+            color: #FF9500;
+        }
+
+        .tag-small.support.sunyak {
+            background: rgba(175, 82, 222, 0.1);
+            color: #AF52DE;
+        }
+
+        .tag-small.join {
+            background: rgba(52, 199, 89, 0.1);
+            color: #34C759;
+        }
+
+        .footer {
+            margin-top: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 10px;
+            color: #86868b;
+            font-size: 12px;
+            font-weight: 500;
+            height: 35px;
+            flex-shrink: 0;
+            position: relative;
+            z-index: 1;
+        }
+
+        .footer-left {
+            flex: 1;
+            text-align: left;
+        }
+
+        .footer-center {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .footer-right {
+            flex: 1;
+            text-align: right;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            gap: 5px;
+        }
+
+        .search-icon {
+            width: 14px;
+            height: 14px;
+            fill: #86868b;
+        }
+
+        @media print {
+            body {
+                margin: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo-text">오늘의 휴대폰 최저가 (10월 07일 (화))</div>
+        </div>
+
+        <div class="content">
+
+            <div class="device-card">
+                <div class="device-header">
+                    <img src="https://image.nofee.team/product-group/phone/AP-B-17/thumb/20250918085221_4c21b2c479fa70139689cd6567f875de.jpg"
+                         alt="아이폰 17 프로 맥스"
+                         class="device-image">
+                    <div class="device-info">
+                        <div class="device-name">아이폰 17 프로 맥스</div>
+                        <div class="price-main">148만원</div>
+                        <div class="price-tags">
+                            <span class="tag carrier kt">KT</span>
+                            <span class="tag support">공시지원</span>
+                            <span class="tag join">번호이동</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="divider"></div>
+
+                <div class="additional-prices">
+                    <div class="additional-title">다른 조건 최저가</div>
+
+                    <div class="price-row">
+                        <div class="price-row-left">
+                            <span class="tag-small carrier kt">KT</span>
+                            <span class="tag-small support">공시</span>
+                            <span class="tag-small join">기기변경</span>
+                        </div>
+                        <div class="price-row-price">152만원</div>
+                    </div>
+
+                    <div class="price-row">
+                        <div class="price-row-left">
+                            <span class="tag-small carrier">SK</span>
+                            <span class="tag-small support">공시</span>
+                            <span class="tag-small join">기기변경</span>
+                        </div>
+                        <div class="price-row-price">167만원</div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="device-card">
+                <div class="device-header">
+                    <img src="https://image.nofee.team/product-group/phone/AP-B-17/thumb/20250918085221_4c21b2c479fa70139689cd6567f875de.jpg"
+                         alt="아이폰 17 프로"
+                         class="device-image">
+                    <div class="device-info">
+                        <div class="device-name">아이폰 17 프로</div>
+                        <div class="price-main">100만원</div>
+                        <div class="price-tags">
+                            <span class="tag carrier kt">KT</span>
+                            <span class="tag support">공시지원</span>
+                            <span class="tag join">번호이동</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="divider"></div>
+
+                <div class="additional-prices">
+                    <div class="additional-title">다른 조건 최저가</div>
+
+                    <div class="price-row">
+                        <div class="price-row-left">
+                            <span class="tag-small carrier kt">KT</span>
+                            <span class="tag-small support">공시</span>
+                            <span class="tag-small join">기기변경</span>
+                        </div>
+                        <div class="price-row-price">104만원</div>
+                    </div>
+
+                    <div class="price-row">
+                        <div class="price-row-left">
+                            <span class="tag-small carrier">SK</span>
+                            <span class="tag-small support">공시</span>
+                            <span class="tag-small join">기기변경</span>
+                        </div>
+                        <div class="price-row-price">120만원</div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="device-card">
+                <div class="device-header">
+                    <img src="https://image.nofee.team/product-group/phone/AP-B-17/thumb/20250918085221_4c21b2c479fa70139689cd6567f875de.jpg"
+                         alt="아이폰 17"
+                         class="device-image">
+                    <div class="device-info">
+                        <div class="device-name">아이폰 17</div>
+                        <div class="price-main">75만원</div>
+                        <div class="price-tags">
+                            <span class="tag carrier kt">KT</span>
+                            <span class="tag support">공시지원</span>
+                            <span class="tag join">번호이동</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="divider"></div>
+
+                <div class="additional-prices">
+                    <div class="additional-title">다른 조건 최저가</div>
+
+                    <div class="price-row">
+                        <div class="price-row-left">
+                            <span class="tag-small carrier kt">KT</span>
+                            <span class="tag-small support">공시</span>
+                            <span class="tag-small join">기기변경</span>
+                        </div>
+                        <div class="price-row-price">79만원</div>
+                    </div>
+
+                    <div class="price-row">
+                        <div class="price-row-left">
+                            <span class="tag-small carrier">SK</span>
+                            <span class="tag-small support">공시</span>
+                            <span class="tag-small join">기기변경</span>
+                        </div>
+                        <div class="price-row-price">92만원</div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="device-card">
+                <div class="device-header">
+                    <img src="https://image.nofee.team/product-group/phone/AP-B-17/thumb/20250918085221_4c21b2c479fa70139689cd6567f875de.jpg"
+                         alt="아이폰 16 프로 맥스"
+                         class="device-image">
+                    <div class="device-info">
+                        <div class="device-name">아이폰 16 프로 맥스</div>
+                        <div class="price-main">66만원</div>
+                        <div class="price-tags">
+                            <span class="tag carrier">SK</span>
+                            <span class="tag support">공시지원</span>
+                            <span class="tag join">번호이동</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="divider"></div>
+
+                <div class="additional-prices">
+                    <div class="additional-title">다른 조건 최저가</div>
+
+                    <div class="price-row">
+                        <div class="price-row-left">
+                            <span class="tag-small carrier kt">KT</span>
+                            <span class="tag-small support">공시</span>
+                            <span class="tag-small join">번호이동</span>
+                        </div>
+                        <div class="price-row-price">66만원</div>
+                    </div>
+
+                    <div class="price-row">
+                        <div class="price-row-left">
+                            <span class="tag-small carrier kt">KT</span>
+                            <span class="tag-small support">공시</span>
+                            <span class="tag-small join">기기변경</span>
+                        </div>
+                        <div class="price-row-price">90만원</div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="device-card">
+                <div class="device-header">
+                    <img src="https://image.nofee.team/product-group/phone/AP-B-17/thumb/20250918085221_4c21b2c479fa70139689cd6567f875de.jpg"
+                         alt="아이폰 16 프로"
+                         class="device-image">
+                    <div class="device-info">
+                        <div class="device-name">아이폰 16 프로</div>
+                        <div class="price-main">11만원</div>
+                        <div class="price-tags">
+                            <span class="tag carrier lg">LG U+</span>
+                            <span class="tag support">공시지원</span>
+                            <span class="tag join">번호이동</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="divider"></div>
+
+                <div class="additional-prices">
+                    <div class="additional-title">다른 조건 최저가</div>
+
+                    <div class="price-row">
+                        <div class="price-row-left">
+                            <span class="tag-small carrier">SK</span>
+                            <span class="tag-small support">공시</span>
+                            <span class="tag-small join">번호이동</span>
+                        </div>
+                        <div class="price-row-price">31만원</div>
+                    </div>
+
+                    <div class="price-row">
+                        <div class="price-row-left">
+                            <span class="tag-small carrier">SK</span>
+                            <span class="tag-small support">공시</span>
+                            <span class="tag-small join">기기변경</span>
+                        </div>
+                        <div class="price-row-price">70만원</div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="device-card">
+                <div class="device-header">
+                    <img src="https://image.nofee.team/product-group/phone/AP-B-17/thumb/20250918085221_4c21b2c479fa70139689cd6567f875de.jpg"
+                         alt="아이폰 16"
+                         class="device-image">
+                    <div class="device-info">
+                        <div class="device-name">아이폰 16</div>
+                        <div class="price-main">-31만원</div>
+                        <div class="price-tags">
+                            <span class="tag carrier lg">LG U+</span>
+                            <span class="tag support">공시지원</span>
+                            <span class="tag join">번호이동</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="divider"></div>
+
+                <div class="additional-prices">
+                    <div class="additional-title">다른 조건 최저가</div>
+
+                    <div class="price-row">
+                        <div class="price-row-left">
+                            <span class="tag-small carrier">SK</span>
+                            <span class="tag-small support">공시</span>
+                            <span class="tag-small join">번호이동</span>
+                        </div>
+                        <div class="price-row-price">-1만원</div>
+                    </div>
+
+                    <div class="price-row">
+                        <div class="price-row-left">
+                            <span class="tag-small carrier">SK</span>
+                            <span class="tag-small support">공시</span>
+                            <span class="tag-small join">기기변경</span>
+                        </div>
+                        <div class="price-row-price">40만원</div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="device-card">
+                <div class="device-header">
+                    <img src="https://image.nofee.team/product-group/phone/AP-B-17/thumb/20250918085221_4c21b2c479fa70139689cd6567f875de.jpg"
+                         alt="갤럭시 Z 플립 7"
+                         class="device-image">
+                    <div class="device-info">
+                        <div class="device-name">갤럭시 Z 플립 7</div>
+                        <div class="price-main">4만원</div>
+                        <div class="price-tags">
+                            <span class="tag carrier lg">LG U+</span>
+                            <span class="tag support">공시지원</span>
+                            <span class="tag join">번호이동</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="divider"></div>
+
+                <div class="additional-prices">
+                    <div class="additional-title">다른 조건 최저가</div>
+
+                    <div class="price-row">
+                        <div class="price-row-left">
+                            <span class="tag-small carrier">SK</span>
+                            <span class="tag-small support">공시</span>
+                            <span class="tag-small join">번호이동</span>
+                        </div>
+                        <div class="price-row-price">21만원</div>
+                    </div>
+
+                    <div class="price-row">
+                        <div class="price-row-left">
+                            <span class="tag-small carrier kt">KT</span>
+                            <span class="tag-small support">공시</span>
+                            <span class="tag-small join">번호이동</span>
+                        </div>
+                        <div class="price-row-price">30만원</div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="device-card">
+                <div class="device-header">
+                    <img src="https://image.nofee.team/product-group/phone/AP-B-17/thumb/20250918085221_4c21b2c479fa70139689cd6567f875de.jpg"
+                         alt="갤럭시 S25 울트라"
+                         class="device-image">
+                    <div class="device-info">
+                        <div class="device-name">갤럭시 S25 울트라</div>
+                        <div class="price-main">38만원</div>
+                        <div class="price-tags">
+                            <span class="tag carrier lg">LG U+</span>
+                            <span class="tag support">공시지원</span>
+                            <span class="tag join">번호이동</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="divider"></div>
+
+                <div class="additional-prices">
+                    <div class="additional-title">다른 조건 최저가</div>
+
+                    <div class="price-row">
+                        <div class="price-row-left">
+                            <span class="tag-small carrier">SK</span>
+                            <span class="tag-small support">공시</span>
+                            <span class="tag-small join">번호이동</span>
+                        </div>
+                        <div class="price-row-price">46만원</div>
+                    </div>
+
+                    <div class="price-row">
+                        <div class="price-row-left">
+                            <span class="tag-small carrier kt">KT</span>
+                            <span class="tag-small support">공시</span>
+                            <span class="tag-small join">번호이동</span>
+                        </div>
+                        <div class="price-row-price">60만원</div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="device-card">
+                <div class="device-header">
+                    <img src="https://image.nofee.team/product-group/phone/AP-B-17/thumb/20250918085221_4c21b2c479fa70139689cd6567f875de.jpg"
+                         alt="갤럭시 S25"
+                         class="device-image">
+                    <div class="device-info">
+                        <div class="device-name">갤럭시 S25</div>
+                        <div class="price-main">-17만원</div>
+                        <div class="price-tags">
+                            <span class="tag carrier lg">LG U+</span>
+                            <span class="tag support">공시지원</span>
+                            <span class="tag join">번호이동</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="divider"></div>
+
+                <div class="additional-prices">
+                    <div class="additional-title">다른 조건 최저가</div>
+
+                    <div class="price-row">
+                        <div class="price-row-left">
+                            <span class="tag-small carrier">SK</span>
+                            <span class="tag-small support">공시</span>
+                            <span class="tag-small join">번호이동</span>
+                        </div>
+                        <div class="price-row-price">-7만원</div>
+                    </div>
+
+                    <div class="price-row">
+                        <div class="price-row-left">
+                            <span class="tag-small carrier kt">KT</span>
+                            <span class="tag-small support">공시</span>
+                            <span class="tag-small join">번호이동</span>
+                        </div>
+                        <div class="price-row-price">6만원</div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer">
+            <div class="footer-left">nofee.team</div>
+            <div class="footer-center">
+                <svg width="95" height="20" viewBox="0 0 95 20" fill="none" xmlns="http://www.w3.org/2000/svg" style="height: 22px; width: auto;">
+                    <path d="M18 5.38456L18 18.7514C18 19.1651 17.664 19.5 17.2489 19.5L8.63149 19.5L4.63676 14.1508L4.63676 19.5L0.751099 19.5C0.337731 19.5 1.26474e-09 19.1651 1.2367e-09 18.7514L0 1.24864C0 0.834871 0.337731 0.5 0.751099 0.5L13.0994 0.5C13.2982 0.5 13.4899 0.578896 13.6306 0.719157L17.7801 4.85508C17.9208 4.99534 18 5.18644 18 5.38456Z" fill="white"/>
+                    <path d="M26 1.34198L29.6922 1.34198C32.4316 5.23816 35.171 9.0426 37.9336 13.1667L37.9816 13.1667L37.9816 1.34198L41.5067 1.34198L41.5067 19.1138L37.8393 19.1138C35.0999 15.2635 32.362 11.5715 29.6226 7.53918L29.5515 7.53918L29.5515 19.1138L26.0031 19.1138L26.0031 1.34198L26 1.34198Z" fill="white"/>
+                    <path d="M43.8409 12.779C43.8409 8.83692 46.6514 6.03427 50.701 6.03427C54.7505 6.03427 57.5611 8.83692 57.5611 12.779C57.5611 16.721 54.7505 19.5 50.701 19.5C46.6514 19.5 43.8409 16.7432 43.8409 12.779ZM50.6994 16.4473C52.6994 16.4473 54.0807 14.9202 54.0807 12.779C54.0807 10.6378 52.6994 9.08847 50.6994 9.08847C48.6994 9.08847 47.2934 10.6156 47.2934 12.779C47.2934 14.9424 48.6979 16.4473 50.6994 16.4473Z" fill="white"/>
+                    <path d="M60.4892 9.29416L58.5124 9.29416L58.5124 6.40125L60.4892 6.40125L60.4892 5.1479C60.4892 1.77554 62.6083 0.5 65.0383 0.5C65.6339 0.5 66.4908 0.591745 67.2302 0.864019L67.2302 3.52905C66.5867 3.30117 66.2062 3.2331 65.753 3.2331C63.8241 3.2331 63.8241 4.55452 63.8241 5.51192L63.8241 6.39977L66.8961 6.39977L66.8961 9.29268L63.8241 9.29268L63.8241 19.1123L60.4892 19.1123L60.4892 9.29416Z" fill="white"/>
+                    <path d="M67.4188 12.8248C67.4188 8.90646 70.1815 6.03427 74.0639 6.03427C77.3741 6.03427 80.4708 8.13108 80.4708 12.8012L80.4708 13.6668L70.7538 13.6668C71.0399 15.5801 72.5403 16.6293 74.2789 16.6293C75.637 16.6293 76.8033 15.9234 77.3989 14.602L80.5188 15.8095C79.6371 17.8826 77.3989 19.5 74.3021 19.5C70.3717 19.5 67.4188 16.8572 67.4188 12.8248ZM77.1127 11.4812C76.8745 9.52204 75.5411 8.77033 74.0407 8.77033C72.3253 8.77033 71.2534 9.88606 70.9208 11.4812L77.1127 11.4812Z" fill="white"/>
+                    <path d="M81.9001 12.8248C81.9001 8.90646 84.6627 6.03427 88.5452 6.03427C91.8553 6.03427 94.952 8.13108 94.952 12.8012L94.952 13.6668L85.235 13.6668C85.5212 15.5801 87.0216 16.6293 88.7602 16.6293C90.1183 16.6293 91.2846 15.9234 91.8801 14.602L95 15.8095C94.1183 17.8826 91.8801 19.5 88.7834 19.5C84.8529 19.5 81.9001 16.8572 81.9001 12.8248ZM91.5939 11.4812C91.3557 9.52204 90.0224 8.77033 88.522 8.77033C86.8066 8.77033 85.7346 9.88606 85.4021 11.4812L91.5939 11.4812Z" fill="white"/>
+                </svg>
+            </div>
+            <div class="footer-right">
+                <svg class="search-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
+                </svg>
+                <span>네이버에서 "노피 휴대폰" 검색</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

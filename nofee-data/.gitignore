@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+
+# 환경변수 (민감 정보)
+.env
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# 임시 파일
+*.swp
+*.swo
+*~
+
+# IDE
+.vscode/
+.idea/
+*.iml
+
+# 데이터 백업
+*.bak
+*.backup

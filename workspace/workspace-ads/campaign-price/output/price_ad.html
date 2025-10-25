@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1080">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    width: 1080px;
+    height: 1350px;
+    background: #fff;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    padding: 70px 60px;
+}
+
+.top {
+    margin-bottom: 60px;
+}
+
+.date {
+    font-size: 16px;
+    color: #999;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+h1 {
+    font-size: 80px;
+    font-weight: 900;
+    color: #000;
+    letter-spacing: -5px;
+    line-height: 1;
+    margin-bottom: 15px;
+}
+
+.desc {
+    font-size: 22px;
+    color: #666;
+    font-weight: 500;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-bottom: 60px;
+}
+
+.box {
+    background: #f9f9f9;
+    border-radius: 30px;
+    padding: 40px;
+}
+
+.name {
+    font-size: 28px;
+    font-weight: 800;
+    color: #000;
+    margin-bottom: 30px;
+    letter-spacing: -1px;
+}
+
+.main {
+    margin-bottom: 25px;
+}
+
+.label {
+    font-size: 13px;
+    color: #999;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 12px;
+}
+
+.big {
+    font-size: 72px;
+    font-weight: 900;
+    color: #0071e3;
+    letter-spacing: -4px;
+}
+
+.unit {
+    font-size: 26px;
+    color: #0071e3;
+    font-weight: 700;
+}
+
+.tags {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 25px;
+}
+
+.tag {
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.sk { background: #ea0029; }
+.kt { background: #0066cc; }
+.lg { background: #d90165; }
+.gongsi { background: #ff9500; }
+.sunyak { background: #af52de; }
+.join { background: #34c759; }
+
+.line {
+    height: 1px;
+    background: #ddd;
+    margin: 25px 0;
+}
+
+.sub {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 20px;
+    background: #fff;
+    border-radius: 16px;
+    margin-bottom: 12px;
+}
+
+.sub-tags {
+    display: flex;
+    gap: 6px;
+}
+
+.mini {
+    padding: 6px 11px;
+    border-radius: 15px;
+    font-size: 12px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.sub-price {
+    font-size: 24px;
+    font-weight: 800;
+    color: #000;
+}
+
+.bot {
+    background: #000;
+    border-radius: 28px;
+    padding: 32px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand {
+    font-size: 36px;
+    font-weight: 900;
+    color: #fff;
+}
+
+.cta {
+    font-size: 18px;
+    color: #fff;
+    font-weight: 600;
+}
+
+.highlight {
+    color: #0071e3;
+    font-weight: 800;
+}
+</style>
+</head>
+<body>
+
+<div class="top">
+    <div class="date">10.08</div>
+    <h1>최저가</h1>
+    <div class="desc">프리미엄 요금제 기준</div>
+</div>
+
+<div class="grid">
+
+    <div class="box">
+        <div class="name">아이폰 17 프로 맥스</div>
+
+        <div class="main">
+            <div class="label">Best Price</div>
+            <div>
+                <span class="big">148</span><span class="unit">만원</span>
+            </div>
+        </div>
+
+        <div class="tags">
+            <span class="tag kt">KT</span>
+            <span class="tag 공시">공시</span>
+            <span class="tag join">번호이동</span>
+        </div>
+
+        <div class="line"></div>
+
+        <div>
+
+            <div class="sub">
+                <div class="sub-tags">
+                    <span class="mini kt">KT</span>
+                    <span class="mini 공시">공시</span>
+                    <span class="mini join">기기변경</span>
+                </div>
+                <div class="sub-price">152만</div>
+            </div>
+
+            <div class="sub">
+                <div class="sub-tags">
+                    <span class="mini sk">SK</span>
+                    <span class="mini 공시">공시</span>
+                    <span class="mini join">기기변경</span>
+                </div>
+                <div class="sub-price">163만</div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="box">
+        <div class="name">아이폰 16 프로 맥스</div>
+
+        <div class="main">
+            <div class="label">Best Price</div>
+            <div>
+                <span class="big">66</span><span class="unit">만원</span>
+            </div>
+        </div>
+
+        <div class="tags">
+            <span class="tag kt">KT</span>
+            <span class="tag 공시">공시</span>
+            <span class="tag join">번호이동</span>
+        </div>
+
+        <div class="line"></div>
+
+        <div>
+
+            <div class="sub">
+                <div class="sub-tags">
+                    <span class="mini kt">KT</span>
+                    <span class="mini 공시">공시</span>
+                    <span class="mini join">기기변경</span>
+                </div>
+                <div class="sub-price">90만</div>
+            </div>
+
+            <div class="sub">
+                <div class="sub-tags">
+                    <span class="mini sk">SK</span>
+                    <span class="mini 공시">공시</span>
+                    <span class="mini join">번호이동</span>
+                </div>
+                <div class="sub-price">95만</div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="box">
+        <div class="name">갤럭시 S25 울트라</div>
+
+        <div class="main">
+            <div class="label">Best Price</div>
+            <div>
+                <span class="big">38</span><span class="unit">만원</span>
+            </div>
+        </div>
+
+        <div class="tags">
+            <span class="tag lg">LG</span>
+            <span class="tag 공시">공시</span>
+            <span class="tag join">번호이동</span>
+        </div>
+
+        <div class="line"></div>
+
+        <div>
+
+            <div class="sub">
+                <div class="sub-tags">
+                    <span class="mini sk">SK</span>
+                    <span class="mini 공시">공시</span>
+                    <span class="mini join">번호이동</span>
+                </div>
+                <div class="sub-price">39만</div>
+            </div>
+
+            <div class="sub">
+                <div class="sub-tags">
+                    <span class="mini kt">KT</span>
+                    <span class="mini 공시">공시</span>
+                    <span class="mini join">번호이동</span>
+                </div>
+                <div class="sub-price">60만</div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="box">
+        <div class="name">갤럭시 Z 플립 7</div>
+
+        <div class="main">
+            <div class="label">Best Price</div>
+            <div>
+                <span class="big">4</span><span class="unit">만원</span>
+            </div>
+        </div>
+
+        <div class="tags">
+            <span class="tag lg">LG</span>
+            <span class="tag 공시">공시</span>
+            <span class="tag join">번호이동</span>
+        </div>
+
+        <div class="line"></div>
+
+        <div>
+
+            <div class="sub">
+                <div class="sub-tags">
+                    <span class="mini sk">SK</span>
+                    <span class="mini 공시">공시</span>
+                    <span class="mini join">번호이동</span>
+                </div>
+                <div class="sub-price">12만</div>
+            </div>
+
+            <div class="sub">
+                <div class="sub-tags">
+                    <span class="mini lg">LG</span>
+                    <span class="mini 공시">공시</span>
+                    <span class="mini join">번호이동</span>
+                </div>
+                <div class="sub-price">20만</div>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+<div class="bot">
+    <div class="brand">NOFEE</div>
+    <div class="cta">네이버 <span class="highlight">"노피 휴대폰"</span> 검색</div>
+</div>
+
+</body>
+</html>

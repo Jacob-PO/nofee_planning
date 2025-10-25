@@ -1,0 +1,955 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>서울 휴대폰 판매점 성지 카드뉴스</title>
+    <link href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/variable/woff2/SUIT-Variable.css" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'SUIT Variable', sans-serif;
+            background: #1a1a1a;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0;
+        }
+
+        .card {
+            width: 1000px;
+            height: 1000px;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* 공통: 아이메시지 말풍선 브랜딩 */
+        .brand-footer {
+            position: absolute;
+            bottom: 70px;
+            right: 40px;
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: flex-end;
+            gap: 12px;
+            z-index: 10;
+        }
+
+        .profile-image {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            background: white;
+            padding: 6px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+            flex-shrink: 0;
+            margin-bottom: -12px;
+        }
+
+        .profile-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        .imessage-bubble {
+            background: #007AFF;
+            color: white;
+            padding: 14px 20px;
+            border-radius: 20px 20px 4px 20px;
+            font-size: 16px;
+            font-weight: 600;
+            letter-spacing: -0.01em;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+            max-width: 240px;
+        }
+
+        /* Card 1: 커버 */
+        .card-1 {
+            background: linear-gradient(135deg, #000000 0%, #1a1a2e 100%);
+            justify-content: center;
+            align-items: center;
+            padding: 60px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cover-content {
+            text-align: center;
+            color: white;
+            position: relative;
+            z-index: 2;
+        }
+
+        .cover-top-tag {
+            display: inline-block;
+            background: rgba(255, 68, 68, 0.15);
+            border: 2px solid rgba(255, 68, 68, 0.4);
+            color: #FF6B6B;
+            padding: 10px 24px;
+            border-radius: 8px;
+            font-size: 15px;
+            font-weight: 800;
+            letter-spacing: 1px;
+            margin-bottom: 35px;
+            text-transform: uppercase;
+        }
+
+        .cover-main-text {
+            font-size: 56px;
+            font-weight: 900;
+            line-height: 1.15;
+            letter-spacing: -0.05em;
+            color: rgba(255, 255, 255, 0.4);
+            margin-bottom: 15px;
+        }
+
+        .cover-title {
+            font-size: 88px;
+            font-weight: 900;
+            line-height: 1.1;
+            letter-spacing: -0.05em;
+            margin-bottom: 20px;
+        }
+
+        .cover-title-line1 {
+            background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            display: block;
+        }
+
+        .cover-title-line2 {
+            color: white;
+            display: block;
+        }
+
+        .cover-proof-box {
+            background: rgba(255, 215, 0, 0.12);
+            border-left: 4px solid #FFD700;
+            padding: 28px 35px;
+            margin: 35px auto;
+            max-width: 750px;
+            text-align: left;
+        }
+
+        .cover-proof-text {
+            font-size: 28px;
+            font-weight: 700;
+            color: rgba(255, 255, 255, 0.95);
+            line-height: 1.65;
+            margin-bottom: 0;
+        }
+
+        .cover-proof-highlight {
+            color: #FFD700;
+            font-size: 28px;
+        }
+
+        .cover-tags-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            justify-content: center;
+            margin-bottom: 30px;
+        }
+
+        .cover-mini-tag {
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            color: rgba(255, 255, 255, 0.9);
+            padding: 10px 20px;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 700;
+        }
+
+        .cover-cta {
+            font-size: 18px;
+            font-weight: 800;
+            color: rgba(255, 255, 255, 0.6);
+            letter-spacing: 2px;
+        }
+
+        .cover-pattern {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            opacity: 0.015;
+            background-image:
+                radial-gradient(circle at 20% 50%, rgba(255, 215, 0, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 80% 80%, rgba(255, 107, 107, 0.1) 0%, transparent 50%);
+            z-index: 1;
+        }
+
+        /* Card 2: 매장 소개 */
+        .card-2 {
+            background: #FFFFFF;
+            padding: 70px;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .tags {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 30px;
+            justify-content: center;
+        }
+
+        .tag {
+            background: #FFF4E0;
+            color: #D97706;
+            padding: 12px 22px;
+            border-radius: 100px;
+            font-size: 17px;
+            font-weight: 700;
+        }
+
+        .store-title {
+            font-size: 68px;
+            font-weight: 900;
+            color: #000000;
+            letter-spacing: -0.04em;
+            margin-bottom: 28px;
+        }
+
+        .store-info-line {
+            font-size: 24px;
+            font-weight: 700;
+            color: #6B7280;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .info-divider {
+            color: #D1D5DB;
+        }
+
+        .product-image-section {
+            margin-top: 20px;
+        }
+
+        .product-image-section img {
+            width: 400px;
+            height: 400px;
+            object-fit: contain;
+        }
+
+        .product-name-title {
+            font-size: 42px;
+            font-weight: 900;
+            color: #000000;
+            margin-top: 30px;
+            margin-bottom: 25px;
+            letter-spacing: -0.03em;
+        }
+
+        .price-section {
+            margin-top: 25px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 24px;
+        }
+
+        .price-before {
+            font-size: 36px;
+            font-weight: 900;
+            color: #9CA3AF;
+            position: relative;
+        }
+
+        .price-before::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 50%;
+            height: 3px;
+            background: #EF4444;
+            transform: translateY(-50%);
+        }
+
+        .price-arrow {
+            font-size: 40px;
+            color: #FFE66D;
+        }
+
+        .price-after {
+            font-size: 72px;
+            font-weight: 900;
+            color: #000000;
+            letter-spacing: -0.03em;
+        }
+
+        .price-number {
+            color: #3182F6;
+        }
+
+        .store-features {
+            display: flex;
+            gap: 12px;
+            margin-bottom: 50px;
+        }
+
+        .feature {
+            flex: 1;
+            background: #F7F8FA;
+            padding: 20px;
+            border-radius: 16px;
+            text-align: center;
+        }
+
+        .feature-icon {
+            font-size: 28px;
+            margin-bottom: 8px;
+        }
+
+        .feature-text {
+            font-size: 14px;
+            font-weight: 700;
+            color: #374151;
+            line-height: 1.4;
+        }
+
+        .product-card {
+            background: #F7F8FA;
+            border-radius: 24px;
+            padding: 40px;
+            margin-bottom: 50px;
+        }
+
+        .product-top {
+            display: flex;
+            gap: 30px;
+            align-items: center;
+            margin-bottom: 40px;
+            padding-bottom: 30px;
+            border-bottom: 2px solid #E5E7EB;
+        }
+
+        .product-img {
+            width: 140px;
+            height: 140px;
+            flex-shrink: 0;
+        }
+
+        .product-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        .product-info {
+            flex: 1;
+        }
+
+        .product-label {
+            display: inline-block;
+            background: #FFE66D;
+            color: #000000;
+            padding: 8px 16px;
+            border-radius: 8px;
+            font-size: 14px;
+            font-weight: 700;
+            margin-bottom: 12px;
+        }
+
+        .product-name {
+            font-size: 40px;
+            font-weight: 900;
+            color: #000000;
+            letter-spacing: -0.03em;
+        }
+
+        .specs {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 12px;
+            margin-bottom: 30px;
+        }
+
+        .spec {
+            background: white;
+            padding: 20px;
+            border-radius: 16px;
+            text-align: center;
+        }
+
+        .spec-label {
+            font-size: 13px;
+            font-weight: 600;
+            color: #6B7280;
+            margin-bottom: 8px;
+        }
+
+        .spec-value {
+            font-size: 18px;
+            font-weight: 800;
+            color: #000000;
+        }
+
+        .price-box {
+            background: linear-gradient(135deg, #FFE66D 0%, #FFD93D 100%);
+            border-radius: 20px;
+            padding: 32px;
+            text-align: center;
+        }
+
+        .price-top {
+            font-size: 16px;
+            font-weight: 600;
+            color: rgba(0, 0, 0, 0.6);
+            margin-bottom: 10px;
+        }
+
+        .price-main {
+            font-size: 52px;
+            font-weight: 900;
+            color: #000000;
+            letter-spacing: -0.03em;
+        }
+
+        .card-1 .imessage-bubble {
+            background: #007AFF;
+            opacity: 0.9;
+        }
+
+        .card-2 .brand-footer {
+            position: absolute;
+            bottom: 160px;
+            right: 100px;
+            transform: none;
+        }
+
+        .card-2 .profile-image {
+            display: none;
+        }
+
+        .card-2 .imessage-bubble {
+            background: #007AFF;
+            opacity: 0.95;
+            border-radius: 20px 20px 20px 4px;
+        }
+
+        /* Card 3: 동일한 스타일 */
+        .card-3 {
+            background: #FFFFFF;
+            padding: 70px;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .card-3 .brand-footer {
+            position: absolute;
+            bottom: 160px;
+            right: 100px;
+            transform: none;
+        }
+
+        .card-3 .profile-image {
+            display: none;
+        }
+
+        .card-3 .imessage-bubble {
+            background: #007AFF;
+            opacity: 0.95;
+            border-radius: 20px 20px 20px 4px;
+        }
+
+        /* Card 4: 동일한 스타일 */
+        .card-4 {
+            background: #FFFFFF;
+            padding: 70px;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .card-4 .brand-footer {
+            position: absolute;
+            bottom: 160px;
+            right: 100px;
+            transform: none;
+        }
+
+        .card-4 .profile-image {
+            display: none;
+        }
+
+        .card-4 .imessage-bubble {
+            background: #007AFF;
+            opacity: 0.95;
+            border-radius: 20px 20px 20px 4px;
+        }
+
+        /* Card 5: 동일한 스타일 */
+        .card-5 {
+            background: #FFFFFF;
+            padding: 70px;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .card-5 .brand-footer {
+            position: absolute;
+            bottom: 160px;
+            right: 100px;
+            transform: none;
+        }
+
+        .card-5 .profile-image {
+            display: none;
+        }
+
+        .card-5 .imessage-bubble {
+            background: #007AFF;
+            opacity: 0.95;
+            border-radius: 20px 20px 20px 4px;
+        }
+
+        /* Card 6: 동일한 스타일 */
+        .card-6 {
+            background: #FFFFFF;
+            padding: 70px;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .card-6 .brand-footer {
+            position: absolute;
+            bottom: 160px;
+            right: 100px;
+            transform: none;
+        }
+
+        .card-6 .profile-image {
+            display: none;
+        }
+
+        .card-6 .imessage-bubble {
+            background: #007AFF;
+            opacity: 0.95;
+            border-radius: 20px 20px 20px 4px;
+        }
+
+        /* Card 7: 동일한 스타일 */
+        .card-7 {
+            background: #FFFFFF;
+            padding: 70px;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .card-7 .brand-footer {
+            position: absolute;
+            bottom: 160px;
+            right: 100px;
+            transform: none;
+        }
+
+        .card-7 .profile-image {
+            display: none;
+        }
+
+        .card-7 .imessage-bubble {
+            background: #007AFF;
+            opacity: 0.95;
+            border-radius: 20px 20px 20px 4px;
+        }
+
+        /* Card 8: 브랜드 마무리 카드 */
+        .card-8 {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            justify-content: center;
+            align-items: center;
+            padding: 80px;
+        }
+
+        .outro-content {
+            text-align: center;
+            color: white;
+        }
+
+        .outro-logo {
+            width: 120px;
+            height: 120px;
+            background: white;
+            border-radius: 30px;
+            padding: 20px;
+            margin: 0 auto 40px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+        }
+
+        .outro-logo img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        .outro-title {
+            font-size: 64px;
+            font-weight: 900;
+            line-height: 1.3;
+            letter-spacing: -0.04em;
+            margin-bottom: 30px;
+        }
+
+        .outro-subtitle {
+            font-size: 32px;
+            font-weight: 600;
+            opacity: 0.95;
+            margin-bottom: 50px;
+            line-height: 1.5;
+        }
+
+        .outro-highlight {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 30px 50px;
+            border-radius: 20px;
+            font-size: 28px;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            backdrop-filter: blur(10px);
+        }
+
+        .outro-regions {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            margin-top: 40px;
+            flex-wrap: wrap;
+        }
+
+        .region-tag {
+            background: rgba(255, 255, 255, 0.25);
+            color: white;
+            padding: 12px 24px;
+            border-radius: 50px;
+            font-size: 18px;
+            font-weight: 700;
+            backdrop-filter: blur(10px);
+        }
+    </style>
+</head>
+<body>
+    <!-- Card 1: 커버 -->
+    <div class="card card-1">
+        <div class="cover-pattern"></div>
+        <div class="cover-content">
+            <div class="cover-main-text">
+                커뮤니티 난리난
+            </div>
+
+            <div class="cover-title">
+                <span class="cover-title-line1">전국 성지 6경</span>
+            </div>
+
+            <div class="cover-proof-box">
+                <div class="cover-proof-text">
+                    <span class="cover-proof-highlight">대리점 직원도 몰래 사러 가는 곳</span><br>
+                    <span class="cover-proof-highlight">오픈챗에서만 도는 전설의 리스트</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- 브랜드 푸터 -->
+        <div class="brand-footer">
+            <div class="profile-image">
+                <img src="https://admin.nofee.team/image/company/logo.svg" alt="노피">
+            </div>
+            <div class="imessage-bubble">동네성지 찾아줘요, 노피</div>
+        </div>
+    </div>
+
+    <!-- Card 2: 띵동폰 동대문점 -->
+    <div class="card card-2">
+        <div>
+            <div class="tags">
+                <div class="tag">#시세표_투명</div>
+                <div class="tag">#추가금_없음</div>
+            </div>
+
+            <h2 class="store-title">띵동폰 동대문점</h2>
+
+            <div class="store-info-line">
+                <span>서울 동대문</span>
+                <span class="info-divider">|</span>
+                <span>투명가격</span>
+                <span class="info-divider">|</span>
+                <span>추가금없음</span>
+            </div>
+
+            <div class="product-image-section">
+                <img src="https://image.nofee.team/product-group/phone/AP-B-17/thumb/20250918085221_4c21b2c479fa70139689cd6567f875de.jpg" alt="아이폰 17">
+            </div>
+
+            <div class="product-name-title">아이폰 17</div>
+
+            <div class="price-section">
+                <div class="price-before">128만원</div>
+                <div class="price-arrow">→</div>
+                <div class="price-after"><span class="price-number">39</span>만원</div>
+            </div>
+        </div>
+
+        <!-- 브랜드 푸터 -->
+        <div class="brand-footer">
+            <div class="profile-image">
+                <img src="https://admin.nofee.team/image/company/logo.svg" alt="노피">
+            </div>
+            <div class="imessage-bubble">동네성지 찾아줘요, 노피</div>
+        </div>
+    </div>
+
+    <!-- Card 3: 조이모바일 -->
+    <div class="card card-3">
+        <div>
+            <div class="tags">
+                <div class="tag">#친절_최고</div>
+                <div class="tag">#케이스필름증정</div>
+            </div>
+
+            <h2 class="store-title">조이모바일</h2>
+
+            <div class="store-info-line">
+                <span>경기 부천</span>
+                <span class="info-divider">|</span>
+                <span>최저가</span>
+                <span class="info-divider">|</span>
+                <span>케이스증정</span>
+            </div>
+
+            <div class="product-image-section">
+                <img src="https://image.nofee.team/product-group/phone/SM-ZF-7/thumb/20250710104932_1fa7b688ef998e34f15f4cb85b73bba5.png" alt="갤럭시 Z 폴드7">
+            </div>
+
+            <div class="product-name-title">갤럭시 Z 폴드7</div>
+
+            <div class="price-section">
+                <div class="price-before">237만원</div>
+                <div class="price-arrow">→</div>
+                <div class="price-after"><span class="price-number">99</span>만원</div>
+            </div>
+        </div>
+
+        <!-- 브랜드 푸터 -->
+        <div class="brand-footer">
+            <div class="profile-image">
+                <img src="https://admin.nofee.team/image/company/logo.svg" alt="노피">
+            </div>
+            <div class="imessage-bubble">동네성지 찾아줘요, 노피</div>
+        </div>
+    </div>
+
+    <!-- Card 4: 성공모바일 -->
+    <div class="card card-4">
+        <div>
+            <div class="tags">
+                <div class="tag">#가격_최저</div>
+                <div class="tag">#친절_상담</div>
+            </div>
+
+            <h2 class="store-title">성공모바일</h2>
+
+            <div class="store-info-line">
+                <span>경기 안산</span>
+                <span class="info-divider">|</span>
+                <span>고객중심</span>
+                <span class="info-divider">|</span>
+                <span>단골맛집</span>
+            </div>
+
+            <div class="product-image-section">
+                <img src="https://image.nofee.team/product-group/phone/AP-P-16/thumb/20250627150558_1d6c3c3a3abec76f1c41d6fd02383a20.png" alt="아이폰 16 Pro">
+            </div>
+
+            <div class="product-name-title">아이폰 16 Pro</div>
+
+            <div class="price-section">
+                <div class="price-before">125만원</div>
+                <div class="price-arrow">→</div>
+                <div class="price-after"><span class="price-number">33</span>만원</div>
+            </div>
+        </div>
+
+        <!-- 브랜드 푸터 -->
+        <div class="brand-footer">
+            <div class="profile-image">
+                <img src="https://admin.nofee.team/image/company/logo.svg" alt="노피">
+            </div>
+            <div class="imessage-bubble">동네성지 찾아줘요, 노피</div>
+        </div>
+    </div>
+
+    <!-- Card 5: 지산모바일 -->
+    <div class="card card-5">
+        <div>
+            <div class="tags">
+                <div class="tag">#말장난_없음</div>
+                <div class="tag">#조건_투명</div>
+            </div>
+
+            <h2 class="store-title">지산모바일</h2>
+
+            <div class="store-info-line">
+                <span>인천 청라</span>
+                <span class="info-divider">|</span>
+                <span>조건없음</span>
+                <span class="info-divider">|</span>
+                <span>청라1등성지</span>
+            </div>
+
+            <div class="product-image-section">
+                <img src="https://image.nofee.team/product-group/phone/SM-S-25/thumb/20250627152510_69d7ac613e112f7ed9799137df572843.png" alt="갤럭시 S25">
+            </div>
+
+            <div class="product-name-title">갤럭시 S25</div>
+
+            <div class="price-section">
+                <div class="price-before">132만원</div>
+                <div class="price-arrow">→</div>
+                <div class="price-after"><span class="price-number">0</span>원</div>
+            </div>
+        </div>
+
+        <!-- 브랜드 푸터 -->
+        <div class="brand-footer">
+            <div class="profile-image">
+                <img src="https://admin.nofee.team/image/company/logo.svg" alt="노피">
+            </div>
+            <div class="imessage-bubble">동네성지 찾아줘요, 노피</div>
+        </div>
+    </div>
+
+    <!-- Card 6: 용인휴대폰성지 -->
+    <div class="card card-6">
+        <div>
+            <div class="tags">
+                <div class="tag">#2011년_오픈</div>
+                <div class="tag">#정식매장</div>
+            </div>
+
+            <h2 class="store-title">용인휴대폰성지</h2>
+
+            <div class="store-info-line">
+                <span>경기 용인</span>
+                <span class="info-divider">|</span>
+                <span>년중무휴</span>
+                <span class="info-divider">|</span>
+                <span>무료주차</span>
+            </div>
+
+            <div class="product-image-section">
+                <img src="https://image.nofee.team/product-group/phone/SM-SA-25/thumb/20250627152641_9929fc1762c1776d9606e1f8d61565bc.png" alt="갤럭시 S25 Ultra">
+            </div>
+
+            <div class="product-name-title">갤럭시 S25 Ultra</div>
+
+            <div class="price-section">
+                <div class="price-before">163만원</div>
+                <div class="price-arrow">→</div>
+                <div class="price-after"><span class="price-number">25</span>만원</div>
+            </div>
+        </div>
+
+        <!-- 브랜드 푸터 -->
+        <div class="brand-footer">
+            <div class="profile-image">
+                <img src="https://admin.nofee.team/image/company/logo.svg" alt="노피">
+            </div>
+            <div class="imessage-bubble">동네성지 찾아줘요, 노피</div>
+        </div>
+    </div>
+
+    <!-- Card 7: 폰여기요 -->
+    <div class="card card-7">
+        <div>
+            <div class="tags">
+                <div class="tag">#현금완납_전문</div>
+                <div class="tag">#클린매장</div>
+            </div>
+
+            <h2 class="store-title">폰여기요</h2>
+
+            <div class="store-info-line">
+                <span>경기 광명</span>
+                <span class="info-divider">|</span>
+                <span>상술없음</span>
+                <span class="info-divider">|</span>
+                <span>시세표공개</span>
+            </div>
+
+            <div class="product-image-section">
+                <img src="https://image.nofee.team/product-group/phone/SM-ZP-7/thumb/20250710105103_b816797889f1b256dea5c7c09d36d5bb.png" alt="갤럭시 Z 플립7">
+            </div>
+
+            <div class="product-name-title">갤럭시 Z 플립7</div>
+
+            <div class="price-section">
+                <div class="price-before">148만원</div>
+                <div class="price-arrow">→</div>
+                <div class="price-after"><span class="price-number">41</span>만원</div>
+            </div>
+        </div>
+
+        <!-- 브랜드 푸터 -->
+        <div class="brand-footer">
+            <div class="profile-image">
+                <img src="https://admin.nofee.team/image/company/logo.svg" alt="노피">
+            </div>
+            <div class="imessage-bubble">동네성지 찾아줘요, 노피</div>
+        </div>
+    </div>
+
+    <!-- Card 8: 브랜드 마무리 -->
+    <div class="card card-8">
+        <div class="outro-content">
+            <div class="outro-logo">
+                <img src="https://admin.nofee.team/image/company/logo.svg" alt="노피">
+            </div>
+
+            <div class="outro-title">
+                우리동네 휴대폰 성지<br>노피가 찾아드려요
+            </div>
+
+            <div class="outro-subtitle">
+                전국 어디든<br>최저가 성지를 찾고 있다면?
+            </div>
+
+            <div class="outro-highlight">
+                동네성지 찾아줘요, 노피
+            </div>
+
+            <div class="outro-regions">
+                <div class="region-tag">서울</div>
+                <div class="region-tag">경기</div>
+                <div class="region-tag">인천</div>
+                <div class="region-tag">부산</div>
+                <div class="region-tag">대구</div>
+                <div class="region-tag">전국</div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,2927 @@
+{
+  "metadata": {
+    "generated_at": "2025-10-23 10:53:59",
+    "database": "db_nofee",
+    "period": "all"
+  },
+  "data": {
+    "total_users": 5091,
+    "total_quote_applications": 4065,
+    "total_event_applications": 420,
+    "total_applications": 4485,
+    "total_purchases": 2964,
+    "total_quote_completed": 47,
+    "total_event_completed": 8,
+    "total_completed": 55,
+    "total_stores": 52,
+    "active_campaigns": 361,
+    "daily_quote_applications_all": [
+      {
+        "date": "2025-07-15",
+        "count": 1
+      },
+      {
+        "date": "2025-07-17",
+        "count": 8
+      },
+      {
+        "date": "2025-07-18",
+        "count": 3
+      },
+      {
+        "date": "2025-07-19",
+        "count": 12
+      },
+      {
+        "date": "2025-07-20",
+        "count": 10
+      },
+      {
+        "date": "2025-07-21",
+        "count": 7
+      },
+      {
+        "date": "2025-07-22",
+        "count": 9
+      },
+      {
+        "date": "2025-07-23",
+        "count": 10
+      },
+      {
+        "date": "2025-07-24",
+        "count": 9
+      },
+      {
+        "date": "2025-07-25",
+        "count": 10
+      },
+      {
+        "date": "2025-07-26",
+        "count": 13
+      },
+      {
+        "date": "2025-07-27",
+        "count": 14
+      },
+      {
+        "date": "2025-07-28",
+        "count": 12
+      },
+      {
+        "date": "2025-07-29",
+        "count": 21
+      },
+      {
+        "date": "2025-07-30",
+        "count": 54
+      },
+      {
+        "date": "2025-07-31",
+        "count": 48
+      },
+      {
+        "date": "2025-08-01",
+        "count": 42
+      },
+      {
+        "date": "2025-08-02",
+        "count": 16
+      },
+      {
+        "date": "2025-08-03",
+        "count": 25
+      },
+      {
+        "date": "2025-08-04",
+        "count": 19
+      },
+      {
+        "date": "2025-08-05",
+        "count": 25
+      },
+      {
+        "date": "2025-08-06",
+        "count": 19
+      },
+      {
+        "date": "2025-08-07",
+        "count": 27
+      },
+      {
+        "date": "2025-08-08",
+        "count": 23
+      },
+      {
+        "date": "2025-08-09",
+        "count": 51
+      },
+      {
+        "date": "2025-08-10",
+        "count": 41
+      },
+      {
+        "date": "2025-08-11",
+        "count": 32
+      },
+      {
+        "date": "2025-08-12",
+        "count": 33
+      },
+      {
+        "date": "2025-08-13",
+        "count": 24
+      },
+      {
+        "date": "2025-08-14",
+        "count": 28
+      },
+      {
+        "date": "2025-08-15",
+        "count": 32
+      },
+      {
+        "date": "2025-08-16",
+        "count": 45
+      },
+      {
+        "date": "2025-08-17",
+        "count": 48
+      },
+      {
+        "date": "2025-08-18",
+        "count": 35
+      },
+      {
+        "date": "2025-08-19",
+        "count": 43
+      },
+      {
+        "date": "2025-08-20",
+        "count": 50
+      },
+      {
+        "date": "2025-08-21",
+        "count": 78
+      },
+      {
+        "date": "2025-08-22",
+        "count": 54
+      },
+      {
+        "date": "2025-08-23",
+        "count": 66
+      },
+      {
+        "date": "2025-08-24",
+        "count": 62
+      },
+      {
+        "date": "2025-08-25",
+        "count": 49
+      },
+      {
+        "date": "2025-08-26",
+        "count": 57
+      },
+      {
+        "date": "2025-08-27",
+        "count": 55
+      },
+      {
+        "date": "2025-08-28",
+        "count": 32
+      },
+      {
+        "date": "2025-08-29",
+        "count": 43
+      },
+      {
+        "date": "2025-08-30",
+        "count": 127
+      },
+      {
+        "date": "2025-08-31",
+        "count": 144
+      },
+      {
+        "date": "2025-09-01",
+        "count": 52
+      },
+      {
+        "date": "2025-09-02",
+        "count": 43
+      },
+      {
+        "date": "2025-09-03",
+        "count": 59
+      },
+      {
+        "date": "2025-09-04",
+        "count": 43
+      },
+      {
+        "date": "2025-09-05",
+        "count": 44
+      },
+      {
+        "date": "2025-09-06",
+        "count": 23
+      },
+      {
+        "date": "2025-09-07",
+        "count": 45
+      },
+      {
+        "date": "2025-09-08",
+        "count": 45
+      },
+      {
+        "date": "2025-09-09",
+        "count": 77
+      },
+      {
+        "date": "2025-09-10",
+        "count": 96
+      },
+      {
+        "date": "2025-09-11",
+        "count": 69
+      },
+      {
+        "date": "2025-09-12",
+        "count": 91
+      },
+      {
+        "date": "2025-09-13",
+        "count": 111
+      },
+      {
+        "date": "2025-09-14",
+        "count": 109
+      },
+      {
+        "date": "2025-09-15",
+        "count": 171
+      },
+      {
+        "date": "2025-09-16",
+        "count": 159
+      },
+      {
+        "date": "2025-09-17",
+        "count": 174
+      },
+      {
+        "date": "2025-09-18",
+        "count": 171
+      },
+      {
+        "date": "2025-09-19",
+        "count": 75
+      },
+      {
+        "date": "2025-09-20",
+        "count": 71
+      },
+      {
+        "date": "2025-09-21",
+        "count": 29
+      },
+      {
+        "date": "2025-09-22",
+        "count": 28
+      },
+      {
+        "date": "2025-09-23",
+        "count": 24
+      },
+      {
+        "date": "2025-09-24",
+        "count": 16
+      },
+      {
+        "date": "2025-09-25",
+        "count": 6
+      },
+      {
+        "date": "2025-09-26",
+        "count": 11
+      },
+      {
+        "date": "2025-09-27",
+        "count": 20
+      },
+      {
+        "date": "2025-09-28",
+        "count": 10
+      },
+      {
+        "date": "2025-09-29",
+        "count": 17
+      },
+      {
+        "date": "2025-09-30",
+        "count": 17
+      },
+      {
+        "date": "2025-10-01",
+        "count": 16
+      },
+      {
+        "date": "2025-10-02",
+        "count": 18
+      },
+      {
+        "date": "2025-10-03",
+        "count": 7
+      },
+      {
+        "date": "2025-10-04",
+        "count": 17
+      },
+      {
+        "date": "2025-10-05",
+        "count": 27
+      },
+      {
+        "date": "2025-10-06",
+        "count": 34
+      },
+      {
+        "date": "2025-10-07",
+        "count": 33
+      },
+      {
+        "date": "2025-10-08",
+        "count": 34
+      },
+      {
+        "date": "2025-10-09",
+        "count": 28
+      },
+      {
+        "date": "2025-10-10",
+        "count": 63
+      },
+      {
+        "date": "2025-10-11",
+        "count": 19
+      },
+      {
+        "date": "2025-10-12",
+        "count": 18
+      },
+      {
+        "date": "2025-10-13",
+        "count": 39
+      },
+      {
+        "date": "2025-10-14",
+        "count": 24
+      },
+      {
+        "date": "2025-10-15",
+        "count": 20
+      },
+      {
+        "date": "2025-10-16",
+        "count": 18
+      },
+      {
+        "date": "2025-10-17",
+        "count": 15
+      },
+      {
+        "date": "2025-10-18",
+        "count": 9
+      },
+      {
+        "date": "2025-10-19",
+        "count": 13
+      },
+      {
+        "date": "2025-10-20",
+        "count": 19
+      },
+      {
+        "date": "2025-10-21",
+        "count": 9
+      },
+      {
+        "date": "2025-10-22",
+        "count": 10
+      },
+      {
+        "date": "2025-10-23",
+        "count": 3
+      }
+    ],
+    "daily_event_applications_all": [
+      {
+        "date": "2025-09-19",
+        "count": 1
+      },
+      {
+        "date": "2025-09-20",
+        "count": 40
+      },
+      {
+        "date": "2025-09-21",
+        "count": 8
+      },
+      {
+        "date": "2025-09-22",
+        "count": 2
+      },
+      {
+        "date": "2025-09-23",
+        "count": 2
+      },
+      {
+        "date": "2025-09-24",
+        "count": 8
+      },
+      {
+        "date": "2025-09-25",
+        "count": 9
+      },
+      {
+        "date": "2025-09-26",
+        "count": 11
+      },
+      {
+        "date": "2025-09-27",
+        "count": 19
+      },
+      {
+        "date": "2025-09-28",
+        "count": 3
+      },
+      {
+        "date": "2025-09-29",
+        "count": 7
+      },
+      {
+        "date": "2025-09-30",
+        "count": 6
+      },
+      {
+        "date": "2025-10-01",
+        "count": 10
+      },
+      {
+        "date": "2025-10-02",
+        "count": 9
+      },
+      {
+        "date": "2025-10-03",
+        "count": 4
+      },
+      {
+        "date": "2025-10-04",
+        "count": 3
+      },
+      {
+        "date": "2025-10-05",
+        "count": 14
+      },
+      {
+        "date": "2025-10-06",
+        "count": 14
+      },
+      {
+        "date": "2025-10-07",
+        "count": 12
+      },
+      {
+        "date": "2025-10-08",
+        "count": 22
+      },
+      {
+        "date": "2025-10-09",
+        "count": 5
+      },
+      {
+        "date": "2025-10-10",
+        "count": 28
+      },
+      {
+        "date": "2025-10-11",
+        "count": 14
+      },
+      {
+        "date": "2025-10-12",
+        "count": 14
+      },
+      {
+        "date": "2025-10-13",
+        "count": 32
+      },
+      {
+        "date": "2025-10-14",
+        "count": 36
+      },
+      {
+        "date": "2025-10-15",
+        "count": 30
+      },
+      {
+        "date": "2025-10-16",
+        "count": 16
+      },
+      {
+        "date": "2025-10-17",
+        "count": 7
+      },
+      {
+        "date": "2025-10-18",
+        "count": 14
+      },
+      {
+        "date": "2025-10-19",
+        "count": 5
+      },
+      {
+        "date": "2025-10-20",
+        "count": 7
+      },
+      {
+        "date": "2025-10-21",
+        "count": 5
+      },
+      {
+        "date": "2025-10-22",
+        "count": 1
+      },
+      {
+        "date": "2025-10-23",
+        "count": 2
+      }
+    ],
+    "daily_applications_all": [
+      {
+        "date": "2025-07-15",
+        "count": 1
+      },
+      {
+        "date": "2025-07-17",
+        "count": 8
+      },
+      {
+        "date": "2025-07-18",
+        "count": 3
+      },
+      {
+        "date": "2025-07-19",
+        "count": 12
+      },
+      {
+        "date": "2025-07-20",
+        "count": 10
+      },
+      {
+        "date": "2025-07-21",
+        "count": 7
+      },
+      {
+        "date": "2025-07-22",
+        "count": 9
+      },
+      {
+        "date": "2025-07-23",
+        "count": 10
+      },
+      {
+        "date": "2025-07-24",
+        "count": 9
+      },
+      {
+        "date": "2025-07-25",
+        "count": 10
+      },
+      {
+        "date": "2025-07-26",
+        "count": 13
+      },
+      {
+        "date": "2025-07-27",
+        "count": 14
+      },
+      {
+        "date": "2025-07-28",
+        "count": 12
+      },
+      {
+        "date": "2025-07-29",
+        "count": 21
+      },
+      {
+        "date": "2025-07-30",
+        "count": 54
+      },
+      {
+        "date": "2025-07-31",
+        "count": 48
+      },
+      {
+        "date": "2025-08-01",
+        "count": 42
+      },
+      {
+        "date": "2025-08-02",
+        "count": 16
+      },
+      {
+        "date": "2025-08-03",
+        "count": 25
+      },
+      {
+        "date": "2025-08-04",
+        "count": 19
+      },
+      {
+        "date": "2025-08-05",
+        "count": 25
+      },
+      {
+        "date": "2025-08-06",
+        "count": 19
+      },
+      {
+        "date": "2025-08-07",
+        "count": 27
+      },
+      {
+        "date": "2025-08-08",
+        "count": 23
+      },
+      {
+        "date": "2025-08-09",
+        "count": 51
+      },
+      {
+        "date": "2025-08-10",
+        "count": 41
+      },
+      {
+        "date": "2025-08-11",
+        "count": 32
+      },
+      {
+        "date": "2025-08-12",
+        "count": 33
+      },
+      {
+        "date": "2025-08-13",
+        "count": 24
+      },
+      {
+        "date": "2025-08-14",
+        "count": 28
+      },
+      {
+        "date": "2025-08-15",
+        "count": 32
+      },
+      {
+        "date": "2025-08-16",
+        "count": 45
+      },
+      {
+        "date": "2025-08-17",
+        "count": 48
+      },
+      {
+        "date": "2025-08-18",
+        "count": 35
+      },
+      {
+        "date": "2025-08-19",
+        "count": 43
+      },
+      {
+        "date": "2025-08-20",
+        "count": 50
+      },
+      {
+        "date": "2025-08-21",
+        "count": 78
+      },
+      {
+        "date": "2025-08-22",
+        "count": 54
+      },
+      {
+        "date": "2025-08-23",
+        "count": 66
+      },
+      {
+        "date": "2025-08-24",
+        "count": 62
+      },
+      {
+        "date": "2025-08-25",
+        "count": 49
+      },
+      {
+        "date": "2025-08-26",
+        "count": 57
+      },
+      {
+        "date": "2025-08-27",
+        "count": 55
+      },
+      {
+        "date": "2025-08-28",
+        "count": 32
+      },
+      {
+        "date": "2025-08-29",
+        "count": 43
+      },
+      {
+        "date": "2025-08-30",
+        "count": 127
+      },
+      {
+        "date": "2025-08-31",
+        "count": 144
+      },
+      {
+        "date": "2025-09-01",
+        "count": 52
+      },
+      {
+        "date": "2025-09-02",
+        "count": 43
+      },
+      {
+        "date": "2025-09-03",
+        "count": 59
+      },
+      {
+        "date": "2025-09-04",
+        "count": 43
+      },
+      {
+        "date": "2025-09-05",
+        "count": 44
+      },
+      {
+        "date": "2025-09-06",
+        "count": 23
+      },
+      {
+        "date": "2025-09-07",
+        "count": 45
+      },
+      {
+        "date": "2025-09-08",
+        "count": 45
+      },
+      {
+        "date": "2025-09-09",
+        "count": 77
+      },
+      {
+        "date": "2025-09-10",
+        "count": 96
+      },
+      {
+        "date": "2025-09-11",
+        "count": 69
+      },
+      {
+        "date": "2025-09-12",
+        "count": 91
+      },
+      {
+        "date": "2025-09-13",
+        "count": 111
+      },
+      {
+        "date": "2025-09-14",
+        "count": 109
+      },
+      {
+        "date": "2025-09-15",
+        "count": 171
+      },
+      {
+        "date": "2025-09-16",
+        "count": 159
+      },
+      {
+        "date": "2025-09-17",
+        "count": 174
+      },
+      {
+        "date": "2025-09-18",
+        "count": 171
+      },
+      {
+        "date": "2025-09-19",
+        "count": 76
+      },
+      {
+        "date": "2025-09-20",
+        "count": 111
+      },
+      {
+        "date": "2025-09-21",
+        "count": 37
+      },
+      {
+        "date": "2025-09-22",
+        "count": 30
+      },
+      {
+        "date": "2025-09-23",
+        "count": 26
+      },
+      {
+        "date": "2025-09-24",
+        "count": 24
+      },
+      {
+        "date": "2025-09-25",
+        "count": 15
+      },
+      {
+        "date": "2025-09-26",
+        "count": 22
+      },
+      {
+        "date": "2025-09-27",
+        "count": 39
+      },
+      {
+        "date": "2025-09-28",
+        "count": 13
+      },
+      {
+        "date": "2025-09-29",
+        "count": 24
+      },
+      {
+        "date": "2025-09-30",
+        "count": 23
+      },
+      {
+        "date": "2025-10-01",
+        "count": 26
+      },
+      {
+        "date": "2025-10-02",
+        "count": 27
+      },
+      {
+        "date": "2025-10-03",
+        "count": 11
+      },
+      {
+        "date": "2025-10-04",
+        "count": 20
+      },
+      {
+        "date": "2025-10-05",
+        "count": 41
+      },
+      {
+        "date": "2025-10-06",
+        "count": 48
+      },
+      {
+        "date": "2025-10-07",
+        "count": 45
+      },
+      {
+        "date": "2025-10-08",
+        "count": 56
+      },
+      {
+        "date": "2025-10-09",
+        "count": 33
+      },
+      {
+        "date": "2025-10-10",
+        "count": 91
+      },
+      {
+        "date": "2025-10-11",
+        "count": 33
+      },
+      {
+        "date": "2025-10-12",
+        "count": 32
+      },
+      {
+        "date": "2025-10-13",
+        "count": 71
+      },
+      {
+        "date": "2025-10-14",
+        "count": 60
+      },
+      {
+        "date": "2025-10-15",
+        "count": 50
+      },
+      {
+        "date": "2025-10-16",
+        "count": 34
+      },
+      {
+        "date": "2025-10-17",
+        "count": 22
+      },
+      {
+        "date": "2025-10-18",
+        "count": 23
+      },
+      {
+        "date": "2025-10-19",
+        "count": 18
+      },
+      {
+        "date": "2025-10-20",
+        "count": 26
+      },
+      {
+        "date": "2025-10-21",
+        "count": 14
+      },
+      {
+        "date": "2025-10-22",
+        "count": 11
+      },
+      {
+        "date": "2025-10-23",
+        "count": 5
+      }
+    ],
+    "daily_signups_all": [
+      {
+        "date": "2025-07-14",
+        "count": 4
+      },
+      {
+        "date": "2025-07-15",
+        "count": 6
+      },
+      {
+        "date": "2025-07-16",
+        "count": 8
+      },
+      {
+        "date": "2025-07-17",
+        "count": 4
+      },
+      {
+        "date": "2025-07-18",
+        "count": 4
+      },
+      {
+        "date": "2025-07-19",
+        "count": 9
+      },
+      {
+        "date": "2025-07-20",
+        "count": 10
+      },
+      {
+        "date": "2025-07-21",
+        "count": 9
+      },
+      {
+        "date": "2025-07-22",
+        "count": 26
+      },
+      {
+        "date": "2025-07-23",
+        "count": 14
+      },
+      {
+        "date": "2025-07-24",
+        "count": 9
+      },
+      {
+        "date": "2025-07-25",
+        "count": 12
+      },
+      {
+        "date": "2025-07-26",
+        "count": 20
+      },
+      {
+        "date": "2025-07-27",
+        "count": 18
+      },
+      {
+        "date": "2025-07-28",
+        "count": 18
+      },
+      {
+        "date": "2025-07-29",
+        "count": 30
+      },
+      {
+        "date": "2025-07-30",
+        "count": 88
+      },
+      {
+        "date": "2025-07-31",
+        "count": 72
+      },
+      {
+        "date": "2025-08-01",
+        "count": 45
+      },
+      {
+        "date": "2025-08-02",
+        "count": 24
+      },
+      {
+        "date": "2025-08-03",
+        "count": 22
+      },
+      {
+        "date": "2025-08-04",
+        "count": 29
+      },
+      {
+        "date": "2025-08-05",
+        "count": 32
+      },
+      {
+        "date": "2025-08-06",
+        "count": 39
+      },
+      {
+        "date": "2025-08-07",
+        "count": 27
+      },
+      {
+        "date": "2025-08-08",
+        "count": 28
+      },
+      {
+        "date": "2025-08-09",
+        "count": 55
+      },
+      {
+        "date": "2025-08-10",
+        "count": 58
+      },
+      {
+        "date": "2025-08-11",
+        "count": 33
+      },
+      {
+        "date": "2025-08-12",
+        "count": 39
+      },
+      {
+        "date": "2025-08-13",
+        "count": 41
+      },
+      {
+        "date": "2025-08-14",
+        "count": 35
+      },
+      {
+        "date": "2025-08-15",
+        "count": 38
+      },
+      {
+        "date": "2025-08-16",
+        "count": 47
+      },
+      {
+        "date": "2025-08-17",
+        "count": 54
+      },
+      {
+        "date": "2025-08-18",
+        "count": 43
+      },
+      {
+        "date": "2025-08-19",
+        "count": 59
+      },
+      {
+        "date": "2025-08-20",
+        "count": 64
+      },
+      {
+        "date": "2025-08-21",
+        "count": 119
+      },
+      {
+        "date": "2025-08-22",
+        "count": 62
+      },
+      {
+        "date": "2025-08-23",
+        "count": 87
+      },
+      {
+        "date": "2025-08-24",
+        "count": 75
+      },
+      {
+        "date": "2025-08-25",
+        "count": 49
+      },
+      {
+        "date": "2025-08-26",
+        "count": 88
+      },
+      {
+        "date": "2025-08-27",
+        "count": 64
+      },
+      {
+        "date": "2025-08-28",
+        "count": 48
+      },
+      {
+        "date": "2025-08-29",
+        "count": 60
+      },
+      {
+        "date": "2025-08-30",
+        "count": 137
+      },
+      {
+        "date": "2025-08-31",
+        "count": 227
+      },
+      {
+        "date": "2025-09-01",
+        "count": 75
+      },
+      {
+        "date": "2025-09-02",
+        "count": 57
+      },
+      {
+        "date": "2025-09-03",
+        "count": 54
+      },
+      {
+        "date": "2025-09-04",
+        "count": 68
+      },
+      {
+        "date": "2025-09-05",
+        "count": 40
+      },
+      {
+        "date": "2025-09-06",
+        "count": 30
+      },
+      {
+        "date": "2025-09-07",
+        "count": 43
+      },
+      {
+        "date": "2025-09-08",
+        "count": 39
+      },
+      {
+        "date": "2025-09-09",
+        "count": 62
+      },
+      {
+        "date": "2025-09-10",
+        "count": 116
+      },
+      {
+        "date": "2025-09-11",
+        "count": 70
+      },
+      {
+        "date": "2025-09-12",
+        "count": 130
+      },
+      {
+        "date": "2025-09-13",
+        "count": 140
+      },
+      {
+        "date": "2025-09-14",
+        "count": 138
+      },
+      {
+        "date": "2025-09-15",
+        "count": 169
+      },
+      {
+        "date": "2025-09-16",
+        "count": 159
+      },
+      {
+        "date": "2025-09-17",
+        "count": 113
+      },
+      {
+        "date": "2025-09-18",
+        "count": 126
+      },
+      {
+        "date": "2025-09-19",
+        "count": 51
+      },
+      {
+        "date": "2025-09-20",
+        "count": 98
+      },
+      {
+        "date": "2025-09-21",
+        "count": 28
+      },
+      {
+        "date": "2025-09-22",
+        "count": 25
+      },
+      {
+        "date": "2025-09-23",
+        "count": 21
+      },
+      {
+        "date": "2025-09-24",
+        "count": 22
+      },
+      {
+        "date": "2025-09-25",
+        "count": 14
+      },
+      {
+        "date": "2025-09-26",
+        "count": 20
+      },
+      {
+        "date": "2025-09-27",
+        "count": 41
+      },
+      {
+        "date": "2025-09-28",
+        "count": 12
+      },
+      {
+        "date": "2025-09-29",
+        "count": 25
+      },
+      {
+        "date": "2025-09-30",
+        "count": 28
+      },
+      {
+        "date": "2025-10-01",
+        "count": 26
+      },
+      {
+        "date": "2025-10-02",
+        "count": 38
+      },
+      {
+        "date": "2025-10-03",
+        "count": 24
+      },
+      {
+        "date": "2025-10-04",
+        "count": 24
+      },
+      {
+        "date": "2025-10-05",
+        "count": 31
+      },
+      {
+        "date": "2025-10-06",
+        "count": 47
+      },
+      {
+        "date": "2025-10-07",
+        "count": 48
+      },
+      {
+        "date": "2025-10-08",
+        "count": 58
+      },
+      {
+        "date": "2025-10-09",
+        "count": 35
+      },
+      {
+        "date": "2025-10-10",
+        "count": 110
+      },
+      {
+        "date": "2025-10-11",
+        "count": 56
+      },
+      {
+        "date": "2025-10-12",
+        "count": 47
+      },
+      {
+        "date": "2025-10-13",
+        "count": 76
+      },
+      {
+        "date": "2025-10-14",
+        "count": 55
+      },
+      {
+        "date": "2025-10-15",
+        "count": 48
+      },
+      {
+        "date": "2025-10-16",
+        "count": 33
+      },
+      {
+        "date": "2025-10-17",
+        "count": 22
+      },
+      {
+        "date": "2025-10-18",
+        "count": 27
+      },
+      {
+        "date": "2025-10-19",
+        "count": 21
+      },
+      {
+        "date": "2025-10-20",
+        "count": 22
+      },
+      {
+        "date": "2025-10-21",
+        "count": 18
+      },
+      {
+        "date": "2025-10-22",
+        "count": 18
+      },
+      {
+        "date": "2025-10-23",
+        "count": 4
+      }
+    ],
+    "join_type_stats": [
+      {
+        "join_type": "번호이동",
+        "count": 2333
+      },
+      {
+        "join_type": "기기변경",
+        "count": 1611
+      },
+      {
+        "join_type": "신규가입",
+        "count": 121
+      }
+    ],
+    "carrier_stats": [
+      {
+        "carrier": "SKT",
+        "count": 2029
+      },
+      {
+        "carrier": "LG U+",
+        "count": 1081
+      },
+      {
+        "carrier": "KT",
+        "count": 955
+      }
+    ],
+    "top_products": [
+      {
+        "product_name": "갤럭시 Z 폴드 7",
+        "application_count": 736
+      },
+      {
+        "product_name": "아이폰 16 프로",
+        "application_count": 410
+      },
+      {
+        "product_name": "갤럭시 S25",
+        "application_count": 398
+      },
+      {
+        "product_name": "[사전예약] 아이폰 17",
+        "application_count": 371
+      },
+      {
+        "product_name": "갤럭시 Z 플립 7",
+        "application_count": 320
+      },
+      {
+        "product_name": "갤럭시 S25 울트라",
+        "application_count": 289
+      },
+      {
+        "product_name": "[사전예약] 아이폰 17 프로",
+        "application_count": 206
+      },
+      {
+        "product_name": "아이폰 16",
+        "application_count": 162
+      },
+      {
+        "product_name": "아이폰 16 프로 맥스",
+        "application_count": 156
+      },
+      {
+        "product_name": "갤럭시 S25 엣지",
+        "application_count": 117
+      },
+      {
+        "product_name": "갤럭시 S25 플러스",
+        "application_count": 115
+      },
+      {
+        "product_name": "아이폰 15",
+        "application_count": 88
+      },
+      {
+        "product_name": "아이폰 17",
+        "application_count": 84
+      },
+      {
+        "product_name": "[사전예약] 아이폰 17 프로 맥스",
+        "application_count": 78
+      },
+      {
+        "product_name": "아이폰 17 프로",
+        "application_count": 74
+      },
+      {
+        "product_name": "아이폰 13",
+        "application_count": 66
+      },
+      {
+        "product_name": "갤럭시 S24",
+        "application_count": 66
+      },
+      {
+        "product_name": "[사전예약] 아이폰 17 에어",
+        "application_count": 39
+      },
+      {
+        "product_name": "갤럭시 퀀텀 6",
+        "application_count": 36
+      },
+      {
+        "product_name": "갤럭시 A36",
+        "application_count": 34
+      }
+    ],
+    "top_stores": [
+      {
+        "store_name": "노피",
+        "purchase_count": 2010
+      },
+      {
+        "store_name": "신성교회",
+        "purchase_count": 304
+      },
+      {
+        "store_name": "띵동폰 동대문점",
+        "purchase_count": 109
+      },
+      {
+        "store_name": "청라1등성지  지산모바일",
+        "purchase_count": 107
+      },
+      {
+        "store_name": "유모바일",
+        "purchase_count": 71
+      },
+      {
+        "store_name": "띵동폰-마포점",
+        "purchase_count": 57
+      },
+      {
+        "store_name": "조이모바일",
+        "purchase_count": 51
+      },
+      {
+        "store_name": "광명휴대폰성지",
+        "purchase_count": 49
+      },
+      {
+        "store_name": "폰슐랭 대전지점",
+        "purchase_count": 38
+      },
+      {
+        "store_name": "해피넷",
+        "purchase_count": 31
+      },
+      {
+        "store_name": "폰신사우만점",
+        "purchase_count": 23
+      },
+      {
+        "store_name": "휴대폰아울렛 일산",
+        "purchase_count": 18
+      },
+      {
+        "store_name": "봉천119성지",
+        "purchase_count": 15
+      },
+      {
+        "store_name": "대구 고라파덕",
+        "purchase_count": 13
+      },
+      {
+        "store_name": "용인휴대폰성지",
+        "purchase_count": 11
+      },
+      {
+        "store_name": "시원모바일",
+        "purchase_count": 9
+      },
+      {
+        "store_name": "마세라",
+        "purchase_count": 8
+      },
+      {
+        "store_name": "구일점",
+        "purchase_count": 6
+      },
+      {
+        "store_name": "다람쥐",
+        "purchase_count": 6
+      },
+      {
+        "store_name": "휴대폰성지 도매폰",
+        "purchase_count": 5
+      }
+    ],
+    "total_region_stats": [
+      {
+        "region": "서울",
+        "count": 1657
+      },
+      {
+        "region": "경기",
+        "count": 1066
+      },
+      {
+        "region": "인천",
+        "count": 271
+      },
+      {
+        "region": "부산",
+        "count": 212
+      },
+      {
+        "region": "대구",
+        "count": 194
+      },
+      {
+        "region": "광주",
+        "count": 149
+      },
+      {
+        "region": "경남",
+        "count": 143
+      },
+      {
+        "region": "대전",
+        "count": 133
+      },
+      {
+        "region": "충북",
+        "count": 108
+      },
+      {
+        "region": "충남",
+        "count": 100
+      },
+      {
+        "region": "경북",
+        "count": 98
+      },
+      {
+        "region": "전북",
+        "count": 86
+      },
+      {
+        "region": "강원",
+        "count": 82
+      },
+      {
+        "region": "울산",
+        "count": 68
+      },
+      {
+        "region": "전남",
+        "count": 68
+      },
+      {
+        "region": "제주",
+        "count": 25
+      },
+      {
+        "region": "세종",
+        "count": 17
+      }
+    ],
+    "top_regions": [
+      {
+        "region": "서울 종로구",
+        "count": 368
+      },
+      {
+        "region": "경기 수원시",
+        "count": 130
+      },
+      {
+        "region": "서울 구로구",
+        "count": 126
+      },
+      {
+        "region": "서울 관악구",
+        "count": 99
+      },
+      {
+        "region": "경기 고양시",
+        "count": 88
+      },
+      {
+        "region": "서울 동대문구",
+        "count": 86
+      },
+      {
+        "region": "충북 청주시",
+        "count": 86
+      },
+      {
+        "region": "서울 마포구",
+        "count": 83
+      },
+      {
+        "region": "경기 화성시",
+        "count": 80
+      },
+      {
+        "region": "서울 송파구",
+        "count": 77
+      },
+      {
+        "region": "경기 성남시",
+        "count": 74
+      },
+      {
+        "region": "경기 용인시",
+        "count": 73
+      },
+      {
+        "region": "서울 강남구",
+        "count": 72
+      },
+      {
+        "region": "서울 양천구",
+        "count": 70
+      },
+      {
+        "region": "서울 은평구",
+        "count": 68
+      },
+      {
+        "region": "서울 동작구",
+        "count": 68
+      },
+      {
+        "region": "서울 영등포구",
+        "count": 66
+      },
+      {
+        "region": "인천 서구",
+        "count": 65
+      },
+      {
+        "region": "경기 부천시",
+        "count": 65
+      },
+      {
+        "region": "인천 연수구",
+        "count": 57
+      }
+    ],
+    "weekly_comparison": {
+      "last_7days": 96.0,
+      "prev_7days": 211.0,
+      "growth_rate": -54.502369668246445
+    },
+    "conversion_funnel": {
+      "total_users": 5091,
+      "applied_users": 2600,
+      "completed_applications": 48.0,
+      "purchased_applications": 2575,
+      "application_rate": 51.070516597917894,
+      "completion_rate": 1.0702341137123745,
+      "purchase_rate": 57.41360089186176
+    },
+    "average_pricing": {
+      "avg_month_price": 88441,
+      "avg_device_price": 32555,
+      "avg_installment": 758665,
+      "avg_rate_plan_price": 55828
+    },
+    "manufacturer_stats": [
+      {
+        "manufacturer": "삼성",
+        "count": 2217
+      },
+      {
+        "manufacturer": "애플",
+        "count": 1848
+      }
+    ],
+    "price_range_stats": [
+      {
+        "price_range": "8만원 이상",
+        "count": 2373
+      },
+      {
+        "price_range": "7-8만원",
+        "count": 720
+      },
+      {
+        "price_range": "6-7만원",
+        "count": 464
+      },
+      {
+        "price_range": "5-6만원",
+        "count": 262
+      },
+      {
+        "price_range": "5만원 이하",
+        "count": 246
+      }
+    ],
+    "hourly_pattern": [
+      {
+        "hour": 0,
+        "count": 139
+      },
+      {
+        "hour": 1,
+        "count": 112
+      },
+      {
+        "hour": 2,
+        "count": 91
+      },
+      {
+        "hour": 3,
+        "count": 90
+      },
+      {
+        "hour": 4,
+        "count": 47
+      },
+      {
+        "hour": 5,
+        "count": 55
+      },
+      {
+        "hour": 6,
+        "count": 42
+      },
+      {
+        "hour": 7,
+        "count": 81
+      },
+      {
+        "hour": 8,
+        "count": 122
+      },
+      {
+        "hour": 9,
+        "count": 155
+      },
+      {
+        "hour": 10,
+        "count": 169
+      },
+      {
+        "hour": 11,
+        "count": 223
+      },
+      {
+        "hour": 12,
+        "count": 211
+      },
+      {
+        "hour": 13,
+        "count": 210
+      },
+      {
+        "hour": 14,
+        "count": 242
+      },
+      {
+        "hour": 15,
+        "count": 293
+      },
+      {
+        "hour": 16,
+        "count": 349
+      },
+      {
+        "hour": 17,
+        "count": 243
+      },
+      {
+        "hour": 18,
+        "count": 171
+      },
+      {
+        "hour": 19,
+        "count": 240
+      },
+      {
+        "hour": 20,
+        "count": 180
+      },
+      {
+        "hour": 21,
+        "count": 189
+      },
+      {
+        "hour": 22,
+        "count": 200
+      },
+      {
+        "hour": 23,
+        "count": 211
+      }
+    ],
+    "daily_pattern": [
+      {
+        "day_of_week": 1,
+        "count": 595
+      },
+      {
+        "day_of_week": 2,
+        "count": 559
+      },
+      {
+        "day_of_week": 3,
+        "count": 575
+      },
+      {
+        "day_of_week": 4,
+        "count": 637
+      },
+      {
+        "day_of_week": 5,
+        "count": 586
+      },
+      {
+        "day_of_week": 6,
+        "count": 513
+      },
+      {
+        "day_of_week": 7,
+        "count": 600
+      }
+    ],
+    "monthly_trend": [
+      {
+        "month": "2025-07",
+        "applications": 241,
+        "completed": 2.0
+      },
+      {
+        "month": "2025-08",
+        "applications": 1425,
+        "completed": 6.0
+      },
+      {
+        "month": "2025-09",
+        "applications": 1906,
+        "completed": 36.0
+      },
+      {
+        "month": "2025-10",
+        "applications": 493,
+        "completed": 3.0
+      }
+    ],
+    "application_steps": [
+      {
+        "step_name": "신청",
+        "step_code": "0201001",
+        "count": 49
+      },
+      {
+        "step_name": "대응완료",
+        "step_code": "0201003",
+        "count": 93
+      },
+      {
+        "step_name": "개통 진행중",
+        "step_code": "0201004",
+        "count": 79
+      },
+      {
+        "step_name": "개통완료",
+        "step_code": "0201005",
+        "count": 47
+      },
+      {
+        "step_name": "반려",
+        "step_code": "0201006",
+        "count": 2783
+      },
+      {
+        "step_name": "취소",
+        "step_code": "0201007",
+        "count": 1014
+      }
+    ],
+    "event_application_steps": [
+      {
+        "step_name": "신청",
+        "step_code": "0201001",
+        "count": 4
+      },
+      {
+        "step_name": "대응완료",
+        "step_code": "0201003",
+        "count": 17
+      },
+      {
+        "step_name": "개통 진행중",
+        "step_code": "0201004",
+        "count": 137
+      },
+      {
+        "step_name": "개통완료",
+        "step_code": "0201005",
+        "count": 8
+      },
+      {
+        "step_name": "반려",
+        "step_code": "0201006",
+        "count": 204
+      },
+      {
+        "step_name": "취소",
+        "step_code": "0201007",
+        "count": 50
+      }
+    ],
+    "monthly_signups": [
+      {
+        "month": "2025-07",
+        "count": 361
+      },
+      {
+        "month": "2025-08",
+        "count": 1828
+      },
+      {
+        "month": "2025-09",
+        "count": 2014
+      },
+      {
+        "month": "2025-10",
+        "count": 888
+      }
+    ],
+    "store_monthly_performance": [
+      {
+        "month": "2025-10",
+        "store_name": "노피",
+        "purchase_count": 138
+      },
+      {
+        "month": "2025-10",
+        "store_name": "띵동폰 동대문점",
+        "purchase_count": 80
+      },
+      {
+        "month": "2025-10",
+        "store_name": "띵동폰-마포점",
+        "purchase_count": 57
+      },
+      {
+        "month": "2025-10",
+        "store_name": "광명휴대폰성지",
+        "purchase_count": 46
+      },
+      {
+        "month": "2025-10",
+        "store_name": "조이모바일",
+        "purchase_count": 36
+      },
+      {
+        "month": "2025-10",
+        "store_name": "폰신사우만점",
+        "purchase_count": 18
+      },
+      {
+        "month": "2025-10",
+        "store_name": "폰슐랭 대전지점",
+        "purchase_count": 15
+      },
+      {
+        "month": "2025-10",
+        "store_name": "대구 고라파덕",
+        "purchase_count": 13
+      },
+      {
+        "month": "2025-10",
+        "store_name": "휴대폰아울렛 일산",
+        "purchase_count": 12
+      },
+      {
+        "month": "2025-10",
+        "store_name": "마세라",
+        "purchase_count": 8
+      },
+      {
+        "month": "2025-10",
+        "store_name": "봉천119성지",
+        "purchase_count": 7
+      },
+      {
+        "month": "2025-10",
+        "store_name": "신성교회",
+        "purchase_count": 7
+      },
+      {
+        "month": "2025-10",
+        "store_name": "청라1등성지  지산모바일",
+        "purchase_count": 5
+      },
+      {
+        "month": "2025-10",
+        "store_name": "해피넷",
+        "purchase_count": 5
+      },
+      {
+        "month": "2025-10",
+        "store_name": "휴대폰성지 신정네거리역점",
+        "purchase_count": 5
+      },
+      {
+        "month": "2025-10",
+        "store_name": "시원모바일",
+        "purchase_count": 4
+      },
+      {
+        "month": "2025-10",
+        "store_name": "구일점",
+        "purchase_count": 3
+      },
+      {
+        "month": "2025-10",
+        "store_name": "(안산)휴대폰성지_성공모바일",
+        "purchase_count": 2
+      },
+      {
+        "month": "2025-10",
+        "store_name": "휴대폰성지 에스엠티",
+        "purchase_count": 2
+      },
+      {
+        "month": "2025-10",
+        "store_name": "띵동폰 은평점",
+        "purchase_count": 2
+      },
+      {
+        "month": "2025-10",
+        "store_name": "다람쥐",
+        "purchase_count": 2
+      },
+      {
+        "month": "2025-10",
+        "store_name": "용인휴대폰성지",
+        "purchase_count": 1
+      },
+      {
+        "month": "2025-10",
+        "store_name": "부개휴대폰할인매장",
+        "purchase_count": 1
+      },
+      {
+        "month": "2025-10",
+        "store_name": "폰샵",
+        "purchase_count": 1
+      },
+      {
+        "month": "2025-10",
+        "store_name": "알뜰폰스토어 가능점",
+        "purchase_count": 1
+      },
+      {
+        "month": "2025-09",
+        "store_name": "노피",
+        "purchase_count": 1103
+      },
+      {
+        "month": "2025-09",
+        "store_name": "신성교회",
+        "purchase_count": 250
+      },
+      {
+        "month": "2025-09",
+        "store_name": "띵동폰 동대문점",
+        "purchase_count": 29
+      },
+      {
+        "month": "2025-09",
+        "store_name": "폰슐랭 대전지점",
+        "purchase_count": 20
+      },
+      {
+        "month": "2025-09",
+        "store_name": "조이모바일",
+        "purchase_count": 15
+      },
+      {
+        "month": "2025-09",
+        "store_name": "해피넷",
+        "purchase_count": 12
+      },
+      {
+        "month": "2025-09",
+        "store_name": "용인휴대폰성지",
+        "purchase_count": 10
+      },
+      {
+        "month": "2025-09",
+        "store_name": "청라1등성지  지산모바일",
+        "purchase_count": 9
+      },
+      {
+        "month": "2025-09",
+        "store_name": "봉천119성지",
+        "purchase_count": 8
+      },
+      {
+        "month": "2025-09",
+        "store_name": "휴대폰아울렛 일산",
+        "purchase_count": 6
+      },
+      {
+        "month": "2025-09",
+        "store_name": "폰신사우만점",
+        "purchase_count": 5
+      },
+      {
+        "month": "2025-09",
+        "store_name": "시원모바일",
+        "purchase_count": 5
+      },
+      {
+        "month": "2025-09",
+        "store_name": "휴대폰성지 도매폰",
+        "purchase_count": 5
+      },
+      {
+        "month": "2025-09",
+        "store_name": "다람쥐",
+        "purchase_count": 4
+      },
+      {
+        "month": "2025-09",
+        "store_name": "구일점",
+        "purchase_count": 3
+      },
+      {
+        "month": "2025-09",
+        "store_name": "광명휴대폰성지",
+        "purchase_count": 3
+      },
+      {
+        "month": "2025-09",
+        "store_name": "휴대폰성지 에스엠티",
+        "purchase_count": 2
+      },
+      {
+        "month": "2025-09",
+        "store_name": "폰샵",
+        "purchase_count": 2
+      },
+      {
+        "month": "2025-09",
+        "store_name": "알뜰폰스토어 가능점",
+        "purchase_count": 1
+      },
+      {
+        "month": "2025-09",
+        "store_name": "말폰 동작점",
+        "purchase_count": 1
+      },
+      {
+        "month": "2025-09",
+        "store_name": "부개휴대폰할인매장",
+        "purchase_count": 1
+      },
+      {
+        "month": "2025-08",
+        "store_name": "노피",
+        "purchase_count": 654
+      },
+      {
+        "month": "2025-08",
+        "store_name": "청라1등성지  지산모바일",
+        "purchase_count": 65
+      },
+      {
+        "month": "2025-08",
+        "store_name": "유모바일",
+        "purchase_count": 56
+      },
+      {
+        "month": "2025-08",
+        "store_name": "신성교회",
+        "purchase_count": 42
+      },
+      {
+        "month": "2025-08",
+        "store_name": "해피넷",
+        "purchase_count": 14
+      },
+      {
+        "month": "2025-08",
+        "store_name": "폰슐랭 대전지점",
+        "purchase_count": 3
+      },
+      {
+        "month": "2025-08",
+        "store_name": "휴대폰성지",
+        "purchase_count": 1
+      },
+      {
+        "month": "2025-08",
+        "store_name": "몽이텔레콤",
+        "purchase_count": 1
+      },
+      {
+        "month": "2025-07",
+        "store_name": "노피",
+        "purchase_count": 115
+      },
+      {
+        "month": "2025-07",
+        "store_name": "청라1등성지  지산모바일",
+        "purchase_count": 28
+      },
+      {
+        "month": "2025-07",
+        "store_name": "유모바일",
+        "purchase_count": 15
+      },
+      {
+        "month": "2025-07",
+        "store_name": "신성교회",
+        "purchase_count": 5
+      }
+    ],
+    "product_pricing": [
+      {
+        "product_name": "갤럭시 Z 폴드 7",
+        "application_count": 736,
+        "avg_month_price": 125731.7024,
+        "avg_device_price": 66028.1101,
+        "avg_installment": 1584674.091
+      },
+      {
+        "product_name": "아이폰 16 프로",
+        "application_count": 410,
+        "avg_month_price": 80607.4317,
+        "avg_device_price": 22411.9049,
+        "avg_installment": 537886.7878
+      },
+      {
+        "product_name": "갤럭시 S25",
+        "application_count": 398,
+        "avg_month_price": 67032.8317,
+        "avg_device_price": 10502.0754,
+        "avg_installment": 250541.5
+      },
+      {
+        "product_name": "[사전예약] 아이폰 17",
+        "application_count": 371,
+        "avg_month_price": 86215.2264,
+        "avg_device_price": 37337.1402,
+        "avg_installment": 795387.2426
+      },
+      {
+        "product_name": "갤럭시 Z 플립 7",
+        "application_count": 320,
+        "avg_month_price": 81563.625,
+        "avg_device_price": 21426.7563,
+        "avg_installment": 514240.6719
+      },
+      {
+        "product_name": "갤럭시 S25 울트라",
+        "application_count": 289,
+        "avg_month_price": 89917.2941,
+        "avg_device_price": 31476.1557,
+        "avg_installment": 755428.0208
+      },
+      {
+        "product_name": "[사전예약] 아이폰 17 프로",
+        "application_count": 206,
+        "avg_month_price": 101229.466,
+        "avg_device_price": 53699.7913,
+        "avg_installment": 1113359.9029
+      },
+      {
+        "product_name": "아이폰 16",
+        "application_count": 162,
+        "avg_month_price": 65571.1481,
+        "avg_device_price": 6647.7654,
+        "avg_installment": 159545.8333
+      },
+      {
+        "product_name": "아이폰 16 프로 맥스",
+        "application_count": 156,
+        "avg_month_price": 93274.4038,
+        "avg_device_price": 34271.3526,
+        "avg_installment": 822511.9872
+      },
+      {
+        "product_name": "갤럭시 S25 엣지",
+        "application_count": 117,
+        "avg_month_price": 78691.1538,
+        "avg_device_price": 21743.8462,
+        "avg_installment": 497105.0342
+      },
+      {
+        "product_name": "갤럭시 S25 플러스",
+        "application_count": 115,
+        "avg_month_price": 82581.6783,
+        "avg_device_price": 25541.1739,
+        "avg_installment": 612987.7913
+      },
+      {
+        "product_name": "아이폰 15",
+        "application_count": 88,
+        "avg_month_price": 57837.5114,
+        "avg_device_price": -1390.5114,
+        "avg_installment": -33369.5682
+      },
+      {
+        "product_name": "아이폰 17",
+        "application_count": 84,
+        "avg_month_price": 84975.9048,
+        "avg_device_price": 41911.5952,
+        "avg_installment": 1005878.8929
+      },
+      {
+        "product_name": "[사전예약] 아이폰 17 프로 맥스",
+        "application_count": 78,
+        "avg_month_price": 109135.3077,
+        "avg_device_price": 64815.4359,
+        "avg_installment": 1406082.0513
+      },
+      {
+        "product_name": "아이폰 17 프로",
+        "application_count": 74,
+        "avg_month_price": 103679.0135,
+        "avg_device_price": 52560.6351,
+        "avg_installment": 1261455.6757
+      },
+      {
+        "product_name": "아이폰 13",
+        "application_count": 66,
+        "avg_month_price": 42896.6818,
+        "avg_device_price": -2694.803,
+        "avg_installment": -65583.9545
+      },
+      {
+        "product_name": "갤럭시 S24",
+        "application_count": 66,
+        "avg_month_price": 56431.1212,
+        "avg_device_price": 348.0758,
+        "avg_installment": 8354.6061
+      },
+      {
+        "product_name": "[사전예약] 아이폰 17 에어",
+        "application_count": 39,
+        "avg_month_price": 92927.1282,
+        "avg_device_price": 40404.3333,
+        "avg_installment": 897136.8718
+      },
+      {
+        "product_name": "갤럭시 퀀텀 6",
+        "application_count": 36,
+        "avg_month_price": 43846.3333,
+        "avg_device_price": -3718.0833,
+        "avg_installment": -93577.3333
+      },
+      {
+        "product_name": "갤럭시 A36",
+        "application_count": 34,
+        "avg_month_price": 43573.2059,
+        "avg_device_price": -7110.1176,
+        "avg_installment": -170642.0
+      },
+      {
+        "product_name": "아이폰 15 프로",
+        "application_count": 30,
+        "avg_month_price": 73383.8333,
+        "avg_device_price": 18803.2667,
+        "avg_installment": 451279.8667
+      },
+      {
+        "product_name": "아이폰 16e",
+        "application_count": 22,
+        "avg_month_price": 53275.1364,
+        "avg_device_price": -176.9545,
+        "avg_installment": -4247.0909
+      },
+      {
+        "product_name": "아이폰 17 에어",
+        "application_count": 20,
+        "avg_month_price": 93822.95,
+        "avg_device_price": 37969.85,
+        "avg_installment": 911277.55
+      },
+      {
+        "product_name": "갤럭시 A16",
+        "application_count": 19,
+        "avg_month_price": 39609.2105,
+        "avg_device_price": -5374.1053,
+        "avg_installment": -128983.4211
+      },
+      {
+        "product_name": "갤럭시 S23 울트라",
+        "application_count": 15,
+        "avg_month_price": 80020.9333,
+        "avg_device_price": 30242.0667,
+        "avg_installment": 725810.6667
+      },
+      {
+        "product_name": "아이폰 16 플러스",
+        "application_count": 14,
+        "avg_month_price": 79188.9286,
+        "avg_device_price": 27460.1429,
+        "avg_installment": 659046.8571
+      },
+      {
+        "product_name": "갤럭시 와이드8",
+        "application_count": 11,
+        "avg_month_price": 41759.8182,
+        "avg_device_price": -8995.5455,
+        "avg_installment": -215894.9091
+      },
+      {
+        "product_name": "아이폰 17 프로 맥스",
+        "application_count": 10,
+        "avg_month_price": 127969.8,
+        "avg_device_price": 76332.8,
+        "avg_installment": 1831989.6
+      },
+      {
+        "product_name": "아이폰 15 플러스",
+        "application_count": 9,
+        "avg_month_price": 62046.3333,
+        "avg_device_price": -2091.3333,
+        "avg_installment": -50192.8889
+      },
+      {
+        "product_name": "아이폰 15 프로 맥스",
+        "application_count": 9,
+        "avg_month_price": 95616.2222,
+        "avg_device_price": 31591.2222,
+        "avg_installment": 758189.7778
+      }
+    ],
+    "rate_plan_stats": [
+      {
+        "rate_plan_name": "109,000원/월",
+        "count": 1282,
+        "avg_price": 58449.8144
+      },
+      {
+        "rate_plan_name": "115,000원/월",
+        "count": 876,
+        "avg_price": 62639.5902
+      },
+      {
+        "rate_plan_name": "110,000원/월",
+        "count": 473,
+        "avg_price": 63459.4186
+      },
+      {
+        "rate_plan_name": "37,000원/월",
+        "count": 230,
+        "avg_price": 15802.4609
+      },
+      {
+        "rate_plan_name": "69,000원/월",
+        "count": 203,
+        "avg_price": 49777.2906
+      },
+      {
+        "rate_plan_name": "100,000원/월",
+        "count": 200,
+        "avg_price": 59728.3
+      },
+      {
+        "rate_plan_name": "89,000원/월",
+        "count": 194,
+        "avg_price": 47923.5
+      },
+      {
+        "rate_plan_name": "90,000원/월",
+        "count": 147,
+        "avg_price": 62666.619
+      },
+      {
+        "rate_plan_name": "61,000원/월",
+        "count": 118,
+        "avg_price": 50211.3644
+      },
+      {
+        "rate_plan_name": "43,000원/월",
+        "count": 116,
+        "avg_price": 40713.2241
+      },
+      {
+        "rate_plan_name": "95,000원/월",
+        "count": 102,
+        "avg_price": 63900.6765
+      },
+      {
+        "rate_plan_name": "79,000원/월",
+        "count": 60,
+        "avg_price": 56750.6167
+      },
+      {
+        "rate_plan_name": "105,000원/월",
+        "count": 49,
+        "avg_price": 63237.4082
+      },
+      {
+        "rate_plan_name": "33,000원/월",
+        "count": 15,
+        "avg_price": 14112.4
+      }
+    ],
+    "carrier_monthly_trend": [
+      {
+        "month": "2025-07",
+        "carrier": "SKT",
+        "count": 107
+      },
+      {
+        "month": "2025-07",
+        "carrier": "KT",
+        "count": 100
+      },
+      {
+        "month": "2025-07",
+        "carrier": "LG U+",
+        "count": 34
+      },
+      {
+        "month": "2025-08",
+        "carrier": "SKT",
+        "count": 669
+      },
+      {
+        "month": "2025-08",
+        "carrier": "LG U+",
+        "count": 410
+      },
+      {
+        "month": "2025-08",
+        "carrier": "KT",
+        "count": 346
+      },
+      {
+        "month": "2025-09",
+        "carrier": "SKT",
+        "count": 986
+      },
+      {
+        "month": "2025-09",
+        "carrier": "LG U+",
+        "count": 544
+      },
+      {
+        "month": "2025-09",
+        "carrier": "KT",
+        "count": 376
+      },
+      {
+        "month": "2025-10",
+        "carrier": "SKT",
+        "count": 267
+      },
+      {
+        "month": "2025-10",
+        "carrier": "KT",
+        "count": 133
+      },
+      {
+        "month": "2025-10",
+        "carrier": "LG U+",
+        "count": 93
+      }
+    ],
+    "join_type_monthly_trend": [
+      {
+        "month": "2025-07",
+        "join_type": "번호이동",
+        "count": 103
+      },
+      {
+        "month": "2025-07",
+        "join_type": "기기변경",
+        "count": 98
+      },
+      {
+        "month": "2025-07",
+        "join_type": "신규가입",
+        "count": 40
+      },
+      {
+        "month": "2025-08",
+        "join_type": "번호이동",
+        "count": 805
+      },
+      {
+        "month": "2025-08",
+        "join_type": "기기변경",
+        "count": 544
+      },
+      {
+        "month": "2025-08",
+        "join_type": "신규가입",
+        "count": 76
+      },
+      {
+        "month": "2025-09",
+        "join_type": "번호이동",
+        "count": 1171
+      },
+      {
+        "month": "2025-09",
+        "join_type": "기기변경",
+        "count": 730
+      },
+      {
+        "month": "2025-09",
+        "join_type": "신규가입",
+        "count": 5
+      },
+      {
+        "month": "2025-10",
+        "join_type": "번호이동",
+        "count": 254
+      },
+      {
+        "month": "2025-10",
+        "join_type": "기기변경",
+        "count": 239
+      }
+    ],
+    "quote_application_funnel": {
+      "total": 4065,
+      "step1_신청시작": 4065.0,
+      "step2_상담중": 4016.0,
+      "step3_서류제출": 4016.0,
+      "step4_심사중": 3923.0,
+      "step5_개통완료": 47.0,
+      "step6_취소": 2783.0,
+      "step7_반려": 1014.0
+    },
+    "event_application_funnel": {
+      "total": 420,
+      "step1_신청시작": 420.0,
+      "step2_상담중": 416.0,
+      "step3_서류제출": 416.0,
+      "step4_심사중": 399.0,
+      "step5_개통완료": 8.0,
+      "step6_취소": 204.0,
+      "step7_반려": 50.0
+    },
+    "quote_funnel_rates": {
+      "total": 4065,
+      "신청시작": 100.0,
+      "상담중_rate": 98.79458794587946,
+      "서류제출_rate": 98.79458794587946,
+      "심사중_rate": 96.50676506765068,
+      "개통완료_rate": 1.1562115621156213,
+      "취소_rate": 68.46248462484625,
+      "반려_rate": 24.944649446494466
+    },
+    "event_funnel_rates": {
+      "total": 420,
+      "신청시작": 100.0,
+      "상담중_rate": 99.04761904761905,
+      "서류제출_rate": 99.04761904761905,
+      "심사중_rate": 95.0,
+      "개통완료_rate": 1.9047619047619047,
+      "취소_rate": 48.57142857142857,
+      "반려_rate": 11.904761904761905
+    },
+    "user_activity": {
+      "total_users": 5091,
+      "weekly_signups": 165,
+      "monthly_signups": 1071,
+      "daily_signups": 22
+    },
+    "avg_completion_days": 17.9362,
+    "device_stats": [
+      {
+        "device_name": "갤럭시 Z 폴드 7",
+        "count": 736,
+        "avg_device_price": 66028.1101,
+        "avg_installment": 1584674.091
+      },
+      {
+        "device_name": "아이폰 16 프로",
+        "count": 410,
+        "avg_device_price": 22411.9049,
+        "avg_installment": 537886.7878
+      },
+      {
+        "device_name": "갤럭시 S25",
+        "count": 398,
+        "avg_device_price": 10502.0754,
+        "avg_installment": 250541.5
+      },
+      {
+        "device_name": "[사전예약] 아이폰 17",
+        "count": 371,
+        "avg_device_price": 37337.1402,
+        "avg_installment": 795387.2426
+      },
+      {
+        "device_name": "갤럭시 Z 플립 7",
+        "count": 320,
+        "avg_device_price": 21426.7563,
+        "avg_installment": 514240.6719
+      },
+      {
+        "device_name": "갤럭시 S25 울트라",
+        "count": 289,
+        "avg_device_price": 31476.1557,
+        "avg_installment": 755428.0208
+      },
+      {
+        "device_name": "[사전예약] 아이폰 17 프로",
+        "count": 206,
+        "avg_device_price": 53699.7913,
+        "avg_installment": 1113359.9029
+      },
+      {
+        "device_name": "아이폰 16",
+        "count": 162,
+        "avg_device_price": 6647.7654,
+        "avg_installment": 159545.8333
+      },
+      {
+        "device_name": "아이폰 16 프로 맥스",
+        "count": 156,
+        "avg_device_price": 34271.3526,
+        "avg_installment": 822511.9872
+      },
+      {
+        "device_name": "갤럭시 S25 엣지",
+        "count": 117,
+        "avg_device_price": 21743.8462,
+        "avg_installment": 497105.0342
+      },
+      {
+        "device_name": "갤럭시 S25 플러스",
+        "count": 115,
+        "avg_device_price": 25541.1739,
+        "avg_installment": 612987.7913
+      },
+      {
+        "device_name": "아이폰 15",
+        "count": 88,
+        "avg_device_price": -1390.5114,
+        "avg_installment": -33369.5682
+      },
+      {
+        "device_name": "아이폰 17",
+        "count": 84,
+        "avg_device_price": 41911.5952,
+        "avg_installment": 1005878.8929
+      },
+      {
+        "device_name": "[사전예약] 아이폰 17 프로 맥스",
+        "count": 78,
+        "avg_device_price": 64815.4359,
+        "avg_installment": 1406082.0513
+      },
+      {
+        "device_name": "아이폰 17 프로",
+        "count": 74,
+        "avg_device_price": 52560.6351,
+        "avg_installment": 1261455.6757
+      },
+      {
+        "device_name": "갤럭시 S24",
+        "count": 66,
+        "avg_device_price": 348.0758,
+        "avg_installment": 8354.6061
+      },
+      {
+        "device_name": "아이폰 13",
+        "count": 66,
+        "avg_device_price": -2694.803,
+        "avg_installment": -65583.9545
+      },
+      {
+        "device_name": "[사전예약] 아이폰 17 에어",
+        "count": 39,
+        "avg_device_price": 40404.3333,
+        "avg_installment": 897136.8718
+      },
+      {
+        "device_name": "갤럭시 퀀텀 6",
+        "count": 36,
+        "avg_device_price": -3718.0833,
+        "avg_installment": -93577.3333
+      },
+      {
+        "device_name": "갤럭시 A36",
+        "count": 34,
+        "avg_device_price": -7110.1176,
+        "avg_installment": -170642.0
+      },
+      {
+        "device_name": "아이폰 15 프로",
+        "count": 30,
+        "avg_device_price": 18803.2667,
+        "avg_installment": 451279.8667
+      },
+      {
+        "device_name": "아이폰 16e",
+        "count": 22,
+        "avg_device_price": -176.9545,
+        "avg_installment": -4247.0909
+      },
+      {
+        "device_name": "아이폰 17 에어",
+        "count": 20,
+        "avg_device_price": 37969.85,
+        "avg_installment": 911277.55
+      },
+      {
+        "device_name": "갤럭시 A16",
+        "count": 19,
+        "avg_device_price": -5374.1053,
+        "avg_installment": -128983.4211
+      },
+      {
+        "device_name": "갤럭시 S23 울트라",
+        "count": 15,
+        "avg_device_price": 30242.0667,
+        "avg_installment": 725810.6667
+      },
+      {
+        "device_name": "아이폰 16 플러스",
+        "count": 14,
+        "avg_device_price": 27460.1429,
+        "avg_installment": 659046.8571
+      },
+      {
+        "device_name": "갤럭시 와이드8",
+        "count": 11,
+        "avg_device_price": -8995.5455,
+        "avg_installment": -215894.9091
+      },
+      {
+        "device_name": "아이폰 17 프로 맥스",
+        "count": 10,
+        "avg_device_price": 76332.8,
+        "avg_installment": 1831989.6
+      },
+      {
+        "device_name": "아이폰 15 플러스",
+        "count": 9,
+        "avg_device_price": -2091.3333,
+        "avg_installment": -50192.8889
+      },
+      {
+        "device_name": "아이폰 15 프로 맥스",
+        "count": 9,
+        "avg_device_price": 31591.2222,
+        "avg_installment": 758189.7778
+      }
+    ]
+  }
+}

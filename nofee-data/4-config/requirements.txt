@@ -1,0 +1,22 @@
+# Google Analytics Data API
+google-analytics-data==0.18.8
+
+# Google Auth
+google-auth==2.29.0
+google-auth-oauthlib==1.2.0
+google-auth-httplib2==0.2.0
+
+# Data Processing
+pandas==2.2.1
+numpy==1.26.4
+
+# Visualization (Optional - 필요시 설치)
+matplotlib==3.8.3
+seaborn==0.13.2
+plotly==5.20.0
+
+# Environment Variables
+python-dotenv==1.0.1
+
+# Excel Export (Optional)
+openpyxl==3.1.2

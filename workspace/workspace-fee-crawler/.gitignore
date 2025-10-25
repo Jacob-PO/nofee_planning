@@ -1,0 +1,94 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.manifest
+*.spec
+
+# Virtual Environment
+venv/
+env/
+ENV/
+.venv/
+.env
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Project specific - New Structure
+/price_crawler/logs/*.log
+/price_crawler/checkpoints/*.pkl
+/image_ocr/logs/*.log
+/image_ocr/output/archive/
+/data_merge/logs/*.log
+/data_merge/output/archive/
+/price_summary/logs/*.log
+/price_summary/output/archive/
+/temp/
+/backups/
+*.pkl
+*.pickle
+
+# Credentials
+credentials/
+*credentials*
+google_api_key.json
+.env
+.env.local
+
+# Test coverage
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# pyenv
+.python-version
+
+# Excel temporary files
+~$*.xlsx
+~$*.xls
+
+# Backup files
+*.bak
+*.backup
+backup/
+
+# HTML test files
+*.html
+!templates/*.html

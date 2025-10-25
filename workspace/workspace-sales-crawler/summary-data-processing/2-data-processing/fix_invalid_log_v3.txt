@@ -1,0 +1,391 @@
+인증 파일 경로: /Users/jacob_athometrip/Desktop/dev/nofee/workspace_nofee/config/google_api_key.json
+
+스프레드시트 연결 성공
+
+invalid_regions 워크시트 데이터 읽는 중...
+총 데이터 행 수: 69
+
+총 69개 데이터의 주소를 크롤링합니다...
+==================================================
+
+[1/69] 매장: 다다렌탈샵
+  기존 지역명: 가정용 가구
+  링크: https://www.daangn.com/kr/local-profile/%EB%8B%A4%EB%8B%A4%EB%A0%8C%ED%83%88%EC%83%B5-vxj1sxxmzcnm/
+  ❌ 주소를 찾을 수 없습니다
+
+[2/69] 매장: 최군통신
+  기존 지역명: 검색 최군
+  링크: https://www.daangn.com/kr/local-profile/%EC%B5%9C%EA%B5%B0%ED%86%B5%EC%8B%A0-36pf7w93vch4/
+  추출된 주소: 경기도 구리시 수택동 375-37
+  ✓ 새 지역명: 경기 구리시
+
+[3/69] 매장: 해결연구소
+  기존 지역명: 검색 해결연구
+  링크: https://www.daangn.com/kr/local-profile/%ED%95%B4%EA%B2%B0%EC%97%B0%EA%B5%AC%EC%86%8C-5a37m7iof19a/
+  ❌ 주소를 찾을 수 없습니다
+
+[4/69] 매장: 휴대폰싸군
+  기존 지역명: 검색 휴대폰싸군
+  링크: https://www.daangn.com/kr/local-profile/%ED%9C%B4%EB%8C%80%ED%8F%B0%EC%8B%B8%EA%B5%B0-3xcpibkusipa/
+  추출된 주소: 경기도 의정부시 오목로225번길 147 (민락동)
+  ✓ 새 지역명: 경기 의정부시
+
+[5/69] 매장: 와우폰
+  기존 지역명: 공 동구
+  링크: https://www.daangn.com/kr/local-profile/%EC%99%80%EC%9A%B0%ED%8F%B0-4uqu6c5erhuz/
+  ❌ 주소를 찾을 수 없습니다
+
+[6/69] 매장: 플러스텔레콤
+  기존 지역명: 금액이 안나오더라구
+  링크: https://www.daangn.com/kr/local-profile/%ED%94%8C%EB%9F%AC%EC%8A%A4%ED%85%94%EB%A0%88%EC%BD%A4-vzb894yfhs1e/
+  ❌ 주소를 찾을 수 없습니다
+
+[7/69] 매장: KT대야점
+  기존 지역명: 기본 업무이구
+  링크: https://www.daangn.com/kr/local-profile/kt%EB%8C%80%EC%95%BC%EC%A0%90-kzpbwn7r6sib/
+  추출된 주소: 경기도 시흥시 비둘기공원1길 25 (대야동)
+  ✓ 새 지역명: 경기 시흥시
+
+[8/69] 매장: 고래통신
+  기존 지역명: 너무 좋더라구
+  링크: https://www.daangn.com/kr/local-profile/%EA%B3%A0%EB%9E%98%ED%86%B5%EC%8B%A0-gupphbfyz1bp/
+  ❌ 주소를 찾을 수 없습니다
+
+[9/69] 매장: MK커뮤니케이션
+  기존 지역명: 다음엔 친구
+  링크: https://www.daangn.com/kr/local-profile/mk%EC%BB%A4%EB%AE%A4%EB%8B%88%EC%BC%80%EC%9D%B4%EC%85%98-2j7zj5xgj4bb/
+  ❌ 주소를 찾을 수 없습니다
+
+[10/69] 매장: 귀엽찡
+  기존 지역명: 담엔 친구
+  링크: https://www.daangn.com/kr/local-profile/%EA%B7%80%EC%97%BD%EC%B0%A1-un3o2ay1sd25/
+  ❌ 주소를 찾을 수 없습니다
+
+[11/69] 매장: 핸드폰여기가그집
+  기존 지역명: 당하시는 선약실구
+  링크: https://www.daangn.com/kr/local-profile/%ED%95%B8%EB%93%9C%ED%8F%B0%EC%97%AC%EA%B8%B0%EA%B0%80%EA%B7%B8%EC%A7%91-joke1ysm1enn/
+  추출된 주소: 경기도 부천시 부일로 223 (상동)
+  ✓ 새 지역명: 경기 부천시
+
+[12/69] 매장: LG유플러스 화원점
+  기존 지역명: 대구 달성군
+  링크: https://www.daangn.com/kr/local-profile/lg%EC%9C%A0%ED%94%8C%EB%9F%AC%EC%8A%A4-%ED%99%94%EC%9B%90%EC%A0%90-d3h2td3nefyp/
+  ❌ 주소를 찾을 수 없습니다
+
+[13/69] 매장: 엔젤통신 죽곡점
+  기존 지역명: 대구 달성군
+  링크: https://www.daangn.com/kr/local-profile/%EC%97%94%EC%A0%A4%ED%86%B5%EC%8B%A0-%EC%A3%BD%EA%B3%A1%EC%A0%90-yayzk64qaf1m/
+  추출된 주소: 대구광역시 달성군 다사읍 대실역북로1길 6 (죽곡휴먼시아1단지)
+  ✓ 새 지역명: 대구 달성군
+
+[14/69] 매장: 휴대폰파는총각 다사점
+  기존 지역명: 대구 달성군
+  링크: https://www.daangn.com/kr/local-profile/%ED%9C%B4%EB%8C%80%ED%8F%B0%ED%8C%8C%EB%8A%94%EC%B4%9D%EA%B0%81-%EB%8B%A4%EC%82%AC%EC%A0%90-hhbdnpw4cn3a/
+  추출된 주소: 대구광역시 달성군 다사읍 죽곡1길 7-8
+  ✓ 새 지역명: 대구 달성군
+
+[15/69] 매장: 헌옷이돈
+  기존 지역명: 더 올라가구
+  링크: https://www.daangn.com/kr/local-profile/%ED%97%8C%EC%98%B7%EC%9D%B4%EB%8F%88-c12r9q8jmqwz/
+  ❌ 주소를 찾을 수 없습니다
+
+[16/69] 매장: 블루
+  기존 지역명: 더보기 당군
+  링크: https://www.daangn.com/kr/local-profile/%EB%B8%94%EB%A3%A8-kz72a2r5a4ce/
+  ❌ 주소를 찾을 수 없습니다
+
+[17/69] 매장: 인천쭝컴퓨터수리
+  기존 지역명: 데이터 복구
+  링크: https://www.daangn.com/kr/local-profile/%EC%9D%B8%EC%B2%9C%EC%AD%9D%EC%BB%B4%ED%93%A8%ED%84%B0%EC%88%98%EB%A6%AC-kyo536zgg3qk/
+  ❌ 주소를 찾을 수 없습니다
+
+[18/69] 매장: 평택꽁폰
+  기존 지역명: 데이터 복구
+  링크: https://www.daangn.com/kr/local-profile/%ED%8F%89%ED%83%9D%EA%BD%81%ED%8F%B0-bt1jpg86y4sr/
+  ❌ 주소를 찾을 수 없습니다
+
+[19/69] 매장: 휴대폰도매센터 모아폰풍무점
+  기존 지역명: 되돌려주는 풍무지구
+  링크: https://www.daangn.com/kr/local-profile/%ED%9C%B4%EB%8C%80%ED%8F%B0%EB%8F%84%EB%A7%A4%EC%84%BC%ED%84%B0-%EB%AA%A8%EC%95%84%ED%8F%B0%ED%92%8D%EB%AC%B4%EC%A0%90-ohjadjhon4h7/
+  추출된 주소: 경기도 김포시 풍무로146번길 26 (풍무동)
+  ✓ 새 지역명: 경기 김포시
+
+[20/69] 매장: 스파이더
+  기존 지역명: 된다면 누구
+  링크: https://www.daangn.com/kr/local-profile/%EC%8A%A4%ED%8C%8C%EC%9D%B4%EB%8D%94-cro8mdf7qpab/
+  ❌ 주소를 찾을 수 없습니다
+
+[21/69] 매장: 옆커폰 인천지사
+  기존 지역명: 든든한 지원군
+  링크: https://www.daangn.com/kr/local-profile/%EC%98%86%EC%BB%A4%ED%8F%B0-%EC%9D%B8%EC%B2%9C%EC%A7%80%EC%82%AC-fwhhr2tp56zy/
+  ❌ 주소를 찾을 수 없습니다
+
+[22/69] 매장: 청년폰
+  기존 지역명: 등 대실지구
+  링크: https://www.daangn.com/kr/local-profile/%EC%B2%AD%EB%85%84%ED%8F%B0-b92zu8hunhq4/
+  ❌ 주소를 찾을 수 없습니다
+
+[23/69] 매장: 성공통신
+  기존 지역명: 맛난거사 먹구
+  링크: https://www.daangn.com/kr/local-profile/%EC%84%B1%EA%B3%B5%ED%86%B5%EC%8B%A0-1izbbxjti5ni/
+  추출된 주소: 경상남도 양산시 웅상대로 1264 (삼호동)
+  ✓ 새 지역명: 경남 양산시
+
+[24/69] 매장: SK텔레콤 삼보대리점 세교행복점
+  기존 지역명: 매장 친구
+  링크: https://www.daangn.com/kr/local-profile/sk%ED%85%94%EB%A0%88%EC%BD%A4-%EC%82%BC%EB%B3%B4%EB%8C%80%EB%A6%AC%EC%A0%90-%EC%84%B8%EA%B5%90%ED%96%89%EB%B3%B5%EC%A0%90-17k9513uj953/
+  추출된 주소: 경기도 평택시 경기대로 564 (세교동)
+  ✓ 새 지역명: 경기 평택시
+
+[25/69] 매장: 폰팩토리오산점
+  기존 지역명: 미스 터구
+  링크: https://www.daangn.com/kr/local-profile/%ED%8F%B0%ED%8C%A9%ED%86%A0%EB%A6%AC%EC%98%A4%EC%82%B0%EC%A0%90-22hjmgjg6sjt/
+  ❌ 주소를 찾을 수 없습니다
+
+[26/69] 매장: 인터넷 렌탈 전문
+  기존 지역명: 바로가기 반구
+  링크: https://www.daangn.com/kr/local-profile/%EC%9D%B8%ED%84%B0%EB%84%B7-%EB%A0%8C%ED%83%88-%EC%A0%84%EB%AC%B8-qnddp8r2273d/
+  ❌ 주소를 찾을 수 없습니다
+
+[27/69] 매장: NC신구로
+  기존 지역명: 번 출구
+  링크: https://www.daangn.com/kr/local-profile/nc%EC%8B%A0%EA%B5%AC%EB%A1%9C-dsuwihjd7yw5/
+  ❌ 주소를 찾을 수 없습니다
+
+[28/69] 매장: 에스컴퍼니
+  기존 지역명: 번 출구
+  링크: https://www.daangn.com/kr/local-profile/%EC%97%90%EC%8A%A4%EC%BB%B4%ED%8D%BC%EB%8B%88-zhp28fxhyeie/
+  ❌ 주소를 찾을 수 없습니다
+
+[29/69] 매장: 에스컴퍼니
+  기존 지역명: 번 출구
+  링크: https://www.daangn.com/kr/local-profile/%EC%97%90%EC%8A%A4%EC%BB%B4%ED%8D%BC%EB%8B%88-zhp28fxhyeie/
+  ❌ 주소를 찾을 수 없습니다
+
+[30/69] 매장: 퍼스트이동통신
+  기존 지역명: 번 출구
+  링크: https://www.daangn.com/kr/local-profile/%ED%8D%BC%EC%8A%A4%ED%8A%B8%EC%9D%B4%EB%8F%99%ED%86%B5%EC%8B%A0-vaojdwqhwn25/
+  ❌ 주소를 찾을 수 없습니다
+
+[31/69] 매장: 부산 중고폰 도소매 업체
+  기존 지역명: 부산 영도구 동삼제3동
+  링크: https://www.daangn.com/kr/local-profile/%EB%B6%80%EC%82%B0-%EC%A4%91%EA%B3%A0%ED%8F%B0-%EB%8F%84%EC%86%8C%EB%A7%A4-%EC%97%85%EC%B2%B4-rcrgbjsmqzxr/
+  ❌ 주소를 찾을 수 없습니다
+
+[32/69] 매장: LGU 예화 부산은행점
+  기존 지역명: 부산광역시 기장군 기장읍 읍내로 97
+  링크: https://www.daangn.com/kr/local-profile/lgu-%EC%98%88%ED%99%94-%EB%B6%80%EC%82%B0%EC%9D%80%ED%96%89%EC%A0%90-7osh1o1d43my/
+  ❌ 주소를 찾을 수 없습니다
+
+[33/69] 매장: 휴대폰할인매장
+  기존 지역명: 부산광역시 기장군 기장읍 차성로242번길 9
+  링크: https://www.daangn.com/kr/local-profile/%ED%9C%B4%EB%8C%80%ED%8F%B0%ED%95%A0%EC%9D%B8%EB%A7%A4%EC%9E%A5-uudezbaumx74/
+  ❌ 주소를 찾을 수 없습니다
+
+[34/69] 매장: KT
+  기존 지역명: 부산광역시 기장군 기장읍 차성로288번길 32
+  링크: https://www.daangn.com/kr/local-profile/kt-d228hg2aj77o/
+  ❌ 주소를 찾을 수 없습니다
+
+[35/69] 매장: 휴대폰성지 슈퍼맨텔레콤 일광점
+  기존 지역명: 부산광역시 기장군 일광읍 해빛4로 1 (이지더원1차 오션포레)
+  링크: https://www.daangn.com/kr/local-profile/%ED%9C%B4%EB%8C%80%ED%8F%B0%EC%84%B1%EC%A7%80-%EC%8A%88%ED%8D%BC%EB%A7%A8%ED%85%94%EB%A0%88%EC%BD%A4-%EC%9D%BC%EA%B4%91%EC%A0%90-dcqeasuapzjm/
+  ❌ 주소를 찾을 수 없습니다
+
+[36/69] 매장: 패밀리폰마트
+  기존 지역명: 부산광역시 기장군 정관읍 정관로 595
+  링크: https://www.daangn.com/kr/local-profile/%ED%8C%A8%EB%B0%80%EB%A6%AC%ED%8F%B0%EB%A7%88%ED%8A%B8-k8btekrn1noh/
+  ❌ 주소를 찾을 수 없습니다
+
+[37/69] 매장: 휴대폰 구매대행 및 상담
+  기존 지역명: 사기나 호구
+  링크: https://www.daangn.com/kr/local-profile/%ED%9C%B4%EB%8C%80%ED%8F%B0-%EA%B5%AC%EB%A7%A4%EB%8C%80%ED%96%89-%EB%B0%8F-%EC%83%81%EB%8B%B4-z91dsz4nk1o7/
+  ❌ 주소를 찾을 수 없습니다
+
+[38/69] 매장: 엘케이모바일
+  기존 지역명: 산본시장 입구
+  링크: https://www.daangn.com/kr/local-profile/%EC%97%98%EC%BC%80%EC%9D%B4%EB%AA%A8%EB%B0%94%EC%9D%BC-jvqzh9ys4pgw/
+  추출된 주소: 경기도 군포시 금산로 96 (산본동)
+  ✓ 새 지역명: 경기 군포시
+
+[39/69] 매장: 퓨리모바일
+  기존 지역명: 성지특 가구
+  링크: https://www.daangn.com/kr/local-profile/%ED%93%A8%EB%A6%AC%EB%AA%A8%EB%B0%94%EC%9D%BC-p9vwkghshem1/
+  ❌ 주소를 찾을 수 없습니다
+
+[40/69] 매장: 해외출시폰할인매장
+  기존 지역명: 써비스도 있다구
+  링크: https://www.daangn.com/kr/local-profile/%ED%95%B4%EC%99%B8%EC%B6%9C%EC%8B%9C%ED%8F%B0%ED%95%A0%EC%9D%B8%EB%A7%A4%EC%9E%A5-m85rodamxdgt/
+  ❌ 주소를 찾을 수 없습니다
+
+[41/69] 매장: 제이 텔레콤
+  기존 지역명: 아이폰싼가격에 잘구
+  링크: https://www.daangn.com/kr/local-profile/%EC%A0%9C%EC%9D%B4-%ED%85%94%EB%A0%88%EC%BD%A4-qdi7zxjyysnu/
+  ❌ 주소를 찾을 수 없습니다
+
+[42/69] 매장: 제이엠원
+  기존 지역명: 여 러군
+  링크: https://www.daangn.com/kr/local-profile/%EC%A0%9C%EC%9D%B4%EC%97%A0%EC%9B%90-pk8fexx6ejo8/
+  추출된 주소: 경기도 평택시 고덕갈평5길 32 (고덕동)
+  ✓ 새 지역명: 경기 평택시
+
+[43/69] 매장: 새한모바일배곧점
+  기존 지역명: 연락주셔서 잘구
+  링크: https://www.daangn.com/kr/local-profile/%EC%83%88%ED%95%9C%EB%AA%A8%EB%B0%94%EC%9D%BC%EB%B0%B0%EA%B3%A7%EC%A0%90-rx21jvxsp851/
+  ❌ 주소를 찾을 수 없습니다
+
+[44/69] 매장: 휴대폰성지
+  기존 지역명: 울산광역시 울주군 범서읍 대리로 81
+  링크: https://www.daangn.com/kr/local-profile/%ED%9C%B4%EB%8C%80%ED%8F%B0%EC%84%B1%EC%A7%80-7x2xobeghsf7/
+  ❌ 주소를 찾을 수 없습니다
+
+[45/69] 매장: 휴폰성지 틈사이휴대폰 언양점
+  기존 지역명: 울산광역시 울주군 언양읍 웃방천1길 28
+  링크: https://www.daangn.com/kr/local-profile/%ED%9C%B4%ED%8F%B0%EC%84%B1%EC%A7%80-%ED%8B%88%EC%82%AC%EC%9D%B4%ED%9C%B4%EB%8C%80%ED%8F%B0-%EC%96%B8%EC%96%91%EC%A0%90-7amuug5dh7xk/
+  ❌ 주소를 찾을 수 없습니다
+
+[46/69] 매장: SK텔레콤언양대리점
+  기존 지역명: 울산광역시 울주군 언양읍 헌양길 100
+  링크: https://www.daangn.com/kr/local-profile/sk%ED%85%94%EB%A0%88%EC%BD%A4%EC%96%B8%EC%96%91%EB%8C%80%EB%A6%AC%EC%A0%90-ba67rvihaj78/
+  ❌ 주소를 찾을 수 없습니다
+
+[47/69] 매장: 온산컴퓨터앤폰
+  기존 지역명: 울산광역시 울주군 온산읍 영남2길 2
+  링크: https://www.daangn.com/kr/local-profile/%EC%98%A8%EC%82%B0%EC%BB%B4%ED%93%A8%ED%84%B0%EC%95%A4%ED%8F%B0-z9muor4trc7q/
+  ❌ 주소를 찾을 수 없습니다
+
+[48/69] 매장: 알뜰휴대폰
+  기존 지역명: 울산광역시 울주군 온산읍 온덕1길 25
+  링크: https://www.daangn.com/kr/local-profile/%EC%95%8C%EB%9C%B0%ED%9C%B4%EB%8C%80%ED%8F%B0-o26patv9ohyc/
+  ❌ 주소를 찾을 수 없습니다
+
+[49/69] 매장: 펭귄폰 본점
+  기존 지역명: 울산광역시 울주군 온양읍 보곡3길 40 (울산온양 서희스타힐스)
+  링크: https://www.daangn.com/kr/local-profile/%ED%8E%AD%EA%B7%84%ED%8F%B0-%EB%B3%B8%EC%A0%90-zzr6dy8dd4k6/
+  ❌ 주소를 찾을 수 없습니다
+
+[50/69] 매장: SKT 금호대리점 남창점
+  기존 지역명: 울산광역시 울주군 온양읍 온양로 95
+  링크: https://www.daangn.com/kr/local-profile/skt-%EA%B8%88%ED%98%B8%EB%8C%80%EB%A6%AC%EC%A0%90-%EB%82%A8%EC%B0%BD%EC%A0%90-chp54wtfface/
+  추출된 주소: 울산광역시 울주군 온양읍 온양로 95
+  ✓ 새 지역명: 울산 울주군
+
+[51/69] 매장: LGU+
+  기존 지역명: 월 강동구
+  링크: https://www.daangn.com/kr/local-profile/lgu-734dfjho64yf/
+  ❌ 주소를 찾을 수 없습니다
+
+[52/69] 매장: 엄지컴퓨터
+  기존 지역명: 작성 개인구
+  링크: https://www.daangn.com/kr/local-profile/%EC%97%84%EC%A7%80%EC%BB%B4%ED%93%A8%ED%84%B0-8m9cnfyw5tyb/
+  ❌ 주소를 찾을 수 없습니다
+
+[53/69] 매장: 휴대폰1번가
+  기존 지역명: 재방문 의사있구
+  링크: https://www.daangn.com/kr/local-profile/%ED%9C%B4%EB%8C%80%ED%8F%B01%EB%B2%88%EA%B0%80-1znq49yu5ts9/
+  추출된 주소: 경기도 평택시 팽성읍 안정쇼핑로 36
+  ✓ 새 지역명: 경기 평택시
+
+[54/69] 매장: 휴대폰성지 S모바일
+  기존 지역명: 저렴하게 잘구
+  링크: https://www.daangn.com/kr/local-profile/%ED%9C%B4%EB%8C%80%ED%8F%B0%EC%84%B1%EC%A7%80-s%EB%AA%A8%EB%B0%94%EC%9D%BC-bvmvonz4oc7j/
+  추출된 주소: 충청남도 아산시 음봉면 음봉로 515-42
+  ✓ 새 지역명: 충남 아산시
+
+[55/69] 매장: 휴대폰클라쓰 평택시청점
+  기존 지역명: 저렴하게 잘구
+  링크: https://www.daangn.com/kr/local-profile/%ED%9C%B4%EB%8C%80%ED%8F%B0%ED%81%B4%EB%9D%BC%EC%93%B0-%ED%8F%89%ED%83%9D%EC%8B%9C%EC%B2%AD%EC%A0%90-yrws9b7how8b/
+  추출된 주소: 경기도 평택시 평택5로20번길 39 (합정동)
+  ✓ 새 지역명: 경기 평택시
+
+[56/69] 매장: 사계절폰 대야미점
+  기존 지역명: 젊은 친구
+  링크: https://www.daangn.com/kr/local-profile/%EC%82%AC%EA%B3%84%EC%A0%88%ED%8F%B0-%EB%8C%80%EC%95%BC%EB%AF%B8%EC%A0%90-i3hfy9sachgn/
+  추출된 주소: 경기도 군포시 대야1로 7 (대야미동)
+  ✓ 새 지역명: 경기 군포시
+
+[57/69] 매장: 국대폰 신곡점
+  기존 지역명: 정직하게 장사하시는군
+  링크: https://www.daangn.com/kr/local-profile/%EA%B5%AD%EB%8C%80%ED%8F%B0-%EC%8B%A0%EA%B3%A1%EC%A0%90-gg9f5rt7o8ao/
+  ❌ 주소를 찾을 수 없습니다
+
+[58/69] 매장: 비투텔레콤
+  기존 지역명: 제일 괜찮더라구
+  링크: https://www.daangn.com/kr/local-profile/%EB%B9%84%ED%88%AC%ED%85%94%EB%A0%88%EC%BD%A4-jm9pvzupq21q/
+  ❌ 주소를 찾을 수 없습니다
+
+[59/69] 매장: 중직한사람들 부산지점
+  기존 지역명: 중고폰매 입구
+  링크: https://www.daangn.com/kr/local-profile/%EC%A4%91%EC%A7%81%ED%95%9C%EC%82%AC%EB%9E%8C%EB%93%A4-%EB%B6%80%EC%82%B0%EC%A7%80%EC%A0%90-m7ir4bij34ow/
+  ❌ 주소를 찾을 수 없습니다
+
+[60/69] 매장: 중직한사람들 강서구점
+  기존 지역명: 중직한사람들 강서구
+  링크: https://www.daangn.com/kr/local-profile/%EC%A4%91%EC%A7%81%ED%95%9C%EC%82%AC%EB%9E%8C%EB%93%A4-%EA%B0%95%EC%84%9C%EA%B5%AC%EC%A0%90-aruhwxcsszjr/
+  ❌ 주소를 찾을 수 없습니다
+
+[61/69] 매장: 내일은 영업왕
+  기존 지역명: 챙기고 핸드폰구
+  링크: https://www.daangn.com/kr/local-profile/%EB%82%B4%EC%9D%BC%EC%9D%80-%EC%98%81%EC%97%85%EC%99%95-4s6j5mud5kc6/
+  ❌ 주소를 찾을 수 없습니다
+
+[62/69] 매장: LG유플러스 신장동 중앙시장점
+  기존 지역명: 필름도 갈아주시구
+  링크: https://www.daangn.com/kr/local-profile/lg%EC%9C%A0%ED%94%8C%EB%9F%AC%EC%8A%A4-%EC%8B%A0%EC%9E%A5%EB%8F%99-%EC%A4%91%EC%95%99%EC%8B%9C%EC%9E%A5%EC%A0%90-brnz7gb1pv2j/
+  ❌ 주소를 찾을 수 없습니다
+
+[63/69] 매장: 내일은영업왕
+  기존 지역명: 필요한거 이용하구
+  링크: https://www.daangn.com/kr/local-profile/%EB%82%B4%EC%9D%BC%EC%9D%80%EC%98%81%EC%97%85%EC%99%95-jn63bb6cxnxh/
+  ❌ 주소를 찾을 수 없습니다
+
+[64/69] 매장: 신화정보통신
+  기존 지역명: 한 번구
+  링크: https://www.daangn.com/kr/local-profile/%EC%8B%A0%ED%99%94%EC%A0%95%EB%B3%B4%ED%86%B5%EC%8B%A0-ddessnxe9udz/
+  ❌ 주소를 찾을 수 없습니다
+
+[65/69] 매장: 오산중고폰
+  기존 지역명: 항상 건강하시구
+  링크: https://www.daangn.com/kr/local-profile/%EC%98%A4%EC%82%B0%EC%A4%91%EA%B3%A0%ED%8F%B0-c26uv3fmdhok/
+  ❌ 주소를 찾을 수 없습니다
+
+[66/69] 매장: 오산중고폰
+  기존 지역명: 항상 건강하시구
+  링크: https://www.daangn.com/kr/local-profile/%EC%98%A4%EC%82%B0%EC%A4%91%EA%B3%A0%ED%8F%B0-c26uv3fmdhok/
+  ❌ 주소를 찾을 수 없습니다
+
+[67/69] 매장: 주식회사 오션모바일
+  기존 지역명: 핸드 폰구
+  링크: https://www.daangn.com/kr/local-profile/%EC%A3%BC%EC%8B%9D%ED%9A%8C%EC%82%AC-%EC%98%A4%EC%85%98%EB%AA%A8%EB%B0%94%EC%9D%BC-5oj1xwmzu5k5/
+  추출된 주소: 경기도 시흥시 평안상가4길 24 (정왕동)
+  ✓ 새 지역명: 경기 시흥시
+
+[68/69] 매장: 폰지유 평택역점
+  기존 지역명: 핸드폰 잘구
+  링크: https://www.daangn.com/kr/local-profile/%ED%8F%B0%EC%A7%80%EC%9C%A0-%ED%8F%89%ED%83%9D%EC%97%AD%EC%A0%90-cz8ytkyzh8ie/
+  추출된 주소: 경기도 평택시 평택1로 2(평택동)
+  ✓ 새 지역명: 경기 평택시
+
+[69/69] 매장: 월드마트
+  기존 지역명: 혜택중고 핸드폰구
+  링크: https://www.daangn.com/kr/local-profile/%EC%9B%94%EB%93%9C%EB%A7%88%ED%8A%B8-6t96e65tgaht/
+  ❌ 주소를 찾을 수 없습니다
+
+==================================================
+
+크롤링 완료!
+✓ 성공: 18개
+❌ 실패: 51개
+
+invalid_regions 워크시트를 51개 행으로 업데이트 중...
+업데이트 완료!
+
+수정된 18개 데이터를 summary 시트 최하단에 추가 중...
+추가 완료! (행 1497부터)
+
+전체 summary 시트의 지역명_매장명 업데이트 및 재정렬 중...
+summary 시트 업데이트 완료!
+
+전체 작업 완료!
+- summary 시트: 1513개 행
+- invalid_regions 시트: 51개 행

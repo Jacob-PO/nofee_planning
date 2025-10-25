@@ -1,0 +1,159 @@
+{
+  "generated_at": "2025-10-23T10:45:00+09:00",
+  "project": {
+    "name": "NOFEE",
+    "description": "휴대폰 최저가 비교 및 견적 플랫폼",
+    "start_date": "2025-05-18",
+    "duration_days": 158
+  },
+  "repositories": {
+    "nofee-front": {
+      "name": "nofee-front",
+      "type": "Next.js Frontend",
+      "description": "사용자 프론트엔드 애플리케이션",
+      "tech_stack": ["Next.js", "TypeScript", "React", "Tailwind CSS"],
+      "codebase": {
+        "total_files": 168,
+        "total_lines": 15309,
+        "file_types": {
+          "typescript": "*.ts, *.tsx",
+          "javascript": "*.js, *.jsx"
+        }
+      },
+      "git_stats": {
+        "total_commits": 367,
+        "first_commit_date": "2025-05-18T21:34:45+09:00",
+        "contributors": [
+          "Cursor Agent",
+          "ahbin-cho",
+          "ahbin_cho",
+          "choahbin",
+          "hbsong"
+        ],
+        "unique_contributors": 5
+      },
+      "github": {
+        "repo_url": "https://github.com/nofee-workspace/nofee-front",
+        "branches": ["main", "development", "hotfix-*", "feat-*"]
+      }
+    },
+    "nofee-springboot": {
+      "name": "nofee-springboot",
+      "type": "Spring Boot Backend",
+      "description": "백엔드 API 서버",
+      "tech_stack": ["Spring Boot", "Java", "JPA", "MySQL"],
+      "codebase": {
+        "total_files": 338,
+        "total_lines": 35732,
+        "file_types": {
+          "java": "*.java"
+        }
+      },
+      "git_stats": {
+        "total_commits": 197,
+        "first_commit_date": "2025-06-02T20:15:47+09:00",
+        "contributors": [
+          "ahbin-cho",
+          "choahbin",
+          "hbsong",
+          "hobin.song"
+        ],
+        "unique_contributors": 4
+      },
+      "github": {
+        "repo_url": "https://github.com/nofee-workspace/nofee-springboot",
+        "branches": ["main", "dev"]
+      }
+    },
+    "nofee-agency-front": {
+      "name": "nofee-agency-front",
+      "type": "Next.js Frontend",
+      "description": "에이전시(판매점) 관리 프론트엔드",
+      "status": "active",
+      "recent_features": [
+        "인증 및 대시보드 레이아웃 추가",
+        "사이드바 및 대시보드 레이아웃 개선"
+      ]
+    }
+  },
+  "overall_statistics": {
+    "total_repositories": 3,
+    "total_commits": 564,
+    "total_files": 506,
+    "total_lines_of_code": 51041,
+    "total_contributors": 6,
+    "development_days": 158,
+    "average_commits_per_day": 3.57
+  },
+  "key_features": {
+    "user_features": [
+      "휴대폰 가격 비교",
+      "지역별 매장 검색",
+      "견적 신청",
+      "시세표 조회",
+      "매장 리뷰 및 평점",
+      "이벤트 및 프로모션"
+    ],
+    "agency_features": [
+      "매장 관리",
+      "견적 관리",
+      "시세표 업로드",
+      "고객 상담",
+      "대시보드 분석"
+    ],
+    "automation": [
+      "견적신청 알림톡 시스템 (10분 룰 v2.0)",
+      "AI 시세표 자동 관리",
+      "자동 고객 유입 시스템"
+    ]
+  },
+  "performance_data": {
+    "user_metrics": {
+      "total_visitors": "50,000+",
+      "total_quote_requests": "20,000+",
+      "average_rating": "4.9",
+      "registered_stores": "100+"
+    },
+    "business_metrics": {
+      "db_collection_rate": "90%",
+      "cost_reduction": "50%",
+      "conversion_optimization": "9x improvement"
+    }
+  },
+  "milestones": {
+    "completed": [
+      {
+        "date": "2025-05-18",
+        "title": "프로젝트 시작",
+        "description": "nofee-front 첫 커밋"
+      },
+      {
+        "date": "2025-06-02",
+        "title": "백엔드 개발 시작",
+        "description": "nofee-springboot 첫 커밋"
+      },
+      {
+        "date": "2025-10-10",
+        "title": "견적신청 10분 룰 v1.0 출시",
+        "description": "자동 취소 시스템 도입"
+      },
+      {
+        "date": "2025-10-15",
+        "title": "견적신청 10분 룰 v2.0 출시",
+        "description": "전환율 최적화 - DB 수집률 9배 향상"
+      },
+      {
+        "date": "2025-10-13",
+        "title": "동네성지 랜딩페이지 기획",
+        "description": "매장 입점 및 사용자 유입 최적화"
+      }
+    ],
+    "in_progress": [
+      {
+        "title": "에이전시 시세표 기능",
+        "status": "미완",
+        "priority": "high"
+      }
+    ]
+  }
+}

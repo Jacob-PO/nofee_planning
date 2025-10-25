@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>노피 메인 배너 1000x1000</title>
+    <link href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/variable/woff2/SUIT-Variable.css" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'SUIT Variable', -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', sans-serif;
+            background: #e5e5e5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 0;
+            margin: 0;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        .banner {
+            width: 1000px;
+            height: 1000px;
+            background: #fff;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* 현대적인 배경 그래픽 요소들 */
+        .banner::before {
+            content: '';
+            position: absolute;
+            width: 500px;
+            height: 500px;
+            background: #131FA0;
+            opacity: 0.03;
+            border-radius: 50%;
+            top: -180px;
+            right: -120px;
+            z-index: 1;
+        }
+
+        .banner::after {
+            content: '';
+            position: absolute;
+            width: 400px;
+            height: 400px;
+            background: #131FA0;
+            opacity: 0.02;
+            border-radius: 50%;
+            bottom: -120px;
+            left: -100px;
+            z-index: 1;
+        }
+
+        /* 추가 그래픽 레이어 - 라인 패턴 */
+        .bg-pattern {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            opacity: 0.4;
+        }
+
+        .bg-line {
+            position: absolute;
+            background: linear-gradient(90deg, transparent 0%, rgba(19, 31, 160, 0.08) 50%, transparent 100%);
+            height: 2px;
+        }
+
+        .bg-line:nth-child(1) {
+            top: 15%;
+            left: -10%;
+            width: 60%;
+            transform: rotate(-15deg);
+        }
+
+        .bg-line:nth-child(2) {
+            top: 70%;
+            right: -10%;
+            width: 50%;
+            transform: rotate(20deg);
+        }
+
+        /* 도형 요소 */
+        .bg-shape {
+            position: absolute;
+            border: 3px solid rgba(19, 31, 160, 0.06);
+            border-radius: 30px;
+            z-index: 1;
+        }
+
+        .bg-shape:nth-child(3) {
+            width: 250px;
+            height: 250px;
+            top: 10%;
+            right: 5%;
+            transform: rotate(25deg);
+        }
+
+        .bg-shape:nth-child(4) {
+            width: 200px;
+            height: 200px;
+            bottom: 15%;
+            left: 8%;
+            transform: rotate(-20deg);
+        }
+
+        .banner-content {
+            text-align: center;
+            position: relative;
+            z-index: 10;
+            padding: 0 40px;
+        }
+
+        .label {
+            display: inline-block;
+            background: rgba(19, 31, 160, 0.1);
+            padding: 14px 28px;
+            border-radius: 50px;
+            font-size: 26px;
+            font-weight: 700;
+            color: #131FA0;
+            letter-spacing: -0.02em;
+            margin-bottom: 50px;
+        }
+
+        h1 {
+            font-size: 130px;
+            line-height: 1.1;
+            letter-spacing: -0.04em;
+            font-weight: 900;
+            color: #000;
+            margin-bottom: 40px;
+        }
+
+        h1 .highlight {
+            color: #131FA0;
+        }
+
+        .sub-text {
+            font-size: 40px;
+            font-weight: 700;
+            color: #6b7280;
+            line-height: 1.4;
+            margin-bottom: 50px;
+        }
+
+        .stats {
+            display: flex;
+            justify-content: center;
+            gap: 70px;
+            margin-top: 60px;
+        }
+
+        .stat-item {
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 72px;
+            font-weight: 900;
+            color: #131FA0;
+            line-height: 1;
+            margin-bottom: 12px;
+        }
+
+        .stat-label {
+            font-size: 22px;
+            font-weight: 700;
+            color: #6b7280;
+        }
+    </style>
+</head>
+<body>
+    <div class="banner">
+        <div class="bg-pattern">
+            <div class="bg-line"></div>
+            <div class="bg-line"></div>
+            <div class="bg-shape"></div>
+            <div class="bg-shape"></div>
+        </div>
+        <div class="banner-content">
+            <div class="label">11월 1일 공식 출시</div>
+            <h1>
+                시간 낭비 없이<br>
+                <span class="highlight">진짜 견적만</span>
+            </h1>
+            <div class="sub-text">
+                월 70건 진짜 구매 고객
+            </div>
+            <div class="stats">
+                <div class="stat-item">
+                    <div class="stat-number">10%</div>
+                    <div class="stat-label">전환율</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">5만명</div>
+                    <div class="stat-label">검증 완료</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

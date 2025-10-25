@@ -1,0 +1,28 @@
+{
+  "name": "nofee-confluence-integration",
+  "version": "1.0.0",
+  "description": "Confluence REST API integration for NoFee workspace",
+  "type": "module",
+  "scripts": {
+    "create-page": "node scripts/create-page.js",
+    "update-page": "node scripts/update-page.js",
+    "update-homepage": "node scripts/update-homepage.js",
+    "get-page": "node scripts/get-page.js",
+    "list-pages": "node scripts/list-pages.js",
+    "sync-api-docs": "node scripts/sync-api-docs.js",
+    "sync-to-notion": "node scripts/sync-to-notion.js",
+    "create-financial-db": "node scripts/create-financial-database.js",
+    "restructure-notion": "node scripts/restructure-notion-pages.js",
+    "process-financial": "node scripts/process-financial-data-v3.js",
+    "analyze-raw-data": "node scripts/analyze-raw-data.js"
+  },
+  "dependencies": {
+    "axios": "^1.6.0",
+    "dotenv": "^16.3.1",
+    "@notionhq/client": "^2.2.15",
+    "googleapis": "^128.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0"
+  }
+}

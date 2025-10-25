@@ -1,0 +1,3065 @@
+{
+  "collectedAt": "2025-10-23T01:52:46.524Z",
+  "period": {
+    "start": "2020-01-01",
+    "end": "2025-10-23"
+  },
+  "data": {
+    "dailyOverview": [
+      {
+        "date": "20250831",
+        "activeUsers": 1111,
+        "newUsers": 962,
+        "sessions": 1325,
+        "sessionsPerUser": 1.1926192619261926,
+        "pageViews": 7452,
+        "avgSessionDuration": 134.5098489871698,
+        "bounceRate": 0.010566037735849057
+      },
+      {
+        "date": "20250914",
+        "activeUsers": 890,
+        "newUsers": 776,
+        "sessions": 994,
+        "sessionsPerUser": 1.1168539325842697,
+        "pageViews": 4931,
+        "avgSessionDuration": 118.4899945331992,
+        "bounceRate": 0.006036217303822937
+      },
+      {
+        "date": "20250912",
+        "activeUsers": 884,
+        "newUsers": 729,
+        "sessions": 1042,
+        "sessionsPerUser": 1.1787330316742082,
+        "pageViews": 5018,
+        "avgSessionDuration": 155.38919388867563,
+        "bounceRate": 0.015355086372360844
+      },
+      {
+        "date": "20250830",
+        "activeUsers": 853,
+        "newUsers": 727,
+        "sessions": 1017,
+        "sessionsPerUser": 1.1922626025791325,
+        "pageViews": 5767,
+        "avgSessionDuration": 196.56949399901671,
+        "bounceRate": 0.01671583087512291
+      },
+      {
+        "date": "20250913",
+        "activeUsers": 852,
+        "newUsers": 721,
+        "sessions": 1012,
+        "sessionsPerUser": 1.187793427230047,
+        "pageViews": 5434,
+        "avgSessionDuration": 241.74480381225297,
+        "bounceRate": 0.014822134387351778
+      },
+      {
+        "date": "20250915",
+        "activeUsers": 846,
+        "newUsers": 683,
+        "sessions": 1057,
+        "sessionsPerUser": 1.2494089834515367,
+        "pageViews": 6474,
+        "avgSessionDuration": 189.9445172204352,
+        "bounceRate": 0.01892147587511826
+      },
+      {
+        "date": "20250821",
+        "activeUsers": 843,
+        "newUsers": 713,
+        "sessions": 1012,
+        "sessionsPerUser": 1.2004744958481612,
+        "pageViews": 4730,
+        "avgSessionDuration": 165.8311886610672,
+        "bounceRate": 0.022727272727272728
+      },
+      {
+        "date": "20250731",
+        "activeUsers": 833,
+        "newUsers": 703,
+        "sessions": 982,
+        "sessionsPerUser": 1.1788715486194479,
+        "pageViews": 4683,
+        "avgSessionDuration": 131.8991339358452,
+        "bounceRate": 0.01120162932790224
+      },
+      {
+        "date": "20250730",
+        "activeUsers": 810,
+        "newUsers": 718,
+        "sessions": 915,
+        "sessionsPerUser": 1.1296296296296295,
+        "pageViews": 4563,
+        "avgSessionDuration": 142.02966650273223,
+        "bounceRate": 0.006557377049180328
+      },
+      {
+        "date": "20250917",
+        "activeUsers": 806,
+        "newUsers": 601,
+        "sessions": 1005,
+        "sessionsPerUser": 1.2468982630272953,
+        "pageViews": 6338,
+        "avgSessionDuration": 256.7690333552239,
+        "bounceRate": 0.023880597014925373
+      },
+      {
+        "date": "20250910",
+        "activeUsers": 726,
+        "newUsers": 574,
+        "sessions": 949,
+        "sessionsPerUser": 1.3071625344352618,
+        "pageViews": 5314,
+        "avgSessionDuration": 224.2035381390938,
+        "bounceRate": 0.02107481559536354
+      },
+      {
+        "date": "20250916",
+        "activeUsers": 700,
+        "newUsers": 563,
+        "sessions": 888,
+        "sessionsPerUser": 1.2685714285714285,
+        "pageViews": 6080,
+        "avgSessionDuration": 296.9498073243243,
+        "bounceRate": 0.018018018018018018
+      },
+      {
+        "date": "20250801",
+        "activeUsers": 679,
+        "newUsers": 532,
+        "sessions": 781,
+        "sessionsPerUser": 1.150220913107511,
+        "pageViews": 3654,
+        "avgSessionDuration": 128.69703782458387,
+        "bounceRate": 0.006402048655569782
+      },
+      {
+        "date": "20250918",
+        "activeUsers": 649,
+        "newUsers": 463,
+        "sessions": 867,
+        "sessionsPerUser": 1.3359013867488443,
+        "pageViews": 5836,
+        "avgSessionDuration": 293.4749615017301,
+        "bounceRate": 0.02422145328719723
+      },
+      {
+        "date": "20250927",
+        "activeUsers": 639,
+        "newUsers": 444,
+        "sessions": 795,
+        "sessionsPerUser": 1.244131455399061,
+        "pageViews": 4648,
+        "avgSessionDuration": 171.3370473056604,
+        "bounceRate": 0.03522012578616352
+      },
+      {
+        "date": "20250901",
+        "activeUsers": 635,
+        "newUsers": 418,
+        "sessions": 829,
+        "sessionsPerUser": 1.3055118110236221,
+        "pageViews": 4117,
+        "avgSessionDuration": 206.11413960193005,
+        "bounceRate": 0.007237635705669481
+      },
+      {
+        "date": "20250817",
+        "activeUsers": 616,
+        "newUsers": 468,
+        "sessions": 758,
+        "sessionsPerUser": 1.2305194805194806,
+        "pageViews": 2904,
+        "avgSessionDuration": 93.83006511081793,
+        "bounceRate": 0.005277044854881266
+      },
+      {
+        "date": "20250722",
+        "activeUsers": 599,
+        "newUsers": 532,
+        "sessions": 661,
+        "sessionsPerUser": 1.1035058430717863,
+        "pageViews": 2542,
+        "avgSessionDuration": 105.07093273222391,
+        "bounceRate": 0.009077155824508321
+      },
+      {
+        "date": "20250810",
+        "activeUsers": 595,
+        "newUsers": 463,
+        "sessions": 725,
+        "sessionsPerUser": 1.218487394957983,
+        "pageViews": 2986,
+        "avgSessionDuration": 93.96558624413794,
+        "bounceRate": 0.005517241379310344
+      },
+      {
+        "date": "20250804",
+        "activeUsers": 589,
+        "newUsers": 428,
+        "sessions": 718,
+        "sessionsPerUser": 1.2190152801358234,
+        "pageViews": 3134,
+        "avgSessionDuration": 139.25032424512534,
+        "bounceRate": 0.008356545961002786
+      },
+      {
+        "date": "20250806",
+        "activeUsers": 545,
+        "newUsers": 406,
+        "sessions": 653,
+        "sessionsPerUser": 1.198165137614679,
+        "pageViews": 3086,
+        "avgSessionDuration": 142.32391232924962,
+        "bounceRate": 0.01225114854517611
+      },
+      {
+        "date": "20250816",
+        "activeUsers": 524,
+        "newUsers": 412,
+        "sessions": 638,
+        "sessionsPerUser": 1.217557251908397,
+        "pageViews": 2540,
+        "avgSessionDuration": 104.08764076959247,
+        "bounceRate": 0.003134796238244514
+      },
+      {
+        "date": "20250807",
+        "activeUsers": 514,
+        "newUsers": 387,
+        "sessions": 583,
+        "sessionsPerUser": 1.1342412451361867,
+        "pageViews": 2497,
+        "avgSessionDuration": 144.07556132933104,
+        "bounceRate": 0.010291595197255575
+      },
+      {
+        "date": "20250809",
+        "activeUsers": 513,
+        "newUsers": 398,
+        "sessions": 601,
+        "sessionsPerUser": 1.1715399610136452,
+        "pageViews": 2879,
+        "avgSessionDuration": 166.07385485690517,
+        "bounceRate": 0.0016638935108153079
+      },
+      {
+        "date": "20251010",
+        "activeUsers": 508,
+        "newUsers": 407,
+        "sessions": 656,
+        "sessionsPerUser": 1.2913385826771653,
+        "pageViews": 6099,
+        "avgSessionDuration": 260.99408152743905,
+        "bounceRate": 0.022865853658536585
+      },
+      {
+        "date": "20250902",
+        "activeUsers": 507,
+        "newUsers": 354,
+        "sessions": 655,
+        "sessionsPerUser": 1.291913214990138,
+        "pageViews": 3154,
+        "avgSessionDuration": 170.11421156030534,
+        "bounceRate": 0.0183206106870229
+      },
+      {
+        "date": "20250805",
+        "activeUsers": 498,
+        "newUsers": 370,
+        "sessions": 636,
+        "sessionsPerUser": 1.2771084337349397,
+        "pageViews": 2670,
+        "avgSessionDuration": 123.86154746698114,
+        "bounceRate": 0.006289308176100629
+      },
+      {
+        "date": "20250819",
+        "activeUsers": 496,
+        "newUsers": 372,
+        "sessions": 601,
+        "sessionsPerUser": 1.2116935483870968,
+        "pageViews": 3081,
+        "avgSessionDuration": 217.65162955574044,
+        "bounceRate": 0.004991680532445923
+      },
+      {
+        "date": "20250907",
+        "activeUsers": 493,
+        "newUsers": 351,
+        "sessions": 592,
+        "sessionsPerUser": 1.2008113590263692,
+        "pageViews": 3040,
+        "avgSessionDuration": 248.0105412652027,
+        "bounceRate": 0.006756756756756757
+      },
+      {
+        "date": "20250808",
+        "activeUsers": 492,
+        "newUsers": 351,
+        "sessions": 595,
+        "sessionsPerUser": 1.2093495934959348,
+        "pageViews": 2511,
+        "avgSessionDuration": 142.5901267579832,
+        "bounceRate": 0.005042016806722689
+      },
+      {
+        "date": "20250903",
+        "activeUsers": 488,
+        "newUsers": 329,
+        "sessions": 643,
+        "sessionsPerUser": 1.3176229508196722,
+        "pageViews": 3131,
+        "avgSessionDuration": 165.10716242301712,
+        "bounceRate": 0.017107309486780714
+      },
+      {
+        "date": "20250827",
+        "activeUsers": 486,
+        "newUsers": 392,
+        "sessions": 592,
+        "sessionsPerUser": 1.2181069958847737,
+        "pageViews": 2833,
+        "avgSessionDuration": 136.63767373141891,
+        "bounceRate": 0.011824324324324325
+      },
+      {
+        "date": "20250820",
+        "activeUsers": 481,
+        "newUsers": 378,
+        "sessions": 589,
+        "sessionsPerUser": 1.2245322245322245,
+        "pageViews": 2577,
+        "avgSessionDuration": 136.82091134804756,
+        "bounceRate": 0.015280135823429542
+      },
+      {
+        "date": "20250818",
+        "activeUsers": 473,
+        "newUsers": 341,
+        "sessions": 570,
+        "sessionsPerUser": 1.2050739957716703,
+        "pageViews": 2507,
+        "avgSessionDuration": 135.98311425438598,
+        "bounceRate": 0.012280701754385965
+      },
+      {
+        "date": "20250828",
+        "activeUsers": 473,
+        "newUsers": 364,
+        "sessions": 550,
+        "sessionsPerUser": 1.1627906976744187,
+        "pageViews": 2253,
+        "avgSessionDuration": 133.31822525818183,
+        "bounceRate": 0.005454545454545455
+      },
+      {
+        "date": "20250909",
+        "activeUsers": 471,
+        "newUsers": 333,
+        "sessions": 632,
+        "sessionsPerUser": 1.3418259023354564,
+        "pageViews": 3637,
+        "avgSessionDuration": 235.95856208544302,
+        "bounceRate": 0.022151898734177215
+      },
+      {
+        "date": "20250811",
+        "activeUsers": 469,
+        "newUsers": 335,
+        "sessions": 581,
+        "sessionsPerUser": 1.2388059701492538,
+        "pageViews": 2926,
+        "avgSessionDuration": 214.9466269363167,
+        "bounceRate": 0.0051635111876075735
+      },
+      {
+        "date": "20250815",
+        "activeUsers": 466,
+        "newUsers": 365,
+        "sessions": 541,
+        "sessionsPerUser": 1.1609442060085837,
+        "pageViews": 2259,
+        "avgSessionDuration": 143.096992974122,
+        "bounceRate": 0.0073937153419593345
+      },
+      {
+        "date": "20250729",
+        "activeUsers": 463,
+        "newUsers": 395,
+        "sessions": 529,
+        "sessionsPerUser": 1.142548596112311,
+        "pageViews": 2547,
+        "avgSessionDuration": 168.86014835916825,
+        "bounceRate": 0.007561436672967864
+      },
+      {
+        "date": "20250825",
+        "activeUsers": 463,
+        "newUsers": 328,
+        "sessions": 575,
+        "sessionsPerUser": 1.2419006479481642,
+        "pageViews": 2915,
+        "avgSessionDuration": 169.09041043304347,
+        "bounceRate": 0.019130434782608695
+      },
+      {
+        "date": "20250908",
+        "activeUsers": 461,
+        "newUsers": 339,
+        "sessions": 576,
+        "sessionsPerUser": 1.2494577006507592,
+        "pageViews": 2824,
+        "avgSessionDuration": 185.8515951076389,
+        "bounceRate": 0.020833333333333332
+      },
+      {
+        "date": "20250824",
+        "activeUsers": 459,
+        "newUsers": 343,
+        "sessions": 605,
+        "sessionsPerUser": 1.318082788671024,
+        "pageViews": 3145,
+        "avgSessionDuration": 163.05293536859506,
+        "bounceRate": 0.021487603305785124
+      },
+      {
+        "date": "20250826",
+        "activeUsers": 457,
+        "newUsers": 351,
+        "sessions": 569,
+        "sessionsPerUser": 1.2450765864332605,
+        "pageViews": 3406,
+        "avgSessionDuration": 193.93948568189805,
+        "bounceRate": 0.0210896309314587
+      },
+      {
+        "date": "20250822",
+        "activeUsers": 454,
+        "newUsers": 346,
+        "sessions": 575,
+        "sessionsPerUser": 1.2665198237885462,
+        "pageViews": 2584,
+        "avgSessionDuration": 127.6547619026087,
+        "bounceRate": 0.017391304347826087
+      },
+      {
+        "date": "20250904",
+        "activeUsers": 444,
+        "newUsers": 286,
+        "sessions": 610,
+        "sessionsPerUser": 1.3738738738738738,
+        "pageViews": 2992,
+        "avgSessionDuration": 234.88714930819674,
+        "bounceRate": 0.022950819672131147
+      },
+      {
+        "date": "20250905",
+        "activeUsers": 443,
+        "newUsers": 302,
+        "sessions": 571,
+        "sessionsPerUser": 1.2889390519187358,
+        "pageViews": 2664,
+        "avgSessionDuration": 158.18779301751314,
+        "bounceRate": 0.017513134851138354
+      },
+      {
+        "date": "20250727",
+        "activeUsers": 426,
+        "newUsers": 337,
+        "sessions": 481,
+        "sessionsPerUser": 1.1291079812206573,
+        "pageViews": 1829,
+        "avgSessionDuration": 63.40804323700624,
+        "bounceRate": 0.006237006237006237
+      },
+      {
+        "date": "20251005",
+        "activeUsers": 414,
+        "newUsers": 346,
+        "sessions": 474,
+        "sessionsPerUser": 1.144927536231884,
+        "pageViews": 2532,
+        "avgSessionDuration": 122.43183651054852,
+        "bounceRate": 0.02109704641350211
+      },
+      {
+        "date": "20251002",
+        "activeUsers": 410,
+        "newUsers": 326,
+        "sessions": 503,
+        "sessionsPerUser": 1.226829268292683,
+        "pageViews": 2851,
+        "avgSessionDuration": 153.18480484890657,
+        "bounceRate": 0.027833001988071572
+      },
+      {
+        "date": "20250726",
+        "activeUsers": 408,
+        "newUsers": 333,
+        "sessions": 457,
+        "sessionsPerUser": 1.1200980392156863,
+        "pageViews": 1921,
+        "avgSessionDuration": 87.19668940919037,
+        "bounceRate": 0.00437636761487965
+      },
+      {
+        "date": "20250823",
+        "activeUsers": 405,
+        "newUsers": 303,
+        "sessions": 503,
+        "sessionsPerUser": 1.2419753086419754,
+        "pageViews": 3271,
+        "avgSessionDuration": 208.35146627833,
+        "bounceRate": 0.027833001988071572
+      },
+      {
+        "date": "20251001",
+        "activeUsers": 405,
+        "newUsers": 320,
+        "sessions": 479,
+        "sessionsPerUser": 1.182716049382716,
+        "pageViews": 2498,
+        "avgSessionDuration": 156.50950960542798,
+        "bounceRate": 0.014613778705636743
+      },
+      {
+        "date": "20251004",
+        "activeUsers": 403,
+        "newUsers": 356,
+        "sessions": 455,
+        "sessionsPerUser": 1.1290322580645162,
+        "pageViews": 1979,
+        "avgSessionDuration": 108.09706492967032,
+        "bounceRate": 0.006593406593406593
+      },
+      {
+        "date": "20250930",
+        "activeUsers": 399,
+        "newUsers": 316,
+        "sessions": 481,
+        "sessionsPerUser": 1.205513784461153,
+        "pageViews": 2132,
+        "avgSessionDuration": 110.82306142411643,
+        "bounceRate": 0.02494802494802495
+      },
+      {
+        "date": "20251011",
+        "activeUsers": 396,
+        "newUsers": 296,
+        "sessions": 498,
+        "sessionsPerUser": 1.2575757575757576,
+        "pageViews": 3466,
+        "avgSessionDuration": 215.90533780120484,
+        "bounceRate": 0.020080321285140562
+      },
+      {
+        "date": "20250829",
+        "activeUsers": 393,
+        "newUsers": 298,
+        "sessions": 463,
+        "sessionsPerUser": 1.178117048346056,
+        "pageViews": 2176,
+        "avgSessionDuration": 197.65506370410367,
+        "bounceRate": 0.0064794816414686825
+      },
+      {
+        "date": "20250911",
+        "activeUsers": 391,
+        "newUsers": 276,
+        "sessions": 553,
+        "sessionsPerUser": 1.4143222506393862,
+        "pageViews": 3004,
+        "avgSessionDuration": 222.43058623869803,
+        "bounceRate": 0.0379746835443038
+      },
+      {
+        "date": "20250721",
+        "activeUsers": 388,
+        "newUsers": 357,
+        "sessions": 438,
+        "sessionsPerUser": 1.1288659793814433,
+        "pageViews": 2073,
+        "avgSessionDuration": 170.61878784474888,
+        "bounceRate": 0.02054794520547945
+      },
+      {
+        "date": "20251003",
+        "activeUsers": 375,
+        "newUsers": 298,
+        "sessions": 431,
+        "sessionsPerUser": 1.1493333333333333,
+        "pageViews": 2078,
+        "avgSessionDuration": 139.45428903944315,
+        "bounceRate": 0.02320185614849188
+      },
+      {
+        "date": "20251007",
+        "activeUsers": 374,
+        "newUsers": 287,
+        "sessions": 449,
+        "sessionsPerUser": 1.2005347593582887,
+        "pageViews": 9058,
+        "avgSessionDuration": 214.88876978619152,
+        "bounceRate": 0.0334075723830735
+      },
+      {
+        "date": "20251008",
+        "activeUsers": 369,
+        "newUsers": 272,
+        "sessions": 483,
+        "sessionsPerUser": 1.3089430894308942,
+        "pageViews": 3574,
+        "avgSessionDuration": 219.24921456935817,
+        "bounceRate": 0.026915113871635612
+      },
+      {
+        "date": "20250906",
+        "activeUsers": 368,
+        "newUsers": 245,
+        "sessions": 476,
+        "sessionsPerUser": 1.2934782608695652,
+        "pageViews": 1949,
+        "avgSessionDuration": 99.05339953781512,
+        "bounceRate": 0.014705882352941176
+      },
+      {
+        "date": "20251006",
+        "activeUsers": 365,
+        "newUsers": 295,
+        "sessions": 421,
+        "sessionsPerUser": 1.1534246575342466,
+        "pageViews": 2969,
+        "avgSessionDuration": 198.22747442992875,
+        "bounceRate": 0.0166270783847981
+      },
+      {
+        "date": "20250814",
+        "activeUsers": 363,
+        "newUsers": 261,
+        "sessions": 440,
+        "sessionsPerUser": 1.2121212121212122,
+        "pageViews": 2144,
+        "avgSessionDuration": 178.16531044318185,
+        "bounceRate": 0.013636363636363636
+      },
+      {
+        "date": "20250812",
+        "activeUsers": 358,
+        "newUsers": 226,
+        "sessions": 475,
+        "sessionsPerUser": 1.3268156424581006,
+        "pageViews": 2383,
+        "avgSessionDuration": 210.95603532210527,
+        "bounceRate": 0.01263157894736842
+      },
+      {
+        "date": "20250813",
+        "activeUsers": 356,
+        "newUsers": 264,
+        "sessions": 464,
+        "sessionsPerUser": 1.303370786516854,
+        "pageViews": 2480,
+        "avgSessionDuration": 178.32091160991382,
+        "bounceRate": 0.01293103448275862
+      },
+      {
+        "date": "20250926",
+        "activeUsers": 352,
+        "newUsers": 233,
+        "sessions": 475,
+        "sessionsPerUser": 1.3494318181818181,
+        "pageViews": 3376,
+        "avgSessionDuration": 219.97766639789475,
+        "bounceRate": 0.031578947368421054
+      },
+      {
+        "date": "20250802",
+        "activeUsers": 350,
+        "newUsers": 270,
+        "sessions": 417,
+        "sessionsPerUser": 1.1914285714285715,
+        "pageViews": 1774,
+        "avgSessionDuration": 112.97404955155875,
+        "bounceRate": 0.007194244604316547
+      },
+      {
+        "date": "20250920",
+        "activeUsers": 350,
+        "newUsers": 231,
+        "sessions": 541,
+        "sessionsPerUser": 1.5457142857142858,
+        "pageViews": 5566,
+        "avgSessionDuration": 434.23354079667286,
+        "bounceRate": 0.018484288354898338
+      },
+      {
+        "date": "20251012",
+        "activeUsers": 348,
+        "newUsers": 269,
+        "sessions": 421,
+        "sessionsPerUser": 1.2097701149425288,
+        "pageViews": 3079,
+        "avgSessionDuration": 181.90445933016628,
+        "bounceRate": 0.019002375296912115
+      },
+      {
+        "date": "20250803",
+        "activeUsers": 344,
+        "newUsers": 255,
+        "sessions": 384,
+        "sessionsPerUser": 1.1162790697674418,
+        "pageViews": 1511,
+        "avgSessionDuration": 160.93011659375,
+        "bounceRate": 0.0026041666666666665
+      },
+      {
+        "date": "20250728",
+        "activeUsers": 340,
+        "newUsers": 261,
+        "sessions": 415,
+        "sessionsPerUser": 1.2205882352941178,
+        "pageViews": 2029,
+        "avgSessionDuration": 185.7167532554217,
+        "bounceRate": 0.014457831325301205
+      },
+      {
+        "date": "20250919",
+        "activeUsers": 326,
+        "newUsers": 173,
+        "sessions": 548,
+        "sessionsPerUser": 1.6809815950920246,
+        "pageViews": 4987,
+        "avgSessionDuration": 468.19143109854014,
+        "bounceRate": 0.021897810218978103
+      },
+      {
+        "date": "20250725",
+        "activeUsers": 322,
+        "newUsers": 269,
+        "sessions": 393,
+        "sessionsPerUser": 1.220496894409938,
+        "pageViews": 1485,
+        "avgSessionDuration": 116.44754440458016,
+        "bounceRate": 0.007633587786259542
+      },
+      {
+        "date": "20251009",
+        "activeUsers": 315,
+        "newUsers": 232,
+        "sessions": 396,
+        "sessionsPerUser": 1.2571428571428571,
+        "pageViews": 2475,
+        "avgSessionDuration": 180.22168131565658,
+        "bounceRate": 0.020202020202020204
+      },
+      {
+        "date": "20250719",
+        "activeUsers": 313,
+        "newUsers": 307,
+        "sessions": 340,
+        "sessionsPerUser": 1.0862619808306708,
+        "pageViews": 1220,
+        "avgSessionDuration": 183.46011017352942,
+        "bounceRate": 0.014705882352941176
+      },
+      {
+        "date": "20250724",
+        "activeUsers": 313,
+        "newUsers": 249,
+        "sessions": 374,
+        "sessionsPerUser": 1.194888178913738,
+        "pageViews": 1653,
+        "avgSessionDuration": 137.5048184278075,
+        "bounceRate": 0.008021390374331552
+      },
+      {
+        "date": "20250922",
+        "activeUsers": 305,
+        "newUsers": 188,
+        "sessions": 442,
+        "sessionsPerUser": 1.4491803278688524,
+        "pageViews": 3175,
+        "avgSessionDuration": 293.8692689502263,
+        "bounceRate": 0.024886877828054297
+      },
+      {
+        "date": "20251013",
+        "activeUsers": 299,
+        "newUsers": 183,
+        "sessions": 402,
+        "sessionsPerUser": 1.3444816053511706,
+        "pageViews": 9399,
+        "avgSessionDuration": 353.80297051990055,
+        "bounceRate": 0.03233830845771144
+      },
+      {
+        "date": "20250928",
+        "activeUsers": 263,
+        "newUsers": 184,
+        "sessions": 318,
+        "sessionsPerUser": 1.209125475285171,
+        "pageViews": 1515,
+        "avgSessionDuration": 141.96011367924527,
+        "bounceRate": 0.015723270440251572
+      },
+      {
+        "date": "20250723",
+        "activeUsers": 262,
+        "newUsers": 227,
+        "sessions": 291,
+        "sessionsPerUser": 1.1106870229007633,
+        "pageViews": 1458,
+        "avgSessionDuration": 119.55173488659794,
+        "bounceRate": 0.013745704467353952
+      },
+      {
+        "date": "20250923",
+        "activeUsers": 252,
+        "newUsers": 154,
+        "sessions": 359,
+        "sessionsPerUser": 1.4246031746031746,
+        "pageViews": 2702,
+        "avgSessionDuration": 270.80060272144846,
+        "bounceRate": 0.03064066852367688
+      },
+      {
+        "date": "20251014",
+        "activeUsers": 223,
+        "newUsers": 144,
+        "sessions": 323,
+        "sessionsPerUser": 1.4484304932735426,
+        "pageViews": 3462,
+        "avgSessionDuration": 346.4638674210526,
+        "bounceRate": 0.05572755417956656
+      },
+      {
+        "date": "20250921",
+        "activeUsers": 213,
+        "newUsers": 103,
+        "sessions": 354,
+        "sessionsPerUser": 1.6619718309859155,
+        "pageViews": 2441,
+        "avgSessionDuration": 256.236012420904,
+        "bounceRate": 0.05367231638418079
+      },
+      {
+        "date": "20250929",
+        "activeUsers": 203,
+        "newUsers": 129,
+        "sessions": 266,
+        "sessionsPerUser": 1.3103448275862069,
+        "pageViews": 1776,
+        "avgSessionDuration": 198.0099424849624,
+        "bounceRate": 0.03007518796992481
+      },
+      {
+        "date": "20250720",
+        "activeUsers": 202,
+        "newUsers": 187,
+        "sessions": 235,
+        "sessionsPerUser": 1.1633663366336633,
+        "pageViews": 764,
+        "avgSessionDuration": 134.2358379361702,
+        "bounceRate": 0.02127659574468085
+      },
+      {
+        "date": "20251015",
+        "activeUsers": 202,
+        "newUsers": 118,
+        "sessions": 305,
+        "sessionsPerUser": 1.50990099009901,
+        "pageViews": 2911,
+        "avgSessionDuration": 364.27931613114754,
+        "bounceRate": 0.029508196721311476
+      },
+      {
+        "date": "20250718",
+        "activeUsers": 192,
+        "newUsers": 191,
+        "sessions": 209,
+        "sessionsPerUser": 1.0885416666666667,
+        "pageViews": 824,
+        "avgSessionDuration": 160.95161144976075,
+        "bounceRate": 0.2822966507177033
+      },
+      {
+        "date": "20250924",
+        "activeUsers": 191,
+        "newUsers": 103,
+        "sessions": 306,
+        "sessionsPerUser": 1.6020942408376964,
+        "pageViews": 2912,
+        "avgSessionDuration": 402.9637129346405,
+        "bounceRate": 0.058823529411764705
+      },
+      {
+        "date": "20250925",
+        "activeUsers": 180,
+        "newUsers": 90,
+        "sessions": 274,
+        "sessionsPerUser": 1.5222222222222221,
+        "pageViews": 2421,
+        "avgSessionDuration": 346.392515959854,
+        "bounceRate": 0.040145985401459854
+      },
+      {
+        "date": "20251016",
+        "activeUsers": 170,
+        "newUsers": 104,
+        "sessions": 265,
+        "sessionsPerUser": 1.5588235294117647,
+        "pageViews": 2322,
+        "avgSessionDuration": 285.6655005622641,
+        "bounceRate": 0.04150943396226415
+      },
+      {
+        "date": "20251017",
+        "activeUsers": 146,
+        "newUsers": 69,
+        "sessions": 225,
+        "sessionsPerUser": 1.5410958904109588,
+        "pageViews": 1831,
+        "avgSessionDuration": 308.39821141333334,
+        "bounceRate": 0.04
+      },
+      {
+        "date": "20251018",
+        "activeUsers": 124,
+        "newUsers": 63,
+        "sessions": 174,
+        "sessionsPerUser": 1.403225806451613,
+        "pageViews": 1678,
+        "avgSessionDuration": 421.39437835632185,
+        "bounceRate": 0.04597701149425287
+      },
+      {
+        "date": "20251020",
+        "activeUsers": 123,
+        "newUsers": 67,
+        "sessions": 179,
+        "sessionsPerUser": 1.4552845528455285,
+        "pageViews": 1519,
+        "avgSessionDuration": 223.84080969832402,
+        "bounceRate": 0.05027932960893855
+      },
+      {
+        "date": "20251022",
+        "activeUsers": 107,
+        "newUsers": 52,
+        "sessions": 145,
+        "sessionsPerUser": 1.355140186915888,
+        "pageViews": 875,
+        "avgSessionDuration": 837.0630458827586,
+        "bounceRate": 0.19310344827586207
+      },
+      {
+        "date": "20251021",
+        "activeUsers": 102,
+        "newUsers": 48,
+        "sessions": 147,
+        "sessionsPerUser": 1.4411764705882353,
+        "pageViews": 1194,
+        "avgSessionDuration": 413.6708956938775,
+        "bounceRate": 0.04081632653061224
+      },
+      {
+        "date": "20251019",
+        "activeUsers": 86,
+        "newUsers": 49,
+        "sessions": 133,
+        "sessionsPerUser": 1.5465116279069768,
+        "pageViews": 1113,
+        "avgSessionDuration": 331.8453786842105,
+        "bounceRate": 0.03007518796992481
+      },
+      {
+        "date": "20251023",
+        "activeUsers": 25,
+        "newUsers": 10,
+        "sessions": 27,
+        "sessionsPerUser": 1.08,
+        "pageViews": 186,
+        "avgSessionDuration": 1098.8614382592593,
+        "bounceRate": 0.18518518518518517
+      },
+      {
+        "date": "20250205",
+        "activeUsers": 7,
+        "newUsers": 6,
+        "sessions": 7,
+        "sessionsPerUser": 1,
+        "pageViews": 27,
+        "avgSessionDuration": 255.2557185714286,
+        "bounceRate": 0.42857142857142855
+      },
+      {
+        "date": "20250515",
+        "activeUsers": 7,
+        "newUsers": 4,
+        "sessions": 8,
+        "sessionsPerUser": 1.1428571428571428,
+        "pageViews": 30,
+        "avgSessionDuration": 252.32842399999998,
+        "bounceRate": 0.375
+      },
+      {
+        "date": "20250131",
+        "activeUsers": 6,
+        "newUsers": 6,
+        "sessions": 9,
+        "sessionsPerUser": 1.5,
+        "pageViews": 59,
+        "avgSessionDuration": 1531.4529102222223,
+        "bounceRate": 0.1111111111111111
+      },
+      {
+        "date": "20250508",
+        "activeUsers": 6,
+        "newUsers": 5,
+        "sessions": 9,
+        "sessionsPerUser": 1.5,
+        "pageViews": 44,
+        "avgSessionDuration": 373.2851004444444,
+        "bounceRate": 0.5555555555555556
+      },
+      {
+        "date": "20250514",
+        "activeUsers": 6,
+        "newUsers": 5,
+        "sessions": 8,
+        "sessionsPerUser": 1.3333333333333333,
+        "pageViews": 9,
+        "avgSessionDuration": 11.961708125,
+        "bounceRate": 0.625
+      },
+      {
+        "date": "20250513",
+        "activeUsers": 5,
+        "newUsers": 4,
+        "sessions": 6,
+        "sessionsPerUser": 1.2,
+        "pageViews": 33,
+        "avgSessionDuration": 1064.2743223333332,
+        "bounceRate": 0.16666666666666666
+      },
+      {
+        "date": "20250519",
+        "activeUsers": 5,
+        "newUsers": 0,
+        "sessions": 11,
+        "sessionsPerUser": 2.2,
+        "pageViews": 17,
+        "avgSessionDuration": 120.12878227272728,
+        "bounceRate": 0.6363636363636364
+      },
+      {
+        "date": "20250124",
+        "activeUsers": 4,
+        "newUsers": 4,
+        "sessions": 4,
+        "sessionsPerUser": 1,
+        "pageViews": 12,
+        "avgSessionDuration": 318.2492425,
+        "bounceRate": 0.5
+      },
+      {
+        "date": "20250209",
+        "activeUsers": 4,
+        "newUsers": 1,
+        "sessions": 6,
+        "sessionsPerUser": 1.5,
+        "pageViews": 35,
+        "avgSessionDuration": 744.9233344999999,
+        "bounceRate": 0.3333333333333333
+      },
+      {
+        "date": "20250212",
+        "activeUsers": 4,
+        "newUsers": 3,
+        "sessions": 7,
+        "sessionsPerUser": 1.75,
+        "pageViews": 43,
+        "avgSessionDuration": 408.8020587142857,
+        "bounceRate": 0.42857142857142855
+      },
+      {
+        "date": "20250520",
+        "activeUsers": 4,
+        "newUsers": 2,
+        "sessions": 5,
+        "sessionsPerUser": 1.25,
+        "pageViews": 6,
+        "avgSessionDuration": 90.45927800000001,
+        "bounceRate": 0.4
+      },
+      {
+        "date": "20250203",
+        "activeUsers": 3,
+        "newUsers": 2,
+        "sessions": 3,
+        "sessionsPerUser": 1,
+        "pageViews": 20,
+        "avgSessionDuration": 133.93614399999998,
+        "bounceRate": 0
+      },
+      {
+        "date": "20250516",
+        "activeUsers": 3,
+        "newUsers": 2,
+        "sessions": 5,
+        "sessionsPerUser": 1.6666666666666667,
+        "pageViews": 18,
+        "avgSessionDuration": 538.4904662,
+        "bounceRate": 0.4
+      },
+      {
+        "date": "20250518",
+        "activeUsers": 3,
+        "newUsers": 2,
+        "sessions": 4,
+        "sessionsPerUser": 1.3333333333333333,
+        "pageViews": 10,
+        "avgSessionDuration": 341.39586,
+        "bounceRate": 0.25
+      },
+      {
+        "date": "20250125",
+        "activeUsers": 2,
+        "newUsers": 2,
+        "sessions": 2,
+        "sessionsPerUser": 1,
+        "pageViews": 14,
+        "avgSessionDuration": 30.825144,
+        "bounceRate": 0.5
+      },
+      {
+        "date": "20250202",
+        "activeUsers": 2,
+        "newUsers": 0,
+        "sessions": 2,
+        "sessionsPerUser": 1,
+        "pageViews": 11,
+        "avgSessionDuration": 542.1129205,
+        "bounceRate": 0.5
+      },
+      {
+        "date": "20250210",
+        "activeUsers": 2,
+        "newUsers": 2,
+        "sessions": 3,
+        "sessionsPerUser": 1.5,
+        "pageViews": 23,
+        "avgSessionDuration": 113.906917,
+        "bounceRate": 0
+      },
+      {
+        "date": "20250213",
+        "activeUsers": 2,
+        "newUsers": 2,
+        "sessions": 3,
+        "sessionsPerUser": 1.5,
+        "pageViews": 39,
+        "avgSessionDuration": 1152.3305506666668,
+        "bounceRate": 0.3333333333333333
+      },
+      {
+        "date": "20250214",
+        "activeUsers": 2,
+        "newUsers": 1,
+        "sessions": 6,
+        "sessionsPerUser": 3,
+        "pageViews": 89,
+        "avgSessionDuration": 757.7607466666667,
+        "bounceRate": 0.3333333333333333
+      },
+      {
+        "date": "20250421",
+        "activeUsers": 2,
+        "newUsers": 2,
+        "sessions": 3,
+        "sessionsPerUser": 1.5,
+        "pageViews": 4,
+        "avgSessionDuration": 4.501076333333334,
+        "bounceRate": 0.6666666666666666
+      },
+      {
+        "date": "20250510",
+        "activeUsers": 2,
+        "newUsers": 1,
+        "sessions": 2,
+        "sessionsPerUser": 1,
+        "pageViews": 3,
+        "avgSessionDuration": 6.0484325000000005,
+        "bounceRate": 0.5
+      },
+      {
+        "date": "20250522",
+        "activeUsers": 2,
+        "newUsers": 1,
+        "sessions": 2,
+        "sessionsPerUser": 1,
+        "pageViews": 2,
+        "avgSessionDuration": 2.432064,
+        "bounceRate": 1
+      },
+      {
+        "date": "20250523",
+        "activeUsers": 2,
+        "newUsers": 0,
+        "sessions": 2,
+        "sessionsPerUser": 1,
+        "pageViews": 3,
+        "avgSessionDuration": 6.3323785,
+        "bounceRate": 0.5
+      },
+      {
+        "date": "20250524",
+        "activeUsers": 2,
+        "newUsers": 1,
+        "sessions": 2,
+        "sessionsPerUser": 1,
+        "pageViews": 3,
+        "avgSessionDuration": 8.731835,
+        "bounceRate": 0.5
+      },
+      {
+        "date": "20250526",
+        "activeUsers": 2,
+        "newUsers": 0,
+        "sessions": 3,
+        "sessionsPerUser": 1.5,
+        "pageViews": 3,
+        "avgSessionDuration": 6.978872666666668,
+        "bounceRate": 0.6666666666666666
+      },
+      {
+        "date": "20250527",
+        "activeUsers": 2,
+        "newUsers": 1,
+        "sessions": 3,
+        "sessionsPerUser": 1.5,
+        "pageViews": 2,
+        "avgSessionDuration": 1.6193206666666666,
+        "bounceRate": 1
+      },
+      {
+        "date": "20250601",
+        "activeUsers": 2,
+        "newUsers": 2,
+        "sessions": 3,
+        "sessionsPerUser": 1.5,
+        "pageViews": 12,
+        "avgSessionDuration": 102.19087366666668,
+        "bounceRate": 0
+      },
+      {
+        "date": "20250612",
+        "activeUsers": 2,
+        "newUsers": 2,
+        "sessions": 2,
+        "sessionsPerUser": 1,
+        "pageViews": 2,
+        "avgSessionDuration": 4.419603,
+        "bounceRate": 1
+      },
+      {
+        "date": "20250126",
+        "activeUsers": 1,
+        "newUsers": 0,
+        "sessions": 1,
+        "sessionsPerUser": 1,
+        "pageViews": 2,
+        "avgSessionDuration": 1112.31222,
+        "bounceRate": 0
+      },
+      {
+        "date": "20250204",
+        "activeUsers": 1,
+        "newUsers": 1,
+        "sessions": 1,
+        "sessionsPerUser": 1,
+        "pageViews": 1,
+        "avgSessionDuration": 4.720211,
+        "bounceRate": 1
+      },
+      {
+        "date": "20250206",
+        "activeUsers": 1,
+        "newUsers": 0,
+        "sessions": 3,
+        "sessionsPerUser": 3,
+        "pageViews": 8,
+        "avgSessionDuration": 261.18428166666666,
+        "bounceRate": 0.3333333333333333
+      },
+      {
+        "date": "20250207",
+        "activeUsers": 1,
+        "newUsers": 1,
+        "sessions": 3,
+        "sessionsPerUser": 3,
+        "pageViews": 26,
+        "avgSessionDuration": 1036.5564676666665,
+        "bounceRate": 0.3333333333333333
+      },
+      {
+        "date": "20250208",
+        "activeUsers": 1,
+        "newUsers": 1,
+        "sessions": 1,
+        "sessionsPerUser": 1,
+        "pageViews": 1,
+        "avgSessionDuration": 4.299763,
+        "bounceRate": 1
+      },
+      {
+        "date": "20250211",
+        "activeUsers": 1,
+        "newUsers": 1,
+        "sessions": 1,
+        "sessionsPerUser": 1,
+        "pageViews": 2,
+        "avgSessionDuration": 10.874675,
+        "bounceRate": 0
+      },
+      {
+        "date": "20250216",
+        "activeUsers": 1,
+        "newUsers": 1,
+        "sessions": 1,
+        "sessionsPerUser": 1,
+        "pageViews": 3,
+        "avgSessionDuration": 16.2109,
+        "bounceRate": 0
+      },
+      {
+        "date": "20250218",
+        "activeUsers": 1,
+        "newUsers": 1,
+        "sessions": 1,
+        "sessionsPerUser": 1,
+        "pageViews": 3,
+        "avgSessionDuration": 17.113221,
+        "bounceRate": 0
+      },
+      {
+        "date": "20250221",
+        "activeUsers": 1,
+        "newUsers": 0,
+        "sessions": 2,
+        "sessionsPerUser": 2,
+        "pageViews": 1,
+        "avgSessionDuration": 0,
+        "bounceRate": 1
+      },
+      {
+        "date": "20250301",
+        "activeUsers": 1,
+        "newUsers": 1,
+        "sessions": 1,
+        "sessionsPerUser": 1,
+        "pageViews": 2,
+        "avgSessionDuration": 6.03777,
+        "bounceRate": 0
+      },
+      {
+        "date": "20250419",
+        "activeUsers": 1,
+        "newUsers": 0,
+        "sessions": 1,
+        "sessionsPerUser": 1,
+        "pageViews": 5,
+        "avgSessionDuration": 101.633549,
+        "bounceRate": 0
+      },
+      {
+        "date": "20250428",
+        "activeUsers": 1,
+        "newUsers": 0,
+        "sessions": 1,
+        "sessionsPerUser": 1,
+        "pageViews": 0,
+        "avgSessionDuration": 0,
+        "bounceRate": 1
+      },
+      {
+        "date": "20250517",
+        "activeUsers": 1,
+        "newUsers": 0,
+        "sessions": 1,
+        "sessionsPerUser": 1,
+        "pageViews": 0,
+        "avgSessionDuration": 0,
+        "bounceRate": 1
+      },
+      {
+        "date": "20250521",
+        "activeUsers": 1,
+        "newUsers": 0,
+        "sessions": 2,
+        "sessionsPerUser": 2,
+        "pageViews": 1,
+        "avgSessionDuration": 1.148659,
+        "bounceRate": 1
+      },
+      {
+        "date": "20250525",
+        "activeUsers": 1,
+        "newUsers": 1,
+        "sessions": 2,
+        "sessionsPerUser": 2,
+        "pageViews": 7,
+        "avgSessionDuration": 139.307435,
+        "bounceRate": 0.5
+      },
+      {
+        "date": "20250529",
+        "activeUsers": 1,
+        "newUsers": 1,
+        "sessions": 1,
+        "sessionsPerUser": 1,
+        "pageViews": 1,
+        "avgSessionDuration": 0,
+        "bounceRate": 1
+      },
+      {
+        "date": "20250613",
+        "activeUsers": 1,
+        "newUsers": 1,
+        "sessions": 1,
+        "sessionsPerUser": 1,
+        "pageViews": 1,
+        "avgSessionDuration": 1.238474,
+        "bounceRate": 1
+      },
+      {
+        "date": "20250614",
+        "activeUsers": 1,
+        "newUsers": 1,
+        "sessions": 1,
+        "sessionsPerUser": 1,
+        "pageViews": 1,
+        "avgSessionDuration": 19.408858,
+        "bounceRate": 0
+      },
+      {
+        "date": "20250615",
+        "activeUsers": 1,
+        "newUsers": 1,
+        "sessions": 1,
+        "sessionsPerUser": 1,
+        "pageViews": 1,
+        "avgSessionDuration": 7.402433,
+        "bounceRate": 1
+      },
+      {
+        "date": "20250616",
+        "activeUsers": 1,
+        "newUsers": 1,
+        "sessions": 2,
+        "sessionsPerUser": 2,
+        "pageViews": 2,
+        "avgSessionDuration": 100.8908255,
+        "bounceRate": 0.5
+      },
+      {
+        "date": "20250217",
+        "activeUsers": 0,
+        "newUsers": 0,
+        "sessions": 1,
+        "sessionsPerUser": 0,
+        "pageViews": 0,
+        "avgSessionDuration": 0,
+        "bounceRate": 1
+      },
+      {
+        "date": "20250528",
+        "activeUsers": 0,
+        "newUsers": 0,
+        "sessions": 1,
+        "sessionsPerUser": 0,
+        "pageViews": 0,
+        "avgSessionDuration": 0,
+        "bounceRate": 1
+      },
+      {
+        "date": "20250602",
+        "activeUsers": 0,
+        "newUsers": 0,
+        "sessions": 1,
+        "sessionsPerUser": 0,
+        "pageViews": 0,
+        "avgSessionDuration": 0,
+        "bounceRate": 1
+      }
+    ],
+    "topPages": [
+      {
+        "path": "/",
+        "title": "노피 - 휴대폰 성지 바로 여기",
+        "pageViews": 73322,
+        "avgSessionDuration": 79.57322895525964,
+        "bounceRate": 0.009710488357716877
+      },
+      {
+        "path": "/welcome",
+        "title": "노피 - 휴대폰 성지 바로 여기",
+        "pageViews": 28159,
+        "avgSessionDuration": 29.782201480191826,
+        "bounceRate": 0.0021371976647206006
+      },
+      {
+        "path": "/",
+        "title": "노피 - 전국 휴대폰 성지가격 한눈에! 카톡으로 쉽고 빠르게 신청하세요",
+        "pageViews": 13126,
+        "avgSessionDuration": 69.6522108589922,
+        "bounceRate": 0.0038975501113585748
+      },
+      {
+        "path": "/login/kakao/callback",
+        "title": "노피 - 휴대폰 성지 바로 여기",
+        "pageViews": 10678,
+        "avgSessionDuration": 15.126344787846252,
+        "bounceRate": 0.000751556796220743
+      },
+      {
+        "path": "/store",
+        "title": "노피 - 휴대폰 성지 바로 여기",
+        "pageViews": 10086,
+        "avgSessionDuration": 104.29809087875341,
+        "bounceRate": 0.01910828025477707
+      },
+      {
+        "path": "/product/SM-ZF-7",
+        "title": "노피 - 휴대폰 성지 바로 여기",
+        "pageViews": 9373,
+        "avgSessionDuration": 41.73703963099099,
+        "bounceRate": 0.014054054054054054
+      },
+      {
+        "path": "/mypage/history",
+        "title": "노피 - 휴대폰 성지 바로 여기",
+        "pageViews": 9070,
+        "avgSessionDuration": 140.60193534357543,
+        "bounceRate": 0.013966480446927373
+      },
+      {
+        "path": "/mypage",
+        "title": "노피 - 휴대폰 성지 바로 여기",
+        "pageViews": 6136,
+        "avgSessionDuration": 25.740735505855472,
+        "bounceRate": 0.003427592116538132
+      },
+      {
+        "path": "/product/SM-SU-25",
+        "title": "노피 - 휴대폰 성지 바로 여기",
+        "pageViews": 6012,
+        "avgSessionDuration": 44.881290387471,
+        "bounceRate": 0.0018045888115493685
+      },
+      {
+        "path": "/product/AP-P-16",
+        "title": "노피 - 휴대폰 성지 바로 여기",
+        "pageViews": 5789,
+        "avgSessionDuration": 42.51703814961832,
+        "bounceRate": 0.00732824427480916
+      },
+      {
+        "path": "/product/SM-S-25",
+        "title": "노피 - 휴대폰 성지 바로 여기",
+        "pageViews": 4942,
+        "avgSessionDuration": 55.02368731006613,
+        "bounceRate": 0.006245407788390889
+      },
+      {
+        "path": "/signup/wishInfo",
+        "title": "노피 - 휴대폰 성지 바로 여기",
+        "pageViews": 4802,
+        "avgSessionDuration": 22.173173964887308,
+        "bounceRate": 0.00023724792408066428
+      },
+      {
+        "path": "/product/SM-ZP-7",
+        "title": "노피 - 휴대폰 성지 바로 여기",
+        "pageViews": 4796,
+        "avgSessionDuration": 46.93935436548043,
+        "bounceRate": 0.008540925266903915
+      },
+      {
+        "path": "/signup/terms",
+        "title": "노피 - 휴대폰 성지 바로 여기",
+        "pageViews": 4224,
+        "avgSessionDuration": 9.383416160710059,
+        "bounceRate": 0
+      },
+      {
+        "path": "/signup/completed",
+        "title": "노피 - 휴대폰 성지 바로 여기",
+        "pageViews": 4010,
+        "avgSessionDuration": 3.68473703425,
+        "bounceRate": 0
+      },
+      {
+        "path": "/product",
+        "title": "노피 - 전국 휴대폰 성지가격 한눈에! 카톡으로 쉽고 빠르게 신청하세요",
+        "pageViews": 3870,
+        "avgSessionDuration": 41.700530436686904,
+        "bounceRate": 0.0039028620988725065
+      },
+      {
+        "path": "/welcome",
+        "title": "노피 - 전국 휴대폰 성지가격 한눈에! 카톡으로 쉽고 빠르게 신청하세요",
+        "pageViews": 3463,
+        "avgSessionDuration": 13.99574382458888,
+        "bounceRate": 0
+      },
+      {
+        "path": "/product/AP-PREB-17",
+        "title": "노피 - 휴대폰 성지 바로 여기",
+        "pageViews": 3206,
+        "avgSessionDuration": 36.1510253760282,
+        "bounceRate": 0.0035252643948296123
+      },
+      {
+        "path": "/internet",
+        "title": "노피 - 휴대폰 성지 바로 여기",
+        "pageViews": 2951,
+        "avgSessionDuration": 49.24844987855946,
+        "bounceRate": 0.007537688442211055
+      },
+      {
+        "path": "/product",
+        "title": "노피 - 휴대폰 성지 바로 여기",
+        "pageViews": 2517,
+        "avgSessionDuration": 42.58210930975144,
+        "bounceRate": 0.0031867431485022306
+      },
+      {
+        "path": "/store/51",
+        "title": "노피 - 휴대폰 성지 바로 여기",
+        "pageViews": 2454,
+        "avgSessionDuration": 88.7598628678161,
+        "bounceRate": 0.028735632183908046
+      },
+      {
+        "path": "/store/46",
+        "title": "노피 - 휴대폰 성지 바로 여기",
+        "pageViews": 2360,
+        "avgSessionDuration": 88.75017366304348,
+        "bounceRate": 0.016304347826086956
+      },
+      {
+        "path": "/event/7",
+        "title": "노피 - 휴대폰 성지 바로 여기",
+        "pageViews": 2283,
+        "avgSessionDuration": 98.21244414456316,
+        "bounceRate": 0.008170961659333752
+      },
+      {
+        "path": "/product/AP-B-16",
+        "title": "노피 - 휴대폰 성지 바로 여기",
+        "pageViews": 2240,
+        "avgSessionDuration": 39.12538641326938,
+        "bounceRate": 0.003996802557953637
+      },
+      {
+        "path": "/store/45",
+        "title": "노피 - 휴대폰 성지 바로 여기",
+        "pageViews": 2240,
+        "avgSessionDuration": 80.96305136585366,
+        "bounceRate": 0
+      },
+      {
+        "path": "/store/14",
+        "title": "노피 - 휴대폰 성지 바로 여기",
+        "pageViews": 2141,
+        "avgSessionDuration": 55.364646029411766,
+        "bounceRate": 0.007352941176470588
+      },
+      {
+        "path": "/product/SM-ZF-7/quoteSheet",
+        "title": "노피 - 휴대폰 성지 바로 여기",
+        "pageViews": 2049,
+        "avgSessionDuration": 95.54692253934095,
+        "bounceRate": 0.0121049092131809
+      },
+      {
+        "path": "/product/AP-B-17",
+        "title": "노피 - 휴대폰 성지 바로 여기",
+        "pageViews": 1901,
+        "avgSessionDuration": 53.77495015116279,
+        "bounceRate": 0.013742071881606765
+      },
+      {
+        "path": "/product/SM-SA-25",
+        "title": "노피 - 휴대폰 성지 바로 여기",
+        "pageViews": 1807,
+        "avgSessionDuration": 64.86702399502983,
+        "bounceRate": 0.009940357852882704
+      },
+      {
+        "path": "/product/AP-PREP-17",
+        "title": "노피 - 휴대폰 성지 바로 여기",
+        "pageViews": 1798,
+        "avgSessionDuration": 29.519853111326235,
+        "bounceRate": 0.00484027105517909
+      },
+      {
+        "path": "/store/42",
+        "title": "노피 - 휴대폰 성지 바로 여기",
+        "pageViews": 1754,
+        "avgSessionDuration": 72.7690275,
+        "bounceRate": 0.007575757575757576
+      },
+      {
+        "path": "/product/AP-P-17",
+        "title": "노피 - 휴대폰 성지 바로 여기",
+        "pageViews": 1727,
+        "avgSessionDuration": 46.62386373655914,
+        "bounceRate": 0.012903225806451613
+      },
+      {
+        "path": "/mypage/info",
+        "title": "노피 - 휴대폰 성지 바로 여기",
+        "pageViews": 1706,
+        "avgSessionDuration": 27.946266637640452,
+        "bounceRate": 0.008426966292134831
+      },
+      {
+        "path": "/store/2",
+        "title": "노피 - 휴대폰 성지 바로 여기",
+        "pageViews": 1690,
+        "avgSessionDuration": 73.27225929593268,
+        "bounceRate": 0.004207573632538569
+      },
+      {
+        "path": "/product/AP-P-16/quoteSheet",
+        "title": "노피 - 휴대폰 성지 바로 여기",
+        "pageViews": 1656,
+        "avgSessionDuration": 86.88096805564516,
+        "bounceRate": 0.012096774193548387
+      },
+      {
+        "path": "/product/SM-SPL-25",
+        "title": "노피 - 휴대폰 성지 바로 여기",
+        "pageViews": 1652,
+        "avgSessionDuration": 35.99878180093023,
+        "bounceRate": 0.005581395348837209
+      },
+      {
+        "path": "/product/SM-ZF-7",
+        "title": "노피 - 전국 휴대폰 성지가격 한눈에! 카톡으로 쉽고 빠르게 신청하세요",
+        "pageViews": 1582,
+        "avgSessionDuration": 30.109034552020635,
+        "bounceRate": 0.0025795356835769563
+      },
+      {
+        "path": "/product/AP-PM-16",
+        "title": "노피 - 휴대폰 성지 바로 여기",
+        "pageViews": 1486,
+        "avgSessionDuration": 58.406764249704146,
+        "bounceRate": 0.004733727810650888
+      },
+      {
+        "path": "/product/AP-B-15",
+        "title": "노피 - 휴대폰 성지 바로 여기",
+        "pageViews": 1449,
+        "avgSessionDuration": 41.66299446626506,
+        "bounceRate": 0.0036144578313253013
+      },
+      {
+        "path": "/product/SM-S-24",
+        "title": "노피 - 휴대폰 성지 바로 여기",
+        "pageViews": 1390,
+        "avgSessionDuration": 39.79618865212264,
+        "bounceRate": 0.0023584905660377358
+      },
+      {
+        "path": "/store/50",
+        "title": "노피 - 휴대폰 성지 바로 여기",
+        "pageViews": 1341,
+        "avgSessionDuration": 46.10254904411765,
+        "bounceRate": 0.014705882352941176
+      },
+      {
+        "path": "/product/SM-S-25/quoteSheet",
+        "title": "노피 - 휴대폰 성지 바로 여기",
+        "pageViews": 1300,
+        "avgSessionDuration": 123.21957503489641,
+        "bounceRate": 0.009814612868047983
+      },
+      {
+        "path": "/product/SM-SU-25",
+        "title": "노피 - 전국 휴대폰 성지가격 한눈에! 카톡으로 쉽고 빠르게 신청하세요",
+        "pageViews": 1265,
+        "avgSessionDuration": 32.57338954354354,
+        "bounceRate": 0.003003003003003003
+      },
+      {
+        "path": "/product/AP-B-13",
+        "title": "노피 - 휴대폰 성지 바로 여기",
+        "pageViews": 1231,
+        "avgSessionDuration": 35.10105993931034,
+        "bounceRate": 0.005517241379310344
+      },
+      {
+        "path": "/store/61",
+        "title": "노피 - 휴대폰 성지 바로 여기",
+        "pageViews": 1176,
+        "avgSessionDuration": 96.6436062962963,
+        "bounceRate": 0
+      },
+      {
+        "path": "/product/SM-ZP-7/quoteSheet",
+        "title": "노피 - 휴대폰 성지 바로 여기",
+        "pageViews": 1016,
+        "avgSessionDuration": 116.69656289250354,
+        "bounceRate": 0.014144271570014143
+      },
+      {
+        "path": "/product/AP-PREB-17/quoteSheet",
+        "title": "노피 - 휴대폰 성지 바로 여기",
+        "pageViews": 1010,
+        "avgSessionDuration": 102.20863645887445,
+        "bounceRate": 0.005772005772005772
+      },
+      {
+        "path": "/product/SM-SU-25/quoteSheet",
+        "title": "노피 - 휴대폰 성지 바로 여기",
+        "pageViews": 1010,
+        "avgSessionDuration": 87.19807114597545,
+        "bounceRate": 0.010914051841746248
+      },
+      {
+        "path": "/mypage/history",
+        "title": "노피 - 전국 휴대폰 성지가격 한눈에! 카톡으로 쉽고 빠르게 신청하세요",
+        "pageViews": 893,
+        "avgSessionDuration": 178.43469860238096,
+        "bounceRate": 0.016666666666666666
+      },
+      {
+        "path": "/login/kakao/callback",
+        "title": "노피 - 전국 휴대폰 성지가격 한눈에! 카톡으로 쉽고 빠르게 신청하세요",
+        "pageViews": 881,
+        "avgSessionDuration": 23.45970015362731,
+        "bounceRate": 0
+      },
+      {
+        "path": "/event/5",
+        "title": "노피 - 휴대폰 성지 바로 여기",
+        "pageViews": 864,
+        "avgSessionDuration": 101.40495731136363,
+        "bounceRate": 0.0022727272727272726
+      },
+      {
+        "path": "/store/39",
+        "title": "노피 - 휴대폰 성지 바로 여기",
+        "pageViews": 842,
+        "avgSessionDuration": 60.48430792134831,
+        "bounceRate": 0.011235955056179775
+      },
+      {
+        "path": "/mypage",
+        "title": "노피 - 전국 휴대폰 성지가격 한눈에! 카톡으로 쉽고 빠르게 신청하세요",
+        "pageViews": 804,
+        "avgSessionDuration": 35.329145422459895,
+        "bounceRate": 0.0053475935828877
+      },
+      {
+        "path": "/store/1",
+        "title": "노피 - 휴대폰 성지 바로 여기",
+        "pageViews": 788,
+        "avgSessionDuration": 642.0276810465116,
+        "bounceRate": 0.046511627906976744
+      },
+      {
+        "path": "/product/SM-ZF-7/quoteSheet",
+        "title": "노피 - 전국 휴대폰 성지가격 한눈에! 카톡으로 쉽고 빠르게 신청하세요",
+        "pageViews": 772,
+        "avgSessionDuration": 84.43018918273091,
+        "bounceRate": 0.004016064257028112
+      },
+      {
+        "path": "/product/AP-P-16",
+        "title": "노피 - 전국 휴대폰 성지가격 한눈에! 카톡으로 쉽고 빠르게 신청하세요",
+        "pageViews": 736,
+        "avgSessionDuration": 30.170426470930234,
+        "bounceRate": 0.003875968992248062
+      },
+      {
+        "path": "/event/2",
+        "title": "노피 - 전국 휴대폰 성지가격 한눈에! 카톡으로 쉽고 빠르게 신청하세요",
+        "pageViews": 711,
+        "avgSessionDuration": 39.628205432323234,
+        "bounceRate": 0.08888888888888889
+      },
+      {
+        "path": "/event/9",
+        "title": "노피 - 휴대폰 성지 바로 여기",
+        "pageViews": 707,
+        "avgSessionDuration": 55.914559507434944,
+        "bounceRate": 0.007434944237918215
+      },
+      {
+        "path": "/event/1",
+        "title": "노피 - 전국 휴대폰 성지가격 한눈에! 카톡으로 쉽고 빠르게 신청하세요",
+        "pageViews": 688,
+        "avgSessionDuration": 29.416157444,
+        "bounceRate": 0.026
+      },
+      {
+        "path": "/product/AP-B-16/quoteSheet",
+        "title": "노피 - 휴대폰 성지 바로 여기",
+        "pageViews": 683,
+        "avgSessionDuration": 86.10556056031129,
+        "bounceRate": 0.007782101167315175
+      },
+      {
+        "path": "/event/5",
+        "title": "노피 - 전국 휴대폰 성지가격 한눈에! 카톡으로 쉽고 빠르게 신청하세요",
+        "pageViews": 672,
+        "avgSessionDuration": 32.261810489411765,
+        "bounceRate": 0.004705882352941176
+      },
+      {
+        "path": "/product/AP-PREPM-17",
+        "title": "노피 - 휴대폰 성지 바로 여기",
+        "pageViews": 635,
+        "avgSessionDuration": 32.105550770538244,
+        "bounceRate": 0.014164305949008499
+      },
+      {
+        "path": "/product/SM-ZP-7",
+        "title": "노피 - 전국 휴대폰 성지가격 한눈에! 카톡으로 쉽고 빠르게 신청하세요",
+        "pageViews": 590,
+        "avgSessionDuration": 34.68909260431655,
+        "bounceRate": 0.002398081534772182
+      },
+      {
+        "path": "/product/AP-A-17",
+        "title": "노피 - 휴대폰 성지 바로 여기",
+        "pageViews": 566,
+        "avgSessionDuration": 35.31906361437908,
+        "bounceRate": 0.0032679738562091504
+      },
+      {
+        "path": "/event/6",
+        "title": "노피 - 휴대폰 성지 바로 여기",
+        "pageViews": 562,
+        "avgSessionDuration": 53.26078101658767,
+        "bounceRate": 0.014218009478672985
+      },
+      {
+        "path": "/product/AP-PM-16/quoteSheet",
+        "title": "노피 - 휴대폰 성지 바로 여기",
+        "pageViews": 545,
+        "avgSessionDuration": 136.32472364266667,
+        "bounceRate": 0.018666666666666668
+      },
+      {
+        "path": "/product/SM-S-25",
+        "title": "노피 - 전국 휴대폰 성지가격 한눈에! 카톡으로 쉽고 빠르게 신청하세요",
+        "pageViews": 545,
+        "avgSessionDuration": 38.7461160338983,
+        "bounceRate": 0
+      },
+      {
+        "path": "/product/AP-E-16",
+        "title": "노피 - 휴대폰 성지 바로 여기",
+        "pageViews": 538,
+        "avgSessionDuration": 21.46402988181818,
+        "bounceRate": 0
+      },
+      {
+        "path": "/product/AP-PREP-17/quoteSheet",
+        "title": "노피 - 휴대폰 성지 바로 여기",
+        "pageViews": 536,
+        "avgSessionDuration": 86.68788835156249,
+        "bounceRate": 0.013020833333333334
+      },
+      {
+        "path": "/signup/wishInfo",
+        "title": "노피 - 전국 휴대폰 성지가격 한눈에! 카톡으로 쉽고 빠르게 신청하세요",
+        "pageViews": 523,
+        "avgSessionDuration": 22.237463049295776,
+        "bounceRate": 0.002347417840375587
+      },
+      {
+        "path": "/product/SM-SA-25/quoteSheet",
+        "title": "노피 - 휴대폰 성지 바로 여기",
+        "pageViews": 521,
+        "avgSessionDuration": 89.01158300496279,
+        "bounceRate": 0.007444168734491315
+      },
+      {
+        "path": "/product/SM-A-15",
+        "title": "노피 - 휴대폰 성지 바로 여기",
+        "pageViews": 507,
+        "avgSessionDuration": 61.0523632827381,
+        "bounceRate": 0.011904761904761904
+      },
+      {
+        "path": "/mypage/info/update",
+        "title": "노피 - 휴대폰 성지 바로 여기",
+        "pageViews": 475,
+        "avgSessionDuration": 16.488395113772455,
+        "bounceRate": 0.0029940119760479044
+      },
+      {
+        "path": "/product/SM-A-15",
+        "title": "노피 - 전국 휴대폰 성지가격 한눈에! 카톡으로 쉽고 빠르게 신청하세요",
+        "pageViews": 468,
+        "avgSessionDuration": 91.28246536206898,
+        "bounceRate": 0.004310344827586207
+      },
+      {
+        "path": "/product/AP-B-15/quoteSheet",
+        "title": "노피 - 휴대폰 성지 바로 여기",
+        "pageViews": 461,
+        "avgSessionDuration": 81.7434548502994,
+        "bounceRate": 0.011976047904191617
+      },
+      {
+        "path": "/product/SM-QT-6",
+        "title": "노피 - 휴대폰 성지 바로 여기",
+        "pageViews": 442,
+        "avgSessionDuration": 36.625733000000004,
+        "bounceRate": 0.004405286343612335
+      },
+      {
+        "path": "/signup/terms",
+        "title": "노피 - 전국 휴대폰 성지가격 한눈에! 카톡으로 쉽고 빠르게 신청하세요",
+        "pageViews": 434,
+        "avgSessionDuration": 4.909136410138248,
+        "bounceRate": 0.004608294930875576
+      },
+      {
+        "path": "/mypage/info/service",
+        "title": "노피 - 휴대폰 성지 바로 여기",
+        "pageViews": 410,
+        "avgSessionDuration": 29.86631223553719,
+        "bounceRate": 0.004132231404958678
+      },
+      {
+        "path": "/store/18",
+        "title": "노피 - 휴대폰 성지 바로 여기",
+        "pageViews": 410,
+        "avgSessionDuration": 49.07910370711297,
+        "bounceRate": 0.008368200836820083
+      },
+      {
+        "path": "/product/AP-PREA-17",
+        "title": "노피 - 휴대폰 성지 바로 여기",
+        "pageViews": 407,
+        "avgSessionDuration": 21.148945587044533,
+        "bounceRate": 0.016194331983805668
+      },
+      {
+        "path": "/signup/completed",
+        "title": "노피 - 전국 휴대폰 성지가격 한눈에! 카톡으로 쉽고 빠르게 신청하세요",
+        "pageViews": 404,
+        "avgSessionDuration": 4.016303614609572,
+        "bounceRate": 0.0025188916876574307
+      },
+      {
+        "path": "/product/SM-A-16",
+        "title": "노피 - 휴대폰 성지 바로 여기",
+        "pageViews": 399,
+        "avgSessionDuration": 41.72607234859155,
+        "bounceRate": 0.017605633802816902
+      },
+      {
+        "path": "/product/AP-P-15",
+        "title": "노피 - 휴대폰 성지 바로 여기",
+        "pageViews": 397,
+        "avgSessionDuration": 42.367890281632654,
+        "bounceRate": 0
+      },
+      {
+        "path": "/quote/index.html",
+        "title": "노피 - 전국 휴대폰 성지가격 한눈에! 카톡으로 쉽고 빠르게 신청하세요",
+        "pageViews": 397,
+        "avgSessionDuration": 1879.2695741111113,
+        "bounceRate": 0.1111111111111111
+      },
+      {
+        "path": "/product/SM-ZP-7/quoteSheet",
+        "title": "노피 - 전국 휴대폰 성지가격 한눈에! 카톡으로 쉽고 빠르게 신청하세요",
+        "pageViews": 396,
+        "avgSessionDuration": 69.13982489130434,
+        "bounceRate": 0.014492753623188406
+      },
+      {
+        "path": "/product/SM-SPL-25",
+        "title": "노피 - 전국 휴대폰 성지가격 한눈에! 카톡으로 쉽고 빠르게 신청하세요",
+        "pageViews": 386,
+        "avgSessionDuration": 21.575667539473685,
+        "bounceRate": 0.003289473684210526
+      },
+      {
+        "path": "/product/SM-A-36",
+        "title": "노피 - 휴대폰 성지 바로 여기",
+        "pageViews": 378,
+        "avgSessionDuration": 42.79105339473684,
+        "bounceRate": 0
+      },
+      {
+        "path": "/product/AP-PM-17",
+        "title": "노피 - 휴대폰 성지 바로 여기",
+        "pageViews": 370,
+        "avgSessionDuration": 39.05139221363636,
+        "bounceRate": 0.013636363636363636
+      },
+      {
+        "path": "/product/AP-B-16",
+        "title": "노피 - 전국 휴대폰 성지가격 한눈에! 카톡으로 쉽고 빠르게 신청하세요",
+        "pageViews": 368,
+        "avgSessionDuration": 33.24981829752066,
+        "bounceRate": 0.008264462809917356
+      },
+      {
+        "path": "/product/SM-SPL-25/quoteSheet",
+        "title": "노피 - 휴대폰 성지 바로 여기",
+        "pageViews": 368,
+        "avgSessionDuration": 85.77328352325581,
+        "bounceRate": 0
+      },
+      {
+        "path": "/product/SM-WD-8",
+        "title": "노피 - 휴대폰 성지 바로 여기",
+        "pageViews": 366,
+        "avgSessionDuration": 37.01783845200001,
+        "bounceRate": 0.02
+      },
+      {
+        "path": "/product/AP-B-13/quoteSheet",
+        "title": "노피 - 휴대폰 성지 바로 여기",
+        "pageViews": 350,
+        "avgSessionDuration": 113.1642901244635,
+        "bounceRate": 0.02145922746781116
+      },
+      {
+        "path": "/product/AP-PL-15",
+        "title": "노피 - 휴대폰 성지 바로 여기",
+        "pageViews": 341,
+        "avgSessionDuration": 16.659565842105263,
+        "bounceRate": 0
+      },
+      {
+        "path": "/product/AP-PL-16",
+        "title": "노피 - 휴대폰 성지 바로 여기",
+        "pageViews": 325,
+        "avgSessionDuration": 30.728772494736845,
+        "bounceRate": 0
+      },
+      {
+        "path": "/event/8",
+        "title": "노피 - 휴대폰 성지 바로 여기",
+        "pageViews": 323,
+        "avgSessionDuration": 54.15496828571429,
+        "bounceRate": 0
+      },
+      {
+        "path": "/store/46/news/162",
+        "title": "노피 - 휴대폰 성지 바로 여기",
+        "pageViews": 312,
+        "avgSessionDuration": 63.107906342995165,
+        "bounceRate": 0.004830917874396135
+      },
+      {
+        "path": "/product/SM-S-24/quoteSheet",
+        "title": "노피 - 휴대폰 성지 바로 여기",
+        "pageViews": 303,
+        "avgSessionDuration": 93.86538157798165,
+        "bounceRate": 0.013761467889908258
+      },
+      {
+        "path": "/store/26",
+        "title": "노피 - 휴대폰 성지 바로 여기",
+        "pageViews": 302,
+        "avgSessionDuration": 81.20927021568627,
+        "bounceRate": 0
+      },
+      {
+        "path": "/store/46/news/164",
+        "title": "노피 - 휴대폰 성지 바로 여기",
+        "pageViews": 301,
+        "avgSessionDuration": 53.64070364606742,
+        "bounceRate": 0.028089887640449437
+      },
+      {
+        "path": "/internet/mypage/history",
+        "title": "노피 - 휴대폰 성지 바로 여기",
+        "pageViews": 297,
+        "avgSessionDuration": 64.9809188292683,
+        "bounceRate": 0.024390243902439025
+      }
+    ],
+    "trafficSources": [
+      {
+        "source": "ig",
+        "medium": "paid",
+        "sessions": 18305,
+        "activeUsers": 12731,
+        "newUsers": 12596
+      },
+      {
+        "source": "(direct)",
+        "medium": "(none)",
+        "sessions": 9825,
+        "activeUsers": 7472,
+        "newUsers": 7468
+      },
+      {
+        "source": "kauth.kakao.com",
+        "medium": "referral",
+        "sessions": 6002,
+        "activeUsers": 1422,
+        "newUsers": 22
+      },
+      {
+        "source": "fb",
+        "medium": "paid",
+        "sessions": 5797,
+        "activeUsers": 3904,
+        "newUsers": 3872
+      },
+      {
+        "source": "google",
+        "medium": "organic",
+        "sessions": 5450,
+        "activeUsers": 3096,
+        "newUsers": 2982
+      },
+      {
+        "source": "m.search.naver.com",
+        "medium": "referral",
+        "sessions": 2125,
+        "activeUsers": 1283,
+        "newUsers": 1226
+      },
+      {
+        "source": "th",
+        "medium": "paid",
+        "sessions": 1612,
+        "activeUsers": 1422,
+        "newUsers": 1411
+      },
+      {
+        "source": "naver",
+        "medium": "organic",
+        "sessions": 1028,
+        "activeUsers": 633,
+        "newUsers": 574
+      },
+      {
+        "source": "m.dcinside.com",
+        "medium": "referral",
+        "sessions": 527,
+        "activeUsers": 445,
+        "newUsers": 417
+      },
+      {
+        "source": "google",
+        "medium": "cpc",
+        "sessions": 506,
+        "activeUsers": 479,
+        "newUsers": 481
+      },
+      {
+        "source": "m.cafe.naver.com",
+        "medium": "referral",
+        "sessions": 411,
+        "activeUsers": 348,
+        "newUsers": 347
+      },
+      {
+        "source": "gall.dcinside.com",
+        "medium": "referral",
+        "sessions": 308,
+        "activeUsers": 244,
+        "newUsers": 223
+      },
+      {
+        "source": "cafe.naver.com",
+        "medium": "referral",
+        "sessions": 251,
+        "activeUsers": 174,
+        "newUsers": 171
+      },
+      {
+        "source": "m.blog.naver.com",
+        "medium": "referral",
+        "sessions": 177,
+        "activeUsers": 154,
+        "newUsers": 146
+      },
+      {
+        "source": "kakaotalk",
+        "medium": "channel",
+        "sessions": 152,
+        "activeUsers": 44,
+        "newUsers": 40
+      },
+      {
+        "source": "facebook.com",
+        "medium": "referral",
+        "sessions": 147,
+        "activeUsers": 146,
+        "newUsers": 145
+      },
+      {
+        "source": "l.instagram.com",
+        "medium": "referral",
+        "sessions": 134,
+        "activeUsers": 124,
+        "newUsers": 105
+      },
+      {
+        "source": "s.ppomppu.co.kr",
+        "medium": "referral",
+        "sessions": 127,
+        "activeUsers": 84,
+        "newUsers": 83
+      },
+      {
+        "source": "(not set)",
+        "medium": "(not set)",
+        "sessions": 117,
+        "activeUsers": 96,
+        "newUsers": 0
+      },
+      {
+        "source": "m.facebook.com",
+        "medium": "referral",
+        "sessions": 94,
+        "activeUsers": 92,
+        "newUsers": 89
+      },
+      {
+        "source": "m.note.naver.com",
+        "medium": "referral",
+        "sessions": 74,
+        "activeUsers": 58,
+        "newUsers": 57
+      },
+      {
+        "source": "youtube.com",
+        "medium": "referral",
+        "sessions": 70,
+        "activeUsers": 15,
+        "newUsers": 13
+      },
+      {
+        "source": "m.keep.naver.com",
+        "medium": "referral",
+        "sessions": 68,
+        "activeUsers": 3,
+        "newUsers": 2
+      },
+      {
+        "source": "blog.naver.com",
+        "medium": "referral",
+        "sessions": 63,
+        "activeUsers": 52,
+        "newUsers": 47
+      },
+      {
+        "source": "naver.com",
+        "medium": "referral",
+        "sessions": 55,
+        "activeUsers": 48,
+        "newUsers": 48
+      },
+      {
+        "source": "ntp.msn.com",
+        "medium": "referral",
+        "sessions": 55,
+        "activeUsers": 3,
+        "newUsers": 0
+      },
+      {
+        "source": "threads.com",
+        "medium": "referral",
+        "sessions": 49,
+        "activeUsers": 44,
+        "newUsers": 39
+      },
+      {
+        "source": "m.place.naver.com",
+        "medium": "referral",
+        "sessions": 47,
+        "activeUsers": 28,
+        "newUsers": 25
+      },
+      {
+        "source": "bing",
+        "medium": "organic",
+        "sessions": 46,
+        "activeUsers": 34,
+        "newUsers": 33
+      },
+      {
+        "source": "note.naver.com",
+        "medium": "referral",
+        "sessions": 37,
+        "activeUsers": 30,
+        "newUsers": 30
+      },
+      {
+        "source": "center-pf.kakao.com",
+        "medium": "referral",
+        "sessions": 32,
+        "activeUsers": 11,
+        "newUsers": 5
+      },
+      {
+        "source": "dcinside.com",
+        "medium": "referral",
+        "sessions": 32,
+        "activeUsers": 32,
+        "newUsers": 30
+      },
+      {
+        "source": "m.naver.com",
+        "medium": "referral",
+        "sessions": 31,
+        "activeUsers": 18,
+        "newUsers": 16
+      },
+      {
+        "source": "an",
+        "medium": "paid",
+        "sessions": 29,
+        "activeUsers": 29,
+        "newUsers": 29
+      },
+      {
+        "source": "pcmap.place.naver.com",
+        "medium": "referral",
+        "sessions": 29,
+        "activeUsers": 20,
+        "newUsers": 19
+      },
+      {
+        "source": "l.facebook.com",
+        "medium": "referral",
+        "sessions": 27,
+        "activeUsers": 14,
+        "newUsers": 10
+      },
+      {
+        "source": "fb-SiteLink",
+        "medium": "paid",
+        "sessions": 22,
+        "activeUsers": 18,
+        "newUsers": 14
+      },
+      {
+        "source": "localhost:3000",
+        "medium": "referral",
+        "sessions": 15,
+        "activeUsers": 2,
+        "newUsers": 0
+      },
+      {
+        "source": "instagram.com",
+        "medium": "referral",
+        "sessions": 14,
+        "activeUsers": 12,
+        "newUsers": 6
+      },
+      {
+        "source": "naver_blog",
+        "medium": "blog_post",
+        "sessions": 11,
+        "activeUsers": 9,
+        "newUsers": 7
+      },
+      {
+        "source": "beusably.net",
+        "medium": "referral",
+        "sessions": 8,
+        "activeUsers": 3,
+        "newUsers": 0
+      },
+      {
+        "source": "linkedin.com",
+        "medium": "referral",
+        "sessions": 7,
+        "activeUsers": 3,
+        "newUsers": 2
+      },
+      {
+        "source": "searchadvisor.naver.com",
+        "medium": "referral",
+        "sessions": 7,
+        "activeUsers": 3,
+        "newUsers": 0
+      },
+      {
+        "source": "store.kakao.com",
+        "medium": "referral",
+        "sessions": 7,
+        "activeUsers": 1,
+        "newUsers": 0
+      },
+      {
+        "source": "tagassistant.google.com",
+        "medium": "referral",
+        "sessions": 7,
+        "activeUsers": 2,
+        "newUsers": 1
+      },
+      {
+        "source": "lm.facebook.com",
+        "medium": "referral",
+        "sessions": 6,
+        "activeUsers": 3,
+        "newUsers": 1
+      },
+      {
+        "source": "localhost:8000",
+        "medium": "referral",
+        "sessions": 6,
+        "activeUsers": 1,
+        "newUsers": 0
+      },
+      {
+        "source": "business.facebook.com",
+        "medium": "referral",
+        "sessions": 3,
+        "activeUsers": 1,
+        "newUsers": 0
+      },
+      {
+        "source": "yahoo",
+        "medium": "organic",
+        "sessions": 3,
+        "activeUsers": 3,
+        "newUsers": 3
+      },
+      {
+        "source": "app.dcinside.com",
+        "medium": "referral",
+        "sessions": 2,
+        "activeUsers": 2,
+        "newUsers": 2
+      },
+      {
+        "source": "kin.naver.com",
+        "medium": "referral",
+        "sessions": 2,
+        "activeUsers": 2,
+        "newUsers": 2
+      },
+      {
+        "source": "m.kin.naver.com",
+        "medium": "referral",
+        "sessions": 2,
+        "activeUsers": 2,
+        "newUsers": 2
+      },
+      {
+        "source": "shield-ui.nsa-front-end.svc.pr1.io.navercorp.com",
+        "medium": "referral",
+        "sessions": 2,
+        "activeUsers": 2,
+        "newUsers": 2
+      },
+      {
+        "source": "webpagetest.org",
+        "medium": "referral",
+        "sessions": 2,
+        "activeUsers": 1,
+        "newUsers": 0
+      },
+      {
+        "source": "accounts.kakao.com",
+        "medium": "referral",
+        "sessions": 1,
+        "activeUsers": 1,
+        "newUsers": 0
+      },
+      {
+        "source": "adsmanager.facebook.com",
+        "medium": "referral",
+        "sessions": 1,
+        "activeUsers": 1,
+        "newUsers": 0
+      },
+      {
+        "source": "analytics.beusable.net",
+        "medium": "referral",
+        "sessions": 1,
+        "activeUsers": 1,
+        "newUsers": 0
+      },
+      {
+        "source": "api.dcinside.com",
+        "medium": "referral",
+        "sessions": 1,
+        "activeUsers": 1,
+        "newUsers": 1
+      },
+      {
+        "source": "bit.ly",
+        "medium": "referral",
+        "sessions": 1,
+        "activeUsers": 1,
+        "newUsers": 1
+      },
+      {
+        "source": "board.navercorp.com",
+        "medium": "referral",
+        "sessions": 1,
+        "activeUsers": 1,
+        "newUsers": 0
+      },
+      {
+        "source": "board.nsbc.co.kr",
+        "medium": "referral",
+        "sessions": 1,
+        "activeUsers": 1,
+        "newUsers": 1
+      },
+      {
+        "source": "br.nate.com",
+        "medium": "referral",
+        "sessions": 1,
+        "activeUsers": 1,
+        "newUsers": 1
+      },
+      {
+        "source": "chatgpt.com",
+        "medium": "referral",
+        "sessions": 1,
+        "activeUsers": 1,
+        "newUsers": 1
+      },
+      {
+        "source": "claude.ai",
+        "medium": "referral",
+        "sessions": 1,
+        "activeUsers": 1,
+        "newUsers": 0
+      },
+      {
+        "source": "console.askurl.io",
+        "medium": "referral",
+        "sessions": 1,
+        "activeUsers": 1,
+        "newUsers": 1
+      },
+      {
+        "source": "duckduckgo",
+        "medium": "organic",
+        "sessions": 1,
+        "activeUsers": 1,
+        "newUsers": 1
+      },
+      {
+        "source": "login-api-search.daumtools.com",
+        "medium": "referral",
+        "sessions": 1,
+        "activeUsers": 1,
+        "newUsers": 1
+      },
+      {
+        "source": "meta.com",
+        "medium": "referral",
+        "sessions": 1,
+        "activeUsers": 1,
+        "newUsers": 1
+      },
+      {
+        "source": "perplexity",
+        "medium": "(not set)",
+        "sessions": 1,
+        "activeUsers": 1,
+        "newUsers": 1
+      }
+    ],
+    "devices": [
+      {
+        "category": "mobile",
+        "activeUsers": 29246,
+        "sessions": 47360,
+        "pageViews": 229829
+      },
+      {
+        "category": "desktop",
+        "activeUsers": 3399,
+        "sessions": 7237,
+        "pageViews": 71359
+      },
+      {
+        "category": "tablet",
+        "activeUsers": 742,
+        "sessions": 1076,
+        "pageViews": 4815
+      }
+    ],
+    "events": [
+      {
+        "name": "click",
+        "count": 534981,
+        "countPerUser": 16.15524686697871
+      },
+      {
+        "name": "page_view",
+        "count": 306003,
+        "countPerUser": 9.225572070306612
+      },
+      {
+        "name": "scroll",
+        "count": 179978,
+        "countPerUser": 7.464559744514951
+      },
+      {
+        "name": "user_engagement",
+        "count": 110235,
+        "countPerUser": 5.3333494605447775
+      },
+      {
+        "name": "session_start",
+        "count": 53388,
+        "countPerUser": 1.609914962909354
+      },
+      {
+        "name": "first_visit",
+        "count": 32853,
+        "countPerUser": 0.9910108292359204
+      },
+      {
+        "name": "form_start",
+        "count": 111,
+        "countPerUser": 5.285714285714286
+      },
+      {
+        "name": "form_submit",
+        "count": 47,
+        "countPerUser": 5.875
+      },
+      {
+        "name": "file_download",
+        "count": 8,
+        "countPerUser": 1.3333333333333333
+      }
+    ],
+    "locations": [
+      {
+        "city": "Seoul",
+        "country": "South Korea",
+        "activeUsers": 14781,
+        "sessions": 25010
+      },
+      {
+        "city": "Busan",
+        "country": "South Korea",
+        "activeUsers": 3440,
+        "sessions": 4691
+      },
+      {
+        "city": "Incheon",
+        "country": "South Korea",
+        "activeUsers": 1338,
+        "sessions": 1961
+      },
+      {
+        "city": "Daegu",
+        "country": "South Korea",
+        "activeUsers": 1198,
+        "sessions": 1716
+      },
+      {
+        "city": "Daejeon",
+        "country": "South Korea",
+        "activeUsers": 927,
+        "sessions": 1217
+      },
+      {
+        "city": "Cheonan-si",
+        "country": "South Korea",
+        "activeUsers": 922,
+        "sessions": 1248
+      },
+      {
+        "city": "Goyang-si",
+        "country": "South Korea",
+        "activeUsers": 600,
+        "sessions": 816
+      },
+      {
+        "city": "Suwon-si",
+        "country": "South Korea",
+        "activeUsers": 574,
+        "sessions": 815
+      },
+      {
+        "city": "Gwangju",
+        "country": "South Korea",
+        "activeUsers": 560,
+        "sessions": 862
+      },
+      {
+        "city": "Seongnam-si",
+        "country": "South Korea",
+        "activeUsers": 541,
+        "sessions": 826
+      },
+      {
+        "city": "Changwon-si",
+        "country": "South Korea",
+        "activeUsers": 481,
+        "sessions": 663
+      },
+      {
+        "city": "Yongin-si",
+        "country": "South Korea",
+        "activeUsers": 477,
+        "sessions": 677
+      },
+      {
+        "city": "Cheongju-si",
+        "country": "South Korea",
+        "activeUsers": 448,
+        "sessions": 621
+      },
+      {
+        "city": "Ulsan",
+        "country": "South Korea",
+        "activeUsers": 443,
+        "sessions": 615
+      },
+      {
+        "city": "Hwaseong-si",
+        "country": "South Korea",
+        "activeUsers": 401,
+        "sessions": 582
+      },
+      {
+        "city": "Paju-si",
+        "country": "South Korea",
+        "activeUsers": 358,
+        "sessions": 520
+      },
+      {
+        "city": "Bucheon-si",
+        "country": "South Korea",
+        "activeUsers": 318,
+        "sessions": 543
+      },
+      {
+        "city": "Namyangju-si",
+        "country": "South Korea",
+        "activeUsers": 297,
+        "sessions": 503
+      },
+      {
+        "city": "Anyang-si",
+        "country": "South Korea",
+        "activeUsers": 288,
+        "sessions": 425
+      },
+      {
+        "city": "Gimpo-si",
+        "country": "South Korea",
+        "activeUsers": 285,
+        "sessions": 382
+      },
+      {
+        "city": "Jeonju-si",
+        "country": "South Korea",
+        "activeUsers": 268,
+        "sessions": 364
+      },
+      {
+        "city": "Ansan-si",
+        "country": "South Korea",
+        "activeUsers": 266,
+        "sessions": 358
+      },
+      {
+        "city": "Pohang-si",
+        "country": "South Korea",
+        "activeUsers": 242,
+        "sessions": 334
+      },
+      {
+        "city": "Siheung-si",
+        "country": "South Korea",
+        "activeUsers": 225,
+        "sessions": 311
+      },
+      {
+        "city": "Pyeongtaek-si",
+        "country": "South Korea",
+        "activeUsers": 223,
+        "sessions": 307
+      },
+      {
+        "city": "Jeju-si",
+        "country": "South Korea",
+        "activeUsers": 216,
+        "sessions": 303
+      },
+      {
+        "city": "Uijeongbu-si",
+        "country": "South Korea",
+        "activeUsers": 212,
+        "sessions": 365
+      },
+      {
+        "city": "Hanam-si",
+        "country": "South Korea",
+        "activeUsers": 185,
+        "sessions": 273
+      },
+      {
+        "city": "Gimhae-si",
+        "country": "South Korea",
+        "activeUsers": 179,
+        "sessions": 265
+      },
+      {
+        "city": "Wonju-si",
+        "country": "South Korea",
+        "activeUsers": 178,
+        "sessions": 273
+      },
+      {
+        "city": "Gwangju-si",
+        "country": "South Korea",
+        "activeUsers": 172,
+        "sessions": 268
+      },
+      {
+        "city": "Sejong-si",
+        "country": "South Korea",
+        "activeUsers": 167,
+        "sessions": 225
+      },
+      {
+        "city": "Gumi-si",
+        "country": "South Korea",
+        "activeUsers": 148,
+        "sessions": 193
+      },
+      {
+        "city": "Jinju-si",
+        "country": "South Korea",
+        "activeUsers": 147,
+        "sessions": 198
+      },
+      {
+        "city": "Chuncheon-si",
+        "country": "South Korea",
+        "activeUsers": 143,
+        "sessions": 212
+      },
+      {
+        "city": "Asan-si",
+        "country": "South Korea",
+        "activeUsers": 138,
+        "sessions": 181
+      },
+      {
+        "city": "Yangsan-si",
+        "country": "South Korea",
+        "activeUsers": 129,
+        "sessions": 153
+      },
+      {
+        "city": "Gwangmyeong-si",
+        "country": "South Korea",
+        "activeUsers": 126,
+        "sessions": 230
+      },
+      {
+        "city": "Gunpo-si",
+        "country": "South Korea",
+        "activeUsers": 114,
+        "sessions": 191
+      },
+      {
+        "city": "Icheon-si",
+        "country": "South Korea",
+        "activeUsers": 110,
+        "sessions": 290
+      },
+      {
+        "city": "Gyeongsan-si",
+        "country": "South Korea",
+        "activeUsers": 107,
+        "sessions": 141
+      },
+      {
+        "city": "Gunsan-si",
+        "country": "South Korea",
+        "activeUsers": 100,
+        "sessions": 136
+      },
+      {
+        "city": "Osan-si",
+        "country": "South Korea",
+        "activeUsers": 99,
+        "sessions": 135
+      },
+      {
+        "city": "Yangju-si",
+        "country": "South Korea",
+        "activeUsers": 98,
+        "sessions": 125
+      },
+      {
+        "city": "Iksan-si",
+        "country": "South Korea",
+        "activeUsers": 90,
+        "sessions": 121
+      },
+      {
+        "city": "(not set)",
+        "country": "South Korea",
+        "activeUsers": 88,
+        "sessions": 103
+      },
+      {
+        "city": "Yeosu-si",
+        "country": "South Korea",
+        "activeUsers": 86,
+        "sessions": 126
+      },
+      {
+        "city": "Gangneung-si",
+        "country": "South Korea",
+        "activeUsers": 83,
+        "sessions": 170
+      },
+      {
+        "city": "Suncheon-si",
+        "country": "South Korea",
+        "activeUsers": 80,
+        "sessions": 107
+      },
+      {
+        "city": "Geoje-si",
+        "country": "South Korea",
+        "activeUsers": 75,
+        "sessions": 107
+      }
+    ]
+  },
+  "summary": {
+    "totalActiveUsers": 43120,
+    "totalSessions": 53518,
+    "totalPageViews": 306003,
+    "avgDailyUsers": 289,
+    "avgSessionDuration": 218.93602545220617,
+    "avgBounceRate": 0.19365440893213492
+  }
+}

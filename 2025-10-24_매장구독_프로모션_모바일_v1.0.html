@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>노피 - 가짜 고객, 안 받습니다</title>
+    <link href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/variable/woff2/SUIT-Variable.css" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        body {
+            font-family: 'SUIT Variable', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: #fff;
+            color: #111;
+            line-height: 1.5;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* 모바일 전용 컨테이너 */
+        .mobile-view {
+            max-width: 480px;
+            margin: 0 auto;
+            background: #fff;
+        }
+
+        /* 섹션 기본 */
+        .section {
+            padding: 60px 24px;
+        }
+
+        .section-tight {
+            padding: 40px 24px;
+        }
+
+        /* 타이포그래피 - 토스 스타일 */
+        .hero-text {
+            font-size: 56px;
+            font-weight: 800;
+            line-height: 1.1;
+            letter-spacing: -0.03em;
+            word-break: keep-all;
+        }
+
+        .title-xl {
+            font-size: 40px;
+            font-weight: 800;
+            line-height: 1.2;
+            letter-spacing: -0.02em;
+            word-break: keep-all;
+        }
+
+        .title-lg {
+            font-size: 32px;
+            font-weight: 800;
+            line-height: 1.25;
+            letter-spacing: -0.02em;
+            word-break: keep-all;
+        }
+
+        .title-md {
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 1.3;
+            word-break: keep-all;
+        }
+
+        .body-lg {
+            font-size: 18px;
+            line-height: 1.6;
+            font-weight: 500;
+            word-break: keep-all;
+        }
+
+        .body-md {
+            font-size: 16px;
+            line-height: 1.6;
+            word-break: keep-all;
+        }
+
+        .body-sm {
+            font-size: 14px;
+            line-height: 1.5;
+            word-break: keep-all;
+        }
+
+        .caption {
+            font-size: 13px;
+            line-height: 1.4;
+            word-break: keep-all;
+        }
+
+        /* 숫자 강조 - 배민 스타일 */
+        .number-hero {
+            font-size: 72px;
+            font-weight: 900;
+            line-height: 1;
+            letter-spacing: -0.04em;
+        }
+
+        .number-xl {
+            font-size: 64px;
+            font-weight: 900;
+            line-height: 1;
+            letter-spacing: -0.03em;
+        }
+
+        .number-lg {
+            font-size: 48px;
+            font-weight: 900;
+            line-height: 1;
+            letter-spacing: -0.02em;
+        }
+
+        /* 색상 */
+        .primary { color: #131FA0; }
+        .red { color: #FF3B30; }
+        .green { color: #10B981; }
+        .orange { color: #FF6B6B; }
+        .purple { color: #7C3AED; }
+        .gray-600 { color: #6b7280; }
+        .gray-500 { color: #9ca3af; }
+        .white { color: #fff; }
+
+        .bg-primary { background: #131FA0; }
+        .bg-gray { background: #f9fafb; }
+        .bg-red { background: #FFF5F5; }
+        .bg-blue { background: #EFF6FF; }
+
+        /* 스페이싱 */
+        .mb-8 { margin-bottom: 8px; }
+        .mb-12 { margin-bottom: 12px; }
+        .mb-16 { margin-bottom: 16px; }
+        .mb-20 { margin-bottom: 20px; }
+        .mb-24 { margin-bottom: 24px; }
+        .mb-32 { margin-bottom: 32px; }
+        .mb-40 { margin-bottom: 40px; }
+        .mb-48 { margin-bottom: 48px; }
+        .mb-60 { margin-bottom: 60px; }
+
+        .mt-40 { margin-top: 40px; }
+
+        /* 정렬 */
+        .text-center { text-align: center; }
+
+        /* 카드 - 카카오 스타일 */
+        .card {
+            background: #fff;
+            border-radius: 20px;
+            padding: 28px 24px;
+            margin-bottom: 16px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .card-border {
+            border: 2px solid #f3f4f6;
+        }
+
+        .card-shadow {
+            box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+        }
+
+        /* 배지 */
+        .badge {
+            display: inline-block;
+            padding: 6px 14px;
+            border-radius: 100px;
+            font-size: 13px;
+            font-weight: 700;
+        }
+
+        /* 구분선 */
+        .divider {
+            height: 1px;
+            background: #e5e7eb;
+            margin: 24px 0;
+        }
+
+        .divider-thick {
+            height: 8px;
+            background: #f9fafb;
+            margin: 0;
+        }
+
+        /* CTA 버튼 - 스포티파이 스타일 */
+        .btn {
+            display: block;
+            width: 100%;
+            padding: 20px;
+            border-radius: 12px;
+            font-size: 18px;
+            font-weight: 700;
+            text-align: center;
+            text-decoration: none;
+            border: none;
+        }
+
+        .btn-primary {
+            background: #FEE500;
+            color: #111;
+        }
+
+        .btn-lg {
+            padding: 24px;
+            font-size: 20px;
+            font-weight: 800;
+            border-radius: 16px;
+        }
+
+        /* 리스트 */
+        .list-clean {
+            list-style: none;
+            padding: 0;
+        }
+
+        .list-item {
+            padding: 12px 0;
+            border-bottom: 1px solid #f3f4f6;
+        }
+
+        .list-item:last-child {
+            border-bottom: none;
+        }
+
+        /* 강조 박스 */
+        .highlight-box {
+            background: linear-gradient(135deg, #131FA0 0%, #1E34A5 100%);
+            border-radius: 20px;
+            padding: 32px 24px;
+            color: #fff;
+        }
+
+        /* 스텝 */
+        .step {
+            text-align: center;
+            margin-bottom: 48px;
+        }
+
+        .step-number {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, #131FA0 0%, #1E34A5 100%);
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            font-size: 44px;
+            font-weight: 900;
+            color: #fff;
+        }
+
+        /* 특수 효과 */
+        strong {
+            font-weight: 700;
+            color: #111;
+        }
+
+        .text-gradient {
+            background: linear-gradient(135deg, #131FA0 0%, #1E34A5 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        /* PC 반응형 - 768px 이상 */
+        @media (min-width: 769px) {
+            body {
+                background: #f5f5f5;
+            }
+
+            .mobile-view {
+                max-width: 1200px;
+                box-shadow: 0 0 40px rgba(0,0,0,0.08);
+            }
+
+            /* 섹션 패딩 증가 */
+            .section {
+                padding: 100px 60px;
+            }
+
+            .section-tight {
+                padding: 60px 60px;
+            }
+
+            /* 타이포그래피 확대 */
+            .hero-text {
+                font-size: 96px;
+            }
+
+            .title-xl {
+                font-size: 56px;
+            }
+
+            .title-lg {
+                font-size: 48px;
+            }
+
+            .title-md {
+                font-size: 32px;
+            }
+
+            .body-lg {
+                font-size: 22px;
+            }
+
+            .body-md {
+                font-size: 18px;
+            }
+
+            .body-sm {
+                font-size: 16px;
+            }
+
+            .caption {
+                font-size: 14px;
+            }
+
+            /* 숫자 확대 */
+            .number-hero {
+                font-size: 96px;
+            }
+
+            .number-xl {
+                font-size: 72px;
+            }
+
+            .number-lg {
+                font-size: 64px;
+            }
+
+            /* 구분선 제거 */
+            .divider-thick {
+                display: none;
+            }
+
+            /* 카드 패딩 증가 */
+            .card {
+                padding: 48px 40px;
+                margin-bottom: 24px;
+            }
+
+            /* 스텝 가로 배치 */
+            .steps-container {
+                display: flex;
+                gap: 40px;
+                justify-content: center;
+                align-items: flex-start;
+            }
+
+            .step {
+                flex: 1;
+                max-width: 300px;
+                margin-bottom: 0;
+            }
+
+            .step-number {
+                width: 120px;
+                height: 120px;
+                font-size: 64px;
+            }
+
+            /* Before/After 가로 배치 */
+            .comparison-grid {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 32px;
+            }
+
+            /* 5만명 증명 - 가로 배치 */
+            .stats-grid {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 60px;
+                margin-bottom: 60px;
+            }
+
+            .stats-grid > div {
+                margin-bottom: 0 !important;
+            }
+
+            /* 실제 성과 - 2x2 그리드 */
+            .results-grid {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 24px;
+            }
+
+            /* 월 구독료 - 3개 가로 */
+            .benefits-grid {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 24px;
+            }
+
+            /* Before/After 가격 비교 */
+            .price-comparison {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 32px;
+            }
+
+            /* 가격 섹션 최대 너비 */
+            .pricing-card {
+                max-width: 700px;
+                margin: 0 auto;
+            }
+
+            /* CTA 버튼 최대 너비 */
+            .btn {
+                max-width: 500px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            /* 강조 박스 */
+            .highlight-box {
+                padding: 48px 40px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="mobile-view">
+
+        <!-- 히어로 -->
+        <div class="section" style="min-height: 480px; display: flex; align-items: center; justify-content: center; flex-direction: column;">
+            <h1 class="hero-text mb-8" style="font-weight: 900;">
+                시간 낭비 없이<br>
+                <span class="primary">진짜 견적만</span>
+            </h1>
+            <div style="margin-top: 40px;">
+                <svg width="80" height="24" viewBox="0 0 66 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 1.76416L3.52339 1.76416C6.13752 5.65247 8.75165 9.44922 11.3879 13.565L11.4337 13.565L11.4337 1.76416L14.7977 1.76416L14.7977 19.5001L11.2979 19.5001C8.68375 15.6575 6.0711 11.973 3.45697 7.94883L3.38907 7.94883L3.38907 19.5001L0.00295053 19.5001L0.00295053 1.76416L0 1.76416Z" fill="#131FA0"/>
+                    <path d="M17.0254 12.754C17.0254 8.81993 19.7074 6.02295 23.5718 6.02295C27.4362 6.02295 30.1182 8.81993 30.1182 12.754C30.1182 16.6881 27.4362 19.4615 23.5718 19.4615C19.7074 19.4615 17.0254 16.7103 17.0254 12.754ZM23.5703 16.4149C25.4789 16.4149 26.797 14.8909 26.797 12.754C26.797 10.6172 25.4789 9.07098 23.5703 9.07098C21.6617 9.07098 20.32 10.595 20.32 12.754C20.32 14.913 21.6603 16.4149 23.5703 16.4149Z" fill="#131FA0"/>
+                    <path d="M32.9118 9.27639L31.0254 9.27639L31.0254 6.38932L32.9118 6.38932L32.9118 5.1385C32.9118 1.77297 34.934 0.5 37.253 0.5C37.8212 0.5 38.639 0.591559 39.3446 0.863283L39.3446 3.52293C38.7305 3.29551 38.3674 3.22758 37.9349 3.22758C36.0942 3.22758 36.0942 4.54632 36.0942 5.50179L36.0942 6.38784L39.0257 6.38784L39.0257 9.27491L36.0942 9.27491L36.0942 19.0747L32.9118 19.0747L32.9118 9.27639Z" fill="#131FA0"/>
+                    <path d="M39.5249 12.7998C39.5249 8.88934 42.1612 6.02295 45.8661 6.02295C49.0249 6.02295 51.98 8.11552 51.98 12.7762L51.98 13.6401L42.7073 13.6401C42.9804 15.5495 44.4122 16.5966 46.0713 16.5966C47.3673 16.5966 48.4803 15.8921 49.0485 14.5734L52.0258 15.7784C51.1844 17.8474 49.0485 19.4615 46.0934 19.4615C42.3427 19.4615 39.5249 16.824 39.5249 12.7998ZM48.7755 11.4589C48.5482 9.50367 47.2758 8.75348 45.844 8.75348C44.207 8.75348 43.1841 9.86696 42.8667 11.4589L48.7755 11.4589Z" fill="#131FA0"/>
+                    <path d="M53.3438 12.7998C53.3438 8.88934 55.98 6.02295 59.685 6.02295C62.8438 6.02295 65.7989 8.11552 65.7989 12.7762L65.7989 13.6401L56.5262 13.6401C56.7992 15.5495 58.231 16.5966 59.8902 16.5966C61.1861 16.5966 62.2991 15.8921 62.8674 14.5734L65.8446 15.7784C65.0033 17.8474 62.8674 19.4615 59.9123 19.4615C56.1616 19.4615 53.3438 16.824 53.3438 12.7998ZM62.5943 11.4589C62.367 9.50367 61.0946 8.75348 59.6628 8.75348C58.0259 8.75348 57.0029 9.86696 56.6856 11.4589L62.5943 11.4589Z" fill="#131FA0"/>
+                </svg>
+            </div>
+        </div>
+
+        <div class="divider-thick"></div>
+
+        <!-- Before/After 비교 -->
+        <div class="section" style="background: #f8f9fa;">
+            <h2 class="title-xl text-center mb-12">왜 노피는 다를까요?</h2>
+            <p class="body-md gray-600 text-center mb-48">
+                카카오톡 본인인증을 완료한<br>진짜 고객만 연결하기 때문입니다
+            </p>
+
+            <!-- Problem: Before -->
+            <div class="card card-border" style="background: #FFF5F5;">
+                <div class="badge mb-24" style="background: #FF3B30; color: #fff;">기존 방식</div>
+                <h2 class="title-lg mb-20" style="color: #111;">
+                    광고비만 쓰고<br>
+                    가짜 고객만 받습니다
+                </h2>
+                <div class="body-md mb-12" style="color: #6b7280;">
+                    가격만 물어보고 끊는 전화<br>
+                    가짜 이름, 가짜 번호<br>
+                    개통율 1% 미만<br>
+                    광고비만 계속 증가
+                </div>
+                <div class="divider"></div>
+                <div class="body-sm mb-8" style="color: #9ca3af;">결과</div>
+                <div class="title-md" style="color: #FF3B30;">매달 반복되는 스트레스</div>
+            </div>
+
+            <!-- Solution: After -->
+            <div class="card" style="background: #131FA0;">
+                <div class="badge mb-24" style="background: rgba(255,255,255,0.2); color: #fff;">노피</div>
+                <h2 class="title-lg mb-20" style="color: #fff;">
+                    월 70건의<br>
+                    진짜 구매 고객
+                </h2>
+                <div class="body-md mb-12" style="color: #fff; opacity: 0.9;">
+                    개통 정보 미리 받아서 필터링<br>
+                    카카오톡 본인인증 완료<br>
+                    전환율 10% 검증 완료<br>
+                    월 평균 7건 개통
+                </div>
+                <div class="divider" style="background: rgba(255,255,255,0.2);"></div>
+                <div class="body-sm mb-8" style="color: #fff; opacity: 0.7;">결과</div>
+                <div class="title-md" style="color: #fff;">진짜만 받으니 편안합니다</div>
+            </div>
+        </div>
+
+        <div class="divider-thick"></div>
+
+        <!-- How it works -->
+        <div class="section">
+            <h2 class="title-xl text-center mb-12" style="color: #111;">3단계면 끝</h2>
+            <p class="body-md text-center mb-32" style="color: #6b7280;">
+                고객이 알아서 카톡 인증하고<br>정보 입력합니다
+            </p>
+
+            <div style="display: flex; gap: 16px; margin-bottom: 40px;">
+                <!-- Step 1 -->
+                <div style="flex: 1; text-align: center;">
+                    <div style="width: 56px; height: 56px; background: linear-gradient(135deg, #131FA0 0%, #1E34A5 100%); border-radius: 16px; display: flex; align-items: center; justify-content: center; margin: 0 auto 12px;">
+                        <span style="font-size: 28px; font-weight: 900; color: #fff;">1</span>
+                    </div>
+                    <div style="font-size: 18px; font-weight: 700; color: #111; margin-bottom: 4px;">DB 받기</div>
+                    <div style="font-size: 13px; color: #6b7280; line-height: 1.4;">카톡으로<br>실시간 수신</div>
+                </div>
+
+                <!-- Step 2 -->
+                <div style="flex: 1; text-align: center;">
+                    <div style="width: 56px; height: 56px; background: linear-gradient(135deg, #131FA0 0%, #1E34A5 100%); border-radius: 16px; display: flex; align-items: center; justify-content: center; margin: 0 auto 12px;">
+                        <span style="font-size: 28px; font-weight: 900; color: #fff;">2</span>
+                    </div>
+                    <div style="font-size: 18px; font-weight: 700; color: #111; margin-bottom: 4px;">상담하기</div>
+                    <div style="font-size: 13px; color: #6b7280; line-height: 1.4;">전화/카톡<br>맞춤 안내</div>
+                </div>
+
+                <!-- Step 3 -->
+                <div style="flex: 1; text-align: center;">
+                    <div style="width: 56px; height: 56px; background: linear-gradient(135deg, #131FA0 0%, #1E34A5 100%); border-radius: 16px; display: flex; align-items: center; justify-content: center; margin: 0 auto 12px;">
+                        <span style="font-size: 28px; font-weight: 900; color: #fff;">3</span>
+                    </div>
+                    <div style="font-size: 18px; font-weight: 700; color: #111; margin-bottom: 4px;">개통 완료</div>
+                    <div style="font-size: 13px; color: #6b7280; line-height: 1.4;">10명 중<br>1명 개통</div>
+                </div>
+            </div>
+
+            <div class="card" style="background: #f9fafb;">
+                <div class="caption mb-8 text-center" style="color: #6b7280;">본인인증부터 정보입력까지 자동이고</div>
+                <div class="title-md text-center" style="color: #131FA0;">매장은 받고 상담만 하면 됩니다</div>
+            </div>
+        </div>
+
+        <div class="divider-thick"></div>
+
+        <!-- Social Proof -->
+        <div class="section bg-primary">
+            <h2 class="title-xl white text-center mb-12">
+                5만명이 증명했습니다
+            </h2>
+            <p class="body-md white text-center mb-60" style="opacity: 0.9;">
+                베타 테스트 3개월, 실제 데이터
+            </p>
+
+            <div class="stats-grid">
+                <div class="text-center mb-60">
+                    <div class="number-hero white mb-12">5만명</div>
+                    <div class="body-md white" style="opacity: 0.9;">베타 기간 누적 고객</div>
+                </div>
+
+                <div class="text-center mb-60">
+                    <div class="number-hero white mb-12">10%</div>
+                    <div class="body-md white" style="opacity: 0.9;">실제 개통 전환율</div>
+                </div>
+
+                <div class="text-center mb-48">
+                    <div class="number-hero white mb-12">70건</div>
+                    <div class="body-md white" style="opacity: 0.9;">월 평균 구매 의향 고객</div>
+                </div>
+            </div>
+
+            <div class="card" style="background: rgba(255,255,255,0.15); border: 2px solid rgba(255,255,255,0.3);">
+                <p class="title-md white text-center mb-12">
+                    이제 광고비 쓰지 마세요<br>
+                    진짜 고객만 받으세요
+                </p>
+                <p class="body-md white text-center" style="opacity: 0.9;">
+                    11월 1일, 더 강력해진<br>공식 버전이 시작됩니다
+                </p>
+            </div>
+        </div>
+
+        <div class="divider-thick"></div>
+
+        <!-- 누가 사용하나요 -->
+        <div class="section">
+            <h2 class="title-xl text-center mb-12" style="color: #111;">누가 사용하나요?</h2>
+            <p class="body-md gray-600 text-center mb-48">
+                전국 각지에서<br>5만명이 노피를 이용했습니다
+            </p>
+
+            <div class="highlight-box mb-16">
+                <div class="text-center">
+                    <div class="number-hero white mb-20">17개 시도</div>
+                    <div class="body-lg white" style="opacity: 0.9;">
+                        서울, 경기, 인천, 부산, 대구<br>
+                        광주, 대전, 울산, 세종<br>
+                        강원, 충북, 충남, 전북, 전남<br>
+                        경북, 경남, 제주
+                    </div>
+                </div>
+            </div>
+
+            <div class="card card-border">
+                <div class="text-center">
+                    <div class="number-xl primary mb-20">169개 시군구</div>
+                    <div class="body-lg gray-600">
+                        제주도부터 강원도까지<br>
+                        전국 방방곡곡에서<br>
+                        노피를 사용합니다
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="divider-thick"></div>
+
+        <!-- Real Results -->
+        <div class="section">
+            <h2 class="title-xl text-center mb-12">실제 매장들의 성과</h2>
+            <p class="body-md gray-600 text-center mb-48">
+                베타 테스트 3개월,<br>실제 데이터로 검증했습니다
+            </p>
+
+            <div class="results-grid">
+                <!-- Case 1 -->
+                <div class="card card-border mb-20">
+                    <div class="text-center mb-20">
+                        <div class="number-lg primary mb-12">30배</div>
+                        <div class="title-md mb-16">개통완료율 증가</div>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="body-md gray-600">
+                        개통정보를 미리 입력받으니<br>
+                        <strong>진짜 고객만 남고</strong><br>
+                        개통율이 30배 높아졌습니다
+                    </div>
+                </div>
+
+                <!-- Case 2 -->
+                <div class="card card-border mb-20">
+                    <div class="text-center mb-20">
+                        <div class="number-lg green mb-12">176건</div>
+                        <div class="title-md mb-16">신규 매장 첫 달 신청</div>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="body-md gray-600">
+                        고객이 한 명도 없던 신규 매장,<br>
+                        <strong>오픈 첫 달부터 176건</strong><br>
+                        구매 의향 고객을 확보했습니다
+                    </div>
+                </div>
+
+                <!-- Case 3 -->
+                <div class="card card-border mb-20">
+                    <div class="text-center mb-20">
+                        <div class="number-lg orange mb-12">2배</div>
+                        <div class="title-md mb-16">상품 등록하면 신청 증가</div>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="body-md gray-600">
+                        상품 많이 등록한 매장은<br>
+                        <strong>평균 113건 vs 60건</strong><br>
+                        약 2배 더 많은 신청을 받습니다
+                    </div>
+                </div>
+
+                <!-- Case 4 -->
+                <div class="card card-border mb-40">
+                    <div class="text-center mb-20">
+                        <div class="number-lg purple mb-12">714명</div>
+                        <div class="title-md mb-16">누적 고객 DB 확보</div>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="body-md gray-600">
+                        베타 기간 3개월 동안<br>
+                        <strong>714명의 고객 정보</strong>가<br>
+                        평생 자산으로 쌓였습니다
+                    </div>
+                </div>
+            </div>
+
+            <div class="highlight-box">
+                <div class="caption mb-8" style="opacity: 0.8;">이 모든 데이터는</div>
+                <div class="title-md">실제 노피 매장들의 결과입니다</div>
+            </div>
+        </div>
+
+        <div class="divider-thick"></div>
+
+        <!-- Value Prop -->
+        <div class="section bg-gray">
+            <h2 class="title-xl text-center mb-12">월 구독료 하나로</h2>
+            <p class="body-md gray-600 text-center mb-48">
+                광고비는 끝, 진짜 고객만 받으세요
+            </p>
+
+            <div class="benefits-grid">
+                <div class="card card-shadow mb-16 text-center">
+                    <div class="number-lg primary mb-12">10%</div>
+                    <div class="title-md mb-8">검증된 전환율</div>
+                    <div class="body-md gray-600">10명 중 1명 실제 개통</div>
+                </div>
+
+                <div class="card card-shadow mb-16 text-center">
+                    <div class="number-lg primary mb-12">무제한</div>
+                    <div class="title-md mb-8">견적 신청 수신</div>
+                    <div class="body-md gray-600">월 70건 평균, 건수 제한 없음</div>
+                </div>
+
+                <div class="card card-shadow mb-48 text-center">
+                    <div class="number-lg primary mb-12">100%</div>
+                    <div class="title-md mb-8">진짜 고객만</div>
+                    <div class="body-md gray-600">카톡 본인인증 완료된 고객</div>
+                </div>
+            </div>
+
+            <div class="price-comparison">
+                <!-- Before -->
+                <div class="card card-border mb-16">
+                    <div class="caption gray-500 mb-8">지금 쓰고 계신 비용</div>
+                    <div class="number-lg red mb-20">매달 수백만원</div>
+                    <div class="divider"></div>
+                    <ul class="list-clean">
+                        <li class="list-item body-md gray-600">네이버 광고비</li>
+                        <li class="list-item body-md gray-600">페이스북 광고비</li>
+                        <li class="list-item body-md gray-600">전단지 제작비</li>
+                        <li class="list-item body-md">그런데 가짜 고객만 받고 계십니다</li>
+                    </ul>
+                </div>
+
+                <!-- After -->
+                <div class="highlight-box">
+                    <div class="caption mb-8" style="opacity: 0.8;">노피 월 구독료</div>
+                    <div class="number-lg white mb-20">하루 커피 한 잔</div>
+                    <div class="divider" style="background: rgba(255,255,255,0.2);"></div>
+                    <ul class="list-clean">
+                        <li class="list-item body-md white" style="border-color: rgba(255,255,255,0.2);"><strong>✓</strong> 월 70건 진짜 고객 DB</li>
+                        <li class="list-item body-md white" style="border-color: rgba(255,255,255,0.2);"><strong>✓</strong> 카톡 실시간 알림</li>
+                        <li class="list-item body-md white" style="border-color: rgba(255,255,255,0.2);"><strong>✓</strong> 고객 정보 평생 자산</li>
+                        <li class="list-item body-md white" style="border-color: rgba(255,255,255,0.2);"><strong>✓</strong> 1건만 개통해도 본전</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="divider-thick"></div>
+
+        <!-- Pricing -->
+        <div class="section">
+            <h2 class="title-xl text-center mb-12">11월 1일 공식 출시</h2>
+            <p class="body-md gray-600 text-center mb-48">
+                지금 시작하면 50% 할인된<br>가격으로 시작합니다
+            </p>
+
+            <div class="card card-shadow pricing-card">
+                <div class="text-center">
+                    <div class="body-sm gray-500 mb-8" style="text-decoration: line-through;">정상가 199,000원/월</div>
+
+                    <div class="mb-16">
+                        <span class="number-xl primary">99,000</span>
+                        <span class="title-md gray-600">원/월</span>
+                    </div>
+
+                    <div class="badge mb-16" style="background: #FF3B30; color: #fff;">50% 할인</div>
+
+                    <div class="body-sm gray-500 mb-32">VAT 별도 · 언제든 해지 가능</div>
+
+                    <div class="card bg-gray mb-24">
+                        <div class="title-md text-center mb-24">포함된 기능</div>
+                        <ul class="list-clean">
+                            <li class="list-item body-md">
+                                <strong style="color: #131FA0;">✓</strong> 견적 신청 무제한 수신
+                            </li>
+                            <li class="list-item body-md">
+                                <strong style="color: #131FA0;">✓</strong> 실시간 카카오톡 알림
+                            </li>
+                            <li class="list-item body-md">
+                                <strong style="color: #131FA0;">✓</strong> 고객 DB 평생 보관
+                            </li>
+                            <li class="list-item body-md">
+                                <strong style="color: #131FA0;">✓</strong> AI 자동 상품 등록 (11월 1일)
+                            </li>
+                            <li class="list-item body-md">
+                                <strong style="color: #131FA0;">✓</strong> 개통정보 자동 수집
+                            </li>
+                        </ul>
+                    </div>
+
+                    <a href="http://pf.kakao.com/_Frqxcn/friend" target="_blank" class="btn btn-primary">
+                        지금 시작하기
+                    </a>
+                    <div class="caption gray-500 mt-40 text-center">카카오톡으로 1분 만에 신청 완료</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="divider-thick"></div>
+
+        <!-- Final CTA -->
+        <div class="section">
+            <div class="text-center">
+                <div class="badge mb-32" style="background: #FF3B30; color: #fff;">50% 할인 마감 임박</div>
+
+                <h2 class="title-xl mb-20">
+                    지금 시작하세요<br>
+                    내일은 늦습니다
+                </h2>
+
+                <p class="body-lg gray-600 mb-48">
+                    5만명이 증명한 진짜 고객<br>
+                    지금 바로 시작하세요
+                </p>
+
+                <a href="http://pf.kakao.com/_Frqxcn/friend" target="_blank" class="btn btn-primary btn-lg mb-16">
+                    카카오톡으로 시작하기
+                </a>
+
+                <div class="caption gray-500 text-center">1분 만에 신청 완료 · 언제든 해지 가능</div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="section-tight bg-gray">
+            <p class="caption gray-500 text-center mb-12">
+                본 자료의 모든 수치는 2025년 8월~10월 베타 테스트 기간의<br>
+                실제 DB 및 Google Analytics 데이터를 기반으로 작성되었습니다.
+            </p>
+            <p class="caption gray-500 text-center" style="opacity: 0.6;">
+                &copy; 2024-2025 NOFEE. All rights reserved.
+            </p>
+        </div>
+
+    </div>
+</body>
+</html>

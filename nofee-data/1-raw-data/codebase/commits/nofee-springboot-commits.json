@@ -1,0 +1,395 @@
+[
+{"commit":"1075856ebf3d73febf0b83c6821d88fe8380d98c","author":"hobin.song","email":"214483404+nofee-hobinsong@users.noreply.github.com","date":"2025-10-23 09:32:40 +0900","message":"수정"}
+,
+{"commit":"f921ef9a3945898820e431705853c585cb1cf1b2","author":"hobin.song","email":"214483404+nofee-hobinsong@users.noreply.github.com","date":"2025-10-22 16:12:45 +0900","message":"버그 수정"}
+,
+{"commit":"5e2d651305c0bc579dfdcddcfc03f8c73412ff14","author":"hobin.song","email":"214483404+nofee-hobinsong@users.noreply.github.com","date":"2025-10-22 15:52:21 +0900","message":"수정"}
+,
+{"commit":"5a295c76ef0177ee547dca78086d9be949e55f94","author":"hobin.song","email":"214483404+nofee-hobinsong@users.noreply.github.com","date":"2025-10-22 15:46:07 +0900","message":"수정"}
+,
+{"commit":"8b1fca3bacfed66d19221c6e67558a52eb238c9c","author":"hobin.song","email":"214483404+nofee-hobinsong@users.noreply.github.com","date":"2025-10-22 15:33:44 +0900","message":"수정"}
+,
+{"commit":"d52c1eb42403d03dcc8e02e7c4ec9abcacd4cf3b","author":"hobin.song","email":"214483404+nofee-hobinsong@users.noreply.github.com","date":"2025-10-22 15:26:10 +0900","message":"수정"}
+,
+{"commit":"4c042d4b81e330eb6afb467bf33073dad4c829e1","author":"hobin.song","email":"214483404+nofee-hobinsong@users.noreply.github.com","date":"2025-10-22 10:52:12 +0900","message":"수정"}
+,
+{"commit":"b42bec99f7f6f1b1ed4461d8e85cbf15339a1627","author":"hobin.song","email":"214483404+nofee-hobinsong@users.noreply.github.com","date":"2025-10-19 22:32:38 +0900","message":"수정"}
+,
+{"commit":"fef626948b4a538a3eefc084d43b514caf6e2b81","author":"hobin.song","email":"214483404+nofee-hobinsong@users.noreply.github.com","date":"2025-10-17 17:47:12 +0900","message":"견적 신청 등록"}
+,
+{"commit":"5755d23c232f431b38c29ee32b213b7638c4580d","author":"hobin.song","email":"214483404+nofee-hobinsong@users.noreply.github.com","date":"2025-10-17 15:24:53 +0900","message":"기능 추가"}
+,
+{"commit":"b558d97aa32d369a768e0b9a0705897f73726660","author":"hobin.song","email":"214483404+nofee-hobinsong@users.noreply.github.com","date":"2025-10-16 17:05:41 +0900","message":"수정"}
+,
+{"commit":"56f2fb7e00666fcf20be45a4df02e566f067c686","author":"hobin.song","email":"214483404+nofee-hobinsong@users.noreply.github.com","date":"2025-10-15 17:12:10 +0900","message":"에이전시 시세표 부분 : 미완"}
+,
+{"commit":"b2a90c9c5b4cfdec4d4083e821a7dc92a8b76b2e","author":"hobin.song","email":"214483404+nofee-hobinsong@users.noreply.github.com","date":"2025-10-13 15:05:26 +0900","message":"소스 수정"}
+,
+{"commit":"94975ef242277b1c95631b1c58c2acaada3a3272","author":"hobin.song","email":"214483404+nofee-hobinsong@users.noreply.github.com","date":"2025-10-13 14:46:42 +0900","message":"수정"}
+,
+{"commit":"6bfe47db4cd5aac4518790b616d7914a05f11240","author":"hobin.song","email":"214483404+nofee-hobinsong@users.noreply.github.com","date":"2025-10-13 14:39:51 +0900","message":"수정"}
+,
+{"commit":"be2574d76a4beaae23577fbb084258ea9deccdce","author":"hobin.song","email":"214483404+nofee-hobinsong@users.noreply.github.com","date":"2025-10-12 20:16:05 +0900","message":"개통 관련 프로세스 변경"}
+,
+{"commit":"691f3c193fcff990e2e587bf1f018ae85185b7cc","author":"hobin.song","email":"214483404+nofee-hobinsong@users.noreply.github.com","date":"2025-10-07 14:35:51 +0900","message":"[API] 상품 그룹-휴대폰 조회수 TOP10 조회에도 반영"}
+,
+{"commit":"925d113d00f0908747f7abd9c9a8b60cffe3285a","author":"hobin.song","email":"214483404+nofee-hobinsong@users.noreply.github.com","date":"2025-10-07 14:05:22 +0900","message":"[API] 이벤트 관련 ( 정합성 테스트 필요 )"}
+,
+{"commit":"e80ab1caa1420e262f593aed547ff5097ff8f89b","author":"hobin.song","email":"214483404+nofee-hobinsong@users.noreply.github.com","date":"2025-10-06 20:06:15 +0900","message":"수정"}
+,
+{"commit":"3a32cbc9717687fb5f56e65bb12307b74752a9e0","author":"hobin.song","email":"214483404+nofee-hobinsong@users.noreply.github.com","date":"2025-10-04 17:32:42 +0900","message":"[AGENCY] 피드백 반영"}
+,
+{"commit":"9830b166bbb951e784419cb7d693d470fc802da1","author":"hobin.song","email":"214483404+nofee-hobinsong@users.noreply.github.com","date":"2025-10-03 16:47:44 +0900","message":"수정"}
+,
+{"commit":"3f1ed9f2a930cf635577b1524886fea9541b817f","author":"hobin.song","email":"214483404+nofee-hobinsong@users.noreply.github.com","date":"2025-10-03 16:46:23 +0900","message":"[ADMIN] 캠페인 관련 기능 1차 추가"}
+,
+{"commit":"274e40621d8be2cec278408ae903cb2f237771d4","author":"hobin.song","email":"214483404+nofee-hobinsong@users.noreply.github.com","date":"2025-10-03 15:46:54 +0900","message":"에이전시 후기 등록 시 메트릭 저장 추가"}
+,
+{"commit":"0031be2aa8b4d38cb289dcfbb62c73902c9de595","author":"hobin.song","email":"214483404+nofee-hobinsong@users.noreply.github.com","date":"2025-09-26 08:43:16 +0900","message":"수정"}
+,
+{"commit":"4fe8f346c91c9283a473af6f5cb69c57bbc5fbee","author":"hobin.song","email":"214483404+nofee-hobinsong@users.noreply.github.com","date":"2025-09-26 08:12:06 +0900","message":"[API] 캠페인 신청 시 슬랙 메시지 수정"}
+,
+{"commit":"d9cb5cd564193a8c325d0dc334c618c56a304eb3","author":"hobin.song","email":"186981718+nofee-technology@users.noreply.github.com","date":"2025-09-25 12:02:33 +0900","message":"순서 수정"}
+,
+{"commit":"ba6d6b91fe8747d4eef3e77ae27b6d1694e57519","author":"hobin.song","email":"186981718+nofee-technology@users.noreply.github.com","date":"2025-09-25 09:52:53 +0900","message":"[API] 상품별 진행중인 이벤트 캠페인 조회 : 목록 추가"}
+,
+{"commit":"154bc9ae4d635c94bb2a95e39ea9d773cc8bbcea","author":"hobin.song","email":"186981718+nofee-technology@users.noreply.github.com","date":"2025-09-25 09:25:19 +0900","message":"[API] 캠페인 신청 시 지역 불일치 예외처리"}
+,
+{"commit":"1b8f4f35ac5d1c40d5a874453dfa8c4c3fa763c2","author":"hobin.song","email":"186981718+nofee-technology@users.noreply.github.com","date":"2025-09-25 08:23:01 +0900","message":"[AGENCY] 버그 수정"}
+,
+{"commit":"2407b70852dc2514ed06e1c83bc9968de929db09","author":"hobin.song","email":"214483404+nofee-hobinsong@users.noreply.github.com","date":"2025-09-22 20:28:50 +0900","message":"[AGENCY] 반려 기능 삭제"}
+,
+{"commit":"df75ade0fc1e5097cb8bb319488adb65de45a211","author":"hobin.song","email":"214483404+nofee-hobinsong@users.noreply.github.com","date":"2025-09-21 14:26:00 +0900","message":"[AGENCY] 소스 수정"}
+,
+{"commit":"eb3dab70e4629261c42b367e0b5b371c3e9353bf","author":"hobin.song","email":"214483404+nofee-hobinsong@users.noreply.github.com","date":"2025-09-21 13:24:50 +0900","message":"에이전시 수정"}
+,
+{"commit":"07b986f886af5b0b67c1061172e431f0a2b09788","author":"hobin.song","email":"214483404+nofee-hobinsong@users.noreply.github.com","date":"2025-09-21 13:18:39 +0900","message":"에이전시 업데이트"}
+,
+{"commit":"c3f71c7a0bfaeacf0003de855989c39df0774bf7","author":"hobin.song","email":"214483404+nofee-hobinsong@users.noreply.github.com","date":"2025-09-21 10:59:39 +0900","message":"수정"}
+,
+{"commit":"453cdefad91f435125965ef3af75a97b0a09ee39","author":"hobin.song","email":"214483404+nofee-hobinsong@users.noreply.github.com","date":"2025-09-21 10:24:11 +0900","message":"[API] 캠페인 관련 기능 수정"}
+,
+{"commit":"34c1a1e1cee1449516955407732aea86be22cd52","author":"hobin.song","email":"214483404+nofee-hobinsong@users.noreply.github.com","date":"2025-09-20 23:54:17 +0900","message":"전체 수정"}
+,
+{"commit":"882db9b76f52666919fde7c6dca53f400fb2871e","author":"hobin.song","email":"214483404+nofee-hobinsong@users.noreply.github.com","date":"2025-09-20 16:52:29 +0900","message":"버그 수정"}
+,
+{"commit":"f62c683906e3097c734e9197516673ec42366597","author":"hobin.song","email":"214483404+nofee-hobinsong@users.noreply.github.com","date":"2025-09-20 16:46:22 +0900","message":"쿼리 수정"}
+,
+{"commit":"9a9fe4e5d0ea2ad4b56c0178e78316df0b54adc3","author":"hobin.song","email":"214483404+nofee-hobinsong@users.noreply.github.com","date":"2025-09-20 16:26:03 +0900","message":"[API] 후기 관련 수정"}
+,
+{"commit":"be7350f45054188c8bd569032379f860c51d958a","author":"hobin.song","email":"214483404+nofee-hobinsong@users.noreply.github.com","date":"2025-09-20 15:45:15 +0900","message":"전체 수정"}
+,
+{"commit":"9e331be249566cfc7b6200fb133733a0f9ec144f","author":"hobin.song","email":"214483404+nofee-hobinsong@users.noreply.github.com","date":"2025-09-20 14:30:32 +0900","message":"[ADMIN] 기능 수정"}
+,
+{"commit":"45aad12af8d18a5a7d975d3fbc0a927b40132dd8","author":"hobin.song","email":"214483404+nofee-hobinsong@users.noreply.github.com","date":"2025-09-20 12:16:41 +0900","message":"수정"}
+,
+{"commit":"d876103895ccc41dcc2e4ce38c3bfa976f160417","author":"hobin.song","email":"214483404+nofee-hobinsong@users.noreply.github.com","date":"2025-09-19 22:44:50 +0900","message":"[AGENCY] 이벤트 / 소식 삭제 기능"}
+,
+{"commit":"27d1bec8de0c59f7fcf930f17833f27e2b996b33","author":"hobin.song","email":"214483404+nofee-hobinsong@users.noreply.github.com","date":"2025-09-19 15:51:06 +0900","message":"쿼리 수정"}
+,
+{"commit":"dc9ce5551caf849d5d329a3cc8c22e1560045c99","author":"hobin.song","email":"214483404+nofee-hobinsong@users.noreply.github.com","date":"2025-09-19 11:58:41 +0900","message":"명칭 수정"}
+,
+{"commit":"2bddeb88cecac2b52c5cb030e0993b02ded64ff2","author":"hobin.song","email":"214483404+nofee-hobinsong@users.noreply.github.com","date":"2025-09-19 11:38:56 +0900","message":"[AGENCY] 캠페인 수정"}
+,
+{"commit":"d7b4c8b0b344920b4a3b91439fbb5dcf8577beac","author":"hobin.song","email":"214483404+nofee-hobinsong@users.noreply.github.com","date":"2025-09-19 10:39:57 +0900","message":"쿼리 수정"}
+,
+{"commit":"8c5066c9d112bb604383f881b9db4b06f6ccf41b","author":"hobin.song","email":"214483404+nofee-hobinsong@users.noreply.github.com","date":"2025-09-19 10:16:26 +0900","message":"[API] 캠페인-휴대폰 단일 조회 추가"}
+,
+{"commit":"069ff5a4396f35ba8e225b990f4feb0546f3801a","author":"hobin.song","email":"214483404+nofee-hobinsong@users.noreply.github.com","date":"2025-09-18 17:30:09 +0900","message":"[API] 소스 수정"}
+,
+{"commit":"811be245e05f2c9d4d8747fe5ba6836c39104b50","author":"hobin.song","email":"214483404+nofee-hobinsong@users.noreply.github.com","date":"2025-09-18 17:19:36 +0900","message":"[ADMIN] 전체 수정"}
+,
+{"commit":"b1f2f08389c72c7ec54ec3ff48131f581ea3a5a8","author":"hobin.song","email":"214483404+nofee-hobinsong@users.noreply.github.com","date":"2025-09-18 15:44:06 +0900","message":"[ADMIN, AGENCY] 검색 관련 기능 수정"}
+,
+{"commit":"9d8546729f3cdccd16dd4770ff87d2e1ed7c9c86","author":"hobin.song","email":"214483404+nofee-hobinsong@users.noreply.github.com","date":"2025-09-18 11:27:30 +0900","message":"[AGENCY] 이벤트/소식 기능 수정"}
+,
+{"commit":"82fd8d21049934ee69e1c04e4ed69ceb166b285f","author":"hobin.song","email":"214483404+nofee-hobinsong@users.noreply.github.com","date":"2025-09-18 11:06:38 +0900","message":"[API] 후기 관련 기능 전체 수정 및 추가"}
+,
+{"commit":"63f18d32f46e214f6621e5b1865d1756b6e0c444","author":"hobin.song","email":"214483404+nofee-hobinsong@users.noreply.github.com","date":"2025-09-16 17:15:44 +0900","message":"수정"}
+,
+{"commit":"5034104841ff66eb600e3590a871836b00b53d8c","author":"hobin.song","email":"214483404+nofee-hobinsong@users.noreply.github.com","date":"2025-09-16 16:28:23 +0900","message":"수정"}
+,
+{"commit":"ec5430d642010979e9d3ec9c2e412b209ce69bea","author":"hobin.song","email":"214483404+nofee-hobinsong@users.noreply.github.com","date":"2025-09-16 16:09:28 +0900","message":"전체 기능 추가 및 수정"}
+,
+{"commit":"9c29f376071cad5fb60f00dbc52b08cd87126582","author":"hobin.song","email":"214483404+nofee-hobinsong@users.noreply.github.com","date":"2025-09-15 17:19:34 +0900","message":"전체 수정"}
+,
+{"commit":"34ed3b650f664e34ab1c7dd7c9d46b97710756ad","author":"hobin.song","email":"214483404+nofee-hobinsong@users.noreply.github.com","date":"2025-09-14 23:30:00 +0900","message":"전체 수정 : 보안 중요"}
+,
+{"commit":"87beafbdee11f1a2aac5a46b415723b909e949d9","author":"hobin.song","email":"214483404+nofee-hobinsong@users.noreply.github.com","date":"2025-09-14 18:25:36 +0900","message":"[API] 버그 수정"}
+,
+{"commit":"a3ab1ac896ab29d0c2d015a489684776e6186ba8","author":"hobin.song","email":"214483404+nofee-hobinsong@users.noreply.github.com","date":"2025-09-14 15:13:02 +0900","message":"캠페인 관련 전체 기능 추가"}
+,
+{"commit":"95ec5bf0daaba66acd62a79bcb778248c4d864ad","author":"hobin.song","email":"214483404+nofee-hobinsong@users.noreply.github.com","date":"2025-09-14 11:47:49 +0900","message":"소스 수정"}
+,
+{"commit":"fd43e57e79accd67f85efc3f494e11f846dc9076","author":"hobin.song","email":"214483404+nofee-hobinsong@users.noreply.github.com","date":"2025-09-13 20:02:41 +0900","message":"[API] 캠페인 부분 수정"}
+,
+{"commit":"89e7d77d75e8f6b60084d204c156372ced7d4c6f","author":"hobin.song","email":"214483404+nofee-hobinsong@users.noreply.github.com","date":"2025-09-13 16:25:55 +0900","message":"[전체] 전체 개편"}
+,
+{"commit":"44150cb1e81b3cdeca3800a9fe932c5eccaf9c95","author":"hobin.song","email":"214483404+nofee-hobinsong@users.noreply.github.com","date":"2025-09-12 13:11:26 +0900","message":"[API] 기능 수정"}
+,
+{"commit":"ef009e027c5bf5a3d5473dbb4829503b3a9ef58c","author":"hobin.song","email":"214483404+nofee-hobinsong@users.noreply.github.com","date":"2025-09-09 13:14:59 +0900","message":"[API] 견적 정보 입력 관련 수정"}
+,
+{"commit":"3f151162032199a9455157aa890b655b40cb0563","author":"hobin.song","email":"186981718+nofee-technology@users.noreply.github.com","date":"2025-09-09 08:47:24 +0900","message":"[AGENCY] 소스 수정"}
+,
+{"commit":"12259863df6deb14c9f58be51eb24091af298b07","author":"hobin.song","email":"186981718+nofee-technology@users.noreply.github.com","date":"2025-09-09 08:36:27 +0900","message":"[ADMIN, COMMON] 소스 수정"}
+,
+{"commit":"54471a6b03ecb35030dd30eaf444e9623b43071e","author":"hobin.song","email":"214483404+nofee-hobinsong@users.noreply.github.com","date":"2025-09-07 23:25:10 +0900","message":"[API] 캠페인 이벤트 신청 기능"}
+,
+{"commit":"5b5d0f5bd85e7453ba7b43aebb30d1bae97c7a37","author":"hobin.song","email":"214483404+nofee-hobinsong@users.noreply.github.com","date":"2025-09-07 15:43:18 +0900","message":"[AGENCY, API] 캠페인 관련 기능 추가"}
+,
+{"commit":"88a38cd243e9f9170ed3de2d8110e56733414a6b","author":"hobin.song","email":"214483404+nofee-hobinsong@users.noreply.github.com","date":"2025-09-07 13:30:02 +0900","message":"[API, AGENCY] 소스 수정"}
+,
+{"commit":"7481a625e289e5e8c4846b872e0619dccc5866dd","author":"hobin.song","email":"214483404+nofee-hobinsong@users.noreply.github.com","date":"2025-09-06 22:33:10 +0900","message":"[ALL] 전체 기능 수정 및 추가"}
+,
+{"commit":"a8e4823570079417b20455b974bedc23a48cf2f0","author":"hobin.song","email":"214483404+nofee-hobinsong@users.noreply.github.com","date":"2025-09-04 17:58:20 +0900","message":"[API, SCHEDULER] 판매점 관련 기능 추가"}
+,
+{"commit":"45bdc18808f85d03e79689f0443c04532331c71f","author":"hobin.song","email":"214483404+nofee-hobinsong@users.noreply.github.com","date":"2025-09-03 09:29:31 +0900","message":"[API] 견적 신청 시 총 지원금 부분 수정"}
+,
+{"commit":"a3311cd31b6bd5f92956ecfd67a60f697f2d13c0","author":"hobin.song","email":"214483404+nofee-hobinsong@users.noreply.github.com","date":"2025-09-02 17:22:24 +0900","message":"[ADMIN, AGENCY] 전체 수정"}
+,
+{"commit":"1e65b5a02049719119417ee165d4f5e988ecae96","author":"hobin.song","email":"214483404+nofee-hobinsong@users.noreply.github.com","date":"2025-09-01 15:19:33 +0900","message":"[API] 견적 신청 정보 조회 관련 수정"}
+,
+{"commit":"589083784e33330e5643dc0cdb718b6ff6b76e80","author":"hobin.song","email":"214483404+nofee-hobinsong@users.noreply.github.com","date":"2025-09-01 14:21:30 +0900","message":"[API] 견적 신청 조회 관련 쿼리 수정"}
+,
+{"commit":"28131de3d3a770cd5019c1c2b584b4dccaa46c3e","author":"hobin.song","email":"214483404+nofee-hobinsong@users.noreply.github.com","date":"2025-08-31 18:31:00 +0900","message":"[SCHEDULER] 자유게시판 관련 리팩토링"}
+,
+{"commit":"1fa8991fb90cb13e7b4c47d44f18080dae7123cf","author":"hobin.song","email":"214483404+nofee-hobinsong@users.noreply.github.com","date":"2025-08-31 18:22:00 +0900","message":"[API, SCHEDULER] 자유게시판 관련 기능 추가"}
+,
+{"commit":"f6071725bd1df336a1fbb244a7fc48a5d57ad7b3","author":"hobin.song","email":"214483404+nofee-hobinsong@users.noreply.github.com","date":"2025-08-30 20:49:42 +0900","message":"[API] 자유게시판 기능 추가"}
+,
+{"commit":"e43f3f5ced232b01806ad587f238d7e18ce18bed","author":"hobin.song","email":"214483404+nofee-hobinsong@users.noreply.github.com","date":"2025-08-30 16:26:21 +0900","message":"[API] 개통 정보 입력 기능 개선"}
+,
+{"commit":"3a7f9dcc721467636626abb6f2ea18edfd27f0d1","author":"hobin.song","email":"214483404+nofee-hobinsong@users.noreply.github.com","date":"2025-08-27 22:56:09 +0900","message":"원복 및 수정"}
+,
+{"commit":"dd189bbcb272b9c7cc44fedcadda180fc5402953","author":"hobin.song","email":"214483404+nofee-hobinsong@users.noreply.github.com","date":"2025-08-27 22:21:44 +0900","message":"수정"}
+,
+{"commit":"ee464b08135df09362c17f792c1f07a0594ba6f3","author":"hobin.song","email":"214483404+nofee-hobinsong@users.noreply.github.com","date":"2025-08-27 22:13:21 +0900","message":"페이징 수정"}
+,
+{"commit":"015f43403b95180e661dac03f4e07a2f0c6eb15d","author":"hobin.song","email":"214483404+nofee-hobinsong@users.noreply.github.com","date":"2025-08-27 22:06:08 +0900","message":"페이징 수정"}
+,
+{"commit":"c4214e9bc6874a55bf2c579f85f1db7671275ba8","author":"hobin.song","email":"214483404+nofee-hobinsong@users.noreply.github.com","date":"2025-08-27 21:57:53 +0900","message":"페이징 수정"}
+,
+{"commit":"b1d08eeb7d1dcc5f53459875a72a0cc7e707f432","author":"hobin.song","email":"214483404+nofee-hobinsong@users.noreply.github.com","date":"2025-08-24 22:24:58 +0900","message":"[API] 유선 신청 : 알림톡"}
+,
+{"commit":"49cea70edaa3ba9c4ba187eb009c9c7c873199de","author":"hobin.song","email":"214483404+nofee-hobinsong@users.noreply.github.com","date":"2025-08-23 18:38:20 +0900","message":"복원"}
+,
+{"commit":"f3ba51155b87930d4ef3011520469f8a41a0a651","author":"hobin.song","email":"214483404+nofee-hobinsong@users.noreply.github.com","date":"2025-08-23 17:41:15 +0900","message":"API 접근 가능 경로 수정"}
+,
+{"commit":"9778cda8ade81d973283393b342658672b1eeb17","author":"hobin.song","email":"214483404+nofee-hobinsong@users.noreply.github.com","date":"2025-08-23 17:32:26 +0900","message":"API 수정"}
+,
+{"commit":"dd4e1b2753e4555a5aa0fad5c7a34980c829b941","author":"hobin.song","email":"214483404+nofee-hobinsong@users.noreply.github.com","date":"2025-08-23 15:50:25 +0900","message":"공통 코드 관련 수정"}
+,
+{"commit":"103ee12e48d1283e3b81be69d71a41a024c67b50","author":"hobin.song","email":"186981718+nofee-technology@users.noreply.github.com","date":"2025-08-23 12:03:55 +0900","message":"에이전시 버그 수정"}
+,
+{"commit":"d6ec62211c628e5020c9780807c1336343130b14","author":"hobin.song","email":"214483404+nofee-hobinsong@users.noreply.github.com","date":"2025-08-21 17:03:19 +0900","message":"소스 수정"}
+,
+{"commit":"5c5a757469e7d05a59c01517c792cb6e31b25ef8","author":"hobin.song","email":"186981718+nofee-technology@users.noreply.github.com","date":"2025-08-19 17:41:49 +0900","message":"기능 수정"}
+,
+{"commit":"facf0db6e1178c490ce4639a1e26d1bf0fee2b5f","author":"hobin.song","email":"186981718+nofee-technology@users.noreply.github.com","date":"2025-08-18 21:42:35 +0900","message":"어드민 대시보드 부분 수정"}
+,
+{"commit":"617c74b5a4e67f6e53bff7afa398213102c90ea0","author":"hobin.song","email":"214483404+nofee-hobinsong@users.noreply.github.com","date":"2025-08-18 17:16:12 +0900","message":"어드민 기능 추가 (임시)"}
+,
+{"commit":"4a6b2641a95b49039bf4e10c7a2269c5f73e5cf3","author":"hobin.song","email":"214483404+nofee-hobinsong@users.noreply.github.com","date":"2025-08-18 16:56:37 +0900","message":"API 기능 최저가 찾는 부분 수정"}
+,
+{"commit":"8e8d24b54a16ec0c1e66b6600b0c94e0a1c35858","author":"hobin.song","email":"186981718+nofee-technology@users.noreply.github.com","date":"2025-08-17 22:55:13 +0900","message":"어드민 전체 수정"}
+,
+{"commit":"3e7975cf55f95c112350bc15720da9d6ab444619","author":"hobin.song","email":"186981718+nofee-technology@users.noreply.github.com","date":"2025-08-17 21:52:37 +0900","message":"유선 기능 추가"}
+,
+{"commit":"82e0c5fa4afc1045332b6578a42cb26f032c2585","author":"hobin.song","email":"186981718+nofee-technology@users.noreply.github.com","date":"2025-08-17 20:59:03 +0900","message":"전체 수정"}
+,
+{"commit":"93b714454868d050b542c8d850b8c3c06caa2d16","author":"hobin.song","email":"186981718+nofee-technology@users.noreply.github.com","date":"2025-08-17 11:43:35 +0900","message":"스케쥴러 가격표 관련 기능 추가"}
+,
+{"commit":"a6bd1ff24b3d60467a6e29d83d15142d0d2b7965","author":"hobin.song","email":"186981718+nofee-technology@users.noreply.github.com","date":"2025-08-16 17:56:39 +0900","message":"기능 추가"}
+,
+{"commit":"b7bbc6442d5cc2553c16f52e053e259d06c4654c","author":"hobin.song","email":"186981718+nofee-technology@users.noreply.github.com","date":"2025-08-16 15:27:39 +0900","message":"기능 수정"}
+,
+{"commit":"b3634f040db8f030293d3257c67b25c231368e5b","author":"hobin.song","email":"186981718+nofee-technology@users.noreply.github.com","date":"2025-08-16 00:46:31 +0900","message":"기능 추가"}
+,
+{"commit":"dcb66796532b0c004d6b16f412de184c6d97f8e3","author":"hobin.song","email":"186981718+nofee-technology@users.noreply.github.com","date":"2025-08-14 16:46:56 +0900","message":"기능 추가 및 수정"}
+,
+{"commit":"434a5a801e6809098cf62d313bbf3b234b1c39b6","author":"hobin.song","email":"186981718+nofee-technology@users.noreply.github.com","date":"2025-08-12 17:15:40 +0900","message":"API 기능 수정"}
+,
+{"commit":"25d5b38cf2bda05425634963f7ce947d60f94a19","author":"hobin.song","email":"186981718+nofee-technology@users.noreply.github.com","date":"2025-08-11 16:58:48 +0900","message":"회원가입 알림톡 발송 추가"}
+,
+{"commit":"32d6a1b3b917e62913ee38eb02a54f5caccddf0c","author":"hobin.song","email":"186981718+nofee-technology@users.noreply.github.com","date":"2025-08-09 20:27:09 +0900","message":"기능 추가"}
+,
+{"commit":"fbda0165313f0bbf307b80d78044c154e2c4c55d","author":"hobin.song","email":"186981718+nofee-technology@users.noreply.github.com","date":"2025-08-09 17:33:24 +0900","message":"선택 가능한 통신사 조회 기능 추가"}
+,
+{"commit":"cb3593cfc9a626d8fb1db471c21f18336d77ea16","author":"hobin.song","email":"186981718+nofee-technology@users.noreply.github.com","date":"2025-08-09 13:24:35 +0900","message":"추천 최저가 기능 추가"}
+,
+{"commit":"00fbfc0f30f7581d1afd791e83b4dabfefc949cb","author":"hobin.song","email":"186981718+nofee-technology@users.noreply.github.com","date":"2025-08-09 10:05:23 +0900","message":"변경 월 요금제 납부액 관련 추가"}
+,
+{"commit":"26d156ae15e0d239d0569988231bc3413347d8e2","author":"hobin.song","email":"186981718+nofee-technology@users.noreply.github.com","date":"2025-08-07 16:38:09 +0900","message":"API 부분 추가"}
+,
+{"commit":"6b9fa19d7aca23638ea145ac726a5a9c064195ef","author":"hobin.song","email":"186981718+nofee-technology@users.noreply.github.com","date":"2025-08-06 22:59:32 +0900","message":"전체 수정"}
+,
+{"commit":"d0e65ce5a7215740f3547d689975a653b79b623d","author":"hobin.song","email":"186981718+nofee-technology@users.noreply.github.com","date":"2025-08-06 22:15:59 +0900","message":"전체 수정"}
+,
+{"commit":"6d9f696eae556f8575ddc192eb6fe0060bae2aa3","author":"hobin.song","email":"186981718+nofee-technology@users.noreply.github.com","date":"2025-08-06 17:12:21 +0900","message":"어드민 수정"}
+,
+{"commit":"43636b20888f71759342aa117a3ad4934d1d3655","author":"hobin.song","email":"186981718+nofee-technology@users.noreply.github.com","date":"2025-08-06 16:46:57 +0900","message":"소스 수정"}
+,
+{"commit":"e862a9f550841d91f8b414d4f777c797e8ca620f","author":"hobin.song","email":"186981718+nofee-technology@users.noreply.github.com","date":"2025-08-05 21:49:44 +0900","message":"어드민 수정"}
+,
+{"commit":"3c0ba54446fb8f7a8ddd8fc3950b091d77adb569","author":"hobin.song","email":"186981718+nofee-technology@users.noreply.github.com","date":"2025-08-05 17:02:15 +0900","message":"수정"}
+,
+{"commit":"92b9fca407c4a15262d192ca056abd54f4a5842a","author":"hobin.song","email":"186981718+nofee-technology@users.noreply.github.com","date":"2025-08-05 16:41:18 +0900","message":"소스 수정"}
+,
+{"commit":"2ca63b2b159617dd1a97971dbc28e4e0d871d16c","author":"hobin.song","email":"186981718+nofee-technology@users.noreply.github.com","date":"2025-08-05 14:22:23 +0900","message":"수정"}
+,
+{"commit":"106908846dd8e8dce6f985a25acd34a03a6ce23a","author":"hobin.song","email":"186981718+nofee-technology@users.noreply.github.com","date":"2025-08-03 18:18:45 +0900","message":"전체 수정"}
+,
+{"commit":"d96c5b64edc4d1eded6482dafa4788b81e8786a0","author":"hobin.song","email":"186981718+nofee-technology@users.noreply.github.com","date":"2025-08-02 22:17:45 +0900","message":"에이전시 소스 추가"}
+,
+{"commit":"335220b5cfa8f5b5bad188f9b7668a9f22534417","author":"hobin.song","email":"186981718+nofee-technology@users.noreply.github.com","date":"2025-08-02 20:06:47 +0900","message":"어드민 소스 수정"}
+,
+{"commit":"9bbb1e7f67aa2cb6e4803e8bdb83b0e3b9e06c82","author":"hbsong","email":"186981718+nofee-technology@users.noreply.github.com","date":"2025-08-02 18:25:43 +0900","message":"전체 수정"}
+,
+{"commit":"20b74657c90cb3ea1569da9e2a02994a0891bf5e","author":"hbsong","email":"186981718+nofee-technology@users.noreply.github.com","date":"2025-08-02 11:08:51 +0900","message":"소스 수정"}
+,
+{"commit":"6a8523e13d85dc82c2fe4d3290b587f39fc71b4e","author":"hobin.song","email":"186981718+nofee-technology@users.noreply.github.com","date":"2025-08-01 17:27:35 +0900","message":"소스 추가"}
+,
+{"commit":"cce32a115ebfa28a9c8650c9644707030f1edd6e","author":"hobin.song","email":"186981718+nofee-technology@users.noreply.github.com","date":"2025-07-29 11:32:27 +0900","message":"기능 추가"}
+,
+{"commit":"5ac399a940b3f9e95948d36b5954b836f6e9d66c","author":"hobin.song","email":"186981718+nofee-technology@users.noreply.github.com","date":"2025-07-28 17:01:33 +0900","message":"전체 수정"}
+,
+{"commit":"ff468a35020ac2b4835213825e9db3b08d61f483","author":"hbsong","email":"186981718+nofee-technology@users.noreply.github.com","date":"2025-07-27 22:38:14 +0900","message":"전체 수정"}
+,
+{"commit":"e98ff7afd89aad0a99bcbce13fd805833b03a14f","author":"hbsong","email":"186981718+nofee-technology@users.noreply.github.com","date":"2025-07-27 18:24:48 +0900","message":"전체 수정"}
+,
+{"commit":"18922f9f5bf21d8cad41d58a4983c6c38038b2d4","author":"hbsong","email":"186981718+nofee-technology@users.noreply.github.com","date":"2025-07-26 19:34:26 +0900","message":"전체 수정"}
+,
+{"commit":"e6af53a394308b8ebb1dcacb7f770ac4f3c80a48","author":"hbsong","email":"186981718+nofee-technology@users.noreply.github.com","date":"2025-07-25 10:10:26 +0900","message":"기능 수정"}
+,
+{"commit":"b63345366212f12f46f62b7dbfee6c697e2da73e","author":"hobin.song","email":"186981718+nofee-technology@users.noreply.github.com","date":"2025-07-24 17:23:18 +0900","message":"전체 수정"}
+,
+{"commit":"ceff9a8673a7570ec9dd966cb3b33615fd00b09a","author":"hobin.song","email":"186981718+nofee-technology@users.noreply.github.com","date":"2025-07-24 13:53:28 +0900","message":"API 차트 할부원금 기준으로 변경"}
+,
+{"commit":"482db096a2862b10f48856db43f4450a1c9ea171","author":"hobin.song","email":"186981718+nofee-technology@users.noreply.github.com","date":"2025-07-23 17:10:16 +0900","message":"기능 수정"}
+,
+{"commit":"c7e6e71384e909bd9fcf9be9a1f5d98b844f7e5d","author":"hbsong","email":"186981718+nofee-technology@users.noreply.github.com","date":"2025-07-20 23:32:07 +0900","message":"전체 수정"}
+,
+{"commit":"fd01170ab929209627d694a47c9fd3efe46e9b5a","author":"hbsong","email":"186981718+nofee-technology@users.noreply.github.com","date":"2025-07-19 17:02:59 +0900","message":"전체 수정"}
+,
+{"commit":"a10dad8770884c81b56866bf9b0c83c8132b64d3","author":"hbsong","email":"186981718+nofee-technology@users.noreply.github.com","date":"2025-07-17 22:01:21 +0900","message":"기능 수정"}
+,
+{"commit":"83feab8a38c10bc484e1febd353cf8a5ae8ebb62","author":"hobin.song","email":"186981718+nofee-technology@users.noreply.github.com","date":"2025-07-17 09:49:28 +0900","message":"어드민 로그인 수정"}
+,
+{"commit":"dba05d220d2b3085332cbdb0ef8c694225be300e","author":"hobin.song","email":"186981718+nofee-technology@users.noreply.github.com","date":"2025-07-16 15:30:42 +0900","message":"소스 수정"}
+,
+{"commit":"1cc8d7d0ff06835aceef88f096e71cb50e4c9995","author":"hbsong","email":"186981718+nofee-technology@users.noreply.github.com","date":"2025-07-15 21:52:33 +0900","message":"유저 관련 예외 처리 추가"}
+,
+{"commit":"52d318356b3111fe17974e0ac3c3b7937ecdd4d6","author":"hobin.song","email":"186981718+nofee-technology@users.noreply.github.com","date":"2025-07-15 17:00:52 +0900","message":"기능 추가"}
+,
+{"commit":"734cc064a3fa99a3d5176523ce87abc710406ee9","author":"hbsong","email":"186981718+nofee-technology@users.noreply.github.com","date":"2025-07-14 22:18:28 +0900","message":"전체 수정"}
+,
+{"commit":"b3439afadf642bab153fc2fb2d7d630786a05959","author":"hbsong","email":"186981718+nofee-technology@users.noreply.github.com","date":"2025-07-14 20:44:23 +0900","message":"AGENCY 기능 추가 및 수정"}
+,
+{"commit":"6a3c1a5b9ffd5a8a1bd906ba06546640b7680609","author":"hbsong","email":"186981718+nofee-technology@users.noreply.github.com","date":"2025-07-13 21:59:53 +0900","message":"전체 수정"}
+,
+{"commit":"d8342d5fbfc7a21146d16450c202351351a75a1d","author":"hbsong","email":"186981718+nofee-technology@users.noreply.github.com","date":"2025-07-13 16:29:58 +0900","message":"전체 수정"}
+,
+{"commit":"523a5b66cc013cf974dba9f279f79da87d0f1879","author":"hbsong","email":"186981718+nofee-technology@users.noreply.github.com","date":"2025-07-12 21:15:41 +0900","message":"어드민 사이드바 수정"}
+,
+{"commit":"1b4f90fee65d0ddee472ac3832bfa342e6adaa75","author":"hbsong","email":"186981718+nofee-technology@users.noreply.github.com","date":"2025-07-12 21:14:05 +0900","message":"전체 수정"}
+,
+{"commit":"3f04b7e6eb5c0f7d0585572d5beb36a750a362b9","author":"hbsong","email":"186981718+nofee-technology@users.noreply.github.com","date":"2025-07-12 20:35:29 +0900","message":"전체 수정"}
+,
+{"commit":"a9c3a84bcc7d70cd559852d3904fd39899fa6786","author":"hbsong","email":"186981718+nofee-technology@users.noreply.github.com","date":"2025-07-12 13:09:34 +0900","message":"전체 수정"}
+,
+{"commit":"bf3c97b5c056004aed504ca5440a83c52872dfe2","author":"hbsong","email":"186981718+nofee-technology@users.noreply.github.com","date":"2025-07-11 22:54:00 +0900","message":"API 후기 등록 추가"}
+,
+{"commit":"0ed486f512f73d035a0cf1263899d3298a48f60d","author":"hbsong","email":"186981718+nofee-technology@users.noreply.github.com","date":"2025-07-11 22:03:18 +0900","message":"전체 수정"}
+,
+{"commit":"aba464491ac9f1da3728b07ca1478d9f04aa7e53","author":"hbsong","email":"186981718+nofee-technology@users.noreply.github.com","date":"2025-07-10 22:29:30 +0900","message":"스케쥴 및 API 추가"}
+,
+{"commit":"3f1bafcbb6d79c6b3b5299595e57c1c84306ef8e","author":"hobin.song","email":"186981718+nofee-technology@users.noreply.github.com","date":"2025-07-10 17:26:55 +0900","message":"API 및 어드민 반영"}
+,
+{"commit":"05fd2eb195aefab6d7156c56f826678f3c6fbeef","author":"hobin.song","email":"186981718+nofee-technology@users.noreply.github.com","date":"2025-07-10 10:02:39 +0900","message":"어드민 가격표 등록 보완"}
+,
+{"commit":"b3f1aa2734fa580e3753ddfce28e63885c8aaf34","author":"hobin.song","email":"186981718+nofee-technology@users.noreply.github.com","date":"2025-07-09 16:42:15 +0900","message":"분산락 적용 및 사용 안하는 부분 제거"}
+,
+{"commit":"96649174efaf3e157eff13d75ad1546f842f343a","author":"hobin.song","email":"186981718+nofee-technology@users.noreply.github.com","date":"2025-07-09 14:56:25 +0900","message":"리뷰 관련 기능 수정"}
+,
+{"commit":"56feb4d8e19542be71b06a5e6f425e0372160bfe","author":"hobin.song","email":"186981718+nofee-technology@users.noreply.github.com","date":"2025-07-09 13:38:04 +0900","message":"후기 관련 기능 추가"}
+,
+{"commit":"43b53ba4c7315b449f8ed9b0817863e349b8bf0b","author":"hobin.song","email":"186981718+nofee-technology@users.noreply.github.com","date":"2025-07-08 09:14:39 +0900","message":"API : 신청 부분 추가"}
+,
+{"commit":"357b4846b2a76a801a8f3fa378674dbddc911e7c","author":"hbsong","email":"186981718+nofee-technology@users.noreply.github.com","date":"2025-07-07 20:15:03 +0900","message":"이벤트 부분 수정"}
+,
+{"commit":"9fc4fcba4d672adbbe2aa3edc10e0a6a42dfdc0f","author":"hbsong","email":"186981718+nofee-technology@users.noreply.github.com","date":"2025-07-06 16:39:36 +0900","message":"전체 소스 수정 및 추가"}
+,
+{"commit":"d0ec6e1489bafd8a1387a8386bee2f36ce336356","author":"hbsong","email":"186981718+nofee-technology@users.noreply.github.com","date":"2025-07-05 21:47:19 +0900","message":"소스 수정"}
+,
+{"commit":"1fbd25d459e21423e33f70866cb2cec227df5cb9","author":"hbsong","email":"186981718+nofee-technology@users.noreply.github.com","date":"2025-07-05 21:38:30 +0900","message":"전체 수정"}
+,
+{"commit":"7d1b22998d17b00f1dc46cc04d31d8851c63877e","author":"hbsong","email":"186981718+nofee-technology@users.noreply.github.com","date":"2025-07-04 11:40:04 +0900","message":"신청 부분 수정"}
+,
+{"commit":"884c70b9870c5baa03bf07e80134a53c7e0b2617","author":"hbsong","email":"186981718+nofee-technology@users.noreply.github.com","date":"2025-07-04 11:34:21 +0900","message":"어드민 수정"}
+,
+{"commit":"bb88f21cbc1ffe6d5c82ed87b782e161db8e1d2e","author":"hbsong","email":"186981718+nofee-technology@users.noreply.github.com","date":"2025-07-04 11:15:28 +0900","message":"신청 및 전체 소스 리팩토링"}
+,
+{"commit":"8df4cda2d077ea1d1614793a695934301a0b5be6","author":"hbsong","email":"186981718+nofee-technology@users.noreply.github.com","date":"2025-07-03 22:47:37 +0900","message":"어드민 수정"}
+,
+{"commit":"5f094b83dd642d5207303dc8898be191f6a6905e","author":"hbsong","email":"186981718+nofee-technology@users.noreply.github.com","date":"2025-07-03 21:29:50 +0900","message":"[어드민] 유저 관련 추가"}
+,
+{"commit":"47add913718bc90aec465c9720be652b38419e96","author":"hobin.song","email":"186981718+nofee-technology@users.noreply.github.com","date":"2025-07-03 15:38:42 +0900","message":"[API] 견적 신청 추가"}
+,
+{"commit":"fffac37c05e0759642e822a16b40388b85ab113b","author":"hbsong","email":"186981718+nofee-technology@users.noreply.github.com","date":"2025-06-29 20:39:33 +0900","message":"소스 추가"}
+,
+{"commit":"0a3cd6a8344f7fff12e1a569168ab62fee14d594","author":"hobin.song","email":"186981718+nofee-technology@users.noreply.github.com","date":"2025-06-28 20:13:23 +0900","message":"문구 수정"}
+,
+{"commit":"30b2f534933ea0178d777d6d04cd5fa00542e211","author":"hbsong","email":"186981718+nofee-technology@users.noreply.github.com","date":"2025-06-22 22:18:16 +0900","message":"소스 추가"}
+,
+{"commit":"a063ee0227e28d0d6ac5345a1d505deb28529c77","author":"hobin.song","email":"186981718+nofee-technology@users.noreply.github.com","date":"2025-06-19 17:18:06 +0900","message":"소스 수정"}
+,
+{"commit":"f4ce3d37e08834b85b629fc4aa9301267adcc15d","author":"hbsong","email":"186981718+nofee-technology@users.noreply.github.com","date":"2025-06-16 22:30:56 +0900","message":"견적 신청"}
+,
+{"commit":"6116ec72ac1af8386f9d6a7274cd0d580dab4f73","author":"hbsong","email":"186981718+nofee-technology@users.noreply.github.com","date":"2025-06-16 21:37:51 +0900","message":"지역 조회 소스 리팩토링"}
+,
+{"commit":"8b9717f417e3735be3d975fe21efdb6d3c19e326","author":"hobin.song","email":"186981718+nofee-technology@users.noreply.github.com","date":"2025-06-16 17:32:18 +0900","message":"소스 수정"}
+,
+{"commit":"06cec2d686a01b1af4a4e02f96073c45483ddd6c","author":"hbsong","email":"186981718+nofee-technology@users.noreply.github.com","date":"2025-06-15 20:10:58 +0900","message":"기능 추가"}
+,
+{"commit":"3acc3d895e27fa62fda69057156169d40164401b","author":"hbsong","email":"186981718+nofee-technology@users.noreply.github.com","date":"2025-06-13 23:47:09 +0900","message":"API 카카오 로그인 및 회원가입 관련 기능"}
+,
+{"commit":"6e7770b622e445396bca1a0a2bf60e7b5a489afc","author":"hobin.song","email":"186981718+nofee-technology@users.noreply.github.com","date":"2025-06-13 16:24:14 +0900","message":"회원가입 부분 추가"}
+,
+{"commit":"df34d2b130262cb967a3588b770d41ae6630485e","author":"hobin.song","email":"186981718+nofee-technology@users.noreply.github.com","date":"2025-06-12 17:12:11 +0900","message":"소스 수정"}
+,
+{"commit":"b1a311a54f77e9577c05ad13c4468f8e1c6397fb","author":"hbsong","email":"186981718+nofee-technology@users.noreply.github.com","date":"2025-06-10 23:47:58 +0900","message":"API 레디스 및 토큰 관련 추가"}
+,
+{"commit":"5227f0f059660193a84a3dbce0de91e1ab8cc7b9","author":"hbsong","email":"186981718+nofee-technology@users.noreply.github.com","date":"2025-06-08 21:17:32 +0900","message":"전체 수정"}
+,
+{"commit":"27db20b55516b4f34dc7d5516fd5cd1c5c33803b","author":"hbsong","email":"186981718+nofee-technology@users.noreply.github.com","date":"2025-06-08 20:39:58 +0900","message":"소스 리팩토링"}
+,
+{"commit":"8d0dd35612747b080a79f10481a3c9e5dddbb178","author":"hbsong","email":"186981718+nofee-technology@users.noreply.github.com","date":"2025-06-08 20:10:12 +0900","message":"기능 전체 수정"}
+,
+{"commit":"63be6a8aa6f08e6b553c3380266328b731e861a7","author":"choahbin","email":"ahbin.coco@gmail.com","date":"2025-06-08 17:53:39 +0900","message":"api 주소 변경"}
+,
+{"commit":"e7c9905df2fffea13968f1d102f48d4dc0bdc77e","author":"choahbin","email":"ahbin.coco@gmail.com","date":"2025-06-08 17:44:56 +0900","message":"sido no 수정"}
+,
+{"commit":"f50cc9331b0a4d09bf14d2b1e5a16f762cc38d90","author":"hbsong","email":"186981718+nofee-technology@users.noreply.github.com","date":"2025-06-07 23:27:11 +0900","message":"소스 전체 수정"}
+,
+{"commit":"d43efbc7f533a0f60677f36bd27336ed9f6e8239","author":"choahbin","email":"ahbin.coco@gmail.com","date":"2025-06-07 21:57:20 +0900","message":"sql lint 수정"}
+,
+{"commit":"d867858857aa0200fd960514ac97f45ea22af6d1","author":"choahbin","email":"ahbin.coco@gmail.com","date":"2025-06-07 21:55:56 +0900","message":"이벤트 조회 단일조회"}
+,
+{"commit":"c23638b746154dc2f192114a76eeeecabcc727ef","author":"choahbin","email":"ahbin.cho@athometrip.com","date":"2025-06-06 00:16:33 +0900","message":"Update .DS_Store"}
+,
+{"commit":"97cde65c0680ad94795717e563c9fc00cd4476de","author":"ahbin-cho","email":"ahbin.coco@gmail.com","date":"2025-06-06 00:12:22 +0900","message":"시군구 추가"}
+,
+{"commit":"1162839e70e0d52130f5cce2468847a60d2e0aba","author":"hobin.song","email":"186981718+nofee-technology@users.noreply.github.com","date":"2025-06-05 18:16:18 +0900","message":"소스 수정 ( 미완 )"}
+,
+{"commit":"952e9acb31db9ec4feec4d1d1a10560e5600cdd6","author":"hobin.song","email":"186981718+nofee-technology@users.noreply.github.com","date":"2025-06-04 10:19:53 +0900","message":"사용 안하는 부분 삭제 및 수정"}
+,
+{"commit":"2a44ec376487318ec55f4b0afdfcbb3325c5d8e5","author":"hbsong","email":"186981718+nofee-technology@users.noreply.github.com","date":"2025-06-03 21:19:32 +0900","message":"전체 수정"}
+,
+{"commit":"7b43eb3fa2c6ef3b5d4df51d87acfa915b745f64","author":"hbsong","email":"186981718+nofee-technology@users.noreply.github.com","date":"2025-06-03 12:16:07 +0900","message":"전체 리팩토링"}
+,
+{"commit":"b64691c0c34c8ac5fef7f63c4ccf9d1b6cf293e9","author":"hbsong","email":"186981718+nofee-technology@users.noreply.github.com","date":"2025-06-02 22:34:29 +0900","message":"[API] 상품 그룹 상세 조회"}
+,
+{"commit":"aa8ebf5a08847682ab6ba071363ab84b78a84525","author":"hbsong","email":"186981718+nofee-technology@users.noreply.github.com","date":"2025-06-02 20:19:47 +0900","message":"사용 안하는 부분 삭제"}
+,
+{"commit":"72295f20ee044d0ddc76f0d02ea120c0ce2f7eca","author":"hbsong","email":"186981718+nofee-technology@users.noreply.github.com","date":"2025-06-02 20:15:47 +0900","message":"초기"}
+]

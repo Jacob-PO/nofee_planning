@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1000">
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 1000px;
+    height: 1000px;
+    background: #f5f5f7;
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", sans-serif;
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    margin-bottom: 50px;
+}
+
+h1 {
+    font-size: 64px;
+    font-weight: 700;
+    color: #1d1d1f;
+    letter-spacing: -2px;
+    margin-bottom: 8px;
+}
+
+.subtitle {
+    font-size: 21px;
+    color: #6e6e73;
+    font-weight: 400;
+}
+
+.grid {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.item {
+    background: #fff;
+    border-radius: 18px;
+    padding: 32px 36px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left h2 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #1d1d1f;
+    margin-bottom: 10px;
+}
+
+.tags {
+    display: flex;
+    gap: 6px;
+}
+
+.tag {
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 11px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.tag.sk { background: #ff3b30; }
+.tag.kt { background: #007aff; }
+.tag.lg { background: #ff2d55; }
+.tag.공시 { background: #ff9500; }
+.tag.선약 { background: #af52de; }
+.tag.번호이동 { background: #34c759; }
+.tag.기기변경 { background: #8e8e93; }
+
+.right {
+    text-align: right;
+}
+
+.price {
+    font-size: 56px;
+    font-weight: 700;
+    color: #007aff;
+    letter-spacing: -2px;
+}
+
+.won {
+    font-size: 17px;
+    color: #86868b;
+    font-weight: 600;
+    margin-top: 4px;
+}
+
+.footer {
+    margin-top: 50px;
+    padding-top: 30px;
+    border-top: 1px solid #d2d2d7;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand {
+    font-size: 28px;
+    font-weight: 700;
+    color: #1d1d1f;
+}
+
+.cta {
+    font-size: 15px;
+    color: #86868b;
+}
+
+.cta span {
+    color: #007aff;
+    font-weight: 600;
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+    <h1>최저가</h1>
+    <div class="subtitle">프리미엄 요금제 기준</div>
+</div>
+
+<div class="grid">
+
+    <div class="item">
+        <div class="left">
+            <h2>아이폰 17 프로 맥스</h2>
+            <div class="tags">
+                <span class="tag kt">KT</span>
+                <span class="tag 공시">공시</span>
+                <span class="tag 번호이동">번호이동</span>
+            </div>
+        </div>
+        <div class="right">
+            <div class="price">148</div>
+            <div class="won">만원</div>
+        </div>
+    </div>
+
+    <div class="item">
+        <div class="left">
+            <h2>갤럭시 S25 울트라</h2>
+            <div class="tags">
+                <span class="tag lg">LG</span>
+                <span class="tag 공시">공시</span>
+                <span class="tag 번호이동">번호이동</span>
+            </div>
+        </div>
+        <div class="right">
+            <div class="price">38</div>
+            <div class="won">만원</div>
+        </div>
+    </div>
+
+    <div class="item">
+        <div class="left">
+            <h2>아이폰 16 프로 맥스</h2>
+            <div class="tags">
+                <span class="tag kt">KT</span>
+                <span class="tag 공시">공시</span>
+                <span class="tag 번호이동">번호이동</span>
+            </div>
+        </div>
+        <div class="right">
+            <div class="price">66</div>
+            <div class="won">만원</div>
+        </div>
+    </div>
+
+</div>
+
+<div class="footer">
+    <div class="brand">NOFEE</div>
+    <div class="cta">네이버 <span>"노피 휴대폰"</span> 검색</div>
+</div>
+
+</body>
+</html>

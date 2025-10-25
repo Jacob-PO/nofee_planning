@@ -1,0 +1,1136 @@
+{
+  "metadata": {
+    "generated_at": "2025-10-23 11:50:26",
+    "source": "Google Analytics",
+    "data_type": "user_retention"
+  },
+  "data": {
+    "daily_retention": [
+      {
+        "date": "2025-01-24",
+        "active_users": 4,
+        "new_users": 4,
+        "returning_users": 0,
+        "returning_rate": 0.0
+      },
+      {
+        "date": "2025-01-25",
+        "active_users": 2,
+        "new_users": 2,
+        "returning_users": 0,
+        "returning_rate": 0.0
+      },
+      {
+        "date": "2025-01-26",
+        "active_users": 1,
+        "new_users": 0,
+        "returning_users": 1,
+        "returning_rate": 100.0
+      },
+      {
+        "date": "2025-01-31",
+        "active_users": 6,
+        "new_users": 6,
+        "returning_users": 0,
+        "returning_rate": 0.0
+      },
+      {
+        "date": "2025-02-02",
+        "active_users": 2,
+        "new_users": 0,
+        "returning_users": 2,
+        "returning_rate": 100.0
+      },
+      {
+        "date": "2025-02-03",
+        "active_users": 3,
+        "new_users": 2,
+        "returning_users": 1,
+        "returning_rate": 33.33
+      },
+      {
+        "date": "2025-02-04",
+        "active_users": 1,
+        "new_users": 1,
+        "returning_users": 0,
+        "returning_rate": 0.0
+      },
+      {
+        "date": "2025-02-05",
+        "active_users": 7,
+        "new_users": 6,
+        "returning_users": 1,
+        "returning_rate": 14.29
+      },
+      {
+        "date": "2025-02-06",
+        "active_users": 1,
+        "new_users": 0,
+        "returning_users": 1,
+        "returning_rate": 100.0
+      },
+      {
+        "date": "2025-02-07",
+        "active_users": 1,
+        "new_users": 1,
+        "returning_users": 0,
+        "returning_rate": 0.0
+      },
+      {
+        "date": "2025-02-08",
+        "active_users": 1,
+        "new_users": 1,
+        "returning_users": 0,
+        "returning_rate": 0.0
+      },
+      {
+        "date": "2025-02-09",
+        "active_users": 4,
+        "new_users": 1,
+        "returning_users": 3,
+        "returning_rate": 75.0
+      },
+      {
+        "date": "2025-02-10",
+        "active_users": 2,
+        "new_users": 2,
+        "returning_users": 0,
+        "returning_rate": 0.0
+      },
+      {
+        "date": "2025-02-11",
+        "active_users": 1,
+        "new_users": 1,
+        "returning_users": 0,
+        "returning_rate": 0.0
+      },
+      {
+        "date": "2025-02-12",
+        "active_users": 4,
+        "new_users": 3,
+        "returning_users": 1,
+        "returning_rate": 25.0
+      },
+      {
+        "date": "2025-02-13",
+        "active_users": 2,
+        "new_users": 2,
+        "returning_users": 0,
+        "returning_rate": 0.0
+      },
+      {
+        "date": "2025-02-14",
+        "active_users": 2,
+        "new_users": 1,
+        "returning_users": 1,
+        "returning_rate": 50.0
+      },
+      {
+        "date": "2025-02-16",
+        "active_users": 1,
+        "new_users": 1,
+        "returning_users": 0,
+        "returning_rate": 0.0
+      },
+      {
+        "date": "2025-02-17",
+        "active_users": 0,
+        "new_users": 0,
+        "returning_users": 0,
+        "returning_rate": 0
+      },
+      {
+        "date": "2025-02-18",
+        "active_users": 1,
+        "new_users": 1,
+        "returning_users": 0,
+        "returning_rate": 0.0
+      },
+      {
+        "date": "2025-02-21",
+        "active_users": 1,
+        "new_users": 0,
+        "returning_users": 1,
+        "returning_rate": 100.0
+      },
+      {
+        "date": "2025-03-01",
+        "active_users": 1,
+        "new_users": 1,
+        "returning_users": 0,
+        "returning_rate": 0.0
+      },
+      {
+        "date": "2025-04-19",
+        "active_users": 1,
+        "new_users": 0,
+        "returning_users": 1,
+        "returning_rate": 100.0
+      },
+      {
+        "date": "2025-04-21",
+        "active_users": 2,
+        "new_users": 2,
+        "returning_users": 0,
+        "returning_rate": 0.0
+      },
+      {
+        "date": "2025-04-28",
+        "active_users": 1,
+        "new_users": 0,
+        "returning_users": 1,
+        "returning_rate": 100.0
+      },
+      {
+        "date": "2025-05-08",
+        "active_users": 6,
+        "new_users": 5,
+        "returning_users": 1,
+        "returning_rate": 16.67
+      },
+      {
+        "date": "2025-05-10",
+        "active_users": 2,
+        "new_users": 1,
+        "returning_users": 1,
+        "returning_rate": 50.0
+      },
+      {
+        "date": "2025-05-13",
+        "active_users": 5,
+        "new_users": 4,
+        "returning_users": 1,
+        "returning_rate": 20.0
+      },
+      {
+        "date": "2025-05-14",
+        "active_users": 6,
+        "new_users": 5,
+        "returning_users": 1,
+        "returning_rate": 16.67
+      },
+      {
+        "date": "2025-05-15",
+        "active_users": 7,
+        "new_users": 4,
+        "returning_users": 3,
+        "returning_rate": 42.86
+      },
+      {
+        "date": "2025-05-16",
+        "active_users": 3,
+        "new_users": 2,
+        "returning_users": 1,
+        "returning_rate": 33.33
+      },
+      {
+        "date": "2025-05-17",
+        "active_users": 1,
+        "new_users": 0,
+        "returning_users": 1,
+        "returning_rate": 100.0
+      },
+      {
+        "date": "2025-05-18",
+        "active_users": 3,
+        "new_users": 2,
+        "returning_users": 1,
+        "returning_rate": 33.33
+      },
+      {
+        "date": "2025-05-19",
+        "active_users": 5,
+        "new_users": 0,
+        "returning_users": 5,
+        "returning_rate": 100.0
+      },
+      {
+        "date": "2025-05-20",
+        "active_users": 4,
+        "new_users": 2,
+        "returning_users": 2,
+        "returning_rate": 50.0
+      },
+      {
+        "date": "2025-05-21",
+        "active_users": 1,
+        "new_users": 0,
+        "returning_users": 1,
+        "returning_rate": 100.0
+      },
+      {
+        "date": "2025-05-22",
+        "active_users": 2,
+        "new_users": 1,
+        "returning_users": 1,
+        "returning_rate": 50.0
+      },
+      {
+        "date": "2025-05-23",
+        "active_users": 2,
+        "new_users": 0,
+        "returning_users": 2,
+        "returning_rate": 100.0
+      },
+      {
+        "date": "2025-05-24",
+        "active_users": 2,
+        "new_users": 1,
+        "returning_users": 1,
+        "returning_rate": 50.0
+      },
+      {
+        "date": "2025-05-25",
+        "active_users": 1,
+        "new_users": 1,
+        "returning_users": 0,
+        "returning_rate": 0.0
+      },
+      {
+        "date": "2025-05-26",
+        "active_users": 2,
+        "new_users": 0,
+        "returning_users": 2,
+        "returning_rate": 100.0
+      },
+      {
+        "date": "2025-05-27",
+        "active_users": 2,
+        "new_users": 1,
+        "returning_users": 1,
+        "returning_rate": 50.0
+      },
+      {
+        "date": "2025-05-28",
+        "active_users": 0,
+        "new_users": 0,
+        "returning_users": 0,
+        "returning_rate": 0
+      },
+      {
+        "date": "2025-05-29",
+        "active_users": 1,
+        "new_users": 1,
+        "returning_users": 0,
+        "returning_rate": 0.0
+      },
+      {
+        "date": "2025-06-01",
+        "active_users": 2,
+        "new_users": 2,
+        "returning_users": 0,
+        "returning_rate": 0.0
+      },
+      {
+        "date": "2025-06-02",
+        "active_users": 0,
+        "new_users": 0,
+        "returning_users": 0,
+        "returning_rate": 0
+      },
+      {
+        "date": "2025-06-12",
+        "active_users": 2,
+        "new_users": 2,
+        "returning_users": 0,
+        "returning_rate": 0.0
+      },
+      {
+        "date": "2025-06-13",
+        "active_users": 1,
+        "new_users": 1,
+        "returning_users": 0,
+        "returning_rate": 0.0
+      },
+      {
+        "date": "2025-06-14",
+        "active_users": 1,
+        "new_users": 1,
+        "returning_users": 0,
+        "returning_rate": 0.0
+      },
+      {
+        "date": "2025-06-15",
+        "active_users": 1,
+        "new_users": 1,
+        "returning_users": 0,
+        "returning_rate": 0.0
+      },
+      {
+        "date": "2025-06-16",
+        "active_users": 1,
+        "new_users": 1,
+        "returning_users": 0,
+        "returning_rate": 0.0
+      },
+      {
+        "date": "2025-07-18",
+        "active_users": 192,
+        "new_users": 191,
+        "returning_users": 1,
+        "returning_rate": 0.52
+      },
+      {
+        "date": "2025-07-19",
+        "active_users": 313,
+        "new_users": 307,
+        "returning_users": 6,
+        "returning_rate": 1.92
+      },
+      {
+        "date": "2025-07-20",
+        "active_users": 202,
+        "new_users": 187,
+        "returning_users": 15,
+        "returning_rate": 7.43
+      },
+      {
+        "date": "2025-07-21",
+        "active_users": 388,
+        "new_users": 357,
+        "returning_users": 31,
+        "returning_rate": 7.99
+      },
+      {
+        "date": "2025-07-22",
+        "active_users": 599,
+        "new_users": 532,
+        "returning_users": 67,
+        "returning_rate": 11.19
+      },
+      {
+        "date": "2025-07-23",
+        "active_users": 262,
+        "new_users": 227,
+        "returning_users": 35,
+        "returning_rate": 13.36
+      },
+      {
+        "date": "2025-07-24",
+        "active_users": 313,
+        "new_users": 249,
+        "returning_users": 64,
+        "returning_rate": 20.45
+      },
+      {
+        "date": "2025-07-25",
+        "active_users": 322,
+        "new_users": 269,
+        "returning_users": 53,
+        "returning_rate": 16.46
+      },
+      {
+        "date": "2025-07-26",
+        "active_users": 408,
+        "new_users": 333,
+        "returning_users": 75,
+        "returning_rate": 18.38
+      },
+      {
+        "date": "2025-07-27",
+        "active_users": 426,
+        "new_users": 337,
+        "returning_users": 89,
+        "returning_rate": 20.89
+      },
+      {
+        "date": "2025-07-28",
+        "active_users": 340,
+        "new_users": 261,
+        "returning_users": 79,
+        "returning_rate": 23.24
+      },
+      {
+        "date": "2025-07-29",
+        "active_users": 463,
+        "new_users": 395,
+        "returning_users": 68,
+        "returning_rate": 14.69
+      },
+      {
+        "date": "2025-07-30",
+        "active_users": 810,
+        "new_users": 718,
+        "returning_users": 92,
+        "returning_rate": 11.36
+      },
+      {
+        "date": "2025-07-31",
+        "active_users": 833,
+        "new_users": 703,
+        "returning_users": 130,
+        "returning_rate": 15.61
+      },
+      {
+        "date": "2025-08-01",
+        "active_users": 679,
+        "new_users": 532,
+        "returning_users": 147,
+        "returning_rate": 21.65
+      },
+      {
+        "date": "2025-08-02",
+        "active_users": 350,
+        "new_users": 270,
+        "returning_users": 80,
+        "returning_rate": 22.86
+      },
+      {
+        "date": "2025-08-03",
+        "active_users": 344,
+        "new_users": 255,
+        "returning_users": 89,
+        "returning_rate": 25.87
+      },
+      {
+        "date": "2025-08-04",
+        "active_users": 589,
+        "new_users": 428,
+        "returning_users": 161,
+        "returning_rate": 27.33
+      },
+      {
+        "date": "2025-08-05",
+        "active_users": 498,
+        "new_users": 370,
+        "returning_users": 128,
+        "returning_rate": 25.7
+      },
+      {
+        "date": "2025-08-06",
+        "active_users": 545,
+        "new_users": 406,
+        "returning_users": 139,
+        "returning_rate": 25.5
+      },
+      {
+        "date": "2025-08-07",
+        "active_users": 514,
+        "new_users": 387,
+        "returning_users": 127,
+        "returning_rate": 24.71
+      },
+      {
+        "date": "2025-08-08",
+        "active_users": 492,
+        "new_users": 351,
+        "returning_users": 141,
+        "returning_rate": 28.66
+      },
+      {
+        "date": "2025-08-09",
+        "active_users": 513,
+        "new_users": 398,
+        "returning_users": 115,
+        "returning_rate": 22.42
+      },
+      {
+        "date": "2025-08-10",
+        "active_users": 595,
+        "new_users": 463,
+        "returning_users": 132,
+        "returning_rate": 22.18
+      },
+      {
+        "date": "2025-08-11",
+        "active_users": 469,
+        "new_users": 335,
+        "returning_users": 134,
+        "returning_rate": 28.57
+      },
+      {
+        "date": "2025-08-12",
+        "active_users": 358,
+        "new_users": 226,
+        "returning_users": 132,
+        "returning_rate": 36.87
+      },
+      {
+        "date": "2025-08-13",
+        "active_users": 356,
+        "new_users": 264,
+        "returning_users": 92,
+        "returning_rate": 25.84
+      },
+      {
+        "date": "2025-08-14",
+        "active_users": 363,
+        "new_users": 261,
+        "returning_users": 102,
+        "returning_rate": 28.1
+      },
+      {
+        "date": "2025-08-15",
+        "active_users": 466,
+        "new_users": 365,
+        "returning_users": 101,
+        "returning_rate": 21.67
+      },
+      {
+        "date": "2025-08-16",
+        "active_users": 524,
+        "new_users": 412,
+        "returning_users": 112,
+        "returning_rate": 21.37
+      },
+      {
+        "date": "2025-08-17",
+        "active_users": 616,
+        "new_users": 468,
+        "returning_users": 148,
+        "returning_rate": 24.03
+      },
+      {
+        "date": "2025-08-18",
+        "active_users": 473,
+        "new_users": 341,
+        "returning_users": 132,
+        "returning_rate": 27.91
+      },
+      {
+        "date": "2025-08-19",
+        "active_users": 496,
+        "new_users": 372,
+        "returning_users": 124,
+        "returning_rate": 25.0
+      },
+      {
+        "date": "2025-08-20",
+        "active_users": 481,
+        "new_users": 378,
+        "returning_users": 103,
+        "returning_rate": 21.41
+      },
+      {
+        "date": "2025-08-21",
+        "active_users": 843,
+        "new_users": 713,
+        "returning_users": 130,
+        "returning_rate": 15.42
+      },
+      {
+        "date": "2025-08-22",
+        "active_users": 454,
+        "new_users": 346,
+        "returning_users": 108,
+        "returning_rate": 23.79
+      },
+      {
+        "date": "2025-08-23",
+        "active_users": 405,
+        "new_users": 303,
+        "returning_users": 102,
+        "returning_rate": 25.19
+      },
+      {
+        "date": "2025-08-24",
+        "active_users": 459,
+        "new_users": 343,
+        "returning_users": 116,
+        "returning_rate": 25.27
+      },
+      {
+        "date": "2025-08-25",
+        "active_users": 463,
+        "new_users": 328,
+        "returning_users": 135,
+        "returning_rate": 29.16
+      },
+      {
+        "date": "2025-08-26",
+        "active_users": 457,
+        "new_users": 351,
+        "returning_users": 106,
+        "returning_rate": 23.19
+      },
+      {
+        "date": "2025-08-27",
+        "active_users": 486,
+        "new_users": 392,
+        "returning_users": 94,
+        "returning_rate": 19.34
+      },
+      {
+        "date": "2025-08-28",
+        "active_users": 473,
+        "new_users": 364,
+        "returning_users": 109,
+        "returning_rate": 23.04
+      },
+      {
+        "date": "2025-08-29",
+        "active_users": 393,
+        "new_users": 298,
+        "returning_users": 95,
+        "returning_rate": 24.17
+      },
+      {
+        "date": "2025-08-30",
+        "active_users": 853,
+        "new_users": 727,
+        "returning_users": 126,
+        "returning_rate": 14.77
+      },
+      {
+        "date": "2025-08-31",
+        "active_users": 1111,
+        "new_users": 962,
+        "returning_users": 149,
+        "returning_rate": 13.41
+      },
+      {
+        "date": "2025-09-01",
+        "active_users": 635,
+        "new_users": 418,
+        "returning_users": 217,
+        "returning_rate": 34.17
+      },
+      {
+        "date": "2025-09-02",
+        "active_users": 507,
+        "new_users": 354,
+        "returning_users": 153,
+        "returning_rate": 30.18
+      },
+      {
+        "date": "2025-09-03",
+        "active_users": 488,
+        "new_users": 329,
+        "returning_users": 159,
+        "returning_rate": 32.58
+      },
+      {
+        "date": "2025-09-04",
+        "active_users": 444,
+        "new_users": 286,
+        "returning_users": 158,
+        "returning_rate": 35.59
+      },
+      {
+        "date": "2025-09-05",
+        "active_users": 443,
+        "new_users": 302,
+        "returning_users": 141,
+        "returning_rate": 31.83
+      },
+      {
+        "date": "2025-09-06",
+        "active_users": 368,
+        "new_users": 245,
+        "returning_users": 123,
+        "returning_rate": 33.42
+      },
+      {
+        "date": "2025-09-07",
+        "active_users": 493,
+        "new_users": 351,
+        "returning_users": 142,
+        "returning_rate": 28.8
+      },
+      {
+        "date": "2025-09-08",
+        "active_users": 461,
+        "new_users": 339,
+        "returning_users": 122,
+        "returning_rate": 26.46
+      },
+      {
+        "date": "2025-09-09",
+        "active_users": 471,
+        "new_users": 333,
+        "returning_users": 138,
+        "returning_rate": 29.3
+      },
+      {
+        "date": "2025-09-10",
+        "active_users": 726,
+        "new_users": 574,
+        "returning_users": 152,
+        "returning_rate": 20.94
+      },
+      {
+        "date": "2025-09-11",
+        "active_users": 391,
+        "new_users": 276,
+        "returning_users": 115,
+        "returning_rate": 29.41
+      },
+      {
+        "date": "2025-09-12",
+        "active_users": 884,
+        "new_users": 729,
+        "returning_users": 155,
+        "returning_rate": 17.53
+      },
+      {
+        "date": "2025-09-13",
+        "active_users": 852,
+        "new_users": 721,
+        "returning_users": 131,
+        "returning_rate": 15.38
+      },
+      {
+        "date": "2025-09-14",
+        "active_users": 890,
+        "new_users": 776,
+        "returning_users": 114,
+        "returning_rate": 12.81
+      },
+      {
+        "date": "2025-09-15",
+        "active_users": 846,
+        "new_users": 683,
+        "returning_users": 163,
+        "returning_rate": 19.27
+      },
+      {
+        "date": "2025-09-16",
+        "active_users": 700,
+        "new_users": 563,
+        "returning_users": 137,
+        "returning_rate": 19.57
+      },
+      {
+        "date": "2025-09-17",
+        "active_users": 806,
+        "new_users": 601,
+        "returning_users": 205,
+        "returning_rate": 25.43
+      },
+      {
+        "date": "2025-09-18",
+        "active_users": 649,
+        "new_users": 463,
+        "returning_users": 186,
+        "returning_rate": 28.66
+      },
+      {
+        "date": "2025-09-19",
+        "active_users": 326,
+        "new_users": 173,
+        "returning_users": 153,
+        "returning_rate": 46.93
+      },
+      {
+        "date": "2025-09-20",
+        "active_users": 350,
+        "new_users": 231,
+        "returning_users": 119,
+        "returning_rate": 34.0
+      },
+      {
+        "date": "2025-09-21",
+        "active_users": 213,
+        "new_users": 103,
+        "returning_users": 110,
+        "returning_rate": 51.64
+      },
+      {
+        "date": "2025-09-22",
+        "active_users": 305,
+        "new_users": 188,
+        "returning_users": 117,
+        "returning_rate": 38.36
+      },
+      {
+        "date": "2025-09-23",
+        "active_users": 252,
+        "new_users": 154,
+        "returning_users": 98,
+        "returning_rate": 38.89
+      },
+      {
+        "date": "2025-09-24",
+        "active_users": 191,
+        "new_users": 103,
+        "returning_users": 88,
+        "returning_rate": 46.07
+      },
+      {
+        "date": "2025-09-25",
+        "active_users": 180,
+        "new_users": 90,
+        "returning_users": 90,
+        "returning_rate": 50.0
+      },
+      {
+        "date": "2025-09-26",
+        "active_users": 352,
+        "new_users": 233,
+        "returning_users": 119,
+        "returning_rate": 33.81
+      },
+      {
+        "date": "2025-09-27",
+        "active_users": 639,
+        "new_users": 444,
+        "returning_users": 195,
+        "returning_rate": 30.52
+      },
+      {
+        "date": "2025-09-28",
+        "active_users": 263,
+        "new_users": 184,
+        "returning_users": 79,
+        "returning_rate": 30.04
+      },
+      {
+        "date": "2025-09-29",
+        "active_users": 203,
+        "new_users": 129,
+        "returning_users": 74,
+        "returning_rate": 36.45
+      },
+      {
+        "date": "2025-09-30",
+        "active_users": 399,
+        "new_users": 316,
+        "returning_users": 83,
+        "returning_rate": 20.8
+      },
+      {
+        "date": "2025-10-01",
+        "active_users": 405,
+        "new_users": 320,
+        "returning_users": 85,
+        "returning_rate": 20.99
+      },
+      {
+        "date": "2025-10-02",
+        "active_users": 410,
+        "new_users": 326,
+        "returning_users": 84,
+        "returning_rate": 20.49
+      },
+      {
+        "date": "2025-10-03",
+        "active_users": 375,
+        "new_users": 298,
+        "returning_users": 77,
+        "returning_rate": 20.53
+      },
+      {
+        "date": "2025-10-04",
+        "active_users": 403,
+        "new_users": 356,
+        "returning_users": 47,
+        "returning_rate": 11.66
+      },
+      {
+        "date": "2025-10-05",
+        "active_users": 414,
+        "new_users": 346,
+        "returning_users": 68,
+        "returning_rate": 16.43
+      },
+      {
+        "date": "2025-10-06",
+        "active_users": 365,
+        "new_users": 295,
+        "returning_users": 70,
+        "returning_rate": 19.18
+      },
+      {
+        "date": "2025-10-07",
+        "active_users": 374,
+        "new_users": 287,
+        "returning_users": 87,
+        "returning_rate": 23.26
+      },
+      {
+        "date": "2025-10-08",
+        "active_users": 369,
+        "new_users": 272,
+        "returning_users": 97,
+        "returning_rate": 26.29
+      },
+      {
+        "date": "2025-10-09",
+        "active_users": 315,
+        "new_users": 232,
+        "returning_users": 83,
+        "returning_rate": 26.35
+      },
+      {
+        "date": "2025-10-10",
+        "active_users": 508,
+        "new_users": 407,
+        "returning_users": 101,
+        "returning_rate": 19.88
+      },
+      {
+        "date": "2025-10-11",
+        "active_users": 396,
+        "new_users": 296,
+        "returning_users": 100,
+        "returning_rate": 25.25
+      },
+      {
+        "date": "2025-10-12",
+        "active_users": 348,
+        "new_users": 269,
+        "returning_users": 79,
+        "returning_rate": 22.7
+      },
+      {
+        "date": "2025-10-13",
+        "active_users": 299,
+        "new_users": 183,
+        "returning_users": 116,
+        "returning_rate": 38.8
+      },
+      {
+        "date": "2025-10-14",
+        "active_users": 223,
+        "new_users": 144,
+        "returning_users": 79,
+        "returning_rate": 35.43
+      },
+      {
+        "date": "2025-10-15",
+        "active_users": 202,
+        "new_users": 118,
+        "returning_users": 84,
+        "returning_rate": 41.58
+      },
+      {
+        "date": "2025-10-16",
+        "active_users": 170,
+        "new_users": 104,
+        "returning_users": 66,
+        "returning_rate": 38.82
+      },
+      {
+        "date": "2025-10-17",
+        "active_users": 146,
+        "new_users": 69,
+        "returning_users": 77,
+        "returning_rate": 52.74
+      },
+      {
+        "date": "2025-10-18",
+        "active_users": 124,
+        "new_users": 63,
+        "returning_users": 61,
+        "returning_rate": 49.19
+      },
+      {
+        "date": "2025-10-19",
+        "active_users": 86,
+        "new_users": 49,
+        "returning_users": 37,
+        "returning_rate": 43.02
+      },
+      {
+        "date": "2025-10-20",
+        "active_users": 123,
+        "new_users": 67,
+        "returning_users": 56,
+        "returning_rate": 45.53
+      },
+      {
+        "date": "2025-10-21",
+        "active_users": 102,
+        "new_users": 48,
+        "returning_users": 54,
+        "returning_rate": 52.94
+      },
+      {
+        "date": "2025-10-22",
+        "active_users": 107,
+        "new_users": 52,
+        "returning_users": 55,
+        "returning_rate": 51.4
+      },
+      {
+        "date": "2025-10-23",
+        "active_users": 25,
+        "new_users": 10,
+        "returning_users": 15,
+        "returning_rate": 60.0
+      }
+    ],
+    "monthly_retention": [
+      {
+        "month": "2025-01",
+        "avg_daily_active": 3.2,
+        "avg_daily_new": 3.0,
+        "avg_daily_returning": 0.2,
+        "returning_rate": 7.69,
+        "total_days": 4
+      },
+      {
+        "month": "2025-02",
+        "avg_daily_active": 2.0,
+        "avg_daily_new": 1.4,
+        "avg_daily_returning": 0.6,
+        "returning_rate": 32.35,
+        "total_days": 17
+      },
+      {
+        "month": "2025-03",
+        "avg_daily_active": 1.0,
+        "avg_daily_new": 1.0,
+        "avg_daily_returning": 0.0,
+        "returning_rate": 0.0,
+        "total_days": 1
+      },
+      {
+        "month": "2025-04",
+        "avg_daily_active": 1.3,
+        "avg_daily_new": 0.7,
+        "avg_daily_returning": 0.7,
+        "returning_rate": 50.0,
+        "total_days": 3
+      },
+      {
+        "month": "2025-05",
+        "avg_daily_active": 2.9,
+        "avg_daily_new": 1.6,
+        "avg_daily_returning": 1.3,
+        "returning_rate": 45.45,
+        "total_days": 19
+      },
+      {
+        "month": "2025-06",
+        "avg_daily_active": 1.1,
+        "avg_daily_new": 1.1,
+        "avg_daily_returning": 0.0,
+        "returning_rate": 0.0,
+        "total_days": 7
+      },
+      {
+        "month": "2025-07",
+        "avg_daily_active": 419.4,
+        "avg_daily_new": 361.9,
+        "avg_daily_returning": 57.5,
+        "returning_rate": 13.71,
+        "total_days": 14
+      },
+      {
+        "month": "2025-08",
+        "avg_daily_active": 519.9,
+        "avg_daily_new": 400.3,
+        "avg_daily_returning": 119.6,
+        "returning_rate": 23.01,
+        "total_days": 31
+      },
+      {
+        "month": "2025-09",
+        "avg_daily_active": 490.9,
+        "avg_daily_new": 356.4,
+        "avg_daily_returning": 134.5,
+        "returning_rate": 27.41,
+        "total_days": 30
+      },
+      {
+        "month": "2025-10",
+        "avg_daily_active": 273.4,
+        "avg_daily_new": 200.5,
+        "avg_daily_returning": 73.0,
+        "returning_rate": 26.68,
+        "total_days": 23
+      }
+    ]
+  }
+}

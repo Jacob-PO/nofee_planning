@@ -1,0 +1,224 @@
+{
+  "generatedAt": "2025-10-23T14:00:00Z",
+  "description": "노피 재방문 사용자 분석 리포트 (DAU - New Users = Returning Users)",
+  "methodology": {
+    "formula": "재방문 사용자 = DAU - 신규 사용자",
+    "returningRate": "(재방문 사용자 / DAU) * 100",
+    "dataSource": "Google Analytics 4"
+  },
+  "monthlyAnalysis": [
+    {
+      "month": "2025-07",
+      "totalDays": 13,
+      "metrics": {
+        "totalActiveUsers": 10820,
+        "totalNewUsers": 9329,
+        "totalReturningUsers": 1491,
+        "avgDailyActiveUsers": 832.3,
+        "avgDailyNewUsers": 717.6,
+        "avgDailyReturningUsers": 114.7,
+        "avgReturningRate": "13.78%"
+      },
+      "dailyData": [
+        {"date": "2025-07-18", "activeUsers": 192, "newUsers": 191, "returningUsers": 1, "returningRate": "0.52%"},
+        {"date": "2025-07-19", "activeUsers": 313, "newUsers": 307, "returningUsers": 6, "returningRate": "1.92%"},
+        {"date": "2025-07-20", "activeUsers": 202, "newUsers": 187, "returningUsers": 15, "returningRate": "7.43%"},
+        {"date": "2025-07-21", "activeUsers": 388, "newUsers": 357, "returningUsers": 31, "returningRate": "7.99%"},
+        {"date": "2025-07-22", "activeUsers": 599, "newUsers": 532, "returningUsers": 67, "returningRate": "11.19%"},
+        {"date": "2025-07-23", "activeUsers": 262, "newUsers": 227, "returningUsers": 35, "returningRate": "13.36%"},
+        {"date": "2025-07-24", "activeUsers": 313, "newUsers": 249, "returningUsers": 64, "returningRate": "20.45%"},
+        {"date": "2025-07-25", "activeUsers": 322, "newUsers": 269, "returningUsers": 53, "returningRate": "16.46%"},
+        {"date": "2025-07-26", "activeUsers": 408, "newUsers": 333, "returningUsers": 75, "returningRate": "18.38%"},
+        {"date": "2025-07-27", "activeUsers": 426, "newUsers": 337, "returningUsers": 89, "returningRate": "20.89%"},
+        {"date": "2025-07-28", "activeUsers": 340, "newUsers": 261, "returningUsers": 79, "returningRate": "23.24%"},
+        {"date": "2025-07-29", "activeUsers": 463, "newUsers": 395, "returningUsers": 68, "returningRate": "14.69%"},
+        {"date": "2025-07-30", "activeUsers": 810, "newUsers": 718, "returningUsers": 92, "returningRate": "11.36%"},
+        {"date": "2025-07-31", "activeUsers": 833, "newUsers": 703, "returningUsers": 130, "returningRate": "15.61%"}
+      ]
+    },
+    {
+      "month": "2025-08",
+      "totalDays": 31,
+      "metrics": {
+        "totalActiveUsers": 14821,
+        "totalNewUsers": 11298,
+        "totalReturningUsers": 3523,
+        "avgDailyActiveUsers": 478.1,
+        "avgDailyNewUsers": 364.4,
+        "avgDailyReturningUsers": 113.6,
+        "avgReturningRate": "23.77%"
+      },
+      "dailyData": [
+        {"date": "2025-08-01", "activeUsers": 679, "newUsers": 532, "returningUsers": 147, "returningRate": "21.65%"},
+        {"date": "2025-08-02", "activeUsers": 350, "newUsers": 270, "returningUsers": 80, "returningRate": "22.86%"},
+        {"date": "2025-08-03", "activeUsers": 344, "newUsers": 255, "returningUsers": 89, "returningRate": "25.87%"},
+        {"date": "2025-08-04", "activeUsers": 589, "newUsers": 428, "returningUsers": 161, "returningRate": "27.33%"},
+        {"date": "2025-08-05", "activeUsers": 498, "newUsers": 370, "returningUsers": 128, "returningRate": "25.70%"},
+        {"date": "2025-08-06", "activeUsers": 545, "newUsers": 406, "returningUsers": 139, "returningRate": "25.50%"},
+        {"date": "2025-08-07", "activeUsers": 514, "newUsers": 387, "returningUsers": 127, "returningRate": "24.71%"},
+        {"date": "2025-08-08", "activeUsers": 492, "newUsers": 351, "returningUsers": 141, "returningRate": "28.66%"},
+        {"date": "2025-08-09", "activeUsers": 513, "newUsers": 398, "returningUsers": 115, "returningRate": "22.42%"},
+        {"date": "2025-08-10", "activeUsers": 595, "newUsers": 463, "returningUsers": 132, "returningRate": "22.18%"},
+        {"date": "2025-08-11", "activeUsers": 469, "newUsers": 335, "returningUsers": 134, "returningRate": "28.57%"},
+        {"date": "2025-08-12", "activeUsers": 358, "newUsers": 226, "returningUsers": 132, "returningRate": "36.87%"},
+        {"date": "2025-08-13", "activeUsers": 356, "newUsers": 264, "returningUsers": 92, "returningRate": "25.84%"},
+        {"date": "2025-08-14", "activeUsers": 363, "newUsers": 261, "returningUsers": 102, "returningRate": "28.10%"},
+        {"date": "2025-08-15", "activeUsers": 466, "newUsers": 365, "returningUsers": 101, "returningRate": "21.67%"},
+        {"date": "2025-08-16", "activeUsers": 524, "newUsers": 412, "returningUsers": 112, "returningRate": "21.37%"},
+        {"date": "2025-08-17", "activeUsers": 616, "newUsers": 468, "returningUsers": 148, "returningRate": "24.03%"},
+        {"date": "2025-08-18", "activeUsers": 473, "newUsers": 341, "returningUsers": 132, "returningRate": "27.91%"},
+        {"date": "2025-08-19", "activeUsers": 496, "newUsers": 372, "returningUsers": 124, "returningRate": "25.00%"},
+        {"date": "2025-08-20", "activeUsers": 481, "newUsers": 378, "returningUsers": 103, "returningRate": "21.41%"},
+        {"date": "2025-08-21", "activeUsers": 843, "newUsers": 713, "returningUsers": 130, "returningRate": "15.42%"},
+        {"date": "2025-08-22", "activeUsers": 454, "newUsers": 346, "returningUsers": 108, "returningRate": "23.79%"},
+        {"date": "2025-08-23", "activeUsers": 405, "newUsers": 303, "returningUsers": 102, "returningRate": "25.19%"},
+        {"date": "2025-08-24", "activeUsers": 459, "newUsers": 343, "returningUsers": 116, "returningRate": "25.27%"},
+        {"date": "2025-08-25", "activeUsers": 463, "newUsers": 328, "returningUsers": 135, "returningRate": "29.16%"},
+        {"date": "2025-08-26", "activeUsers": 457, "newUsers": 351, "returningUsers": 106, "returningRate": "23.19%"},
+        {"date": "2025-08-27", "activeUsers": 486, "newUsers": 392, "returningUsers": 94, "returningRate": "19.34%"},
+        {"date": "2025-08-28", "activeUsers": 473, "newUsers": 364, "returningUsers": 109, "returningRate": "23.04%"},
+        {"date": "2025-08-29", "activeUsers": 393, "newUsers": 298, "returningUsers": 95, "returningRate": "24.17%"},
+        {"date": "2025-08-30", "activeUsers": 853, "newUsers": 727, "returningUsers": 126, "returningRate": "14.77%"},
+        {"date": "2025-08-31", "activeUsers": 1111, "newUsers": 962, "returningUsers": 149, "returningRate": "13.41%"}
+      ]
+    },
+    {
+      "month": "2025-09",
+      "totalDays": 30,
+      "metrics": {
+        "totalActiveUsers": 19087,
+        "totalNewUsers": 13932,
+        "totalReturningUsers": 5155,
+        "avgDailyActiveUsers": 636.2,
+        "avgDailyNewUsers": 464.4,
+        "avgDailyReturningUsers": 171.8,
+        "avgReturningRate": "27.00%"
+      },
+      "dailyData": [
+        {"date": "2025-09-01", "activeUsers": 635, "newUsers": 418, "returningUsers": 217, "returningRate": "34.17%"},
+        {"date": "2025-09-02", "activeUsers": 507, "newUsers": 354, "returningUsers": 153, "returningRate": "30.18%"},
+        {"date": "2025-09-03", "activeUsers": 488, "newUsers": 329, "returningUsers": 159, "returningRate": "32.58%"},
+        {"date": "2025-09-04", "activeUsers": 444, "newUsers": 286, "returningUsers": 158, "returningRate": "35.59%"},
+        {"date": "2025-09-05", "activeUsers": 443, "newUsers": 302, "returningUsers": 141, "returningRate": "31.83%"},
+        {"date": "2025-09-06", "activeUsers": 368, "newUsers": 245, "returningUsers": 123, "returningRate": "33.42%"},
+        {"date": "2025-09-07", "activeUsers": 493, "newUsers": 351, "returningUsers": 142, "returningRate": "28.80%"},
+        {"date": "2025-09-08", "activeUsers": 461, "newUsers": 339, "returningUsers": 122, "returningRate": "26.46%"},
+        {"date": "2025-09-09", "activeUsers": 471, "newUsers": 333, "returningUsers": 138, "returningRate": "29.30%"},
+        {"date": "2025-09-10", "activeUsers": 726, "newUsers": 574, "returningUsers": 152, "returningRate": "20.94%"},
+        {"date": "2025-09-11", "activeUsers": 391, "newUsers": 276, "returningUsers": 115, "returningRate": "29.41%"},
+        {"date": "2025-09-12", "activeUsers": 884, "newUsers": 729, "returningUsers": 155, "returningRate": "17.53%"},
+        {"date": "2025-09-13", "activeUsers": 852, "newUsers": 721, "returningUsers": 131, "returningRate": "15.38%"},
+        {"date": "2025-09-14", "activeUsers": 890, "newUsers": 776, "returningUsers": 114, "returningRate": "12.81%"},
+        {"date": "2025-09-15", "activeUsers": 846, "newUsers": 683, "returningUsers": 163, "returningRate": "19.27%"},
+        {"date": "2025-09-16", "activeUsers": 700, "newUsers": 563, "returningUsers": 137, "returningRate": "19.57%"},
+        {"date": "2025-09-17", "activeUsers": 806, "newUsers": 601, "returningUsers": 205, "returningRate": "25.43%"},
+        {"date": "2025-09-18", "activeUsers": 649, "newUsers": 463, "returningUsers": 186, "returningRate": "28.66%"},
+        {"date": "2025-09-19", "activeUsers": 326, "newUsers": 173, "returningUsers": 153, "returningRate": "46.93%"},
+        {"date": "2025-09-20", "activeUsers": 350, "newUsers": 231, "returningUsers": 119, "returningRate": "34.00%"},
+        {"date": "2025-09-21", "activeUsers": 213, "newUsers": 103, "returningUsers": 110, "returningRate": "51.64%"},
+        {"date": "2025-09-22", "activeUsers": 305, "newUsers": 188, "returningUsers": 117, "returningRate": "38.36%"},
+        {"date": "2025-09-23", "activeUsers": 252, "newUsers": 154, "returningUsers": 98, "returningRate": "38.89%"},
+        {"date": "2025-09-24", "activeUsers": 191, "newUsers": 103, "returningUsers": 88, "returningRate": "46.07%"},
+        {"date": "2025-09-25", "activeUsers": 180, "newUsers": 90, "returningUsers": 90, "returningRate": "50.00%"},
+        {"date": "2025-09-26", "activeUsers": 352, "newUsers": 233, "returningUsers": 119, "returningRate": "33.81%"},
+        {"date": "2025-09-27", "activeUsers": 639, "newUsers": 444, "returningUsers": 195, "returningRate": "30.52%"},
+        {"date": "2025-09-28", "activeUsers": 263, "newUsers": 184, "returningUsers": 79, "returningRate": "30.04%"},
+        {"date": "2025-09-29", "activeUsers": 203, "newUsers": 129, "returningUsers": 74, "returningRate": "36.45%"},
+        {"date": "2025-09-30", "activeUsers": 399, "newUsers": 316, "returningUsers": 83, "returningRate": "20.80%"}
+      ]
+    },
+    {
+      "month": "2025-10",
+      "totalDays": 23,
+      "metrics": {
+        "totalActiveUsers": 8415,
+        "totalNewUsers": 6136,
+        "totalReturningUsers": 2279,
+        "avgDailyActiveUsers": 365.9,
+        "avgDailyNewUsers": 266.8,
+        "avgDailyReturningUsers": 99.1,
+        "avgReturningRate": "27.09%"
+      },
+      "dailyData": [
+        {"date": "2025-10-01", "activeUsers": 405, "newUsers": 320, "returningUsers": 85, "returningRate": "20.99%"},
+        {"date": "2025-10-02", "activeUsers": 410, "newUsers": 326, "returningUsers": 84, "returningRate": "20.49%"},
+        {"date": "2025-10-03", "activeUsers": 375, "newUsers": 298, "returningUsers": 77, "returningRate": "20.53%"},
+        {"date": "2025-10-04", "activeUsers": 403, "newUsers": 356, "returningUsers": 47, "returningRate": "11.66%"},
+        {"date": "2025-10-05", "activeUsers": 414, "newUsers": 346, "returningUsers": 68, "returningRate": "16.43%"},
+        {"date": "2025-10-06", "activeUsers": 365, "newUsers": 295, "returningUsers": 70, "returningRate": "19.18%"},
+        {"date": "2025-10-07", "activeUsers": 374, "newUsers": 287, "returningUsers": 87, "returningRate": "23.26%"},
+        {"date": "2025-10-08", "activeUsers": 369, "newUsers": 272, "returningUsers": 97, "returningRate": "26.29%"},
+        {"date": "2025-10-09", "activeUsers": 315, "newUsers": 232, "returningUsers": 83, "returningRate": "26.35%"},
+        {"date": "2025-10-10", "activeUsers": 508, "newUsers": 407, "returningUsers": 101, "returningRate": "19.88%"},
+        {"date": "2025-10-11", "activeUsers": 396, "newUsers": 296, "returningUsers": 100, "returningRate": "25.25%"},
+        {"date": "2025-10-12", "activeUsers": 348, "newUsers": 269, "returningUsers": 79, "returningRate": "22.70%"},
+        {"date": "2025-10-13", "activeUsers": 299, "newUsers": 183, "returningUsers": 116, "returningRate": "38.80%"},
+        {"date": "2025-10-14", "activeUsers": 223, "newUsers": 144, "returningUsers": 79, "returningRate": "35.43%"},
+        {"date": "2025-10-15", "activeUsers": 202, "newUsers": 118, "returningUsers": 84, "returningRate": "41.58%"},
+        {"date": "2025-10-16", "activeUsers": 170, "newUsers": 104, "returningUsers": 66, "returningRate": "38.82%"},
+        {"date": "2025-10-17", "activeUsers": 146, "newUsers": 69, "returningUsers": 77, "returningRate": "52.74%"},
+        {"date": "2025-10-18", "activeUsers": 124, "newUsers": 63, "returningUsers": 61, "returningRate": "49.19%"},
+        {"date": "2025-10-19", "activeUsers": 86, "newUsers": 49, "returningUsers": 37, "returningRate": "43.02%"},
+        {"date": "2025-10-20", "activeUsers": 123, "newUsers": 67, "returningUsers": 56, "returningRate": "45.53%"},
+        {"date": "2025-10-21", "activeUsers": 102, "newUsers": 48, "returningUsers": 54, "returningRate": "52.94%"},
+        {"date": "2025-10-22", "activeUsers": 107, "newUsers": 52, "returningUsers": 55, "returningRate": "51.40%"},
+        {"date": "2025-10-23", "activeUsers": 25, "newUsers": 10, "returningUsers": 15, "returningRate": "60.00%"}
+      ]
+    }
+  ],
+  "keyFindings": {
+    "overallTrend": "재방문율이 지속적으로 개선되고 있음",
+    "monthlyGrowth": [
+      {"month": "2025-07", "returningRate": "13.78%", "status": "초기 단계"},
+      {"month": "2025-08", "returningRate": "23.77%", "status": "개선 중"},
+      {"month": "2025-09", "returningRate": "27.00%", "status": "안정화"},
+      {"month": "2025-10", "returningRate": "27.09%", "status": "유지"}
+    ],
+    "bestPerformingDays": [
+      {"date": "2025-10-23", "returningRate": "60.00%", "note": "가장 높은 재방문율"},
+      {"date": "2025-10-21", "returningRate": "52.94%"},
+      {"date": "2025-10-17", "returningRate": "52.74%"},
+      {"date": "2025-09-21", "returningRate": "51.64%"},
+      {"date": "2025-10-22", "returningRate": "51.40%"}
+    ],
+    "insights": [
+      "9월부터 재방문율이 안정적으로 27% 수준 유지",
+      "10월 중순부터 재방문율이 급격히 상승 (40-60%)",
+      "신규 사용자 감소와 함께 충성 사용자 비중 증가",
+      "서비스 성숙도가 높아지면서 재방문율 개선"
+    ]
+  },
+  "weeklyAverages": {
+    "2025-07": {
+      "week3": {"avgReturningRate": "8.10%", "avgDAU": 301, "avgReturning": 24},
+      "week4": {"avgReturningRate": "17.84%", "avgDAU": 379, "avgReturning": 68},
+      "week5": {"avgReturningRate": "15.15%", "avgDAU": 702, "avgReturning": 106}
+    },
+    "2025-08": {
+      "week1": {"avgReturningRate": "24.80%", "avgDAU": 477, "avgReturning": 118},
+      "week2": {"avgReturningRate": "25.74%", "avgDAU": 493, "avgReturning": 127},
+      "week3": {"avgReturningRate": "24.55%", "avgDAU": 530, "avgReturning": 130},
+      "week4": {"avgReturningRate": "23.45%", "avgDAU": 457, "avgReturning": 107},
+      "week5": {"avgReturningRate": "17.05%", "avgDAU": 585, "avgReturning": 100}
+    },
+    "2025-09": {
+      "week1": {"avgReturningRate": "31.84%", "avgDAU": 493, "avgReturning": 157},
+      "week2": {"avgReturningRate": "24.25%", "avgDAU": 654, "avgReturning": 159},
+      "week3": {"avgReturningRate": "19.43%", "avgDAU": 766, "avgReturning": 149},
+      "week4": {"avgReturningRate": "36.66%", "avgDAU": 476, "avgReturning": 174},
+      "week5": {"avgReturningRate": "40.27%", "avgDAU": 274, "avgReturning": 110}
+    },
+    "2025-10": {
+      "week1": {"avgReturningRate": "19.51%", "avgDAU": 392, "avgReturning": 76},
+      "week2": {"avgReturningRate": "23.64%", "avgDAU": 387, "avgReturning": 91},
+      "week3": {"avgReturningRate": "31.97%", "avgDAU": 241, "avgReturning": 77},
+      "week4": {"avgReturningRate": "47.68%", "avgDAU": 125, "avgReturning": 60}
+    }
+  },
+  "recommendations": [
+    "재방문율이 10월 중순부터 급격히 개선되는 이유 분석 필요",
+    "충성 사용자 그룹 (40%+ 재방문율) 특성 파악 및 타겟팅",
+    "신규 사용자 감소 트렌드 대응 방안 수립",
+    "주말 vs 평일 재방문율 패턴 분석 필요"
+  ]
+}

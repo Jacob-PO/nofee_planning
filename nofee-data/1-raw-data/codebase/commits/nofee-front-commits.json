@@ -1,0 +1,735 @@
+[
+{"commit":"dd7ea57c1469038c75a4fd11cadb1f307c549bb9","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-10-22 15:15:42 +0900","message":"api 주소 변경"}
+,
+{"commit":"7e338b412c0132ebaeaad45366bf4aec66f653ce","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-10-21 15:13:09 +0900","message":"refactor: 주석 제거 및 코드 정리"}
+,
+{"commit":"b3e41579f919f82f97c7d1e1627ee3e0bf0959aa","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-10-21 13:36:37 +0900","message":"fix: SelectDropdown의 z-index 값을 10에서 20으로 수정"}
+,
+{"commit":"a643ae432aaf107e20a2717ce5c96c1ced0c4ce8","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-10-21 13:26:10 +0900","message":"fix: '선택된 옵션 요약' 텍스트를 '선택한 옵션'으로 수정"}
+,
+{"commit":"29cb42fff7ad7240c54da88ab9ced070b1c0a1cc","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-10-21 13:17:27 +0900","message":"feat: SelectBox 컴포넌트에 이미지 표시 기능 추가"}
+,
+{"commit":"38fe74a1940a7d01704624ea6f9849a2b4df2b98","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-10-21 13:08:06 +0900","message":"feat: 제품 그룹 로딩 상태 관리 추가 및 조건부 렌더링 개선"}
+,
+{"commit":"e99bba703d2e01ff74d50b8618ed23b16389c6b4","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-10-21 13:01:36 +0900","message":"fix: 로딩 상태 관리 로직 개선 및 불필요한 로딩 상태 제거"}
+,
+{"commit":"a5de0b1145c8df5de72db0959be3ce387eb70642","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-10-21 11:37:14 +0900","message":"refactor: 불필요한 주석 제거 및 코드 정리"}
+,
+{"commit":"9071d78f39e08c5606c3a95635305965cd6897a3","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-10-21 10:13:51 +0900","message":"feat: Enhance store detail page with quote request functionality and loading states"}
+,
+{"commit":"4416d8e2b6b61036049e7cccf399a96aa91d7552","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-10-19 17:44:34 +0900","message":"fix: 가격 정보가 없을 때 조건 처리 로직 개선"}
+,
+{"commit":"30bca72259d45d8f73b89c389fdba9bdb4899648","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-10-19 17:35:14 +0900","message":"fix: 월 할부금 표시 방식 개선"}
+,
+{"commit":"d5f938a6568c1428539b8c89444805d355a4f2fc","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-10-19 17:34:26 +0900","message":"fix: 월 할부금 표시 방식 개선"}
+,
+{"commit":"54854227ba9ad7d93cbc85acc416629e43b190d1","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-10-19 17:24:10 +0900","message":"fix: 선택 박스 플레이스홀더 수정 및 가격 표시 방식 개선"}
+,
+{"commit":"3d138b1226637c2bebdc06e7345c2b3a550d1d29","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-10-19 16:43:11 +0900","message":"feat: 상품 그룹 및 가격표 관련 API 함수 추가 및 선택 박스 컴포넌트 수정"}
+,
+{"commit":"745ead538b1fdf3005b8f98e021f2755efe036ad","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-10-15 11:26:59 +0900","message":"fix: SelectBox 컴포넌트에 이미지 및 스타일 개선"}
+,
+{"commit":"0b50d453e354ae50afdc71ed76f4ddae8942bfb6","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-10-13 16:43:11 +0900","message":"fix: EstimateAccordion 버튼 텍스트 수정"}
+,
+{"commit":"07470f1ebe2def466f53d9ef425c0ab39d52e823","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-10-13 16:39:23 +0900","message":"fix: EstimateAccordion 컴포넌트의 스타일 정렬 개선"}
+,
+{"commit":"469abe623f9db0e86d4a1efa30e6e64101c236ac","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-10-07 16:34:15 +0900","message":"fix: 스타일 정렬 개선 및 이미지 클래스 순서 수정"}
+,
+{"commit":"45a7804c7a89e346907d66f39e1abea565e4df4a","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-10-07 16:19:11 +0900","message":"hotfix: 상품이미지 잘림"}
+,
+{"commit":"42b8c83a8bfb2ff0849b1eb4b8d5ff10a8792e79","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-10-07 16:07:03 +0900","message":"hotfix: 상품 상세 진행중인 이벤트 더보기 오류"}
+,
+{"commit":"cc9ed4c8e8249b725bd038396991784f5337c211","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-09-26 16:18:07 +0900","message":"fix: StoreSkeleton 및 StoreListPage의 스타일 개선 및 이벤트 목록 로드 시 크기 증가"}
+,
+{"commit":"78df2a498d2a597d2ccd7b37a03a4e130711353e","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-09-25 12:35:07 +0900","message":"fix: 상품 상세 페이지의 스타일에서 불필요한 rounded-xl 클래스 제거"}
+,
+{"commit":"0df29c41de7d66be19ce11602432cf410d8004d9","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-09-25 11:54:14 +0900","message":"fix: 이벤트 목록 로드 시 크기 및 증가량을 3으로 수정"}
+,
+{"commit":"9e61014b3be68fd73586041db7bb1ba40cd9ff62","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-09-25 11:38:05 +0900","message":"fix: Tabs 컴포넌트에 경계 속성 추가 및 이벤트 목록 표시 조건부 렌더링 개선"}
+,
+{"commit":"7cd51f0b4d0e40427ba5828bf6e2597e31419a9d","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-09-25 11:25:41 +0900","message":"fix: 캠페인 이벤트 관련 함수 이름 변경 및 이벤트 목록 표시 컴포넌트 추가"}
+,
+{"commit":"932c577d835c4dbabd7c7669d6796e53ccc3e23b","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-09-24 09:18:34 +0900","message":"fix: SanitizedHtml 컴포넌트를 사용하여 매장 소개 텍스트 처리 개선"}
+,
+{"commit":"3ed5bb9c26d2d619292cdd0b822be4ebde76e5a8","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-09-22 09:41:50 +0900","message":"fix: maskName 함수에서 빈 이름 처리 추가 및 스타일 개선"}
+,
+{"commit":"bb0b0afd271811ff5213dc4c7154640f788fb194","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-09-22 09:34:12 +0900","message":"fix: 이미지 클래스 순서 수정 및 버튼 마진 추가로 스타일 개선"}
+,
+{"commit":"064da4c58861b6e7cf2dc5a9129a6b34163cb14b","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-09-21 10:57:05 +0900","message":"fix: ParticipateButton의 onClick 핸들러 수정 및 disabled 속성 추가"}
+,
+{"commit":"bf1321d8f8ea3180c5c52d63a63f475c723b9e28","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-09-19 15:44:23 +0900","message":"fix: SanitizedHtml 컴포넌트를 DefaultSanitizedHtml로 변경하고 관련된 import 수정"}
+,
+{"commit":"d4e6ad8ddc9c04227fb184e0b691f32d712c9450","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-09-19 15:09:15 +0900","message":"fix: next/image를 img로 변경하여 이미지 처리 방식 개선"}
+,
+{"commit":"0f5b2d9adc26e6309253609e4643011cfcbc319e","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-09-19 15:01:40 +0900","message":"fix: next/image를 img로 변경하여 이미지 처리 방식 개선"}
+,
+{"commit":"287af3e5441921d01b1456dee3529042efbd0277","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-09-19 14:24:44 +0900","message":"fix: 이벤트가 없을 때 메시지 색상 변경"}
+,
+{"commit":"db31ee128105e657ff801a7058e4c5f8aff2b3d0","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-09-19 14:20:27 +0900","message":"fix: 클래스 이름 정렬 및 이미지 클래스 수정, 이벤트 메시지 색상 변경"}
+,
+{"commit":"4af99c076c7bdfd6d0dc38d0d3efeddfeab9ef28","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-09-19 12:17:23 +0900","message":"fix: 이미지 높이 체크 로직 개선 및 확장 조건 수정"}
+,
+{"commit":"d0c75a5005b2db45c190e6d444843dbe51316306","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-09-19 11:53:21 +0900","message":"fix: 이미지 표시 확장 기능 추가 및 높이 체크 로직 개선"}
+,
+{"commit":"b1fca12abd412d38f4b8146667dd5540e6697328","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-09-19 11:28:17 +0900","message":"fix: 캠페인 휴대폰 이벤트 단건 조회 로직 개선 및 이미지 표시 조건 추가"}
+,
+{"commit":"044166fbe419bb85ef4de843f6b85c44bb1eb08d","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-09-19 11:08:08 +0900","message":"fix: 캠페인 휴대폰 이벤트 단건 조회 로직 수정 및 세션 스토리지 관련 코드 제거"}
+,
+{"commit":"555c83eb312b6aa991fb6d1c115ddb2f24b7f1ee","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-09-19 10:51:30 +0900","message":"fix: avatarSrc 속성 제거 및 기본 이미지 경로 수정"}
+,
+{"commit":"723b089b1974e328f326603088fff31d2fa71110","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-09-19 10:46:21 +0900","message":"fix: 뉴스 항목의 시작 및 종료 날짜 표시 조건 추가 및 이미지 클래스 순서 수정"}
+,
+{"commit":"8ab2b0b331ed885654e57b7d3999d7d66126a8ff","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-09-19 10:38:32 +0900","message":"fix: 캠페인 휴대폰 이벤트 URL 수정 및 오류 메시지 개선 feat: 헤더 탭 메뉴에 비활성화 상태 추가 및 적용 페이지 처리 로직 구현 style: 소식 상세 페이지 스타일 수정 및 구조 통일 fix: 리뷰 페이지에서 성공 시 라우터 새로 고침 추가"}
+,
+{"commit":"38a3af7996d507194aec0625ec53ce88302fc987","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-09-19 09:29:19 +0900","message":"fix: 리뷰 텍스트 영역의 플레이스홀더 문구 수정"}
+,
+{"commit":"e212d3368a0e5d548f3f54fe87277d458cd8e97d","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-09-19 09:21:11 +0900","message":"feat: 스토어 소식 상세 페이지 컴포넌트 추가 및 데이터 로딩 로직 구현"}
+,
+{"commit":"181c86312e1b8d790cc3eb2e37ed86d214b9f9b0","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-09-19 09:00:55 +0900","message":"fix: 리뷰 날짜 형식을 기본 문자열로 변경하고 dayjs 관련 코드 제거"}
+,
+{"commit":"b17873f087737d0a3b4bbf02ac1b451efdd21a89","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-09-19 08:56:58 +0900","message":"feat: 리뷰 날짜 형식을 한국 표준시로 설정하기 위해 dayjs 타임존 플러그인 추가"}
+,
+{"commit":"04e946c1d410f517cc569c3425097e858529401d","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-09-19 08:49:41 +0900","message":"fix: 리뷰 카드에서 평점을 소수점 없이 표시하도록 수정"}
+,
+{"commit":"a967d4254ce6a898bcc833045673faae4455a948","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-09-19 08:43:31 +0900","message":"feat: 전체 로딩 상태를 표시하기 위해 FullScreenSpinner 컴포넌트 추가"}
+,
+{"commit":"535bc6b26fe4d581ba9f75fd4c727c9f853d6dd0","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-09-18 23:24:27 +0900","message":"fix: 리뷰 페이지의 라우팅 경로를 '#reviews'로 수정"}
+,
+{"commit":"7f5dd082a4fdfd81698b3ed0fcae24ceaeda9f5a","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-09-18 23:17:08 +0900","message":"feat: StoreReviewList에 avgRating 및 totalCount props 추가"}
+,
+{"commit":"95b09ff6c43716f48cca11b6f15b081dc28b8052","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-09-18 23:09:57 +0900","message":"feat: 리뷰 평균 점수 소수점 첫째 자리까지 표시하도록 수정"}
+,
+{"commit":"7444d487111c7c10393e5bc3072e1698e78776a5","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-09-18 23:09:39 +0900","message":"feat: 리뷰 평균 점수 소수점 첫째 자리까지 표시하도록 수정"}
+,
+{"commit":"48c1b0f8fbceeab64a93aab248c07413b56f223c","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-09-18 22:53:29 +0900","message":"feat: 리뷰 등록 후 알림 모달 추가 및 오류 처리 개선"}
+,
+{"commit":"7025508a1bc2fb6d611641a73b3f6d3b9eb9ebe3","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-09-18 22:44:36 +0900","message":"feat: 스토어 리뷰 등록 및 조회 기능 개선, 관련 API 수정"}
+,
+{"commit":"45db46bb5665ac6511038c2b49e8e6b6ad690a55","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-09-18 16:53:30 +0900","message":"feat: 리뷰 관련 기능 추가 및 UI 개선"}
+,
+{"commit":"473a97e3bdf93dcd9fd0f57c590309e9781e35a2","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-09-17 22:49:08 +0900","message":"feat: 스토어 리뷰 등록 기능 추가 및 관련 UI 수정"}
+,
+{"commit":"0495ed36b72f87be01134ff5857df8d18fbecac6","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-09-17 13:03:46 +0900","message":"feat: StoreNewsItem에 storeNo prop 추가 및 클릭 시 상세 페이지로 이동 기능 구현"}
+,
+{"commit":"d56e773c765f5e00593cada44aace8cc56e700ad","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-09-17 09:53:38 +0900","message":"feat: AuthRedirectManager 및 PublicRouteGuard 추가, 지역 필터링 훅 구현"}
+,
+{"commit":"55844d9ef527f7e8de29814eb22404269ac5bcc6","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-09-16 16:49:09 +0900","message":"feat: StoreDetailPage에서 사업자 정보 표시 및 사전승낙서 텍스트 수정"}
+,
+{"commit":"90d3983351c6662be6409da7480db808c080e770","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-09-16 16:42:22 +0900","message":"fix: '사전승낙서' 텍스트 수정"}
+,
+{"commit":"f10bd48411f62ba648408c218ce5129da2597171","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-09-16 16:34:38 +0900","message":"fix: '후기' 탭 제거 및 불필요한 로딩 섹션 삭제"}
+,
+{"commit":"321771b38a6897243a33f7d4ddc9ca48bfc2e4ee","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-09-16 16:30:24 +0900","message":"fix: 카카오 로그인 버튼 텍스트 수정"}
+,
+{"commit":"f3e40ad5e62dfdba4732fc44a3cc458efb4b792f","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-09-16 16:27:27 +0900","message":"feat: StoreItem 인터페이스에 인증 관련 필드 추가 및 StoreDetailPage에서 인증 정보 표시 로직 수정"}
+,
+{"commit":"74352f5faa10b02ed892455cd0fd4aacf4ea1d45","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-09-16 12:04:44 +0900","message":"fix: z-index 수정 및 버튼 클래스 정리"}
+,
+{"commit":"7cfb35e5facb20c349c9e669a985e081c5f8a28f","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-09-16 11:59:46 +0900","message":"fix: inset 수정"}
+,
+{"commit":"943a12c86a2cb88ffaefb06c30619b1509c138ad","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-09-16 11:52:33 +0900","message":"Refactor store-related components and improve route handling"}
+,
+{"commit":"06aab97fed53f44b5be4202cff57ec206f1f9800","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-09-14 19:23:31 +0900","message":"feat: StoreNewsItem 컴포넌트에 SanitizedHtml 추가 및 내용 표시 방식 수정"}
+,
+{"commit":"acdc8247eecacdde69f5e0955a38576536030048","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-09-14 19:00:00 +0900","message":"feat: StoreItem 및 EventCard 컴포넌트에서 후기 평균 및 할부원금 표시 로직 수정 feat: StoreItem 및 StoreNewsItem에 reviewAvg 추가 feat: EstimateAccordion에서 날짜 표시 로직 간소화 feat: 페이지 스타일 개선 및 불필요한 주석 제거 feat: types.ts에 completedCampaignAt 필드 추가"}
+,
+{"commit":"25c9048b6060ab3cda8f9b4ee719b588bbc5cc6a","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-09-14 12:36:26 +0900","message":"feat: StoreReviewList 및 StoreNewsItem 컴포넌트에 storeNo prop 추가 및 후기 작성 버튼 로직 수정"}
+,
+{"commit":"51c01f807869763c93986db4026cc1c38d82970a","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-09-14 12:08:26 +0900","message":"feat: 카테고리 로딩 상태 제거 및 API 호출 로직 개선"}
+,
+{"commit":"016c3c7d6ded87aacb5f6cf3bc300ed8c09bcccf","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-09-13 23:07:15 +0900","message":"feat: 카테고리 상태 관리 개선 및 API 호출 로직 최적화"}
+,
+{"commit":"9fb74b6ccc2ad73b849deba36376655f59224249","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-09-13 22:56:14 +0900","message":"feat: Header 컴포넌트에 Suspense 추가 및 구조 개선"}
+,
+{"commit":"b619b684981121fa80788099a0ab29d4767a22b5","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-09-13 22:47:48 +0900","message":"feat: 카테고리 관련 API 호출 및 상태 관리 개선"}
+,
+{"commit":"8c1f2b66fe178c99ed926925b18953f077bc5905","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-09-13 21:22:17 +0900","message":"feat: 카테고리 컨텍스트 추가 및 마이페이지 관련 API 호출 로직 개선"}
+,
+{"commit":"8d90d2d3a62b58bb48e03baf55d479dd05eb7030","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-09-13 14:35:59 +0900","message":"feat: 다양한 페이지 및 컴포넌트에 로딩 스켈레톤 추가 및 데이터 로딩 개선"}
+,
+{"commit":"eeb0e1b0af2bd66e8784e98dc0d3105d66078c7d","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-09-11 12:06:15 +0900","message":"fix: CollapseBar 여백 및 버튼 위치 조정"}
+,
+{"commit":"f84e214585a514e2896e8db55d8ceec6831e2677","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-09-11 11:59:40 +0900","message":"feat: 동네성지 단건 조회 진행중"}
+,
+{"commit":"f544365b2f750e56e44da116b4e5fc9de539bed2","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-09-11 09:05:39 +0900","message":"hotfix: 견적완료 bottom sheet 없애기"}
+,
+{"commit":"6068d977790f80a63a7b704bd58b19cb0e921706","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-09-10 11:20:32 +0900","message":"feat: 동네성지 api 연결 진행중"}
+,
+{"commit":"0e03dd6a711b66c2cd03530dd3a75909f56ae4f8","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-09-09 16:26:58 +0900","message":"hotfix: reload"}
+,
+{"commit":"189c1984e487007a8de03b118c025b14ef9212d8","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-09-09 16:04:57 +0900","message":"feat: 버튼 레이블 변경"}
+,
+{"commit":"7b7cf949d6db7727976947c7ced46e6889ae84e4","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-09-09 15:20:27 +0900","message":"fix: 신청내역 버튼 레이블 변경 및 새 신청 상태 처리 추가"}
+,
+{"commit":"bcb9d1b63643f4c95e4d1317e759f5dfc31d1f4d","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-09-07 21:18:42 +0900","message":"임시커밋"}
+,
+{"commit":"19c16ccf377bdd0741eeafbf7bf92e68386e9102","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-09-07 21:18:42 +0900","message":"임시커밋"}
+,
+{"commit":"65aef1fef6a710d7dbd3271c5ee1a5ed187e16a3","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-09-07 21:15:08 +0900","message":"fix: UI"}
+,
+{"commit":"6689435e873c710da2ad7d9c0693b0359e5f179a","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-09-07 21:02:18 +0900","message":"feat: 상점 상세 진행중2"}
+,
+{"commit":"86c5a3dd5537db5fccec6a320a12bb3074db7e2f","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-09-07 20:23:17 +0900","message":"test: mock data"}
+,
+{"commit":"16892781457cf9b2681e78f290f995a9e08c1d5d","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-09-07 20:11:09 +0900","message":"chore: 환경변수 추가"}
+,
+{"commit":"2099395f111a55fc2c7f92e81133ae841dd3eeb1","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-09-07 20:03:34 +0900","message":"feat: 상세 UI 수정 진행중"}
+,
+{"commit":"3f37ce676ecb300fb5461335d64842d14ddeaff4","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-09-07 19:25:54 +0900","message":"feat: 동네성지 추가 버튼 스타일 설정"}
+,
+{"commit":"ed848c6faa42eda73a22ed2d6632a6fe7dcc0d3d","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-09-07 18:43:50 +0900","message":"feat: 동네성지 UI 진행중"}
+,
+{"commit":"12cbafba7b560f00d7e4e1f6842cdfc874325c7d","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-09-04 17:21:53 +0900","message":"ㅇㅇㅇ"}
+,
+{"commit":"784f6d1e8c4e58da18e4f5a6a3fb59f54c7c09b4","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-09-04 11:53:50 +0900","message":"fix: EventsWrap의 padding 수정"}
+,
+{"commit":"b29230a41dda09422270882ce13836e13c09a7b8","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-09-04 11:49:23 +0900","message":"store 리스트 초안"}
+,
+{"commit":"cfd2247008243ab53f428965559e066f23236a04","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-09-02 16:06:28 +0900","message":"hotfix: 인터넷신청 이벤트 삭제"}
+,
+{"commit":"ef7e6d61eae9a592e6ec967e018cea8e1c3e9a6d","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-09-01 16:26:22 +0900","message":"fix: 로딩 추가"}
+,
+{"commit":"d5dc98943a4d1a5ee356c96c1633db7ea7afa76a","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-09-01 16:09:23 +0900","message":"fix: acitve시 에만 cursor-pointer"}
+,
+{"commit":"ae94def36e74347c37cbad86322570555e8bcdf5","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-09-01 16:02:45 +0900","message":"fix: 개통정보 flow CTA"}
+,
+{"commit":"cd75013ccdaa05efe8cc65a15791a55a0a8305ba","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-09-01 15:58:41 +0900","message":"fix: 버튼 레이블 변경"}
+,
+{"commit":"b1912814b06867bbf21ec6a7e705d13cfa50fe15","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-09-01 14:38:25 +0900","message":"fix: 상세주소 validation 추가"}
+,
+{"commit":"003beb2c28c6b3640c3f6a65dfc37c8397ad9986","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-09-01 14:15:05 +0900","message":"fix: 개통정보 step 별"}
+,
+{"commit":"a1fbb2ed3b984b9a44330a1bfa387fc2bd70e2f5","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-09-01 11:44:13 +0900","message":"feat: 개통정보 입력 2단계로 나누기"}
+,
+{"commit":"fab04bf0cd5f13e2ae56c4a1c19066404ec8f5c8","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-08-25 16:47:03 +0900","message":"hotfix: public sales-guide 추가"}
+,
+{"commit":"48968a4d6401a15b32fb0d93de09fc4f5608512c","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-08-25 14:12:34 +0900","message":"hotfix: rewrite 경로 수정"}
+,
+{"commit":"0a3fb6fcbf0a3e98b5672e33efe504964c1dd7c4","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-08-25 14:04:34 +0900","message":"hotfix: 회사소개 수정 및 인터넷 견적신청"}
+,
+{"commit":"906207344b0d80d07695bb7bd3746f49fe6f6fd3","author":"Cursor Agent","email":"cursoragent@cursor.com","date":"2025-08-24 05:18:27 +0000","message":"Refactor monthly chart with useMemo, constants, and improved type safety"}
+,
+{"commit":"fc3a0b1c7614f35d02c48dbc6771990450f215b8","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-08-20 15:16:15 +0900","message":"hotfix: 견전신청 성공시 bottomsheet"}
+,
+{"commit":"d5fe1b76cc7de134e1cfc164914e58c20b464990","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-08-19 17:44:44 +0900","message":"feat: 보호된 레이아웃 컴포넌트 추가"}
+,
+{"commit":"624d91e97c1d5ebd9bfebd5524347f041c9634d2","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-08-19 17:32:03 +0900","message":"hotfix: 인터넷 견적 로그인 여부 바로 진행"}
+,
+{"commit":"cec1b6890425422422c7680e6623dd9baef5543a","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-08-19 13:44:34 +0900","message":"fix:"}
+,
+{"commit":"b8ca5f9371ba7e8d2307f0b7e672611f698bec11","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-08-19 13:35:06 +0900","message":"fix: card"}
+,
+{"commit":"99a24bad73d3362a43579d03a1eb1cd98642c2d6","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-08-19 13:29:36 +0900","message":"fix: 인터넷 견적 신청 버튼만 플로팅"}
+,
+{"commit":"b2aa6fc32c5bfbd9ae99ac86fab7724cb61b0f50","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-08-19 12:57:27 +0900","message":"fix: 값 조절"}
+,
+{"commit":"e9a6b849d617e33512913ea884572504c2dbd981","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-08-19 12:47:56 +0900","message":"fix: 값 조절"}
+,
+{"commit":"e9342e47cd667a7a077d698b5929a23ec3a8f2bb","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-08-19 11:57:29 +0900","message":"fix: zindex"}
+,
+{"commit":"e75a37bf3cf29f03af0e2b8ecbb00a2d4fc1c9f2","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-08-19 11:53:09 +0900","message":"fix: 탭 중앙 정렬"}
+,
+{"commit":"97a6e177aaa608343911a862092433de46d26d3f","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-08-19 11:47:01 +0900","message":"feat: 간단 인터넷 마이페이지"}
+,
+{"commit":"44d9663075edad0b7c47f4031a1216f5b9cac255","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-08-19 10:44:16 +0900","message":"feat: 견적 그래프 수정 및 인터넷 신청 추가"}
+,
+{"commit":"329c96a6e4b3f2d37fdd9ca04a1b7e45384c76bf","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-08-14 16:32:45 +0900","message":"hotfix: 배너 오류"}
+,
+{"commit":"839beb8c89c4fb7ddefff6d97ec3c265f6033b34","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-08-14 16:23:07 +0900","message":"hofix: 인터넷상단 배너"}
+,
+{"commit":"6ce804e448232f3b2fbf9d84dc10ca7916cf683e","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-08-14 16:14:53 +0900","message":"hotfix: 인터넷 배너 강제 추가"}
+,
+{"commit":"d363c1efb2d2738e8b105372c82fa43b11fa2816","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-08-13 14:43:08 +0900","message":"hotfix: internet 수정"}
+,
+{"commit":"25d2889b0c0d8213e4d485d3cd60a3e9e3237338","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-08-13 12:18:34 +0900","message":"fix: summarybox 색깔"}
+,
+{"commit":"c8103713044716d8530c2f0f1e4b5bcba60cfa22","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-08-13 12:03:19 +0900","message":"hotifx: 약관 버전 관리 수정"}
+,
+{"commit":"259b4598705b829f62a5670c55e2a8190d03887e","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-08-13 11:47:45 +0900","message":"hotfix: 약관 수정"}
+,
+{"commit":"f9aca494c0c8f30fef725c5f57c6f5ada844257c","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-08-13 10:10:06 +0900","message":"fix: 저장용량 오류 수정"}
+,
+{"commit":"3129dd9c76b63c18957300c08b59f2ba20a5e281","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-08-12 21:31:55 +0900","message":"feat: 견적신청 추가"}
+,
+{"commit":"0bc5ec0e0db73750db90a4527c85d0ac7fd88c82","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-08-12 20:53:21 +0900","message":"fix: 글자크기 수정"}
+,
+{"commit":"303a3068c6ba9c719abf4a7366331d68cf6b6f4d","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-08-12 17:05:09 +0900","message":"hotfix: internet.html 추가 배포"}
+,
+{"commit":"f8322a2a618ffb047c087c16a3430e6a96f86e94","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-08-12 17:04:18 +0900","message":"feat: 맞춤 조건 진행중"}
+,
+{"commit":"e477c79fcf4345280f4813ddd76b00f75c53aaf9","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-08-12 12:42:30 +0900","message":"hotfix: admin html 추가"}
+,
+{"commit":"02c18939d9ff7bf5240def8a7f00f97129dd0dbc","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-08-12 12:39:47 +0900","message":"feat: 내가 원하는 조건 진행중"}
+,
+{"commit":"6f4e7d411eb9fef40edd1baa2cc87b3b8464eb5f","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-08-11 14:25:44 +0900","message":"Revert "Merge branch 'development' into feat-main-v2""}
+,
+{"commit":"8d9324abdace7e41166818ac474397e865e9c6fb","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-08-11 14:20:59 +0900","message":"Revert "fix: 견적신청 진행중""}
+,
+{"commit":"bbd56ae7a636c2d2b553c5e23ee9b2a331260fb4","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-08-10 17:44:37 +0900","message":"fix: 견적신청 진행중"}
+,
+{"commit":"7bad690a911492657405e0fcfe0261e9fc9d858a","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-08-08 12:02:14 +0900","message":"fix: 변경요금제 필드 변경"}
+,
+{"commit":"3cec7596c4ed36807b3f99fd8755efd4ab767ada","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-08-08 10:33:14 +0900","message":"fix: 패딩값 조절"}
+,
+{"commit":"fe4e4c59b7c37f4a5774f8eea0e7ac944057ed48","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-08-08 10:31:08 +0900","message":"fix: - 퍼센트 삭제"}
+,
+{"commit":"d91656f3c09ba28158eeb19e180f604f4b3f0681","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-08-08 10:01:53 +0900","message":"feat: 가격탭 삭제 후 필터 추가"}
+,
+{"commit":"877458e634e4a7e86d3fb50e636224bbd4f8ec13","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-08-07 17:10:28 +0900","message":"주석"}
+,
+{"commit":"5d48b91bf8e9a6ca42171805a644c9a426b46da8","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-08-07 14:47:54 +0900","message":"fix: safari 호환"}
+,
+{"commit":"3a73a2997d8d1d19f273a1923cc866f301305019","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-08-07 14:39:02 +0900","message":"feat: 뱃지 추가"}
+,
+{"commit":"93218cb7b8c04d83469837dbdc03aa894232056b","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-08-07 13:38:47 +0900","message":"feat: title bold"}
+,
+{"commit":"2ace25888e394fa1ac3d2bc734931efe46960526","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-08-07 13:29:27 +0900","message":"feat: 메인페이지 가장 많이 클릭~ 변경"}
+,
+{"commit":"ae47faa5768e60166637ecb9cada2caa923a2f28","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-08-06 14:29:48 +0900","message":"feat: 그래프 문구 추가"}
+,
+{"commit":"5818530d1e8d0cb9ad387a0814ba8be2eebead29","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-08-06 12:52:32 +0900","message":"hotfix: 회사소개"}
+,
+{"commit":"b5498f6d323084f44fc8359378011ce90008d3ed","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-08-06 09:18:15 +0900","message":"fix: 최저가 먼저 노출"}
+,
+{"commit":"5447fbe1b483797f2d40b9ccb7dcd44fcf0bb79f","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-08-05 22:45:36 +0900","message":"fix: 개통진행중 -> 진행중"}
+,
+{"commit":"d13179abba5833a53afd42582c06b55ae5aafa1c","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-08-05 22:41:10 +0900","message":"feat:그래프 dot label 수정"}
+,
+{"commit":"893dc2f6136839d980c463a710c43e93dd79442f","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-08-05 22:33:09 +0900","message":"싱크 오류"}
+,
+{"commit":"7bb5274472587162fe0312e3ef9989dcbef02e22","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-08-05 22:24:13 +0900","message":"fix: padding 추가"}
+,
+{"commit":"d654be6da195e4264f2dae3a35c821c08d317bc2","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-08-05 22:19:25 +0900","message":"feat: 견적 취소 플로우 추가"}
+,
+{"commit":"aa223e8c9be1b512171f67ffcf5841a06fb0b66f","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-08-05 22:05:27 +0900","message":"feat: chart v2"}
+,
+{"commit":"97026684ccccd13ce3a15ede6d6c4122877f64b3","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-08-05 15:39:47 +0900","message":"feat: 견적취소 진행예정"}
+,
+{"commit":"590c70b91c7a1e30c75bae43d37b62a17d50c1b3","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-08-04 16:33:59 +0900","message":"fix: og image final"}
+,
+{"commit":"fd292bc475957bdbfedc4ccb96dfe62a2c468720","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-08-04 16:27:29 +0900","message":"og 태그 type추가"}
+,
+{"commit":"d0c51371fea800d0b822212e08409725af9d94d4","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-08-04 16:20:42 +0900","message":"og image 수정"}
+,
+{"commit":"47a3181a4d40bd6cc90a52e4ee3ffd8703ec51f9","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-08-04 16:05:55 +0900","message":"og 이미지 추가"}
+,
+{"commit":"16ac4d38c4d43067f8fd853f495b9ea210593cd8","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-08-04 15:59:06 +0900","message":"feat: meta 태그 및 robot 설정"}
+,
+{"commit":"79c8163b98f731e1ca098e84ac264ea5d13fd8bc","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-08-04 15:22:22 +0900","message":"fix: 이벤트상세 수정"}
+,
+{"commit":"d372cb35362c51837a7889e7ca3f521a75181da2","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-08-04 15:06:35 +0900","message":"feat: 이벤트 상세 수정 및 네이버 스크립트 삽입"}
+,
+{"commit":"30285942da4f589e154477de14d090df1b36ce5f","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-08-01 11:33:43 +0900","message":"fix: 문구수정"}
+,
+{"commit":"1cb18a63b1c5208914df286adac4846bac67c2d7","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-08-01 11:29:08 +0900","message":"fix: padding 값"}
+,
+{"commit":"b6801e56cdfb2a9512fe0979a680fef95cbdc8c6","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-08-01 11:17:07 +0900","message":"fix: 할인가격 수정"}
+,
+{"commit":"81a28620df5dd1c6fdd8a44722809c15136e98b0","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-08-01 11:11:55 +0900","message":"feat: main list 및 상세 가격 매핑"}
+,
+{"commit":"29e1b80f205d800f43dddd2391ef88538f5fed5e","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-07-31 16:47:16 +0900","message":"feat: 가격 매핑"}
+,
+{"commit":"9b51f67faf3c7aead662bfa1ac0bcc2860bf162a","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-08-01 11:11:55 +0900","message":"feat: main list 및 상세 가격 매핑"}
+,
+{"commit":"83f8ac1fd6420202464eb435077281bd1729fd6c","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-08-01 10:26:23 +0900","message":"feat: main 수정중"}
+,
+{"commit":"5d129998431753e18e2662fa9b1335a5aee9b5af","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-07-31 16:47:56 +0900","message":"feat: footer 사전승낙서 사이즈"}
+,
+{"commit":"a5643b4d7d7517bacdb0e45093fd65e962c4564c","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-07-31 16:47:16 +0900","message":"feat: 가격 매핑"}
+,
+{"commit":"f1e64119e65eb79108d99dcc84248e41fccc3cb8","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-07-31 16:39:56 +0900","message":"fix: padding"}
+,
+{"commit":"99c31ab5bcb82f0ab16b236ba1391e46e6c21e5a","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-07-31 16:34:05 +0900","message":"feat: header 검색 아이콘 추가"}
+,
+{"commit":"f0aeef02e4b69e79a3c0156c326486537f09db19","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-07-31 16:16:59 +0900","message":"feat: 상품상세 디자인중"}
+,
+{"commit":"5764063f3931a7baa94147702b2304ac194015f9","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-07-30 14:09:06 +0900","message":"feat: 사전승낙서 로고 삽입"}
+,
+{"commit":"b738bd39c1395ba653c8baeb9fc550b7a1ca800b","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-07-30 13:57:15 +0900","message":"feat: 푸터 사전승낙서 보기 추가"}
+,
+{"commit":"6ee9ac8462818096b8e8eabfd8886045e74019bd","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-07-28 21:31:25 +0900","message":"feat: 상세 수정"}
+,
+{"commit":"1f059b05a1fe59a5ba0ec0222ddad65f0a9c78a4","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-07-28 20:17:27 +0900","message":"fix: next/image 일부 걷어내기"}
+,
+{"commit":"99fc0a2a18f99e1416766febfa161033dcbb4b65","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-07-28 20:04:44 +0900","message":"main: cd"}
+,
+{"commit":"16decb117b6971f2e2fcdb57cdc1c3d39f7ba57f","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-07-28 20:02:41 +0900","message":"hotfix: login url 및 next image 수정"}
+,
+{"commit":"6a30a34ece625f6ec1d466c18d011794b37d0ce2","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-07-28 19:41:24 +0900","message":"fix: 견적신청 상태 에 따른 용량 수정"}
+,
+{"commit":"50ebf0893a22e6a9748fdfc21ae5b204003b54b5","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-07-28 16:00:31 +0900","message":"feat: 견적신청 요금제 키값 변경"}
+,
+{"commit":"68d13ee3532ef1de90643e190a6e49b7b9451b54","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-07-28 13:51:14 +0900","message":"fix: button layout 수정"}
+,
+{"commit":"ee29fa27c7e333ce1e6484b4ba7cc614023ee5de","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-07-28 13:37:37 +0900","message":"bug: 견적 신청 내역 개통정보입력시 노출 분기"}
+,
+{"commit":"00cafd8ca67a5a59ef5fa3b57282e7b84911218e","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-07-28 13:04:17 +0900","message":"fix: 개통정보 입력 완료 후 신청내역 페이지로 이동"}
+,
+{"commit":"e44c774c2cda3391ea50000bae49ee97e2074c1a","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-07-28 11:54:59 +0900","message":"development next"}
+,
+{"commit":"61be966bb21f043a1bbc514334574e3e40c5256e","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-07-28 11:36:59 +0900","message":"개통정보 입력"}
+,
+{"commit":"0cf7d9a37bef53ec98a801045fbe95c0e08dac6f","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-07-26 22:14:59 +0900","message":"feat: 개통정보입력 완료 분기"}
+,
+{"commit":"e1f255d5c2df77b0148f065f4dd8f60e2a2a1d1f","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-07-25 15:17:07 +0900","message":"feat: 개통정보 입력 api 연결진행중"}
+,
+{"commit":"efd227b69d17551d903a896a0e27b35ae607d828","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-07-24 16:58:38 +0900","message":"버튼색깔 조절"}
+,
+{"commit":"10c55f7bd733547528e87e1253fc57f30eaa7655","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-07-24 16:49:06 +0900","message":"개통 추가 정보 영역"}
+,
+{"commit":"84b5226e608e981f74607a0313d64307e1fde353","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-07-24 16:36:48 +0900","message":"높이 수정"}
+,
+{"commit":"7bc1913aacb9ff33e35ec3a5db14571622bbdea8","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-07-24 16:19:25 +0900","message":"추가 수정사항"}
+,
+{"commit":"bcfd5b47cf22db1762d6cd9c90fe24793d38823b","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-07-24 16:03:01 +0900","message":"개통정보 입력"}
+,
+{"commit":"52a3f7517d1352f680150fc4a9b8f17864ea6a54","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-07-24 13:34:58 +0900","message":"필수 조건 제외"}
+,
+{"commit":"3a4599647ed8d3bff7e30bd8f205a278d13708b1","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-07-22 15:52:12 +0900","message":"가격표 월납부금 삭제"}
+,
+{"commit":"03ccee59c7ed2d5c708dd7a329dc523dbff3254d","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-07-22 15:02:50 +0900","message":"불필요한 Ref 제거"}
+,
+{"commit":"3f1beb2fbad7d27273537d13be65768ec5ba0f67","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-07-22 13:24:54 +0900","message":"feat: 가격표 월납부금 추가"}
+,
+{"commit":"47237a365dba6ad38ed6295996b2e67c67146306","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-07-22 10:09:14 +0900","message":"이벤트 버튼 수정"}
+,
+{"commit":"98a62863ef22f570b64e358f50de6b0cb982ece1","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-07-21 23:36:36 +0900","message":"fix: 뒤로가기 버튼 클릭 시 데이터 리셋 여부 추가"}
+,
+{"commit":"71ca321401bf8b5a0e0eefa7dfefd128a3aa02bc","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-07-21 23:24:53 +0900","message":"fix: groupcode 와 productcode 비교"}
+,
+{"commit":"ed26d36936f01b9ee196a6d763a0e3031ee69c3c","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-07-21 23:14:05 +0900","message":"기존 검색에서 벗어나지 않게 수정"}
+,
+{"commit":"dbb8e4382a6b8b8d9e5d2ae741fb525b60092c44","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-07-21 22:46:41 +0900","message":"fix: filterSelection 이제 없애기"}
+,
+{"commit":"0c5499c2367120f3f88427fc8f6780100ef8f809","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-07-21 21:58:01 +0900","message":"견적신청시 직접접근 상품 조회 추가"}
+,
+{"commit":"175d3c1142159cfd7a5fa3af424eda4eaf000c8a","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-07-21 21:26:57 +0900","message":"fix: 견적신청시 로그인 검사"}
+,
+{"commit":"a60d7a23b44465b9d6d6688a495dec53b2b35a74","author":"hbsong","email":"186981718+nofee-technology@users.noreply.github.com","date":"2025-07-21 20:10:04 +0900","message":"로그인 페이지로 이동"}
+,
+{"commit":"3f97c07b33d9711d6efc6c80d5d834dacc26bb03","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-07-21 16:38:32 +0900","message":"가격표 할부원금"}
+,
+{"commit":"61cfb04fcdacb1a6cbd7508b57007dd623a7ab90","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-07-21 16:27:35 +0900","message":"용량 변경시 productCode 수정"}
+,
+{"commit":"8660cd07dc2731469bb3a3c81fa723a87804ed2f","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-07-20 17:06:15 +0900","message":"가격표 진행중"}
+,
+{"commit":"621fbb446a633a3f170a7689ca49509ee313f17b","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-07-18 21:38:19 +0900","message":"fix: 돌아가기"}
+,
+{"commit":"669ae30dddb73419c78f3eaf38ee5b9f84a5773e","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-07-18 21:30:08 +0900","message":"돌아가기"}
+,
+{"commit":"51f2786b2cb51f50d23aa29dd64325f0d5431bdc","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-07-18 21:16:59 +0900","message":"loading 추가"}
+,
+{"commit":"7a93b99f8d959c60ef96b50d81be8a35057cb5e5","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-07-18 20:57:24 +0900","message":"review CRUD"}
+,
+{"commit":"587c791cd01f4260274d07e5de9a0c9541c6c856","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-07-18 17:36:02 +0900","message":"ga4"}
+,
+{"commit":"e833b86a83f8956c57175495ff448d2c66d60aa9","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-07-18 16:34:40 +0900","message":"feat: ProductCard에 인덱스 속성 추가"}
+,
+{"commit":"e6ed9879ab61285f436822c7651e3814622261c9","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-07-18 16:22:26 +0900","message":"fix: 이미지 링크 업데이트"}
+,
+{"commit":"2c0392f3d21808164a9ce0247a3692799026f9b8","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-07-18 16:18:25 +0900","message":"feat: GTM 이벤트 추적을 위한 헬퍼 함수 추가 및 여러 컴포넌트에 통합"}
+,
+{"commit":"44c6cced97759ae63359b93a984080b5dab06dbf","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-07-18 14:20:51 +0900","message":"feat: Facebook Pixel 및 GTMProvider 추가, 환경 변수에 GTM ID 추가"}
+,
+{"commit":"fff6c88f92ae687f6998f0fb9d604c1e4639e043","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-07-18 11:19:37 +0900","message":"feat: EstimateSummary에서 계약 기간을 완료 상태에 따라 동적으로 표시하고 ApplyEstimate 인터페이스에 completedContractPeriod 필드 추가"}
+,
+{"commit":"4fa45d84d154d120db79ec7a79458a5f48e3e8f5","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-07-17 22:55:33 +0900","message":"fix: 사용자 인증 로직 주석 처리"}
+,
+{"commit":"49b9610b623bc8778d50712f86ea8061983ecb47","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-07-17 22:49:02 +0900","message":"feat: ApplyEstimate 인터페이스에 가입유형 및 지원유형 필드 추가 및 EstimateSummary에서 변수명 수정"}
+,
+{"commit":"1dedd0909a42f8541aa543579630822b18e00bf3","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-07-17 22:36:16 +0900","message":"feat: 개통 통신사 로직 개선 및 ApplyEstimate 인터페이스에 applyCarrier 추가"}
+,
+{"commit":"fbc869d820b3738d57b1ea66bc7188e48c79dbc6","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-07-17 22:09:51 +0900","message":"feat: 신청 및 완료 상태에 따른 날짜 표시 및 지역 정보 업데이트"}
+,
+{"commit":"3421f7811f7028b21acebe241f465519b567f5cd","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-07-17 20:17:33 +0900","message":"feat: next/script 추가 및 비즈니스 분석 스크립트 삽입"}
+,
+{"commit":"a01cf67548ef330f0ae3b2f99041bfaced52a96a","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-07-17 20:14:35 +0900","message":"fix: 사용자 정보 처리 및 UI 개선"}
+,
+{"commit":"0cc761844dc900015a3852aa2b133e05e8476034","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-07-17 16:30:42 +0900","message":"feat: select 유지 사건"}
+,
+{"commit":"e1bbee4657c7c5f63f0a0b8fe00e1098474bd5c0","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-07-17 20:14:35 +0900","message":"fix: 사용자 정보 처리 및 UI 개선"}
+,
+{"commit":"d29fff7e99a596bf3a7c82c68852db02f43e7803","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-07-17 16:30:42 +0900","message":"feat: select 유지 사건"}
+,
+{"commit":"ba6d528282265b7fa17b2e2042bbf3ae5398037d","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-07-17 15:38:06 +0900","message":"dd"}
+,
+{"commit":"8e530d8fceabb5111dae01d1986069169c797216","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-07-17 15:15:27 +0900","message":"user에 따라 견적신청"}
+,
+{"commit":"0a92e7eae5e9569396ef32886a96b1c55d456786","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-07-17 14:40:05 +0900","message":"fix: productgroup 조회"}
+,
+{"commit":"2b9aff8f3124fb84d0e4ad638a4aad53ba9c9632","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-07-17 11:33:47 +0900","message":"fix cd"}
+,
+{"commit":"2910205dcace160f0473a52d065d9006dc4a6688","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-07-17 11:29:35 +0900","message":"fix: cd"}
+,
+{"commit":"7198d4d433dd705a9ab2174de4260416108ebc48","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-07-17 11:02:12 +0900","message":"cd"}
+,
+{"commit":"0b2788537272c6ff9248dc6e58d62333a0676304","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-07-17 11:00:02 +0900","message":"feat:reveiw"}
+,
+{"commit":"42abcd5d2b7162f2c665980ebd04d93bb7d5c407","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-07-17 10:59:00 +0900","message":"fix: 견적신청 탭 변경"}
+,
+{"commit":"ef30d56a2da5d17317fc254acda2f2a4ef048771","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-07-16 21:41:44 +0900","message":"feat: 개통 지역 정보 추가 및 스타일 수정"}
+,
+{"commit":"fe3c5a0d18343880762c33055b0d1de5494e2b7b","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-07-16 12:06:58 +0900","message":"footer 주소 변경"}
+,
+{"commit":"ffd2e7675d2b678071abbcd4e138a495880cb5a4","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-07-16 11:47:02 +0900","message":"feat: 견적신청 개통완료 시 값 변경"}
+,
+{"commit":"ff5178b66d25dac5dc0eca1fe4627dbd71eb63f7","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-07-16 09:12:54 +0900","message":"페이스북 픽셀 삽입"}
+,
+{"commit":"5a269607cce18b44271c937e7a490036056a650d","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-07-15 23:55:26 +0900","message":"fix: 이용약관 제목으로 변경 및 주석 수정"}
+,
+{"commit":"59506c4594a26d8b060151c929051bdd04e3ac6b","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-07-15 23:52:37 +0900","message":"fix: .env 파일에 NEXT_PUBLIC_BASE_URL 추가"}
+,
+{"commit":"3f8677a9b8d6c7b109d304d66dd19b65d9c0b516","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-07-15 23:35:05 +0900","message":"fix: getUser 함수에서 isRedirect 옵션 제거 및 관련 호출 수정"}
+,
+{"commit":"4dd2ae58586152fa024fe8dbe2cf7870f5218b29","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-07-15 23:00:39 +0900","message":"fix: getUser 함수에 isRedirect 옵션 추가 및 관련 호출 수정"}
+,
+{"commit":"f1ed5fe54ae35ed446a87f5229e659929d7229fb","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-07-15 21:41:36 +0900","message":"fix: cd.yml에서 Node.js 설정 및 배포 과정 개선"}
+,
+{"commit":"2a656870422dc6d67613dc0b3b865fc66a8e8b40","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-07-15 21:10:06 +0900","message":"fix: cd.yml에서 개발 환경 빌드 조건 주석 처리"}
+,
+{"commit":"a184f7aea9337e9db84a708c930cc0dcc7dec965","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-07-15 20:58:40 +0900","message":"development"}
+,
+{"commit":"af63dea8cb1e26bb6aa0985b2187fa409a718524","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-07-15 20:08:41 +0900","message":"sync"}
+,
+{"commit":"1e7b95ce888d6708f4f0e869ebd3e7a6aa075462","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-07-15 19:50:53 +0900","message":"fix: handleBack 함수의 loginUrls에 '/signup/' 추가"}
+,
+{"commit":"1237c2ebad483227db4c2aa784bd984bcb8ade84","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-07-15 17:10:38 +0900","message":"chore: console log 삭제"}
+,
+{"commit":"c08d07fdb3ecc351a309ecc24376c49ffdbe041f","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-07-15 16:54:28 +0900","message":"1차 최종"}
+,
+{"commit":"5300b874b90b9f8350e5341ff4dc3e687f335a02","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-07-15 15:31:31 +0900","message":"feat: 회원가입 약관 순서 변경"}
+,
+{"commit":"2d082238230a237a2efa79e0a82b3d51c67facb8","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-07-15 15:25:56 +0900","message":"fix: 선택 이용동의 store 반영"}
+,
+{"commit":"27fc95cd2a88bd54f3af55603b0698257231185f","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-07-15 15:18:55 +0900","message":"fix: useAuthstore user 추가 정보 기입"}
+,
+{"commit":"165881c720437bcf8d82bf52d7da270a80fbcc0b","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-07-15 13:26:35 +0900","message":"fix: image Preload 및 회원가입 완료 set user"}
+,
+{"commit":"78673b38fe5125defb384a3cc0942639cbb2c841","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-07-15 09:55:17 +0900","message":"fix: location.href -> location.replace"}
+,
+{"commit":"5010efae7a06c8519a3875af0ada184d4102241e","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-07-14 17:24:59 +0900","message":"fix: location.href를 location.replace로 변경하여 페이지 전환 방식 수정"}
+,
+{"commit":"de63a3cdd77689fe75c19c7787e7b7eb4d6b384c","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-07-14 17:01:56 +0900","message":"fix: 카카오 로그인 URL에 '/signup' 추가"}
+,
+{"commit":"6225730644182d53cd3c4698cab0a78e1f7d0392","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-07-14 16:43:22 +0900","message":"fix: 마케팅 및 이벤트 정책 링크 주석 처리"}
+,
+{"commit":"e7ade4a6ada7b3945a0580ae5a1da0a28aa06a73","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-07-14 16:32:10 +0900","message":"fix: 리뷰 제목 수정 및 이미지 업데이트"}
+,
+{"commit":"4d8bd7bcef64eee20a4000b2847f6d528548ef3f","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-07-14 16:14:15 +0900","message":"Add review images to the public directory"}
+,
+{"commit":"0686edefb49014e9f45909ae3a7428494bfd71a5","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-07-14 15:09:49 +0900","message":"fix: quoteFilterSelection의 중복 선택 방지 및 이벤트 링크 클릭 시 필터 상태 초기화"}
+,
+{"commit":"41282099818436f9405b62efe341d8b1bd642791","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-07-14 14:51:40 +0900","message":"fix: ToolTipQuestionIcon 주석 처리하여 UI 요소 정리"}
+,
+{"commit":"22be14f0b781015092fdc54f9ca4bfd42ce722d7","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-07-14 14:38:53 +0900","message":"style: 카드 컨테이너 배경색 제거 및 UI 요소 정렬 개선"}
+,
+{"commit":"c61e40c97f0a6ef23207812855ec05ce3a47c87b","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-07-14 14:27:57 +0900","message":"feat: 리뷰 상세 페이지 및 관련 API 추가, 리뷰 작성 기능 구현"}
+,
+{"commit":"d63f2207b6061f459c6799d82fe1f1f22c75cf39","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-07-13 19:27:19 +0900","message":"fix: quoteFilterSelection의 sidoNo 및 sigunguNo에 기본값 추가"}
+,
+{"commit":"897336f286da9586ac662922bca14b168b122ae7","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-07-13 19:07:28 +0900","message":"fix: 오류 메시지 상태 관리 개선 및 AlertModal 메시지 동적 변경"}
+,
+{"commit":"f62c2531095a5290cfc621b0b16d63a6c20fff9a","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-07-13 19:01:12 +0900","message":"feat: 리뷰 상세 페이지에 기존 리뷰 데이터 로딩 기능 추가 및 UI 개선"}
+,
+{"commit":"4a776ba4d9ddf2f0c5cda29db325e4b2fef5a50e","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-07-11 22:16:54 +0900","message":"feat: 스타일 개선 및 새로운 컴포넌트 추가"}
+,
+{"commit":"4ddbb378839c79975950d8592bf70481c41e443a","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-07-11 17:33:41 +0900","message":"fix: InfoLines 스타일에서 text-sm을 text-xs로 변경 및 quoteBottomBanner의 빈 div 스타일 수정"}
+,
+{"commit":"2c75231c1b542e1fb5355929f0df8f3c76ae7caf","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-07-11 17:23:19 +0900","message":"feat: 로딩 상태 관리 개선 및 닫기 핸들러 수정"}
+,
+{"commit":"e075f427ca908d2eea6c9da6aa502c6f6546035d","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-07-11 17:01:59 +0900","message":"feat: 카카오톡 문의 버튼 클릭 시 리다이렉트 추가 및 인스타그램 아이콘 링크 추가"}
+,
+{"commit":"780d9d6394ceb8fa188f7dda73f19d8d14166dc2","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-07-11 16:52:51 +0900","message":"fix: 이미지 링크 수정 - 3D 아이콘 경로 변경"}
+,
+{"commit":"ad9b3b3b942a4db9cd1836605f4d55c62a2fe456","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-07-11 16:43:00 +0900","message":"feat: 마이페이지 레이아웃 개선 및 푸터 컴포넌트 추가 feat: 견적 하단 배너 컴포넌트 추가 feat: 인스타그램 아이콘 추가 및 관련 파일 업데이트 fix: package.json 및 package-lock.json에 lodash.debounce 추가"}
+,
+{"commit":"990f2f607e3c085a655cd21691685e92eab679f6","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-07-11 15:44:11 +0900","message":"feat: 문의 링크 업데이트 및 마이페이지 컴포넌트 개선 fix: 카카오 로그인 리다이렉트 로직 개선 feat: 리뷰 작성 페이지 및 관련 컴포넌트 추가 refactor: 신청 내역 로딩 스피너 추가 및 UI 개선 chore: 이미지 파일 업데이트 및 불필요한 파일 삭제"}
+,
+{"commit":"2079d24e57311a1ab223841cf38364ca4c7da5bb","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-07-10 22:22:48 +0900","message":"feat: 제품 그룹 상위 목록 가져오기 기능 추가 및 관련 컴포넌트 통합"}
+,
+{"commit":"6572be2e50d9d42b89c5e0c7f7e5e81fa2b68b20","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-07-10 21:19:26 +0900","message":"fix: window 객체 확인 후 리다이렉트 URL 저장 로직 개선"}
+,
+{"commit":"a0273d3e5eb6228b320916c62395488ec7c29252","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-07-10 17:21:30 +0900","message":"feat: 사용자 정보를 가져오는 기능 추가 및 리다이렉트 로직 개선"}
+,
+{"commit":"a2deee60a6cc41434adc98f11dcd6fe840a38b02","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-07-10 15:29:21 +0900","message":"feat: 로그인 중 스피너 컴포넌트로 대체 및 회원가입 리다이렉트 로직 개선 feat: 견적 요청 오류 처리 및 알림 모달 추가 style: 월 납부금 텍스트 크기 조정"}
+,
+{"commit":"c3390a7a5ed02a01f752f0433c1ea1e4aca8c4e3","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-07-10 14:43:26 +0900","message":"fix: 카카오 로그인 리다이렉트 로직 수정 및 버튼 텍스트 변경"}
+,
+{"commit":"8904c7bad0ffd0452efb696a6a209f4d3a57c282","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-07-10 14:30:34 +0900","message":"feat: 불필요한 console.log 제거 및 상태 관리 개선"}
+,
+{"commit":"a4a23e1dfa75310a034bb22aad83cd335e625d2c","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-07-10 12:50:42 +0900","message":"feat: carrierCode 변경 시 요금제 자동 선택 기능 추가"}
+,
+{"commit":"3e390283c924cddbef2e75c6a316714cf071403f","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-07-10 11:55:00 +0900","message":"feat: 요금제 옵션 필터링 및 자동 선택 기능 추가 style: SelectBox 컴포넌트의 텍스트 정렬 수정"}
+,
+{"commit":"da5b20c64d0279a59faca3bc01de297191da8ea5","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-07-10 11:33:25 +0900","message":"style: 정렬 옵션 및 이벤트 페이지의 텍스트 정렬 수정"}
+,
+{"commit":"79d60ee8ff7a1bb4ca1d2ffbbf1f4714d069090a","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-07-10 10:50:27 +0900","message":"style: 컴포넌트 스타일 수정 및 텍스트 크기 조정"}
+,
+{"commit":"c1e6702350d0918f35e586976a54cfcfe414eaea","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-07-10 10:38:55 +0900","message":"feat: 사용자 정보에 이메일 및 전화번호 추가"}
+,
+{"commit":"bc9a06b8f008af4b95597ca858ff4bcb2ae6cf86","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-07-10 10:27:17 +0900","message":"style: 컴포넌트 레이아웃 및 텍스트 수정"}
+,
+{"commit":"fe2335fdc0949730d18de57b6370e015e2eeef19","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-07-10 10:21:18 +0900","message":"feat: 신청 내역 페이지에 견적 목록 조회 기능 추가 및 상태 관리 개선"}
+,
+{"commit":"543e7ce7fd74326b7fbcb386416942a1ccbab6f2","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-07-09 22:49:14 +0900","message":"fix: 쿼리 필터 조건에 따른 로딩 상태 처리 개선"}
+,
+{"commit":"df94d1ad2c8de808f4af243ac5706019182e4a8d","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-07-09 22:41:14 +0900","message":"fix: 상품 그룹 로딩 조건에 쿼리 필터 선택 추가"}
+,
+{"commit":"13ec97724677e67d1fdac08b488fd8b3a15d30b9","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-07-09 22:35:49 +0900","message":"feat: 상품 그룹 스켈레톤 컴포넌트 추가 및 반응형 모바일 화면 크기 조정"}
+,
+{"commit":"548f3b5a4230acd8eb7aab2c60c623dae8250544","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-07-09 22:21:35 +0900","message":"fix: 스피너 오버레이의 배경 불투명도 개선 및 쿼리 처리 로직 수정"}
+,
+{"commit":"7a3c79a1bcd045ec2650b83d2f3a742aad64db2e","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-07-09 21:57:05 +0900","message":"fix: 배포 스크립트에서 환경 변수 처리 및 SSH 명령어 포맷 개선"}
+,
+{"commit":"46c1393a5bd279b43f822e42e5b29b77452fefb7","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-07-09 21:49:44 +0900","message":"fix: 배포 환경 변수 처리 수정"}
+,
+{"commit":"ef42d5c318be04bbaf1e12243d00fac98f3fedce","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-07-09 21:39:26 +0900","message":"fix: 프로덕션 빌드 스크립트 활성화"}
+,
+{"commit":"80988c3f1eff6745ca001d0a26117336fd0d1ea3","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-07-09 17:25:29 +0900","message":"fix: 환경 변수 처리 개선 및 호스트 설정 로직 수정"}
+,
+{"commit":"4fa80433ca783ffecd0aa26acc0c62715b55fddd","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-07-09 17:12:25 +0900","message":"feat: 배포 환경 설정 개선 및 UI 요소 수정"}
+,
+{"commit":"80bdae2068305aa5c30d530f4435890274cffd5e","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-07-09 15:44:50 +0900","message":"feat: 카카오 로그인 및 사용자 데이터 처리 개선, API URL 업데이트"}
+,
+{"commit":"4bf4d85bc73ef55701490567f6de3411f881a99a","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-07-08 23:38:58 +0900","message":"fix: 개발 환경에 맞게 API URL 수정"}
+,
+{"commit":"045267968c72c22a55ce26b659001a3faf4fb1ea","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-07-08 23:21:16 +0900","message":"Refactor routing and API calls across various components"}
+,
+{"commit":"162930bc69ce03f7ab84eb47b50c19f75ece8cf1","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-07-08 17:26:44 +0900","message":"fix: SVG 필터 속성에서 하이픈을 카멜 케이스로 수정"}
+,
+{"commit":"8287ff5c2fa1a127cd9e9c839bc168d2abb5428a","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-07-08 17:23:38 +0900","message":"feat: Update product detail and card components with new images and styles"}
+,
+{"commit":"2ffdf30a3e6c862dc88e79a726c6bef560a459a9","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-07-07 21:43:23 +0900","message":"feat: 카카오 로그인 리다이렉트 방식 수정 및 사용자 데이터 가져오기 기능 추가"}
+,
+{"commit":"d4f8c9ec4f435598856d30f5c758e8440715bbc2","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-07-07 20:41:15 +0900","message":"feat: 견적 요청 기능 개선 및 사용자 인증 처리 추가"}
+,
+{"commit":"a8613c849ae72826fadd0891db94bf1e7b75a59a","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-07-06 20:33:30 +0900","message":"feat: 보호된 레이아웃에서 쿠키 로그 제거 및 견적 요청 관련 파라미터 수정"}
+,
+{"commit":"bc66551011794c8ae1d000950c6d04f26dec8697","author":"ahbin_cho","email":"ahbin.coco@gmail.com","date":"2025-07-03 16:14:59 +0900","message":"feat: 회원가입 페이지에서 스택 관리 및 뒤로가기 처리 추가"}
+,
+{"commit":"775d17215366ddc6981dfc57793878dd95727c1b","author":"choahbin","email":"93121480+ahbin-cho@users.noreply.github.com","date":"2025-07-01 15:14:54 +0900","message":"feat: fetcher를 사용하여 카카오 로그인 API 호출 방식 통일"}
+,
+{"commit":"f370585b031afdbd153d2c5ea7b6da62d3358cab","author":"choahbin","email":"ahbin.coco@gmail.com","date":"2025-06-26 14:34:54 +0900","message":"feat: 견적 요청 기능 추가 및 관련 컴포넌트 수정"}
+,
+{"commit":"c9dac5dd082238beee876033e1fdbc127e748728","author":"choahbin","email":"ahbin.coco@gmail.com","date":"2025-06-25 14:38:46 +0900","message":"fix: 로그인 페이지 제목 컴포넌트에서 모바일 숨김 스타일 제거"}
+,
+{"commit":"70dc8949351aa581dfc5a3bc17c0adad39c25ff9","author":"choahbin","email":"ahbin.coco@gmail.com","date":"2025-06-25 14:32:52 +0900","message":"feat: 카카오 로그인 콜백 처리 시 전체 화면 스피너 컴포넌트 추가 및 환영 페이지 통합"}
+,
+{"commit":"7017fcd691358793434a2d4efc14eb75346b2e22","author":"choahbin","email":"ahbin.coco@gmail.com","date":"2025-06-25 11:43:10 +0900","message":"Implement feature X to enhance user experience and optimize performance"}
+,
+{"commit":"011a1b4b50b26a60ee0894a3be972d03cd3fdbb5","author":"choahbin","email":"ahbin.coco@gmail.com","date":"2025-06-25 08:57:54 +0900","message":"fix: 시/도 및 구/군 선택 시 상태 업데이트 로직 개선"}
+,
+{"commit":"f0ed9df67e185d39a25e3d121cfb982493e9e4d7","author":"choahbin","email":"ahbin.coco@gmail.com","date":"2025-06-24 17:01:39 +0900","message":"feat: 전체 화면 스피너 컴포넌트에 SVG 아이콘 추가 및 이미지 파일 추가"}
+,
+{"commit":"8ddfe6282bfab8f943b44c43b14eaf629c71c69c","author":"choahbin","email":"ahbin.coco@gmail.com","date":"2025-06-24 16:47:46 +0900","message":"fix: 로그인 페이지 링크 수정 및 이메일 인증 버튼 상태 관리 개선"}
+,
+{"commit":"52f28912714ce51a9b1de7bf6b83d1e499d67a09","author":"choahbin","email":"ahbin.coco@gmail.com","date":"2025-06-24 16:27:04 +0900","message":"feat: 회원가입 프로세스 개선을 위한 비밀번호 저장 훅 추가 및 상태 관리 기능 구현"}
+,
+{"commit":"141aef77ba9ad1b6e650853cf7d69cf895fc1509","author":"choahbin","email":"ahbin.coco@gmail.com","date":"2025-06-24 10:40:31 +0900","message":"feat: 카카오 인증 및 회원가입 프로세스 개선, 에러 메시지 처리 추가"}
+,
+{"commit":"6e3351c7980b2916103183446f1c02c2d751a5ef","author":"choahbin","email":"ahbin.coco@gmail.com","date":"2025-06-23 17:16:13 +0900","message":"feat: 카카오 인증 프로세스에 대한 상태 관리 추가 및 전체 화면 스피너 컴포넌트 구현"}
+,
+{"commit":"72997a59e67ff1f71541b51ac3bd8eb6458c167f","author":"choahbin","email":"ahbin.coco@gmail.com","date":"2025-06-23 16:17:06 +0900","message":"feat: Viewport 설정 추가 및 import 수정"}
+,
+{"commit":"70280a623c8f92f378d14dcf85826a4da89a4367","author":"choahbin","email":"ahbin.coco@gmail.com","date":"2025-06-23 16:08:21 +0900","message":"feat: Implement Kakao certification process in signup flow"}
+,
+{"commit":"ae9643a66ffd35306d4619055d4b5a5acd3d0b41","author":"choahbin","email":"ahbin.cho@athometrip.com","date":"2025-06-22 14:24:06 +0900","message":"fix: KakaoCallbackClient에서 불필요한 상태 업데이트 제거 및 TabBenefit에서 요금제 정보 표시 수정"}
+,
+{"commit":"fdbdea5c901a4335fee144aead90a50d24486dd7","author":"choahbin","email":"ahbin.coco@gmail.com","date":"2025-06-19 17:24:51 +0900","message":"fix: getUser 함수에서 fetcher의 타입 매개변수 추가 및 불필요한 import 제거"}
+,
+{"commit":"9c33ad5d8b39ea064056a7a97bcfee97d0f6e775","author":"choahbin","email":"ahbin.coco@gmail.com","date":"2025-06-18 16:53:20 +0900","message":"feat: DetailHeader에 backTo 속성 추가 및 Link 스타일 수정"}
+,
+{"commit":"284ce818709796eabdf57529e768850b02e021ab","author":"choahbin","email":"ahbin.coco@gmail.com","date":"2025-06-18 16:02:27 +0900","message":"fix: useEffect 의존성 배열에 loading 추가"}
+,
+{"commit":"5bd174cf2f6befb6230216e621f837ccf78e4ee6","author":"choahbin","email":"ahbin.coco@gmail.com","date":"2025-06-18 14:33:20 +0900","message":"fix: setLoading 상태 업데이트 위치 수정"}
+,
+{"commit":"94f2b8e6aeb7e6d49e0112a87c636af69897a208","author":"choahbin","email":"ahbin.coco@gmail.com","date":"2025-06-18 14:16:17 +0900","message":"feat: AuthGuard에서 사용자 인증 상태 로깅 추가 및 Header의 마이페이지 링크에 shallow 속성 적용"}
+,
+{"commit":"944ee2bb514996da9413e6da46d298cb0796641a","author":"choahbin","email":"ahbin.coco@gmail.com","date":"2025-06-17 17:03:16 +0900","message":"feat: 로그인 및 마이페이지 헤더에 backTo 속성 추가, 불필요한 console.log 제거"}
+,
+{"commit":"e546bde74cd8057dc6a09ad8b37dd9c2f682f4de","author":"choahbin","email":"ahbin.coco@gmail.com","date":"2025-06-17 14:15:11 +0900","message":"feat: 사용자 정보 업데이트 API 통합 및 오류 메시지 처리 추가"}
+,
+{"commit":"4e6e941893f6702adcfa2defff2cdbe5ec2a93ea","author":"choahbin","email":"ahbin.cho@athometrip.com","date":"2025-06-17 00:05:28 +0900","message":"refactor: 카카오 로그인 및 회원가입 API 통합, 불필요한 코드 제거"}
+,
+{"commit":"d44bd69adb1d5b4b30a8dcd64b29cf2e528efeb2","author":"choahbin","email":"ahbin.cho@athometrip.com","date":"2025-06-16 21:05:43 +0900","message":"feat: sharp 패키지 추가 및 server.js 파일 삭제"}
+,
+{"commit":"c53840f8b608a662a1037df6a0cc3a2e1d7b3b25","author":"choahbin","email":"ahbin.cho@athometrip.com","date":"2025-06-16 20:59:14 +0900","message":"fix: 배포 성공 메시지 출력 후 불필요한 EOF 제거"}
+,
+{"commit":"f14cd67b14f855c3d91eb038e215e163674f30ab","author":"choahbin","email":"ahbin.cho@athometrip.com","date":"2025-06-16 20:56:38 +0900","message":"fix: package.json에서 build-only 스크립트 위치 수정"}
+,
+{"commit":"8c269a30f8cbe9180f84894fd14d02850d787d2e","author":"choahbin","email":"ahbin.cho@athometrip.com","date":"2025-06-16 20:55:05 +0900","message":"feat: .env 및 .env.development 파일 추가 및 .gitignore에서 .env 주석 처리"}
+,
+{"commit":"10004f9d281ca55946600a577e4b5005c6873360","author":"choahbin","email":"ahbin.cho@athometrip.com","date":"2025-06-16 20:53:16 +0900","message":"fix: 배포 스크립트에서 개발 환경 빌드 관련 코드 주석 처리"}
+,
+{"commit":"002529f9685da2f8ee489703788a546e752a4925","author":"choahbin","email":"ahbin.cho@athometrip.com","date":"2025-06-16 20:51:59 +0900","message":"fix: 배포 스크립트에서 DEPLOY_ENV 변수를 출력하도록 수정"}
+,
+{"commit":"404abd37830b3804c7cb972d75eb759059a1530a","author":"choahbin","email":"ahbin.cho@athometrip.com","date":"2025-06-16 20:48:44 +0900","message":"fix: 배포 스크립트에서 환경 변수 사용 시 이스케이프 제거"}
+,
+{"commit":"3fb277d0a50ab40a05570631c9504f389a546969","author":"choahbin","email":"ahbin.cho@athometrip.com","date":"2025-06-16 20:47:00 +0900","message":"fix: 배포 스크립트에서 디렉토리 경로를 수정하고 NVM 설정 추가"}
+,
+{"commit":"0350102f482b68d58b050b133db7389bf81dae7d","author":"choahbin","email":"ahbin.cho@athometrip.com","date":"2025-06-16 20:42:10 +0900","message":"fix: cd 명령어에서 디렉토리 경로를 'front'에서 'nofee-front'로 수정"}
+,
+{"commit":"940b22ad82bd81ba4d769d770eee6dd76ebd4438","author":"choahbin","email":"ahbin.cho@athometrip.com","date":"2025-06-16 20:33:18 +0900","message":"fix: 배포 스크립트에서 프로젝트 이름을 'athometrip'에서 'nofee'로 변경"}
+,
+{"commit":"acfe64155ad9757ee81557dee804259dc1956578","author":"choahbin","email":"ahbin.cho@athometrip.com","date":"2025-06-16 20:29:59 +0900","message":"fix: 환경에 따라 SSH 호스트 추가를 동적으로 설정하도록 수정"}
+,
+{"commit":"4f9fe06890293d655743d6ed9bcc6cbbaea6d026","author":"choahbin","email":"ahbin.cho@athometrip.com","date":"2025-06-16 20:26:27 +0900","message":"fix: CI/CD 워크플로우에서 self-hosted 환경을 ubuntu-latest로 변경"}
+,
+{"commit":"5f76cf49353715a24e3d6fee04f3883ddda907fe","author":"choahbin","email":"ahbin.cho@athometrip.com","date":"2025-06-16 20:24:12 +0900","message":"feat: CI/CD 파이프라인 추가 및 EC2 배포 자동화"}
+,
+{"commit":"51f81702115d1f7ea617981e2b08c2fd69a18668","author":"choahbin","email":"ahbin.coco@gmail.com","date":"2025-06-16 17:31:14 +0900","message":"fix: getUser 함수에서 fetchWithAuth를 fetch로 변경하여 API 호출 수정"}
+,
+{"commit":"e893dd9bdf0a118537451237fadefbfeb7ebc8aa","author":"choahbin","email":"ahbin.coco@gmail.com","date":"2025-06-16 17:23:59 +0900","message":"feat: 회원가입 및 정보 업데이트 기능 개선, 상태 관리 및 API 호출 추가"}
+,
+{"commit":"e2ed03b1cb716e5d36c6ab2bba5b23829cd3a61a","author":"choahbin","email":"ahbin.cho@athometrip.com","date":"2025-06-15 23:49:43 +0900","message":"feat: quoteFilterSelection을 선택할 수 없도록 수정 및 관련 상태 업데이트"}
+,
+{"commit":"dc43379a38c170781e9ff2bf73f109f4e5e88f24","author":"choahbin","email":"ahbin.cho@athometrip.com","date":"2025-06-15 23:05:07 +0900","message":"fix: update start script to bind to all interfaces and specify port 3000"}
+,
+{"commit":"eeaea6c78c5f048fa99c9ba6bfb418d5e8fecee4","author":"choahbin","email":"ahbin.cho@athometrip.com","date":"2025-06-15 21:41:49 +0900","message":"feat: Refactor login and signup flow"}
+,
+{"commit":"7f8c8d0df34bfd9ae661ca16f5a7b6e69d40e458","author":"choahbin","email":"ahbin.coco@gmail.com","date":"2025-06-12 17:11:16 +0900","message":"feat: 지역 목록 API 추가 및 관련 컴포넌트 수정, 색상 선택 기능 개선"}
+,
+{"commit":"a6d2e554a81d52b0a3fd6c5298e1bcd259657d54","author":"choahbin","email":"ahbin.cho@athometrip.com","date":"2025-06-10 23:48:38 +0900","message":"feat: 색상 선택 및 정렬 기능 추가, 필터 코드 정의 및 관련 컴포넌트 개선"}
+,
+{"commit":"6e8dac461aaaf0a38d51d2ad0caf7bf359aa8fda","author":"choahbin","email":"ahbin.coco@gmail.com","date":"2025-06-10 17:05:58 +0900","message":"feat: 제품 그룹 API 추가 및 관련 컴포넌트 수정, 필터링 기능 개선"}
+,
+{"commit":"45a6eee5193a8e54a621db76f497bb5942214a68","author":"choahbin","email":"ahbin.cho@athometrip.com","date":"2025-06-09 22:03:28 +0900","message":"feat: 제품 그룹 및 리뷰 API 수정, 가격 포맷팅 유틸리티 추가, UI 개선"}
+,
+{"commit":"f5c3f088ea958853f582d0e6e23482b315815c5f","author":"choahbin","email":"ahbin.cho@athometrip.com","date":"2025-06-08 17:56:09 +0900","message":"feat: 카카오 인증을 위한 NextAuth 설정 추가 및 사용자 상태 관리 구현"}
+,
+{"commit":"6f025736c5efaa0512374762351b96176d472b23","author":"choahbin","email":"ahbin.cho@athometrip.com","date":"2025-06-08 17:02:39 +0900","message":"feat: 이벤트 상세 페이지 및 관련 API 추가, UI 개선"}
+,
+{"commit":"97b611228874996c6ddcfa8e126cda13258840bb","author":"choahbin","email":"ahbin.cho@athometrip.com","date":"2025-06-07 18:58:08 +0900","message":"feat: 마이페이지 및 회원정보 수정 기능 추가, UI 개선 및 새로운 컴포넌트 추가"}
+,
+{"commit":"ae33a9e0d8b3917ca241cb8565ba4ab8e82ec677","author":"choahbin","email":"ahbin.cho@athometrip.com","date":"2025-06-05 17:27:21 +0900","message":"feat: API 및 UI 개선을 위한 여러 컴포넌트 추가 및 수정"}
+,
+{"commit":"f6dba76e6330aa2fece52d203475ec1dbaf96769","author":"ahbin-cho","email":"ahbin.coco@gmail.com","date":"2025-06-03 16:56:40 +0900","message":"feat: zustand 클라 상태관리 추가 및 api 정리중"}
+,
+{"commit":"12447faa972133f9bd74ab6c0a7d3aab5c6a518a","author":"ahbin-cho","email":"ahbin.coco@gmail.com","date":"2025-06-01 13:45:32 +0900","message":"fix: 커밋 테스트"}
+,
+{"commit":"28a46e087c44744f8e8b4a00e2bffe8d46fb6164","author":"choahbin","email":"ahbin.cho@athometrip.com","date":"2025-05-29 16:36:20 +0900","message":"feat: add QuoteBottomSheet component to TabBenefit and TabCustomOptions for enhanced user interaction"}
+,
+{"commit":"ea62b17e73e2eb0ba1ff3605bb12565427da62ec","author":"choahbin","email":"ahbin.cho@athometrip.com","date":"2025-05-29 16:15:48 +0900","message":"feat: implement MyPage and ApplicationHistoryPage components, add authentication with next-auth"}
+,
+{"commit":"5c1638f18dae3cb0e961f6c36af6ec68f9587d27","author":"choahbin","email":"ahbin.cho@athometrip.com","date":"2025-05-28 16:33:52 +0900","message":"feat: update UI components and improve layout for better user experience"}
+,
+{"commit":"db210ca436cf6c2ecfe8aae93a99c1ed36771200","author":"choahbin","email":"ahbin.cho@athometrip.com","date":"2025-05-28 09:48:44 +0900","message":"feat: add Tailwind CSS line-clamp plugin and new assets"}
+,
+{"commit":"185e7a918271a9ae27ce0dc5133c7967827bc5c7","author":"ahbin-cho","email":"ahbin.coco@gmail.com","date":"2025-05-26 22:50:27 +0900","message":"feat: add product detail tabs and custom options, enhance dropdown functionality"}
+,
+{"commit":"bdb683c67e114fc2205ea553e444e5726d43752e","author":"choahbin","email":"ahbin.cho@athometrip.com","date":"2025-05-26 17:38:05 +0900","message":"커밋~"}
+,
+{"commit":"72097fe6949b19f7b6482353841a8f3b81a093b0","author":"ahbin-cho","email":"ahbin.coco@gmail.com","date":"2025-05-25 21:46:01 +0900","message":"refactor: remove unused components and add new product features"}
+,
+{"commit":"54abc4503e2d7063a0393178606e110827ddbc63","author":"choahbin","email":"ahbin.cho@athometrip.com","date":"2025-05-22 17:16:54 +0900","message":"chore: update dependencies and remove unused SVG files"}
+,
+{"commit":"d71b25f2c7d2bd115d043b4843d86ba17b8dda1a","author":"choahbin","email":"ahbin.cho@athometrip.com","date":"2025-05-21 15:50:31 +0900","message":"chore: update dependencies and add new assets"}
+,
+{"commit":"7cfb512db1cefc07564caa4ccd335c506d8373e2","author":"ahbin-cho","email":"ahbin.coco@gmail.com","date":"2025-05-18 22:26:48 +0900","message":"푸터 추가"}
+,
+{"commit":"0392af167c0c5ad727317fe5939da421c7adc318","author":"ahbin-cho","email":"ahbin.coco@gmail.com","date":"2025-05-18 22:14:49 +0900","message":"수트 웹폰트 적용"}
+,
+{"commit":"e7626e278ab0281597ae7074a3f0e0ea77c9923e","author":"ahbin-cho","email":"ahbin.coco@gmail.com","date":"2025-05-18 22:06:37 +0900","message":"헤더와 스크레톤 작업"}
+,
+{"commit":"3821079fa5877d12587a13c0f2414b59721eb6ca","author":"ahbin-cho","email":"ahbin.coco@gmail.com","date":"2025-05-18 21:34:45 +0900","message":"프로젝트 세팅"}
+]
