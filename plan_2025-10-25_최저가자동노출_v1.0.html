@@ -1,0 +1,966 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>맞춤 견적 알아보기 하단 고정 버튼 비활성화 - 노피 어드민 시스템</title>
+    <link href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/variable/woff2/SUIT-Variable.css" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        @media print {
+            @page {
+                size: A4;
+                margin: 0;
+            }
+            body {
+                padding: 15mm;
+            }
+        }
+
+        body {
+            font-family: 'SUIT Variable', -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Pretendard', 'Malgun Gothic', sans-serif;
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 40px;
+            background: #ffffff;
+            color: #191f28;
+            line-height: 1.6;
+            font-size: 14px;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .document-header {
+            border-bottom: 2px solid #3182f6;
+            padding-bottom: 24px;
+            margin-bottom: 32px;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 16px;
+        }
+
+        .logo {
+            height: 32px;
+        }
+
+        .doc-meta {
+            text-align: right;
+            font-size: 11px;
+            color: #8b95a1;
+        }
+
+        .doc-meta-item {
+            margin-bottom: 4px;
+        }
+
+        .doc-title {
+            font-size: 28px;
+            font-weight: 700;
+            color: #191f28;
+            margin-bottom: 12px;
+            letter-spacing: -0.5px;
+        }
+
+        .doc-subtitle {
+            font-size: 16px;
+            color: #4e5968;
+            font-weight: 400;
+        }
+
+        .info-box {
+            background: #f9fafb;
+            border: 1px solid #e5e8eb;
+            border-radius: 12px;
+            padding: 20px;
+            margin: 24px 0;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 24px;
+        }
+
+        .info-item {
+        }
+
+        .info-label {
+            font-size: 12px;
+            color: #8b95a1;
+            margin-bottom: 8px;
+        }
+
+        .info-value {
+            font-size: 16px;
+            color: #191f28;
+            font-weight: 600;
+        }
+
+        .section {
+            margin: 40px 0;
+        }
+
+        .section-title {
+            font-size: 20px;
+            font-weight: 700;
+            color: #191f28;
+            margin-bottom: 16px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid #e5e8eb;
+        }
+
+        .content {
+            color: #4e5968;
+            line-height: 1.8;
+        }
+
+        .content p {
+            margin-bottom: 12px;
+        }
+
+        .content ul, .content ol {
+            margin-left: 20px;
+            margin-bottom: 12px;
+        }
+
+        .content li {
+            margin-bottom: 8px;
+        }
+
+        .highlight-box {
+            background: #eff8ff;
+            border-left: 4px solid #3182f6;
+            padding: 16px 20px;
+            margin: 16px 0;
+            border-radius: 4px;
+        }
+
+        .highlight-box strong {
+            color: #191f28;
+        }
+
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        .comparison-table th,
+        .comparison-table td {
+            padding: 12px;
+            text-align: left;
+            border: 1px solid #e5e8eb;
+        }
+
+        .comparison-table th {
+            background: #f9fafb;
+            font-weight: 600;
+            color: #191f28;
+        }
+
+        .comparison-table td {
+            color: #4e5968;
+        }
+
+        .tag {
+            display: inline-block;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 12px;
+            font-weight: 500;
+            margin-right: 8px;
+        }
+
+        .tag-before {
+            background: #fee;
+            color: #d32f2f;
+        }
+
+        .tag-after {
+            background: #e8f5e9;
+            color: #2e7d32;
+        }
+
+        /* 모바일 화면 목업 스타일 */
+        .mockup-container {
+            display: flex;
+            gap: 32px;
+            margin: 32px 0;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .phone-mockup {
+            width: 320px;
+            background: #fff;
+            border: 1px solid #d1d5db;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+            overflow: hidden;
+            position: relative;
+        }
+
+        .phone-screen {
+            height: 640px;
+            overflow-y: scroll;
+            background: #fff;
+            position: relative;
+            padding-bottom: 60px;
+        }
+
+        .phone-screen::-webkit-scrollbar {
+            width: 4px;
+        }
+
+        .phone-screen::-webkit-scrollbar-thumb {
+            background: #d1d5db;
+            border-radius: 2px;
+        }
+
+        .phone-screen-content {
+            position: relative;
+            min-height: 100%;
+        }
+
+        .mockup-header {
+            background: #fff;
+            padding: 12px 16px;
+            border-bottom: 1px solid #e5e8eb;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .mockup-logo {
+            height: 20px;
+        }
+
+        .mockup-logo img {
+            height: 100%;
+        }
+
+        .mockup-product-section {
+            padding: 16px;
+            text-align: center;
+            background: #fff;
+            border-bottom: 16px solid #F7F7F7;
+        }
+
+        .mockup-product-image {
+            height: 180px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 16px;
+        }
+
+        .mockup-product-image img {
+            max-height: 100%;
+            max-width: 80%;
+        }
+
+        .mockup-product-title {
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+
+        .mockup-badge {
+            background: #131FA0;
+            color: #fff;
+            font-size: 10px;
+            padding: 4px 6px;
+            border-radius: 8px;
+        }
+
+        .mockup-price-box {
+            border: 1px solid #e5e8eb;
+            border-radius: 12px;
+            padding: 16px;
+            text-align: left;
+        }
+
+        .mockup-stars {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            padding-bottom: 12px;
+            margin-bottom: 12px;
+            border-bottom: 1px solid #e5e8eb;
+            font-size: 13px;
+            color: #6b7280;
+        }
+
+        .mockup-price-row {
+            display: flex;
+            justify-content: space-between;
+            font-size: 13px;
+            color: #6b7280;
+            margin-bottom: 8px;
+        }
+
+        .mockup-price-highlight {
+            color: #F04438;
+            font-weight: 600;
+        }
+
+        .mockup-final-price {
+            display: flex;
+            justify-content: space-between;
+            padding-top: 8px;
+            margin-top: 8px;
+            border-top: 1px solid #f0f0f0;
+            font-weight: 700;
+        }
+
+        .mockup-final-price .label {
+            font-size: 13px;
+            font-weight: 500;
+            color: #4e5968;
+        }
+
+        .mockup-final-price .price {
+            font-size: 16px;
+            color: #191f28;
+        }
+
+        .mockup-custom-quote-btn {
+            position: sticky;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            width: 100%;
+            background: linear-gradient(to right, #1E34A5, #5D7BDC);
+            color: #fff;
+            border: none;
+            padding: 14px 20px;
+            font-size: 15px;
+            font-weight: 700;
+            cursor: pointer;
+            box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+            z-index: 10;
+            margin-top: auto;
+        }
+
+        .mockup-banner {
+            background: linear-gradient(to right, #eff6ff, #e0e7ff);
+            padding: 16px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 16px solid #F7F7F7;
+        }
+
+        .mockup-banner-text h3 {
+            font-size: 14px;
+            font-weight: 700;
+            margin-bottom: 4px;
+        }
+
+        .mockup-banner-text p {
+            font-size: 12px;
+            color: #6b7280;
+        }
+
+        .mockup-event-section {
+            padding: 16px;
+        }
+
+        .mockup-event-title {
+            font-size: 16px;
+            font-weight: 700;
+            margin-bottom: 12px;
+        }
+
+        .mockup-event-card {
+            border-top: 1px solid #e5e8eb;
+            padding-top: 12px;
+            margin-top: 12px;
+        }
+
+        .mockup-store-info {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 12px;
+        }
+
+        .mockup-store-logo {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            background: #e5e8eb;
+        }
+
+        .mockup-store-name {
+            font-size: 12px;
+            font-weight: 600;
+        }
+
+        .mockup-store-date {
+            font-size: 10px;
+            color: #9ba4b4;
+        }
+
+        .mockup-event-detail {
+            border: 1px solid #e5e8eb;
+            border-radius: 8px;
+            padding: 12px;
+            font-size: 11px;
+        }
+
+        .mockup-event-price {
+            color: #131FA0;
+            font-weight: 700;
+            font-size: 16px;
+            margin-top: 8px;
+        }
+
+        .mockup-event-btn {
+            width: 100%;
+            background: linear-gradient(to right, #1E34A5, #5D7BDC);
+            color: #fff;
+            border: none;
+            border-radius: 6px;
+            padding: 10px 16px;
+            font-size: 13px;
+            font-weight: 600;
+            margin-top: 12px;
+            cursor: pointer;
+        }
+
+        .mockup-label {
+            text-align: center;
+            font-size: 14px;
+            font-weight: 600;
+            color: #191f28;
+            margin-top: 16px;
+            padding: 8px;
+            background: #f9fafb;
+            border-radius: 8px;
+        }
+
+        .mockup-label.before {
+            color: #d32f2f;
+            background: #ffebee;
+        }
+
+        .mockup-label.after {
+            color: #2e7d32;
+            background: #e8f5e9;
+        }
+
+        .mockup-comparison-arrow {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 32px;
+            color: #3182f6;
+            font-weight: 700;
+        }
+
+        @media (max-width: 768px) {
+            .mockup-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .mockup-comparison-arrow {
+                transform: rotate(90deg);
+            }
+        }
+
+        .mockup-strike {
+            text-decoration: line-through;
+            color: #9ba4b4;
+        }
+
+        .screenshot-container {
+            margin: 24px 0;
+            text-align: center;
+        }
+
+        .screenshot-container img {
+            max-width: 320px;
+            border: 2px solid #e5e8eb;
+            border-radius: 16px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .screenshot-label {
+            font-size: 13px;
+            color: #6b7280;
+            margin-top: 12px;
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body>
+    <div class="document-header">
+        <div class="logo-container">
+            <img src="https://nofee.team/images/logo.svg" alt="NOFEE" class="logo">
+            <div class="doc-meta">
+                <div class="doc-meta-item">작성일: 2025.10.25</div>
+                <div class="doc-meta-item">버전: v1.0</div>
+                <div class="doc-meta-item">작성자: 제이콥</div>
+            </div>
+        </div>
+        <h1 class="doc-title">맞춤 견적 알아보기 하단 고정 버튼 비활성화</h1>
+        <p class="doc-subtitle">이벤트별 견적 신청 버튼으로 사용자 경험 개선</p>
+    </div>
+
+    <div class="info-box">
+        <div class="info-item">
+            <div class="info-label">문서 유형</div>
+            <div class="info-value">기획안</div>
+        </div>
+        <div class="info-item">
+            <div class="info-label">우선순위</div>
+            <div class="info-value">높음 (High)</div>
+        </div>
+        <div class="info-item">
+            <div class="info-label">목표 배포일</div>
+            <div class="info-value">2025.10.29 ~ 10.31</div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2 class="section-title">개요</h2>
+        <div class="content">
+            <p>휴대폰 상품 상세 페이지에서 하단 고정 <strong>'맞춤 견적 알아보기'</strong> 버튼을 비활성화하고, 각 이벤트 상품마다 개별 견적 신청 버튼을 추가합니다.</p>
+
+            <div class="highlight-box">
+                <strong>핵심 변경사항</strong><br>
+                • 화면 하단 고정 파란색 '맞춤 견적 알아보기' 버튼 비활성화<br>
+                • 현재 진행중인 이벤트 섹션의 각 상품마다 '맞춤 견적 알아보기' 버튼 추가<br>
+                • 고객이 원하는 이벤트를 선택해서 바로 견적 신청 가능
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2 class="section-title">왜 이렇게 바꾸나요?</h2>
+        <div class="content">
+            <h3 style="font-size: 16px; font-weight: 600; color: #191f28; margin: 20px 0 12px 0;">지금은 어떤가요?</h3>
+            <p>현재는 상품 페이지 하단에 고정된 '맞춤 견적 알아보기' 버튼을 누르면 별도 페이지로 이동하여 견적을 확인합니다. 하지만 이미 아래에 파트너 이벤트가 표시되어 있어서 버튼의 역할이 중복됩니다.</p>
+
+            <h3 style="font-size: 16px; font-weight: 600; color: #191f28; margin: 20px 0 12px 0;">무엇이 좋아지나요?</h3>
+            <ul>
+                <li><strong>더 직관적인 선택:</strong> 고객이 원하는 이벤트를 보고 바로 그 상품의 견적을 신청할 수 있습니다</li>
+                <li><strong>불필요한 단계 제거:</strong> 하단 고정 버튼을 누르는 단계가 사라져 사용자 경험이 개선됩니다</li>
+                <li><strong>명확한 액션:</strong> 각 이벤트마다 버튼이 있어서 "이 상품을 신청하겠다"는 의도가 명확합니다</li>
+                <li><strong>파트너 이벤트 활성화:</strong> 이벤트 상품으로 직접 유도하여 파트너 생태계를 강화합니다</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2 class="section-title">주요 변경사항</h2>
+        <div class="content">
+            <table class="comparison-table">
+                <thead>
+                    <tr>
+                        <th style="width: 20%;">항목</th>
+                        <th style="width: 40%;">변경 전 (AS-IS)</th>
+                        <th style="width: 40%;">변경 후 (TO-BE)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>하단 고정 버튼</strong></td>
+                        <td><span class="tag tag-before">활성화</span>화면 하단에 '맞춤 견적 알아보기' 버튼 고정 표시</td>
+                        <td><span class="tag tag-after">비활성화</span>하단 고정 버튼 숨김 처리</td>
+                    </tr>
+                    <tr>
+                        <td><strong>이벤트 버튼</strong></td>
+                        <td><span class="tag tag-before">없음</span>이벤트 카드에 버튼 없음</td>
+                        <td><span class="tag tag-after">추가</span>각 이벤트마다 '맞춤 견적 알아보기' 버튼 표시</td>
+                    </tr>
+                    <tr>
+                        <td><strong>견적 신청 위치</strong></td>
+                        <td>하단 고정 버튼 → 별도 견적 페이지</td>
+                        <td>각 이벤트 버튼 → 해당 이벤트 견적 신청</td>
+                    </tr>
+                    <tr>
+                        <td><strong>고객 경험</strong></td>
+                        <td>하단 버튼 클릭 → 견적 페이지 이동 → 조건 선택</td>
+                        <td>원하는 이벤트 선택 → 바로 견적 신청</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3 style="font-size: 18px; font-weight: 700; color: #191f28; margin: 40px 0 24px 0; text-align: center;">모바일 화면 비교</h3>
+
+            <div class="mockup-container">
+                <!-- AS-IS 화면 -->
+                <div>
+                    <div class="mockup-label before">변경 전 (AS-IS)</div>
+                    <div class="phone-mockup">
+                        <div class="phone-screen">
+                            <div class="phone-screen-content">
+                            <!-- 헤더 -->
+                            <div class="mockup-header">
+                                <div class="mockup-logo">
+                                    <img src="https://nofee.team/images/logo.svg" alt="NOFEE">
+                                </div>
+                                <div style="font-size: 12px; color: #9ba4b4;">☰</div>
+                            </div>
+
+                            <!-- 상품 정보 -->
+                            <div class="mockup-product-section">
+                                <div class="mockup-product-image">
+                                    <div style="width: 120px; height: 160px; background: linear-gradient(135deg, #e0e7ff 0%, #f0f0f0 100%); border-radius: 12px; display: flex; align-items: center; justify-content: center; color: #9ba4b4; font-size: 11px;">상품 이미지</div>
+                                </div>
+                                <div class="mockup-product-title">
+                                    <span>갤럭시 S24</span>
+                                    <span class="mockup-badge">84%</span>
+                                </div>
+                                <div class="mockup-price-box">
+                                    <div class="mockup-stars">
+                                        <span>⭐ 4.21</span>
+                                        <span style="color: #9ba4b4;">(111개 리뷰)</span>
+                                    </div>
+                                    <div class="mockup-price-row">
+                                        <span>원래 가격</span>
+                                        <span class="mockup-strike">1,155,000원</span>
+                                    </div>
+                                    <div class="mockup-price-row">
+                                        <span>총 할인액</span>
+                                        <span class="mockup-price-highlight">755,000원</span>
+                                    </div>
+                                    <div class="mockup-price-row">
+                                        <span>통신비 포함</span>
+                                        <span>월 65,000원</span>
+                                    </div>
+                                    <div class="mockup-final-price">
+                                        <span class="label">실제 구매가</span>
+                                        <span class="price">400,000원</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 동네성지 배너 -->
+                            <div class="mockup-banner">
+                                <div class="mockup-banner-text">
+                                    <h3>우리 동네에서 더 싸게 살 수 있어요</h3>
+                                    <p>아래 매장을 눌러보세요</p>
+                                </div>
+                                <div style="font-size: 24px;">📍</div>
+                            </div>
+
+                            <!-- 이벤트 섹션 -->
+                            <div class="mockup-event-section">
+                                <div class="mockup-event-title">현재 진행중인 이벤트</div>
+
+                                <div class="mockup-event-card">
+                                    <div class="mockup-store-info">
+                                        <div class="mockup-store-logo"></div>
+                                        <div>
+                                            <div class="mockup-store-name">휴대폰성지 띵동폰 광진점</div>
+                                            <div class="mockup-store-date">2025. 10. 21 - 2025. 10. 31</div>
+                                        </div>
+                                    </div>
+                                    <div class="mockup-event-detail">
+                                        <div style="font-weight: 600; margin-bottom: 8px;">갤럭시 S24 256GB</div>
+                                        <div style="color: #6b7280;">LG U+ • 번호이동 • 공시지원</div>
+                                        <div class="mockup-event-price">할부원금 -110,000원</div>
+                                    </div>
+                                </div>
+
+                                <div class="mockup-event-card">
+                                    <div class="mockup-store-info">
+                                        <div class="mockup-store-logo"></div>
+                                        <div>
+                                            <div class="mockup-store-name">휴대폰아울렛 일산</div>
+                                            <div class="mockup-store-date">2025. 10. 01 - 2025. 10. 31</div>
+                                        </div>
+                                    </div>
+                                    <div class="mockup-event-detail">
+                                        <div style="font-weight: 600; margin-bottom: 8px;">갤럭시 S24 256GB 최저가</div>
+                                        <div style="color: #6b7280;">KT • 번호이동 • 공시지원</div>
+                                        <div class="mockup-event-price">할부원금 0원</div>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                            <!-- 맞춤 견적 알아보기 버튼 (AS-IS에만 있음 - 하단 고정) -->
+                            <button class="mockup-custom-quote-btn">
+                                맞춤 견적 알아보기
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 화살표 -->
+                <div class="mockup-comparison-arrow">→</div>
+
+                <!-- TO-BE 화면 -->
+                <div>
+                    <div class="mockup-label after">변경 후 (TO-BE)</div>
+                    <div class="phone-mockup">
+                        <div class="phone-screen">
+                            <!-- 헤더 -->
+                            <div class="mockup-header">
+                                <div class="mockup-logo">
+                                    <img src="https://nofee.team/images/logo.svg" alt="NOFEE">
+                                </div>
+                                <div style="font-size: 12px; color: #9ba4b4;">☰</div>
+                            </div>
+
+                            <!-- 상품 정보 -->
+                            <div class="mockup-product-section">
+                                <div class="mockup-product-image">
+                                    <div style="width: 120px; height: 160px; background: linear-gradient(135deg, #e0e7ff 0%, #f0f0f0 100%); border-radius: 12px; display: flex; align-items: center; justify-content: center; color: #9ba4b4; font-size: 11px;">상품 이미지</div>
+                                </div>
+                                <div class="mockup-product-title">
+                                    <span>갤럭시 S24</span>
+                                    <span class="mockup-badge">84%</span>
+                                </div>
+                                <div class="mockup-price-box">
+                                    <div class="mockup-stars">
+                                        <span>⭐ 4.21</span>
+                                        <span style="color: #9ba4b4;">(111개 리뷰)</span>
+                                    </div>
+                                    <div class="mockup-price-row">
+                                        <span>원래 가격</span>
+                                        <span class="mockup-strike">1,155,000원</span>
+                                    </div>
+                                    <div class="mockup-price-row">
+                                        <span>총 할인액</span>
+                                        <span class="mockup-price-highlight">755,000원</span>
+                                    </div>
+                                    <div class="mockup-final-price">
+                                        <span class="label">실제 구매가</span>
+                                        <span class="price">400,000원</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 동네성지 배너 -->
+                            <div class="mockup-banner">
+                                <div class="mockup-banner-text">
+                                    <h3>우리 동네에서 더 싸게 살 수 있어요</h3>
+                                    <p>아래 매장을 눌러보세요</p>
+                                </div>
+                                <div style="font-size: 24px;">📍</div>
+                            </div>
+
+                            <!-- 이벤트 섹션 -->
+                            <div class="mockup-event-section">
+                                <div class="mockup-event-title">현재 진행중인 이벤트</div>
+
+                                <div class="mockup-event-card">
+                                    <div class="mockup-store-info">
+                                        <div class="mockup-store-logo"></div>
+                                        <div>
+                                            <div class="mockup-store-name">휴대폰성지 띵동폰 광진점</div>
+                                            <div class="mockup-store-date">2025. 10. 21 - 2025. 10. 31</div>
+                                        </div>
+                                    </div>
+                                    <div class="mockup-event-detail">
+                                        <div style="font-weight: 600; margin-bottom: 8px;">갤럭시 S24 256GB</div>
+                                        <div style="color: #6b7280;">LG U+ • 번호이동 • 공시지원</div>
+                                        <div class="mockup-event-price">할부원금 -110,000원</div>
+                                        <button class="mockup-event-btn">맞춤 견적 알아보기</button>
+                                    </div>
+                                </div>
+
+                                <div class="mockup-event-card">
+                                    <div class="mockup-store-info">
+                                        <div class="mockup-store-logo"></div>
+                                        <div>
+                                            <div class="mockup-store-name">휴대폰아울렛 일산</div>
+                                            <div class="mockup-store-date">2025. 10. 01 - 2025. 10. 31</div>
+                                        </div>
+                                    </div>
+                                    <div class="mockup-event-detail">
+                                        <div style="font-weight: 600; margin-bottom: 8px;">갤럭시 S24 256GB 최저가</div>
+                                        <div style="color: #6b7280;">KT • 번호이동 • 공시지원</div>
+                                        <div class="mockup-event-price">할부원금 0원</div>
+                                        <button class="mockup-event-btn">맞춤 견적 알아보기</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="highlight-box" style="margin-top: 32px;">
+                <strong>핵심 변경 포인트:</strong><br>
+                • <strong>하단 고정 버튼 제거:</strong> 화면 맨 아래 "맞춤 견적 알아보기" 버튼이 사라집니다<br>
+                • <strong>이벤트별 견적 신청:</strong> 각 이벤트 상품마다 "맞춤 견적 알아보기" 버튼이 개별적으로 표시됩니다<br>
+                • <strong>직관적인 선택:</strong> 고객이 원하는 이벤트를 선택해서 바로 견적 신청할 수 있습니다
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2 class="section-title">어떻게 바뀌나요?</h2>
+        <div class="content">
+            <h3 style="font-size: 16px; font-weight: 600; color: #191f28; margin: 20px 0 12px 0;">1. 하단 고정 버튼이 사라집니다</h3>
+            <p>상품 페이지를 스크롤해도 계속 따라다니던 화면 맨 아래 고정 버튼 '맞춤 견적 알아보기'가 보이지 않게 됩니다.</p>
+            <ul>
+                <li>QuoteBottomBanner 컴포넌트를 숨김 처리합니다</li>
+                <li>화면 하단이 깔끔해져서 이벤트 섹션에 집중할 수 있습니다</li>
+            </ul>
+
+            <h3 style="font-size: 16px; font-weight: 600; color: #191f28; margin: 20px 0 12px 0;">2. 각 이벤트마다 버튼이 추가됩니다</h3>
+            <p>'현재 진행중인 이벤트' 섹션의 각 이벤트 카드마다 '맞춤 견적 알아보기' 버튼이 표시됩니다.</p>
+            <ul>
+                <li>고객이 원하는 이벤트를 선택해서 바로 견적을 신청할 수 있습니다</li>
+                <li>어떤 상품을 신청하는지 명확하게 알 수 있습니다</li>
+            </ul>
+
+            <h3 style="font-size: 16px; font-weight: 600; color: #191f28; margin: 20px 0 12px 0;">3. 고객 입장에서의 흐름</h3>
+            <div class="highlight-box">
+                <strong>변경 전:</strong><br>
+                1. 상품 페이지 접속<br>
+                2. 하단 '맞춤 견적 알아보기' 버튼 클릭<br>
+                3. 견적 페이지로 이동<br>
+                4. 조건 선택 후 견적 확인<br><br>
+
+                <strong>변경 후:</strong><br>
+                1. 상품 페이지 접속<br>
+                2. <strong>원하는 이벤트 찾기</strong><br>
+                3. <strong>해당 이벤트의 '맞춤 견적 알아보기' 버튼 클릭</strong><br>
+                4. <strong>바로 견적 신청</strong>
+            </div>
+            <p style="margin-top: 16px; color: #2e7d32; font-weight: 600;">→ 더 직관적이고 명확한 흐름으로 개선됩니다!</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2 class="section-title">기대 효과</h2>
+        <div class="content">
+            <ul>
+                <li><strong>사용자 경험 개선:</strong> 불필요한 버튼 제거로 화면이 깔끔해지고, 이벤트 중심의 직관적인 인터페이스 제공</li>
+                <li><strong>파트너 이벤트 활성화:</strong> 이벤트별 견적 신청 버튼으로 파트너 판매점의 이벤트 상품 노출 증대</li>
+                <li><strong>전환율 향상:</strong> 고객이 원하는 이벤트를 명확히 선택하여 견적 신청 전환율 증가</li>
+                <li><strong>운영 효율성:</strong> 기존 기능 재배치로 추가 개발 부담 최소화</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2 class="section-title">개발자를 위한 참고사항</h2>
+        <div class="content">
+            <div class="highlight-box">
+                <strong>💡 핵심 포인트</strong><br>
+                • 상품 상세 페이지에서 QuoteBottomBanner 컴포넌트만 숨기면 됩니다<br>
+                • 각 이벤트 카드에 '맞춤 견적 알아보기' 버튼을 추가합니다<br>
+                • 버튼 클릭 시 해당 이벤트 정보를 견적 신청 페이지로 전달합니다
+            </div>
+
+            <h3 style="font-size: 16px; font-weight: 600; color: #191f28; margin: 20px 0 12px 0;">주요 수정 위치</h3>
+            <ul>
+                <li><strong>상품 상세 페이지:</strong> <code>/app/product/[productGroupCode]/page.tsx</code>
+                    <ul>
+                        <li>QuoteBottomBanner 컴포넌트 비활성화 (조건부 렌더링)</li>
+                    </ul>
+                </li>
+                <li><strong>이벤트 카드 컴포넌트:</strong> 이벤트 목록 렌더링 부분
+                    <ul>
+                        <li>각 이벤트 카드에 '맞춤 견적 알아보기' 버튼 추가</li>
+                        <li>버튼 클릭 시 이벤트 정보와 함께 견적 신청 플로우 시작</li>
+                    </ul>
+                </li>
+            </ul>
+
+            <h3 style="font-size: 16px; font-weight: 600; color: #191f28; margin: 20px 0 12px 0;">백엔드 작업</h3>
+            <p>백엔드 수정은 필요하지 않습니다. 기존 API를 그대로 사용합니다:</p>
+            <ul>
+                <li><code>postCampaignPhoneEventIngList</code> API - 이벤트 목록 조회</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2 class="section-title">고려사항 및 리스크</h2>
+        <div class="content">
+            <ul>
+                <li><strong>파트너 상품 부족 시:</strong> 초기 파트너 이벤트 상품이 부족할 경우 고객 경험 저하 우려
+                    <ul>
+                        <li>대응: 주요 인기 모델부터 파트너 상품 등록 독려, 과도기 동안 Summary 데이터 병행 표시 검토</li>
+                    </ul>
+                </li>
+                <li><strong>가격 업데이트 주기:</strong> 파트너 상품 가격이 실시간 반영되지 않을 경우 고객 혼란
+                    <ul>
+                        <li>대응: 캐시 전략 수립, 가격 갱신 주기 설정, 가격 변동 안내 문구 추가</li>
+                    </ul>
+                </li>
+                <li><strong>Summary 데이터 활용 중단:</strong> 기존 고객들이 다양한 조합의 견적을 원하는 경우 불만 가능성
+                    <ul>
+                        <li>대응: 고객 피드백 모니터링, 필요 시 별도 비교 견적 페이지 제공 검토</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2 class="section-title">일정 및 마일스톤</h2>
+        <div class="content">
+            <div class="highlight-box">
+                <strong>⚠️ 중요:</strong> 본 기획안은 <strong>"시세표 콘텐츠 유형 추가"</strong> 기획안과 연동되어 있으며, 동일한 배포 일정(10월 마지막 주)에 맞춰 진행됩니다.
+            </div>
+
+            <table class="comparison-table">
+                <thead>
+                    <tr>
+                        <th>단계</th>
+                        <th>주요 작업</th>
+                        <th>목표 일정</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>1단계: 기획 확정</strong></td>
+                        <td>기획안 검토, 상세 스펙 작성, 파트너 협의</td>
+                        <td>2025.10.25 (금)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>2단계: 개발</strong></td>
+                        <td>프론트엔드 개발 (QuoteBottomBanner 숨김 처리, getLowestPrice API 연동)</td>
+                        <td>2025.10.26 (토) ~ 10.27 (일)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>3단계: 테스트</strong></td>
+                        <td>QA, 파트너 상품 데이터 검증, 최저가 로직 검증</td>
+                        <td>2025.10.28 (월)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>4단계: 배포</strong></td>
+                        <td>시세표 기획안과 함께 프로덕션 배포</td>
+                        <td>2025.10.29 (화) ~ 10.31 (목)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>5단계: 모니터링</strong></td>
+                        <td>성과 분석, 고객 피드백 수집, 개선</td>
+                        <td>배포 후 2주 (11월 중순까지)</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div style="margin-top: 20px; padding: 16px; background: #f9fafb; border-radius: 8px;">
+                <h4 style="font-size: 14px; font-weight: 600; margin-bottom: 8px; color: #191f28;">연동 배포 이유</h4>
+                <p style="font-size: 13px; color: #4e5968; line-height: 1.6;">
+                    시세표 기능이 배포되면 파트너 판매점에서 대량의 이벤트 상품을 등록할 수 있게 됩니다.
+                    이 기획안은 그 이벤트 상품들의 최저가를 자동으로 찾아서 고객에게 보여주는 기능이므로,
+                    두 기획안이 같은 시점에 배포되어야 시너지 효과를 극대화할 수 있습니다.
+                </p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
