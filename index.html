@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>노피 기획안</title>
+    <title>노피 문서</title>
     <link href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/variable/woff2/SUIT-Variable.css" rel="stylesheet">
     <style>
         * {
@@ -14,188 +14,295 @@
 
         body {
             font-family: 'SUIT Variable', -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', sans-serif;
-            background: #f9fafb;
-            min-height: 100vh;
+            background: #ffffff;
+            color: #191f28;
             -webkit-font-smoothing: antialiased;
         }
 
         /* 헤더 */
         .header {
-            background: white;
-            padding: 32px 0;
+            position: sticky;
+            top: 0;
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-bottom: 1px solid #f2f4f6;
+            z-index: 100;
         }
 
         .header-inner {
-            max-width: 768px;
+            max-width: 1200px;
             margin: 0 auto;
-            padding: 0 24px;
+            padding: 20px 40px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo-area {
+            display: flex;
+            align-items: center;
+            gap: 16px;
         }
 
         .logo {
-            height: 28px;
-            margin-bottom: 12px;
+            height: 24px;
         }
 
         .brand-title {
-            font-size: 28px;
-            font-weight: 800;
+            font-size: 18px;
+            font-weight: 700;
             color: #191f28;
-            letter-spacing: -1.2px;
+            letter-spacing: -0.5px;
+        }
+
+        /* 탭 네비게이션 */
+        .tabs {
+            display: flex;
+            gap: 8px;
+        }
+
+        .tab {
+            padding: 8px 16px;
+            border-radius: 8px;
+            font-size: 14px;
+            font-weight: 600;
+            color: #6b7684;
+            background: transparent;
+            border: none;
+            cursor: pointer;
+            transition: all 0.2s;
+            letter-spacing: -0.3px;
+        }
+
+        .tab:hover {
+            color: #191f28;
+            background: #f2f4f6;
+        }
+
+        .tab.active {
+            color: #3182f6;
+            background: #e5f0ff;
         }
 
         /* 메인 컨텐츠 */
         .main {
-            max-width: 768px;
+            max-width: 1200px;
             margin: 0 auto;
-            padding: 40px 24px 100px;
+            padding: 60px 40px 120px;
         }
 
-        /* 기획안 리스트 */
-        .planning-list {
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
+        /* 섹션 헤더 */
+        .section-header {
+            margin-bottom: 32px;
         }
 
-        .planning-item {
-            background: white;
-            border-radius: 16px;
-            padding: 32px;
-            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-            cursor: pointer;
-            text-decoration: none;
-            color: inherit;
-            display: block;
-            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
-        }
-
-        .planning-item:active {
-            transform: scale(0.98);
-        }
-
-        .item-badges {
-            display: flex;
-            gap: 6px;
-            margin-bottom: 16px;
-        }
-
-        .badge {
-            padding: 4px 8px;
-            border-radius: 4px;
-            font-size: 11px;
-            font-weight: 700;
-            letter-spacing: -0.3px;
-        }
-
-        .badge-new {
-            background: #f2f4f6;
-            color: #4e5968;
-        }
-
-        .badge-page {
-            background: #e3f2fd;
-            color: #1976d2;
-        }
-
-        .badge-plan {
-            background: #f3e5f5;
-            color: #7b1fa2;
-        }
-
-        /* 섹션 타이틀 */
         .section-title {
-            font-size: 20px;
+            font-size: 32px;
             font-weight: 800;
             color: #191f28;
-            margin-bottom: 16px;
-            padding-left: 12px;
-            border-left: 4px solid #3b82f6;
-        }
-
-        .item-title {
-            font-size: 24px;
-            font-weight: 800;
-            color: #191f28;
-            margin-bottom: 12px;
             letter-spacing: -1px;
-            line-height: 1.35;
+            margin-bottom: 12px;
         }
 
-        .item-description {
+        .section-description {
             font-size: 16px;
-            color: #4e5968;
-            line-height: 1.6;
+            color: #6b7684;
             font-weight: 500;
             letter-spacing: -0.3px;
         }
 
-        .item-meta {
+        /* 카드 그리드 */
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+            gap: 24px;
+        }
+
+        /* 카드 */
+        .card {
+            background: #ffffff;
+            border: 1px solid #e5e8eb;
+            border-radius: 16px;
+            padding: 32px;
+            text-decoration: none;
+            color: inherit;
+            display: block;
+            transition: all 0.2s;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .card:hover {
+            border-color: #3182f6;
+            transform: translateY(-4px);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
+        }
+
+        .card-header {
             display: flex;
-            flex-direction: column;
-            gap: 8px;
-            margin-top: 20px;
+            align-items: flex-start;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        .card-badges {
+            display: flex;
+            gap: 6px;
+            flex-wrap: wrap;
+        }
+
+        .badge {
+            padding: 4px 10px;
+            border-radius: 6px;
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: -0.3px;
+        }
+
+        .badge-type {
+            background: #f2f4f6;
+            color: #4e5968;
+        }
+
+        .badge-version {
+            background: #e5f0ff;
+            color: #3182f6;
+        }
+
+        .card-title {
+            font-size: 22px;
+            font-weight: 700;
+            color: #191f28;
+            margin-bottom: 12px;
+            letter-spacing: -0.8px;
+            line-height: 1.4;
+        }
+
+        .card-description {
+            font-size: 15px;
+            color: #6b7684;
+            line-height: 1.6;
+            font-weight: 500;
+            letter-spacing: -0.3px;
+            margin-bottom: 24px;
+        }
+
+        .card-meta {
+            display: flex;
+            gap: 16px;
             padding-top: 20px;
             border-top: 1px solid #f2f4f6;
         }
 
-        .meta-row {
+        .meta-item {
             display: flex;
-            align-items: center;
-            gap: 12px;
+            flex-direction: column;
+            gap: 4px;
         }
 
         .meta-label {
             font-size: 12px;
             color: #8b95a1;
-            font-weight: 700;
-            min-width: 60px;
+            font-weight: 600;
+            letter-spacing: -0.2px;
         }
 
-        .meta-text {
+        .meta-value {
             font-size: 14px;
             color: #4e5968;
             font-weight: 600;
+            letter-spacing: -0.3px;
         }
 
-        .meta-dot {
-            width: 2px;
-            height: 2px;
-            background: #d1d5db;
-            border-radius: 50%;
+        /* 검색 */
+        .search-bar {
+            position: relative;
+            margin-bottom: 48px;
+        }
+
+        .search-input {
+            width: 100%;
+            padding: 16px 48px 16px 20px;
+            border: 1px solid #e5e8eb;
+            border-radius: 12px;
+            font-size: 16px;
+            font-weight: 500;
+            letter-spacing: -0.3px;
+            transition: all 0.2s;
+            font-family: 'SUIT Variable', -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', sans-serif;
+        }
+
+        .search-input:focus {
+            outline: none;
+            border-color: #3182f6;
+            box-shadow: 0 0 0 4px rgba(49, 130, 246, 0.1);
+        }
+
+        .search-icon {
+            position: absolute;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 20px;
+            height: 20px;
+            color: #8b95a1;
+        }
+
+        /* 섹션 숨김 */
+        .section {
+            display: none;
+        }
+
+        .section.active {
+            display: block;
         }
 
         /* 반응형 */
         @media (max-width: 768px) {
-            .header {
-                padding: 24px 0;
+            .header-inner {
+                padding: 16px 20px;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 16px;
             }
 
-            .brand-title {
-                font-size: 24px;
+            .tabs {
+                width: 100%;
+                overflow-x: auto;
+                -webkit-overflow-scrolling: touch;
+            }
+
+            .tabs::-webkit-scrollbar {
+                display: none;
             }
 
             .main {
-                padding: 32px 20px 80px;
+                padding: 40px 20px 80px;
             }
 
-            .planning-item {
-                padding: 28px 24px;
+            .section-title {
+                font-size: 28px;
             }
 
-            .item-title {
-                font-size: 22px;
+            .card-grid {
+                grid-template-columns: 1fr;
             }
 
-            .item-description {
-                font-size: 15px;
+            .card {
+                padding: 24px;
+            }
+
+            .card-title {
+                font-size: 20px;
             }
         }
 
-        /* 애니메이션 */
+        /* 로딩 애니메이션 */
         @keyframes fadeIn {
             from {
                 opacity: 0;
-                transform: translateY(8px);
+                transform: translateY(10px);
             }
             to {
                 opacity: 1;
@@ -203,8 +310,8 @@
             }
         }
 
-        .planning-item {
-            animation: fadeIn 0.5s ease;
+        .card {
+            animation: fadeIn 0.4s ease;
         }
     </style>
 </head>
@@ -212,158 +319,209 @@
     <!-- 헤더 -->
     <header class="header">
         <div class="header-inner">
-            <img src="https://admin.nofee.team/image/company/logo.svg" alt="노피" class="logo">
-            <h1 class="brand-title">기획안</h1>
+            <div class="logo-area">
+                <img src="https://admin.nofee.team/image/company/logo.svg" alt="노피" class="logo">
+                <h1 class="brand-title">문서</h1>
+            </div>
+            <nav class="tabs">
+                <button class="tab active" data-tab="all">전체</button>
+                <button class="tab" data-tab="page">페이지</button>
+                <button class="tab" data-tab="plan">기획안</button>
+            </nav>
         </div>
     </header>
 
     <!-- 메인 컨텐츠 -->
     <main class="main">
+        <!-- 검색 바 -->
+        <div class="search-bar">
+            <input type="text" class="search-input" placeholder="문서 검색..." id="searchInput">
+            <svg class="search-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+            </svg>
+        </div>
+
+        <!-- 전체 섹션 -->
+        <div class="section active" id="all-section">
+            <div class="section-header">
+                <h2 class="section-title">모든 문서</h2>
+                <p class="section-description">최신순으로 정렬된 전체 문서 목록입니다</p>
+            </div>
+            <div class="card-grid" id="all-cards"></div>
+        </div>
+
         <!-- 페이지 섹션 -->
-        <h2 class="section-title">📄 페이지</h2>
-        <div class="planning-list" style="margin-bottom: 60px;">
-            <!-- 페이지 1: 회사소개서 -->
-            <a href="https://jacob-po.github.io/nofee_planning/page_2025-10-25_회사소개서_v1.0.html" class="planning-item" target="_blank">
-                <div class="item-badges">
-                    <span class="badge badge-page">페이지</span>
-                    <span class="badge badge-new">v1.0</span>
-                </div>
-                <h2 class="item-title">노피 회사소개서 2025</h2>
-                <p class="item-description">
-                    토스 스타일 디자인으로 제작된 노피 회사소개서. 가짜 고객 없는 진짜 수익 모델, 검증된 사업 성과, 그리고 휴대폰 판매점의 디지털 전환을 이끄는 노피의 비전을 담았습니다.
-                </p>
-                <div class="item-meta">
-                    <div class="meta-row">
-                        <span class="meta-label">작성자</span>
-                        <span class="meta-text">제이콥</span>
-                    </div>
-                    <div class="meta-row">
-                        <span class="meta-label">생성일</span>
-                        <span class="meta-text">2025.10.25</span>
-                    </div>
-                    <div class="meta-row">
-                        <span class="meta-label">최종 수정</span>
-                        <span class="meta-text">2025.10.25</span>
-                    </div>
-                </div>
-            </a>
-
-            <!-- 페이지 2: 매장구독 프로모션 -->
-            <a href="https://jacob-po.github.io/nofee_planning/page_2025-10-24_매장구독_프로모션_v1.0.html" class="planning-item" target="_blank">
-                <div class="item-badges">
-                    <span class="badge badge-page">페이지</span>
-                    <span class="badge badge-new">v1.0</span>
-                </div>
-                <h2 class="item-title">매장구독 프로모션 모바일</h2>
-                <p class="item-description">
-                    가짜 고객을 안 받는 노피의 매장구독 서비스 모바일 프로모션 페이지. 검증된 고객만 연결, DB 수집률 90%, 월 평균 30명의 진짜 고객 유입으로 판매점의 실질적인 수익 증대를 돕습니다.
-                </p>
-                <div class="item-meta">
-                    <div class="meta-row">
-                        <span class="meta-label">작성자</span>
-                        <span class="meta-text">제이콥</span>
-                    </div>
-                    <div class="meta-row">
-                        <span class="meta-label">생성일</span>
-                        <span class="meta-text">2025.10.24</span>
-                    </div>
-                    <div class="meta-row">
-                        <span class="meta-label">최종 수정</span>
-                        <span class="meta-text">2025.10.24</span>
-                    </div>
-                </div>
-            </a>
-
-            <!-- 페이지 3: 동네성지 랜딩페이지 -->
-            <a href="https://jacob-po.github.io/nofee_planning/page_2025-10-13_동네성지_랜딩페이지_v1.0.html" class="planning-item" target="_blank">
-                <div class="item-badges">
-                    <span class="badge badge-page">페이지</span>
-                    <span class="badge badge-new">v1.0</span>
-                </div>
-                <h2 class="item-title">동네성지 랜딩페이지</h2>
-                <p class="item-description">
-                    고객과 휴대폰 판매점 모두를 타겟으로 한 노피 동네성지 소개 페이지. 100개 이상의 입점 매장, 5만+ 누적 방문자, 2만+ 견적신청 등 검증된 성과를 바탕으로 빠른 입점(5분), 자동 고객 유입, 선점 효과를 강조합니다.
-                </p>
-                <div class="item-meta">
-                    <div class="meta-row">
-                        <span class="meta-label">작성자</span>
-                        <span class="meta-text">제이콥</span>
-                    </div>
-                    <div class="meta-row">
-                        <span class="meta-label">생성일</span>
-                        <span class="meta-text">2025.10.13</span>
-                    </div>
-                    <div class="meta-row">
-                        <span class="meta-label">최종 수정</span>
-                        <span class="meta-text">2025.10.13</span>
-                    </div>
-                </div>
-            </a>
+        <div class="section" id="page-section">
+            <div class="section-header">
+                <h2 class="section-title">페이지</h2>
+                <p class="section-description">실제 서비스에서 사용되는 페이지 문서입니다</p>
+            </div>
+            <div class="card-grid" id="page-cards"></div>
         </div>
 
         <!-- 기획안 섹션 -->
-        <h2 class="section-title">📋 기획안</h2>
-        <div class="planning-list">
-            <!-- 기획안 1: 견적신청 알림톡 -->
-            <a href="https://jacob-po.github.io/nofee_planning/plan_2025-10-10_견적신청10분룰_v1.0.html" class="planning-item" target="_blank">
-                <div class="item-badges">
-                    <span class="badge badge-plan">기획안</span>
-                    <span class="badge badge-new">v2.0</span>
-                </div>
-                <h2 class="item-title">견적신청 알림톡 시스템</h2>
-                <p class="item-description">
-                    DB 수집률을 9배 향상시키는 알림톡 자동화 시스템. 60분 시간 제공, 취소 정책 폐지, 조건부 발송으로 비용 50% 절감하면서 DB 수집률을 10%에서 90%로 개선합니다.
-                </p>
-                <div class="item-meta">
-                    <div class="meta-row">
-                        <span class="meta-label">작성자</span>
-                        <span class="meta-text">제이콥</span>
-                    </div>
-                    <div class="meta-row">
-                        <span class="meta-label">생성일</span>
-                        <span class="meta-text">2025.10.10</span>
-                    </div>
-                    <div class="meta-row">
-                        <span class="meta-label">최종 수정</span>
-                        <span class="meta-text">2025.10.15</span>
-                    </div>
-                </div>
-            </a>
-
-            <!-- 기획안 2: 시세표 기능 -->
-            <a href="https://jacob-po.github.io/nofee_planning/plan_2025-10-11_시세표기능_v2.1.html" class="planning-item" target="_blank">
-                <div class="item-badges">
-                    <span class="badge badge-plan">기획안</span>
-                    <span class="badge badge-new">v2.2</span>
-                </div>
-                <h2 class="item-title">시세표 콘텐츠 유형 추가</h2>
-                <p class="item-description">
-                    판매점이 여러 상품을 표 형식으로 대량 업로드하고 관리할 수 있는 시세표 기능. 커스텀 드롭다운과 최저가 자동 선택으로 고객이 매장의 전체 상품 라인업을 한눈에 비교하고 통신사별 가격을 실시간으로 확인할 수 있습니다.
-                </p>
-                <div class="item-meta">
-                    <div class="meta-row">
-                        <span class="meta-label">작성자</span>
-                        <span class="meta-text">제이콥</span>
-                    </div>
-                    <div class="meta-row">
-                        <span class="meta-label">생성일</span>
-                        <span class="meta-text">2025.10.11</span>
-                    </div>
-                    <div class="meta-row">
-                        <span class="meta-label">최종 수정</span>
-                        <span class="meta-text">2025.10.13</span>
-                    </div>
-                </div>
-            </a>
+        <div class="section" id="plan-section">
+            <div class="section-header">
+                <h2 class="section-title">기획안</h2>
+                <p class="section-description">제품 및 기능에 대한 기획 문서입니다</p>
+            </div>
+            <div class="card-grid" id="plan-cards"></div>
         </div>
     </main>
 
     <script>
-        // 애니메이션 지연 효과
+        // 문서 데이터
+        const documents = [
+            {
+                type: 'page',
+                title: '노피 회사소개서 2025',
+                description: '토스 스타일 디자인으로 제작된 노피 회사소개서. 가짜 고객 없는 진짜 수익 모델, 검증된 사업 성과, 그리고 휴대폰 판매점의 디지털 전환을 이끄는 노피의 비전을 담았습니다.',
+                url: 'page_2025-10-25_회사소개서_v1.0.html',
+                version: 'v1.0',
+                author: '제이콥',
+                date: '2025.10.25',
+                updated: '2025.10.25'
+            },
+            {
+                type: 'page',
+                title: '마일스톤 & 투자전략',
+                description: '노피의 성장 로드맵과 투자 전략을 담은 문서. 단계별 마일스톤, 재무 목표, 시장 진입 전략을 포함합니다.',
+                url: 'page_2025-10-24_마일스톤_투자전략_v4.1.html',
+                version: 'v4.1',
+                author: '제이콥',
+                date: '2025.10.24',
+                updated: '2025.10.24'
+            },
+            {
+                type: 'page',
+                title: '매장구독 프로모션',
+                description: '가짜 고객을 안 받는 노피의 매장구독 서비스 모바일 프로모션 페이지. 검증된 고객만 연결, DB 수집률 90%, 월 평균 30명의 진짜 고객 유입으로 판매점의 실질적인 수익 증대를 돕습니다.',
+                url: 'page_2025-10-24_매장구독_프로모션_v1.0.html',
+                version: 'v1.0',
+                author: '제이콥',
+                date: '2025.10.24',
+                updated: '2025.10.24'
+            },
+            {
+                type: 'page',
+                title: '동네성지 랜딩페이지',
+                description: '고객과 휴대폰 판매점 모두를 타겟으로 한 노피 동네성지 소개 페이지. 100개 이상의 입점 매장, 5만+ 누적 방문자, 2만+ 견적신청 등 검증된 성과를 바탕으로 빠른 입점, 자동 고객 유입, 선점 효과를 강조합니다.',
+                url: 'page_2025-10-13_동네성지_랜딩페이지_v1.0.html',
+                version: 'v1.0',
+                author: '제이콥',
+                date: '2025.10.13',
+                updated: '2025.10.13'
+            },
+            {
+                type: 'plan',
+                title: '견적신청 알림톡 시스템',
+                description: 'DB 수집률을 9배 향상시키는 알림톡 자동화 시스템. 60분 시간 제공, 취소 정책 폐지, 조건부 발송으로 비용 50% 절감하면서 DB 수집률을 10%에서 90%로 개선합니다.',
+                url: 'plan_2025-10-10_견적신청10분룰_v1.0.html',
+                version: 'v2.0',
+                author: '제이콥',
+                date: '2025.10.10',
+                updated: '2025.10.15'
+            },
+            {
+                type: 'plan',
+                title: '시세표 콘텐츠 유형 추가',
+                description: '판매점이 여러 상품을 표 형식으로 대량 업로드하고 관리할 수 있는 시세표 기능. 커스텀 드롭다운과 최저가 자동 선택으로 고객이 매장의 전체 상품 라인업을 한눈에 비교하고 통신사별 가격을 실시간으로 확인할 수 있습니다.',
+                url: 'plan_2025-10-11_시세표기능_v2.1.html',
+                version: 'v2.2',
+                author: '제이콥',
+                date: '2025.10.11',
+                updated: '2025.10.13'
+            }
+        ];
+
+        // 카드 생성
+        function createCard(doc) {
+            const typeLabel = doc.type === 'page' ? '페이지' : '기획안';
+            return `
+                <a href="https://jacob-po.github.io/nofee_planning/${doc.url}" class="card" target="_blank">
+                    <div class="card-header">
+                        <div class="card-badges">
+                            <span class="badge badge-type">${typeLabel}</span>
+                            <span class="badge badge-version">${doc.version}</span>
+                        </div>
+                    </div>
+                    <h3 class="card-title">${doc.title}</h3>
+                    <p class="card-description">${doc.description}</p>
+                    <div class="card-meta">
+                        <div class="meta-item">
+                            <span class="meta-label">작성자</span>
+                            <span class="meta-value">${doc.author}</span>
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-label">작성일</span>
+                            <span class="meta-value">${doc.date}</span>
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-label">수정일</span>
+                            <span class="meta-value">${doc.updated}</span>
+                        </div>
+                    </div>
+                </a>
+            `;
+        }
+
+        // 카드 렌더링
+        function renderCards() {
+            const allCards = document.getElementById('all-cards');
+            const pageCards = document.getElementById('page-cards');
+            const planCards = document.getElementById('plan-cards');
+
+            allCards.innerHTML = documents.map(createCard).join('');
+            pageCards.innerHTML = documents.filter(d => d.type === 'page').map(createCard).join('');
+            planCards.innerHTML = documents.filter(d => d.type === 'plan').map(createCard).join('');
+        }
+
+        // 탭 전환
+        const tabs = document.querySelectorAll('.tab');
+        const sections = document.querySelectorAll('.section');
+
+        tabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                const targetTab = tab.dataset.tab;
+
+                tabs.forEach(t => t.classList.remove('active'));
+                tab.classList.add('active');
+
+                sections.forEach(section => {
+                    section.classList.remove('active');
+                    if (section.id === `${targetTab}-section`) {
+                        section.classList.add('active');
+                    }
+                });
+            });
+        });
+
+        // 검색
+        const searchInput = document.getElementById('searchInput');
+        searchInput.addEventListener('input', (e) => {
+            const query = e.target.value.toLowerCase();
+            const cards = document.querySelectorAll('.card');
+
+            cards.forEach(card => {
+                const title = card.querySelector('.card-title').textContent.toLowerCase();
+                const description = card.querySelector('.card-description').textContent.toLowerCase();
+
+                if (title.includes(query) || description.includes(query)) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        });
+
+        // 초기 렌더링
+        renderCards();
+
+        // 애니메이션 지연
         document.addEventListener('DOMContentLoaded', function() {
-            const items = document.querySelectorAll('.planning-item');
-            items.forEach((item, index) => {
-                item.style.animationDelay = `${index * 0.1}s`;
+            const cards = document.querySelectorAll('.card');
+            cards.forEach((card, index) => {
+                card.style.animationDelay = `${index * 0.05}s`;
             });
         });
     </script>
